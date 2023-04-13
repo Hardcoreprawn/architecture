@@ -1,0 +1,49 @@
+<h1 id="strangler-pattern">Strangler Pattern</h1>
+<p>This pattern is used to migrate functionality from an older app to a new one. Typically, this is done for a monolith to microservices model, but works for any app.</p>
+<h2 id="pattern-overview">Pattern Overview</h2>
+<p>Replacing a large monolithic system is complex and risky. The strangler pattern builds new functionality using modern design patterns alongside the monolith. A proxy is used to integrate the user experience and make sure the aligned application makes sense to end users. Over time the monolith is slowly broken down.</p>
+<p><img src="https://th.bing.com/th/id/OIP.xkG2oQy-yOaQWbW6QlEwKgHaLH?pid=ImgDet&amp;rs=1" alt="The Stangler Fig Tree" /></p>
+<p>Inspired by the Australian Strangler Fig Tree, which roots in the upper branches and growns down and around the tree, eventually taking root and destroying the original host tree.</p>
+<h3 id="illustration">Illustration</h3>
+<p>It is important that the support systems put inplace to support the transition are taken out.</p>
+<p><img src="images/strangler-pattern-example.png" alt="Strangler Pattern, evolution over time" /></p>
+<p>The first sep shows the monolith, then a companion service is added alongside, behind a proxy. The next step adds more services, transitioning over to the new model. The last step, shows the monolith being removed, along with the proxy.</p>
+<h2 id="benefits-of-this-pattern">Benefits of this pattern</h2>
+<ul>
+<li>Provides a way to scale a solution over multiple dimensions.</li>
+<li>Delivers gradual value over time, with lower risk than a rewrite.</li>
+<li>Supports and allows for rollback.</li>
+<li>Uses versioned APIs, to reduce need for collaboration.</li>
+<li>Supports legacy integrations.</li>
+</ul>
+<h2 id="drawbacks-to-this-pattern">Drawbacks to this pattern</h2>
+<ul>
+<li>Potential for increased latency because of new service dependencies.</li>
+<li>Additional proxy decreases availability through multiplicative failure effect.</li>
+</ul>
+<h2 id="when-to-use-this-pattern">When to use this pattern</h2>
+<ul>
+<li>Use the strangler for versioning and migration of services.</li>
+<li>Use an existing proxy, such as NGinx, as scaffolding during the migration.</li>
+<li>Manage the service rules during migration.</li>
+<li>Remove rules as no longer needed and decommision the proxy when done.</li>
+</ul>
+<h2 id="when-to-avoid-this-pattern">When to avoid this pattern</h2>
+<ul>
+<li>If you have to add a facade, then don't also add a proxy as it increases the call depth and hits latency poorly.</li>
+<li>If latency is a concern, this won't help in the interim.</li>
+</ul>
+<h2 id="approach">Approach</h2>
+<p>You can implement this pattern in two seperate ways, scaling along the service domains, or between the new and old services. Ideally, both together works well.</p>
+<ul>
+<li>Scaling along the service domains allows new services to be stood up and integrated.</li>
+<li>Scaling alongside the existing services allows for rollback and A/B testing between the new and old services, by sending a portion of calls to the new service.</li>
+</ul>
+<p>Scaling along both these axis allows the target state to scale effectively.</p>
+<h2 id="assumptions">Assumptions</h2>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://martinfowler.com/bliki/StranglerFigApplication.html">Martin Folwer - Strangler Fig Application</a></li>
+<li><a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig">Microsoft - Azure Architetcure, Strangler Fig Pattern</a></li>
+<li><a href="https://akfpartners.com/growth-blog/strangler-pattern-dos-and-donts">AKF Partners - Strangler Patterns: Dos and Don'ts</a></li>
+</ul>

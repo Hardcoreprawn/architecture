@@ -1,0 +1,140 @@
+<h1 id="microservices-web-app-hosting-pattern">Microservices Web App Hosting Pattern</h1>
+<h2 id="pattern-overview">Pattern Overview</h2>
+<p>This pattern is designed to provide reliable service at a large scale. It does
+this by providing no single point of failure, allowing its components to
+scale independently of each other and segregating information to provide
+security.</p>
+<hr />
+<h3 id="illustration">Illustration</h3>
+<p><img src="images/microservices-patterns.png" alt="microservices pattern, learn.microsoft.com" />
+<em>Model of a Monolith to Microservices migration, showing sub-patterns</em></p>
+<p>This is a reference microservices pattern, showing the possible use of sub-patterns.</p>
+<h2 id="benefits-of-this-pattern">Benefits of this pattern</h2>
+<ul>
+<li>Scale and resilience in each service.
+Safe deployment of updates to individual services.</li>
+<li>Separation of services, allowing changes to be made locally and quickly, with
+minimal impact on other services.</li>
+<li>The ability for several teams to work together on different areas. Can support
+regular and frequent changes.</li>
+</ul>
+<hr />
+<h2 id="drawbacks-to-this-pattern">Drawbacks to this pattern</h2>
+<ul>
+<li>It can be complex, quickly.</li>
+<li>Overwhelming for a small number of teams, due to a large number of
+components.</li>
+<li>The Danger of component sprawl if services are over-specialized.</li>
+</ul>
+<hr />
+<h2 id="when-to-use-this-pattern">When to use this pattern</h2>
+<ul>
+<li>This pattern is for applications that need to grow, which need to manage
+their costs and support a large degree of change and experimentation.</li>
+<li>When reliability is critical to business, reputation or safety.</li>
+</ul>
+<hr />
+<h2 id="when-to-avoid-this-pattern">When to avoid this pattern</h2>
+<ul>
+<li>Because you want to be down with the kids, and you think it's cool.</li>
+<li>Because you want to use the 'best' type of technology and work at Google.</li>
+<li>For a simple application, which doesn't have a high probability of needing
+change, addition or integration.</li>
+<li>For an application that won't be making lots of changes, with lots of
+active users.</li>
+<li>For your Blog.</li>
+</ul>
+<hr />
+<h2 id="assumptions">Assumptions</h2>
+<p>In choosing this pattern, you ruled out simpler options as not being capable.</p>
+<ul>
+<li>You have time and space for teams to find their way; this is hard and it
+will go wrong.</li>
+</ul>
+<hr />
+<h2 id="anti-patterns-of-the-microservices-architecture">Anti-Patterns of the microservices architecture</h2>
+<h3 id="distributed-monolith">Distributed Monolith</h3>
+<p>When you split a monolith, don't let your services become dependent on each
+or several other microservices. If changes in services require redeployment or
+change in other services, you've built a distributed monolith.
+Lastly, over-dependency can also manifest in long deployment times, as too many
+changes have to occur at once. Sometimes it shows that deployment has to
+happen in a particular order.</p>
+<p>This is a <a href="http://www.laputan.org/mud/mud.html#BigBallOfMud">Big-Ball-Of-Mud</a> that also has network-level latencies to
+deal with now.</p>
+<hr />
+<h3 id="overly-chatty">Overly Chatty</h3>
+<p>Another risk is the amount of communication. Services are distributed, so calls
+between them take time. Overly chatty services are not performant; the latency
+can kill the performance. Following <a href="https://en.wikipedia.org/wiki/SOLID">SOLID</a> principles can help here.</p>
+<hr />
+<h3 id="shared-persistence">Shared Persistence</h3>
+<p>A monolith typically requires a large shared data store. Microservices should
+each have their own data store, to avoid resource contention. Each store should
+be accessible only by the associated service. Any communication needs to be via
+the API interfaces.</p>
+<hr />
+<h3 id="heavyweight-services">Heavyweight services</h3>
+<p>Building too much into each service makes them slow. Build/latency delays kick
+in and you are back to building monoliths.</p>
+<hr />
+<h3 id="no-api-gateway">No API Gateway</h3>
+<p>Data Interfaces need to be identifiable, they need to be managed, and they need
+authentication. It has to be something you can find to query.</p>
+<hr />
+<h3 id="entangled-data">Entangled Data</h3>
+<p>Isolate the data inside the application.</p>
+<hr />
+<h3 id="improper-versioning">Improper Versioning</h3>
+<p>Build API versions into your URI calls.</p>
+<hr />
+<h2 id="sub-patterns">Sub-patterns</h2>
+<p>A successful migration of monolith to microservices will likely use many
+different patterns. Some common ones are linked here.</p>
+<h3 id="ambassador">Ambassador</h3>
+<p>An Ambassador sits between two services and negotiates. Typically a proxy
+service can interpret. An ambassador is often used to offload or mask client
+interoperability issues. An ambassador is a specialized sidecar.</p>
+<p><a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador">Ambassador Pattern</a></p>
+<hr />
+<h3 id="anti-corruption">Anti-corruption</h3>
+<p>When two systems don't properly understand each other, an Anti-corruption
+layer can be introduced to protect the new architecture.</p>
+<p><a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer">Anti-corruption Layer pattern</a></p>
+<hr />
+<h3 id="backends-for-frontends">Backends for Frontends</h3>
+<p>Sometimes, it's just quicker to write APIs that deal with specific clients. It
+might take more maintenance, but that can be ok.</p>
+<p><a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends">Backends for Frontends pattern</a></p>
+<hr />
+<h3 id="bulkhead">Bulkhead</h3>
+<p>Bulkheads are used on ships to prevent water from a hull breach from flooding
+the whole ship. Keep things separate, (like connection pools or hardware)
+so a greedy neighbor can't flood the whole ship.</p>
+<p><a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead">Bulkhead Pattern</a></p>
+<hr />
+<h3 id="gateways">Gateways</h3>
+<p>Using a gateway for your microservices offers several benefits, by making your
+collection of services look like a single web server.</p>
+<h4 id="aggregation">Aggregation</h4>
+<p>Clients can connect to a single endpoint to make requests, which are then
+forwarded to different microservices. This makes the client connection light
+and easy</p>
+<p><a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation">Gateway Aggregation</a></p>
+<h4 id="offloading">Offloading</h4>
+<p>The gateway can offload shared functionality, such as authentication, TLS
+certificates or issuing Authorisation tokens.</p>
+<p><a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading">Gateway Offloading</a></p>
+<h4 id="routing">Routing</h4>
+<p>The service all appears to come from a single domain, so much easier for a
+client to manage connections to and from the service, improving security.</p>
+<p><a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-routing">Gateway Routing</a></p>
+<hr />
+<h3 id="sidecar">Sidecar</h3>
+<p>deploy helper apps into separate containers to encapsulate them, but keep
+them close for performance.</p>
+<p><a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar">Sidecar Pattern</a></p>
+<hr />
+<h3 id="strangler">Strangler</h3>
+<p>Refactor over time, by gradually replacing specific services.</p>
+<p><a href="strangler-pattern.md">Strangler Pattern</a></p>
