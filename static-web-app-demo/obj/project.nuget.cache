@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mWJtrK7xYlvXvcIdPmUOo4/m6yW7WtZ3v0Fs/p8kVEloQvQmK60SBtWVbJ1I3b7P/bJh8ZmsNmhkp7iWLDvm/Q==",
+  "dgSpecHash": "XmH3Rh7ggJqQ9XaVSAbiqjc1AIAbE5NtN8qE1f58Sz2HFSa7vPYVwL7kzi4awD32rHiss2i5jZTQKutj3HickQ==",
   "success": true,
-  "projectFilePath": "/workspaces/dotnet/static-web-app-demo/static-web-app-demo.csproj",
+  "projectFilePath": "/home/vscode/static-web-app-demo/static-web-app-demo/static-web-app-demo.csproj",
   "expectedPackageFiles": [
     "/home/vscode/.nuget/packages/advancedstringbuilder/0.1.0/advancedstringbuilder.0.1.0.nupkg.sha512",
     "/home/vscode/.nuget/packages/anglesharp/0.16.1/anglesharp.0.16.1.nupkg.sha512",

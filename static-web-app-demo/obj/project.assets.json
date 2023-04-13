@@ -10581,11 +10581,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/dotnet/static-web-app-demo/static-web-app-demo.csproj",
+      "projectUniqueName": "/home/vscode/static-web-app-demo/static-web-app-demo/static-web-app-demo.csproj",
       "projectName": "static-web-app-demo",
-      "projectPath": "/workspaces/dotnet/static-web-app-demo/static-web-app-demo.csproj",
+      "projectPath": "/home/vscode/static-web-app-demo/static-web-app-demo/static-web-app-demo.csproj",
       "packagesPath": "/home/vscode/.nuget/packages/",
-      "outputPath": "/workspaces/dotnet/static-web-app-demo/obj/",
+      "outputPath": "/home/vscode/static-web-app-demo/static-web-app-demo/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/vscode/.nuget/NuGet/NuGet.Config"
