@@ -18,3 +18,11 @@ When companies use too many different technologies to do things, it can be very 
 * These rules help us choose technologies that work well together and are easy to use.
 * If we need to use a new technology that is not in the rules, we have to make sure it works with the other technologies we are already using.
 * We also have to make sure it will make things better or easier and not harder.
+
+
+## Rules for technical choices.
+
+In the NFRs.
+
+* Rule 1
+* Rule 2

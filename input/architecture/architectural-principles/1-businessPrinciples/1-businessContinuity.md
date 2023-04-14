@@ -6,15 +6,16 @@
 
 ## Statement
 
-The business keeps going even when the system breaks down.
+Business keeps going even when systems breaks down.
 
 ## Rationale
 
-We need to make sure our systems work well because we use them a lot. We should think about how to avoid problems when we design and use them. We should be able to keep doing our work no matter what happens. Things like broken machines, bad weather, or wrong data should not stop us. We should have different ways to get and use information.
+We need to make sure our systems work well because we use them a lot. We must think about how to avoid problems as we design and use them. We should be able to keep doing our work no matter what happens. Things like broken machines, bad weather, or wrong data cannot stop us. We must have different ways to use information.
 
 ## Implications
 
-* If you use shared system applications, you need to know and control the risks of losing your business data or functions.
-* You can control the risks by checking regularly, testing for problems, or having backup plans for important services.
+* Data and Applications are available to our staff when they work away from the office.
+* If you use shared applications, you need to know (and control) the risks of losing your business data and business functions.
+* You can control the risks by checking systems regularly, testing for problems, and/or having backup plans for important services.
 * You should think about how to recover, replace, and maintain your applications when you design them.
-* You should also know how important your applications are for your business mission, and what kind of recovery plan you need for each one.
+* You should know how important your applications are for your business, and what kind of recovery plans you need for them.

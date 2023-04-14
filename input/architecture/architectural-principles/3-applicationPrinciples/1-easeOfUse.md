@@ -17,3 +17,8 @@ When you use something, it’s better if you don’t have to learn too much abou
 1. App and websites should look and feel similar to each other and be easy to use. So, there are rules that are made to make sure that all applications follow these standards. These rules are tested to make sure that they are easy to use.
 
 2. When people make things like websites or apps, they should not assume that everyone who uses them is the same. They should make sure that everyone can use them no matter where they are from, what language they speak, how much they know about computers, or if they have any physical problems.
+
+### Details and Context
+
+* Accessibility
+* White Label

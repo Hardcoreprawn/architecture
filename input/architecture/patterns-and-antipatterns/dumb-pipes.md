@@ -1,6 +1,6 @@
 # Messaging System, "dumb pipes" pattern
 
-As services scale in a microsoervices architecture, they need to communicate. A communication network is important, to make sure each service can easily talk to the others, but as they scale, its important to make sure they can grow and continue to communicate.
+As services scale in a microservices architecture, they need to communicate. A communication network is important, to make sure each service can easily talk to the others, but as they scale, its important to make sure they can grow and continue to communicate.
 
 This pattern builds off the principle of 'Smart end-points, dumb pipes'. If the pipes are clever, they need maintenance, everyone has to wait on the team which is responsible for the pipe, and that reduces time to market.
 

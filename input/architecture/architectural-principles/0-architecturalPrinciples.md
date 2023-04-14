@@ -11,6 +11,8 @@ A set of architecture principals, designed to help software developers make info
 * [Business Continuity](./1-businessPrinciples/1-businessContinuity.md)
 * [Service Orientation](./1-businessPrinciples/2-serviceOrientation.md)
 * [Compliance with Law](./1-businessPrinciples/3-complianceWithLaw.md)
+* [Core vs Context](./1-businessPrinciples/4-coreVsContext.md)
+* [Intellectual Property](./1-businessPrinciples/5-intellectualProperty.md)
 
 ## Data Principles
 
@@ -29,3 +31,7 @@ A set of architecture principals, designed to help software developers make info
 * [Interoperability](./4-technologyPrinciples/4-interoperability.md)
 
 If you want to know more, theres a good article here at The Open Group website. Ref: [The Open Group - TOGAF 9.2](https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap20.html)
+
+## Security Principles
+
+## How to use these principles.
