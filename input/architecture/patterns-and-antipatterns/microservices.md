@@ -216,4 +216,4 @@ them close for performance.
 
 Refactor over time, by gradually replacing specific services.
 
-[Strangler Pattern](strangler-pattern.md)
+[Strangler Pattern](xref:strangler-pattern)

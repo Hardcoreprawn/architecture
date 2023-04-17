@@ -9,4 +9,4 @@ description: A home for Architecture documents, principles and patterns
 
 * [Non-Functional Requirements](xref:Non-Functional-Requirements)
 
-* [Patterns and Anti-Patterns](./architecture/patterns-and-antipatterns/)
+* [Patterns and Anti-Patterns](xref:Patterns-And-Anti-Patterns)

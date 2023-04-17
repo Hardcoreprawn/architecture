@@ -1,7 +1,7 @@
 ---
 title: Architectural Principles
-description: "Enterprise Architecture principles guide technology choices that align with the enterprise’s vision and goals."
-ArchiveTitle: "Architecture Principles"
+description: Enterprise Architecture principles guide technology choices that align with the enterprise’s vision and goals.
+ArchiveTitle: Architectural Principles
 ---
 # Architectural Principles
   
