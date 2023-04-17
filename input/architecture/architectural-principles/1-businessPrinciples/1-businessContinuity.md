@@ -1,5 +1,7 @@
 ---
 draft: true
+title: Business Continuity
+description: Business keeps going even when systems breaks down.
 ---
 # Business Continuity
 

@@ -1,8 +1,11 @@
-Title: Architecture Repository
 ---
+title: Architecture Repository
+description: A home for Architecture documents, principles and patterns
+---
+
 # Architecture Repository
 
-* [Architectural Principles](./architecture/architectural-principles/0-architecturalPrinciples.md)
+* [Architectural Principles](xref:"Architectural Principles")
 
 * [Non-Functional Requirements](./architecture/non-functional-requirements/)
 

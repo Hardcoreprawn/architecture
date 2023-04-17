@@ -1,4 +1,4 @@
 ﻿return await Bootstrapper
   .Factory
-  .CreateDocs(args)
+  .CreateWeb(args)
   .RunAsync();
