@@ -1,9 +1,10 @@
 ---
 title: Architectural Principles
 description: "Enterprise Architecture principles guide technology choices that align with the enterprise’s vision and goals."
+ArchiveTitle: "Architecture Principles"
 ---
 # Architectural Principles
-
+  
 ![An abstract header in the style of Van Gogh](/media/images/header01.png)
 
 > *"A People that values its privileges above its principles soon looses both." - Dwight D. Eisenhower.*
@@ -12,11 +13,11 @@ A set of architecture principals, designed to help software developers make info
 
 ## Business Principles
 
-* [Business Continuity](xref:"Business-Continuity")
-* [Service Orientation](./1-businessPrinciples/2-serviceOrientation.md)
-* [Compliance with Law](./1-businessPrinciples/3-complianceWithLaw.md)
-* [Core vs Context](./1-businessPrinciples/4-coreVsContext.md)
-* [Intellectual Property](./1-businessPrinciples/5-intellectualProperty.md)
+* [Business Continuity](xref:Business-Continuity)
+* [Service Orientation](xref:Service-Orientation)
+* [Compliance with Law](xref:Compliance-with-Law)
+* [Core vs Context](xref:Core-vs-Context)
+* [Intellectual Property](xref:Intellectual-Property)
 
 ## Data Principles
 

@@ -1,5 +1,7 @@
 ---
 draft: true
+title: Core vs Context
+description: Focus on what matters to our customers and get experts to help with the rest.
 ---
 # Core vs Context
 

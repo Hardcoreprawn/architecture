@@ -5,8 +5,8 @@ description: A home for Architecture documents, principles and patterns
 
 # Architecture Repository
 
-* [Architectural Principles](xref:"Architectural Principles")
+* [Architectural Principles](xref:Architectural-Principles)
 
-* [Non-Functional Requirements](./architecture/non-functional-requirements/)
+* [Non-Functional Requirements](xref:Non-Functional-Requirements)
 
 * [Patterns and Anti-Patterns](./architecture/patterns-and-antipatterns/)

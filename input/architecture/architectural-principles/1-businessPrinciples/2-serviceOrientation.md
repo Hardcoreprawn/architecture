@@ -1,5 +1,7 @@
 ---
 draft: true
+title: Service Orientation
+description: Architecture is a blueprint for how the companty should operate.
 ---
 # Service Orientation
 

@@ -1,5 +1,7 @@
 ---
 draft: true
+title: Compliance with Law
+description: As we create and store data, we stick to the rules and regulations.
 ---
 # Compliance with Law
 
