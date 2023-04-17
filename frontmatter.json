@@ -51,11 +51,11 @@
   "frontMatter.content.pageFolders": [
     {
       "path": "[[workspace]]/input/architecture/architectural-principles/1-businessPrinciples",
-      "title": "1-businessPrinciples"
+      "title": "Business Principles"
     },
     {
       "path": "[[workspace]]/input/architecture/architectural-principles/3-applicationPrinciples",
-      "title": "3-applicationPrinciples"
+      "title": "Application Principles"
     },
     {
       "title": "Data Principles",
