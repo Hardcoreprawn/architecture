@@ -12,7 +12,7 @@ A set of architecture principals, designed to help software developers make info
 
 ## Business Principles
 
-* [Business Continuity](xref:"Business Continuity")
+* [Business Continuity](xref:"Business-Continuity")
 * [Service Orientation](./1-businessPrinciples/2-serviceOrientation.md)
 * [Compliance with Law](./1-businessPrinciples/3-complianceWithLaw.md)
 * [Core vs Context](./1-businessPrinciples/4-coreVsContext.md)
