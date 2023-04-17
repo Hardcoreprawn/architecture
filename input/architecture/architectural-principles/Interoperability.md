@@ -1,9 +1,10 @@
 ---
 draft: true
+Title: Interoperability
 ---
 # Interoperability
 
-![An abstract header in the style of Van Gogh](../../../images/header01.png)
+![An abstract header in the style of Van Gogh](/media/images/header01.png)
 
 > *"Alone we can do so little; together we can do so much." - Helen Keller*
 

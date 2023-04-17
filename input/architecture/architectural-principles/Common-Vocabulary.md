@@ -3,7 +3,7 @@ draft: true
 ---
 # Common Vocabulary and Data Definitions
 
-![An abstract header in the style of Van Gogh](../../../images/header01.png)
+![An abstract header in the style of Van Gogh](/media/images/header01.png)
 
  > *"Don’t say ‘infinitely’ when you mean ‘very’; otherwise you’ll have no word left when you want to talk about something really infinite." - George Orwell*
 

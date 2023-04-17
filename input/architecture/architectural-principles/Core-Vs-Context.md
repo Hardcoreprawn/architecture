@@ -5,7 +5,7 @@ description: Focus on what matters to our customers and get experts to help with
 ---
 # Core vs Context
 
-![An abstract header in the style of Van Gogh](../../../images/header01.png)
+![An abstract header in the style of Van Gogh](/media/images/header01.png)
 
 > “Make room for the real important stuff.” —Tigger”
 

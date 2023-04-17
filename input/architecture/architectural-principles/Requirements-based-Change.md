@@ -3,7 +3,7 @@ draft: true
 ---
 # Requirements-Based Change
 
-![An abstract header in the style of Van Gogh](../../../images/header01.png)
+![An abstract header in the style of Van Gogh](/media/images/header01.png)
 
 > *"I’m always willing to accept change, just as long as it isn’t change for the sake of change. If that change will result in a better way of doing things, then I’m all for it." - James Van Fleet.*
 

@@ -5,7 +5,7 @@ description: Business keeps going even when systems breaks down.
 ---
 # Business Continuity
 
-![An abstract header in the style of Van Gogh](../../../images/header01.png)
+![An abstract header in the style of Van Gogh](/media/images/header01.png)
 
 > *"I can be changed by what happens to me, but I refuse to be reduced by it." - Maya Angelou.*
 

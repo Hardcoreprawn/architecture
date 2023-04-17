@@ -4,7 +4,7 @@ draft: true
 ---
 # Responsive Change Management
 
-![An abstract header in the style of Van Gogh](../../../images/header02.png)
+![An abstract header in the style of Van Gogh](/media/images/header01.png)
 
 > *“The early bird gets the worm.” — William Camden, author & antiquarian, 1551-1623*
 

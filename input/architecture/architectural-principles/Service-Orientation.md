@@ -5,7 +5,7 @@ description: Architecture is a blueprint for how the companty should operate.
 ---
 # Service Orientation
 
-![An abstract header in the style of Van Gogh](../../../images/header02.png)
+![An abstract header in the style of Van Gogh](/media/images/header01.png)
 
 > *"The best way to find yourself, is to lose yourself in the service of others." - Mahatma Gandhi.*
 

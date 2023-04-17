@@ -3,7 +3,7 @@ draft: true
 ---
 # Control Technical Diversity
 
-![An abstract header in the style of Van Gogh](../../../images/header03.png)
+![An abstract header in the style of Van Gogh](/media/images/header01.png)
 
 > *“The more complex the system, the greater the room for error.” — George Soros*
 

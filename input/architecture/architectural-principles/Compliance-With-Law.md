@@ -5,7 +5,7 @@ description: As we create and store data, we stick to the rules and regulations.
 ---
 # Compliance with Law
 
-![An abstract header in the style of Van Gogh](../../../images/header03.png)
+![An abstract header in the style of Van Gogh](/media/images/header01.png)
 
 > *"Wherever law ends, Tyranny begins. - John Locke, 1972"*
 
