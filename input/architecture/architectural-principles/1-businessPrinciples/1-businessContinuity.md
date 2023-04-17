@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Business Continuity
 description: Business keeps going even when systems breaks down.
 ---

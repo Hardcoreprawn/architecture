@@ -4,7 +4,7 @@ description: "Enterprise Architecture principles guide technology choices that a
 ---
 # Architectural Principles
 
-![An abstract header in the style of Van Gogh](../../../media/images/header01.png)
+![An abstract header in the style of Van Gogh](/media/images/header01.png)
 
 > *"A People that values its privileges above its principles soon looses both." - Dwight D. Eisenhower.*
 
