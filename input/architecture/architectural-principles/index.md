@@ -21,22 +21,26 @@ A set of architecture principals, designed to help software developers make info
 
 ## Data Principles
 
-* [Open Data](./2-dataPrinciples/1-openData.md)
-* [Common Vocabulary and Definition](./2-dataPrinciples/2-commonVocabularyAndDataDefinitions.md)
+* [Open Data](xref:Open-Data)
+* [Common Vocabulary and Definition](xref:Common-Vocabulary)
 
 ## Application Principles
 
-* [Ease of Use](./3-applicationPrinciples/1-easeOfUse.md)
+* [Ease of Use](xref:Ease-Of-Use)
 
 ## Technology Principles
 
-* [Requirements Based Change](./4-technologyPrinciples/1-requirementsBasedChange.md)
-* [Responcive Change Management](./4-technologyPrinciples/2-responsiveChangemanagement.md)
-* [Control technical Diversity](./4-technologyPrinciples/3-controlTechnicalDiversity.md)
-* [Interoperability](./4-technologyPrinciples/4-interoperability.md)
-
-If you want to know more, theres a good article here at The Open Group website. Ref: [The Open Group - TOGAF 9.2](https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap20.html)
+* [Requirements Based Change](xref:Requirements-Based-Change)
+* [Responcive Change Management](xref:Responsive-Change-Management)
+* [Control technical Diversity](xref:Control-technical-Diversity)
+* [Interoperability](xref:Interoperability)
 
 ## Security Principles
 
+TODO: Security Principles go here.
+
+>If you want to know more, theres a good article here at The Open Group website. Ref: [The Open Group - TOGAF 9.2](https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap20.html)
+
 ## How to use these principles.
+
+TODO: Examples and Explainations go here.

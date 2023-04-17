@@ -42,6 +42,11 @@
           "title": "Categories",
           "name": "categories",
           "type": "categories"
+        },
+        {
+          "title": "ArchiveTitle",
+          "name": "ArchiveTitle",
+          "type": "string"
         }
       ]
     }
@@ -50,28 +55,16 @@
   "frontMatter.content.publicFolder": "",
   "frontMatter.content.pageFolders": [
     {
-      "path": "[[workspace]]/input/architecture/architectural-principles/1-businessPrinciples",
-      "title": "Business Principles"
-    },
-    {
-      "path": "[[workspace]]/input/architecture/architectural-principles/3-applicationPrinciples",
-      "title": "Application Principles"
-    },
-    {
-      "title": "Data Principles",
-      "path": "[[workspace]]/input/architecture/architectural-principles/2-dataPrinciples"
-    },
-    {
-      "title": "Technology Principles",
-      "path": "[[workspace]]/input/architecture/architectural-principles/4-technologyPrinciples"
-    },
-    {
       "title": "NFRs",
       "path": "[[workspace]]/input/architecture/non-functional-requirements"
     },
     {
       "title": "Patterns and Anti-Patterns",
       "path": "[[workspace]]/input/architecture/patterns-and-antipatterns"
+    },
+    {
+      "title": "Architectural Principles",
+      "path": "[[workspace]]/input/architecture/architectural-principles"
     }
   ],
   "frontMatter.taxonomy.tags": [
