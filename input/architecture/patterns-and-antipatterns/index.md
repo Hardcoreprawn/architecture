@@ -4,7 +4,8 @@ description: ""
 date: 2023-04-17T09:41:44.954Z
 preview: ""
 draft: true
-tags: []
+tags:
+  - Patterns
 categories: []
 ArchiveTitle: Patterns and Anti-Patterns
 ---
