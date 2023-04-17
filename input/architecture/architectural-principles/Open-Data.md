@@ -1,5 +1,5 @@
 ---
-title: Secure, Open, Accessible and Governed Data
+title: Open Data
 description: Data sharing is critical to our strategy. Sharing data within our company, and with external partners helps us achieve our goals and improve our services.
 tags:
   - Architectural Principles

@@ -1,4 +1,5 @@
 ---
+title: Responsive Change Management
 draft: true
 ---
 # Responsive Change Management
