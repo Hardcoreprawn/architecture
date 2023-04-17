@@ -72,5 +72,12 @@
     "Architecture",
     "Data"
   ],
-  "frontMatter.taxonomy.categories": []
+  "frontMatter.taxonomy.categories": [],
+  "frontMatter.content.snippets": {
+    "Header Image": {
+      "description": "An Abstract header Imagae",
+      "body": "/output/media/images/header01.png",
+      "isMediaSnippet": true
+    }
+  }
 }

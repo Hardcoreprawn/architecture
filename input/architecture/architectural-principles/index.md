@@ -2,6 +2,7 @@
 title: Architectural Principles
 description: Enterprise Architecture principles guide technology choices that align with the enterprise’s vision and goals.
 ArchiveTitle: Architectural Principles
+slug: architectural-principles
 ---
 # Architectural Principles
   
@@ -10,6 +11,8 @@ ArchiveTitle: Architectural Principles
 > *"A People that values its privileges above its principles soon looses both." - Dwight D. Eisenhower.*
 
 A set of architecture principals, designed to help software developers make informed choices about the types of technology in use and to help make local decisions in the best interests of the organisation or enterprise.
+
+>If you want to know more, theres a good article here at The Open Group website. Ref: [The Open Group - TOGAF 9.2](https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap20.html)
 
 ## Business Principles
 
@@ -38,8 +41,6 @@ A set of architecture principals, designed to help software developers make info
 ## Security Principles
 
 TODO: Security Principles go here.
-
->If you want to know more, theres a good article here at The Open Group website. Ref: [The Open Group - TOGAF 9.2](https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap20.html)
 
 ## How to use these principles.
 
