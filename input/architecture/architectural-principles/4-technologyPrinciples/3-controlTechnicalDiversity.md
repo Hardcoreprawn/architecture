@@ -1,3 +1,6 @@
+---
+draft: true
+---
 # Control Technical Diversity
 
 ![An abstract header in the style of Van Gogh](../../../images/header03.png)

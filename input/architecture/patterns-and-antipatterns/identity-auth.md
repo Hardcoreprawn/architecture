@@ -1,3 +1,6 @@
+---
+draft: true
+---
 # (name) Pattern
 
 ## Pattern Overview

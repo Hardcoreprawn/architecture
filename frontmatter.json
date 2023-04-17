@@ -1,0 +1,83 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "other",
+  "frontMatter.content.publicFolder": "",
+  "frontMatter.content.pageFolders": [
+    {
+      "path": "[[workspace]]/input/architecture/architectural-principles/1-businessPrinciples",
+      "title": "1-businessPrinciples"
+    },
+    {
+      "path": "[[workspace]]/input/architecture/architectural-principles/3-applicationPrinciples",
+      "title": "3-applicationPrinciples"
+    },
+    {
+      "title": "Data Principles",
+      "path": "[[workspace]]/input/architecture/architectural-principles/2-dataPrinciples"
+    },
+    {
+      "title": "Technology Principles",
+      "path": "[[workspace]]/input/architecture/architectural-principles/4-technologyPrinciples"
+    },
+    {
+      "title": "NFRs",
+      "path": "[[workspace]]/input/architecture/non-functional-requirements"
+    },
+    {
+      "title": "Patterns and Anti-Patterns",
+      "path": "[[workspace]]/input/architecture/patterns-and-antipatterns"
+    }
+  ],
+  "frontMatter.taxonomy.tags": [
+    "Architectural Principles",
+    "Architecture",
+    "Data"
+  ],
+  "frontMatter.taxonomy.categories": []
+}

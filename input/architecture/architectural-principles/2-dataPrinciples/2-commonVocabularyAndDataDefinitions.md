@@ -1,3 +1,6 @@
+---
+draft: true
+---
 # Common Vocabulary and Data Definitions
 
 ![An abstract header in the style of Van Gogh](../../../images/header01.png)

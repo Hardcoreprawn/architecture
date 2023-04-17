@@ -1,3 +1,6 @@
+---
+draft: true
+---
 # Ease-of-Use
 
 ![An abstract header in the style of Van Gogh](../../../images/header01.png)

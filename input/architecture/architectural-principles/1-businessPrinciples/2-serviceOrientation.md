@@ -1,3 +1,6 @@
+---
+draft: true
+---
 # Service Orientation
 
 ![An abstract header in the style of Van Gogh](../../../images/header02.png)

@@ -1,3 +1,6 @@
+---
+draft: true
+---
 # Microservices Web App Hosting Pattern
 
 ## Pattern Overview
