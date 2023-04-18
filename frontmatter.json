@@ -73,9 +73,12 @@
     }
   ],
   "frontMatter.taxonomy.tags": [
-    "Architectural Principles",
     "Architecture",
-    "Data"
+    "Architectural Principles",
+    "Business Principles",
+    "Data Principles",
+    "Application Principles",
+    "Technology Principles"
   ],
   "frontMatter.taxonomy.categories": [],
   "frontMatter.content.snippets": {
