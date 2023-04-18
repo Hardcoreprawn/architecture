@@ -1,7 +1,11 @@
 ---
-draft: true
+draft: false
 title: Core vs Context
 description: Focus on what matters to our customers and get experts to help with the rest.
+tags:
+  - Architectural Principles
+  - Architecture
+  - Business Principles
 ---
 # Core vs Context
 
@@ -24,6 +28,10 @@ Focusing your efforts on Core matters will ensure you focus on the problems and 
 Focusing on context will eat into your time, and few customers will thank you for it. This doesn't mean its not important, but it does mean you need to control the amount of time, money and energy spent on context.
 
 ## Implications
+
+Core problems are the things we do that create customer value. We want to give ourselves the most time to do these. Context problems are things we do because we have, to make sure we're compliant, paid, etc.
+
+We want to minimise context problems and maximise the focus we can give Core problems.
 
 * Contextual problems should be considered for outsourcing.
 * Corte problems could be assisted by outsourcing, but must remain withint the purview of the business. This could be done to get past a skill gap or short deadline.

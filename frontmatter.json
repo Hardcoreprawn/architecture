@@ -47,6 +47,11 @@
           "title": "ArchiveTitle",
           "name": "ArchiveTitle",
           "type": "string"
+        },
+        {
+          "title": "Title",
+          "name": "Title",
+          "type": "string"
         }
       ]
     }

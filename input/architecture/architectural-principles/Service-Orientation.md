@@ -1,7 +1,11 @@
 ---
-draft: true
+draft: false
 title: Service Orientation
 description: Architecture is a blueprint for how the companty should operate.
+tags:
+  - Architectural Principles
+  - Architecture
+  - Business Principles
 ---
 # Service Orientation
 
@@ -15,13 +19,13 @@ The architecture is designed to mimic real-world business activities that are pa
 
 ## Rationale
 
-Service orientation delivers enterprise agility and Boundaryless Information Flow.
+Service orientation is a way of designing computer software that focuses on providing services that can be accessed by different users and applications. Service orientation aims to make software more flexible, reusable and adaptable to changing needs.
 
 Service orientation means that the company is designed to be flexible and adaptable to change. It’s like a chameleon that can change its colours to blend in with its environment.
 
-Information can flow freely between different parts of the company without any barriers. It’s like a river that flows through different landscapes without any obstacles.
-
 ## Implications
+
+Our systems and architecture follow our business. We build a sensible business, with sensible systems. We don't slavishly and recklessly mutilate systems to fit the business, but we do not bend the the business to fit the systems.
 
 * We use business descriptions to help understand how to implement services.
 * Open standards  make sure that our services can work together.

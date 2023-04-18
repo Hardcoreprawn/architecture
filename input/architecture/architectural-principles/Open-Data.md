@@ -5,6 +5,7 @@ tags:
   - Architectural Principles
   - Architecture
   - Data
+  - Data Principles
 ---
 # Secure, Open, Accessible and Governed data
 
@@ -21,6 +22,8 @@ Data sharing is a key component of our business strategy. We believe that sharin
 We are committed to making our data open and accessible to our employees and partners, while also protecting the privacy and security of our customers and stakeholders. We will work to ensure that our data is secure, accurate, up-to-date, and relevant, and that it is shared in a way that is transparent, ethical, and responsible.
 
 ## Implications
+
+This principle is mostly about ensuring that people who are allowed to get data, can get it, when they want it. We can control who that is, and we have to make sure we handle data in regard to the law. This isn't creating a free for all. Itys making sure we have data in useful formats, so we can make decisions with it.
 
 * By making data open and accessible, the company can increase transparency and accountability, both internally and externally.
 * Sharing data within the company and with external partners can help to improve collaboration and innovation, leading to better products and services.

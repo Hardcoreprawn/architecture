@@ -1,5 +1,11 @@
 ---
-draft: true
+draft: false
+tags:
+  - Architectural Principles
+  - Architecture
+  - Data Principles
+title: Common Vocabulary and Data Definitions
+description: Everyone in the company agrees on what data means, and they can easily find and understand it.
 ---
 # Common Vocabulary and Data Definitions
 
@@ -16,6 +22,8 @@ Everyone in the company agrees on what data means, and they can easily find and 
 We need to use the same words for the data we use to make apps. This will help us share data and talk better. It will also help us connect systems and move data between them.
 
 ## Implications
+
+This principle aims to help us keep things deliberately simple and to make sure we all use the same words to describe the same things. Not following this principle causes confusion and delay, and affects our work. Deliberately keeping things simple helps us all communicate effectively, without ego, and ensures we can be as productive as possible. It also helps us communicate with customers, people from outside our industry and people with other language backgrounds.
 
 1. The people who are supposed to take care of important information don’t always do a good job. We need to make sure they have enough help and resources so they can do their job better. This will help us make sure we have good information that we can trust.
 

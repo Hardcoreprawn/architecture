@@ -1,5 +1,11 @@
 ---
-draft: true
+draft: false
+tags:
+  - Architectural Principles
+  - Architecture
+  - Business Principles
+description: We only make changes to technology to make our business better, and we do that together.
+title: Requirements-Based Change
 ---
 # Requirements-Based Change
 
@@ -16,6 +22,8 @@ We only make changes to technology to make our business better, and we do that t
 When we need to change how we do things, we should be able to do so without being held back by our technology. Instead of changing how we do things because of our technology, we can change our technology to better fit our changing needs. This way, we can make sure that our technology is helping us do what we need,instead of getting in the way.
 
 ## Implications
+
+We change because its sensible, not because we have to. When we change, its to make things better, not worse. We should consider everyone, and other changes and projects when we do so.
 
 1. Before making any changes to the way we do things, we will look at how it will affect related things we do.
 2. We will make sure that everyone knows how to make changes in a way that follows these rules.
