@@ -1,7 +1,6 @@
 ---
 title: Architecture Repository
 description: A home for Architecture documents, principles and patterns
-image: Abstract-Header-Image
 ---
 
 # Architecture Repository
