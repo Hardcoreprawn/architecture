@@ -20,7 +20,7 @@ jobs:
   steps:
   - checkout: self
     submodules: true
-
+  - bash: dotnet run
 ###### Build to Azure Static App
   - task: AzureStaticWebApp@0
     inputs:
@@ -33,4 +33,3 @@ jobs:
       output_location: "" # Built app content directory - optional
       skip_app_build: true
 ###### End of Repository/Build Configurations ######
-
