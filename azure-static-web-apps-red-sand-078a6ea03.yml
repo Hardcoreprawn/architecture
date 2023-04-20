@@ -17,17 +17,10 @@ jobs:
     vmImage: ubuntu-latest
   variables:
   - group: Azure-Static-Web-Apps-red-sand-078a6ea03-variable-group
-    buildConfiguration: 'Release'
   steps:
   - checkout: self
     submodules: true
-
-###### Install DotNet
-  - task: DotNetCoreInstaller@0
-    displayName: 'Installing .NET SDK...'
-    inputs: 
-      version: '1.0.4'
-
+  - bash: dotnet run
 ###### Build to Azure Static App
   - task: AzureStaticWebApp@0
     inputs:
@@ -40,4 +33,3 @@ jobs:
       output_location: "" # Built app content directory - optional
       skip_app_build: true
 ###### End of Repository/Build Configurations ######
-
