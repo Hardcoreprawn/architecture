@@ -60,10 +60,6 @@
   "frontMatter.content.publicFolder": "",
   "frontMatter.content.pageFolders": [
     {
-      "title": "NFRs",
-      "path": "[[workspace]]/input/architecture/non-functional-requirements"
-    },
-    {
       "title": "Patterns and Anti-Patterns",
       "path": "[[workspace]]/input/architecture/patterns-and-antipatterns"
     },
