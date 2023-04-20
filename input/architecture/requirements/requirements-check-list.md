@@ -8,7 +8,7 @@ tags:
 ---
 # Checklist: is the requirement complete?
 
-This document shoul;d help you write good requirements and make sure they are read for development and implementation. Most organisations have poorly documented guidance about creating requirements and what makes then easy to implement. Its also hard to know what everyones assumptions of a good requirement are. This document aims to help explain what a good requirement.
+This document should help you write good requirements and make sure they are read for development and implementation. Most organisations have poorly documented guidance about creating requirements and what makes then easy to implement. Its also hard to know what everyones assumptions of a good requirement are. This document aims to help explain what a good requirement.
 
 ## Defining 'Good Requirement'
 
@@ -36,9 +36,9 @@ Different types of requirement have different needs and may create additional re
 
 ## Clear, simple language.
 
-Don;t write completely, chaoticly complex prose. Keep it simple and informative. Not too brief, Also bad.
+Don't write completely, chaoticly complex prose. Keep it simple and informative. Not too brief, Also bad.
 
-The trick is to explain the change/adaption, but not the need or any complex outcome. Just immediate is fine. You may have some great ideas about what it might do. Thats fine. It doesn't need to be in the requirement, just enough to make sure someone builds it to the right standard.
+The trick is to explain the change/adaption, but not the need or any complex outcome. Just immediate out comes are fine. You may have some great ideas about what it might do. Thats fine. It doesn't need to be in the requirement, just enough to make sure someone builds it to the right standard.
 
 ## Show, don't tell.
 
