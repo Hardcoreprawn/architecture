@@ -22,12 +22,6 @@ jobs:
   - checkout: self
     submodules: true
 
-###### Install DotNet
-  - task: DotNetCoreInstaller@0
-    displayName: 'Installing .NET SDK...'
-    inputs: 
-      version: '1.0.4'
-
 ###### Build to Azure Static App
   - task: AzureStaticWebApp@0
     inputs:
