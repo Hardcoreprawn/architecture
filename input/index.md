@@ -1,7 +1,6 @@
 ---
 title: Architecture Repository
 description: A home for Architecture documents, principles and patterns
-header-image: media/images/header01.png
 ---
 
 # Architecture Repository
@@ -11,9 +10,10 @@ The main thing architects do, is create documents. These outline all manner of t
 * Why we build things in particular ways
 * How we build things
 * Reasons for building things
-* Things we do not want to build or reasons not to do it LIKE THAT.
+* Things we do not want to build
+* Reasons not to do it LIKE THAT.
 
-This site covers some of the patterns and anti-patterns, Principles and Requirements, but also how to write them, what they should look linke or contain and any guidance we've managed to write along the way.
+This site covers some of the patterns and anti-patterns, principles and requirements that we want you to use, to help write software.
 
 * [Architectural Principles](xref:Architectural-Principles)
 
