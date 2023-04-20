@@ -8,7 +8,10 @@ theme/
 ### DotnetCore ###
 # .NET Core build folders
 bin/
+cache/
 obj/
+output/
+temp/
 
 # Common node modules locations
 /node_modules
