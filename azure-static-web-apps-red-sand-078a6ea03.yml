@@ -17,7 +17,6 @@ jobs:
     vmImage: ubuntu-latest
   variables:
   - group: Azure-Static-Web-Apps-red-sand-078a6ea03-variable-group
-    buildConfiguration: 'Release'
   steps:
   - checkout: self
     submodules: true
