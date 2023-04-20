@@ -8,6 +8,6 @@ image: /output/media/images/header01.png
 
 * [Architectural Principles](xref:Architectural-Principles)
 
-* [Non-Functional Requirements](xref:Non-Functional-Requirements)
+* [Requirements](xref:Requirements)
 
 * [Patterns and Anti-Patterns](xref:Patterns-And-Anti-Patterns)
