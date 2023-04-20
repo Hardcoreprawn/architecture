@@ -7,5 +7,6 @@ using Statiq.Web;
 await Bootstrapper
   .Factory
   .CreateDefault(args)
+  .AddThemeFromUri(new Uri("https://github.com/statiqdev/CleanBlog/archive/ceb5055f3d0f7a330708494ed21eb469cde62ce2.zip"))
   .AddWeb()
   .RunAsync();
