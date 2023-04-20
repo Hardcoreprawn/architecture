@@ -1,4 +1,4 @@
-name: Azure Static Web Apps CI/CD
+name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:r)
 
 pr:
   branches:
@@ -20,7 +20,10 @@ jobs:
   steps:
   - checkout: self
     submodules: true
+
+###### Builds the dotnet app (Statiq)
   - bash: dotnet run
+
 ###### Build to Azure Static App
   - task: AzureStaticWebApp@0
     inputs:
