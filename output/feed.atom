@@ -4,6 +4,192 @@
 	<title />
 	<link rel="self" href="/" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-04-21T16:47:33Z</updated>
+	<updated>2023-04-21T18:59:04Z</updated>
 	<logo>/media/images/header01.png</logo>
+	<entry>
+		<id>/posts/2023-04-21-least-priviledge</id>
+		<title />
+		<link href="/posts/2023-04-21-least-priviledge" />
+		<link rel="enclosure" type="image" href="/media/images/header01.png" />
+		<updated>2023-04-21T17:19:42Z</updated>
+	</entry>
+	<entry>
+		<id>/posts/2023-04-21-be-suspicious</id>
+		<title>Be Suspicious</title>
+		<link href="/posts/2023-04-21-be-suspicious" />
+		<link rel="enclosure" type="image" href="/media/images/header01.png" />
+		<updated>2023-04-21T17:19:16Z</updated>
+		<content>&lt;p&gt;Check and verify input. Look for tainted input.&lt;/p&gt;
+&lt;p&gt;With a modern application, there is no network boundary. Its down to identities. So check people are wo they say they are and do what you expect them to.&lt;/p&gt;
+</content>
+		<summary>Don't assume people will do the right things. Whethe rby malice or ignorance, users will try to break your app.</summary>
+	</entry>
+	<entry>
+		<id>/posts/2023-04-21-shift-security-left</id>
+		<title>Shift Security left</title>
+		<link href="/posts/2023-04-21-shift-security-left" />
+		<link rel="enclosure" type="image" href="/media/images/header01.png" />
+		<updated>2023-04-21T17:16:24Z</updated>
+		<content>&lt;p&gt;Start thinking of security as soon as possible in the deisgn process. Its practically impossible to effectively retrofit security effectively. Adding security to an application is an attitude to everything you do from concpet to production.&lt;/p&gt;
+&lt;p&gt;This doesn't need to be onerous, but it is important to start with security in mind.&lt;/p&gt;
+</content>
+		<summary>Add security to th earliest steps of your SDLC. The sooner you start thinking about it, the easier it is to incorporate.</summary>
+	</entry>
+	<entry>
+		<id>/posts/composability</id>
+		<title>Composability</title>
+		<link href="/posts/composability" />
+		<link rel="enclosure" type="image" href="/media/images/header01.png" />
+		<updated>2023-04-21T13:42:26Z</updated>
+		<content>&lt;p&gt;Composability is a non-functional requirement which allows us to integrate several services together. The high level intent is that a service should be self-contained and stateless, so the system can be trusted, but also reused and integrated as needs evolve.&lt;/p&gt;
+</content>
+		<summary>Services that can be combined and reused, composed into different layouts and new applications, provide business agility.</summary>
+	</entry>
+	<entry>
+		<id>/posts/compatibility</id>
+		<title>Compatability</title>
+		<link href="/posts/compatibility" />
+		<link rel="enclosure" type="image" href="/media/images/header01.png" />
+		<updated>2023-04-21T13:42:00Z</updated>
+		<content>&lt;ul&gt;
+&lt;li&gt;Drives the target deployment system. Too tight and it affects supply and scale. Too restrictive and it becomes harder to grow and support.&lt;/li&gt;
+&lt;li&gt;Have a commodity normal environment, which is easy to reproduce.&lt;/li&gt;
+&lt;li&gt;Use a readily available architecture, the more commodity the better.&lt;/li&gt;
+&lt;li&gt;Host on a 'normal' image. Slowly evolve so everything uses that image.&lt;/li&gt;
+&lt;li&gt;Be somewhat specific, but not into the versions. Specify minimum versions.&lt;/li&gt;
+&lt;li&gt;Stick to using APIs to communicate between services to minimise compatibility issues.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;We use Ubuntu (LTS) with dotnet &amp;gt;3.0, on an amd64 architecture.&lt;/li&gt;
+&lt;li&gt;Exceptions are fine when necessary.&lt;/li&gt;
+&lt;li&gt;Example: Compatibility requirements - IBM Documentation&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+		<summary>Ensuring whatever we build has broad compatibility means we build for common target system architecture.</summary>
+	</entry>
+	<entry>
+		<id>/posts/service-orientation</id>
+		<title>Service Orientation</title>
+		<link href="/posts/service-orientation" />
+		<link rel="enclosure" type="image" href="/media/images/header01.png" />
+		<updated>2023-04-21T13:34:25Z</updated>
+		<content>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;The best way to find yourself, is to lose yourself in the service of others.&amp;quot; - Mahatma Gandhi.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
+&lt;p&gt;The architecture is designed to mimic real-world business activities that are part of the company’s processes. It’s like a blueprint for how the company should operate.&lt;/p&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Service orientation is a way of designing computer software that focuses on providing services that can be accessed by different users and applications. Service orientation aims to make software more flexible, reusable and adaptable to changing needs.&lt;/p&gt;
+&lt;p&gt;Service orientation means that the company is designed to be flexible and adaptable to change. It’s like a chameleon that can change its colours to blend in with its environment.&lt;/p&gt;
+&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
+&lt;p&gt;Our systems and architecture follow our business. We build a sensible business, with sensible systems. We don't slavishly and recklessly mutilate systems to fit the business, but we do not bend the the business to fit the systems.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We use business descriptions to help understand how to implement services.&lt;/li&gt;
+&lt;li&gt;Open standards  make sure that our services can work together.&lt;/li&gt;
+&lt;li&gt;We need to describe our services in a way that makes sense for their specific environment&lt;/li&gt;
+&lt;li&gt;We have strong rules in place for how to represent and implement our services.&lt;/li&gt;
+&lt;li&gt;There are standard tests to determine if our services are good or not.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Architecture is a blueprint for how the companty should operate.</summary>
+	</entry>
+	<entry>
+		<id>/posts/responsive-change-management</id>
+		<title>Responsive Change Management</title>
+		<link href="/posts/responsive-change-management" />
+		<link rel="enclosure" type="image" href="/media/images/header01.png" />
+		<updated>2023-04-21T13:34:21Z</updated>
+		<content>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;“The early bird gets the worm.” — William Camden, author &amp;amp; antiquarian, 1551-1623&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
+&lt;p&gt;When we change how we use our computers and software to store and share information, we need to make sure that these changes are done quickly and without delay.&lt;/p&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;If people are to be expected to work with technology, that technology must be easy to work with.&lt;/p&gt;
+&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
+&lt;p&gt;We need to make changes quickly. If we wait too long, we annoy or worse, alienate people. So when you decide to change, do so quickly. And Plan changes. Communicate them effectively.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When we want to make changes to how we do things, we should have a plan in place that doesn’t slow things down.&lt;/li&gt;
+&lt;li&gt;If we want to make a change, we should talk to someone who knows about the company’s business so they can help make it happen.&lt;/li&gt;
+&lt;li&gt;If changes are made, the people making the change should make sure everything still works together.&lt;/li&gt;
+&lt;li&gt;Sometimes making these changes might cost more money or take more time than the company wants to spend.&lt;/li&gt;
+&lt;li&gt;Sometimes these changes might not work well with other things the company is doing.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>When we change how we use our computers and software to store and share information, we need to make sure that these changes are done quickly and without delay.</summary>
+	</entry>
+	<entry>
+		<id>/posts/requirements-based-change</id>
+		<title>Requirements-Based Change</title>
+		<link href="/posts/requirements-based-change" />
+		<link rel="enclosure" type="image" href="/media/images/header01.png" />
+		<updated>2023-04-21T13:34:18Z</updated>
+		<content>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;I’m always willing to accept change, just as long as it isn’t change for the sake of change. If that change will result in a better way of doing things, then I’m all for it.&amp;quot; - James Van Fleet.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
+&lt;p&gt;We only make changes to technology to make our business better, and we do that together.&lt;/p&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;When we need to change how we do things, we should be able to do so without being held back by our technology. Instead of changing how we do things because of our technology, we can change our technology to better fit our changing needs. This way, we can make sure that our technology is helping us do what we need,instead of getting in the way.&lt;/p&gt;
+&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
+&lt;p&gt;We change because its sensible, not because we have to. When we change, its to make things better, not worse. We should consider everyone, and other changes and projects when we do so.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Before making any changes to the way we do things, we will look at how it will affect related things we do.&lt;/li&gt;
+&lt;li&gt;We will make sure that everyone knows how to make changes in a way that follows these rules.&lt;/li&gt;
+&lt;li&gt;Sometimes these rules might get in the way of making changes quickly. Thats ok and we can raise this as a blocker if need be.&lt;/li&gt;
+&lt;li&gt;Responsive change is also a principle. We need to respond quickly, we should also make sure that any response is based on a real need.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+		<summary>We only make changes to technology to make our business better, and we do that together.</summary>
+	</entry>
+	<entry>
+		<id>/posts/open-data</id>
+		<title>Open Data</title>
+		<link href="/posts/open-data" />
+		<link rel="enclosure" type="image" href="/media/images/header01.png" />
+		<updated>2023-04-21T13:34:14Z</updated>
+		<content>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;Whoever is careless with the truth in small matters cannot be trusted with important matters.&amp;quot; - Albert Einstein&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
+&lt;p&gt;Data sharing is a key component of our business strategy. We believe that sharing data within our company and with external partners can help us to achieve our goals and improve our services.&lt;/p&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;We are committed to making our data open and accessible to our employees and partners, while also protecting the privacy and security of our customers and stakeholders. We will work to ensure that our data is secure, accurate, up-to-date, and relevant, and that it is shared in a way that is transparent, ethical, and responsible.&lt;/p&gt;
+&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
+&lt;p&gt;This principle is mostly about ensuring that people who are allowed to get data, can get it, when they want it. We can control who that is, and we have to make sure we handle data in regard to the law. This isn't creating a free for all. Itys making sure we have data in useful formats, so we can make decisions with it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;By making data open and accessible, the company can increase transparency and accountability, both internally and externally.&lt;/li&gt;
+&lt;li&gt;Sharing data within the company and with external partners can help to improve collaboration and innovation, leading to better products and services.&lt;/li&gt;
+&lt;li&gt;Access to more data can help employees and partners make better decisions, based on more accurate and up-to-date information.&lt;/li&gt;
+&lt;li&gt;By sharing data, the company can avoid duplication of effort and reduce costs, leading to greater efficiency.&lt;/li&gt;
+&lt;li&gt;By being open and transparent with data, the company can improve its reputation and build trust with customers and stakeholders.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="add-additional-detail-examples-or-specific-context"&gt;Add additional detail, examples or specific context.&lt;/h3&gt;
+&lt;hr /&gt;
+</content>
+		<summary>Data sharing is critical to our strategy. Sharing data within our company, and with external partners helps us achieve our goals and improve our services.</summary>
+	</entry>
+	<entry>
+		<id>/posts/interoperability</id>
+		<title>Interoperability</title>
+		<link href="/posts/interoperability" />
+		<link rel="enclosure" type="image" href="/media/images/header01.png" />
+		<updated>2023-04-21T13:34:07Z</updated>
+		<content>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;Alone we can do so little; together we can do so much.&amp;quot; - Helen Keller&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
+&lt;p&gt;Imagine if every computer had different software and hardware that didn’t work with other computers. It would be very hard to share information or do things together. That’s why we have standards to make sure that our software and hardware can work together.&lt;/p&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Standards help us in many ways. They make sure that everything works together smoothly so that we can manage our systems better and be happy with what we are doing. They also help us save money by making sure that we don’t have to buy new things all the time because everything works together well.&lt;/p&gt;
+&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
+&lt;p&gt;We want to use an open, standarduised and well trodden path. Most of the problems we solve can use existing technologies and we need to be able to work with new vendors and with unknown new systems, services and software. So open standards help, as they help us do that.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sometimes, people might want to do something different. But if we do that, it might make it harder to use or integrate. So, you have to have a really good reason.&lt;/li&gt;
+&lt;li&gt;To make sure that everyone/everything is following the same rules and playing together nicely, we need to have a way of checking that everyone is doing what they’re supposed to be doing. We also need to make sure that we keep checking the rules every once in a while to make sure that they still work and are fair for everyone.&lt;/li&gt;
+&lt;li&gt;Before we can start playing the game, we need to know what we’re playing with. So, we need to find out what things we already have and how they work. This way, we can make sure that everything works together nicely.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Imagine if every computer had different software and hardware that didn’t work with other computers. That would be rubbish...</summary>
+	</entry>
 </feed>

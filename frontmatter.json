@@ -59,9 +59,15 @@
   "frontMatter.framework.id": "other",
   "frontMatter.content.publicFolder": "",
   "frontMatter.content.pageFolders": [
+  
     {
-      "title": "Patterns and Anti-Patterns",
-      "path": "[[workspace]]/input/architecture/patterns-and-antipatterns"
+      "path": "[[workspace]]/input/posts"
+    }
+    {
+      "path": "[[workspace]]/input/posts/architecture"
+    }
+    {
+      "path": "[[workspace]]/input/posts/architecture/patterns-and-antipatterns"
     }
   ],
   "frontMatter.taxonomy.tags": [
@@ -69,7 +75,10 @@
     "Architectural Principles",
     "Architecture",
     "Business Principles",
+    "Data",
     "Data Principles",
+    "NFRs",
+    "Non-Functional Requirements",
     "Patterns",
     "Requirements",
     "Technical Principles",
