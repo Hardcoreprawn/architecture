@@ -60,13 +60,20 @@
   "frontMatter.content.publicFolder": "",
   "frontMatter.content.pageFolders": [
     {
-      "path": "[[workspace]]/input/posts"
+      "path": "[[workspace]]/input/posts",
+      "title": "posts"
     },
     {
-      "path": "[[workspace]]/input/posts/architecture"
+      "path": "[[workspace]]/input/posts/architecture",
+      "title": "architecture"
     },
     {
-      "path": "[[workspace]]/input/posts/architecture/patterns-and-antipatterns"
+      "path": "[[workspace]]/input/posts/architecture/patterns-and-antipatterns",
+      "title": "patterns-and-antipatterns"
+    },
+    {
+      "title": "microservices",
+      "path": "[[workspace]]/input/posts/architecture/patterns-and-antipatterns/microservices"
     }
   ],
   "frontMatter.taxonomy.tags": [
