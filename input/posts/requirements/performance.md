@@ -5,6 +5,7 @@ tags:
   - Non-Functional Requirements
   - Requirements
   - NFRs
+draft: true
 ---
 
 Applications need to perform within the expectations and requirements of a user. Most users will give up on a website if its even a few seconds delayed. On the other hand a responsive site encourages engagement.

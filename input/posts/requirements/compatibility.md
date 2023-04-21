@@ -7,6 +7,7 @@ tags:
   - Non-Functional Requirements
   - Requirements
   - NFRs
+draft: true
 ---
 * Drives the target deployment system. Too tight and it affects supply and scale. Too restrictive and it becomes harder to grow and support.
 * Have a commodity normal environment, which is easy to reproduce.

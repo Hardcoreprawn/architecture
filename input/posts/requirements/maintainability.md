@@ -1,3 +1,6 @@
+---
+draft: true
+---
 	• Maintenance costs are critical. A service which costs too much prevents reinvestment and adjustment.
 	• Stuff will go wrong. Make sure it's easy to fix and look after. This is an area where you can outsource some of it (Cloud services can be good here)
 
