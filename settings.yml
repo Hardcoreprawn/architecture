@@ -1,5 +1,14 @@
-Host:  "red-sand-078a6ea03.3.azurestaticapps.net"
-LinksUseHttps: "true"
-LinkRoot: ""
-LinkLowerCase: "true"
-LinkHideExtensions: "false"
+# Hosting Settings
+MinimumStatiqWebVersion-CleanBlog: "1.0.0-beta.3"
+Host: # Host Name
+LinksUseHttps: true # Do we use HTTPS
+
+# Branding
+SiteTitle: Architecture Repository
+SiteDescriptions: A collection of articles about architecture.
+Copyright: => $"Copyright © {DateTime.Now.Year}"
+Layout: /_layout.cshtml
+
+# Post Settings
+PostSources: /architecture/architectural-principles/
+# IsPost: => Outputs.FilterSources(Context.GetString("PostSources")).ContainsById(Document)
