@@ -7,7 +7,6 @@ tags:
 description: We only make changes to technology to make our business better, and we do that together.
 title: Requirements-Based Change
 ---
-# Requirements-Based Change
 
 ![An abstract header in the style of Van Gogh](/media/images/header01.png)
 

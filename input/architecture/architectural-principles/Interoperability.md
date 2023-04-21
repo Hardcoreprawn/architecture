@@ -7,7 +7,6 @@ tags:
   - Technical Principles
 description: Imagine if every computer had different software and hardware that didn’t work with other computers. That would be rubbish...
 ---
-# Interoperability
 
 ![An abstract header in the style of Van Gogh](/media/images/header01.png)
 

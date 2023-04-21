@@ -4,7 +4,6 @@ description: Enterprise Architecture principles guide technology choices that al
 ArchiveTitle: Architectural Principles
 slug: architectural-principles
 ---
-# Architectural Principles
   
 ![An abstract header in the style of Van Gogh](/media/images/header01.png)
 

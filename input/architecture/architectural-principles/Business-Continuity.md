@@ -1,13 +1,12 @@
 ---
 draft: false
 title: Business Continuity
-description: Business keeps going even when systems breaks down.
+description: Business keeps going even when systems break down.
 tags:
   - Architectural Principles
   - Architecture
   - Business Principles
 ---
-# Business Continuity
 
 ![An abstract header in the style of Van Gogh](/media/images/header01.png)
 
@@ -15,7 +14,7 @@ tags:
 
 ## Statement
 
-Business keeps going even when systems breaks down.
+Business keeps going even when systems break down.
 
 ## Rationale
 
@@ -23,7 +22,7 @@ We need to make sure our systems work well because we use them a lot. We must th
 
 ## Implications
 
-This principle ensures that we focus on ensuring our business is adequately resilient and prepared. It encourages us to look for tangible risks and effective mitigations, which are appropriate to the value of the system. It also wants us to focus on ensuring that our applications fit our intentions, especially in regards to where we work from and how easy it is for our people to adapt to changes.
+This principle ensures that we focus on ensuring our business is adequately resilient and prepared. It encourages us to look for tangible risks and effective mitigations, which are appropriate to the value of the system. It also wants us to focus on ensuring that our applications fit our intentions, especially regarding where we work and how easy it is for our people to adapt to changes.
 
 * Data and Applications are available to our staff when they work away from the office.
 * If you use shared applications, you need to know (and control) the risks of losing your business data and business functions.

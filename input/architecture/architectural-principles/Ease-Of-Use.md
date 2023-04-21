@@ -7,7 +7,6 @@ tags:
 description: Applications are easy to use. The underlying technology is transparent to users, so they can concentrate on tasks at hand.
 title: Ease-of-Use
 ---
-# Ease-of-Use
 
 ![An abstract header in the style of Van Gogh](/media/images/header01.png)
 

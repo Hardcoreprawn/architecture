@@ -4,10 +4,9 @@ tags:
   - Architectural Principles
   - Architecture
   - Data Principles
-title: Common Vocabulary
+title: Common Vocabulary.
 description: Everyone in the company agrees on what data means, and they can easily find and understand it.
 ---
-# Common Vocabulary and Data Definitions
 
 ![An abstract header in the style of Van Gogh](/media/images/header01.png)
 
@@ -31,10 +30,10 @@ This principle aims to help us keep things deliberately simple and to make sure 
 
 3. When we need to make up a new word or phrase to describe something, we have to check with other people in the company to make sure that everyone agrees on what it means. This way, everyone can understand what the new word or phrase means.
 
-4. We will nominate someone to provide this co-ordination.
+4. We will nominate someone to provide this coordination.
 
 5. It is important to have a common understanding of data across an organization instead of having different definitions of data in different places.
 
-6. Data initiatives need to be co-ordinated, with centralised management.
+6. Data initiatives need to be coordinated, with centralised management.
 
 7. Someone, within each part of the organisation, has to be accountable for data.

@@ -6,7 +6,6 @@ tags:
   - Architecture
   - Requirements
 ---
-# Checklist: is the requirement complete?
 
 This document should help you write good requirements and make sure they are read for development and implementation. Most organisations have poorly documented guidance about creating requirements and what makes then easy to implement. Its also hard to know what everyones assumptions of a good requirement are. This document aims to help explain what a good requirement.
 

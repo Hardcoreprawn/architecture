@@ -7,7 +7,6 @@ tags:
 title: Control Technical Diversity
 description: We try to use a limited number of technologies to reduce the cost of maintaining expertise in and connectivity between multiple systems.
 ---
-# Control Technical Diversity
 
 ![An abstract header in the style of Van Gogh](/media/images/header01.png)
 

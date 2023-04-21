@@ -2,7 +2,6 @@
 draft: true
 title: Intellectual Property
 ---
-# Intellectual Property
 
 ![An abstract header in the style of Van Gogh](/media/images/header01.png)
 

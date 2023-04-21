@@ -3,11 +3,10 @@ title: Architecture Repository
 description: A home for Architecture documents, principles and patterns
 ---
 
-# Architecture Repository
+The main thing architects do is create documents. These outline all manner of things which explain:
 
-The main thing architects do, is create documents. These outline all manner of things which explain:
 * Things we want to build
-* Why we build things in particular ways
+* Why do we build things in particular ways
 * How we build things
 * Reasons for building things
 * Things we do not want to build
