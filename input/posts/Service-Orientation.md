@@ -8,8 +8,6 @@ tags:
   - Business Principles
 ---
 
-![An abstract header in the style of Van Gogh](/media/images/header01.png)
-
 > *"The best way to find yourself, is to lose yourself in the service of others." - Mahatma Gandhi.*
 
 ## Statement

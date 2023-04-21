@@ -8,8 +8,6 @@ description: Applications are easy to use. The underlying technology is transpar
 title: Ease-of-Use
 ---
 
-![An abstract header in the style of Van Gogh](/media/images/header01.png)
-
 > *"Design is not just what it looks like and feels like. Design is how it works." - Steve Jobs.*
 
 ## Statement

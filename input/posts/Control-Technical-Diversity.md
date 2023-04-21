@@ -8,8 +8,6 @@ title: Control Technical Diversity
 description: We try to use a limited number of technologies to reduce the cost of maintaining expertise in and connectivity between multiple systems.
 ---
 
-![An abstract header in the style of Van Gogh](/media/images/header01.png)
-
 > *“The more complex the system, the greater the room for error.” — George Soros*
 
 ## Statement

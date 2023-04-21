@@ -62,14 +62,6 @@
     {
       "title": "Patterns and Anti-Patterns",
       "path": "[[workspace]]/input/architecture/patterns-and-antipatterns"
-    },
-    {
-      "title": "Architectural Principles",
-      "path": "[[workspace]]/input/architecture/architectural-principles"
-    }
-    {
-      "title": "Requirements",
-      "path": "[[workspace]]/input/architecture/requirements"
     }
   ],
   "frontMatter.taxonomy.tags": [

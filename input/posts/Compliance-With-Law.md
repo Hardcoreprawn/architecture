@@ -8,8 +8,6 @@ tags:
   - Business Principles
 ---
 
-![An abstract header in the style of Van Gogh](/media/images/header01.png)
-
 > *"Wherever law ends, Tyranny begins. - John Locke, 1972"*
 
 ## Statement

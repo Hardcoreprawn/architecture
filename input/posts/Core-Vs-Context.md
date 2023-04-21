@@ -8,8 +8,6 @@ tags:
   - Business Principles
 ---
 
-![An abstract header in the style of Van Gogh](/media/images/header01.png)
-
 > “Make room for the real important stuff.” —Tigger”
 
 ## Statement

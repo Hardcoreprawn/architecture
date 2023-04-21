@@ -8,8 +8,6 @@ tags:
   - Data Principles
 ---
 
-![An abstract header in the style of Van Gogh](/media/images/header01.png)
-
 > *"Whoever is careless with the truth in small matters cannot be trusted with important matters." - Albert Einstein*
 
 ## Statement

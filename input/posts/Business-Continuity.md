@@ -8,8 +8,6 @@ tags:
   - Business Principles
 ---
 
-![An abstract header in the style of Van Gogh](/media/images/header01.png)
-
 > *"I can be changed by what happens to me, but I refuse to be reduced by it." - Maya Angelou.*
 
 ## Statement

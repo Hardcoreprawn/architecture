@@ -8,8 +8,6 @@ title: Common Vocabulary
 description: Everyone in the company agrees on what data means, and they can easily find and understand it.
 ---
 
-![An abstract header in the style of Van Gogh](/media/images/header01.png)
-
  > *"Don’t say ‘infinitely’ when you mean ‘very’; otherwise you’ll have no word left when you want to talk about something really infinite." - George Orwell*
 
 ## Statement

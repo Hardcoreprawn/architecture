@@ -8,8 +8,6 @@ tags:
 description: Imagine if every computer had different software and hardware that didn’t work with other computers. That would be rubbish...
 ---
 
-![An abstract header in the style of Van Gogh](/media/images/header01.png)
-
 > *"Alone we can do so little; together we can do so much." - Helen Keller*
 
 ## Statement
