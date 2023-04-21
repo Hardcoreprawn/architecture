@@ -2,6 +2,11 @@
 title: Compatability
 description: Ensuring whatever we build has broad compatibility means we build for common target system architecture.
 slug: compatability
+tags:
+  - Architecture
+  - Non-Functional Requirements
+  - Requirements
+  - NFRs
 ---
 * Drives the target deployment system. Too tight and it affects supply and scale. Too restrictive and it becomes harder to grow and support.
 * Have a commodity normal environment, which is easy to reproduce.

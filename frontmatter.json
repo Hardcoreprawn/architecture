@@ -65,14 +65,21 @@
     }
   ],
   "frontMatter.taxonomy.tags": [
-    "Architecture",
+    "Application Principles",
     "Architectural Principles",
+    "Architecture",
     "Business Principles",
     "Data Principles",
-    "Application Principles",
+    "Patterns",
+    "Requirements",
+    "Technical Principles",
     "Technology Principles"
   ],
-  "frontMatter.taxonomy.categories": [],
+  "frontMatter.taxonomy.categories": [
+    "Pattern",
+    "Principles",
+    "Requirements"
+  ],
   "frontMatter.content.snippets": {
     "Header Image": {
       "description": "An Abstract header Imagae",
