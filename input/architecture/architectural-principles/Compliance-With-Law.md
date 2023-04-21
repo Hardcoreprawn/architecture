@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Compliance with Law.
+title: Compliance with Law
 description: As we create and store data, we stick to the rules and regulations.
 tags:
   - Architectural Principles

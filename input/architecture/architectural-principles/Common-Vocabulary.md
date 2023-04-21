@@ -4,7 +4,7 @@ tags:
   - Architectural Principles
   - Architecture
   - Data Principles
-title: Common Vocabulary.
+title: Common Vocabulary
 description: Everyone in the company agrees on what data means, and they can easily find and understand it.
 ---
 
