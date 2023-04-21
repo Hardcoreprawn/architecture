@@ -1,14 +1,14 @@
+# Hosting Settings
 MinimumStatiqWebVersion-CleanBlog: "1.0.0-beta.3"
+Host: # Host Name
+LinksUseHttps: true # Do we use HTTPS
+
+# Branding
 SiteTitle: Architecture Repository
-Title: 
-PageTitle: |
-  =>
-  {
-    string siteTitle = Context.GetString("SiteTitle");
-    string title = GetString("Title");
-    return string.IsNullOrWhiteSpace(siteTitle) ? title : (string.IsNullOrWhiteSpace(title) ? siteTitle : $"{siteTitle} - {title}");
-  }
+SiteDescriptions: A collection of articles about architecture.
 Copyright: => $"Copyright © {DateTime.Now.Year}"
-PostSources: architecture/**/*.md
-IsPost: => Outputs.FilterSources(Context.GetString("PostSources")).ContainsById(Document)
 Layout: /_layout.cshtml
+
+# Post Settings
+PostSources: architecture/**/*.md
+# IsPost: => Outputs.FilterSources(Context.GetString("PostSources")).ContainsById(Document)
