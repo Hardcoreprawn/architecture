@@ -3,7 +3,6 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,linux,dotnetcore
 
 ### Statiq 'Build' Folders
-theme/
 
 ### DotnetCore ###
 # .NET Core build folders
