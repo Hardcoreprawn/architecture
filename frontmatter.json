@@ -68,12 +68,16 @@
       "title": "architecture"
     },
     {
-      "path": "[[workspace]]/input/posts/architecture/patterns-and-antipatterns",
+      "path": "[[workspace]]/input/posts/patterns-and-antipatterns",
       "title": "patterns-and-antipatterns"
     },
     {
       "title": "microservices",
-      "path": "[[workspace]]/input/posts/architecture/patterns-and-antipatterns/microservices"
+      "path": "[[workspace]]/input/posts/patterns-and-antipatterns/microservices"
+    }
+    {
+      "title": "requirements",
+      "path": "[[workspace]]/input/posts/requirements"
     }
   ],
   "frontMatter.taxonomy.tags": [
