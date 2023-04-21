@@ -10,5 +10,5 @@ Copyright: => $"Copyright © {DateTime.Now.Year}"
 Layout: /_layout.cshtml
 
 # Post Settings
-PostSources: architecture/**/*.md
+PostSources: /architecture/**/*.md
 # IsPost: => Outputs.FilterSources(Context.GetString("PostSources")).ContainsById(Document)
