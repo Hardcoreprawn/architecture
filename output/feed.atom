@@ -1,16 +1,139 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<id>https://red-sand-078a6ea03.3.azurestaticapps.net/</id>
+	<id>/</id>
 	<title />
-	<link rel="self" href="https://red-sand-078a6ea03.3.azurestaticapps.net/" />
+	<link rel="self" href="/" />
 	<rights>Copyright © 2023</rights>
-	<updated>2023-04-21T11:18:48Z</updated>
+	<updated>2023-04-21T11:34:59Z</updated>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/compliance-with-law.html</id>
+		<id>/posts/security</id>
+		<title>Security</title>
+		<link href="/posts/security" />
+		<updated>2023-04-21T10:59:59Z</updated>
+		<content>&lt;ul&gt;
+&lt;li&gt;Is there any confidential or financial data to be passed? Does the audience/user get the impression this is taken seriously?&lt;/li&gt;
+&lt;li&gt;Are we using the relevant browser guidelines to make sure everything 'looks' as secure as it should?&lt;/li&gt;
+&lt;li&gt;What is the customers expectation of adequate security? Does it need MFA? OTP?&lt;/li&gt;
+&lt;li&gt;Are we transparent about security and standards? Do we follow the relevant guidance? Is this clear and easy to see?&lt;/li&gt;
+&lt;li&gt;GDPR.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Typically, these are absolutes. They should apply to everything.
+a. Any PII should be encrypted from the client, and when stored.
+b. Access to any PII should require strong authentication.
+The site will use HTTPS all the time.&lt;/p&gt;
+</content>
+		<summary>Security is a critical concern of any organisation. The requirements will help you baseline security need and understand the risks in your app.</summary>
+	</entry>
+	<entry>
+		<id>/posts/usability</id>
+		<title>Usability</title>
+		<link href="/posts/usability" />
+		<updated>2023-04-21T10:53:54Z</updated>
+		<content>&lt;ul&gt;
+&lt;li&gt;Can the audience complete their job in a single visit?&lt;/li&gt;
+&lt;li&gt;How quickly can they complete their task?&lt;/li&gt;
+&lt;li&gt;Does the design require training? Is it intuitive and guided enough to be easy to complete on the first attempt?&lt;/li&gt;
+&lt;li&gt;How many errors does a typical user make? Are they clear and any remedial actions clear?&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Usability is the quality of being easy to use. Intuitive applicatiosn minimise learning curves and ease adoption.</summary>
+	</entry>
+	<entry>
+		<id>/posts/composability</id>
+		<title>Composability</title>
+		<link href="/posts/composability" />
+		<updated>2023-04-21T10:52:36Z</updated>
+		<content>&lt;p&gt;Composability is a non-functional requirement which allows us to integrate several services together. The high level intent is that a service should be self-contained and stateless, so the system can be trusted, but also reused and integrated as needs evolve.&lt;/p&gt;
+</content>
+		<summary>Services that can be combined and reused, composed into different layouts and new applications, provide business agility.</summary>
+	</entry>
+	<entry>
+		<id>/posts/compatibility</id>
+		<title>Compatability</title>
+		<link href="/posts/compatibility" />
+		<updated>2023-04-21T10:47:55Z</updated>
+		<content>&lt;ul&gt;
+&lt;li&gt;Drives the target deployment system. Too tight and it affects supply and scale. Too restrictive and it becomes harder to grow and support.&lt;/li&gt;
+&lt;li&gt;Have a commodity normal environment, which is easy to reproduce.&lt;/li&gt;
+&lt;li&gt;Use a readily available architecture, the more commodity the better.&lt;/li&gt;
+&lt;li&gt;Host on a 'normal' image. Slowly evolve so everything uses that image.&lt;/li&gt;
+&lt;li&gt;Be somewhat specific, but not into the versions. Specify minimum versions.&lt;/li&gt;
+&lt;li&gt;Stick to using APIs to communicate between services to minimise compatibility issues.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;We use Ubuntu (LTS) with dotnet &amp;gt;3.0, on an amd64 architecture.&lt;/li&gt;
+&lt;li&gt;Exceptions are fine when necessary.&lt;/li&gt;
+&lt;li&gt;Example: Compatibility requirements - IBM Documentation&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+		<summary>Ensuring whatever we build has broad compatibility means we build for common target system architecture.</summary>
+	</entry>
+	<entry>
+		<id>/posts/performance</id>
+		<title>Performance</title>
+		<link href="/posts/performance" />
+		<updated>2023-04-21T10:44:26Z</updated>
+		<content>&lt;pre&gt;&lt;code&gt;• It's important to understand the expected workload of your system and the expected growth. This needs to be a baseline, expected service for a given user.
+• Do expect it to be successful, but don’t build in excess fixed resource; that's just wasteful. Make sure performance and scalability are considered together.
+• Ignore third party delivery times. You need to either find a service which meets your Requirements or you need to use an adequate pattern to abstract this. You have minimal control of the service, so ensure you protect yourself form it.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Typically, we would look at the 95th percentile of results for these, so you don't have to be 100% perfect, but you should be 95% on target, with an aim to be 100%.
+a. A user login to the system should complete within 1 second.
+b. All pages should render 'on the glass' within 1 second.
+The system can support at least 25 concurrent page 'views' per second.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Typically, we would look at the 95th percentile of results for these, so you don't have to be 100% perfect, but you should be 95% on target, with an aim to be 100%.
+a. A user login to the system should complete within 1 second.
+b. All pages should render 'on the glass' within 1 second.
+The system can support at least 25 concurrent page 'views' per second.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>/posts/maintainability</id>
+		<title>Maintainability</title>
+		<link href="/posts/maintainability" />
+		<updated>2023-04-21T10:44:17Z</updated>
+		<content>&lt;pre&gt;&lt;code&gt;• Maintenance costs are critical. A service which costs too much prevents reinvestment and adjustment.
+• Stuff will go wrong. Make sure it's easy to fix and look after. This is an area where you can outsource some of it (Cloud services can be good here)
+
+	a. Minimise collateral damage when making changes.
+	b. Use loosely coupled patterns, to ensure asynchronous operations, so we can make changes during normal working hours.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is also a compromise between commodity and available skillsets.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;This is also a compromise between commodity and available skillsets.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>/posts/immutability</id>
+		<title>Immutability</title>
+		<link href="/posts/immutability" />
+		<updated>2023-04-21T10:44:06Z</updated>
+		<content>&lt;p&gt;Where possible, use immutable objects and data which can't be repudiated. Make sure we can trust our systems and our data.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Where possible, use immutable objects and data which can't be repudiated. Make sure we can trust our systems and our data.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>/posts/tracability</id>
+		<title>Tracability</title>
+		<link href="/posts/tracability" />
+		<updated>2023-04-21T10:44:00Z</updated>
+		<content>&lt;pre&gt;&lt;code&gt;• Access to applications is auditable. Logs are kept about who accesses data, what they do with it and when.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Log actions and output informative messages.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Log actions and output informative messages.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>/posts/scalability</id>
+		<title>Scalability</title>
+		<link href="/posts/scalability" />
+		<updated>2023-04-21T10:42:24Z</updated>
+	</entry>
+	<entry>
+		<id>/posts/compliance-with-law</id>
 		<title>Compliance with Law</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/compliance-with-law.html" />
+		<link href="/posts/compliance-with-law" />
 		<updated>2023-04-21T10:25:04Z</updated>
-		<content>&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" alt="An abstract header in the style of Van Gogh"&gt;&lt;/p&gt;
+		<content>&lt;p&gt;&lt;img src="/media/images/header01.png" alt="An abstract header in the style of Van Gogh"&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;"Wherever law ends, Tyranny begins. - John Locke, 1972"&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -27,64 +150,5 @@
 &lt;/ul&gt;
 </content>
 		<summary>As we create and store data, we stick to the rules and regulations.</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/common-vocabulary.html</id>
-		<title>Common Vocabulary</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/common-vocabulary.html" />
-		<updated>2023-04-21T10:25:00Z</updated>
-		<content>&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" alt="An abstract header in the style of Van Gogh"&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;"Don’t say ‘infinitely’ when you mean ‘very’; otherwise you’ll have no word left when you want to talk about something really infinite." - George Orwell&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;Everyone in the company agrees on what data means, and they can easily find and understand it.&lt;/p&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;We need to use the same words for the data we use to make apps. This will help us share data and talk better. It will also help us connect systems and move data between them.&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;This principle aims to help us keep things deliberately simple and to make sure we all use the same words to describe the same things. Not following this principle causes confusion and delay, and affects our work. Deliberately keeping things simple helps us all communicate effectively, without ego, and ensures we can be as productive as possible. It also helps us communicate with customers, people from outside our industry and people with other language backgrounds.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;The people who are supposed to take care of important information don’t always do a good job. We need to make sure they have enough help and resources so they can do their job better. This will help us make sure we have good information that we can trust.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;We need to create a list of words that everyone in the company will use in the same way. This will help everyone understand each other better and avoid confusion.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;When we need to make up a new word or phrase to describe something, we have to check with other people in the company to make sure that everyone agrees on what it means. This way, everyone can understand what the new word or phrase means.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;We will nominate someone to provide this coordination.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;It is important to have a common understanding of data across an organization instead of having different definitions of data in different places.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Data initiatives need to be coordinated, with centralised management.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Someone, within each part of the organisation, has to be accountable for data.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-		<summary>Everyone in the company agrees on what data means, and they can easily find and understand it.</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/business-continuity.html</id>
-		<title>Business Continuity</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/business-continuity.html" />
-		<updated>2023-04-21T10:17:41Z</updated>
-		<content>&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" alt="An abstract header in the style of Van Gogh"&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;"I can be changed by what happens to me, but I refuse to be reduced by it." - Maya Angelou.&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;Business keeps going even when systems break down.&lt;/p&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;We need to make sure our systems work well because we use them a lot. We must think about how to avoid problems as we design and use them. We should be able to keep doing our work no matter what happens. Things like broken machines, bad weather, or wrong data cannot stop us. We must have different ways to use information.&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;This principle ensures that we focus on ensuring our business is adequately resilient and prepared. It encourages us to look for tangible risks and effective mitigations, which are appropriate to the value of the system. It also wants us to focus on ensuring that our applications fit our intentions, especially regarding where we work and how easy it is for our people to adapt to changes.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Data and Applications are available to our staff when they work away from the office.&lt;/li&gt;
-&lt;li&gt;If you use shared applications, you need to know (and control) the risks of losing your business data and business functions.&lt;/li&gt;
-&lt;li&gt;You can control the risks by checking systems regularly, testing for problems, and/or having backup plans for important services.&lt;/li&gt;
-&lt;li&gt;You should think about how to recover, replace, and maintain your applications when you design them.&lt;/li&gt;
-&lt;li&gt;You should know how important your applications are for your business, and what kind of recovery plans you need for them.&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>Business keeps going even when systems break down.</summary>
 	</entry>
 </feed>
