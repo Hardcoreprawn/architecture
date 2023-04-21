@@ -18,6 +18,7 @@
   <meta name="msapplication-starturl" content="/" />
 
   <meta property="og:title" content="Architecture Repository - Strangler Pattern" />
+    <meta property="og:image" content="/media/images/header01.png" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="/architecture/patterns-and-antipatterns/strangler-pattern" />
   
@@ -60,19 +61,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/posts">Posts</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/tags">Tags</a>
-            </li>
 </ul>
     </div>
   </div>
 </nav>
 
   <!-- Page Header -->
-  <header class="masthead">
+  <header class="masthead" style="background-image: url(&quot;/media/images/header01.png&quot;)">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
@@ -91,8 +86,7 @@
   <div class="container"> 
     <div class="row">
       <div id="content" class="col-md-12">  
-        <h1 id="strangler-pattern">Strangler Pattern</h1>
-<p>This pattern is used to migrate functionality from an older app to a new one. Typically, this is done for a monolith to microservices model, but works for any app.</p>
+        <p>This pattern is used to migrate functionality from an older app to a new one. Typically, this is done for a monolith to microservices model, but works for any app.</p>
 <h2 id="pattern-overview">Pattern Overview</h2>
 <p>Replacing a large monolithic system is complex and risky. The strangler pattern builds new functionality using modern design patterns alongside the monolith. A proxy is used to integrate the user experience and make sure the aligned application makes sense to end users. Over time the monolith is slowly broken down.</p>
 <p><img src="https://th.bing.com/th/id/OIP.xkG2oQy-yOaQWbW6QlEwKgHaLH?pid=ImgDet&amp;rs=1" alt="The Stangler Fig Tree" /></p>
