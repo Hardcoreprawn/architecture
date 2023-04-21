@@ -59,13 +59,12 @@
   "frontMatter.framework.id": "other",
   "frontMatter.content.publicFolder": "",
   "frontMatter.content.pageFolders": [
-  
     {
       "path": "[[workspace]]/input/posts"
-    }
+    },
     {
       "path": "[[workspace]]/input/posts/architecture"
-    }
+    },
     {
       "path": "[[workspace]]/input/posts/architecture/patterns-and-antipatterns"
     }
@@ -77,10 +76,12 @@
     "Business Principles",
     "Data",
     "Data Principles",
+    "Microservices",
     "NFRs",
     "Non-Functional Requirements",
     "Patterns",
     "Requirements",
+    "Security Principles",
     "Technical Principles",
     "Technology Principles"
   ],
