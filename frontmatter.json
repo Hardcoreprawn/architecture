@@ -67,6 +67,10 @@
       "title": "Architectural Principles",
       "path": "[[workspace]]/input/architecture/architectural-principles"
     }
+    {
+      "title": "Requirements",
+      "path": "[[workspace]]/input/architecture/requirements"
+    }
   ],
   "frontMatter.taxonomy.tags": [
     "Architecture",
