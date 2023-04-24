@@ -1,6 +1,6 @@
 ---
 title: Compatability
-description: Ensuring whatever we build has broad compatibility means we build for common target system architecture.
+description: Build to a common target architecture.
 slug: compatibility
 tags:
   - Architecture
@@ -10,6 +10,8 @@ tags:
 draft: true
 date: 2023-04-24T07:42:26.830Z
 ---
+
+We build software that works on common platforms, which we know how to look after and can easily secure.
 
 > Read the [Requirements Check-List](xref:requirements-checklist) article for an introduction to requirements.
 
