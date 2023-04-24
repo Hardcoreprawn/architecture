@@ -1,16 +1,61 @@
 ---
-title: Security
-description: Security is a critical concern of any organisation. The requirements will help you baseline security need and understand the risks in your app.
-draft: true
+Title: Security
+Description: Security is a critical concern of any organisation. The requirements will help you baseline security needs and understand the risks in your app.
+Draft: false
+Tags:
+  - Architecture
+  - NFRs
+  - Non-Functional Requirements
+  - Requirements
+  - Security
+Published: 2023-04-24T15:13:24.797Z
 ---
 
-* Is there any confidential or financial data to be passed? Does the audience/user get the impression this is taken seriously?
-* Are we using the relevant browser guidelines to make sure everything 'looks' as secure as it should?
-* What is the customers expectation of adequate security? Does it need MFA? OTP?
-* Are we transparent about security and standards? Do we follow the relevant guidance? Is this clear and easy to see?
-* GDPR.
+Security controls are critical to developing applications.
 
-Typically, these are absolutes. They should apply to everything.
-    a. Any PII should be encrypted from the client, and when stored.
-    b. Access to any PII should require strong authentication.
-The site will use HTTPS all the time.
+> These security controls are written to meet the demands of the UK National [Cyber Security Centre (NCSC) Cyber Essentials Plus](https://www.ncsc.gov.uk/cyberessentials/overview) certification.
+
+## Requirement
+
+* The system must implement secure configuration for all devices and software used to process, store and transmit data.
+* The data system must use a firewall to protect all internet connections and prevent unauthorized access to or from private networks.
+* The data system must use anti-malware software to protect devices and software from malicious code and unauthorized software installation
+* The system must control access to data and services by using strong authentication, and a least privilege principle.
+* The system must protect data in transit by using encryption and secure protocols.
+
+## Acceptance Criteria
+
+* The data system passes a vulnerability scan and a penetration test, performed by an NCSC-assured certification body.
+* The data system complies with the Cyber Essentials technical controls and requirements.
+* The system can demonstrate the use of:
+    1. Secure configuration
+    2. Firewall
+    3. Anti-malware software
+    4. Access control
+    5. Data encryption
+* The system can handle common cyber attacks such as:
+    1. Phishing
+    2. Malware
+    3. Denial-of-service
+    4. Brute-force attacks
+  
+  Without compromising data security or availability.
+
+## Audience
+
+  1. UX and system designers, software engineers.
+  2. IT Professionals and operational engineers.
+  3. IT Security professionals.
+
+## Details
+
+* Owner: Andy Sheldon, Chief Technology Officer
+* Author: James Brewster, Enterprise Architect
+
+## Rationale
+
+Adopting this NFR will help:
+
+* Protect systems and users from cyber threats and data breaches that could cause financial, reputational or legal damages.
+* Demonstrate the organisation's commitment to cyber security and increase customer trust and confidence.
+* Meet requirements for bidding for certain UK Government contracts.

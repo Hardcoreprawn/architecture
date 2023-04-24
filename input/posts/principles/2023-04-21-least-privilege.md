@@ -6,7 +6,7 @@ Preview:
 Draft: true
 Tags:
   - Architectural Principles
-  - Security Principles
+  - Security
   - Architecture
 Categories: []
 ArchiveTitle: "Title: "

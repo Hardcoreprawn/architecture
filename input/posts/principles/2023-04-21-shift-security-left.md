@@ -5,7 +5,7 @@ Date: 2023-04-21T17:13:20.716Z
 Draft: true
 Tags:
   - Architectural Principles
-  - Security Principles
+  - Security
   - Architecture
 Categories:
   - Principles

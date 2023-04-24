@@ -89,20 +89,20 @@
     }
   ],
   "frontMatter.taxonomy.tags": [
-    "Application Principles",
+    "Application",
     "Architectural Principles",
     "Architecture",
-    "Business Principles",
+    "Business",
     "Data",
-    "Data Principles",
+    "Data",
     "Microservices",
     "NFRs",
     "Non-Functional Requirements",
     "Patterns",
     "Requirements",
-    "Security Principles",
-    "Technical Principles",
-    "Technology Principles"
+    "Security",
+    "Technical",
+    "Technology"
   ],
   "frontMatter.taxonomy.categories": [
     "Pattern",

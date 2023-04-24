@@ -7,7 +7,7 @@ Draft: true
 Tags:
   - Architectural Principles
   - Architecture
-  - Security Principles
+  - Security
 Categories: []
 ArchiveTitle: ""
 Type: default
