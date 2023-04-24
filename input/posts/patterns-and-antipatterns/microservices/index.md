@@ -21,7 +21,7 @@ security.
 
 ### Illustration
 
-![microservices pattern, learn.microsoft.com](./images/microservices-patterns.png)
+![microservices pattern, learn.microsoft.com](/images/microservices-patterns.png)
 *Model of a Monolith to Microservices migration, showing sub-patterns*
 
 This is a reference microservices pattern, showing the possible use of sub-patterns.
