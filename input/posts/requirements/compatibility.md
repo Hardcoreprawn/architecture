@@ -1,13 +1,14 @@
 ---
-title: Compatibility
-description: Build to a common target architecture.
-tags:
+Title: Compatibility
+Description: Build to a common target architecture.
+Tags:
   - Architecture
   - Non-Functional Requirements
   - Requirements
   - NFRs
-draft: true
-date: 2023-04-24T07:42:26.830Z
+Draft: true
+Date: 2023-04-24T07:42:26.830Z
+Type: default
 ---
 
 We build software that works on common platforms, which we know how to look after and can easily secure.

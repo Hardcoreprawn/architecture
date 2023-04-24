@@ -52,6 +52,31 @@
           "title": "Title",
           "name": "Title",
           "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "Description",
+          "type": "string"
+        },
+        {
+          "title": "Tags",
+          "name": "Tags",
+          "type": "tags"
+        },
+        {
+          "title": "Draft",
+          "name": "Draft",
+          "type": "datetime"
+        },
+        {
+          "title": "Date",
+          "name": "Date",
+          "type": "datetime"
+        },
+        {
+          "title": "Type",
+          "name": "Type",
+          "type": "string"
         }
       ]
     }
@@ -74,7 +99,7 @@
     {
       "title": "microservices",
       "path": "[[workspace]]/input/posts/patterns-and-antipatterns/microservices"
-    }
+    },
     {
       "title": "requirements",
       "path": "[[workspace]]/input/posts/requirements"
