@@ -13,3 +13,4 @@ Image: https://brenstermedia.blob.core.windows.net/media/media/images/header01.p
 # Post Settings
 PostSources: posts/**/*.md
 # IsPost: => Outputs.FilterSources(Context.GetString("PostSources")).ContainsById(Document)
+GenerateSearchIndex: true
