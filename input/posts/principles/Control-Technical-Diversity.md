@@ -27,10 +27,8 @@ Lets be clear, we like diversity. But technical diversity is different, as its m
 * If we need to use a new technology that is not in the rules, we have to make sure it works with the other technologies we are already using.
 * We also have to make sure it will make things better or easier and not harder.
 
+## Rules for technical choices
 
-## Rules for technical choices.
+This principle drives some NFRs, which are linked here:
 
-In the NFRs.
-
-* Rule 1
-* Rule 2
+* [Compatibility](xref:compatibility)
