@@ -8,7 +8,7 @@ SiteTitle: Architecture Repository
 SiteDescriptions: A collection of articles about architecture.
 Copyright: => $"Copyright © {DateTime.Now.Year}"
 Layout: /_layout.cshtml
-Image: ./media/images/header01.png
+Image: https://brenstermedia.blob.core.windows.net/media/media/images/header01.png
 
 # Post Settings
 PostSources: posts/**/*.md
