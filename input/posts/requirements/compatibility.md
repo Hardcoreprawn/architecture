@@ -1,7 +1,6 @@
 ---
 title: Compatability
 description: Build to a common target architecture.
-slug: compatibility
 tags:
   - Architecture
   - Non-Functional Requirements
@@ -9,6 +8,7 @@ tags:
   - NFRs
 draft: true
 date: 2023-04-24T07:42:26.830Z
+slug: compatability
 ---
 
 We build software that works on common platforms, which we know how to look after and can easily secure.
