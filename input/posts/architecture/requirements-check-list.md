@@ -45,6 +45,8 @@ The trick is to explain the change/adaption, but not the need or any complex out
 
 If you can include an example, a diagram or a model, do. A lot of people do better with something they can process alongside words. It can add a whole dimension to your text. But it does need to be unambiguous. If your requirement is open to interpretation, the output will be as well.
 
+On that note, [here is an example requirement](xref:compatibility)
+
 ## Consistent
 
 Good product development requirements are consistent. The development should know how to deal with them, what certain things mean and how that affects the way the software works. Consistency and repetition are helpful in this way. The less someone needs to think about it, the easier and faster it will be to develop.
