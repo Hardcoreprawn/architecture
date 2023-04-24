@@ -10,6 +10,4 @@ categories: []
 ArchiveTitle: Patterns and Anti-Patterns
 ---
 
-# Patterns and Anti-Patterns
-
 TODO: Whole thing needs writing

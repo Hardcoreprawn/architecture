@@ -6,7 +6,6 @@ tags:
   - Architecture
   - Requirements
 date: 2023-04-24T07:39:05.569Z
-slug: requirements-checklist
 ---
 
 This document should help you write good requirements and make sure they are ready for development and implementation. Most organizations have poorly documented guidance about creating requirements and what makes them easy to implement. It is also hard to know what everyone's assumptions of a good requirement are. This document aims to help explain what makes a good requirement.
