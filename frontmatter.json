@@ -8,48 +8,6 @@
       "fields": [
         {
           "title": "Title",
-          "name": "title",
-          "type": "string"
-        },
-        {
-          "title": "Description",
-          "name": "description",
-          "type": "string"
-        },
-        {
-          "title": "Publishing date",
-          "name": "date",
-          "type": "datetime",
-          "default": "{{now}}",
-          "isPublishDate": true
-        },
-        {
-          "title": "Content preview",
-          "name": "preview",
-          "type": "image"
-        },
-        {
-          "title": "Is in draft",
-          "name": "draft",
-          "type": "draft"
-        },
-        {
-          "title": "Tags",
-          "name": "tags",
-          "type": "tags"
-        },
-        {
-          "title": "Categories",
-          "name": "categories",
-          "type": "categories"
-        },
-        {
-          "title": "ArchiveTitle",
-          "name": "ArchiveTitle",
-          "type": "string"
-        },
-        {
-          "title": "Title",
           "name": "Title",
           "type": "string"
         },
@@ -59,14 +17,14 @@
           "type": "string"
         },
         {
-          "title": "Tags",
-          "name": "Tags",
-          "type": "tags"
-        },
-        {
           "title": "Draft",
           "name": "Draft",
           "type": "datetime"
+        },
+        {
+          "title": "Tags",
+          "name": "Tags",
+          "type": "tags"
         },
         {
           "title": "Date",
@@ -74,9 +32,34 @@
           "type": "datetime"
         },
         {
-          "title": "Type",
-          "name": "Type",
+          "title": "Published",
+          "name": "Published",
+          "type": "datetime"
+        },
+        {
+          "title": "type",
+          "name": "type",
           "type": "string"
+        },
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "datetime"
+        },
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
         }
       ]
     }
@@ -86,22 +69,22 @@
   "frontMatter.content.pageFolders": [
     {
       "path": "[[workspace]]/input/posts",
-      "title": "posts"
+      "title": "Posts"
     },
     {
       "path": "[[workspace]]/input/posts/architecture",
-      "title": "architecture"
+      "title": "Architecture"
     },
     {
       "path": "[[workspace]]/input/posts/patterns-and-antipatterns",
-      "title": "patterns-and-antipatterns"
+      "title": "Patterns-and-antipatterns"
     },
     {
-      "title": "microservices",
+      "title": "Microservices",
       "path": "[[workspace]]/input/posts/patterns-and-antipatterns/microservices"
     },
     {
-      "title": "requirements",
+      "title": "Requirements",
       "path": "[[workspace]]/input/posts/requirements"
     }
   ],

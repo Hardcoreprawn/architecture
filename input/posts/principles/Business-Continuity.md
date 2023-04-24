@@ -1,11 +1,12 @@
 ---
-draft: false
-title: Business Continuity
-description: Business keeps going even when systems break down.
-tags:
+Draft: false
+Title: Business Continuity
+Description: Business keeps going even when systems break down.
+Tags:
   - Architectural Principles
   - Architecture
   - Business Principles
+type: default
 ---
 
 > *"I can be changed by what happens to me, but I refuse to be reduced by it." - Maya Angelou.*

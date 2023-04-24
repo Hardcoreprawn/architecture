@@ -1,13 +1,13 @@
 ---
-title: Requirements checklist
-description: A checklist for checking a requirement is complete and ready to be used.
-draft: false
-tags:
+Title: Requirements checklist
+Description: A checklist for checking a requirement is complete and ready to be used.
+Draft: false
+Tags:
   - Architecture
   - Requirements
-date: 2023-04-24T07:39:05.569Z
-publishedDate: 2023-04-23
-image: https://brenstermedia.blob.core.windows.net/media/media/images/checklist-header.png
+Date: 2023-04-24T07:39:05.569Z
+Published: 2023-04-23
+Type: default
 ---
 
 This document should help you write good requirements and make sure they are ready for development and implementation. Most organizations have poorly documented guidance about creating requirements and what makes them easy to implement. It is also hard to know what everyone's assumptions of a good requirement are. This document aims to help explain what makes a good requirement.

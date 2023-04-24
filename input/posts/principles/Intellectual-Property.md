@@ -1,6 +1,6 @@
 ---
-draft: true
-title: Intellectual Property
+Draft: true
+Title: Intellectual Property
 ---
 
 > Quote Goes here

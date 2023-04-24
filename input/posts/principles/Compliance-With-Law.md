@@ -1,8 +1,8 @@
 ---
-draft: false
-title: Compliance with Law
-description: As we create and store data, we stick to the rules and regulations.
-tags:
+Draft: false
+Title: Compliance with Law
+Description: As we create and store data, we stick to the rules and regulations.
+Tags:
   - Architectural Principles
   - Architecture
   - Business Principles
@@ -20,8 +20,8 @@ Enterprise policy refers to a set of rules and guidelines that an organization c
 
 ## Implications
 
-This principle tells us to follow the law and associated good practises. Areas of our business are regulated, and we are bound by lawa for the countries we work in.
+This principle tells us to follow the law and associated good practices. Areas of our business are regulated, and we are bound by law for the countries we work in.
 
 * The enterprise must comply with laws, regulations, and external policies regarding the collection, retention, and management of data.
 * Employees must be educated about these rules and have access to them.
-* We will adapt our processes and applications as as the law and regulations change.
+* We will adapt our processes and applications as the law and regulations change.

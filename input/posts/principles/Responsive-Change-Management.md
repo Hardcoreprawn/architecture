@@ -1,11 +1,11 @@
 ---
-title: Responsive Change Management
-draft: false
-tags:
+Title: Responsive Change Management
+Draft: false
+Tags:
   - Architectural Principles
   - Architecture
   - Business Principles
-description: When we change how we use our computers and software to store and share information, we need to make sure that these changes are done quickly and without delay.
+Description: When we change how we use our computers and software to store and share information, we need to make sure that these changes are done quickly and without delay.
 ---
 
 > *“The early bird gets the worm.” — William Camden, author & antiquarian, 1551-1623*

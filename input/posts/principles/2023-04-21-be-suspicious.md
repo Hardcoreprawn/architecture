@@ -1,15 +1,16 @@
 ---
-title: Be Suspicious
-description: Don't assume people will do the right things. Whethe rby malice or ignorance, users will try to break your app.
-date: 2023-04-21T17:16:49.125Z
-preview: ""
-draft: true
-tags:
+Title: Be Suspicious
+Description: Don't assume people will do the right things. Whethe rby malice or ignorance, users will try to break your app.
+Date: 2023-04-21T17:16:49.125Z
+Preview: ""
+Draft: true
+Tags:
   - Architectural Principles
   - Architecture
   - Security Principles
-categories: []
+Categories: []
 ArchiveTitle: ""
+Type: default
 ---
 
 Check and verify input. Look for tainted input.

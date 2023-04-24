@@ -1,8 +1,8 @@
 ---
-draft: false
-title: Core vs Context
-description: Focus on what matters to our customers and get experts to help with the rest.
-tags:
+Draft: false
+Title: Core vs Context
+Description: Focus on what matters to our customers and get experts to help with the rest.
+Tags:
   - Architectural Principles
   - Architecture
   - Business Principles
