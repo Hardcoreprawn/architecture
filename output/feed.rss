@@ -2,96 +2,84 @@
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
 	<channel>
 		<title />
-		<link>/</link>
+		<link>https://red-sand-078a6ea03.3.azurestaticapps.net/</link>
 		<description />
 		<copyright>Copyright © 2023</copyright>
-		<pubDate>Fri, 21 Apr 2023 18:59:04 GMT</pubDate>
-		<lastBuildDate>Fri, 21 Apr 2023 18:59:04 GMT</lastBuildDate>
-		<item>
-			<link>/posts/2023-04-21-least-priviledge</link>
-			<enclosure url="/media/images/header01.png" length="0" type="image" />
-			<guid isPermaLink="false">/posts/2023-04-21-least-priviledge</guid>
-			<pubDate>Fri, 21 Apr 2023 17:19:42 GMT</pubDate>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Be Suspicious</title>
-			<link>/posts/2023-04-21-be-suspicious</link>
-			<description>Don't assume people will do the right things. Whethe rby malice or ignorance, users will try to break your app.</description>
-			<enclosure url="/media/images/header01.png" length="0" type="image" />
-			<guid isPermaLink="false">/posts/2023-04-21-be-suspicious</guid>
-			<pubDate>Fri, 21 Apr 2023 17:19:16 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Check and verify input. Look for tainted input.&lt;/p&gt;
-&lt;p&gt;With a modern application, there is no network boundary. Its down to identities. So check people are wo they say they are and do what you expect them to.&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Shift Security left</title>
-			<link>/posts/2023-04-21-shift-security-left</link>
-			<description>Add security to th earliest steps of your SDLC. The sooner you start thinking about it, the easier it is to incorporate.</description>
-			<enclosure url="/media/images/header01.png" length="0" type="image" />
-			<guid isPermaLink="false">/posts/2023-04-21-shift-security-left</guid>
-			<pubDate>Fri, 21 Apr 2023 17:16:24 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Start thinking of security as soon as possible in the deisgn process. Its practically impossible to effectively retrofit security effectively. Adding security to an application is an attitude to everything you do from concpet to production.&lt;/p&gt;
-&lt;p&gt;This doesn't need to be onerous, but it is important to start with security in mind.&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
+		<pubDate>Mon, 24 Apr 2023 13:46:55 GMT</pubDate>
+		<lastBuildDate>Mon, 24 Apr 2023 13:46:55 GMT</lastBuildDate>
 		<item>
 			<title>Composability</title>
-			<link>/posts/composability</link>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/composability</link>
 			<description>Services that can be combined and reused, composed into different layouts and new applications, provide business agility.</description>
-			<enclosure url="/media/images/header01.png" length="0" type="image" />
-			<guid isPermaLink="false">/posts/composability</guid>
-			<pubDate>Fri, 21 Apr 2023 13:42:26 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Composability is a non-functional requirement which allows us to integrate several services together. The high level intent is that a service should be self-contained and stateless, so the system can be trusted, but also reused and integrated as needs evolve.&lt;/p&gt;
+			<enclosure url="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/composability</guid>
+			<pubDate>Mon, 24 Apr 2023 13:37:44 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Composability is a non-functional requirement which allows us to configure components together in different ways. A service should be self-contained and stateless, so the system can be trusted, but also reused and integrated as needs evolve.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Apps we develop are self-contained and stateless. They can be given context and will return predictable results.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The system should be designed using a modular approach that allows for the creation, modification and reuse of components across different scenarios and contexts.&lt;/li&gt;
+&lt;li&gt;The system should provide clear and consistent interfaces for the components that enable interoperability and integration with other components and systems.&lt;/li&gt;
+&lt;li&gt;The system should support the dynamic composition of components at runtime, based on the user's needs and preferences.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Given a set of existing components, when a user wants to create a new component, then the system should allow the user to select and combine the existing components.&lt;/li&gt;
+&lt;li&gt;Given a component with a defined interface, when a user wants to integrate it with another component or system, then the system should provide the necessary information and tools to enable the integration.&lt;/li&gt;
+&lt;li&gt;Given a component that is no longer needed, when a user wants to delete it, then the system should remove the component and its dependencies without affecting the functionality of the other components or systems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;UX and system designers, software engineers.&lt;/li&gt;
+&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Composability ensures that the system can be easily adapted and customised to meet different needs, preferences and scenarios. Composability also enables faster and more efficient development of new features and functionality by reusing components. It enables safer deployment of new features, and testing as new features can be gradually introduced and rolled back, depending on the outcome. This enables the business to experiment with its business model and optimise the layout, workflow and function of digital services.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;* ()[]
+* ()[]
+&lt;/code&gt;&lt;/pre&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>Compatability</title>
-			<link>/posts/compatibility</link>
-			<description>Ensuring whatever we build has broad compatibility means we build for common target system architecture.</description>
-			<enclosure url="/media/images/header01.png" length="0" type="image" />
-			<guid isPermaLink="false">/posts/compatibility</guid>
-			<pubDate>Fri, 21 Apr 2023 13:42:00 GMT</pubDate>
-			<content:encoded>&lt;ul&gt;
-&lt;li&gt;Drives the target deployment system. Too tight and it affects supply and scale. Too restrictive and it becomes harder to grow and support.&lt;/li&gt;
-&lt;li&gt;Have a commodity normal environment, which is easy to reproduce.&lt;/li&gt;
-&lt;li&gt;Use a readily available architecture, the more commodity the better.&lt;/li&gt;
-&lt;li&gt;Host on a 'normal' image. Slowly evolve so everything uses that image.&lt;/li&gt;
-&lt;li&gt;Be somewhat specific, but not into the versions. Specify minimum versions.&lt;/li&gt;
-&lt;li&gt;Stick to using APIs to communicate between services to minimise compatibility issues.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol type="a"&gt;
-&lt;li&gt;We use Ubuntu (LTS) with dotnet &amp;gt;3.0, on an amd64 architecture.&lt;/li&gt;
-&lt;li&gt;Exceptions are fine when necessary.&lt;/li&gt;
-&lt;li&gt;Example: Compatibility requirements - IBM Documentation&lt;/li&gt;
-&lt;/ol&gt;
+			<title>Least Privilege</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/2023-04-21-least-privilege</link>
+			<enclosure url="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/2023-04-21-least-privilege</guid>
+			<pubDate>Mon, 24 Apr 2023 13:28:37 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Some words!&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
 			<title>Service Orientation</title>
-			<link>/posts/service-orientation</link>
-			<description>Architecture is a blueprint for how the companty should operate.</description>
-			<enclosure url="/media/images/header01.png" length="0" type="image" />
-			<guid isPermaLink="false">/posts/service-orientation</guid>
-			<pubDate>Fri, 21 Apr 2023 13:34:25 GMT</pubDate>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/service-orientation</link>
+			<description>Architecture is a blueprint for how the company should operate.</description>
+			<enclosure url="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/service-orientation</guid>
+			<pubDate>Mon, 24 Apr 2023 13:09:36 GMT</pubDate>
 			<content:encoded>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;&amp;quot;The best way to find yourself, is to lose yourself in the service of others.&amp;quot; - Mahatma Gandhi.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
 &lt;p&gt;The architecture is designed to mimic real-world business activities that are part of the company’s processes. It’s like a blueprint for how the company should operate.&lt;/p&gt;
 &lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Service orientation is a way of designing computer software that focuses on providing services that can be accessed by different users and applications. Service orientation aims to make software more flexible, reusable and adaptable to changing needs.&lt;/p&gt;
+&lt;p&gt;Service orientation is a way of designing computer software that focuses on providing services that can be accessed by different users and applications. Service orientation aims to make the software more flexible, reusable and adaptable to changing needs.&lt;/p&gt;
 &lt;p&gt;Service orientation means that the company is designed to be flexible and adaptable to change. It’s like a chameleon that can change its colours to blend in with its environment.&lt;/p&gt;
 &lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;Our systems and architecture follow our business. We build a sensible business, with sensible systems. We don't slavishly and recklessly mutilate systems to fit the business, but we do not bend the the business to fit the systems.&lt;/p&gt;
+&lt;p&gt;Our systems and architecture follow our business. We build a sensible business, with sensible systems. We don't slavishly and recklessly mutilate systems to fit the business, but we do not bend the business to fit the systems.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;We use business descriptions to help understand how to implement services.&lt;/li&gt;
-&lt;li&gt;Open standards  make sure that our services can work together.&lt;/li&gt;
+&lt;li&gt;Open standards make sure that our services can work together.&lt;/li&gt;
 &lt;li&gt;We need to describe our services in a way that makes sense for their specific environment&lt;/li&gt;
 &lt;li&gt;We have strong rules in place for how to represent and implement our services.&lt;/li&gt;
 &lt;li&gt;There are standard tests to determine if our services are good or not.&lt;/li&gt;
@@ -101,11 +89,11 @@
 		</item>
 		<item>
 			<title>Responsive Change Management</title>
-			<link>/posts/responsive-change-management</link>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/responsive-change-management</link>
 			<description>When we change how we use our computers and software to store and share information, we need to make sure that these changes are done quickly and without delay.</description>
-			<enclosure url="/media/images/header01.png" length="0" type="image" />
-			<guid isPermaLink="false">/posts/responsive-change-management</guid>
-			<pubDate>Fri, 21 Apr 2023 13:34:21 GMT</pubDate>
+			<enclosure url="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/responsive-change-management</guid>
+			<pubDate>Mon, 24 Apr 2023 13:08:56 GMT</pubDate>
 			<content:encoded>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;“The early bird gets the worm.” — William Camden, author &amp;amp; antiquarian, 1551-1623&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -127,24 +115,24 @@
 		</item>
 		<item>
 			<title>Requirements-Based Change</title>
-			<link>/posts/requirements-based-change</link>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/requirements-based-change</link>
 			<description>We only make changes to technology to make our business better, and we do that together.</description>
-			<enclosure url="/media/images/header01.png" length="0" type="image" />
-			<guid isPermaLink="false">/posts/requirements-based-change</guid>
-			<pubDate>Fri, 21 Apr 2023 13:34:18 GMT</pubDate>
+			<enclosure url="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/requirements-based-change</guid>
+			<pubDate>Mon, 24 Apr 2023 13:08:43 GMT</pubDate>
 			<content:encoded>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;&amp;quot;I’m always willing to accept change, just as long as it isn’t change for the sake of change. If that change will result in a better way of doing things, then I’m all for it.&amp;quot; - James Van Fleet.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
 &lt;p&gt;We only make changes to technology to make our business better, and we do that together.&lt;/p&gt;
 &lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;When we need to change how we do things, we should be able to do so without being held back by our technology. Instead of changing how we do things because of our technology, we can change our technology to better fit our changing needs. This way, we can make sure that our technology is helping us do what we need,instead of getting in the way.&lt;/p&gt;
+&lt;p&gt;When we need to change how we do things, we should be able to do so without being held back by our technology. Instead of changing how we do things because of our technology, we can change our technology to better fit our changing needs. This way, we can make sure that our technology is helping us do what we need, instead of getting in the way.&lt;/p&gt;
 &lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;We change because its sensible, not because we have to. When we change, its to make things better, not worse. We should consider everyone, and other changes and projects when we do so.&lt;/p&gt;
+&lt;p&gt;We change because it's sensible, not because we have to. When we change, it's to make things better, not worse. We should consider everyone, and other changes and projects when we do so.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Before making any changes to the way we do things, we will look at how it will affect related things we do.&lt;/li&gt;
 &lt;li&gt;We will make sure that everyone knows how to make changes in a way that follows these rules.&lt;/li&gt;
-&lt;li&gt;Sometimes these rules might get in the way of making changes quickly. Thats ok and we can raise this as a blocker if need be.&lt;/li&gt;
+&lt;li&gt;Sometimes these rules might get in the way of making changes quickly. That's okay and we can raise this as a blocker if need be.&lt;/li&gt;
 &lt;li&gt;Responsive change is also a principle. We need to respond quickly, we should also make sure that any response is based on a real need.&lt;/li&gt;
 &lt;/ol&gt;
 </content:encoded>
@@ -152,20 +140,20 @@
 		</item>
 		<item>
 			<title>Open Data</title>
-			<link>/posts/open-data</link>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/open-data</link>
 			<description>Data sharing is critical to our strategy. Sharing data within our company, and with external partners helps us achieve our goals and improve our services.</description>
-			<enclosure url="/media/images/header01.png" length="0" type="image" />
-			<guid isPermaLink="false">/posts/open-data</guid>
-			<pubDate>Fri, 21 Apr 2023 13:34:14 GMT</pubDate>
+			<enclosure url="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/open-data</guid>
+			<pubDate>Mon, 24 Apr 2023 13:08:13 GMT</pubDate>
 			<content:encoded>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;&amp;quot;Whoever is careless with the truth in small matters cannot be trusted with important matters.&amp;quot; - Albert Einstein&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
 &lt;p&gt;Data sharing is a key component of our business strategy. We believe that sharing data within our company and with external partners can help us to achieve our goals and improve our services.&lt;/p&gt;
 &lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;We are committed to making our data open and accessible to our employees and partners, while also protecting the privacy and security of our customers and stakeholders. We will work to ensure that our data is secure, accurate, up-to-date, and relevant, and that it is shared in a way that is transparent, ethical, and responsible.&lt;/p&gt;
+&lt;p&gt;We are committed to making our data open and accessible to our employees and partners, while also protecting the privacy and security of our customers and stakeholders. We will work to ensure that our data is secure, accurate, up-to-date, and relevant and that it is shared in a way that is transparent, ethical, and responsible.&lt;/p&gt;
 &lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;This principle is mostly about ensuring that people who are allowed to get data, can get it, when they want it. We can control who that is, and we have to make sure we handle data in regard to the law. This isn't creating a free for all. Itys making sure we have data in useful formats, so we can make decisions with it.&lt;/p&gt;
+&lt;p&gt;This principle is mostly about ensuring that people who are allowed to get data, can get it when they want it. We can control who that is, and we have to make sure we handle data following the law. This isn't creating a free for all. It's making sure we have data in useful formats, so we can make decisions with it.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;By making data open and accessible, the company can increase transparency and accountability, both internally and externally.&lt;/li&gt;
 &lt;li&gt;Sharing data within the company and with external partners can help to improve collaboration and innovation, leading to better products and services.&lt;/li&gt;
@@ -173,18 +161,18 @@
 &lt;li&gt;By sharing data, the company can avoid duplication of effort and reduce costs, leading to greater efficiency.&lt;/li&gt;
 &lt;li&gt;By being open and transparent with data, the company can improve its reputation and build trust with customers and stakeholders.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="add-additional-detail-examples-or-specific-context"&gt;Add additional detail, examples or specific context.&lt;/h3&gt;
-&lt;hr /&gt;
+&lt;h3 id="add-additional-detail-examples-or-specific-context"&gt;Add additional detail, examples or specific context&lt;/h3&gt;
+&lt;p&gt;words&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
 			<title>Interoperability</title>
-			<link>/posts/interoperability</link>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/interoperability</link>
 			<description>Imagine if every computer had different software and hardware that didn’t work with other computers. That would be rubbish...</description>
-			<enclosure url="/media/images/header01.png" length="0" type="image" />
-			<guid isPermaLink="false">/posts/interoperability</guid>
-			<pubDate>Fri, 21 Apr 2023 13:34:07 GMT</pubDate>
+			<enclosure url="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/interoperability</guid>
+			<pubDate>Mon, 24 Apr 2023 13:07:06 GMT</pubDate>
 			<content:encoded>&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;&amp;quot;Alone we can do so little; together we can do so much.&amp;quot; - Helen Keller&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -193,12 +181,95 @@
 &lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
 &lt;p&gt;Standards help us in many ways. They make sure that everything works together smoothly so that we can manage our systems better and be happy with what we are doing. They also help us save money by making sure that we don’t have to buy new things all the time because everything works together well.&lt;/p&gt;
 &lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;We want to use an open, standarduised and well trodden path. Most of the problems we solve can use existing technologies and we need to be able to work with new vendors and with unknown new systems, services and software. So open standards help, as they help us do that.&lt;/p&gt;
+&lt;p&gt;We want to use an open, standardised and well-trodden path. Most of the problems we solve can use existing technologies and we need to be able to work with new vendors and with unknown new systems, services and software. So open standards help, as they help us do that.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Sometimes, people might want to do something different. But if we do that, it might make it harder to use or integrate. So, you have to have a really good reason.&lt;/li&gt;
 &lt;li&gt;To make sure that everyone/everything is following the same rules and playing together nicely, we need to have a way of checking that everyone is doing what they’re supposed to be doing. We also need to make sure that we keep checking the rules every once in a while to make sure that they still work and are fair for everyone.&lt;/li&gt;
 &lt;li&gt;Before we can start playing the game, we need to know what we’re playing with. So, we need to find out what things we already have and how they work. This way, we can make sure that everything works together nicely.&lt;/li&gt;
 &lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Intellectual Property</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property</link>
+			<description>&lt;p&gt;Quote Goes here&lt;/p&gt;</description>
+			<enclosure url="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property</guid>
+			<pubDate>Mon, 24 Apr 2023 13:06:33 GMT</pubDate>
+			<content:encoded>&lt;blockquote&gt;
+&lt;p&gt;Quote Goes here&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
+&lt;p&gt;Statement goes here.&lt;/p&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Rationale Goes Here&lt;/p&gt;
+&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
+&lt;p&gt;Implications go here&lt;/p&gt;
+&lt;h3 id="details-and-context"&gt;Details and Context&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Details and Context go here&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Ease-of-Use</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/ease-of-use</link>
+			<description>Applications are easy to use. The underlying technology is transparent to users, so they can concentrate on the tasks at hand.</description>
+			<enclosure url="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/ease-of-use</guid>
+			<pubDate>Mon, 24 Apr 2023 13:06:16 GMT</pubDate>
+			<content:encoded>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;Design is not just what it looks like and feels like. Design is how it works.&amp;quot; - Steve Jobs.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
+&lt;p&gt;Applications are easy to use. The underlying technology is transparent to users, so they can concentrate on the tasks at hand.&lt;/p&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;When you use something, it’s better if you don’t have to learn too much about how it works. It’s easier to use when it’s simple. This makes it easier for you to do your work and not make mistakes. It keeps data in the right places and reduces the likelihood of people mistreating it.&lt;/p&gt;
+&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
+&lt;p&gt;We want our software to be easy to use and accessible to the biggest audience we can serve. We do not, ever, want the complexity of our systems to hinder a sale or add any impediment to our business.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Apps and websites should look and feel similar to each other and be easy to use. So, there are rules that are made to make sure that all applications follow these standards. These rules are tested to make sure that they are easy to use.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;When people make things like websites or apps, they should not assume that everyone who uses them is the same. They should make sure that everyone can use them no matter where they are from, what language they speak, how much they know about computers, or if they have any physical problems.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="details-and-context"&gt;Details and Context&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Accessibility&lt;/li&gt;
+&lt;li&gt;White Label&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Core vs Context</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/core-vs-context</link>
+			<description>Focus on what matters to our customers and get experts to help with the rest.</description>
+			<enclosure url="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/core-vs-context</guid>
+			<pubDate>Mon, 24 Apr 2023 13:05:37 GMT</pubDate>
+			<content:encoded>&lt;blockquote&gt;
+&lt;p&gt;“Make room for the real important stuff.” —Tigger”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
+&lt;p&gt;We focus on what matters to our customers, to make sure we deliver a great service they want to use, with the resources we have.&lt;/p&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Understand what really matters to your customers, the core of your business, versus the stuff you have to do around it, the context.&lt;/p&gt;
+&lt;p&gt;You need to focus your efforts on Core matters, not context.&lt;/p&gt;
+&lt;p&gt;Focusing your efforts on Core matters will ensure you focus on the problems and challenges your customers have and how you can deliver value to them. This will maximise your oppotrtunity with them.&lt;/p&gt;
+&lt;p&gt;Focusing on context will eat into your time, and few customers will thank you for it. This doesn't mean its not important, but it does mean you need to control the amount of time, money and energy spent on context.&lt;/p&gt;
+&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
+&lt;p&gt;Core problems are the things we do that create customer value. We want to give ourselves the most time to do these. Context problems are things we do because we have, to make sure we're compliant, paid, etc.&lt;/p&gt;
+&lt;p&gt;We want to minimise context problems and maximise the focus we can give Core problems.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Contextual problems should be considered for outsourcing.&lt;/li&gt;
+&lt;li&gt;Corte problems could be assisted by outsourcing, but must remain withint the purview of the business. This could be done to get past a skill gap or short deadline.&lt;/li&gt;
+&lt;li&gt;Context problems are best 'leased' rather than built. Outsourcing services for these things will let an expert manage it and ultimately save time/money/energy.&lt;/li&gt;
+&lt;li&gt;Core problems need to minimise dependencies and maximise local control, to ensure the business can adapt.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="details-examples-context"&gt;Details, Examples, Context&lt;/h2&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>

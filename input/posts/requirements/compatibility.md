@@ -42,3 +42,8 @@ As we design and develop new systems, we should make sure they can run on commod
 * Linux containers are robust, low cost and easy to manage. they are the most commonly deployed workload in the world.
 * Azure is our preferred hosting environment.
 * Our developers predominantly write C# code.
+
+## Related Principles
+
+    * (Control Technical Diversity)[xref:control-technical-diversity]
+    * (Interoperability)[xref:interoperability]
