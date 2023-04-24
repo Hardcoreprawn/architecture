@@ -1,5 +1,7 @@
 ---
 draft: true
+title: Microservices
+slug: microservices
 ---
 # Microservices Web App Hosting Pattern
 
