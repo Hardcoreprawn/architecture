@@ -1,12 +1,12 @@
 ---
-draft: true
-title: Microservices
-description: Microservices architecture is a 'super-pattern', which aims to minimise dependencies and promote scalability across multiple dimensions.
-tags:
+Draft: true
+Title: Microservices
+Description: Microservices architecture is a 'super-pattern', which aims to minimise dependencies and promote scalability across multiple dimensions.
+Tags:
   - Architecture
   - Microservices
   - Patterns
-categories:
+Categories:
   - Pattern
 ---
 
@@ -17,11 +17,9 @@ this by providing no single point of failure, allowing its components to
 scale independently of each other and segregating information to provide
 security.
 
-***
-
 ### Illustration
 
-![microservices pattern, learn.microsoft.com](/images/microservices-patterns.png)
+![microservices pattern, learn.microsoft.com][ms-img]
 *Model of a Monolith to Microservices migration, showing sub-patterns*
 
 This is a reference microservices pattern, showing the possible use of sub-patterns.
@@ -175,7 +173,7 @@ might take more maintenance, but that can be ok.
 
 Bulkheads are used on ships to prevent water from a hull breach from flooding
 the whole ship. Keep things separate, (like connection pools or hardware)
-so a greedy neighbor can't flood the whole ship.
+so a greedy neighbour can't flood the whole ship.
 
 [Bulkhead Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead)
 
@@ -224,3 +222,5 @@ them close for performance.
 Refactor over time, by gradually replacing specific services.
 
 [Strangler Pattern](xref:strangler-pattern)
+
+[ms-img]: /images/microservices-patterns.png

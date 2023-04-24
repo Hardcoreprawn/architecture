@@ -45,5 +45,5 @@ As we design and develop new systems, we should make sure they can run on commod
 
 ## Related Principles
 
-    * (Control Technical Diversity)[xref:control-technical-diversity]
-    * (Interoperability)[xref:interoperability]
+* [Control Technical Diversity](xref:control-technical-diversity)
+* [Interoperability](xref:interoperability)
