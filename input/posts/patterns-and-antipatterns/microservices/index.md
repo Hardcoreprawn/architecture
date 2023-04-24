@@ -2,8 +2,14 @@
 draft: true
 title: Microservices
 slug: microservices
+description: Microservices architecture is a 'super-pattern', which aims to minimise dependencies and promote scalability across multiple dimensions.
+tags:
+  - Architecture
+  - Microservices
+  - Patterns
+categories:
+  - Pattern
 ---
-# Microservices Web App Hosting Pattern
 
 ## Pattern Overview
 
