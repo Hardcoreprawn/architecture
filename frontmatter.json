@@ -127,8 +127,8 @@
     "Requirements"
   ],
   "frontMatter.content.snippets": {
-    "Header Image": {
-      "description": "An Abstract header Imagae",
+    "header-image": {
+      "description": "An abstract header image",
       "body": "/output/media/images/header01.png",
       "isMediaSnippet": true
     }
