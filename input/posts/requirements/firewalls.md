@@ -9,9 +9,8 @@ Tags:
   - Architecture
 Published: 2023-04-25T12:00:00.306Z
 Date: 2023-04-25T12:00:00.306Z
----
 
-**Applies to:** Boundary Firewalls, Desktop Computers, laptops, routers, servers, and cloud services.
+This applies to Boundary Firewalls, Desktop Computers, laptops, routers, servers, and cloud services.
 
 > Read the [Requirements Check-List](xref:requirements-checklist) article for an introduction to requirements.
 
