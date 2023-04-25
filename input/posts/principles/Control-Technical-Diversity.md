@@ -13,7 +13,7 @@ Published: 15/04/2023
 
 ## Statement
 
-We try to use a limited number of technologies to reduce the cost of maintaining expertise in and connectivity between multiple systems. By doing so, we  minimize the complexity of our systems and reduce costs.
+We try to use a limited number of technologies to reduce the cost of maintaining expertise in and connectivity between multiple systems. By doing so, we minimize the complexity of our systems and reduce costs.
 
 ## Rationale
 
@@ -21,7 +21,7 @@ When companies use too many different technologies to do things, it can be very 
 
 ## Implications
 
-Lets be clear, we like diversity. But technical diversity is different, as its more about the ecosystem of compatibility, than any intrinsic bias. We want to chose a simple path and different vendors will complicate matters, standards and interoperability. So we are careful with who we pick and who we invite in, as we all want an easier life, with less waste.
+Let's be clear, we like diversity. But technical diversity is different, as it's more about the ecosystem of compatibility, than any intrinsic bias. We want to choose a simple path and different vendors will complicate matters, standards and interoperability. So we are careful with who we pick and who we invite in, as we all want an easier life, with less waste.
 
 * When we choose which technologies to use, we have to follow certain rules.
 * These rules help us choose technologies that work well together and are easy to use.
