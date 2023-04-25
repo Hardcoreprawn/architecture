@@ -48,7 +48,7 @@ We are not responsible for enforcing this. We need to ensure our systems are pro
 
 ## Rationale
 
-Most attacks occur from outside the network. Ensuring firewalls are in-place is an extremely effective way to mitigate external threats and chance attacks. By moving to a device-centric (Zero-trust) approach, you can also extend this level of protection to internal threats or transverse attacks.
+Most attacks occur from outside the network. Ensuring firewalls are in place is an extremely effective way to mitigate external threats and chance attacks. By moving to a device-centric (Zero-trust) approach, you can also extend this level of protection to internal threats or transverse attacks.
 
 ## Related Principles
 
