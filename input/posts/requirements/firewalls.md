@@ -9,6 +9,7 @@ Tags:
   - Architecture
 Published: 2023-04-25T12:00:00.306Z
 Date: 2023-04-25T12:00:00.306Z
+---
 
 This applies to Boundary Firewalls, Desktop Computers, laptops, routers, servers, and cloud services.
 

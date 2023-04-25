@@ -5,7 +5,7 @@ LinksUseHttps: true # Do we use HTTPS
 
 # Branding
 SiteTitle: Architecture Repository
-SiteDescriptions: A collection of articles about architecture.
+SiteDescriptions: An assortment of articles about architecture.
 Copyright: => $"Copyright © {DateTime.Now.Year}"
 Layout: /_layout.cshtml
 Image: https://brenstermedia.blob.core.windows.net/media/media/images/header01.png
