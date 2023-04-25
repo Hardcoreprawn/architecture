@@ -8,59 +8,34 @@
       "fields": [
         {
           "title": "Title",
-          "name": "Title",
-          "type": "string"
-        },
-        {
-          "title": "Description",
-          "name": "Description",
-          "type": "string"
-        },
-        {
-          "title": "Draft",
-          "name": "Draft",
-          "type": "datetime"
-        },
-        {
-          "title": "Tags",
-          "name": "Tags",
-          "type": "tags"
-        },
-        {
-          "title": "Date",
-          "name": "Date",
-          "type": "datetime"
-        },
-        {
-          "title": "Published",
-          "name": "Published",
-          "type": "datetime"
-        },
-        {
-          "title": "type",
-          "name": "type",
-          "type": "string"
-        },
-        {
-          "title": "draft",
-          "name": "draft",
-          "type": "datetime"
-        },
-        {
-          "title": "title",
           "name": "title",
           "type": "string"
         },
         {
-          "title": "description",
+          "title": "Description",
           "name": "description",
           "type": "string"
         },
         {
-          "title": "tags",
+          "title": "Draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Tags",
           "name": "tags",
           "type": "tags"
-        }
+        },
+        {
+          "title": "Date",
+          "name": "date",
+          "type": "datetime"
+        },
+        {
+          "title": "Published",
+          "name": "published",
+          "type": "datetime"
+        },
       ]
     }
   ],
