@@ -1,13 +1,14 @@
 ---
 Title: Firewalls
 Description: To ensure only secure and necessary services can be accessed from the internet
+Draft: false
 Tags:
   - Non-Functional Requirements
   - Requirements
   - Security
   - Architecture
 Published: 2023-04-25T12:00:00.306Z
-type: ""
+Date: 2023-04-25T12:00:00.306Z
 ---
 
 **Applies to:** Boundary Firewalls, Desktop Computers, laptops, routers, servers, and cloud services.
