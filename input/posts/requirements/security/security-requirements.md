@@ -1,10 +1,9 @@
 ---
-Title: Security
+Title: Security Requirements
 Description: Security is a critical concern of any organisation. The requirements will help you baseline security needs and understand the risks in your app.
 Draft: false
 Tags:
   - Architecture
-  - NFRs
   - Non-Functional Requirements
   - Requirements
   - Security
@@ -29,6 +28,7 @@ Security controls are critical to developing applications.
 * The data system complies with the Cyber Essentials technical controls and requirements.
 
 The system can demonstrate the use of:
+
 * Secure configuration
 * Firewall
 * Anti-malware software
