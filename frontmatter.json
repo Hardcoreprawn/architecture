@@ -12,14 +12,19 @@
           "type": "string"
         },
         {
+          "title": "NavBarTitle",
+          "name": "navbartitle",
+          "type": "string"
+        },
+        {
           "title": "Description",
           "name": "description",
           "type": "string"
         },
         {
-          "title": "Draft",
-          "name": "draft",
-          "type": "draft"
+          "title": "Lead",
+          "name": "lead",
+          "type": "string"
         },
         {
           "title": "Tags",
@@ -27,32 +32,32 @@
           "type": "tags"
         },
         {
-          "title": "Date",
-          "name": "date",
-          "type": "datetime"
-        },
-        {
           "title": "Published",
           "name": "published",
           "type": "datetime"
         },
+        {
+          "title": "Image",
+          "name": "image",
+          "type": "string"
+        }
       ]
     }
   ],
   "frontMatter.framework.id": "other",
-  "frontMatter.content.publicFolder": "",
+  "frontMatter.content.publicFolder": "[[workspace]]/input/media",
   "frontMatter.content.pageFolders": [
     {
-      "path": "[[workspace]]/input/posts",
-      "title": "Posts"
+      "title": "Posts",
+      "path": "[[workspace]]/input/posts"
     },
     {
-      "path": "[[workspace]]/input/posts/architecture",
-      "title": "Architecture"
+      "title": "Architecture",
+      "path": "[[workspace]]/input/posts/architecture"
     },
     {
-      "path": "[[workspace]]/input/posts/patterns-and-antipatterns",
-      "title": "Patterns-and-antipatterns"
+      "title": "Patterns-and-antipatterns",
+      "path": "[[workspace]]/input/posts/patterns-and-antipatterns"
     },
     {
       "title": "Microservices",
@@ -82,12 +87,5 @@
     "Pattern",
     "Principles",
     "Requirements"
-  ],
-  "frontMatter.content.snippets": {
-    "header-image": {
-      "description": "An abstract header image",
-      "body": "/output/media/images/header01.png",
-      "isMediaSnippet": true
-    }
-  }
+  ]
 }
