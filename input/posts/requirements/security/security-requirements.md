@@ -12,15 +12,29 @@ Published: 2023-04-24T15:13:24.797Z
 
 Security controls are critical to developing applications.
 
-> These security controls are written to meet the demands of the UK National [Cyber Security Centre (NCSC) Cyber Essentials Plus](https://www.ncsc.gov.uk/cyberessentials/overview) certification.
+> These security controls are written inline with the UK [National Cyber Security Centre (NCSC) Cyber Essentials Plus](https://www.ncsc.gov.uk/cyberessentials/overview) certification.
 
-## Requirement
+## Requirements
 
-* The system must implement secure configuration for all devices and software used to process, store and transmit data.
-* The data system must use a firewall to protect all internet connections and prevent unauthorized access to or from private networks.
-* The data system must use anti-malware software to protect devices and software from malicious code and unauthorized software installation
-* The system must control access to data and services by using strong authentication, and a least privilege principle.
-* The system must protect data in transit by using encryption and secure protocols.
+[Firewalls](xref:firewalls)
+
+The data system must use a firewall to protect all internet connections and prevent unauthorized access to or from private networks.
+
+[Secure configuration](xref:secure-configuration)
+
+The system must implement secure configuration for all devices and software used to process, store and transmit data.
+
+[Security Update Management](xref:security-update-management)
+
+The system must control access to data and services by using strong authentication, and a least privilege principle.
+
+[Anti-malware software](xref:malware-protection)
+
+The data system must use anti-malware software to protect devices and software from malicious code and unauthorized software installation
+
+[Access control](xref:user-access-control)
+
+User accounts are assigned only to individuals and not shared. User accounts only allow access to the applications, computers and networks the user needs to carry out their role.
 
 ## Acceptance Criteria
 
@@ -29,11 +43,11 @@ Security controls are critical to developing applications.
 
 The system can demonstrate the use of:
 
-* Secure configuration
-* Firewall
-* Anti-malware software
-* Access control
-* Data encryption
+* [Firewalls](xref:firewalls)
+* [Secure configuration](xref:secure-configuration)
+* [Security Update Management](xref:security-update-management)
+* [Anti-malware software](xref:malware-protection)
+* [Access control](xref:user-access-control)
 
 The system can handle common cyber attacks such as:
 
@@ -57,7 +71,7 @@ Without compromising data security or availability.
 
 ## Rationale
 
-Adopting this NFR will help:
+Adopting this set of NFRs will help:
 
 * Protect systems and users from cyber threats and data breaches that could cause financial, reputational or legal damages.
 * Demonstrate the organisation's commitment to cyber security and increase customer trust and confidence.
