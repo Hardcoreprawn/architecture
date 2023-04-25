@@ -27,19 +27,22 @@ Security controls are critical to developing applications.
 
 * The data system passes a vulnerability scan and a penetration test, performed by an NCSC-assured certification body.
 * The data system complies with the Cyber Essentials technical controls and requirements.
-* The system can demonstrate the use of:
-    1. Secure configuration
-    2. Firewall
-    3. Anti-malware software
-    4. Access control
-    5. Data encryption
-* The system can handle common cyber attacks such as:
-    1. Phishing
-    2. Malware
-    3. Denial-of-service
-    4. Brute-force attacks
-  
-  Without compromising data security or availability.
+
+The system can demonstrate the use of:
+* Secure configuration
+* Firewall
+* Anti-malware software
+* Access control
+* Data encryption
+
+The system can handle common cyber attacks such as:
+
+* Phishing
+* Malware
+* Denial-of-service
+* Brute-force attacks
+
+Without compromising data security or availability.
 
 ## Audience
 
