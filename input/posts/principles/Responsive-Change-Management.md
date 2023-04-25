@@ -6,6 +6,7 @@ Tags:
   - Architecture
   - Business Principles
 Description: When we change how we use our computers and software to store and share information, we need to make sure that these changes are done quickly and without delay.
+Published: 12/04/2023
 ---
 
 > *“The early bird gets the worm.” — William Camden, author & antiquarian, 1551-1623*

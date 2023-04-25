@@ -6,6 +6,7 @@ Tags:
   - Architecture
   - Data
   - Data Principles
+Published: 15/04/2023
 ---
 
 > *"Whoever is careless with the truth in small matters cannot be trusted with important matters." - Albert Einstein*

@@ -6,6 +6,7 @@ Tags:
   - Business Principles
 Description: We only make changes to technology to make our business better, and we do that together.
 Title: Requirements-Based Change
+Published: 13/04/2023
 ---
 
 > *"I’m always willing to accept change, just as long as it isn’t change for the sake of change. If that change will result in a better way of doing things, then I’m all for it." - James Van Fleet.*
