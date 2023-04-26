@@ -8,38 +8,29 @@
       "fields": [
         {
           "title": "Title",
-          "name": "title",
-          "type": "string"
-        },
-        {
-          "title": "NavBarTitle",
-          "name": "navbartitle",
+          "name": "Title",
           "type": "string"
         },
         {
           "title": "Description",
-          "name": "description",
-          "type": "string"
-        },
-        {
-          "title": "Lead",
-          "name": "lead",
+          "name": "Description",
           "type": "string"
         },
         {
           "title": "Tags",
-          "name": "tags",
+          "name": "Tags",
           "type": "tags"
         },
         {
-          "title": "Published",
-          "name": "published",
-          "type": "datetime"
+          "title": "Draft",
+          "name": "Draft",
+          "type": "boolean"
         },
         {
-          "title": "Image",
-          "name": "image",
+          "title": "Published",
+          "name": "Published",
           "type": "string"
+        },
         }
       ]
     }

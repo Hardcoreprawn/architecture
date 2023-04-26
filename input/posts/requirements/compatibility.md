@@ -8,7 +8,6 @@ Tags:
   - NFRs
 Draft: false
 Published: 23/04/2023
-Date: 2023-04-24T07:42:26.830Z
 ---
 
 We make apps that work on things we know, which we know how to look after and can keep safe.

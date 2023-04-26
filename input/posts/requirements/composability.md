@@ -1,5 +1,4 @@
 ---
-Draft: false
 Title: Composability
 Description: Services that can be combined and reused, composed into different layouts and new applications, provide business agility.
 Tags:
@@ -8,6 +7,7 @@ Tags:
   - Requirements
   - Non-Functional Requirements
 Published: 21/04/2023
+Draft: false
 ---
 
 Composability is a non-functional requirement which allows us to configure components together in different ways. A service should be self-contained and stateless, so the system can be trusted, but also reused and integrated as needs evolve.
