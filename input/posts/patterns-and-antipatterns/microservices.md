@@ -223,4 +223,4 @@ Refactor over time, by gradually replacing specific services.
 
 [Strangler Pattern](xref:strangler-pattern)
 
-[def-1-msft-img]: input/media/images/microservices-patterns.png
+[def-1-msft-img]: ../../media/images/microservices-patterns.png

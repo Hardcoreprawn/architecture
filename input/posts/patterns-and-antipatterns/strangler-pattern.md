@@ -71,4 +71,4 @@ Scaling along both these axis allows the target state to scale effectively.
 * [AKF Partners - Strangler Patterns: Dos and Don'ts](https://akfpartners.com/growth-blog/strangler-pattern-dos-and-donts)
 
 
-[def1]: input/media/images/strangler-pattern-example.png
+[def1]: ../../media/images/strangler-pattern-example.png
