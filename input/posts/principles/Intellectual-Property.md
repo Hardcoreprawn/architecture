@@ -1,6 +1,6 @@
 ---
 Title: Intellectual Property
-Published: 
+Published: 01/01/2001
 Draft: true
 ---
 
