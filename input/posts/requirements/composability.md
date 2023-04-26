@@ -1,6 +1,6 @@
 ---
 Title: Composability
-Description: Services that can be combined and reused, composed into different layouts and new applications, provide business agility.
+Lead: Services that can be combined and reused, composed into different layouts and new applications, provide business agility.
 Tags:
   - Architecture
   - NFRs

@@ -8,7 +8,7 @@ Draft: true
 
 ## Statement
 
-Statement goes here.
+The statement goes here.
 
 ## Rationale
 
@@ -21,4 +21,3 @@ Implications go here
 ### Details and Context
 
 * Details and Context go here
-

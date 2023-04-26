@@ -1,6 +1,6 @@
 ---
 Title: Security Requirements
-Description: Security is a critical concern of any organisation. The requirements will help you baseline security needs and understand the risks in your app.
+Lead: Security is a critical concern of any organisation. The requirements will help you baseline security needs and understand the risks in your app.
 Published: 24/04/2023
 Draft: false
 Tags:

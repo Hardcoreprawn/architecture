@@ -1,7 +1,7 @@
 ---
 Title: Be Suspicious
-Published: 28/04/2023
-Description: Don't assume people will do the right things. Whether by malice or ignorance, users will try to break your app.
+Published: 26/04/2023
+Lead: Don't assume people will do the right things. Whether by malice or ignorance, users will try to break your app.
 Draft: true
 Tags:
   - Architectural Principles

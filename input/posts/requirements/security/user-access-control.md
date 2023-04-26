@@ -1,6 +1,6 @@
 ---
 Title: User Access Controls
-Description: Ensure user accounts are assigned to authorised individuals and only provide access to the systems required for their role.
+Lead: Ensure user accounts are assigned to authorised individuals and only provide access to the systems required for their role.
 Draft: false
 Tags:
   - Non-Functional Requirements

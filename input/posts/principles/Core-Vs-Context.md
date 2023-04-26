@@ -1,12 +1,12 @@
 ---
 Title: Core vs Context
 Published: 15/04/2023
-Description: Focus on what matters to our customers and get experts to help with the rest.
+Lead: Focus on what matters to our customers and get experts to help with the rest.
 Tags:
   - Architectural Principles
   - Architecture
   - Business Principles
-Draft: false
+Draft: true
 ---
 
 > “Make room for the real important stuff.” —Tigger”
@@ -17,13 +17,13 @@ We focus on what matters to our customers, to make sure we deliver a great servi
 
 ## Rationale
 
-Understand what really matters to your customers, the core of your business, versus the stuff you have to do around it, the context.
+Understand what matters to your customers, the core of your business, versus the stuff you have to do around it, the context.
 
 You need to focus your efforts on Core matters, not context. 
 
-Focusing your efforts on Core matters will ensure you focus on the problems and challenges your customers have and how you can deliver value to them. This will maximise your oppotrtunity with them.
+Focusing your efforts on Core matters will ensure you focus on the problems and challenges your customers have and how you can deliver value to them. This will maximise your opportunity with them.
 
-Focusing on context will eat into your time, and few customers will thank you for it. This doesn't mean its not important, but it does mean you need to control the amount of time, money and energy spent on context.
+Focusing on context will eat into your time, and few customers will thank you for it. This doesn't mean it's not important, but it does mean you need to control the amount of time, money and energy spent on context.
 
 ## Implications
 
@@ -32,7 +32,7 @@ Core problems are the things we do that create customer value. We want to give o
 We want to minimise context problems and maximise the focus we can give Core problems.
 
 * Contextual problems should be considered for outsourcing.
-* Corte problems could be assisted by outsourcing, but must remain withint the purview of the business. This could be done to get past a skill gap or short deadline.
+* Corte problems could be assisted by outsourcing but must remain within the purview of the business. This could be done to get past a skill gap or short deadline.
 * Context problems are best 'leased' rather than built. Outsourcing services for these things will let an expert manage it and ultimately save time/money/energy.
 * Core problems need to minimise dependencies and maximise local control, to ensure the business can adapt.
 

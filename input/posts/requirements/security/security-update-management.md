@@ -1,6 +1,6 @@
 ---
 Title: Security Update Management
-Description: Ensure systems are not vulnerable to known issues, when fixes are available.
+Lead: Ensure systems are not vulnerable to known issues and install updates when fixes are available.
 Published: 24/04/2023
 Draft: false
 Tags:

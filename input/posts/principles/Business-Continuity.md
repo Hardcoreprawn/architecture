@@ -1,7 +1,7 @@
 ---
 Title: Business Continuity
 Published: 11/04/2023
-Description: Business keeps going even when systems break down.
+Lead: Business keeps going even when systems break down.
 Tags:
   - Architectural Principles
   - Architecture

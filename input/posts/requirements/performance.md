@@ -1,6 +1,6 @@
 ---
-Title: Performity
-Description: Ok, it's forced. But the performance of an application is critical to how well it performs the jobs a user needs to do.
+Title: Performance
+Lead: The performance of an application is critical to how well it performs the jobs a user needs to do.
 Tags:
   - Non-Functional Requirements
   - Requirements
@@ -18,4 +18,4 @@ Ignore third-party delivery times. You need to either find a service which meets
 Typically, we would look at the 95th percentile of results for these, so you don't have to be 100% perfect, but you should be 95% on target, to be 100%.
     a. A user log-in to the system should be completed within 1 second.
     b. All pages should render 'on the glass' within 1 second.
-The system can support at least 25 concurrent page 'views' per second.
+The system can support at least 25 concurrent 'views' of pages per second.

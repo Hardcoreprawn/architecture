@@ -1,7 +1,7 @@
 ---
 Title: Ease-of-Use
 Published: 15/04/2023
-Description: Applications are easy to use. The underlying technology is transparent to users, so they can concentrate on the tasks at hand.
+Lead: Applications are easy to use. The underlying technology is transparent to users, so they can concentrate on the tasks at hand.
 Draft: false
 Tags:
   - Architectural Principles

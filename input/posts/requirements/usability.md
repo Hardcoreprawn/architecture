@@ -1,7 +1,7 @@
 ---
-title: Usability
-description: Usability is the quality of being easy to use. Intuitive applicatiosn minimise learning curves and ease adoption.
-draft: true
+Title: Usability
+Lead: Usability is the quality of being easy to use. Intuitive applications minimise learning curves and ease adoption.
+Draft: true
 ---
 
 * Can the audience complete their job in a single visit?

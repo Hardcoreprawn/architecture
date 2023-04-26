@@ -12,8 +12,8 @@
           "type": "string"
         },
         {
-          "title": "Description",
-          "name": "Description",
+          "title": "Lead",
+          "name": "Lead",
           "type": "string"
         },
         {
@@ -30,7 +30,7 @@
           "title": "Published",
           "name": "Published",
           "type": "string"
-        },
+        }
         }
       ]
     }

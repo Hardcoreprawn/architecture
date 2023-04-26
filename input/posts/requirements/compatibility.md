@@ -1,6 +1,6 @@
 ---
 Title: Compatibility
-Description: Build to a common target architecture.
+Lead: Build to a common target architecture.
 Tags:
   - Architecture
   - Non-Functional Requirements

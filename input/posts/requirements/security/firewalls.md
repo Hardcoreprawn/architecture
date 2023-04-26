@@ -1,6 +1,6 @@
 ---
 Title: Firewalls
-Description: To ensure only secure and necessary services can be accessed from the internet
+Lead: To ensure only secure and necessary services can be accessed from the internet
 Draft: false
 Tags:
   - Non-Functional Requirements

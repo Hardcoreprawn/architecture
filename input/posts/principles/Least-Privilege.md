@@ -1,6 +1,6 @@
 ---
 Title: Least Privilege
-Description: 
+Lead: 
 Published: 24-04-2023
 Draft: true
 Tags:

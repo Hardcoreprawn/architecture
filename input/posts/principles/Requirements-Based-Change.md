@@ -1,7 +1,7 @@
 ---
 Title: Requirements-Based Change
 Published: 13/04/2023
-Description: We only make changes to technology to make our business better, and we do that together.
+Lead: We only make changes to technology to make our business better, and we do that together.
 Tags:
   - Architectural Principles
   - Architecture

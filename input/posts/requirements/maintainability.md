@@ -1,6 +1,6 @@
 ---
 Title: Maintainability
-Description: Build to a common target architecture.
+Lead: Build to a common target architecture.
 Tags:
   - Architecture
   - Non-Functional Requirements
@@ -17,7 +17,7 @@ The system should be designed and developed with maintainability in mind. The sy
 ## Requirement
 
 * Design and implement the system using a known set of conventions.
-* The system is well-documented and the source code is commented.
+* The system is well-documented and the source code has relevant comments.
 * The software has been designed to be modular and reusable.
 * Implement approved logging, monitoring and testing tools.
 * The deployment follows standard technology hosting patterns.

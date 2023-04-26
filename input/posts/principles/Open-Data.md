@@ -1,7 +1,7 @@
 ---
 Title: Open Data
 Published: 15/04/2023
-Description: Data sharing is critical to our strategy. Sharing data within our company, and with external partners helps us achieve our goals and improve our services.
+Lead: Data sharing is critical to our strategy. Sharing data within our company, and with external partners helps us achieve our goals and improve our services.
 Tags:
   - Architectural Principles
   - Architecture

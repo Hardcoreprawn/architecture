@@ -1,7 +1,7 @@
 ---
 Title: Compliance with Law
 Published: 15/04/2023
-Description: As we create and store data, we stick to the rules and regulations.
+Lead: As we create and store data, we stick to the rules and regulations.
 Tags:
   - Architectural Principles
   - Architecture
