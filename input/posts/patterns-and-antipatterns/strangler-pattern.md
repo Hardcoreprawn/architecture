@@ -24,7 +24,7 @@ Inspired by the Australian Strangler Fig Tree, which roots in the upper branches
 
 If you build something to help transition, take it away when you're finished with it.
 
-![Strangler pattern, over time](./media/images/strangler-pattern-example.png)
+![Strangler pattern, over time][def1]
 
 The first step shows the monolith, and then a companion service is added alongside, behind a proxy. The next step adds more services, transitioning over to the new model. The last step shows the monolith being removed, along with the proxy.
 
@@ -69,3 +69,6 @@ Scaling along both these axis allows the target state to scale effectively.
 * [Martin Folwer - Strangler Fig Application](https://martinfowler.com/bliki/StranglerFigApplication.html)
 * [Microsoft - Azure Architecture, Strangler Fig Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig)
 * [AKF Partners - Strangler Patterns: Dos and Don'ts](https://akfpartners.com/growth-blog/strangler-pattern-dos-and-donts)
+
+
+[def1]: input/media/images/strangler-pattern-example.png
