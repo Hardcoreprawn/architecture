@@ -4,257 +4,417 @@
 	<title />
 	<link rel="self" href="https://red-sand-078a6ea03.3.azurestaticapps.net/" />
 	<rights>Copyright James Brewster© 2023</rights>
-	<updated>2023-04-26T10:57:47Z</updated>
+	<updated>2023-04-26T15:08:41Z</updated>
 	<logo>https://brenstermedia.blob.core.windows.net/media/media/images/header01.png</logo>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/requirements-based-change</id>
-		<title>Requirements-Based Change</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/requirements-based-change" />
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/usability</id>
+		<title>Usability</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/usability" />
 		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-26T10:37:06Z</updated>
-		<content>&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;&amp;quot;I’m always willing to accept change, just as long as it isn’t change for the sake of change. If that change will result in a better way of doing things, then I’m all for it.&amp;quot; - James Van Fleet.&lt;/em&gt;&lt;/p&gt;
+		<updated>2023-04-26T14:38:22Z</updated>
+		<content>&lt;ul&gt;
+&lt;li&gt;Can the audience complete their job in a single visit?&lt;/li&gt;
+&lt;li&gt;How quickly can they complete their task?&lt;/li&gt;
+&lt;li&gt;Does the design require training? Is it intuitive and guided enough to be easy to complete on the first attempt?&lt;/li&gt;
+&lt;li&gt;How many errors does a typical user make? Are they clear and any remedial actions clear?&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/performance</id>
+		<title>Performance</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/performance" />
+		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
+		<updated>2023-04-26T14:37:49Z</updated>
+		<content>&lt;p&gt;Applications need to perform within the expectations and requirements of a user. Most users will give up on a website if it's even a few seconds delayed. On the other hand, a responsive site encourages engagement.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;It's important to understand the expected workload of your system and the expected growth. This needs to be a baseline, expected service for a given user.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do expect it to be successful, but don’t build in excess fixed resources; that's just wasteful. Make sure performance and scalability are considered together.
+Ignore third-party delivery times. You need to either find a service which meets your requirements or you need to use an adequate pattern to abstract this. You have minimal control of the service, so ensure you protect yourself from it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Typically, we would look at the 95th percentile of results for these, so you don't have to be 100% perfect, but you should be 95% on target, to be 100%.
+a. A user log-in to the system should be completed within 1 second.
+b. All pages should render 'on the glass' within 1 second.
+The system can support at least 25 concurrent 'views' of pages per second.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Applications need to perform within the expectations and requirements of a user. Most users will give up on a website if it's even a few seconds delayed. On the other hand, a responsive site encourages engagement.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/traceability</id>
+		<title>Traceability</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/traceability" />
+		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
+		<updated>2023-04-26T13:11:04Z</updated>
+		<content>&lt;p&gt;Access to applications is auditable. Logs are kept about who accesses data, what they do with it and when.&lt;/p&gt;
+&lt;p&gt;Log actions and output informative messages.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Access to applications is auditable. Logs are kept about who accesses data, what they do with it and when.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/be-suspicious</id>
+		<title>Be Suspicious</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/be-suspicious" />
+		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
+		<updated>2023-04-26T00:00:00Z</updated>
+		<content>&lt;p&gt;Check and verify the input. Look for tainted input.&lt;/p&gt;
+&lt;p&gt;With a modern application, there is no network boundary. It's down to identities. So check people are who they say they are and do what you expect them to.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Check and verify the input. Look for tainted input.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control</id>
+		<title>User Access Controls</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control" />
+		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
+		<updated>2023-04-26T00:00:00Z</updated>
+		<content>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Based on the NCSC.gov.uk 'Cyber Essentials Requirements for Infrastructure, January 2022. Modified to remove end user devices.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;We only make changes to technology to make our business better, and we do that together.&lt;/p&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;When we need to change how we do things, we should be able to do so without being held back by our technology. Instead of changing how we do things because of our technology, we can change our technology to better fit our changing needs. This way, we can make sure that our technology is helping us do what we need, instead of getting in the way.&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;We change because it's sensible, not because we have to. When we change, it's to make things better, not worse. We should consider everyone, and other changes and projects when we do so.&lt;/p&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Access to a business system, or its data, is protected by a centrally managed named user account. The account can be configured to only allow access to the relevant data and processes.&lt;/p&gt;
+&lt;p&gt;Accounts with special access privileges have an enhanced level of verification through a second factor, such as a verification message to a different, associated device or approval by a second party.&lt;/p&gt;
+&lt;p&gt;Any account should have more than one named individual present. Owners and administrators need to be able to disable an account, with relevant verification.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Any Authorisation is not performed by the application but by a dedicated authorisation application.&lt;/li&gt;
+&lt;li&gt;Applications obey trusted authorisation tokens from that application.&lt;/li&gt;
+&lt;li&gt;Tokens only grant access to the relevant data, necessary for the role the user has.&lt;/li&gt;
+&lt;li&gt;Roles are granular and can be subdivided where necessary.&lt;/li&gt;
+&lt;li&gt;Application and data access is protected, ensuring a second check.&lt;/li&gt;
+&lt;li&gt;Special access privileges, such as deleting an account, require a second factor or verification.&lt;/li&gt;
+&lt;li&gt;Options for Multi-factor authentication should be present and are strongly recommended.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Before making any changes to the way we do things, we will look at how it will affect related things we do.&lt;/li&gt;
-&lt;li&gt;We will make sure that everyone knows how to make changes in a way that follows these rules.&lt;/li&gt;
-&lt;li&gt;Sometimes these rules might get in the way of making changes quickly. That's okay and we can raise this as a blocker if need be.&lt;/li&gt;
-&lt;li&gt;Responsive change is also a principle. We need to respond quickly, we should also make sure that any response is based on a real need.&lt;/li&gt;
+&lt;li&gt;System designers and implementors.&lt;/li&gt;
+&lt;li&gt;Organisational management&lt;/li&gt;
 &lt;/ol&gt;
-</content>
-		<summary>We only make changes to technology to make our business better, and we do that together.</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/open-data</id>
-		<title>Open Data</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/open-data" />
-		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-26T10:36:37Z</updated>
-		<content>&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;&amp;quot;Whoever is careless with the truth in small matters cannot be trusted with important matters.&amp;quot; - Albert Einstein&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;Data sharing is a key component of our business strategy. We believe that sharing data within our company and with external partners can help us to achieve our goals and improve our services.&lt;/p&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;We are committed to making our data open and accessible to our employees and partners, while also protecting the privacy and security of our customers and stakeholders. We will work to ensure that our data is secure, accurate, up-to-date, and relevant and that it is shared in a way that is transparent, ethical, and responsible.&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;This principle is mostly about ensuring that people who are allowed to get data, can get it when they want it. We can control who that is, and we have to make sure we handle data following the law. This isn't creating a free for all. It's making sure we have data in useful formats, so we can make decisions with it.&lt;/p&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;By making data open and accessible, the company can increase transparency and accountability, both internally and externally.&lt;/li&gt;
-&lt;li&gt;Sharing data within the company and with external partners can help to improve collaboration and innovation, leading to better products and services.&lt;/li&gt;
-&lt;li&gt;Access to more data can help employees and partners make better decisions, based on more accurate and up-to-date information.&lt;/li&gt;
-&lt;li&gt;By sharing data, the company can avoid duplication of effort and reduce costs, leading to greater efficiency.&lt;/li&gt;
-&lt;li&gt;By being open and transparent with data, the company can improve its reputation and build trust with customers and stakeholders.&lt;/li&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="add-additional-detail-examples-or-specific-context"&gt;Add additional detail, examples or specific context&lt;/h3&gt;
-&lt;p&gt;words&lt;/p&gt;
-</content>
-		<summary>Data sharing is critical to our strategy. Sharing data within our company, and with external partners helps us achieve our goals and improve our services.</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/interoperability</id>
-		<title>Interoperability</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/interoperability" />
-		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-26T10:35:45Z</updated>
-		<content>&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;&amp;quot;Alone we can do so little; together we can do so much.&amp;quot; - Helen Keller&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;Imagine if every computer had different software and hardware that didn’t work with other computers. It would be very hard to share information or do things together. That’s why we have standards to make sure that our software and hardware can work together.&lt;/p&gt;
 &lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Standards help us in many ways. They make sure that everything works together smoothly so that we can manage our systems better and be happy with what we are doing. They also help us save money by making sure that we don’t have to buy new things all the time because everything works together well.&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;We want to use an open, standardised well-trodden path of technology. Most of the problems we solve can use existing technologies and we need to be able to work with new vendors and with unknown new systems, services and software. Open standards help us do that.&lt;/p&gt;
+&lt;p&gt;Ensuring our customer's data is secure is important. Ensuring they can manage access to that data is important. Giving them a feeling of security and trust is important.&lt;/p&gt;
+&lt;p&gt;Reflecting our brand values, our commitment to security and our capability to manage data and services for them is important.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Sometimes, people might want to do something different. But if we do that, it might make it harder to use or integrate. So, you have to have a really good reason.&lt;/li&gt;
-&lt;li&gt;To make sure that everyone/everything is following the same rules and playing together nicely, we need to have a way of checking that everyone is doing what they’re supposed to be doing. We also need to make sure that we keep checking the rules every once in a while to make sure that they still work and are fair for everyone.&lt;/li&gt;
-&lt;li&gt;Before we can start playing the game, we need to know what we’re playing with. So, we need to find out what things we already have and how they work. This way, we can make sure that everything works together nicely.&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:least-privilege"&gt;Least Privilege&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:shift-security-left"&gt;Shift Security Left&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-		<summary>Imagine if every computer had different software and hardware that didn’t work with other computers. That would be rubbish...</summary>
+		<summary>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property</id>
-		<title>Intellectual Property</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property" />
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration</id>
+		<title>Secure Configuration</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration" />
 		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-26T10:35:16Z</updated>
-		<content>&lt;blockquote&gt;
-&lt;p&gt;Quote Goes here&lt;/p&gt;
+		<updated>2023-04-26T00:00:00Z</updated>
+		<content>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Based on the NCSC.gov.uk 'Cyber Essentials Requirements for Infrastructure, January 2022. Modified to remove end user devices.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;Statement goes here.&lt;/p&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Rationale Goes Here&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;Implications go here&lt;/p&gt;
-&lt;h3 id="details-and-context"&gt;Details and Context&lt;/h3&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Computers and network devices must be properly configured to reduce the level of inherent vulnerabilities and only provide the services required to fulfil their role.&lt;/p&gt;
+&lt;p&gt;Default configurations are often insecure, to make initial access easier. We must ensure any commodity services are reconfigured to ensure security.&lt;/p&gt;
+&lt;p&gt;This can include:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Details and Context go here&lt;/li&gt;
+&lt;li&gt;Default accounts, potentially with additional permissions.&lt;/li&gt;
+&lt;li&gt;weak or known initial account passwords.&lt;/li&gt;
+&lt;li&gt;Unnecessary or legacy services, which are easier to exploit.&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;Quote Goes here&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/ease-of-use</id>
-		<title>Ease-of-Use</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/ease-of-use" />
-		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-26T10:35:00Z</updated>
-		<content>&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;&amp;quot;Design is not just what it looks like and feels like. Design is how it works.&amp;quot; - Steve Jobs.&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;Applications are easy to use. The underlying technology is transparent to users, so they can concentrate on the tasks at hand.&lt;/p&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;When you use something, it’s better if you don’t have to learn too much about how it works. It’s easier to use when it’s simple. This makes it easier for you to do your work and not make mistakes. It keeps data in the right places and reduces the likelihood of people mistreating it.&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;We want our software to be easy to use and accessible to the biggest audience we can serve. We do not, ever, want the complexity of our systems to hinder a sale or add any impediment to our business.&lt;/p&gt;
+&lt;p&gt;These must be disabled or reconfigured.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;On inspection, third-party components should not have common or default accounts and passwords enabled.&lt;/li&gt;
+&lt;li&gt;Where possible, configuration should be backed-up and stored securely, to allow for re-verification.&lt;/li&gt;
+&lt;li&gt;The configuration of a system has been reviewed with one or more peers and has been approved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Apps and websites should look and feel similar to each other and be easy to use. So, there are rules that are made to make sure that all applications follow these standards. These rules are tested to make sure that they are easy to use.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;When people make things like websites or apps, they should not assume that everyone who uses them is the same. They should make sure that everyone can use them no matter where they are from, what language they speak, how much they know about computers, or if they have any physical problems.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;System designers and implementors.&lt;/li&gt;
+&lt;li&gt;Organisational management&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id="details-and-context"&gt;Details and Context&lt;/h3&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Accessibility&lt;/li&gt;
-&lt;li&gt;White Label&lt;/li&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;One of the most common ways to access a system is to use a default account or configuration, which has been left unsecured. By ensuring we verify these accounts and their configuration, we can help improve security and minimise breaches.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:least-privilege"&gt;Least Privilege&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:shift-security-left"&gt;Shift Security Left&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-		<summary>Applications are easy to use. The underlying technology is transparent to users, so they can concentrate on the tasks at hand.</summary>
+		<summary>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/core-vs-context</id>
-		<title>Core vs Context</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/core-vs-context" />
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/maintainability</id>
+		<title>Maintainability</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/maintainability" />
 		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-26T10:34:33Z</updated>
-		<content>&lt;blockquote&gt;
-&lt;p&gt;“Make room for the real important stuff.” —Tigger”&lt;/p&gt;
+		<updated>2023-04-26T00:00:00Z</updated>
+		<content>&lt;p&gt;The system should be designed and developed with maintainability in mind. The system should be easy to look after, diagnose and support, throughout its lifecycle.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;We focus on what matters to our customers, to make sure we deliver a great service they want to use, with the resources we have.&lt;/p&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Understand what really matters to your customers, the core of your business, versus the stuff you have to do around it, the context.&lt;/p&gt;
-&lt;p&gt;You need to focus your efforts on Core matters, not context.&lt;/p&gt;
-&lt;p&gt;Focusing your efforts on Core matters will ensure you focus on the problems and challenges your customers have and how you can deliver value to them. This will maximise your oppotrtunity with them.&lt;/p&gt;
-&lt;p&gt;Focusing on context will eat into your time, and few customers will thank you for it. This doesn't mean its not important, but it does mean you need to control the amount of time, money and energy spent on context.&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;Core problems are the things we do that create customer value. We want to give ourselves the most time to do these. Context problems are things we do because we have, to make sure we're compliant, paid, etc.&lt;/p&gt;
-&lt;p&gt;We want to minimise context problems and maximise the focus we can give Core problems.&lt;/p&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Contextual problems should be considered for outsourcing.&lt;/li&gt;
-&lt;li&gt;Corte problems could be assisted by outsourcing, but must remain withint the purview of the business. This could be done to get past a skill gap or short deadline.&lt;/li&gt;
-&lt;li&gt;Context problems are best 'leased' rather than built. Outsourcing services for these things will let an expert manage it and ultimately save time/money/energy.&lt;/li&gt;
-&lt;li&gt;Core problems need to minimise dependencies and maximise local control, to ensure the business can adapt.&lt;/li&gt;
+&lt;li&gt;Design and implement the system using a known set of conventions.&lt;/li&gt;
+&lt;li&gt;The system is well-documented and the source code has relevant comments.&lt;/li&gt;
+&lt;li&gt;The software has been designed to be modular and reusable.&lt;/li&gt;
+&lt;li&gt;Implement approved logging, monitoring and testing tools.&lt;/li&gt;
+&lt;li&gt;The deployment follows standard technology hosting patterns.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="details-examples-context"&gt;Details, Examples, Context&lt;/h2&gt;
-</content>
-		<summary>Focus on what matters to our customers and get experts to help with the rest.</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/control-technical-diversity</id>
-		<title>Control Technical Diversity</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/control-technical-diversity" />
-		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-26T10:34:17Z</updated>
-		<content>&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;“The more complex the system, the greater the room for error.” — George Soros&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;We try to use a limited number of technologies to reduce the cost of maintaining expertise in and connectivity between multiple systems. By doing so, we minimize the complexity of our systems and reduce costs.&lt;/p&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;When companies use too many different technologies to do things, it can be very expensive to keep everything working together. So, companies try to use fewer technologies to make things simpler and cheaper. This way, they can save money and make things work better. It’s like having fewer toys to play with so you don’t have to worry about cleaning them away.&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;Let's be clear, we like diversity. But technical diversity is different, as it's more about the ecosystem of compatibility, than any intrinsic bias. We want to choose a simple path and different vendors will complicate matters, standards and interoperability. So we are careful with who we pick and who we invite in, as we all want an easier life, with less waste.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;When we choose which technologies to use, we have to follow certain rules.&lt;/li&gt;
-&lt;li&gt;These rules help us choose technologies that work well together and are easy to use.&lt;/li&gt;
-&lt;li&gt;If we need to use a new technology that is not in the rules, we have to make sure it works with the other technologies we are already using.&lt;/li&gt;
-&lt;li&gt;We also have to make sure it will make things better or easier and not harder.&lt;/li&gt;
+&lt;li&gt;Designs for the system are reviewed and approved by at least two others.&lt;/li&gt;
+&lt;li&gt;Software source code is documented using a known standard or convention.&lt;/li&gt;
+&lt;li&gt;Software designs have been inspected for opportunities for reuse and modularity.&lt;/li&gt;
+&lt;li&gt;The system must include logging ability.&lt;/li&gt;
+&lt;li&gt;An outline design of areas to be monitored on the system should be included.&lt;/li&gt;
+&lt;li&gt;The system must have a documented set of test cases.&lt;/li&gt;
+&lt;li&gt;The system must be based on an approved hosting pattern and document how the pattern is followed.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="rules-for-technical-choices"&gt;Rules for technical choices&lt;/h2&gt;
-&lt;p&gt;This principle drives some NFRs, which are linked here:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:compatibility"&gt;Compatibility&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>We try to use a limited number of technologies to reduce the cost of maintaining expertise in and connectivity between multiple systems.</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/compliance-with-law</id>
-		<title>Compliance with Law</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/compliance-with-law" />
-		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-26T10:33:56Z</updated>
-		<content>&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;&amp;quot;Wherever law ends, Tyranny begins. - John Locke, 1972&amp;quot;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;Our processes for the optimization, storage, and processing of the data we create and use, follow all the relevant laws, policies and regulations.&lt;/p&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Enterprise policy refers to a set of rules and guidelines that an organization creates to govern its actions. Part of our enterprise policy is to comply with laws, policies, and regulations. However, this does not prevent business process improvements that may lead to changes.&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;This principle tells us to follow the law and associated good practices. Areas of our business are regulated, and we are bound by law for the countries we work in.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The enterprise must comply with laws, regulations, and external policies regarding the collection, retention, and management of data.&lt;/li&gt;
-&lt;li&gt;Employees must be educated about these rules and have access to them.&lt;/li&gt;
-&lt;li&gt;We will adapt our processes and applications as the law and regulations change.&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>As we create and store data, we stick to the rules and regulations.</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/common-vocabulary</id>
-		<title>Common Vocabulary</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/common-vocabulary" />
-		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-26T10:33:36Z</updated>
-		<content>&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;&amp;quot;Don’t say ‘infinitely’ when you mean ‘very’; otherwise you’ll have no word left when you want to talk about something really infinite.&amp;quot; - George Orwell&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;Everyone in the company agrees on what data means, and they can easily find and understand it.&lt;/p&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;We need to use the same words for the data we use to make apps. This will help us share data and talk better. It will also help us connect systems and move data between them.&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;This principle aims to help us keep things deliberately simple and to make sure we all use the same words to describe the same things. Not following this principle causes confusion and delay, and affects our work. Deliberately keeping things simple helps us all communicate effectively, without ego, and ensures we can be as productive as possible. It also helps us communicate with customers, people from outside our industry and people with other language backgrounds.&lt;/p&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;The people who are supposed to take care of important information don’t always do a good job. We need to make sure they have enough help and resources so they can do their job better. This will help us make sure we have good information that we can trust.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;We need to create a list of words that everyone in the company will use in the same way. This will help everyone understand each other better and avoid confusion.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;When we need to make up a new word or phrase to describe something, we have to check with other people in the company to make sure that everyone agrees on what it means. This way, everyone can understand what the new word or phrase means.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;We will nominate someone to provide this coordination.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;It is important to have a common understanding of data across an organization instead of having different definitions of data in different places.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Data initiatives need to be coordinated, with centralised management.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Someone, within each part of the organisation, has to be accountable for data.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;System designers and software engineers.&lt;/li&gt;
+&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;This NFR ensures that the system can adapt to changing needs, bugs can be fixed and support costs can be kept down.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:control-technical-diversity"&gt;Control Technical Diversity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:interoperability"&gt;Interoperability&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
-		<summary>Everyone in the company agrees on what data means, and they can easily find and understand it.</summary>
+		<summary>&lt;p&gt;The system should be designed and developed with maintainability in mind. The system should be easy to look after, diagnose and support, throughout its lifecycle.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/2023-04-21-shift-security-left</id>
-		<title>Shift Security Left</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/2023-04-21-shift-security-left" />
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation</id>
+		<title>Non-repudiation</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation" />
 		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-26T10:32:41Z</updated>
-		<content>&lt;p&gt;Start thinking of security as soon as possible in the design process. It's practically impossible to effectively retrofit security. Adding security to an application is an attitude to everything you do from concept to production.&lt;/p&gt;
-&lt;p&gt;This doesn't need to be onerous, but it is important to start with security in mind.&lt;/p&gt;
+		<updated>2023-04-24T15:03:09Z</updated>
+		<content>&lt;p&gt;Where possible, use immutable objects and data which can't be repudiated. Make sure we can trust our systems and our data.&lt;/p&gt;
 </content>
-		<summary>Add security to the earliest steps of your SDLC. The sooner you start thinking about it, the easier it is to incorporate.</summary>
+		<summary>&lt;p&gt;Where possible, use immutable objects and data which can't be repudiated. Make sure we can trust our systems and our data.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices</id>
+		<title>Microservices</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices" />
+		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
+		<updated>2023-04-24T13:54:33Z</updated>
+		<content>&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
+&lt;p&gt;This pattern is designed to provide reliable service at a large scale. It does
+this by providing no single point of failure, allowing its components to
+scale independently of each other and segregating information to provide
+security.&lt;/p&gt;
+&lt;h3 id="illustration"&gt;Illustration&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/images/microservices-patterns.png" alt="microservices pattern, learn.microsoft.com"&gt;
+&lt;em&gt;Model of a Monolith to Microservices migration, showing sub-patterns&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This is a reference microservices pattern, showing the possible use of sub-patterns.&lt;/p&gt;
+&lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Scale and resilience in each service.
+Safe deployment of updates to individual services.&lt;/li&gt;
+&lt;li&gt;Separation of services, allowing changes to be made locally and quickly, with
+minimal impact on other services.&lt;/li&gt;
+&lt;li&gt;The ability for several teams to work together on different areas. Can support
+regular and frequent changes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="drawbacks-to-this-pattern"&gt;Drawbacks to this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;It can be complex, quickly.&lt;/li&gt;
+&lt;li&gt;Overwhelming for a small number of teams, due to a large number of
+components.&lt;/li&gt;
+&lt;li&gt;The Danger of component sprawl if services are over-specialized.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;This pattern is for applications that need to grow, which need to manage
+their costs and support a large degree of change and experimentation.&lt;/li&gt;
+&lt;li&gt;When reliability is critical to business, reputation or safety.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Because you want to be down with the kids, and you think it's cool.&lt;/li&gt;
+&lt;li&gt;Because you want to use the 'best' type of technology and work at Google.&lt;/li&gt;
+&lt;li&gt;For a simple application, which doesn't have a high probability of needing
+change, addition or integration.&lt;/li&gt;
+&lt;li&gt;For an application that won't be making lots of changes, with lots of
+active users.&lt;/li&gt;
+&lt;li&gt;For your Blog.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="assumptions"&gt;Assumptions&lt;/h2&gt;
+&lt;p&gt;In choosing this pattern, you ruled out simpler options as not being capable.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You have time and space for teams to find their way; this is hard and it
+will go wrong.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="anti-patterns-of-the-microservices-architecture"&gt;Anti-Patterns of the microservices architecture&lt;/h2&gt;
+&lt;h3 id="distributed-monolith"&gt;Distributed Monolith&lt;/h3&gt;
+&lt;p&gt;When you split a monolith, don't let your services become dependent on each
+or several other microservices. If changes in services require redeployment or
+change in other services, you've built a distributed monolith.
+Lastly, over-dependency can also manifest in long deployment times, as too many
+changes have to occur at once. Sometimes it shows that deployment has to
+happen in a particular order.&lt;/p&gt;
+&lt;p&gt;This is a &lt;a href="http://www.laputan.org/mud/mud.html#BigBallOfMud"&gt;Big-Ball-Of-Mud&lt;/a&gt; that also has network-level latencies to
+deal with now.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="overly-chatty"&gt;Overly Chatty&lt;/h3&gt;
+&lt;p&gt;Another risk is the amount of communication. Services are distributed, so calls
+between them take time. Overly chatty services are not performant; the latency
+can kill the performance. Following &lt;a href="https://en.wikipedia.org/wiki/SOLID"&gt;SOLID&lt;/a&gt; principles can help here.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="shared-persistence"&gt;Shared Persistence&lt;/h3&gt;
+&lt;p&gt;A monolith typically requires a large shared data store. Microservices should
+each have their own data store, to avoid resource contention. Each store should
+be accessible only by the associated service. Any communication needs to be via
+the API interfaces.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="heavyweight-services"&gt;Heavyweight services&lt;/h3&gt;
+&lt;p&gt;Building too much into each service makes them slow. Build/latency delays kick
+in and you are back to building monoliths.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="no-api-gateway"&gt;No API Gateway&lt;/h3&gt;
+&lt;p&gt;Data Interfaces need to be identifiable, they need to be managed, and they need
+authentication. It has to be something you can find to query.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="entangled-data"&gt;Entangled Data&lt;/h3&gt;
+&lt;p&gt;Isolate the data inside the application.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="improper-versioning"&gt;Improper Versioning&lt;/h3&gt;
+&lt;p&gt;Build API versions into your URI calls.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="sub-patterns"&gt;Sub-patterns&lt;/h2&gt;
+&lt;p&gt;A successful migration of monolith to microservices will likely use many
+different patterns. Some common ones are linked here.&lt;/p&gt;
+&lt;h3 id="ambassador"&gt;Ambassador&lt;/h3&gt;
+&lt;p&gt;An Ambassador sits between two services and negotiates. Typically a proxy
+service can interpret. An ambassador is often used to offload or mask client
+interoperability issues. An ambassador is a specialized sidecar.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador"&gt;Ambassador Pattern&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="anti-corruption"&gt;Anti-corruption&lt;/h3&gt;
+&lt;p&gt;When two systems don't properly understand each other, an Anti-corruption
+layer can be introduced to protect the new architecture.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer"&gt;Anti-corruption Layer pattern&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="backends-for-frontends"&gt;Backends for Frontends&lt;/h3&gt;
+&lt;p&gt;Sometimes, it's just quicker to write APIs that deal with specific clients. It
+might take more maintenance, but that can be ok.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends"&gt;Backends for Frontends pattern&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="bulkhead"&gt;Bulkhead&lt;/h3&gt;
+&lt;p&gt;Bulkheads are used on ships to prevent water from a hull breach from flooding
+the whole ship. Keep things separate, (like connection pools or hardware)
+so a greedy neighbour can't flood the whole ship.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead"&gt;Bulkhead Pattern&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="gateways"&gt;Gateways&lt;/h3&gt;
+&lt;p&gt;Using a gateway for your microservices offers several benefits, by making your
+collection of services look like a single web server.&lt;/p&gt;
+&lt;h4 id="aggregation"&gt;Aggregation&lt;/h4&gt;
+&lt;p&gt;Clients can connect to a single endpoint to make requests, which are then
+forwarded to different microservices. This makes the client connection light
+and easy&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation"&gt;Gateway Aggregation&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id="offloading"&gt;Offloading&lt;/h4&gt;
+&lt;p&gt;The gateway can offload shared functionality, such as authentication, TLS
+certificates or issuing Authorisation tokens.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading"&gt;Gateway Offloading&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id="routing"&gt;Routing&lt;/h4&gt;
+&lt;p&gt;The service all appears to come from a single domain, so much easier for a
+client to manage connections to and from the service, improving security.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-routing"&gt;Gateway Routing&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="sidecar"&gt;Sidecar&lt;/h3&gt;
+&lt;p&gt;deploy helper apps into separate containers to encapsulate them, but keep
+them close for performance.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar"&gt;Sidecar Pattern&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="strangler"&gt;Strangler&lt;/h3&gt;
+&lt;p&gt;Refactor over time, by gradually replacing specific services.&lt;/p&gt;
+&lt;p&gt;&lt;a href="xref:strangler-pattern"&gt;Strangler Pattern&lt;/a&gt;&lt;/p&gt;
+</content>
+		<summary>Microservices architecture is a 'super-pattern', which aims to minimise dependencies and promote scalability across multiple dimensions.</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern</id>
+		<title>Strangler pattern</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern" />
+		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
+		<updated>2023-04-24T09:51:47Z</updated>
+		<content>&lt;p&gt;This pattern is used to migrate functionality from an older app to a new one. Typically, this is done for a monolith to a microservices model but works for any app.&lt;/p&gt;
+&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
+&lt;p&gt;Replacing a large monolithic system is complex and risky. The strangler pattern builds new functionality using modern design patterns alongside the monolith. A proxy is used to integrate the user experience and make sure the aligned application makes sense to end users. Over time the monolith is slowly broken down.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://th.bing.com/th/id/OIP.xkG2oQy-yOaQWbW6QlEwKgHaLH?pid=ImgDet&amp;amp;rs=1" alt="The Strangler Fig Tree" /&gt;&lt;/p&gt;
+&lt;p&gt;Inspired by the Australian Strangler Fig Tree, which roots in the upper branches and grows down and around the tree, eventually taking root and destroying the original host tree.&lt;/p&gt;
+&lt;h3 id="illustration"&gt;Illustration&lt;/h3&gt;
+&lt;p&gt;If you build something to help transition, take it away when you're finished with it.&lt;/p&gt;
+&lt;p&gt;![Strangler Pattern, evolution over time]The first step shows the monolith, and then a companion service is added alongside, behind a proxy. The next step adds more services, transitioning over to the new model. The last step shows the monolith being removed, along with the proxy.&lt;/p&gt;
+&lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Provides a way to scale a solution over multiple dimensions.&lt;/li&gt;
+&lt;li&gt;Delivers gradual value over time, with lower risk than a rewrite.&lt;/li&gt;
+&lt;li&gt;Supports and allows for rollback.&lt;/li&gt;
+&lt;li&gt;Uses versioned APIs, to reduce the need for collaboration.&lt;/li&gt;
+&lt;li&gt;Supports legacy integrations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="drawbacks-to-this-pattern"&gt;Drawbacks to this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Potential for increased latency because of new service dependencies.&lt;/li&gt;
+&lt;li&gt;Additional proxy decreases availability through multiplicative failure effect.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Use the strangler for versioning and migration of services.&lt;/li&gt;
+&lt;li&gt;Use an existing proxy, such as Nginx, as scaffolding during the migration.&lt;/li&gt;
+&lt;li&gt;Manage the service rules during migration.&lt;/li&gt;
+&lt;li&gt;Remove rules as no longer needed and decommission the proxy when done.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If you have to add a facade, then don't also add a proxy as it increases the call depth and hits latency poorly.&lt;/li&gt;
+&lt;li&gt;If latency is a concern, this won't help in the interim.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
+&lt;p&gt;You can implement this pattern in two separate ways, scaling along the service domains, or between the new and old services. Ideally, both together works well.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Scaling along the service domains allows new services to be stood up and integrated.&lt;/li&gt;
+&lt;li&gt;Scaling alongside the existing services allows for rollback and A/B testing between the new and old services, by sending a portion of calls to the new service.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Scaling along both these axis allows the target state to scale effectively.&lt;/p&gt;
+&lt;h2 id="assumptions"&gt;Assumptions&lt;/h2&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://martinfowler.com/bliki/StranglerFigApplication.html"&gt;Martin Folwer - Strangler Fig Application&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig"&gt;Microsoft - Azure Architecture, Strangler Fig Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/strangler-pattern-dos-and-donts"&gt;AKF Partners - Strangler Patterns: Dos and Don'ts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>This pattern is used to migrate functionality from an older app to a new one</summary>
 	</entry>
 </feed>

@@ -1,5 +1,5 @@
 ---
-Title: User Access Controls
+Title: User Access Control
 Lead: Ensure user accounts are assigned to authorised individuals and only provide access to the systems required for their role.
 Draft: false
 Tags:
