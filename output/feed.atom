@@ -3,50 +3,15 @@
 	<id>https://red-sand-078a6ea03.3.azurestaticapps.net/</id>
 	<title />
 	<link rel="self" href="https://red-sand-078a6ea03.3.azurestaticapps.net/" />
-	<rights>Copyright © 2023</rights>
-	<updated>2023-04-25T07:38:09Z</updated>
+	<rights>Copyright James Brewster© 2023</rights>
+	<updated>2023-04-26T10:46:24Z</updated>
 	<logo>https://brenstermedia.blob.core.windows.net/media/media/images/header01.png</logo>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/malware-protection</id>
-		<title>Malware Protection</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/malware-protection" />
-		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-25T06:48:11Z</updated>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control</id>
-		<title>User Access Control</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control" />
-		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-25T06:48:02Z</updated>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/owasp</id>
-		<title>Owasp</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/owasp" />
-		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-25T06:47:45Z</updated>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/security-update-management</id>
-		<title>Security Update Management</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/security-update-management" />
-		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-25T06:47:39Z</updated>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration</id>
-		<title>Secure Configuration</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration" />
-		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-25T06:47:27Z</updated>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/security-requirements</id>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security-requirements</id>
 		<title>Security Requirements</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/security-requirements" />
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security-requirements" />
 		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-24T15:13:24Z</updated>
+		<updated>2023-04-25T10:39:43Z</updated>
 		<content>&lt;p&gt;Security controls are critical to developing applications.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;These security controls are written inline with the UK &lt;a href="https://www.ncsc.gov.uk/cyberessentials/overview"&gt;National Cyber Security Centre (NCSC) Cyber Essentials Plus&lt;/a&gt; certification.&lt;/p&gt;
@@ -105,44 +70,248 @@
 		<summary>Security is a critical concern of any organisation. The requirements will help you baseline security needs and understand the risks in your app.</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation</id>
-		<title>Non-repudiation</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation" />
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/requirements-checklist</id>
+		<title>Requirements checklist</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/requirements-checklist" />
 		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-24T15:03:09Z</updated>
-		<content>&lt;p&gt;Where possible, use immutable objects and data which can't be repudiated. Make sure we can trust our systems and our data.&lt;/p&gt;
+		<updated>2023-04-25T10:30:34Z</updated>
+		<content>&lt;p&gt;This document should help you write good requirements and make sure they are ready for development and implementation. Most organizations have poorly documented guidance about creating requirements and what makes them easy to implement. It is also hard to know what everyone's assumptions of a good requirement are. This document aims to help explain what makes a good requirement.&lt;/p&gt;
+&lt;h2 id="defining-good-requirement"&gt;Defining 'Good Requirement'&lt;/h2&gt;
+&lt;p&gt;A good requirement should be easy to understand for its primary audience. It should help someone who is implementing it to do so, with minimal additional research.&lt;/p&gt;
+&lt;p&gt;A primary audience is a person or group who is expected to be the direct consumer. It could be an architect or a developer, a customer or an executive. It is just important to understand who the requirement is for, so you can include enough context that they don't need to read a load of other stuff to understand it. This is doubly important with a distributed, remote or international team, as there is less chance to clarify in person.&lt;/p&gt;
+&lt;p&gt;A secondary audience is someone interested, but won't use it. This could be a customer, a developer, or an executive. Again, the important thing is to make sure they can understand it, and you refer to enough context that they can understand it, with a little research if they're not as competent in this field.&lt;/p&gt;
+&lt;p&gt;So a good requirement should meet the needs of its audiences, both primary and secondary. This might mean you need two versions, or that you have to include references or links to add additional context for the secondary.&lt;/p&gt;
+&lt;h2 id="understand-your-audience"&gt;Understand your audience&lt;/h2&gt;
+&lt;p&gt;It's very hard to know if a requirement is fit for purpose unless you understand the problem, the context and the intended user. It is almost impossible to get this right from an ivory tower.&lt;/p&gt;
+&lt;p&gt;So, when writing requirements, you should understand the problem space, the user space and the system context. Requirements need to be focussed on how you can meet the needs of a problem, in the given context. (i.e. the current system/landscape). This cannot be too blue sky, or it will be unworkable. Imagining that electric vehicles work everywhere for everyone, without understanding the logistics of recharging, and infrastructure is just wishful thinking.&lt;/p&gt;
+&lt;p&gt;Make sure your requirements are written for their intended audience&lt;/p&gt;
+&lt;h2 id="enough-context"&gt;Enough context&lt;/h2&gt;
+&lt;p&gt;Make sure that the requirement is complete, and understandable, without any additional material, for the primary audience. (If you cannot do this, then maybe there is some need to educate on the current systems and capabilities...). This should give you something succinct, but easy to grasp, without a whole host of specialist knowledge the audience doesn't have.&lt;/p&gt;
+&lt;p&gt;Different types of requirements have different needs and may create additional requirements. High-level business requirements and low-level technical specifications, taking into account regulations, can be very different things. Similar to the first point, make sure they are detailed enough for the audience in question.&lt;/p&gt;
+&lt;h2 id="clear-simple-language"&gt;Clear, simple language&lt;/h2&gt;
+&lt;p&gt;Don't write completely, chaotically complex prose. Keep it simple and informative. Not too brief, this is also bad.&lt;/p&gt;
+&lt;p&gt;The trick is to explain the change/adaption, but not the need or any complex outcome. Just immediate outcomes are fine. You may have some great ideas about what it might do. Thats fine. It doesn't need to be in the requirement, just enough to make sure someone builds it to the right standard.&lt;/p&gt;
+&lt;h2 id="show-dont-tell"&gt;Show, don't tell&lt;/h2&gt;
+&lt;p&gt;If you can include an example, a diagram or a model, do. A lot of people do better with something they can process alongside words. It can add a whole dimension to your text. But it does need to be unambiguous. If your requirement is open to interpretation, the output will be as well.&lt;/p&gt;
+&lt;p&gt;On that note, &lt;a href="xref:compatibility"&gt;here is an example requirement&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="consistent"&gt;Consistent&lt;/h2&gt;
+&lt;p&gt;Good product development requirements are consistent. The development should know how to deal with them, what certain things mean and how that affects the way the software works. Consistency and repetition are helpful in this way. The less someone needs to think about it, the easier and faster it will be to develop.&lt;/p&gt;
+&lt;h2 id="clear-accountability"&gt;Clear accountability&lt;/h2&gt;
+&lt;p&gt;Each requirement has an owner. Each requirement gets implemented by someone. The process of managing this needs to ensure ownership is clear during the process of development and that the implementer can talk to the designer or owner as necessary, to get clarity and understand what was meant.&lt;/p&gt;
+&lt;h2 id="manage-and-update-the-status"&gt;Manage and update the status&lt;/h2&gt;
+&lt;p&gt;Track requirements development. Each requirement adds value to the product. We all want that, so we all have an interest in making sure everyone can find out how it's going. Has it been reviewed? Approved? Implemented? People should be able to find out and see how it's progressing.&lt;/p&gt;
+&lt;h2 id="feedback-is-key"&gt;Feedback is key&lt;/h2&gt;
+&lt;p&gt;Understanding that a requirement can morph and change is one of those often overlooked things. It can and should, albeit with the right degree of approval and review. We all get stuff wrong. Until we have a broad agreement, something is likely to need to change, so review early, and often and make decisions to keep it moving. If it changes, so be it.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Is the requirement complete?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Is it a complete sentence?&lt;/li&gt;
+&lt;li&gt;Does the reader/consumer need additional material to understand it?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Is the requirement clear?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Are there any ambiguous words?&lt;/li&gt;
+&lt;li&gt;Do the relevant stakeholders agree on the meaning of the words?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Is the requirement consistent with other requirements?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Does this requirement conflict with others?&lt;/li&gt;
+&lt;li&gt;Is the terminology used consistently?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Can you test if the requirement has been met?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Are there acceptance criteria?&lt;/li&gt;
+&lt;li&gt;Have you reviewed the requirement with testing or QA?&lt;/li&gt;
+&lt;li&gt;Can you verify the requirement through inspection/analysis/demonstration?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Can you trace the requirement and identify it?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;does it have a unique ID? Be consistent with this!&lt;/li&gt;
+&lt;li&gt;Do you know where it came from, and what outcome it supports?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Does the requirement depend on a given design?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Does the requirement demand constraints on a design? Are they justified?&lt;/li&gt;
+&lt;li&gt;As written, could you meet the requirement in different ways?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Stay Agile!&lt;/p&gt;
 </content>
-		<summary>&lt;p&gt;Where possible, use immutable objects and data which can't be repudiated. Make sure we can trust our systems and our data.&lt;/p&gt;</summary>
+		<summary>A checklist for checking a requirement is complete and ready to be used.</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/2023-04-21-least-privilege</id>
-		<title>Least Privilege</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/2023-04-21-least-privilege" />
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/firewalls</id>
+		<title>Firewalls</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/firewalls" />
 		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-24T14:56:30Z</updated>
-		<content>&lt;p&gt;Some words!&lt;/p&gt;
+		<updated>2023-04-25T10:29:57Z</updated>
+		<content>&lt;p&gt;This applies to Boundary Firewalls, Desktop Computers, laptops, routers, servers, and cloud services.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Every device and service in our control is protected from unauthorised or unnecessary access, through the use of a firewall.&lt;/p&gt;
+&lt;p&gt;Every device we let access our systems should have the relevant security controls in place to let us trust it. For devices we own and manage, this can be met by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keeping them on a safe network we control.&lt;/li&gt;
+&lt;li&gt;Ensuring that they have properly configured firewalls. NCSC specifically mention using included Operating System firewalls on Servers, PCs and Laptops.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Where a third-party-owned device is accessing our systems we should:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ensure they know they need to use a firewall.&lt;/li&gt;
+&lt;li&gt;Contractually oblige them to follow best practices.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We are not responsible for enforcing this. We need to ensure our systems are protected, where we can see a risk.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Demonstration of the effective control of inbound network access to the device from a remote host.&lt;/li&gt;
+&lt;li&gt;Testing, using a port scanning tool or similar can demonstrate only necessary, authenticated, secured traffic has access to the device.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and implementors.&lt;/li&gt;
+&lt;li&gt;Organisational management&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Most attacks occur from outside the network. Ensuring firewalls are in place is an extremely effective way to mitigate external threats and chance attacks. By moving to a device-centric (Zero-trust) approach, you can also extend this level of protection to internal threats or transverse attacks.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:least-privilege"&gt;Least Privilege&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:shift-security-left"&gt;Shift Security Left&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
+		<summary>To ensure only secure and necessary services can be accessed from the internet</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/2023-04-21-be-suspicious</id>
-		<title>Be Suspicious</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/2023-04-21-be-suspicious" />
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/composability</id>
+		<title>Composability</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/composability" />
 		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-24T14:56:30Z</updated>
-		<content>&lt;p&gt;Check and verify input. Look for tainted input.&lt;/p&gt;
-&lt;p&gt;With a modern application, there is no network boundary. Its down to identities. So check people are wo they say they are and do what you expect them to.&lt;/p&gt;
+		<updated>2023-04-25T10:29:45Z</updated>
+		<content>&lt;p&gt;Composability is a non-functional requirement which allows us to configure components together in different ways. A service should be self-contained and stateless, so the system can be trusted, but also reused and integrated as needs evolve.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Apps we develop are self-contained and stateless. They can be given context and will return predictable results.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The system should be designed using a modular approach that allows for the creation, modification and reuse of components across different scenarios and contexts.&lt;/li&gt;
+&lt;li&gt;The system should provide clear and consistent interfaces for the components that enable interoperability and integration with other components and systems.&lt;/li&gt;
+&lt;li&gt;The system should support the dynamic composition of components at runtime, based on the user's needs and preferences.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Given a set of existing components, when a user wants to create a new component, then the system should allow the user to select and combine the existing components.&lt;/li&gt;
+&lt;li&gt;Given a component with a defined interface, when a user wants to integrate it with another component or system, then the system should provide the necessary information and tools to enable the integration.&lt;/li&gt;
+&lt;li&gt;Given a component that is no longer needed, when a user wants to delete it, then the system should remove the component and its dependencies without affecting the functionality of the other components or systems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;UX and system designers, software engineers.&lt;/li&gt;
+&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Composability ensures that the system can be easily adapted and customised to meet different needs, preferences and scenarios. Composability also enables faster and more efficient development of new features and functionality by reusing components. It enables safer deployment of new features, and testing as new features can be gradually introduced and rolled back, depending on the outcome. This enables the business to experiment with its business model and optimise the layout, workflow and function of digital services.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;* ()[]
+* ()[]
+&lt;/code&gt;&lt;/pre&gt;
 </content>
-		<summary>Don't assume people will do the right things. Whethe rby malice or ignorance, users will try to break your app.</summary>
+		<summary>Services that can be combined and reused, composed into different layouts and new applications, provide business agility.</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/2023-04-21-shift-security-left</id>
-		<title>Shift Security Left</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/2023-04-21-shift-security-left" />
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/compatibility</id>
+		<title>Compatibility</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/compatibility" />
 		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-24T14:56:30Z</updated>
-		<content>&lt;p&gt;Start thinking of security as soon as possible in the design process. It's practically impossible to effectively retrofit security. Adding security to an application is an attitude to everything you do from concept to production.&lt;/p&gt;
-&lt;p&gt;This doesn't need to be onerous, but it is important to start with security in mind.&lt;/p&gt;
+		<updated>2023-04-25T10:29:12Z</updated>
+		<content>&lt;p&gt;We make apps that work on things we know, which we know how to look after and can keep safe.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;The application runs on a Linux-based container, ideally Ubuntu Long Term Support versions, using an x86 architecture. Our preferred development environment is the Microsoft .NET framework.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The software is deployed to a Linux container, compatible with Kubernetes.&lt;/li&gt;
+&lt;li&gt;The image should be on our technology register and pulled from our hub.&lt;/li&gt;
+&lt;li&gt;The software targets a currently supported version of the .NET framework.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and software engineers.&lt;/li&gt;
+&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;As we design and develop new systems, we should make sure they can run on commodity platforms that we know how to use, and can easily secure.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux containers are robust, low cost and easy to manage. they are the most commonly deployed workload in the world.&lt;/li&gt;
+&lt;li&gt;Azure is our preferred hosting environment.&lt;/li&gt;
+&lt;li&gt;Our developers predominantly write C# code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:control-technical-diversity"&gt;Control Technical Diversity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:interoperability"&gt;Interoperability&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
-		<summary>Add security to the earliest steps of your SDLC. The sooner you start thinking about it, the easier it is to incorporate.</summary>
+		<summary>Build to a common target architecture.</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/malware-protection</id>
+		<title>Malware Protection</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/malware-protection" />
+		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
+		<updated>2023-04-25T06:48:11Z</updated>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/user-access-control</id>
+		<title>User Access Control</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/user-access-control" />
+		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
+		<updated>2023-04-25T06:48:02Z</updated>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/owasp</id>
+		<title>Owasp</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/owasp" />
+		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
+		<updated>2023-04-25T06:47:45Z</updated>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security-update-management</id>
+		<title>Security Update Management</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security-update-management" />
+		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
+		<updated>2023-04-25T06:47:39Z</updated>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/secure-configuration</id>
+		<title>Secure Configuration</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/secure-configuration" />
+		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
+		<updated>2023-04-25T06:47:27Z</updated>
 	</entry>
 </feed>
