@@ -8,7 +8,6 @@ Tags:
   - Non-Functional Requirements
   - Requirements
   - Security
-
 ---
 
 Security controls are critical to developing applications.
