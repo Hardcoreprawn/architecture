@@ -1,12 +1,13 @@
 ---
-Draft: false
 Title: Compliance with Law
+Lead: 
+Published: 15/04/2023
 Description: As we create and store data, we stick to the rules and regulations.
 Tags:
   - Architectural Principles
   - Architecture
   - Business Principles
-Published: 15/04/2023
+Draft: false
 ---
 
 > *"Wherever law ends, Tyranny begins. - John Locke, 1972"*

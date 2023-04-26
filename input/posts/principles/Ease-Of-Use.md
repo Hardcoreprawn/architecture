@@ -1,12 +1,13 @@
 ---
+Title: Ease-of-Use
+Lead: 
+Published: 15/04/2023
+Description: Applications are easy to use. The underlying technology is transparent to users, so they can concentrate on the tasks at hand.
 Draft: false
 Tags:
   - Architectural Principles
   - Architecture
   - Application Principles
-Description: Applications are easy to use. The underlying technology is transparent to users, so they can concentrate on the tasks at hand.
-Title: Ease-of-Use
-Published: 15/04/2023
 ---
 
 > *"Design is not just what it looks like and feels like. Design is how it works." - Steve Jobs.*

@@ -1,6 +1,8 @@
 ---
-Draft: true
 Title: Intellectual Property
+Lead: 
+Published: 
+Draft: true
 ---
 
 > Quote Goes here

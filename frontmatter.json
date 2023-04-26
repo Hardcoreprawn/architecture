@@ -52,10 +52,6 @@
       "path": "[[workspace]]/input/posts"
     },
     {
-      "title": "Architecture",
-      "path": "[[workspace]]/input/posts/architecture"
-    },
-    {
       "title": "Patterns-and-antipatterns",
       "path": "[[workspace]]/input/posts/patterns-and-antipatterns"
     },

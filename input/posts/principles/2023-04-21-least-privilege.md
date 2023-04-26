@@ -1,15 +1,14 @@
 ---
 Title: Least Privilege
+Lead: 
 Description: 
-Date: 2023-04-21T17:19:42.937Z
-Preview:
+Published: 24-04-2023
 Draft: true
 Tags:
   - Architectural Principles
   - Security
   - Architecture
 Categories: []
-ArchiveTitle: "Title: "
 ---
 
 Some words!

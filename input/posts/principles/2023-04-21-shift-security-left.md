@@ -1,7 +1,8 @@
 ---
 Title: Shift Security Left
+Lead: 
 Description: Add security to the earliest steps of your SDLC. The sooner you start thinking about it, the easier it is to incorporate.
-Date: 2023-04-21T17:13:20.716Z
+Published: 24/03/2023
 Draft: true
 Tags:
   - Architectural Principles
@@ -9,7 +10,6 @@ Tags:
   - Architecture
 Categories:
   - Principles
-ArchiveTitle: ""
 type: default
 ---
 

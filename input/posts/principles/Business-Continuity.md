@@ -1,13 +1,14 @@
 ---
-Draft: false
 Title: Business Continuity
+Lead: 
+Published: 11/04/2023
 Description: Business keeps going even when systems break down.
 Tags:
   - Architectural Principles
   - Architecture
   - Business Principles
+Draft: false
 type: default
-Published: 11/04/2023
 ---
 
 > *"I can be changed by what happens to me, but I refuse to be reduced by it." - Maya Angelou.*

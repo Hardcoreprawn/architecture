@@ -1,12 +1,13 @@
 ---
+Title: Control Technical Diversity
+Lead: 
+Published: 15/04/2023
+Description: We try to use a limited number of technologies to reduce the cost of maintaining expertise in and connectivity between multiple systems.
 Draft: false
 Tags:
   - Architectural Principles
   - Technical Principles
   - Architecture
-Title: Control Technical Diversity
-Description: We try to use a limited number of technologies to reduce the cost of maintaining expertise in and connectivity between multiple systems.
-Published: 15/04/2023
 ---
 
 > *“The more complex the system, the greater the room for error.” — George Soros*

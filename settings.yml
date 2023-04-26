@@ -5,14 +5,23 @@ LinksUseHttps: true # Do we use HTTPS
 
 # Branding
 SiteTitle: Architecture Repository
+PageTitle: |
+  =>
+  {
+    string siteTitle = Context.GetString("SiteTitle");
+    string title = GetString("Title");
+    return string.IsNullOrWhiteSpace(siteTitle) ? title : (string.IsNullOrWhiteSpace(title) ? siteTitle : $"{siteTitle} - {title}");
+  }
 SiteDescriptions: An assortment of articles about architecture.
-Copyright: => $"Copyright © {DateTime.Now.Year}"
+Copyright: => $"Copyright James Brewster© {DateTime.Now.Year}"
 Layout: /_layout.cshtml
 Image: https://brenstermedia.blob.core.windows.net/media/media/images/header01.png
 
 # Post Settings
 PostSources:
-- posts/**/*.md
-- posts/**/**/*.md
+- posts/requirements/*
+- posts/principles/*
+- posts/patterns-and-antipatterns/*
+- posts/patterns-and-antipatterns/**/*
 # IsPost: => Outputs.FilterSources(Context.GetString("PostSources")).ContainsById(Document)
 GenerateSearchIndex: true

@@ -1,13 +1,14 @@
 ---
+Title: Common Vocabulary
+Lead: 
+Published: 15/04/2023
+Description: Everyone in the company agrees on what data means, and they can easily find and understand it.
 Draft: false
 Tags:
   - Architectural Principles
   - Architecture
   - Data Principles
-Title: Common Vocabulary
-Description: Everyone in the company agrees on what data means, and they can easily find and understand it.
 type: default
-Published: 15/04/2023
 ---
 
  > *"Don’t say ‘infinitely’ when you mean ‘very’; otherwise you’ll have no word left when you want to talk about something really infinite." - George Orwell*

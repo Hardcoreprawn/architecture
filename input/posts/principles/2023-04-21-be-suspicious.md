@@ -1,18 +1,17 @@
 ---
 Title: Be Suspicious
-Description: Don't assume people will do the right things. Whethe rby malice or ignorance, users will try to break your app.
-Date: 2023-04-21T17:16:49.125Z
-Preview: ""
+Lead: Trust no one...
+Published: 28/04/2023
+Description: Don't assume people will do the right things. Whether by malice or ignorance, users will try to break your app.
 Draft: true
 Tags:
   - Architectural Principles
   - Architecture
   - Security
 Categories: []
-ArchiveTitle: ""
-Type: default
+Type: Default
 ---
 
-Check and verify input. Look for tainted input.
+Check and verify the input. Look for tainted input.
 
-With a modern application, there is no network boundary. Its down to identities. So check people are wo they say they are and do what you expect them to.
+With a modern application, there is no network boundary. It's down to identities. So check people are who they say they are and do what you expect them to.
