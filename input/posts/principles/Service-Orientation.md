@@ -1,6 +1,5 @@
 ---
 Title: Service Orientation
-Lead: 
 Published: 11/04/2023
 Description: Architecture is a blueprint for how the company should operate.
 Tags:

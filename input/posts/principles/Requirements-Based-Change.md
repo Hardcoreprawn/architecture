@@ -1,6 +1,5 @@
 ---
 Title: Requirements-Based Change
-Lead: 
 Published: 13/04/2023
 Description: We only make changes to technology to make our business better, and we do that together.
 Tags:

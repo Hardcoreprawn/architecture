@@ -1,6 +1,5 @@
 ---
 Title: Interoperability
-Lead: 
 Published: 15/04/2023
 Description: Imagine if every computer had different software and hardware that didn’t work with other computers. That would be rubbish...
 Tags:

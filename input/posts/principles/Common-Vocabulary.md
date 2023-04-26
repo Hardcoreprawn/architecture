@@ -1,6 +1,5 @@
 ---
 Title: Common Vocabulary
-Lead: 
 Published: 15/04/2023
 Description: Everyone in the company agrees on what data means, and they can easily find and understand it.
 Draft: false

@@ -1,6 +1,5 @@
 ---
 Title: Shift Security Left
-Lead: 
 Description: Add security to the earliest steps of your SDLC. The sooner you start thinking about it, the easier it is to incorporate.
 Published: 24/03/2023
 Draft: true

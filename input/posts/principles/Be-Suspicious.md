@@ -1,6 +1,5 @@
 ---
 Title: Be Suspicious
-Lead: Trust no one...
 Published: 28/04/2023
 Description: Don't assume people will do the right things. Whether by malice or ignorance, users will try to break your app.
 Draft: true

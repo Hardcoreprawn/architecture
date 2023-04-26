@@ -1,7 +1,5 @@
 ---
-
 Title: Core vs Context
-Lead: 
 Published: 15/04/2023
 Description: Focus on what matters to our customers and get experts to help with the rest.
 Tags:

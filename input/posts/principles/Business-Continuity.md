@@ -1,6 +1,5 @@
 ---
 Title: Business Continuity
-Lead: 
 Published: 11/04/2023
 Description: Business keeps going even when systems break down.
 Tags:

@@ -1,6 +1,5 @@
 ---
 Title: Responsive Change Management
-Lead: 
 Published: 12/04/2023
 Description: When we change how we use our computers and software to store and share information, we need to make sure that these changes are done quickly and without delay.
 Tags:

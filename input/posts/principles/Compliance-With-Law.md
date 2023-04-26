@@ -1,6 +1,5 @@
 ---
 Title: Compliance with Law
-Lead: 
 Published: 15/04/2023
 Description: As we create and store data, we stick to the rules and regulations.
 Tags:

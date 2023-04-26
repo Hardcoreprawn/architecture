@@ -1,6 +1,5 @@
 ---
 Title: Intellectual Property
-Lead: 
 Published: 
 Draft: true
 ---
