@@ -18,11 +18,6 @@ Layout: /_layout.cshtml
 Image: https://brenstermedia.blob.core.windows.net/media/media/images/header01.png
 
 # Post Settings
-PostSources:
-- posts/principles/*
-- posts/requirements/*
-- posts/principles/*
-- posts/patterns-and-antipatterns/*
-- posts/patterns-and-antipatterns/**/*
+PostSources: posts/**/*
 IsPost: => Outputs.FilterSources(Context.GetString("PostSources")).ContainsById(Document)
 GenerateSearchIndex: true
