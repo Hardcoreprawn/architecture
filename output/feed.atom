@@ -4,7 +4,7 @@
 	<title />
 	<link rel="self" href="https://red-sand-078a6ea03.3.azurestaticapps.net/" />
 	<rights>Copyright James Brewster© 2023</rights>
-	<updated>2023-04-26T15:08:41Z</updated>
+	<updated>2023-04-26T15:18:32Z</updated>
 	<logo>https://brenstermedia.blob.core.windows.net/media/media/images/header01.png</logo>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/usability</id>
@@ -64,52 +64,6 @@ The system can support at least 25 concurrent 'views' of pages per second.&lt;/p
 		<summary>&lt;p&gt;Check and verify the input. Look for tainted input.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control</id>
-		<title>User Access Controls</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control" />
-		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
-		<updated>2023-04-26T00:00:00Z</updated>
-		<content>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Based on the NCSC.gov.uk 'Cyber Essentials Requirements for Infrastructure, January 2022. Modified to remove end user devices.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;p&gt;Access to a business system, or its data, is protected by a centrally managed named user account. The account can be configured to only allow access to the relevant data and processes.&lt;/p&gt;
-&lt;p&gt;Accounts with special access privileges have an enhanced level of verification through a second factor, such as a verification message to a different, associated device or approval by a second party.&lt;/p&gt;
-&lt;p&gt;Any account should have more than one named individual present. Owners and administrators need to be able to disable an account, with relevant verification.&lt;/p&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Any Authorisation is not performed by the application but by a dedicated authorisation application.&lt;/li&gt;
-&lt;li&gt;Applications obey trusted authorisation tokens from that application.&lt;/li&gt;
-&lt;li&gt;Tokens only grant access to the relevant data, necessary for the role the user has.&lt;/li&gt;
-&lt;li&gt;Roles are granular and can be subdivided where necessary.&lt;/li&gt;
-&lt;li&gt;Application and data access is protected, ensuring a second check.&lt;/li&gt;
-&lt;li&gt;Special access privileges, such as deleting an account, require a second factor or verification.&lt;/li&gt;
-&lt;li&gt;Options for Multi-factor authentication should be present and are strongly recommended.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and implementors.&lt;/li&gt;
-&lt;li&gt;Organisational management&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Ensuring our customer's data is secure is important. Ensuring they can manage access to that data is important. Giving them a feeling of security and trust is important.&lt;/p&gt;
-&lt;p&gt;Reflecting our brand values, our commitment to security and our capability to manage data and services for them is important.&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:least-privilege"&gt;Least Privilege&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:shift-security-left"&gt;Shift Security Left&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration</id>
 		<title>Secure Configuration</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration" />
@@ -147,6 +101,52 @@ The system can support at least 25 concurrent 'views' of pages per second.&lt;/p
 &lt;/ul&gt;
 &lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
 &lt;p&gt;One of the most common ways to access a system is to use a default account or configuration, which has been left unsecured. By ensuring we verify these accounts and their configuration, we can help improve security and minimise breaches.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:least-privilege"&gt;Least Privilege&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:shift-security-left"&gt;Shift Security Left&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control</id>
+		<title>User Access Control</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control" />
+		<link rel="enclosure" type="image" href="https://brenstermedia.blob.core.windows.net/media/media/images/header01.png" />
+		<updated>2023-04-26T00:00:00Z</updated>
+		<content>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Based on the NCSC.gov.uk 'Cyber Essentials Requirements for Infrastructure, January 2022. Modified to remove end user devices.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Access to a business system, or its data, is protected by a centrally managed named user account. The account can be configured to only allow access to the relevant data and processes.&lt;/p&gt;
+&lt;p&gt;Accounts with special access privileges have an enhanced level of verification through a second factor, such as a verification message to a different, associated device or approval by a second party.&lt;/p&gt;
+&lt;p&gt;Any account should have more than one named individual present. Owners and administrators need to be able to disable an account, with relevant verification.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Any Authorisation is not performed by the application but by a dedicated authorisation application.&lt;/li&gt;
+&lt;li&gt;Applications obey trusted authorisation tokens from that application.&lt;/li&gt;
+&lt;li&gt;Tokens only grant access to the relevant data, necessary for the role the user has.&lt;/li&gt;
+&lt;li&gt;Roles are granular and can be subdivided where necessary.&lt;/li&gt;
+&lt;li&gt;Application and data access is protected, ensuring a second check.&lt;/li&gt;
+&lt;li&gt;Special access privileges, such as deleting an account, require a second factor or verification.&lt;/li&gt;
+&lt;li&gt;Options for Multi-factor authentication should be present and are strongly recommended.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and implementors.&lt;/li&gt;
+&lt;li&gt;Organisational management&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Ensuring our customer's data is secure is important. Ensuring they can manage access to that data is important. Giving them a feeling of security and trust is important.&lt;/p&gt;
+&lt;p&gt;Reflecting our brand values, our commitment to security and our capability to manage data and services for them is important.&lt;/p&gt;
 &lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;

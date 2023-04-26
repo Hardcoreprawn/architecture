@@ -19,7 +19,7 @@ security.
 
 ### Illustration
 
-![microservices pattern, learn.microsoft.com][ms-img]
+![microservices pattern, learn.microsoft.com][def-1-msft-img]
 *Model of a Monolith to Microservices migration, showing sub-patterns*
 
 This is a reference microservices pattern, showing the possible use of sub-patterns.
@@ -223,4 +223,4 @@ Refactor over time, by gradually replacing specific services.
 
 [Strangler Pattern](xref:strangler-pattern)
 
-[ms-img]: /images/microservices-patterns.png
+[def-1-msft-img]: /images/microservices-patterns.png

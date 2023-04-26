@@ -24,7 +24,9 @@ Inspired by the Australian Strangler Fig Tree, which roots in the upper branches
 
 If you build something to help transition, take it away when you're finished with it.
 
-![Strangler Pattern, evolution over time]The first step shows the monolith, and then a companion service is added alongside, behind a proxy. The next step adds more services, transitioning over to the new model. The last step shows the monolith being removed, along with the proxy.
+![Strangler pattern, over time](/images/strangler-pattern-example.png)
+
+The first step shows the monolith, and then a companion service is added alongside, behind a proxy. The next step adds more services, transitioning over to the new model. The last step shows the monolith being removed, along with the proxy.
 
 ## Benefits of this pattern
 
