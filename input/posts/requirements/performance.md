@@ -6,6 +6,7 @@ Tags:
   - Requirements
   - NFRs
 Draft: true
+Published: 01/01/2001
 ---
 
 Applications need to perform within the expectations and requirements of a user. Most users will give up on a website if it's even a few seconds delayed. On the other hand, a responsive site encourages engagement.
