@@ -11,7 +11,7 @@ Tags:
   - Security
 ---
 
-The standard provides a basis for testing application technical security controls, as well as any technical security controls in the environment, that are relied on to protect against vulnerabilities such as Cross-Site Scripting (XSS) and SQL injection1. This standard can be used to establish a level of confidence in the security of Web applications.
+The standard provides a basis for testing application technical security controls, as well as any technical security controls in the environment, that are relied on to protect against vulnerabilities such as Cross-Site Scripting (XSS) and SQL injection. This standard can be used to establish a level of confidence in the security of Web applications.
 
 The Roadmap for version 5 of the OWASP ASVS is available here: <https://github.com/OWASP/ASVS/wiki/Roadmap-to-version-5.0>
 
