@@ -1,13 +1,15 @@
 ---
-draft: true
-title: Strangler pattern
-description: This pattern is used to migrate functionality from an older app to a new one
-tags:
+Title: Strangler pattern
+Lead: 
+Description: This pattern is used to migrate functionality from an older app to a new one
+Tags:
   - Architecture
   - Patterns
   - Microservices
-categories:
+Categories:
   - Pattern
+Draft: true
+Published: 13/04/2023
 ---
 
 This pattern is used to migrate functionality from an older app to a new one. Typically, this is done for a monolith to a microservices model but works for any app.

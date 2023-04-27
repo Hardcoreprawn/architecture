@@ -1,11 +1,11 @@
 ---
-draft: true
-title: Dumb Pipes
-description: Use 'dumb pipes' and 'smart endpoints' to keep your microservices development light
-tags:
-  - Patterns
-categories:
+Title: Dump Pipes
+Lead: 
+Tags:
+  - Architecture
   - Pattern
+Draft: true
+Published: 01/01/2001
 ---
 
 As services scale in a microservices architecture, they need to communicate. A communication network is important, to make sure each service can easily talk to the others, but as they scale, its important to make sure they can grow and continue to communicate.

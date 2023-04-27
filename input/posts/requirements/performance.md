@@ -7,7 +7,7 @@ Tags:
   - Requirements
   - NFRs
 Draft: false
-Published: 26/04/2023
+Published: 27/04/2023
 ---
 
 Performance is one of the most important NFRs that specifies “how well” the “what" must behave. Performance NFRs are used to ensure that a system meets its performance requirements and that it performs as expected under various conditions. Performance NFRs can include response time, throughput, resource utilization, and capacity.
