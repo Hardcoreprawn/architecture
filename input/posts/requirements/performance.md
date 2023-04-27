@@ -1,22 +1,47 @@
 ---
 Title: Performance
-Lead: The performance of an application is critical to how well it performs the jobs a user needs to do.
+Lead: The system must respond within 2 seconds for 95% of all requests.
 Tags:
+  - Architecture
   - Non-Functional Requirements
   - Requirements
   - NFRs
-Draft: true
-Published: 01/01/2001
+Draft: false
+Published: 26/04/2023
 ---
 
-Applications need to perform within the expectations and requirements of a user. Most users will give up on a website if it's even a few seconds delayed. On the other hand, a responsive site encourages engagement.
+Performance is one of the most important NFRs that specifies “how well” the “what" must behave. Performance NFRs are used to ensure that a system meets its performance requirements and that it performs as expected under various conditions. Performance NFRs can include response time, throughput, resource utilization, and capacity.
 
-* It's important to understand the expected workload of your system and the expected growth. This needs to be a baseline, expected service for a given user.
+> Read the [Requirements Check-List](xref:requirements-checklist) article for an introduction to requirements.
 
-* Do expect it to be successful, but don’t build in excess fixed resources; that's just wasteful. Make sure performance and scalability are considered together.
-Ignore third-party delivery times. You need to either find a service which meets your requirements or you need to use an adequate pattern to abstract this. You have minimal control of the service, so ensure you protect yourself from it.
+## Requirement
 
-Typically, we would look at the 95th percentile of results for these, so you don't have to be 100% perfect, but you should be 95% on target, to be 100%.
-    a. A user log-in to the system should be completed within 1 second.
-    b. All pages should render 'on the glass' within 1 second.
-The system can support at least 25 concurrent 'views' of pages per second.
+* The system must be able to handle 1000 concurrent users.
+* The system should respond within 2 seconds for 95% of all requests.
+* Any underlying systems should be able to achieve this at no more than 60% utilisation before scaling occurs.
+
+## Acceptance Criteria
+
+* 95% of system responses occur to the user within 2 seconds.
+* The system can support more than 1,000 concurrent users and maintain the response time.
+* Monitoring of infrastructure shows that active nodes are at 60-80% of utilisation during load.
+
+## Audience
+
+  1. System designers and software engineers.
+  2. IT Professionals and operational engineers.
+
+## Details
+
+* Owner: Andy Sheldon, Chief Technology Officer
+* Author: James Brewster, Enterprise Architect
+
+## Rationale
+
+This NFR is important because it ensures that the application is responsive and performs well under heavy load.
+
+An asynchronous response can take longer, as long as the interactive elements load quickly and explain any delays, while the asynchronous response is prepared.
+
+## Related Principles
+
+* [Ease-Of-Use](xref:ease-of-use)
