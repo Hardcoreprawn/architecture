@@ -39,6 +39,11 @@ The system must provide a mechanism to ensure that a party cannot deny the authe
 
 Non-repudiation provides proof of the origin, authenticity, and integrity of data. It assures the sender that the message was delivered, as well as proof of the sender’s identity to the recipient. This way, neither party can deny that a message was sent, received, and processed. Non-repudiation ensures that no party can deny that it sent or received a message via encryption and/or digital signatures or approved some information. It also cannot deny the authenticity of its signature on a document.
 
+## Related Principles
+
+* [Be Suspicious](xref:be-suspicious)
+* [Ease-Of-Use](xref:ease-of-use)
+
 ## References
 
 * Describes non-repudiation as a property that ensures that a party cannot deny the authenticity of their signature on a document or the sending of a message that they originated: <https://www.perforce.com/blog/qac/what-is-iso-25010>
