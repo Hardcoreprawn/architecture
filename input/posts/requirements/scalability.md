@@ -2,8 +2,6 @@
 Title: Scalability
 Lead: The system must be able to handle an increasing amount of work.
 Description: The system must be able to handle an increasing amount of work without any significant degradation in performance.
-
-
 Tags:
   - Architecture
   - Non-Functional Requirements
