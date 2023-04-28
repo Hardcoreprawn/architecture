@@ -3,7 +3,7 @@ Title: Usability
 Lead: The system must be easy to use.
 Description: The system must be intuitive and easy to use for all users.
 Draft: true
-Published: 01/01/2001
+Published: 28/04/2023
 Tags:
   - NFRs
   - Non-Functional Requirements
