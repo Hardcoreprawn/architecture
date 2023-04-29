@@ -2,16 +2,15 @@
 Title: Scalability
 Lead: The system must be able to handle an increasing amount of work.
 Description: The system must be able to handle an increasing amount of work without any significant degradation in performance.
+Published: 27/04/2023
+Draft: false
 Tags:
   - Architecture
   - Non-Functional Requirements
   - Requirements
   - NFRs
-Draft: false
-Published: 27/04/2023
 ---
 
----
 This non-functional requirement is concerned with the ability of the system to handle an increasing amount of work or its potential to be enlarged to accommodate that growth.
 
 > Read the [Requirements Check-List](xref:requirements-checklist) article for an introduction to requirements.
