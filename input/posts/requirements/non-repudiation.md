@@ -1,16 +1,16 @@
 ---
 Title: Non-repudiation
 Lead: The system shall provide non-repudiation for all transactions.
+Description: A mechanism to ensure a party cannot deny the legitimacy of a transaction.
+Draft: false
+Published: 27/04/2023
 Tags:
   - Architecture
   - Non-Functional Requirements
   - Requirements
   - NFRs
-Draft: false
-Published: 27/04/2023
 ---
 
----
 Where possible, use immutable objects and data which can't be repudiated. Make sure we can trust our systems and our data.
 
 > Read the [Requirements Check-List](xref:requirements-checklist) article for an introduction to requirements.
