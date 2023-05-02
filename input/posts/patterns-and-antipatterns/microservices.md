@@ -5,7 +5,7 @@ Description: Microservices architecture is an architectural style that structure
 Tags:
   - Architecture
   - Microservices
-  - Pattern
+  - Patterns
 Categories:
   - Pattern
 Draft: true

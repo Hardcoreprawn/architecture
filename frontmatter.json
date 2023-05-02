@@ -31,7 +31,6 @@
           "name": "Published",
           "type": "string"
         }
-        }
       ]
     }
   ],
@@ -71,7 +70,7 @@
     "Technology"
   ],
   "frontMatter.taxonomy.categories": [
-    "Pattern",
+    "Patterns",
     "Principles",
     "Requirements"
   ]

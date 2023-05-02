@@ -4,7 +4,7 @@ Lead:
 Description: This pattern is used to migrate functionality from an older app to a new one
 Tags:
   - Architecture
-  - Pattern
+  - Patterns
   - Microservices
 Categories:
   - Pattern

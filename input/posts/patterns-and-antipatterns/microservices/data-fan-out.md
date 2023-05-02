@@ -3,7 +3,7 @@ Title: Data Fan Out
 Lead: 
 Tags:
   - Architecture
-  - Pattern
+  - Patterns
 Draft: true
 Published: 01/01/2001
 ---
