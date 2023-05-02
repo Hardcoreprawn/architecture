@@ -4,33 +4,27 @@
 	<title />
 	<link rel="self" href="https://red-sand-078a6ea03.3.azurestaticapps.net/" />
 	<rights>Copyright James Brewster© 2023</rights>
-	<updated>2023-04-26T15:42:21Z</updated>
+	<updated>2023-05-02T14:38:46Z</updated>
 	<logo>https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png</logo>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices</id>
 		<title>Microservices</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices" />
 		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
-		<updated>2023-04-26T15:40:58Z</updated>
+		<updated>2023-05-02T00:00:00Z</updated>
 		<content>&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
-&lt;p&gt;This pattern is designed to provide reliable service at a large scale. It does
-this by providing no single point of failure, allowing its components to
-scale independently of each other and segregating information to provide
-security.&lt;/p&gt;
+&lt;p&gt;Microservices architecture is an architectural style that structures an application as a collection of services that are independently deployable, loosely coupled, organized around business capabilities and owned by a small team. In simple terms, microservices are a specific method of designing software systems to structure a single application as a collection of loosely coupled services.&lt;/p&gt;
 &lt;h3 id="illustration"&gt;Illustration&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/microservices-patterns.png" alt="microservices pattern, learn.microsoft.com"&gt;
+&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/microservices-patterns.png" alt="microservices-pattern"&gt;
 &lt;em&gt;Model of a Monolith to Microservices migration, showing sub-patterns&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;This is a reference microservices pattern, showing the possible use of sub-patterns.&lt;/p&gt;
+&lt;p&gt;This is a reference pattern, with several optional sub-patterns.&lt;/p&gt;
 &lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Scale and resilience in each service.
-Safe deployment of updates to individual services.&lt;/li&gt;
+&lt;li&gt;Scale and resilience in each service.&lt;/li&gt;
+&lt;li&gt;Safe deployment of updates to individual services.&lt;/li&gt;
 &lt;li&gt;Separation of services, allowing changes to be made locally and quickly, with
 minimal impact on other services.&lt;/li&gt;
-&lt;li&gt;The ability for several teams to work together on different areas. Can support
-regular and frequent changes.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 &lt;h2 id="drawbacks-to-this-pattern"&gt;Drawbacks to this pattern&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;It can be complex, quickly.&lt;/li&gt;
@@ -38,14 +32,12 @@ regular and frequent changes.&lt;/li&gt;
 components.&lt;/li&gt;
 &lt;li&gt;The Danger of component sprawl if services are over-specialized.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 &lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;This pattern is for applications that need to grow, which need to manage
 their costs and support a large degree of change and experimentation.&lt;/li&gt;
 &lt;li&gt;When reliability is critical to business, reputation or safety.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 &lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Because you want to be down with the kids, and you think it's cool.&lt;/li&gt;
@@ -56,14 +48,12 @@ change, addition or integration.&lt;/li&gt;
 active users.&lt;/li&gt;
 &lt;li&gt;For your Blog.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 &lt;h2 id="assumptions"&gt;Assumptions&lt;/h2&gt;
 &lt;p&gt;In choosing this pattern, you ruled out simpler options as not being capable.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;You have time and space for teams to find their way; this is hard and it
 will go wrong.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 &lt;h2 id="anti-patterns-of-the-microservices-architecture"&gt;Anti-Patterns of the microservices architecture&lt;/h2&gt;
 &lt;h3 id="distributed-monolith"&gt;Distributed Monolith&lt;/h3&gt;
 &lt;p&gt;When you split a monolith, don't let your services become dependent on each
@@ -81,222 +71,93 @@ between them take time. Overly chatty services are not performant; the latency
 can kill the performance. Following &lt;a href="https://en.wikipedia.org/wiki/SOLID"&gt;SOLID&lt;/a&gt; principles can help here.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id="shared-persistence"&gt;Shared Persistence&lt;/h3&gt;
-&lt;p&gt;A monolith typically requires a large shared data store. Microservices should
+&lt;p&gt;TODO: A monolith typically requires a large shared data store. Microservices should
 each have their own data store, to avoid resource contention. Each store should
 be accessible only by the associated service. Any communication needs to be via
 the API interfaces.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id="heavyweight-services"&gt;Heavyweight services&lt;/h3&gt;
-&lt;p&gt;Building too much into each service makes them slow. Build/latency delays kick
-in and you are back to building monoliths.&lt;/p&gt;
+&lt;p&gt;TODO: Building too much into each service makes them slow. Build/latency delays kick in and you are back to building monoliths.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id="no-api-gateway"&gt;No API Gateway&lt;/h3&gt;
-&lt;p&gt;Data Interfaces need to be identifiable, they need to be managed, and they need
-authentication. It has to be something you can find to query.&lt;/p&gt;
+&lt;p&gt;TODO: Data Interfaces need to be identifiable, they need to be managed, and they need authentication. It has to be something you can find to query.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id="entangled-data"&gt;Entangled Data&lt;/h3&gt;
-&lt;p&gt;Isolate the data inside the application.&lt;/p&gt;
+&lt;p&gt;TODO: Isolate the data inside the application.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id="improper-versioning"&gt;Improper Versioning&lt;/h3&gt;
-&lt;p&gt;Build API versions into your URI calls.&lt;/p&gt;
+&lt;p&gt;TODO: Build API versions into your URI calls.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="sub-patterns"&gt;Sub-patterns&lt;/h2&gt;
-&lt;p&gt;A successful migration of monolith to microservices will likely use many
+&lt;p&gt;TODO: A successful migration of monolith to microservices will likely use many
 different patterns. Some common ones are linked here.&lt;/p&gt;
 &lt;h3 id="ambassador"&gt;Ambassador&lt;/h3&gt;
-&lt;p&gt;An Ambassador sits between two services and negotiates. Typically a proxy
+&lt;p&gt;TODO: An Ambassador sits between two services and negotiates. Typically a proxy
 service can interpret. An ambassador is often used to offload or mask client
 interoperability issues. An ambassador is a specialized sidecar.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador"&gt;Ambassador Pattern&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id="anti-corruption"&gt;Anti-corruption&lt;/h3&gt;
-&lt;p&gt;When two systems don't properly understand each other, an Anti-corruption
+&lt;p&gt;TODO: When two systems don't properly understand each other, an Anti-corruption
 layer can be introduced to protect the new architecture.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer"&gt;Anti-corruption Layer pattern&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id="backends-for-frontends"&gt;Backends for Frontends&lt;/h3&gt;
-&lt;p&gt;Sometimes, it's just quicker to write APIs that deal with specific clients. It
-might take more maintenance, but that can be ok.&lt;/p&gt;
+&lt;p&gt;TODO: Sometimes, it's just quicker to write APIs that deal with specific clients. It might take more maintenance, but that can be ok.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends"&gt;Backends for Frontends pattern&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id="bulkhead"&gt;Bulkhead&lt;/h3&gt;
-&lt;p&gt;Bulkheads are used on ships to prevent water from a hull breach from flooding
-the whole ship. Keep things separate, (like connection pools or hardware)
-so a greedy neighbour can't flood the whole ship.&lt;/p&gt;
+&lt;p&gt;TODO: Bulkheads are used on ships to prevent water from a hull breach from flooding the whole ship. Keep things separate, (like connection pools or hardware) so a greedy neighbour can't flood the whole ship.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead"&gt;Bulkhead Pattern&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id="gateways"&gt;Gateways&lt;/h3&gt;
-&lt;p&gt;Using a gateway for your microservices offers several benefits, by making your
-collection of services look like a single web server.&lt;/p&gt;
+&lt;p&gt;TODO: Using a gateway for your microservices offers several benefits, by making your collection of services look like a single web server.&lt;/p&gt;
 &lt;h4 id="aggregation"&gt;Aggregation&lt;/h4&gt;
-&lt;p&gt;Clients can connect to a single endpoint to make requests, which are then
+&lt;p&gt;TODO: Clients can connect to a single endpoint to make requests, which are then
 forwarded to different microservices. This makes the client connection light
 and easy&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation"&gt;Gateway Aggregation&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id="offloading"&gt;Offloading&lt;/h4&gt;
-&lt;p&gt;The gateway can offload shared functionality, such as authentication, TLS
+&lt;p&gt;TODO: The gateway can offload shared functionality, such as authentication, TLS
 certificates or issuing Authorisation tokens.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading"&gt;Gateway Offloading&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id="routing"&gt;Routing&lt;/h4&gt;
-&lt;p&gt;The service all appears to come from a single domain, so much easier for a
+&lt;p&gt;TODO: The service all appears to come from a single domain, so much easier for a
 client to manage connections to and from the service, improving security.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-routing"&gt;Gateway Routing&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id="sidecar"&gt;Sidecar&lt;/h3&gt;
-&lt;p&gt;deploy helper apps into separate containers to encapsulate them, but keep
+&lt;p&gt;TODO: deploy helper apps into separate containers to encapsulate them, but keep
 them close for performance.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar"&gt;Sidecar Pattern&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id="strangler"&gt;Strangler&lt;/h3&gt;
-&lt;p&gt;Refactor over time, by gradually replacing specific services.&lt;/p&gt;
+&lt;p&gt;TODO: Refactor over time, by gradually replacing specific services.&lt;/p&gt;
 &lt;p&gt;&lt;a href="xref:strangler-pattern"&gt;Strangler Pattern&lt;/a&gt;&lt;/p&gt;
 </content>
-		<summary>Microservices architecture is a 'super-pattern', which aims to minimise dependencies and promote scalability across multiple dimensions.</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern</id>
-		<title>Strangler pattern</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
-		<updated>2023-04-26T15:40:44Z</updated>
-		<content>&lt;p&gt;This pattern is used to migrate functionality from an older app to a new one. Typically, this is done for a monolith to a microservices model but works for any app.&lt;/p&gt;
-&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
-&lt;p&gt;Replacing a large monolithic system is complex and risky. The strangler pattern builds new functionality using modern design patterns alongside the monolith. A proxy is used to integrate the user experience and make sure the aligned application makes sense to end users. Over time the monolith is slowly broken down.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://th.bing.com/th/id/OIP.xkG2oQy-yOaQWbW6QlEwKgHaLH?pid=ImgDet&amp;amp;rs=1" alt="The Strangler Fig Tree"&gt;&lt;/p&gt;
-&lt;p&gt;Inspired by the Australian Strangler Fig Tree, which roots in the upper branches and grows down and around the tree, eventually taking root and destroying the original host tree.&lt;/p&gt;
-&lt;h3 id="illustration"&gt;Illustration&lt;/h3&gt;
-&lt;p&gt;If you build something to help transition, take it away when you're finished with it.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/strangler-pattern-example.png" alt="Strangler pattern, over time"&gt;&lt;/p&gt;
-&lt;p&gt;The first step shows the monolith, and then a companion service is added alongside, behind a proxy. The next step adds more services, transitioning over to the new model. The last step shows the monolith being removed, along with the proxy.&lt;/p&gt;
-&lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Provides a way to scale a solution over multiple dimensions.&lt;/li&gt;
-&lt;li&gt;Delivers gradual value over time, with lower risk than a rewrite.&lt;/li&gt;
-&lt;li&gt;Supports and allows for rollback.&lt;/li&gt;
-&lt;li&gt;Uses versioned APIs, to reduce the need for collaboration.&lt;/li&gt;
-&lt;li&gt;Supports legacy integrations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="drawbacks-to-this-pattern"&gt;Drawbacks to this pattern&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Potential for increased latency because of new service dependencies.&lt;/li&gt;
-&lt;li&gt;Additional proxy decreases availability through multiplicative failure effect.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Use the strangler for versioning and migration of services.&lt;/li&gt;
-&lt;li&gt;Use an existing proxy, such as Nginx, as scaffolding during the migration.&lt;/li&gt;
-&lt;li&gt;Manage the service rules during migration.&lt;/li&gt;
-&lt;li&gt;Remove rules as no longer needed and decommission the proxy when done.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;If you have to add a facade, then don't also add a proxy as it increases the call depth and hits latency poorly.&lt;/li&gt;
-&lt;li&gt;If latency is a concern, this won't help in the interim.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
-&lt;p&gt;You can implement this pattern in two separate ways, scaling along the service domains, or between the new and old services. Ideally, both together works well.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Scaling along the service domains allows new services to be stood up and integrated.&lt;/li&gt;
-&lt;li&gt;Scaling alongside the existing services allows for rollback and A/B testing between the new and old services, by sending a portion of calls to the new service.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Scaling along both these axis allows the target state to scale effectively.&lt;/p&gt;
-&lt;h2 id="assumptions"&gt;Assumptions&lt;/h2&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://martinfowler.com/bliki/StranglerFigApplication.html"&gt;Martin Folwer - Strangler Fig Application&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig"&gt;Microsoft - Azure Architecture, Strangler Fig Pattern&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/strangler-pattern-dos-and-donts"&gt;AKF Partners - Strangler Patterns: Dos and Don'ts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>This pattern is used to migrate functionality from an older app to a new one</summary>
+		<summary>Microservices architecture is an architectural style that structures an application as a collection of services that are independently deployable, loosely coupled, organized around business capabilities and owned by a small team. In simple terms, microservices are a specific method of designing software systems to structure a single application as a collection of loosely coupled services.</summary>
 	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/usability</id>
 		<title>Usability</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/usability" />
 		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
-		<updated>2023-04-26T14:38:22Z</updated>
-		<content>&lt;ul&gt;
-&lt;li&gt;Can the audience complete their job in a single visit?&lt;/li&gt;
-&lt;li&gt;How quickly can they complete their task?&lt;/li&gt;
-&lt;li&gt;Does the design require training? Is it intuitive and guided enough to be easy to complete on the first attempt?&lt;/li&gt;
-&lt;li&gt;How many errors does a typical user make? Are they clear and any remedial actions clear?&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/performance</id>
-		<title>Performance</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/performance" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
-		<updated>2023-04-26T14:37:49Z</updated>
-		<content>&lt;p&gt;Applications need to perform within the expectations and requirements of a user. Most users will give up on a website if it's even a few seconds delayed. On the other hand, a responsive site encourages engagement.&lt;/p&gt;
+		<updated>2023-04-28T00:00:00Z</updated>
+		<content>&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;The system must have a user interface that is easy to navigate and understand.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;It's important to understand the expected workload of your system and the expected growth. This needs to be a baseline, expected service for a given user.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Do expect it to be successful, but don’t build in excess fixed resources; that's just wasteful. Make sure performance and scalability are considered together.
-Ignore third-party delivery times. You need to either find a service which meets your requirements or you need to use an adequate pattern to abstract this. You have minimal control of the service, so ensure you protect yourself from it.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;The system should be set up to allow a user to complete their tasks quickly and directly.&lt;/li&gt;
+&lt;li&gt;The interface needs to be intuitive so that minimal instruction is needed. If there is any area which is ambiguous or tricky, help needs to be included.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Typically, we would look at the 95th percentile of results for these, so you don't have to be 100% perfect, but you should be 95% on target, to be 100%.
-a. A user log-in to the system should be completed within 1 second.
-b. All pages should render 'on the glass' within 1 second.
-The system can support at least 25 concurrent 'views' of pages per second.&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;Applications need to perform within the expectations and requirements of a user. Most users will give up on a website if it's even a few seconds delayed. On the other hand, a responsive site encourages engagement.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/traceability</id>
-		<title>Traceability</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/traceability" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
-		<updated>2023-04-26T13:11:04Z</updated>
-		<content>&lt;p&gt;Access to applications is auditable. Logs are kept about who accesses data, what they do with it and when.&lt;/p&gt;
-&lt;p&gt;Log actions and output informative messages.&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;Access to applications is auditable. Logs are kept about who accesses data, what they do with it and when.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/be-suspicious</id>
-		<title>Be Suspicious</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/be-suspicious" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
-		<updated>2023-04-26T00:00:00Z</updated>
-		<content>&lt;p&gt;Check and verify the input. Look for tainted input.&lt;/p&gt;
-&lt;p&gt;With a modern application, there is no network boundary. It's down to identities. So check people are who they say they are and do what you expect them to.&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;Check and verify the input. Look for tainted input.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration</id>
-		<title>Secure Configuration</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
-		<updated>2023-04-26T00:00:00Z</updated>
-		<content>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Based on the NCSC.gov.uk 'Cyber Essentials Requirements for Infrastructure, January 2022. Modified to remove end user devices.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;p&gt;Computers and network devices must be properly configured to reduce the level of inherent vulnerabilities and only provide the services required to fulfil their role.&lt;/p&gt;
-&lt;p&gt;Default configurations are often insecure, to make initial access easier. We must ensure any commodity services are reconfigured to ensure security.&lt;/p&gt;
-&lt;p&gt;This can include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Default accounts, potentially with additional permissions.&lt;/li&gt;
-&lt;li&gt;weak or known initial account passwords.&lt;/li&gt;
-&lt;li&gt;Unnecessary or legacy services, which are easier to exploit.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These must be disabled or reconfigured.&lt;/p&gt;
 &lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;On inspection, third-party components should not have common or default accounts and passwords enabled.&lt;/li&gt;
-&lt;li&gt;Where possible, configuration should be backed-up and stored securely, to allow for re-verification.&lt;/li&gt;
-&lt;li&gt;The configuration of a system has been reviewed with one or more peers and has been approved.&lt;/li&gt;
+&lt;li&gt;The user interface must be intuitive and easy to navigate.&lt;/li&gt;
+&lt;li&gt;The user interface must be easy to understand.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;System designers and implementors.&lt;/li&gt;
-&lt;li&gt;Organisational management&lt;/li&gt;
+&lt;li&gt;System designers and software engineers.&lt;/li&gt;
+&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="details"&gt;Details&lt;/h2&gt;
 &lt;ul&gt;
@@ -304,15 +165,180 @@ The system can support at least 25 concurrent 'views' of pages per second.&lt;/p
 &lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;One of the most common ways to access a system is to use a default account or configuration, which has been left unsecured. By ensuring we verify these accounts and their configuration, we can help improve security and minimise breaches.&lt;/p&gt;
+&lt;p&gt;This requirement is important because it ensures that users can easily use the system without requiring extensive training or support.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>The system must be intuitive and easy to use for all users.</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/owasp</id>
+		<title>OWASP ASVS</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/owasp" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
+		<updated>2023-04-27T00:00:00Z</updated>
+		<content>&lt;p&gt;The standard provides a basis for testing application technical security controls, as well as any technical security controls in the environment, that are relied on to protect against vulnerabilities such as Cross-Site Scripting (XSS) and SQL injection. This standard can be used to establish a level of confidence in the security of Web applications.&lt;/p&gt;
+&lt;p&gt;The Roadmap for version 5 of the OWASP ASVS is available here: &lt;a href="https://github.com/OWASP/ASVS/wiki/Roadmap-to-version-5.0"&gt;https://github.com/OWASP/ASVS/wiki/Roadmap-to-version-5.0&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="requirements"&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;The following controls should be considered for every application:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x10-V1-Architecture.md"&gt;Architecture, design and threat modelling.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x11-V2-Authentication.md"&gt;Authentication.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x12-V3-Session-management.md"&gt;Session management.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x12-V4-Access-Control.md"&gt;Access Control.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md"&gt;Input Validation, output encoding, and parameterization.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x14-V6-Cryptography.md"&gt;Cryptography at rest.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x15-V7-Error-Logging.md"&gt;Error handling and logging.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x16-V8-Data-Protection.md"&gt;Data protection in transit.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x17-V9-Communications.md"&gt;Secure communication.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x18-V10-Malicious.md"&gt;Malicious Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x19-V11-BusLogic.md"&gt;Business Logic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x20-V12-Files-Resources.md"&gt;Files and Resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x21-V13-API.md"&gt;API and Web Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x22-V14-Config.md"&gt;Configuration&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and software engineers.&lt;/li&gt;
+&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;The primary aim of the OWASP Application Security Verification Standard (ASVS) Project is to normalize the range in the coverage and level of rigour available in the market when it comes to performing application security verification using a commercially-workable open standard. &lt;a href="https://owasp.org/www-pdf-archive/OWASP_ASVS_Standard_2008.pdf"&gt;This standard can be used to establish a level of confidence in the security of web applications and services&lt;/a&gt;. The OWASP ASVS Project provides developers with a &lt;a href="https://owasp.org/www-project-application-security-verification-standard/"&gt;list of requirements for secure development&lt;/a&gt;. By using this standard, developers can ensure that their applications are secure and that they meet &lt;a href="https://www.briskinfosec.com/blogs/blogsdetail/What-is-the-difference-between-OWASP-Top-10-and-ASVS-Security-Audit"&gt;industry standards for security&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;OWASP V4.0.3 Stable release, 27/04/2023. &lt;a href="https://github.com/OWASP/ASVS/tree/v4.0.3/4.0"&gt;https://github.com/OWASP/ASVS/tree/v4.0.3/4.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;OWASP Application Security Verification Standard, 27/04/2023. &lt;a href="https://owasp.org/www-project-application-security-verification-standard/"&gt;https://owasp.org/www-project-application-security-verification-standard/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+		<summary>The OWASP Application Security Verification Standard (ASVS) Project provides a basis for testing web application technical security controls and also provides developers with a list of requirements for secure development.</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/performance</id>
+		<title>Performance</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/performance" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
+		<updated>2023-04-27T00:00:00Z</updated>
+		<content>&lt;p&gt;Performance is one of the most important NFRs that specifies “how well” the “what&amp;quot; must behave. Performance NFRs are used to ensure that a system meets its performance requirements and that it performs as expected under various conditions. Performance NFRs can include response time, throughput, resource utilization, and capacity.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The system must be able to handle 1000 concurrent users.&lt;/li&gt;
+&lt;li&gt;The system should respond within 2 seconds for 95% of all requests.&lt;/li&gt;
+&lt;li&gt;Any underlying systems should be able to achieve this at no more than 60% utilisation before scaling occurs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;95% of system responses occur to the user within 2 seconds.&lt;/li&gt;
+&lt;li&gt;The system can support more than 1,000 concurrent users and maintain the response time.&lt;/li&gt;
+&lt;li&gt;Monitoring of infrastructure shows that active nodes are at 60-80% of utilisation during load.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and software engineers.&lt;/li&gt;
+&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;This NFR is important because it ensures that the application is responsive and performs well under heavy load.&lt;/p&gt;
+&lt;p&gt;An asynchronous response can take longer, as long as the interactive elements load quickly and explain any delays, while the asynchronous response is prepared.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;Performance is one of the most important NFRs that specifies “how well” the “what&amp;quot; must behave. Performance NFRs are used to ensure that a system meets its performance requirements and that it performs as expected under various conditions. Performance NFRs can include response time, throughput, resource utilization, and capacity.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability</id>
+		<title>Scalability</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
+		<updated>2023-04-27T00:00:00Z</updated>
+		<content>&lt;p&gt;This non-functional requirement is concerned with the ability of the system to handle an increasing amount of work or its potential to be enlarged to accommodate that growth.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;The system must be able to scale horizontally and vertically.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The system must be able to handle a minimum of 1000 concurrent users without any significant degradation in performance.&lt;/li&gt;
+&lt;li&gt;On demonstration, the system should be able to scale up and down.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and software engineers.&lt;/li&gt;
+&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Rationale: Scalability is important because it ensures that the system can continue to function effectively as the workload increases.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>The system must be able to handle an increasing amount of work without any significant degradation in performance.</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation</id>
+		<title>Non-repudiation</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
+		<updated>2023-04-27T00:00:00Z</updated>
+		<content>&lt;p&gt;Where possible, use immutable objects and data which can't be repudiated. Make sure we can trust our systems and our data.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;The system must provide a mechanism to ensure that a party cannot deny the authenticity of their signature on a document or message.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The system shall provide a digital signature for each transaction.&lt;/li&gt;
+&lt;li&gt;The digital signature shall be unique for each transaction.&lt;/li&gt;
+&lt;li&gt;The digital signature shall be verified by the recipient of the transaction.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and software engineers.&lt;/li&gt;
+&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Non-repudiation provides proof of the origin, authenticity, and integrity of data. It assures the sender that the message was delivered, as well as proof of the sender’s identity to the recipient. This way, neither party can deny that a message was sent, received, and processed. Non-repudiation ensures that no party can deny that it sent or received a message via encryption and/or digital signatures or approved some information. It also cannot deny the authenticity of its signature on a document.&lt;/p&gt;
 &lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:least-privilege"&gt;Least Privilege&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:shift-security-left"&gt;Shift Security Left&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Describes non-repudiation as a property that ensures that a party cannot deny the authenticity of their signature on a document or the sending of a message that they originated: &lt;a href="https://www.perforce.com/blog/qac/what-is-iso-25010"&gt;https://www.perforce.com/blog/qac/what-is-iso-25010&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lists non-repudiation as one of the key non-functional requirements to be considered in software development. &lt;a href="https://www.boxuk.com/insight/guide-to-non-functional-requirements-types-and-examples/"&gt;https://www.boxuk.com/insight/guide-to-non-functional-requirements-types-and-examples/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-		<summary>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</summary>
+		<summary>A mechanism to ensure a party cannot deny the legitimacy of a transaction.</summary>
 	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/maintainability</id>
@@ -363,6 +389,53 @@ The system can support at least 25 concurrent 'views' of pages per second.&lt;/p
 		<summary>&lt;p&gt;The system should be designed and developed with maintainability in mind. The system should be easy to look after, diagnose and support, throughout its lifecycle.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration</id>
+		<title>Secure Configuration</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
+		<updated>2023-04-26T00:00:00Z</updated>
+		<content>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Based on the NCSC.gov.uk 'Cyber Essentials Requirements for Infrastructure, January 2022. Modified to remove end user devices.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Computers and network devices must be properly configured to reduce the level of inherent vulnerabilities and only provide the services required to fulfil their role.&lt;/p&gt;
+&lt;p&gt;Default configurations are often insecure, to make initial access easier. We must ensure any commodity services are reconfigured to ensure security.&lt;/p&gt;
+&lt;p&gt;This can include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Default accounts, potentially with additional permissions.&lt;/li&gt;
+&lt;li&gt;weak or known initial account passwords.&lt;/li&gt;
+&lt;li&gt;Unnecessary or legacy services, which are easier to exploit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These must be disabled or reconfigured.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;On inspection, third-party components should not have common or default accounts and passwords enabled.&lt;/li&gt;
+&lt;li&gt;Where possible, configuration should be backed-up and stored securely, to allow for re-verification.&lt;/li&gt;
+&lt;li&gt;The configuration of a system has been reviewed with one or more peers and has been approved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and implementors.&lt;/li&gt;
+&lt;li&gt;Organisational management&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;One of the most common ways to access a system is to use a default account or configuration, which has been left unsecured. By ensuring we verify these accounts and their configuration, we can help improve security and minimise breaches.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:least-privilege"&gt;Least Privilege&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:shift-security-left"&gt;Shift Security Left&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control</id>
 		<title>User Access Control</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control" />
@@ -409,13 +482,48 @@ The system can support at least 25 concurrent 'views' of pages per second.&lt;/p
 		<summary>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation</id>
-		<title>Non-repudiation</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation" />
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/malware-protection</id>
+		<title>Malware Protection</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/malware-protection" />
 		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
-		<updated>2023-04-24T15:03:09Z</updated>
-		<content>&lt;p&gt;Where possible, use immutable objects and data which can't be repudiated. Make sure we can trust our systems and our data.&lt;/p&gt;
+		<updated>2023-04-24T00:00:00Z</updated>
+		<content>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Based on the NCSC.gov.uk 'Cyber Essentials Requirements for Infrastructure, January 2022'. Modified to remove end user devices.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Downloading software from the internet is commonplace and a requirement for a lot of software development work. Ensuring you can trust the libraries, applications and scripts that have been downloaded is important to keep us all safe and employed.&lt;/p&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Scripts, libraries and apps which have been downloaded from external sources are scanned for malware before execution. Apps are only used from signed, trusted sources to ensure they meet the standards of their authors.&lt;/p&gt;
+&lt;p&gt;Apps from third parties, used in our business, are part of our business architecture. These apps need to come from vendors and sources we can trust and verify.&lt;/p&gt;
+&lt;p&gt;If there is any indication or suspicion that the provenance of a piece of executable software is dubious, then it should not be used until it can be safely verified.&lt;/p&gt;
+&lt;p&gt;Consider the addition of application whitelisting/allow-listing and application sandboxing as ways to help mitigate risks.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Downloaded software has been scanned and found to be free from malware.&lt;/li&gt;
+&lt;li&gt;The scanning engine has an up-to-date set of definitions.&lt;/li&gt;
+&lt;li&gt;The applications are correctly signed by their authors.&lt;/li&gt;
+&lt;li&gt;Their authors are traceable and can be verified.&lt;/li&gt;
+&lt;li&gt;The use of the software and the ability of the vendor to support this use has been considered.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and implementors.&lt;/li&gt;
+&lt;li&gt;Organisational management&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;We need to ensure our software is secure and trustworthy and that we can use it safely, at scale, for our business.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:least-privilege"&gt;Least Privilege&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:shift-security-left"&gt;Shift Security Left&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
-		<summary>&lt;p&gt;Where possible, use immutable objects and data which can't be repudiated. Make sure we can trust our systems and our data.&lt;/p&gt;</summary>
+		<summary>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</summary>
 	</entry>
 </feed>

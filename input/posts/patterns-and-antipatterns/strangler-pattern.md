@@ -1,6 +1,6 @@
 ---
 Title: Strangler pattern
-Lead: null
+Lead: Gradually replace a monolith with microservices.
 Description: This pattern is used to migrate functionality from an older app to a new one
 Tags:
   - Architecture
