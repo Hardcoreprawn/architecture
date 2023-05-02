@@ -4,64 +4,41 @@
 	<title />
 	<link rel="self" href="https://red-sand-078a6ea03.3.azurestaticapps.net/" />
 	<rights>Copyright James Brewster© 2023</rights>
-	<updated>2023-05-02T14:51:56Z</updated>
+	<updated>2023-05-02T14:56:41Z</updated>
 	<logo>https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png</logo>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern</id>
-		<title>Strangler pattern</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern" />
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/reliability</id>
+		<title>Reliability</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/reliability" />
 		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
-		<updated>2023-05-02T00:00:00Z</updated>
-		<content>&lt;p&gt;This pattern is used to migrate functionality from an older app to a new one. Typically, this is done for a monolith to a microservices model but works for any app.&lt;/p&gt;
-&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
-&lt;p&gt;Replacing a large monolithic system is complex and risky. The strangler pattern builds new functionality using modern design patterns alongside the monolith. A proxy is used to integrate the user experience and make sure the aligned application makes sense to end users. Over time the monolith is slowly broken down.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://farm4.staticflickr.com/3356/3600794227_4916f9924e_z.jpg" alt="The Strangler Fig Tree"&gt;&lt;/p&gt;
-&lt;p&gt;Inspired by the Australian Strangler Fig Tree, which roots in the upper branches and grows down and around the tree, eventually taking root and destroying the original host tree.&lt;/p&gt;
-&lt;h3 id="illustration"&gt;Illustration&lt;/h3&gt;
-&lt;p&gt;If you build something to help transition, take it away when you're finished with it.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/strangler-pattern-example.png" alt="Strangler pattern, over time"&gt;&lt;/p&gt;
-&lt;p&gt;The first step shows the monolith, and then a companion service is added alongside, behind a proxy. The next step adds more services, transitioning over to the new model. The last step shows the monolith being removed, along with the proxy.&lt;/p&gt;
-&lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
+		<updated>2023-05-02T14:56:30Z</updated>
+		<content>&lt;p&gt;TODO: Intro&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;TODO:&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;p&gt;TODO:&lt;/p&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and software engineers.&lt;/li&gt;
+&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Provides a way to scale a solution over multiple dimensions.&lt;/li&gt;
-&lt;li&gt;Delivers gradual value over time, with lower risk than a rewrite.&lt;/li&gt;
-&lt;li&gt;Supports and allows for rollback.&lt;/li&gt;
-&lt;li&gt;Uses versioned APIs, to reduce the need for collaboration.&lt;/li&gt;
-&lt;li&gt;Supports legacy integrations.&lt;/li&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="drawbacks-to-this-pattern"&gt;Drawbacks to this pattern&lt;/h2&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;TODO:&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Potential for increased latency because of new service dependencies.&lt;/li&gt;
-&lt;li&gt;Additional proxy decreases availability through multiplicative failure effect.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Use the strangler for versioning and migration of services.&lt;/li&gt;
-&lt;li&gt;Use an existing proxy, such as Nginx, as scaffolding during the migration.&lt;/li&gt;
-&lt;li&gt;Manage the service rules during migration.&lt;/li&gt;
-&lt;li&gt;Remove rules as no longer needed and decommission the proxy when done.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;If you have to add a facade, then don't also add a proxy as it increases the call depth and hits latency poorly.&lt;/li&gt;
-&lt;li&gt;If latency is a concern, this won't help in the interim.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
-&lt;p&gt;You can implement this pattern in two separate ways, scaling along the service domains, or between the new and old services. Ideally, both together works well.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Scaling along the service domains allows new services to be stood up and integrated.&lt;/li&gt;
-&lt;li&gt;Scaling alongside the existing services allows for rollback and A/B testing between the new and old services, by sending a portion of calls to the new service.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Scaling along both these axis allows the target state to scale effectively.&lt;/p&gt;
-&lt;h2 id="assumptions"&gt;Assumptions&lt;/h2&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://martinfowler.com/bliki/StranglerFigApplication.html"&gt;Martin Folwer - Strangler Fig Application&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig"&gt;Microsoft - Azure Architecture, Strangler Fig Pattern&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/strangler-pattern-dos-and-donts"&gt;AKF Partners - Strangler Patterns: Dos and Don'ts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:interoperability"&gt;Interoperability&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease of Use&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-		<summary>This pattern is used to migrate functionality from an older app to a new one</summary>
+		<summary>&lt;p&gt;TODO: Intro&lt;/p&gt;</summary>
 	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices</id>
@@ -195,6 +172,63 @@ them close for performance.&lt;/p&gt;
 		<summary>Microservices are a collection of application services that are independently deployable, loosely coupled and organized around business capabilities.</summary>
 	</entry>
 	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern</id>
+		<title>Strangler pattern</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
+		<updated>2023-05-02T00:00:00Z</updated>
+		<content>&lt;p&gt;This pattern is used to migrate functionality from an older app to a new one. Typically, this is done for a monolith to a microservices model but works for any app.&lt;/p&gt;
+&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
+&lt;p&gt;Replacing a large monolithic system is complex and risky. The strangler pattern builds new functionality using modern design patterns alongside the monolith. A proxy is used to integrate the user experience and make sure the aligned application makes sense to end users. Over time the monolith is slowly broken down.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://farm4.staticflickr.com/3356/3600794227_4916f9924e_z.jpg" alt="The Strangler Fig Tree"&gt;&lt;/p&gt;
+&lt;p&gt;Inspired by the Australian Strangler Fig Tree, which roots in the upper branches and grows down and around the tree, eventually taking root and destroying the original host tree.&lt;/p&gt;
+&lt;h3 id="illustration"&gt;Illustration&lt;/h3&gt;
+&lt;p&gt;If you build something to help transition, take it away when you're finished with it.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/strangler-pattern-example.png" alt="Strangler pattern, over time"&gt;&lt;/p&gt;
+&lt;p&gt;The first step shows the monolith, and then a companion service is added alongside, behind a proxy. The next step adds more services, transitioning over to the new model. The last step shows the monolith being removed, along with the proxy.&lt;/p&gt;
+&lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Provides a way to scale a solution over multiple dimensions.&lt;/li&gt;
+&lt;li&gt;Delivers gradual value over time, with lower risk than a rewrite.&lt;/li&gt;
+&lt;li&gt;Supports and allows for rollback.&lt;/li&gt;
+&lt;li&gt;Uses versioned APIs, to reduce the need for collaboration.&lt;/li&gt;
+&lt;li&gt;Supports legacy integrations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="drawbacks-to-this-pattern"&gt;Drawbacks to this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Potential for increased latency because of new service dependencies.&lt;/li&gt;
+&lt;li&gt;Additional proxy decreases availability through multiplicative failure effect.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Use the strangler for versioning and migration of services.&lt;/li&gt;
+&lt;li&gt;Use an existing proxy, such as Nginx, as scaffolding during the migration.&lt;/li&gt;
+&lt;li&gt;Manage the service rules during migration.&lt;/li&gt;
+&lt;li&gt;Remove rules as no longer needed and decommission the proxy when done.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If you have to add a facade, then don't also add a proxy as it increases the call depth and hits latency poorly.&lt;/li&gt;
+&lt;li&gt;If latency is a concern, this won't help in the interim.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
+&lt;p&gt;You can implement this pattern in two separate ways, scaling along the service domains, or between the new and old services. Ideally, both together works well.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Scaling along the service domains allows new services to be stood up and integrated.&lt;/li&gt;
+&lt;li&gt;Scaling alongside the existing services allows for rollback and A/B testing between the new and old services, by sending a portion of calls to the new service.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Scaling along both these axis allows the target state to scale effectively.&lt;/p&gt;
+&lt;h2 id="assumptions"&gt;Assumptions&lt;/h2&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://martinfowler.com/bliki/StranglerFigApplication.html"&gt;Martin Folwer - Strangler Fig Application&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig"&gt;Microsoft - Azure Architecture, Strangler Fig Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/strangler-pattern-dos-and-donts"&gt;AKF Partners - Strangler Patterns: Dos and Don'ts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>This pattern is used to migrate functionality from an older app to a new one.</summary>
+	</entry>
+	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/usability</id>
 		<title>Usability</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/usability" />
@@ -229,42 +263,6 @@ them close for performance.&lt;/p&gt;
 &lt;/ul&gt;
 </content>
 		<summary>The system must be intuitive and easy to use for all users.</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability</id>
-		<title>Scalability</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
-		<updated>2023-04-27T00:00:00Z</updated>
-		<content>&lt;p&gt;This non-functional requirement is concerned with the ability of the system to handle an increasing amount of work or its potential to be enlarged to accommodate that growth.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;p&gt;The system must be able to scale horizontally and vertically.&lt;/p&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;The system must be able to handle a minimum of 1000 concurrent users without any significant degradation in performance.&lt;/li&gt;
-&lt;li&gt;On demonstration, the system should be able to scale up and down.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and software engineers.&lt;/li&gt;
-&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Rationale: Scalability is important because it ensures that the system can continue to function effectively as the workload increases.&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>The system must be able to handle an increasing amount of work without any significant degradation in performance.</summary>
 	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/owasp</id>
@@ -354,6 +352,42 @@ them close for performance.&lt;/p&gt;
 &lt;/ul&gt;
 </content>
 		<summary>A mechanism to ensure a party cannot deny the legitimacy of a transaction.</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability</id>
+		<title>Scalability</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
+		<updated>2023-04-27T00:00:00Z</updated>
+		<content>&lt;p&gt;This non-functional requirement is concerned with the ability of the system to handle an increasing amount of work or its potential to be enlarged to accommodate that growth.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;The system must be able to scale horizontally and vertically.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The system must be able to handle a minimum of 1000 concurrent users without any significant degradation in performance.&lt;/li&gt;
+&lt;li&gt;On demonstration, the system should be able to scale up and down.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and software engineers.&lt;/li&gt;
+&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Rationale: Scalability is important because it ensures that the system can continue to function effectively as the workload increases.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>The system must be able to handle an increasing amount of work without any significant degradation in performance.</summary>
 	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/performance</id>
@@ -489,53 +523,5 @@ them close for performance.&lt;/p&gt;
 &lt;/ul&gt;
 </content>
 		<summary>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/maintainability</id>
-		<title>Maintainability</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/maintainability" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
-		<updated>2023-04-26T00:00:00Z</updated>
-		<content>&lt;p&gt;The system should be designed and developed with maintainability in mind. The system should be easy to look after, diagnose and support, throughout its lifecycle.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Design and implement the system using a known set of conventions.&lt;/li&gt;
-&lt;li&gt;The system is well-documented and the source code has relevant comments.&lt;/li&gt;
-&lt;li&gt;The software has been designed to be modular and reusable.&lt;/li&gt;
-&lt;li&gt;Implement approved logging, monitoring and testing tools.&lt;/li&gt;
-&lt;li&gt;The deployment follows standard technology hosting patterns.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Designs for the system are reviewed and approved by at least two others.&lt;/li&gt;
-&lt;li&gt;Software source code is documented using a known standard or convention.&lt;/li&gt;
-&lt;li&gt;Software designs have been inspected for opportunities for reuse and modularity.&lt;/li&gt;
-&lt;li&gt;The system must include logging ability.&lt;/li&gt;
-&lt;li&gt;An outline design of areas to be monitored on the system should be included.&lt;/li&gt;
-&lt;li&gt;The system must have a documented set of test cases.&lt;/li&gt;
-&lt;li&gt;The system must be based on an approved hosting pattern and document how the pattern is followed.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and software engineers.&lt;/li&gt;
-&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;This NFR ensures that the system can adapt to changing needs, bugs can be fixed and support costs can be kept down.&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:control-technical-diversity"&gt;Control Technical Diversity&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:interoperability"&gt;Interoperability&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;The system should be designed and developed with maintainability in mind. The system should be easy to look after, diagnose and support, throughout its lifecycle.&lt;/p&gt;</summary>
 	</entry>
 </feed>
