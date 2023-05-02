@@ -7,7 +7,7 @@ Tags:
   - Requirements
   - NFRs
 Draft: true
-Published: 01/01/2001
+Published: 02/05/2023
 ---
 
 > reliability, noun, /rɪˌlaɪ.əˈbɪl.ə.ti/. the quality of being able to be trusted or believed because of working or behaving well.
