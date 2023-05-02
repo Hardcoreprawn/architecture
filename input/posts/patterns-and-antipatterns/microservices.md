@@ -92,7 +92,7 @@ can kill the performance. Following [SOLID][def1] principles can help here.
 
 ### Shared Persistence
 
-A monolith typically requires a large shared data store. Microservices should
+TODO: A monolith typically requires a large shared data store. Microservices should
 each have their own data store, to avoid resource contention. Each store should
 be accessible only by the associated service. Any communication needs to be via
 the API interfaces.
@@ -101,38 +101,36 @@ the API interfaces.
 
 ### Heavyweight services
 
-Building too much into each service makes them slow. Build/latency delays kick
-in and you are back to building monoliths.
+TODO: Building too much into each service makes them slow. Build/latency delays kick in and you are back to building monoliths.
 
 ***
 
 ### No API Gateway
 
-Data Interfaces need to be identifiable, they need to be managed, and they need
-authentication. It has to be something you can find to query.
+TODO: Data Interfaces need to be identifiable, they need to be managed, and they need authentication. It has to be something you can find to query.
 
 ***
 
 ### Entangled Data
 
-Isolate the data inside the application.
+TODO: Isolate the data inside the application.
 
 ***
 
 ### Improper Versioning
 
-Build API versions into your URI calls.
+TODO: Build API versions into your URI calls.
 
 ***
 
 ## Sub-patterns
 
-A successful migration of monolith to microservices will likely use many
+TODO: A successful migration of monolith to microservices will likely use many
 different patterns. Some common ones are linked here.
 
 ### Ambassador
 
-An Ambassador sits between two services and negotiates. Typically a proxy
+TODO: An Ambassador sits between two services and negotiates. Typically a proxy
 service can interpret. An ambassador is often used to offload or mask client
 interoperability issues. An ambassador is a specialized sidecar.
 
@@ -142,7 +140,7 @@ interoperability issues. An ambassador is a specialized sidecar.
 
 ### Anti-corruption
 
-When two systems don't properly understand each other, an Anti-corruption
+TODO: When two systems don't properly understand each other, an Anti-corruption
 layer can be introduced to protect the new architecture.
 
 [Anti-corruption Layer pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer)
@@ -151,8 +149,7 @@ layer can be introduced to protect the new architecture.
 
 ### Backends for Frontends
 
-Sometimes, it's just quicker to write APIs that deal with specific clients. It
-might take more maintenance, but that can be ok.
+TODO: Sometimes, it's just quicker to write APIs that deal with specific clients. It might take more maintenance, but that can be ok.
 
 [Backends for Frontends pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends)
 
@@ -160,9 +157,7 @@ might take more maintenance, but that can be ok.
 
 ### Bulkhead
 
-Bulkheads are used on ships to prevent water from a hull breach from flooding
-the whole ship. Keep things separate, (like connection pools or hardware)
-so a greedy neighbour can't flood the whole ship.
+TODO: Bulkheads are used on ships to prevent water from a hull breach from flooding the whole ship. Keep things separate, (like connection pools or hardware) so a greedy neighbour can't flood the whole ship.
 
 [Bulkhead Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead)
 
@@ -170,12 +165,11 @@ so a greedy neighbour can't flood the whole ship.
 
 ### Gateways
 
-Using a gateway for your microservices offers several benefits, by making your
-collection of services look like a single web server.
+TODO: Using a gateway for your microservices offers several benefits, by making your collection of services look like a single web server.
 
 #### Aggregation
 
-Clients can connect to a single endpoint to make requests, which are then
+TODO: Clients can connect to a single endpoint to make requests, which are then
 forwarded to different microservices. This makes the client connection light
 and easy
 
@@ -183,14 +177,14 @@ and easy
 
 #### Offloading
 
-The gateway can offload shared functionality, such as authentication, TLS
+TODO: The gateway can offload shared functionality, such as authentication, TLS
 certificates or issuing Authorisation tokens.
 
 [Gateway Offloading](https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading)
 
 #### Routing
 
-The service all appears to come from a single domain, so much easier for a
+TODO: The service all appears to come from a single domain, so much easier for a
 client to manage connections to and from the service, improving security.
 
 [Gateway Routing](https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-routing)
@@ -199,7 +193,7 @@ client to manage connections to and from the service, improving security.
 
 ### Sidecar
 
-deploy helper apps into separate containers to encapsulate them, but keep
+TODO: deploy helper apps into separate containers to encapsulate them, but keep
 them close for performance.
 
 [Sidecar Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar)
@@ -208,6 +202,6 @@ them close for performance.
 
 ### Strangler
 
-Refactor over time, by gradually replacing specific services.
+TODO: Refactor over time, by gradually replacing specific services.
 
 [Strangler Pattern](xref:strangler-pattern)
