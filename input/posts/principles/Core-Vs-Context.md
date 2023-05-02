@@ -19,7 +19,7 @@ We focus on what matters to our customers, to make sure we deliver a great servi
 
 Understand what matters to your customers, the core of your business, versus the stuff you have to do around it, the context.
 
-You need to focus your efforts on Core matters, not context. 
+You need to focus your efforts on Core matters, not context.
 
 Focusing your efforts on Core matters will ensure you focus on the problems and challenges your customers have and how you can deliver value to them. This will maximise your opportunity with them.
 

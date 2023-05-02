@@ -1,6 +1,7 @@
 ---
 Title: Strangler pattern
-Lead: Gradually replace a monolith with microservices.
+Slug: strangler-pattern
+Lead: strangler-pattern
 Description: This pattern is used to migrate functionality from an older app to a new one
 Tags:
   - Architecture
@@ -10,7 +11,6 @@ Categories:
   - Patterns
 Draft: false
 Published: 02/05/2023
-ArchiveKey: Patterns
 ---
 
 This pattern is used to migrate functionality from an older app to a new one. Typically, this is done for a monolith to a microservices model but works for any app.

@@ -7,7 +7,6 @@ Tags:
 Draft: true
 Published: 01/01/2001
 ---
-# (name) Pattern
 
 ## Pattern Overview
 

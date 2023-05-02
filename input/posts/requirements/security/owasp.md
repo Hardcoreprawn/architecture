@@ -1,7 +1,7 @@
 ---
 Title: OWASP ASVS
 Lead: The OWASP Application Security Verification Standard (ASVS) Project provides a basis for testing web application technical security controls and also provides developers with a list of requirements for secure development
-Description: The OWASP Application Security Verification Standard (ASVS) Project provides a basis for testing web application technical security controls and also provides developers with a list of requirements for secure development.
+Description: The OWASP ASVS project provides developers with a list of requirements for secure development and testable security controls.
 Published: 27/04/2023
 Draft: false
 Tags:
