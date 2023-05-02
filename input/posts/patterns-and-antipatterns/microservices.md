@@ -1,30 +1,24 @@
 ---
 Title: Microservices
-Lead: 
-Description: Microservices architecture is a 'super-pattern', which aims to minimise dependencies and promote scalability across multiple dimensions.
+Lead: Microservices architecture is a 'super-pattern', which aims to minimise dependencies and promote scalability across multiple dimensions.
+Description: Microservices architecture is an architectural style that structures an application as a collection of services that are independently deployable, loosely coupled, organized around business capabilities and owned by a small team. In simple terms, microservices are a specific method of designing software systems to structure a single application as a collection of loosely coupled services.
 Tags:
   - Architecture
   - Microservices
-  - Patterns
+  - Pattern
 Categories:
   - Pattern
 Published: 01/01/2001
 Draft: true
 ---
 
-
----
-
 ## Pattern Overview
 
-This pattern is designed to provide reliable service at a large scale. It does
-this by providing no single point of failure, allowing its components to
-scale independently of each other and segregating information to provide
-security.
+Microservices architecture is an architectural style that structures an application as a collection of services that are independently deployable, loosely coupled, organized around business capabilities and owned by a small team. In simple terms, microservices are a specific method of designing software systems to structure a single application as a collection of loosely coupled services.
 
 ### Illustration
 
-![microservices pattern, learn.microsoft.com][def-1-msft-img]
+![microservices-pattern][def-1-msft-img]
 *Model of a Monolith to Microservices migration, showing sub-patterns*
 
 This is a reference microservices pattern, showing the possible use of sub-patterns.
