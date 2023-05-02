@@ -18,7 +18,7 @@ This pattern is used to migrate functionality from an older app to a new one. Ty
 
 Replacing a large monolithic system is complex and risky. The strangler pattern builds new functionality using modern design patterns alongside the monolith. A proxy is used to integrate the user experience and make sure the aligned application makes sense to end users. Over time the monolith is slowly broken down.
 
-![The Strangler Fig Tree](https://th.bing.com/th/id/OIP.xkG2oQy-yOaQWbW6QlEwKgHaLH?pid=ImgDet&rs=1)
+![The Strangler Fig Tree](https://farm4.staticflickr.com/3356/3600794227_4916f9924e_z.jpg)
 
 Inspired by the Australian Strangler Fig Tree, which roots in the upper branches and grows down and around the tree, eventually taking root and destroying the original host tree.
 
@@ -27,6 +27,8 @@ Inspired by the Australian Strangler Fig Tree, which roots in the upper branches
 If you build something to help transition, take it away when you're finished with it.
 
 ![Strangler pattern, over time][def1]
+
+[def1]: ../../media/images/strangler-pattern-example.png
 
 The first step shows the monolith, and then a companion service is added alongside, behind a proxy. The next step adds more services, transitioning over to the new model. The last step shows the monolith being removed, along with the proxy.
 
@@ -71,6 +73,3 @@ Scaling along both these axis allows the target state to scale effectively.
 * [Martin Folwer - Strangler Fig Application](https://martinfowler.com/bliki/StranglerFigApplication.html)
 * [Microsoft - Azure Architecture, Strangler Fig Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig)
 * [AKF Partners - Strangler Patterns: Dos and Don'ts](https://akfpartners.com/growth-blog/strangler-pattern-dos-and-donts)
-
-
-[def1]: ../../media/images/strangler-pattern-example.png
