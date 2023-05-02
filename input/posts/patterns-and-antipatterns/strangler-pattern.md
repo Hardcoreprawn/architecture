@@ -9,7 +9,7 @@ Tags:
 Categories:
   - Pattern
 Draft: true
-Published: 13/04/2023
+Published: 02/05/2023
 ---
 
 This pattern is used to migrate functionality from an older app to a new one. Typically, this is done for a monolith to a microservices model but works for any app.
@@ -18,7 +18,9 @@ This pattern is used to migrate functionality from an older app to a new one. Ty
 
 Replacing a large monolithic system is complex and risky. The strangler pattern builds new functionality using modern design patterns alongside the monolith. A proxy is used to integrate the user experience and make sure the aligned application makes sense to end users. Over time the monolith is slowly broken down.
 
-![The Strangler Fig Tree](https://farm4.staticflickr.com/3356/3600794227_4916f9924e_z.jpg)
+![The Strangler Fig Tree][def2]
+
+[def2]: https://farm4.staticflickr.com/3356/3600794227_4916f9924e_z.jpg
 
 Inspired by the Australian Strangler Fig Tree, which roots in the upper branches and grows down and around the tree, eventually taking root and destroying the original host tree.
 
