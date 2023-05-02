@@ -8,7 +8,6 @@ Tags:
   - Pattern
 Categories:
   - Pattern
-Published: 01/01/2001
 Draft: true
 ---
 
@@ -18,21 +17,19 @@ Microservices architecture is an architectural style that structures an applicat
 
 ### Illustration
 
-![microservices-pattern][def-1-msft-img]
+![microservices-pattern][def3]
 *Model of a Monolith to Microservices migration, showing sub-patterns*
 
-This is a reference microservices pattern, showing the possible use of sub-patterns.
+[def3]: ../../media/images/microservices-patterns.png
+
+This is a reference pattern, with several optional sub-patterns.
 
 ## Benefits of this pattern
 
 * Scale and resilience in each service.
-Safe deployment of updates to individual services.
+* Safe deployment of updates to individual services.
 * Separation of services, allowing changes to be made locally and quickly, with
 minimal impact on other services.
-* The ability for several teams to work together on different areas. Can support
-regular and frequent changes.
-
-***
 
 ## Drawbacks to this pattern
 
@@ -41,15 +38,11 @@ regular and frequent changes.
 components.
 * The Danger of component sprawl if services are over-specialized.
 
-***
-
 ## When to use this pattern
 
 * This pattern is for applications that need to grow, which need to manage
 their costs and support a large degree of change and experimentation.
 * When reliability is critical to business, reputation or safety.
-
-***
 
 ## When to avoid this pattern
 
@@ -61,16 +54,12 @@ change, addition or integration.
 active users.
 * For your Blog.
 
-***
-
 ## Assumptions
 
 In choosing this pattern, you ruled out simpler options as not being capable.
 
 * You have time and space for teams to find their way; this is hard and it
 will go wrong.
-
-***
 
 ## Anti-Patterns of the microservices architecture
 
@@ -221,5 +210,3 @@ them close for performance.
 Refactor over time, by gradually replacing specific services.
 
 [Strangler Pattern](xref:strangler-pattern)
-
-[def-1-msft-img]: ../../media/images/microservices-patterns.png
