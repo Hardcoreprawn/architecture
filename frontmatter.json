@@ -17,9 +17,24 @@
           "type": "string"
         },
         {
+          "title": "Description",
+          "name": "Description",
+          "type": "string"
+        },
+        {
           "title": "Tags",
           "name": "Tags",
           "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "Categories",
+          "type": "categories"
+        },
+        {
+          "title": "ArchiveKey",
+          "name": "ArchiveKey",
+          "type": "string"
         },
         {
           "title": "Draft",
@@ -29,7 +44,7 @@
         {
           "title": "Published",
           "name": "Published",
-          "type": "string"
+          "type": "datetime"
         }
       ]
     }
@@ -40,6 +55,10 @@
     {
       "title": "Posts",
       "path": "[[workspace]]/input/posts"
+    },
+    {
+      "title": "Principles",
+      "path": "[[workspace]]/input/posts/principles"
     },
     {
       "title": "Patterns-and-antipatterns",
