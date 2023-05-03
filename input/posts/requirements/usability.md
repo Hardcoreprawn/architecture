@@ -10,6 +10,8 @@ Tags:
   - Requirements
 ---
 
+Usability, noun, /ˌjuːzəˈbɪləti/. Something easy to use, or the degree to which it is easy to use.
+
 ## Requirement
 
 The system must have a user interface that is easy to navigate and understand.
