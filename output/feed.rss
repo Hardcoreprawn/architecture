@@ -5,8 +5,66 @@
 		<link>https://red-sand-078a6ea03.3.azurestaticapps.net/</link>
 		<description />
 		<copyright>Copyright James Brewster© 2023</copyright>
-		<pubDate>Wed, 03 May 2023 06:22:35 GMT</pubDate>
-		<lastBuildDate>Wed, 03 May 2023 06:22:35 GMT</lastBuildDate>
+		<pubDate>Wed, 03 May 2023 06:37:35 GMT</pubDate>
+		<lastBuildDate>Wed, 03 May 2023 06:37:35 GMT</lastBuildDate>
+		<item>
+			<title>Strangler pattern</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern</link>
+			<description>This pattern is used to migrate functionality from an older app to a new one.</description>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern</guid>
+			<pubDate>Tue, 02 May 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This pattern is used to migrate functionality from an older app to a new one. Typically, this is done for a monolith to a microservices model but works for any app.&lt;/p&gt;
+&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
+&lt;p&gt;Replacing a large monolithic system is complex and risky. The strangler pattern builds new functionality using modern design patterns alongside the monolith. A proxy is used to integrate the user experience and make sure the aligned application makes sense to end users. Over time the monolith is slowly broken down.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://farm4.staticflickr.com/3356/3600794227_4916f9924e_z.jpg" alt="The Strangler Fig Tree"&gt;&lt;/p&gt;
+&lt;p&gt;Inspired by the Australian Strangler Fig Tree, which roots in the upper branches and grows down and around the tree, eventually taking root and destroying the original host tree.&lt;/p&gt;
+&lt;h3 id="illustration"&gt;Illustration&lt;/h3&gt;
+&lt;p&gt;If you build something to help transition, take it away when you're finished with it.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/strangler-pattern-example.png" alt="Strangler pattern, over time"&gt;&lt;/p&gt;
+&lt;p&gt;The first step shows the monolith, and then a companion service is added alongside, behind a proxy. The next step adds more services, transitioning over to the new model. The last step shows the monolith being removed, along with the proxy.&lt;/p&gt;
+&lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Provides a way to scale a solution over multiple dimensions.&lt;/li&gt;
+&lt;li&gt;Delivers gradual value over time, with lower risk than a rewrite.&lt;/li&gt;
+&lt;li&gt;Supports and allows for rollback.&lt;/li&gt;
+&lt;li&gt;Uses versioned APIs, to reduce the need for collaboration.&lt;/li&gt;
+&lt;li&gt;Supports legacy integrations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="drawbacks-to-this-pattern"&gt;Drawbacks to this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Potential for increased latency because of new service dependencies.&lt;/li&gt;
+&lt;li&gt;Additional proxy decreases availability through multiplicative failure effect.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Use the strangler for versioning and migration of services.&lt;/li&gt;
+&lt;li&gt;Use an existing proxy, such as Nginx, as scaffolding during the migration.&lt;/li&gt;
+&lt;li&gt;Manage the service rules during migration.&lt;/li&gt;
+&lt;li&gt;Remove rules as no longer needed and decommission the proxy when done.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If you have to add a facade, then don't also add a proxy as it increases the call depth and hits latency poorly.&lt;/li&gt;
+&lt;li&gt;If latency is a concern, this won't help in the interim.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
+&lt;p&gt;You can implement this pattern in two separate ways, scaling along the service domains, or between the new and old services. Ideally, both together works well.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Scaling along the service domains allows new services to be stood up and integrated.&lt;/li&gt;
+&lt;li&gt;Scaling alongside the existing services allows for rollback and A/B testing between the new and old services, by sending a portion of calls to the new service.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Scaling along both these axis allows the target state to scale effectively.&lt;/p&gt;
+&lt;h2 id="assumptions"&gt;Assumptions&lt;/h2&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://martinfowler.com/bliki/StranglerFigApplication.html"&gt;Martin Folwer - Strangler Fig Application&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig"&gt;Microsoft - Azure Architecture, Strangler Fig Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/strangler-pattern-dos-and-donts"&gt;AKF Partners - Strangler Patterns: Dos and Don'ts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Microservices</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices</link>
@@ -140,64 +198,6 @@ them close for performance.&lt;/p&gt;
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>Strangler pattern</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern</link>
-			<description>This pattern is used to migrate functionality from an older app to a new one.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern</guid>
-			<pubDate>Tue, 02 May 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;This pattern is used to migrate functionality from an older app to a new one. Typically, this is done for a monolith to a microservices model but works for any app.&lt;/p&gt;
-&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
-&lt;p&gt;Replacing a large monolithic system is complex and risky. The strangler pattern builds new functionality using modern design patterns alongside the monolith. A proxy is used to integrate the user experience and make sure the aligned application makes sense to end users. Over time the monolith is slowly broken down.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://farm4.staticflickr.com/3356/3600794227_4916f9924e_z.jpg" alt="The Strangler Fig Tree"&gt;&lt;/p&gt;
-&lt;p&gt;Inspired by the Australian Strangler Fig Tree, which roots in the upper branches and grows down and around the tree, eventually taking root and destroying the original host tree.&lt;/p&gt;
-&lt;h3 id="illustration"&gt;Illustration&lt;/h3&gt;
-&lt;p&gt;If you build something to help transition, take it away when you're finished with it.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/strangler-pattern-example.png" alt="Strangler pattern, over time"&gt;&lt;/p&gt;
-&lt;p&gt;The first step shows the monolith, and then a companion service is added alongside, behind a proxy. The next step adds more services, transitioning over to the new model. The last step shows the monolith being removed, along with the proxy.&lt;/p&gt;
-&lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Provides a way to scale a solution over multiple dimensions.&lt;/li&gt;
-&lt;li&gt;Delivers gradual value over time, with lower risk than a rewrite.&lt;/li&gt;
-&lt;li&gt;Supports and allows for rollback.&lt;/li&gt;
-&lt;li&gt;Uses versioned APIs, to reduce the need for collaboration.&lt;/li&gt;
-&lt;li&gt;Supports legacy integrations.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="drawbacks-to-this-pattern"&gt;Drawbacks to this pattern&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Potential for increased latency because of new service dependencies.&lt;/li&gt;
-&lt;li&gt;Additional proxy decreases availability through multiplicative failure effect.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Use the strangler for versioning and migration of services.&lt;/li&gt;
-&lt;li&gt;Use an existing proxy, such as Nginx, as scaffolding during the migration.&lt;/li&gt;
-&lt;li&gt;Manage the service rules during migration.&lt;/li&gt;
-&lt;li&gt;Remove rules as no longer needed and decommission the proxy when done.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;If you have to add a facade, then don't also add a proxy as it increases the call depth and hits latency poorly.&lt;/li&gt;
-&lt;li&gt;If latency is a concern, this won't help in the interim.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
-&lt;p&gt;You can implement this pattern in two separate ways, scaling along the service domains, or between the new and old services. Ideally, both together works well.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Scaling along the service domains allows new services to be stood up and integrated.&lt;/li&gt;
-&lt;li&gt;Scaling alongside the existing services allows for rollback and A/B testing between the new and old services, by sending a portion of calls to the new service.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Scaling along both these axis allows the target state to scale effectively.&lt;/p&gt;
-&lt;h2 id="assumptions"&gt;Assumptions&lt;/h2&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://martinfowler.com/bliki/StranglerFigApplication.html"&gt;Martin Folwer - Strangler Fig Application&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig"&gt;Microsoft - Azure Architecture, Strangler Fig Pattern&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/strangler-pattern-dos-and-donts"&gt;AKF Partners - Strangler Patterns: Dos and Don'ts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
 			<title>Reliability</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/reliability</link>
 			<description>&lt;p&gt;reliability, noun, /rɪˌlaɪ.əˈbɪl.ə.ti/. The quality of being able to be trusted or believed because of working or behaving well.&lt;/p&gt;</description>
@@ -323,49 +323,6 @@ them close for performance.&lt;/p&gt;
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>Performance</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/performance</link>
-			<description>&lt;p&gt;Performance is one of the most important NFRs that specifies “how well” the “what&amp;quot; must behave. Performance NFRs are used to ensure that a system meets its performance requirements and that it performs as expected under various conditions. Performance NFRs can include response time, throughput, resource utilization, and capacity.&lt;/p&gt;</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/performance</guid>
-			<pubDate>Thu, 27 Apr 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Performance is one of the most important NFRs that specifies “how well” the “what&amp;quot; must behave. Performance NFRs are used to ensure that a system meets its performance requirements and that it performs as expected under various conditions. Performance NFRs can include response time, throughput, resource utilization, and capacity.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;The system must be able to handle 1000 concurrent users.&lt;/li&gt;
-&lt;li&gt;The system should respond within 2 seconds for 95% of all requests.&lt;/li&gt;
-&lt;li&gt;Any underlying systems should be able to achieve this at no more than 60% utilisation before scaling occurs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;95% of system responses occur to the user within 2 seconds.&lt;/li&gt;
-&lt;li&gt;The system can support more than 1,000 concurrent users and maintain the response time.&lt;/li&gt;
-&lt;li&gt;Monitoring of infrastructure shows that active nodes are at 60-80% of utilisation during load.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and software engineers.&lt;/li&gt;
-&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;This NFR is important because it ensures that the application is responsive and performs well under heavy load.&lt;/p&gt;
-&lt;p&gt;An asynchronous response can take longer, as long as the interactive elements load quickly and explain any delays, while the asynchronous response is prepared.&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
 			<title>Non-repudiation</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation</link>
 			<description>A mechanism to ensure a party cannot deny the legitimacy of a transaction.</description>
@@ -447,34 +404,32 @@ them close for performance.&lt;/p&gt;
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>User Access Control</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control</link>
-			<description>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</description>
+			<title>Performance</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/performance</link>
+			<description>&lt;p&gt;Performance is one of the most important NFRs that specifies “how well” the “what&amp;quot; must behave. Performance NFRs are used to ensure that a system meets its performance requirements and that it performs as expected under various conditions. Performance NFRs can include response time, throughput, resource utilization, and capacity.&lt;/p&gt;</description>
 			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control</guid>
-			<pubDate>Wed, 26 Apr 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/performance</guid>
+			<pubDate>Thu, 27 Apr 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Performance is one of the most important NFRs that specifies “how well” the “what&amp;quot; must behave. Performance NFRs are used to ensure that a system meets its performance requirements and that it performs as expected under various conditions. Performance NFRs can include response time, throughput, resource utilization, and capacity.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Based on the NCSC.gov.uk 'Cyber Essentials Requirements for Infrastructure, January 2022. Modified to remove end user devices.&lt;/p&gt;
+&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;p&gt;Access to a business system, or its data, is protected by a centrally managed named user account. The account can be configured to only allow access to the relevant data and processes.&lt;/p&gt;
-&lt;p&gt;Accounts with special access privileges have an enhanced level of verification through a second factor, such as a verification message to a different, associated device or approval by a second party.&lt;/p&gt;
-&lt;p&gt;Any account should have more than one named individual present. Owners and administrators need to be able to disable an account, with relevant verification.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The system must be able to handle 1000 concurrent users.&lt;/li&gt;
+&lt;li&gt;The system should respond within 2 seconds for 95% of all requests.&lt;/li&gt;
+&lt;li&gt;Any underlying systems should be able to achieve this at no more than 60% utilisation before scaling occurs.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Any Authorisation is not performed by the application but by a dedicated authorisation application.&lt;/li&gt;
-&lt;li&gt;Applications obey trusted authorisation tokens from that application.&lt;/li&gt;
-&lt;li&gt;Tokens only grant access to the relevant data, necessary for the role the user has.&lt;/li&gt;
-&lt;li&gt;Roles are granular and can be subdivided where necessary.&lt;/li&gt;
-&lt;li&gt;Application and data access is protected, ensuring a second check.&lt;/li&gt;
-&lt;li&gt;Special access privileges, such as deleting an account, require a second factor or verification.&lt;/li&gt;
-&lt;li&gt;Options for Multi-factor authentication should be present and are strongly recommended.&lt;/li&gt;
+&lt;li&gt;95% of system responses occur to the user within 2 seconds.&lt;/li&gt;
+&lt;li&gt;The system can support more than 1,000 concurrent users and maintain the response time.&lt;/li&gt;
+&lt;li&gt;Monitoring of infrastructure shows that active nodes are at 60-80% of utilisation during load.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;System designers and implementors.&lt;/li&gt;
-&lt;li&gt;Organisational management&lt;/li&gt;
+&lt;li&gt;System designers and software engineers.&lt;/li&gt;
+&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="details"&gt;Details&lt;/h2&gt;
 &lt;ul&gt;
@@ -482,13 +437,11 @@ them close for performance.&lt;/p&gt;
 &lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Ensuring our customer's data is secure is important. Ensuring they can manage access to that data is important. Giving them a feeling of security and trust is important.&lt;/p&gt;
-&lt;p&gt;Reflecting our brand values, our commitment to security and our capability to manage data and services for them is important.&lt;/p&gt;
+&lt;p&gt;This NFR is important because it ensures that the application is responsive and performs well under heavy load.&lt;/p&gt;
+&lt;p&gt;An asynchronous response can take longer, as long as the interactive elements load quickly and explain any delays, while the asynchronous response is prepared.&lt;/p&gt;
 &lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:least-privilege"&gt;Least Privilege&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:shift-security-left"&gt;Shift Security Left&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
@@ -532,6 +485,53 @@ them close for performance.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
 &lt;p&gt;One of the most common ways to access a system is to use a default account or configuration, which has been left unsecured. By ensuring we verify these accounts and their configuration, we can help improve security and minimise breaches.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:least-privilege"&gt;Least Privilege&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:shift-security-left"&gt;Shift Security Left&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>User Access Control</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control</link>
+			<description>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</description>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control</guid>
+			<pubDate>Wed, 26 Apr 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Based on the NCSC.gov.uk 'Cyber Essentials Requirements for Infrastructure, January 2022. Modified to remove end user devices.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Access to a business system, or its data, is protected by a centrally managed named user account. The account can be configured to only allow access to the relevant data and processes.&lt;/p&gt;
+&lt;p&gt;Accounts with special access privileges have an enhanced level of verification through a second factor, such as a verification message to a different, associated device or approval by a second party.&lt;/p&gt;
+&lt;p&gt;Any account should have more than one named individual present. Owners and administrators need to be able to disable an account, with relevant verification.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Any Authorisation is not performed by the application but by a dedicated authorisation application.&lt;/li&gt;
+&lt;li&gt;Applications obey trusted authorisation tokens from that application.&lt;/li&gt;
+&lt;li&gt;Tokens only grant access to the relevant data, necessary for the role the user has.&lt;/li&gt;
+&lt;li&gt;Roles are granular and can be subdivided where necessary.&lt;/li&gt;
+&lt;li&gt;Application and data access is protected, ensuring a second check.&lt;/li&gt;
+&lt;li&gt;Special access privileges, such as deleting an account, require a second factor or verification.&lt;/li&gt;
+&lt;li&gt;Options for Multi-factor authentication should be present and are strongly recommended.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and implementors.&lt;/li&gt;
+&lt;li&gt;Organisational management&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Ensuring our customer's data is secure is important. Ensuring they can manage access to that data is important. Giving them a feeling of security and trust is important.&lt;/p&gt;
+&lt;p&gt;Reflecting our brand values, our commitment to security and our capability to manage data and services for them is important.&lt;/p&gt;
 &lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
