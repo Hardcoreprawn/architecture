@@ -25,8 +25,6 @@ Replacing a large monolithic system is complex and risky. The strangler pattern 
 
 Inspired by the Australian Strangler Fig Tree, which roots in the upper branches and grows down and around the tree, eventually taking root and destroying the original host tree.
 
-### Illustration
-
 If you build something to help transition, take it away when you're finished with it.
 
 ![Strangler pattern, over time][def1]

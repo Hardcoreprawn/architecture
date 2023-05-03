@@ -13,11 +13,11 @@ Draft: false
 Published: 02/05/2023
 ---
 
+Microservices are a way to build applications and are used by some of the biggest sites and systems online, such as Netflix and Amazon. They let systems be updated safely and scale well. But they are complex and require firm principles in place to work properly.
+
 ## Pattern Overview
 
 Microservices architecture is an architectural style that structures an application as a collection of services that are independently deployable, loosely coupled, organized around business capabilities and owned by a small team. In simple terms, microservices are a specific method of designing software systems to structure a single application as a collection of loosely coupled services.
-
-### Illustration
 
 ![microservices-pattern][def3]
 *Model of a Monolith to Microservices migration, showing sub-patterns*
@@ -56,6 +56,10 @@ change, addition or integration.
 active users.
 * For your Blog.
 
+## Approach
+
+Typically, microservices architectures require a good understanding of the business domain model, before development can begin. This ensures that services align with specific functions, which can be built in line with the business. [Conways Law](https://en.wikipedia.org/wiki/Conway's_law) states that any organisation which designs a system will design one that looks like the organisation. This needs to be considered as if your microservices don't align with your business model, it will be very difficult to succeed.
+
 ## Assumptions
 
 In choosing this pattern, you ruled out simpler options as not being capable.
@@ -63,7 +67,13 @@ In choosing this pattern, you ruled out simpler options as not being capable.
 * You have time and space for teams to find their way; this is hard and it
 will go wrong.
 
+## References
+
+* [Microsoft - Microservices design](https://learn.microsoft.com/en-us/azure/architecture/microservices/)
+
 ## Anti-Patterns of the microservices architecture
+
+A selection of common mistakes and bloopers found in the wild.
 
 ### Distributed Monolith
 
@@ -79,8 +89,6 @@ deal with now.
 
 [def2]: http://www.laputan.org/mud/mud.html#BigBallOfMud
 
-***
-
 ### Overly Chatty
 
 Another risk is the amount of communication. Services are distributed, so calls
@@ -89,8 +97,6 @@ can kill the performance. Following [SOLID][def1] principles can help here.
 
 [def1]: https://en.wikipedia.org/wiki/SOLID
 
-***
-
 ### Shared Persistence
 
 TODO: A monolith typically requires a large shared data store. Microservices should
@@ -98,31 +104,21 @@ each have their own data store, to avoid resource contention. Each store should
 be accessible only by the associated service. Any communication needs to be via
 the API interfaces.
 
-***
-
 ### Heavyweight services
 
 TODO: Building too much into each service makes them slow. Build/latency delays kick in and you are back to building monoliths.
-
-***
 
 ### No API Gateway
 
 TODO: Data Interfaces need to be identifiable, they need to be managed, and they need authentication. It has to be something you can find to query.
 
-***
-
 ### Entangled Data
 
 TODO: Isolate the data inside the application.
 
-***
-
 ### Improper Versioning
 
 TODO: Build API versions into your URI calls.
-
-***
 
 ## Sub-patterns
 
@@ -137,8 +133,6 @@ interoperability issues. An ambassador is a specialized sidecar.
 
 [Ambassador Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador)
 
-***
-
 ### Anti-corruption
 
 TODO: When two systems don't properly understand each other, an Anti-corruption
@@ -146,23 +140,17 @@ layer can be introduced to protect the new architecture.
 
 [Anti-corruption Layer pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer)
 
-***
-
 ### Backends for Frontends
 
 TODO: Sometimes, it's just quicker to write APIs that deal with specific clients. It might take more maintenance, but that can be ok.
 
 [Backends for Frontends pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends)
 
-***
-
 ### Bulkhead
 
 TODO: Bulkheads are used on ships to prevent water from a hull breach from flooding the whole ship. Keep things separate, (like connection pools or hardware) so a greedy neighbour can't flood the whole ship.
 
 [Bulkhead Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead)
-
-***
 
 ### Gateways
 
@@ -190,16 +178,12 @@ client to manage connections to and from the service, improving security.
 
 [Gateway Routing](https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-routing)
 
-***
-
 ### Sidecar
 
 TODO: deploy helper apps into separate containers to encapsulate them, but keep
 them close for performance.
 
 [Sidecar Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar)
-
-***
 
 ### Strangler
 

@@ -9,6 +9,7 @@ Tags:
   - Non-Functional Requirements
   - Requirements
 ---
+A usable system encourages use and trust.
 
 Usability, noun, /ˌjuːzəˈbɪləti/. Something easy to use, or the degree to which it is easy to use.
 
