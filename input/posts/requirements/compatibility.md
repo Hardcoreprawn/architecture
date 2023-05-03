@@ -9,6 +9,7 @@ Tags:
 Draft: false
 Published: 23/04/2023
 ---
+> compatibility, noun, /kəmˌpæt.əˈbɪl.ə.ti/. Being able to exist, live, or work successfully with something or someone else
 
 We make apps that work on things we know, which we know how to look after and can keep safe.
 

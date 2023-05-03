@@ -10,7 +10,7 @@ Draft: true
 Published: 02/05/2023
 ---
 
-> reliability, noun, /rɪˌlaɪ.əˈbɪl.ə.ti/. the quality of being able to be trusted or believed because of working or behaving well.
+> reliability, noun, /rɪˌlaɪ.əˈbɪl.ə.ti/. The quality of being able to be trusted or believed because of working or behaving well.
 
 Reliable things do what you expect when you expect them. By ensuring we build reliable software, customers can easily access and use them.
 

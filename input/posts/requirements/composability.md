@@ -44,5 +44,10 @@ Apps we develop are self-contained and stateless. They can be given context and 
 
 ## Related Principles
 
-    * ()[]
-    * ()[]
+    * [Responsive Change Management](xref:responsive-change-management)
+    * [Requirements Based Change](xref:requirements-based-change)
+    * [Service Oreintation](xref:service-orientation)
+
+## References
+
+* [Wikipedia - Composability](https://en.wikipedia.org/wiki/Composability)
