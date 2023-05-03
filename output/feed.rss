@@ -5,8 +5,8 @@
 		<link>https://red-sand-078a6ea03.3.azurestaticapps.net/</link>
 		<description />
 		<copyright>Copyright James Brewster© 2023</copyright>
-		<pubDate>Wed, 03 May 2023 09:07:05 GMT</pubDate>
-		<lastBuildDate>Wed, 03 May 2023 09:07:05 GMT</lastBuildDate>
+		<pubDate>Wed, 03 May 2023 09:22:55 GMT</pubDate>
+		<lastBuildDate>Wed, 03 May 2023 09:22:55 GMT</lastBuildDate>
 		<item>
 			<title>Strangler pattern</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern</link>
@@ -323,6 +323,50 @@ them close for performance.&lt;/p&gt;
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
+			<title>Non-repudiation</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation</link>
+			<description>A mechanism to ensure a party cannot deny the legitimacy of a transaction.</description>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation</guid>
+			<pubDate>Thu, 27 Apr 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Where possible, use immutable objects and data which can't be repudiated. Make sure we can trust our systems and our data.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;The system must provide a mechanism to ensure that a party cannot deny the authenticity of their signature on a document or message.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The system shall provide a digital signature for each transaction.&lt;/li&gt;
+&lt;li&gt;The digital signature shall be unique for each transaction.&lt;/li&gt;
+&lt;li&gt;The digital signature shall be verified by the recipient of the transaction.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and software engineers.&lt;/li&gt;
+&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Non-repudiation provides proof of the origin, authenticity, and integrity of data. It assures the sender that the message was delivered, as well as proof of the sender’s identity to the recipient. This way, neither party can deny that a message was sent, received, and processed. Non-repudiation ensures that no party can deny that it sent or received a message via encryption and/or digital signatures or approved some information. It also cannot deny the authenticity of its signature on a document.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Describes non-repudiation as a property that ensures that a party cannot deny the authenticity of their signature on a document or the sending of a message that they originated: &lt;a href="https://www.perforce.com/blog/qac/what-is-iso-25010"&gt;https://www.perforce.com/blog/qac/what-is-iso-25010&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lists non-repudiation as one of the key non-functional requirements to be considered in software development. &lt;a href="https://www.boxuk.com/insight/guide-to-non-functional-requirements-types-and-examples/"&gt;https://www.boxuk.com/insight/guide-to-non-functional-requirements-types-and-examples/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
 			<title>Scalability</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability</link>
 			<description>The system must be able to handle an increasing amount of work without any significant degradation in performance.</description>
@@ -398,50 +442,6 @@ them close for performance.&lt;/p&gt;
 &lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Non-repudiation</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation</link>
-			<description>A mechanism to ensure a party cannot deny the legitimacy of a transaction.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation</guid>
-			<pubDate>Thu, 27 Apr 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Where possible, use immutable objects and data which can't be repudiated. Make sure we can trust our systems and our data.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;p&gt;The system must provide a mechanism to ensure that a party cannot deny the authenticity of their signature on a document or message.&lt;/p&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;The system shall provide a digital signature for each transaction.&lt;/li&gt;
-&lt;li&gt;The digital signature shall be unique for each transaction.&lt;/li&gt;
-&lt;li&gt;The digital signature shall be verified by the recipient of the transaction.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and software engineers.&lt;/li&gt;
-&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Non-repudiation provides proof of the origin, authenticity, and integrity of data. It assures the sender that the message was delivered, as well as proof of the sender’s identity to the recipient. This way, neither party can deny that a message was sent, received, and processed. Non-repudiation ensures that no party can deny that it sent or received a message via encryption and/or digital signatures or approved some information. It also cannot deny the authenticity of its signature on a document.&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Describes non-repudiation as a property that ensures that a party cannot deny the authenticity of their signature on a document or the sending of a message that they originated: &lt;a href="https://www.perforce.com/blog/qac/what-is-iso-25010"&gt;https://www.perforce.com/blog/qac/what-is-iso-25010&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Lists non-repudiation as one of the key non-functional requirements to be considered in software development. &lt;a href="https://www.boxuk.com/insight/guide-to-non-functional-requirements-types-and-examples/"&gt;https://www.boxuk.com/insight/guide-to-non-functional-requirements-types-and-examples/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
