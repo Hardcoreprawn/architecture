@@ -1,4 +1,5 @@
 ---
+NavBarTitle: About
 Title: About this site
 ShowInNavBar: true
 ---
