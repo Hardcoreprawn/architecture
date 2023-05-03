@@ -1,7 +1,7 @@
 ---
 Title: Microservices
 Slug: microservices
-Lead: Minimise dependencies and promote scalability across multiple dimensions.
+Lead: Minimise dependencies and promote scalability across multiple dimensions
 Description: Microservices are a collection of application services that are independently deployable, loosely coupled and organized around business capabilities.
 Tags:
   - Architecture
@@ -74,6 +74,16 @@ will go wrong.
 ## Anti-Patterns of the microservices architecture
 
 A selection of common mistakes and bloopers found in the wild.
+
+### Calls in Series
+
+Many microservices architecture failures are the result of not properly understanding the way failure works in distributed systems. To calculate the SLA of multiple systems, you must multiply the availability of each dependent service together.
+
+If a system is built to have an availability of 99.5%, but it relies upon another service, with the same SLA of 99.5%, then the total SLA of that system is 99.0025%. If a third dependency is introduced with the same SLA of 99.5%, then we are down to 98.5%. This quickly adds up and gets exponentially worse.
+
+It's important to use asynchronous calls to prevent this, rather than calls in series. Incorporate a message bus or an event framework, and instead of waiting, your services can remain resilient.
+
+Reference: [AKF Partners: Microservices Anti-Patterns, 2019](https://akfpartners.com/growth-blog/microservice-anti-pattern-calls-in-series-the-xmas-tree-light-anti-pattern)
 
 ### Distributed Monolith
 

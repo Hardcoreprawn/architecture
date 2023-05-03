@@ -65,10 +65,6 @@
       "path": "[[workspace]]/input/posts/patterns-and-antipatterns"
     },
     {
-      "title": "Microservices",
-      "path": "[[workspace]]/input/posts/patterns-and-antipatterns/microservices"
-    },
-    {
       "title": "Requirements",
       "path": "[[workspace]]/input/posts/requirements"
     }
