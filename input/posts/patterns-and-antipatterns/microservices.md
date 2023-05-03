@@ -101,26 +101,19 @@ deal with now.
 
 ### Overly Chatty
 
-Another risk is the amount of communication. Services are distributed, so calls
-between them take time. Overly chatty services are not performant; the latency
-can kill the performance. Following [SOLID][def1] principles can help here.
+The amount of communication between services must be considered. Services are distributed, so calls between them take time. Overly chatty services are not performant; the latency can kill the performance. Following [SOLID][def1] principles can help here.
 
 [def1]: https://en.wikipedia.org/wiki/SOLID
 
 ### Shared Persistence
 
-TODO: A monolith typically requires a large shared data store. Microservices should
-each have their own data store, to avoid resource contention. Each store should
-be accessible only by the associated service. Any communication needs to be via
-the API interfaces.
+A monolith typically requires a large shared data store. As organisations redesign to microservices, thoughts around persistence may be overlooked, and traditional patterns followed. When you tie a service and a database together, you affect reliability. There is a recommendation to adopt a 0-1 database per service model.
 
-### Heavyweight services
+For many types of computing, such as Azure Functions, or AWS Lambda, databases may be unnecessary. If compute uses documents instead or responds to events or messages, then all the persistence could be encapsulated.
 
-TODO: Building too much into each service makes them slow. Build/latency delays kick in and you are back to building monoliths.
+in these cases, avoiding any real persistence helps to improve reliability, by removing unnecessary dependencies.
 
-### No API Gateway
-
-TODO: Data Interfaces need to be identifiable, they need to be managed, and they need authentication. It has to be something you can find to query.
+Reference: [AKF Partners, Microservices Architecture Principle: One or Zero Databases per Service. 2022](https://akfpartners.com/growth-blog/microservice-Architecture-principle-one-or-zero-databases-per-service)
 
 ### Entangled Data
 
@@ -158,7 +151,7 @@ TODO: Sometimes, it's just quicker to write APIs that deal with specific clients
 
 ### Bulkhead
 
-TODO: Bulkheads are used on ships to prevent water from a hull breach from flooding the whole ship. Keep things separate, (like connection pools or hardware) so a greedy neighbour can't flood the whole ship.
+TODO: Bulkheads are used on ships to prevent water from a hull breach from flooding the whole ship. Keep things separate, (like connection pools or hardware) so an accident can't flood the whole ship.
 
 [Bulkhead Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead)
 
