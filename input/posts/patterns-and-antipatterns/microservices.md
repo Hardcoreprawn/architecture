@@ -10,7 +10,7 @@ Tags:
 Categories:
   - Pattern
 Draft: false
-Published: 02/05/2023
+Published: 03/05/2023-16:50
 ---
 
 Microservices are a way to build applications and are used by some of the biggest sites and systems online, such as Netflix and Amazon. They let systems be updated safely and scale well. But they are complex and require firm principles in place to work properly.
