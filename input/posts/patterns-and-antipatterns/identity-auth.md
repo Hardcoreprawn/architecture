@@ -21,3 +21,7 @@ Published: 01/01/2001
 ## When to avoid this pattern
 
 ## Assumptions
+
+## References
+
+* [NordicAPIs - How to control user identity within microservices](https://nordicapis.com/how-to-control-user-identity-within-microservices/)
