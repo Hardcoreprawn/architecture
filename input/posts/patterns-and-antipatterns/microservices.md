@@ -117,7 +117,15 @@ Reference: [AKF Partners, Microservices Architecture Principle: One or Zero Data
 
 ### Entangled Data
 
-TODO: Isolate the data inside the application.
+When all the services in your application can use database connections to get whatever they need, it becomes harder to unpick and separate them as services scale. The database starts to become a bottleneck, changes slow down as people need to extend things.. the natural next step is to separate the services into individual databases. Except, you have no idea what you need to separate. Congratulations, you have entangled data.
+
+To ensure you can scale as you need to, the data needs to be segregated into clear domains, which are readily identifiable and easy to access.
+
+A successful remedy to this problem can be to restrict inter-domain communication to API calls. By ensuring cross-service database calls are eliminated and contracted, defined borders are put in place, segregation is much easier to manage.
+
+This anti-pattern was seen as such a threat to the growth and agility of Amazon, that Jeff Bezos [threatened to fire anyone who followed it](https://nordicapis.com/the-bezos-api-mandate-amazons-manifesto-for-externalization/).
+
+Reference: [TechTarget.com, 4 microservices antipatterns that ruin migration. 2020](https://www.techtarget.com/searchapparchitecture/tip/4-deadly-microservices-antipatterns-that-ruin-migration#:~:text=In%20an%20entangled%20data%20antipattern%2C%20all%20the%20services,modules%20and%20make%20structural%20changes%20to%20your%20architecture.)
 
 ### Improper Versioning
 
