@@ -5,15 +5,15 @@
 		<link>https://red-sand-078a6ea03.3.azurestaticapps.net/</link>
 		<description />
 		<copyright>Copyright James Brewster© 2023</copyright>
-		<pubDate>Wed, 03 May 2023 12:57:32 GMT</pubDate>
-		<lastBuildDate>Wed, 03 May 2023 12:57:32 GMT</lastBuildDate>
+		<pubDate>Thu, 04 May 2023 10:52:05 GMT</pubDate>
+		<lastBuildDate>Thu, 04 May 2023 10:52:05 GMT</lastBuildDate>
 		<item>
 			<title>Microservices</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices</link>
 			<description>Microservices are a collection of application services that are independently deployable, loosely coupled and organized around business capabilities.</description>
 			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
 			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices</guid>
-			<pubDate>Tue, 02 May 2023 00:00:00 GMT</pubDate>
+			<pubDate>Wed, 03 May 2023 15:50:53 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Microservices are a way to build applications and are used by some of the biggest sites and systems online, such as Netflix and Amazon. They let systems be updated safely and scale well. But they are complex and require firm principles in place to work properly.&lt;/p&gt;
 &lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
 &lt;p&gt;Microservices architecture is an architectural style that structures an application as a collection of services that are independently deployable, loosely coupled, organized around business capabilities and owned by a small team. In simple terms, microservices are a specific method of designing software systems to structure a single application as a collection of loosely coupled services.&lt;/p&gt;
@@ -64,6 +64,11 @@ will go wrong.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="anti-patterns-of-the-microservices-architecture"&gt;Anti-Patterns of the microservices architecture&lt;/h2&gt;
 &lt;p&gt;A selection of common mistakes and bloopers found in the wild.&lt;/p&gt;
+&lt;h3 id="calls-in-series"&gt;Calls in Series&lt;/h3&gt;
+&lt;p&gt;Many microservices architecture failures are the result of not properly understanding the way failure works in distributed systems. To calculate the SLA of multiple systems, you must multiply the availability of each dependent service together.&lt;/p&gt;
+&lt;p&gt;If a system is built to have an availability of 99.5%, but it relies upon another service, with the same SLA of 99.5%, then the total SLA of that system is 99.0025%. If a third dependency is introduced with the same SLA of 99.5%, then we are down to 98.5%. This quickly adds up and gets exponentially worse.&lt;/p&gt;
+&lt;p&gt;It's important to use asynchronous calls to prevent this, rather than calls in series. Incorporate a message bus or an event framework, and instead of waiting, your services can remain resilient.&lt;/p&gt;
+&lt;p&gt;Reference: &lt;a href="https://akfpartners.com/growth-blog/microservice-anti-pattern-calls-in-series-the-xmas-tree-light-anti-pattern"&gt;AKF Partners: Microservices Anti-Patterns, 2019&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="distributed-monolith"&gt;Distributed Monolith&lt;/h3&gt;
 &lt;p&gt;When you split a monolith, don't let your services become dependent on each
 or several other microservices. If changes in services require redeployment or
@@ -74,20 +79,18 @@ happen in a particular order.&lt;/p&gt;
 &lt;p&gt;This is a &lt;a href="http://www.laputan.org/mud/mud.html#BigBallOfMud"&gt;Big-Ball-Of-Mud&lt;/a&gt; that also has network-level latencies to
 deal with now.&lt;/p&gt;
 &lt;h3 id="overly-chatty"&gt;Overly Chatty&lt;/h3&gt;
-&lt;p&gt;Another risk is the amount of communication. Services are distributed, so calls
-between them take time. Overly chatty services are not performant; the latency
-can kill the performance. Following &lt;a href="https://en.wikipedia.org/wiki/SOLID"&gt;SOLID&lt;/a&gt; principles can help here.&lt;/p&gt;
+&lt;p&gt;The amount of communication between services must be considered. Services are distributed, so calls between them take time. Overly chatty services are not performant; the latency can kill the performance. Following &lt;a href="https://en.wikipedia.org/wiki/SOLID"&gt;SOLID&lt;/a&gt; principles can help here.&lt;/p&gt;
 &lt;h3 id="shared-persistence"&gt;Shared Persistence&lt;/h3&gt;
-&lt;p&gt;TODO: A monolith typically requires a large shared data store. Microservices should
-each have their own data store, to avoid resource contention. Each store should
-be accessible only by the associated service. Any communication needs to be via
-the API interfaces.&lt;/p&gt;
-&lt;h3 id="heavyweight-services"&gt;Heavyweight services&lt;/h3&gt;
-&lt;p&gt;TODO: Building too much into each service makes them slow. Build/latency delays kick in and you are back to building monoliths.&lt;/p&gt;
-&lt;h3 id="no-api-gateway"&gt;No API Gateway&lt;/h3&gt;
-&lt;p&gt;TODO: Data Interfaces need to be identifiable, they need to be managed, and they need authentication. It has to be something you can find to query.&lt;/p&gt;
+&lt;p&gt;A monolith typically requires a large shared data store. As organisations redesign to microservices, thoughts around persistence may be overlooked, and traditional patterns followed. When you tie a service and a database together, you affect reliability. There is a recommendation to adopt a 0-1 database per service model.&lt;/p&gt;
+&lt;p&gt;For many types of computing, such as Azure Functions, or AWS Lambda, databases may be unnecessary. If compute uses documents instead or responds to events or messages, then all the persistence could be encapsulated.&lt;/p&gt;
+&lt;p&gt;in these cases, avoiding any real persistence helps to improve reliability, by removing unnecessary dependencies.&lt;/p&gt;
+&lt;p&gt;Reference: &lt;a href="https://akfpartners.com/growth-blog/microservice-Architecture-principle-one-or-zero-databases-per-service"&gt;AKF Partners, Microservices Architecture Principle: One or Zero Databases per Service. 2022&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="entangled-data"&gt;Entangled Data&lt;/h3&gt;
-&lt;p&gt;TODO: Isolate the data inside the application.&lt;/p&gt;
+&lt;p&gt;When all the services in your application can use database connections to get whatever they need, it becomes harder to unpick and separate them as services scale. The database starts to become a bottleneck, changes slow down as people need to extend things.. the natural next step is to separate the services into individual databases. Except, you have no idea what you need to separate. Congratulations, you have entangled data.&lt;/p&gt;
+&lt;p&gt;To ensure you can scale as you need to, the data needs to be segregated into clear domains, which are readily identifiable and easy to access.&lt;/p&gt;
+&lt;p&gt;A successful remedy to this problem can be to restrict inter-domain communication to API calls. By ensuring cross-service database calls are eliminated and contracted, defined borders are put in place, segregation is much easier to manage.&lt;/p&gt;
+&lt;p&gt;This anti-pattern was seen as such a threat to the growth and agility of Amazon, that Jeff Bezos &lt;a href="https://nordicapis.com/the-bezos-api-mandate-amazons-manifesto-for-externalization/"&gt;threatened to fire anyone who followed it&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Reference: &lt;a href="https://www.techtarget.com/searchapparchitecture/tip/4-deadly-microservices-antipatterns-that-ruin-migration#:%7E:text=In%20an%20entangled%20data%20antipattern%2C%20all%20the%20services,modules%20and%20make%20structural%20changes%20to%20your%20architecture."&gt;TechTarget.com, 4 microservices antipatterns that ruin migration. 2020&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="improper-versioning"&gt;Improper Versioning&lt;/h3&gt;
 &lt;p&gt;TODO: Build API versions into your URI calls.&lt;/p&gt;
 &lt;h2 id="sub-patterns"&gt;Sub-patterns&lt;/h2&gt;
@@ -106,7 +109,7 @@ layer can be introduced to protect the new architecture.&lt;/p&gt;
 &lt;p&gt;TODO: Sometimes, it's just quicker to write APIs that deal with specific clients. It might take more maintenance, but that can be ok.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends"&gt;Backends for Frontends pattern&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="bulkhead"&gt;Bulkhead&lt;/h3&gt;
-&lt;p&gt;TODO: Bulkheads are used on ships to prevent water from a hull breach from flooding the whole ship. Keep things separate, (like connection pools or hardware) so a greedy neighbour can't flood the whole ship.&lt;/p&gt;
+&lt;p&gt;TODO: Bulkheads are used on ships to prevent water from a hull breach from flooding the whole ship. Keep things separate, (like connection pools or hardware) so an accident can't flood the whole ship.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead"&gt;Bulkhead Pattern&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="gateways"&gt;Gateways&lt;/h3&gt;
 &lt;p&gt;TODO: Using a gateway for your microservices offers several benefits, by making your collection of services look like a single web server.&lt;/p&gt;
@@ -271,50 +274,6 @@ them close for performance.&lt;/p&gt;
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>Non-repudiation</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation</link>
-			<description>A mechanism to ensure a party cannot deny the legitimacy of a transaction.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation</guid>
-			<pubDate>Thu, 27 Apr 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Where possible, use immutable objects and data which can't be repudiated. Make sure we can trust our systems and our data.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;p&gt;The system must provide a mechanism to ensure that a party cannot deny the authenticity of their signature on a document or message.&lt;/p&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;The system shall provide a digital signature for each transaction.&lt;/li&gt;
-&lt;li&gt;The digital signature shall be unique for each transaction.&lt;/li&gt;
-&lt;li&gt;The digital signature shall be verified by the recipient of the transaction.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and software engineers.&lt;/li&gt;
-&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Non-repudiation provides proof of the origin, authenticity, and integrity of data. It assures the sender that the message was delivered, as well as proof of the sender’s identity to the recipient. This way, neither party can deny that a message was sent, received, and processed. Non-repudiation ensures that no party can deny that it sent or received a message via encryption and/or digital signatures or approved some information. It also cannot deny the authenticity of its signature on a document.&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Describes non-repudiation as a property that ensures that a party cannot deny the authenticity of their signature on a document or the sending of a message that they originated: &lt;a href="https://www.perforce.com/blog/qac/what-is-iso-25010"&gt;https://www.perforce.com/blog/qac/what-is-iso-25010&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Lists non-repudiation as one of the key non-functional requirements to be considered in software development. &lt;a href="https://www.boxuk.com/insight/guide-to-non-functional-requirements-types-and-examples/"&gt;https://www.boxuk.com/insight/guide-to-non-functional-requirements-types-and-examples/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
 			<title>OWASP ASVS</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/owasp</link>
 			<description>The OWASP ASVS project provides developers with a list of requirements for secure development and testable security controls.</description>
@@ -358,6 +317,50 @@ them close for performance.&lt;/p&gt;
 &lt;li&gt;OWASP V4.0.3 Stable release, 27/04/2023. &lt;a href="https://github.com/OWASP/ASVS/tree/v4.0.3/4.0"&gt;https://github.com/OWASP/ASVS/tree/v4.0.3/4.0&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;OWASP Application Security Verification Standard, 27/04/2023. &lt;a href="https://owasp.org/www-project-application-security-verification-standard/"&gt;https://owasp.org/www-project-application-security-verification-standard/&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Non-repudiation</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation</link>
+			<description>A mechanism to ensure a party cannot deny the legitimacy of a transaction.</description>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation</guid>
+			<pubDate>Thu, 27 Apr 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Where possible, use immutable objects and data which can't be repudiated. Make sure we can trust our systems and our data.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;The system must provide a mechanism to ensure that a party cannot deny the authenticity of their signature on a document or message.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The system shall provide a digital signature for each transaction.&lt;/li&gt;
+&lt;li&gt;The digital signature shall be unique for each transaction.&lt;/li&gt;
+&lt;li&gt;The digital signature shall be verified by the recipient of the transaction.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and software engineers.&lt;/li&gt;
+&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Non-repudiation provides proof of the origin, authenticity, and integrity of data. It assures the sender that the message was delivered, as well as proof of the sender’s identity to the recipient. This way, neither party can deny that a message was sent, received, and processed. Non-repudiation ensures that no party can deny that it sent or received a message via encryption and/or digital signatures or approved some information. It also cannot deny the authenticity of its signature on a document.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Describes non-repudiation as a property that ensures that a party cannot deny the authenticity of their signature on a document or the sending of a message that they originated: &lt;a href="https://www.perforce.com/blog/qac/what-is-iso-25010"&gt;https://www.perforce.com/blog/qac/what-is-iso-25010&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lists non-repudiation as one of the key non-functional requirements to be considered in software development. &lt;a href="https://www.boxuk.com/insight/guide-to-non-functional-requirements-types-and-examples/"&gt;https://www.boxuk.com/insight/guide-to-non-functional-requirements-types-and-examples/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
@@ -442,6 +445,54 @@ them close for performance.&lt;/p&gt;
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
+			<title>Secure Configuration</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration</link>
+			<description>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</description>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration</guid>
+			<pubDate>Wed, 26 Apr 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Based on the NCSC.gov.uk 'Cyber Essentials Requirements for Infrastructure, January 2022. Modified to remove end user devices.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Computers and network devices must be properly configured to reduce the level of inherent vulnerabilities and only provide the services required to fulfil their role.&lt;/p&gt;
+&lt;p&gt;Default configurations are often insecure, to make initial access easier. We must ensure any commodity services are reconfigured to ensure security.&lt;/p&gt;
+&lt;p&gt;This can include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Default accounts, potentially with additional permissions.&lt;/li&gt;
+&lt;li&gt;weak or known initial account passwords.&lt;/li&gt;
+&lt;li&gt;Unnecessary or legacy services, which are easier to exploit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These must be disabled or reconfigured.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;On inspection, third-party components should not have common or default accounts and passwords enabled.&lt;/li&gt;
+&lt;li&gt;Where possible, configuration should be backed-up and stored securely, to allow for re-verification.&lt;/li&gt;
+&lt;li&gt;The configuration of a system has been reviewed with one or more peers and has been approved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and implementors.&lt;/li&gt;
+&lt;li&gt;Organisational management&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;One of the most common ways to access a system is to use a default account or configuration, which has been left unsecured. By ensuring we verify these accounts and their configuration, we can help improve security and minimise breaches.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:least-privilege"&gt;Least Privilege&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:shift-security-left"&gt;Shift Security Left&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
 			<title>Maintainability</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/maintainability</link>
 			<description>&lt;p&gt;The system should be designed and developed with maintainability in mind. The system should be easy to look after, diagnose and support, throughout its lifecycle.&lt;/p&gt;</description>
@@ -486,53 +537,6 @@ them close for performance.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="xref:control-technical-diversity"&gt;Control Technical Diversity&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="xref:interoperability"&gt;Interoperability&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>User Access Control</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control</link>
-			<description>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control</guid>
-			<pubDate>Wed, 26 Apr 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Based on the NCSC.gov.uk 'Cyber Essentials Requirements for Infrastructure, January 2022. Modified to remove end user devices.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;p&gt;Access to a business system, or its data, is protected by a centrally managed named user account. The account can be configured to only allow access to the relevant data and processes.&lt;/p&gt;
-&lt;p&gt;Accounts with special access privileges have an enhanced level of verification through a second factor, such as a verification message to a different, associated device or approval by a second party.&lt;/p&gt;
-&lt;p&gt;Any account should have more than one named individual present. Owners and administrators need to be able to disable an account, with relevant verification.&lt;/p&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Any Authorisation is not performed by the application but by a dedicated authorisation application.&lt;/li&gt;
-&lt;li&gt;Applications obey trusted authorisation tokens from that application.&lt;/li&gt;
-&lt;li&gt;Tokens only grant access to the relevant data, necessary for the role the user has.&lt;/li&gt;
-&lt;li&gt;Roles are granular and can be subdivided where necessary.&lt;/li&gt;
-&lt;li&gt;Application and data access is protected, ensuring a second check.&lt;/li&gt;
-&lt;li&gt;Special access privileges, such as deleting an account, require a second factor or verification.&lt;/li&gt;
-&lt;li&gt;Options for Multi-factor authentication should be present and are strongly recommended.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and implementors.&lt;/li&gt;
-&lt;li&gt;Organisational management&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Ensuring our customer's data is secure is important. Ensuring they can manage access to that data is important. Giving them a feeling of security and trust is important.&lt;/p&gt;
-&lt;p&gt;Reflecting our brand values, our commitment to security and our capability to manage data and services for them is important.&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:least-privilege"&gt;Least Privilege&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:shift-security-left"&gt;Shift Security Left&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>

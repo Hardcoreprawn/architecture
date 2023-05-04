@@ -2,6 +2,7 @@
 using Devlead.Statiq.Themes;
 using Statiq.App;
 using Statiq.Common;
+using Statiq.Lunr;
 using Statiq.Web;
 
 await Bootstrapper
