@@ -4,8 +4,9 @@ body {
   color: $gray-900;
   @include serif-font;
   img{
-    width:100%;
+    width:90%;
     height: auto;
+    padding:10px;
     margin: 30px;
     max-width:fit-content;
 }
