@@ -22,6 +22,8 @@ The system must have a user interface that is easy to navigate and understand.
 
 ## Acceptance Criteria
 
+By demonstration
+
 * The user interface must be intuitive and easy to navigate.
 * The user interface must be easy to understand.
 
