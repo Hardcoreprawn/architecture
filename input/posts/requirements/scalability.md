@@ -12,7 +12,7 @@ Tags:
 Image: /images/header01.png
 ---
 
-This non-functional requirement is concerned with the ability of the system to handle an increasing amount of work or its potential to be enlarged to accommodate that growth.
+This non-functional requirement is concerned with the ability of the system to handle an increasing amount of work and adapt to a lessening workload.
 
 > Read the [Requirements Check-List](xref:requirements-checklist) article for an introduction to requirements.
 

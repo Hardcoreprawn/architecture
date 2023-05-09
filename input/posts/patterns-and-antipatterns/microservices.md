@@ -19,10 +19,8 @@ Microservices are a way to build applications and are used by some of the bigges
 
 Microservices architecture is an architectural style that structures an application as a collection of services that are independently deployable, loosely coupled, organized around business capabilities and owned by a small team. In simple terms, microservices are a specific method of designing software systems to structure a single application as a collection of loosely coupled services.
 
-![microservices-pattern][def3]
+![Microservices Pattern](/images/microservices-patterns.png)
 *Model of a Monolith to Microservices migration, showing sub-patterns*
-
-[def3]: ../../media/images/microservices-patterns.png
 
 This is a reference pattern, with several optional sub-patterns.
 
