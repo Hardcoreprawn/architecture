@@ -11,7 +11,7 @@ Categories:
   - Patterns
 ArchiveKey:
 Draft: true
-Published: 2023-05-09T09:25:06.214Z
+Published: 2023-05-09
 ---
 
 TODO: TL;DR
