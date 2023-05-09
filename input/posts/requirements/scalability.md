@@ -9,6 +9,7 @@ Tags:
   - Non-Functional Requirements
   - Requirements
   - NFRs
+Image: /images/header01.png
 ---
 
 This non-functional requirement is concerned with the ability of the system to handle an increasing amount of work or its potential to be enlarged to accommodate that growth.
