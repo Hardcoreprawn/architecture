@@ -70,6 +70,7 @@ will go wrong.
 ## References
 
 * [Microsoft - Microservices design](https://learn.microsoft.com/en-us/azure/architecture/microservices/)
+* [AKF Partners - Microservices Architecture Principles](https://akfpartners.com/growth-blog/microservice-architecture-principles)
 
 ## Anti-Patterns of the microservices architecture
 
