@@ -5,15 +5,15 @@
 		<link>https://red-sand-078a6ea03.3.azurestaticapps.net/</link>
 		<description />
 		<copyright>Copyright James Brewster© 2023</copyright>
-		<pubDate>Thu, 04 May 2023 10:53:04 GMT</pubDate>
-		<lastBuildDate>Thu, 04 May 2023 10:53:04 GMT</lastBuildDate>
+		<pubDate>Tue, 09 May 2023 06:53:49 GMT</pubDate>
+		<lastBuildDate>Tue, 09 May 2023 06:53:49 GMT</lastBuildDate>
 		<item>
 			<title>Microservices</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices</link>
 			<description>Microservices are a collection of application services that are independently deployable, loosely coupled and organized around business capabilities.</description>
 			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
 			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices</guid>
-			<pubDate>Wed, 03 May 2023 15:50:53 GMT</pubDate>
+			<pubDate>Tue, 09 May 2023 06:52:10 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Microservices are a way to build applications and are used by some of the biggest sites and systems online, such as Netflix and Amazon. They let systems be updated safely and scale well. But they are complex and require firm principles in place to work properly.&lt;/p&gt;
 &lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
 &lt;p&gt;Microservices architecture is an architectural style that structures an application as a collection of services that are independently deployable, loosely coupled, organized around business capabilities and owned by a small team. In simple terms, microservices are a specific method of designing software systems to structure a single application as a collection of loosely coupled services.&lt;/p&gt;
@@ -61,6 +61,7 @@ will go wrong.&lt;/li&gt;
 &lt;h2 id="references"&gt;References&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/microservices/"&gt;Microsoft - Microservices design&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/microservice-architecture-principles"&gt;AKF Partners - Microservices Architecture Principles&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="anti-patterns-of-the-microservices-architecture"&gt;Anti-Patterns of the microservices architecture&lt;/h2&gt;
 &lt;p&gt;A selection of common mistakes and bloopers found in the wild.&lt;/p&gt;
@@ -137,47 +138,6 @@ them close for performance.&lt;/p&gt;
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>Reliability</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/reliability</link>
-			<description>&lt;p&gt;reliability, noun, /rɪˌlaɪ.əˈbɪl.ə.ti/. The quality of being able to be trusted or believed because of working or behaving well.&lt;/p&gt;</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/reliability</guid>
-			<pubDate>Tue, 02 May 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;blockquote&gt;
-&lt;p&gt;reliability, noun, /rɪˌlaɪ.əˈbɪl.ə.ti/. The quality of being able to be trusted or believed because of working or behaving well.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Reliable things do what you expect when you expect them. By ensuring we build reliable software, customers can easily access and use them.&lt;/p&gt;
-&lt;p&gt;Reliability is one of the non-functional requirements (NFR) that defines the ability of the system to properly perform the required functions under predefined conditions for a certain period. It is commonly expressed through probability percentages predicting chances that the system won’t experience critical failure under normal usage and during the set time&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;p&gt;Our systems will be available for 99.9% of the year.&lt;/p&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Measured over one year, the uptime of the application will exceed 99.9%&lt;/li&gt;
-&lt;li&gt;During the first year, this will be extrapolated backwards and reviewed.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and software engineers.&lt;/li&gt;
-&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;TODO:&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease of Use&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
 			<title>Strangler pattern</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern</link>
 			<description>This pattern is used to migrate functionality from an older app to a new one.</description>
@@ -235,6 +195,47 @@ them close for performance.&lt;/p&gt;
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
+			<title>Reliability</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/reliability</link>
+			<description>&lt;p&gt;reliability, noun, /rɪˌlaɪ.əˈbɪl.ə.ti/. The quality of being able to be trusted or believed because of working or behaving well.&lt;/p&gt;</description>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/reliability</guid>
+			<pubDate>Tue, 02 May 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;blockquote&gt;
+&lt;p&gt;reliability, noun, /rɪˌlaɪ.əˈbɪl.ə.ti/. The quality of being able to be trusted or believed because of working or behaving well.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Reliable things do what you expect when you expect them. By ensuring we build reliable software, customers can easily access and use them.&lt;/p&gt;
+&lt;p&gt;Reliability is one of the non-functional requirements (NFR) that defines the ability of the system to properly perform the required functions under predefined conditions for a certain period. It is commonly expressed through probability percentages predicting chances that the system won’t experience critical failure under normal usage and during the set time&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Our systems will be available for 99.9% of the year.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Measured over one year, the uptime of the application will exceed 99.9%&lt;/li&gt;
+&lt;li&gt;During the first year, this will be extrapolated backwards and reviewed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and software engineers.&lt;/li&gt;
+&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;TODO:&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease of Use&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
 			<title>Usability</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/usability</link>
 			<description>The system must be intuitive and easy to use for all users.</description>
@@ -250,6 +251,7 @@ them close for performance.&lt;/p&gt;
 &lt;li&gt;The interface needs to be intuitive so that minimal instruction is needed. If there is any area which is ambiguous or tricky, help needs to be included.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;p&gt;By demonstration&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The user interface must be intuitive and easy to navigate.&lt;/li&gt;
 &lt;li&gt;The user interface must be easy to understand.&lt;/li&gt;
@@ -266,43 +268,6 @@ them close for performance.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
 &lt;p&gt;This requirement is important because it ensures that users can easily use the system without requiring extensive training or support.&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Scalability</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability</link>
-			<description>The system must be able to handle an increasing amount of work without any significant degradation in performance.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability</guid>
-			<pubDate>Thu, 27 Apr 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;This non-functional requirement is concerned with the ability of the system to handle an increasing amount of work or its potential to be enlarged to accommodate that growth.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;p&gt;The system must be able to scale horizontally and vertically.&lt;/p&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;The system must be able to handle a minimum of 1000 concurrent users without any significant degradation in performance.&lt;/li&gt;
-&lt;li&gt;On demonstration, the system should be able to scale up and down.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and software engineers.&lt;/li&gt;
-&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Rationale: Scalability is important because it ensures that the system can continue to function effectively as the workload increases.&lt;/p&gt;
 &lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
@@ -354,6 +319,62 @@ them close for performance.&lt;/p&gt;
 &lt;li&gt;OWASP V4.0.3 Stable release, 27/04/2023. &lt;a href="https://github.com/OWASP/ASVS/tree/v4.0.3/4.0"&gt;https://github.com/OWASP/ASVS/tree/v4.0.3/4.0&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;OWASP Application Security Verification Standard, 27/04/2023. &lt;a href="https://owasp.org/www-project-application-security-verification-standard/"&gt;https://owasp.org/www-project-application-security-verification-standard/&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Scalability</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability</link>
+			<description>The system must be able to handle an increasing amount of work without any significant degradation in performance.</description>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability</guid>
+			<pubDate>Thu, 27 Apr 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This non-functional requirement is concerned with the ability of the system to handle an increasing amount of work or its potential to be enlarged to accommodate that growth.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;The system must be able to scale to adequately support the business&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The system must be able to handle a minimum of 1000 concurrent users without any significant degradation in performance.&lt;/li&gt;
+&lt;li&gt;On demonstration, the system should be able to scale up and down.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and software engineers.&lt;/li&gt;
+&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Rationale: Scalability is important because it ensures that the system can continue to function effectively as the workload increases.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="more-information"&gt;More Information&lt;/h2&gt;
+&lt;p&gt;AKF PArtners introduced the concept of the scale cube in their 2018 Blog post on scalability. This is a scaling model which encourages design and engineering teams to think about scale around three separate axis:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;X-Axis, Technical architecture layering. Avoid single points of failure, build out multiple nodes which can serve requests and balance load.&lt;/li&gt;
+&lt;li&gt;Y-Axis, Functional Decomposition. Break an application into components (microservices) and keep these different items in swim lanes.&lt;/li&gt;
+&lt;li&gt;Z-Axis, Data Partioning. Separate user data for scale, availability and testing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;![The Scale Cube, AKFPartners, 2018][def1]
+[def1]: https://akfpartners.com/uploads/misc/Scale_Cube.png&lt;/p&gt;
+&lt;p&gt;Each axis in the cube needs to be able to scale and teams should keep this idea in mind as they design and build systems.&lt;/p&gt;
+&lt;p&gt;A monolith application is the antithesis of the scale cube. An accurate realisation of this principle would be a Microservices architecture, hosted on a container platform, with a sharded database model.&lt;/p&gt;
+&lt;p&gt;Scaling a large system is hard, and potentially expensive. Making changes can take too long and the required upgrades can be costly. Using a microservices model with small, stateless services which can scale independently allows each service change to be small, and the underlying costs to grow in smaller steps.&lt;/p&gt;
+&lt;p&gt;Another difficulty is the complexity of a change. As more developers join a project, typically the project gets slower, not faster! Environment changes take longer, pull requests increase, and meetings take longer. The net effect is that large teams create too many dependencies, increasing development times. &lt;a href="https://en.wikipedia.org/wiki/Brooks%27s_law"&gt;Brooks Law&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;When systems are large, they become increasingly complex, and in many cases, by this point, there are only 1-2 people who understand the system. This creates additional Single Points of Failure, in those people. It makes change riskier and more likely to require regression testing.&lt;/p&gt;
+&lt;p&gt;For more information on this model, please refer to the AKF partners site, linked below.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/the-scalability-cube-your-guide-to-evaluating-scalability"&gt;The Scalability Cube, Your Guide to Evaluating Scalability&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
@@ -445,55 +466,6 @@ them close for performance.&lt;/p&gt;
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>Maintainability</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/maintainability</link>
-			<description>&lt;p&gt;The system should be designed and developed with maintainability in mind. The system should be easy to look after, diagnose and support, throughout its lifecycle.&lt;/p&gt;</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/maintainability</guid>
-			<pubDate>Wed, 26 Apr 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;The system should be designed and developed with maintainability in mind. The system should be easy to look after, diagnose and support, throughout its lifecycle.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Design and implement the system using a known set of conventions.&lt;/li&gt;
-&lt;li&gt;The system is well-documented and the source code has relevant comments.&lt;/li&gt;
-&lt;li&gt;The software has been designed to be modular and reusable.&lt;/li&gt;
-&lt;li&gt;Implement approved logging, monitoring and testing tools.&lt;/li&gt;
-&lt;li&gt;The deployment follows standard technology hosting patterns.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Designs for the system are reviewed and approved by at least two others.&lt;/li&gt;
-&lt;li&gt;Software source code is documented using a known standard or convention.&lt;/li&gt;
-&lt;li&gt;Software designs have been inspected for opportunities for reuse and modularity.&lt;/li&gt;
-&lt;li&gt;The system must include logging ability.&lt;/li&gt;
-&lt;li&gt;An outline design of areas to be monitored on the system should be included.&lt;/li&gt;
-&lt;li&gt;The system must have a documented set of test cases.&lt;/li&gt;
-&lt;li&gt;The system must be based on an approved hosting pattern and document how the pattern is followed.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and software engineers.&lt;/li&gt;
-&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;This NFR ensures that the system can adapt to changing needs, bugs can be fixed and support costs can be kept down.&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:control-technical-diversity"&gt;Control Technical Diversity&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:interoperability"&gt;Interoperability&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
 			<title>Secure Configuration</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration</link>
 			<description>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</description>
@@ -532,6 +504,53 @@ them close for performance.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
 &lt;p&gt;One of the most common ways to access a system is to use a default account or configuration, which has been left unsecured. By ensuring we verify these accounts and their configuration, we can help improve security and minimise breaches.&lt;/p&gt;
+&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:least-privilege"&gt;Least Privilege&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:shift-security-left"&gt;Shift Security Left&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>User Access Control</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control</link>
+			<description>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</description>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control</guid>
+			<pubDate>Wed, 26 Apr 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Based on the NCSC.gov.uk 'Cyber Essentials Requirements for Infrastructure, January 2022. Modified to remove end user devices.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
+&lt;p&gt;Access to a business system, or its data, is protected by a centrally managed named user account. The account can be configured to only allow access to the relevant data and processes.&lt;/p&gt;
+&lt;p&gt;Accounts with special access privileges have an enhanced level of verification through a second factor, such as a verification message to a different, associated device or approval by a second party.&lt;/p&gt;
+&lt;p&gt;Any account should have more than one named individual present. Owners and administrators need to be able to disable an account, with relevant verification.&lt;/p&gt;
+&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Any Authorisation is not performed by the application but by a dedicated authorisation application.&lt;/li&gt;
+&lt;li&gt;Applications obey trusted authorisation tokens from that application.&lt;/li&gt;
+&lt;li&gt;Tokens only grant access to the relevant data, necessary for the role the user has.&lt;/li&gt;
+&lt;li&gt;Roles are granular and can be subdivided where necessary.&lt;/li&gt;
+&lt;li&gt;Application and data access is protected, ensuring a second check.&lt;/li&gt;
+&lt;li&gt;Special access privileges, such as deleting an account, require a second factor or verification.&lt;/li&gt;
+&lt;li&gt;Options for Multi-factor authentication should be present and are strongly recommended.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;System designers and implementors.&lt;/li&gt;
+&lt;li&gt;Organisational management&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="details"&gt;Details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
+&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Ensuring our customer's data is secure is important. Ensuring they can manage access to that data is important. Giving them a feeling of security and trust is important.&lt;/p&gt;
+&lt;p&gt;Reflecting our brand values, our commitment to security and our capability to manage data and services for them is important.&lt;/p&gt;
 &lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;

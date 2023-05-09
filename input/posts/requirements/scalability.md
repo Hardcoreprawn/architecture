@@ -48,10 +48,9 @@ AKF PArtners introduced the concept of the scale cube in their 2018 Blog post on
 
 * X-Axis, Technical architecture layering. Avoid single points of failure, build out multiple nodes which can serve requests and balance load.
 * Y-Axis, Functional Decomposition. Break an application into components (microservices) and keep these different items in swim lanes.
-* Z-Axis, Data Partioning. Separate user data for scale, availability and testing.
+* Z-Axis, Data Partitioning. Separate user data for scale, availability and testing.
 
-![The Scale Cube, AKFPartners, 2018][def1]
-[def1]: https://akfpartners.com/uploads/misc/Scale_Cube.png
+![Scale Cube, AKF Partners, 2018](/images/Scale_Cube.png)
 
 Each axis in the cube needs to be able to scale and teams should keep this idea in mind as they design and build systems.
 
