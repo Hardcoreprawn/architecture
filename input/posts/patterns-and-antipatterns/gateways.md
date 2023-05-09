@@ -2,7 +2,7 @@
 Title: Gateways
 Lead: Decomposed services need to look all joined up
 Slug: gateways
-Description: Once you have decomposed your web services, how do you keep the user experience connected and easy?
+Description: Once you have decomposed your web services, how do you keep the user experience connected, easy and secure?
 Tags:
   - Architecture
   - Microservices
