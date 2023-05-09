@@ -9,7 +9,7 @@ Tags:
   - Non-Functional Requirements
   - Requirements
   - NFRs
-Image: /images/header01.png
+Image: /media/header01.png
 ---
 
 This non-functional requirement is concerned with the ability of the system to handle an increasing amount of work and adapt to a lessening workload.
@@ -51,7 +51,7 @@ AKF Partners introduced the concept of the scale cube in their 2018 Blog post on
 * Y-Axis, Functional Decomposition. Break an application into components (microservices) and keep these different items in swim lanes.
 * Z-Axis, Data Partitioning. Separate user data for scale, availability and testing.
 
-![Scale Cube, AKF Partners, 2018](/images/Scale_Cube.png)
+![Scale Cube, AKF Partners, 2018](/media/Scale_Cube.png)
 
 Each axis in the cube needs to be able to scale and teams should keep this idea in mind as they design and build systems.
 

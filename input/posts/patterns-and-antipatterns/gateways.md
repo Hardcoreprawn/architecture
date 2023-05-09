@@ -12,6 +12,7 @@ Categories:
 ArchiveKey:
 Draft: true
 Published: 09/05/2023
+Image: "../../media/header01.png"
 ---
 
 TODO: TL;DR

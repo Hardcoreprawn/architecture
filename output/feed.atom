@@ -4,18 +4,18 @@
 	<title />
 	<link rel="self" href="https://red-sand-078a6ea03.3.azurestaticapps.net/" />
 	<rights>Copyright James Brewster© 2023</rights>
-	<updated>2023-05-09T06:53:49Z</updated>
-	<logo>https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png</logo>
+	<updated>2023-05-09T13:34:44Z</updated>
+	<logo>https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png</logo>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices</id>
 		<title>Microservices</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
-		<updated>2023-05-09T06:52:10Z</updated>
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
+		<updated>2023-05-09T13:32:08Z</updated>
 		<content>&lt;p&gt;Microservices are a way to build applications and are used by some of the biggest sites and systems online, such as Netflix and Amazon. They let systems be updated safely and scale well. But they are complex and require firm principles in place to work properly.&lt;/p&gt;
 &lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
 &lt;p&gt;Microservices architecture is an architectural style that structures an application as a collection of services that are independently deployable, loosely coupled, organized around business capabilities and owned by a small team. In simple terms, microservices are a specific method of designing software systems to structure a single application as a collection of loosely coupled services.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/microservices-patterns.png" alt="microservices-pattern"&gt;
+&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/microservices-patterns.png" alt="Microservices Pattern"&gt;
 &lt;em&gt;Model of a Monolith to Microservices migration, showing sub-patterns&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This is a reference pattern, with several optional sub-patterns.&lt;/p&gt;
 &lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
@@ -58,80 +58,11 @@ will go wrong.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="references"&gt;References&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href="xref:microservices-anti-patterns"&gt;Microservices Anti-Patterns&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/microservices/"&gt;Microsoft - Microservices design&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/microservice-architecture-principles"&gt;AKF Partners - Microservices Architecture Principles&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="anti-patterns-of-the-microservices-architecture"&gt;Anti-Patterns of the microservices architecture&lt;/h2&gt;
-&lt;p&gt;A selection of common mistakes and bloopers found in the wild.&lt;/p&gt;
-&lt;h3 id="calls-in-series"&gt;Calls in Series&lt;/h3&gt;
-&lt;p&gt;Many microservices architecture failures are the result of not properly understanding the way failure works in distributed systems. To calculate the SLA of multiple systems, you must multiply the availability of each dependent service together.&lt;/p&gt;
-&lt;p&gt;If a system is built to have an availability of 99.5%, but it relies upon another service, with the same SLA of 99.5%, then the total SLA of that system is 99.0025%. If a third dependency is introduced with the same SLA of 99.5%, then we are down to 98.5%. This quickly adds up and gets exponentially worse.&lt;/p&gt;
-&lt;p&gt;It's important to use asynchronous calls to prevent this, rather than calls in series. Incorporate a message bus or an event framework, and instead of waiting, your services can remain resilient.&lt;/p&gt;
-&lt;p&gt;Reference: &lt;a href="https://akfpartners.com/growth-blog/microservice-anti-pattern-calls-in-series-the-xmas-tree-light-anti-pattern"&gt;AKF Partners: Microservices Anti-Patterns, 2019&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="distributed-monolith"&gt;Distributed Monolith&lt;/h3&gt;
-&lt;p&gt;When you split a monolith, don't let your services become dependent on each
-or several other microservices. If changes in services require redeployment or
-change in other services, you've built a distributed monolith.
-Lastly, over-dependency can also manifest in long deployment times, as too many
-changes have to occur at once. Sometimes it shows that deployment has to
-happen in a particular order.&lt;/p&gt;
-&lt;p&gt;This is a &lt;a href="http://www.laputan.org/mud/mud.html#BigBallOfMud"&gt;Big-Ball-Of-Mud&lt;/a&gt; that also has network-level latencies to
-deal with now.&lt;/p&gt;
-&lt;h3 id="overly-chatty"&gt;Overly Chatty&lt;/h3&gt;
-&lt;p&gt;The amount of communication between services must be considered. Services are distributed, so calls between them take time. Overly chatty services are not performant; the latency can kill the performance. Following &lt;a href="https://en.wikipedia.org/wiki/SOLID"&gt;SOLID&lt;/a&gt; principles can help here.&lt;/p&gt;
-&lt;h3 id="shared-persistence"&gt;Shared Persistence&lt;/h3&gt;
-&lt;p&gt;A monolith typically requires a large shared data store. As organisations redesign to microservices, thoughts around persistence may be overlooked, and traditional patterns followed. When you tie a service and a database together, you affect reliability. There is a recommendation to adopt a 0-1 database per service model.&lt;/p&gt;
-&lt;p&gt;For many types of computing, such as Azure Functions, or AWS Lambda, databases may be unnecessary. If compute uses documents instead or responds to events or messages, then all the persistence could be encapsulated.&lt;/p&gt;
-&lt;p&gt;in these cases, avoiding any real persistence helps to improve reliability, by removing unnecessary dependencies.&lt;/p&gt;
-&lt;p&gt;Reference: &lt;a href="https://akfpartners.com/growth-blog/microservice-Architecture-principle-one-or-zero-databases-per-service"&gt;AKF Partners, Microservices Architecture Principle: One or Zero Databases per Service. 2022&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="entangled-data"&gt;Entangled Data&lt;/h3&gt;
-&lt;p&gt;When all the services in your application can use database connections to get whatever they need, it becomes harder to unpick and separate them as services scale. The database starts to become a bottleneck, changes slow down as people need to extend things.. the natural next step is to separate the services into individual databases. Except, you have no idea what you need to separate. Congratulations, you have entangled data.&lt;/p&gt;
-&lt;p&gt;To ensure you can scale as you need to, the data needs to be segregated into clear domains, which are readily identifiable and easy to access.&lt;/p&gt;
-&lt;p&gt;A successful remedy to this problem can be to restrict inter-domain communication to API calls. By ensuring cross-service database calls are eliminated and contracted, defined borders are put in place, segregation is much easier to manage.&lt;/p&gt;
-&lt;p&gt;This anti-pattern was seen as such a threat to the growth and agility of Amazon, that Jeff Bezos &lt;a href="https://nordicapis.com/the-bezos-api-mandate-amazons-manifesto-for-externalization/"&gt;threatened to fire anyone who followed it&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Reference: &lt;a href="https://www.techtarget.com/searchapparchitecture/tip/4-deadly-microservices-antipatterns-that-ruin-migration#:%7E:text=In%20an%20entangled%20data%20antipattern%2C%20all%20the%20services,modules%20and%20make%20structural%20changes%20to%20your%20architecture."&gt;TechTarget.com, 4 microservices antipatterns that ruin migration. 2020&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="improper-versioning"&gt;Improper Versioning&lt;/h3&gt;
-&lt;p&gt;TODO: Build API versions into your URI calls.&lt;/p&gt;
 &lt;h2 id="sub-patterns"&gt;Sub-patterns&lt;/h2&gt;
-&lt;p&gt;TODO: A successful migration of monolith to microservices will likely use many
-different patterns. Some common ones are linked here.&lt;/p&gt;
-&lt;h3 id="ambassador"&gt;Ambassador&lt;/h3&gt;
-&lt;p&gt;TODO: An Ambassador sits between two services and negotiates. Typically a proxy
-service can interpret. An ambassador is often used to offload or mask client
-interoperability issues. An ambassador is a specialized sidecar.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador"&gt;Ambassador Pattern&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="anti-corruption"&gt;Anti-corruption&lt;/h3&gt;
-&lt;p&gt;TODO: When two systems don't properly understand each other, an Anti-corruption
-layer can be introduced to protect the new architecture.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/anti-corruption-layer"&gt;Anti-corruption Layer pattern&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="backends-for-frontends"&gt;Backends for Frontends&lt;/h3&gt;
-&lt;p&gt;TODO: Sometimes, it's just quicker to write APIs that deal with specific clients. It might take more maintenance, but that can be ok.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends"&gt;Backends for Frontends pattern&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="bulkhead"&gt;Bulkhead&lt;/h3&gt;
-&lt;p&gt;TODO: Bulkheads are used on ships to prevent water from a hull breach from flooding the whole ship. Keep things separate, (like connection pools or hardware) so an accident can't flood the whole ship.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead"&gt;Bulkhead Pattern&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="gateways"&gt;Gateways&lt;/h3&gt;
-&lt;p&gt;TODO: Using a gateway for your microservices offers several benefits, by making your collection of services look like a single web server.&lt;/p&gt;
-&lt;h4 id="aggregation"&gt;Aggregation&lt;/h4&gt;
-&lt;p&gt;TODO: Clients can connect to a single endpoint to make requests, which are then
-forwarded to different microservices. This makes the client connection light
-and easy&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation"&gt;Gateway Aggregation&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id="offloading"&gt;Offloading&lt;/h4&gt;
-&lt;p&gt;TODO: The gateway can offload shared functionality, such as authentication, TLS
-certificates or issuing Authorisation tokens.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading"&gt;Gateway Offloading&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id="routing"&gt;Routing&lt;/h4&gt;
-&lt;p&gt;TODO: The service all appears to come from a single domain, so much easier for a
-client to manage connections to and from the service, improving security.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-routing"&gt;Gateway Routing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="sidecar"&gt;Sidecar&lt;/h3&gt;
-&lt;p&gt;TODO: deploy helper apps into separate containers to encapsulate them, but keep
-them close for performance.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar"&gt;Sidecar Pattern&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="strangler"&gt;Strangler&lt;/h3&gt;
-&lt;p&gt;TODO: Refactor over time, by gradually replacing specific services.&lt;/p&gt;
-&lt;p&gt;&lt;a href="xref:strangler-pattern"&gt;Strangler Pattern&lt;/a&gt;&lt;/p&gt;
 </content>
 		<summary>Microservices are a collection of application services that are independently deployable, loosely coupled and organized around business capabilities.</summary>
 	</entry>
@@ -139,7 +70,7 @@ them close for performance.&lt;/p&gt;
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern</id>
 		<title>Strangler pattern</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-05-02T00:00:00Z</updated>
 		<content>&lt;p&gt;This pattern is used to migrate functionality from an older app to a new one. Typically, this is done for a monolith to a microservices model but works for any app.&lt;/p&gt;
 &lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
@@ -147,7 +78,7 @@ them close for performance.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://farm4.staticflickr.com/3356/3600794227_4916f9924e_z.jpg" alt="The Strangler Fig Tree"&gt;&lt;/p&gt;
 &lt;p&gt;Inspired by the Australian Strangler Fig Tree, which roots in the upper branches and grows down and around the tree, eventually taking root and destroying the original host tree.&lt;/p&gt;
 &lt;p&gt;If you build something to help transition, take it away when you're finished with it.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/strangler-pattern-example.png" alt="Strangler pattern, over time"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/strangler-pattern-example.png" alt="Strangler pattern, over time"&gt;&lt;/p&gt;
 &lt;p&gt;The first step shows the monolith, and then a companion service is added alongside, behind a proxy. The next step adds more services, transitioning over to the new model. The last step shows the monolith being removed, along with the proxy.&lt;/p&gt;
 &lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
 &lt;ul&gt;
@@ -195,7 +126,7 @@ them close for performance.&lt;/p&gt;
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/reliability</id>
 		<title>Reliability</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/reliability" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-05-02T00:00:00Z</updated>
 		<content>&lt;blockquote&gt;
 &lt;p&gt;reliability, noun, /rɪˌlaɪ.əˈbɪl.ə.ti/. The quality of being able to be trusted or believed because of working or behaving well.&lt;/p&gt;
@@ -235,7 +166,7 @@ them close for performance.&lt;/p&gt;
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/usability</id>
 		<title>Usability</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/usability" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-04-28T00:00:00Z</updated>
 		<content>&lt;p&gt;A usable system encourages use and trust.&lt;/p&gt;
 &lt;p&gt;Usability, noun, /ˌjuːzəˈbɪləti/. Something easy to use, or the degree to which it is easy to use.&lt;/p&gt;
@@ -274,7 +205,7 @@ them close for performance.&lt;/p&gt;
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/owasp</id>
 		<title>OWASP ASVS</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/owasp" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-04-27T00:00:00Z</updated>
 		<content>&lt;p&gt;The standard provides a basis for testing application technical security controls, as well as any technical security controls in the environment, that are relied on to protect against vulnerabilities such as Cross-Site Scripting (XSS) and SQL injection. This standard can be used to establish a level of confidence in the security of Web applications.&lt;/p&gt;
 &lt;p&gt;The Roadmap for version 5 of the OWASP ASVS is available here: &lt;a href="https://github.com/OWASP/ASVS/wiki/Roadmap-to-version-5.0"&gt;https://github.com/OWASP/ASVS/wiki/Roadmap-to-version-5.0&lt;/a&gt;&lt;/p&gt;
@@ -320,9 +251,9 @@ them close for performance.&lt;/p&gt;
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability</id>
 		<title>Scalability</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-04-27T00:00:00Z</updated>
-		<content>&lt;p&gt;This non-functional requirement is concerned with the ability of the system to handle an increasing amount of work or its potential to be enlarged to accommodate that growth.&lt;/p&gt;
+		<content>&lt;p&gt;This non-functional requirement is concerned with the ability of the system to handle an increasing amount of work and adapt to a lessening workload.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -350,14 +281,13 @@ them close for performance.&lt;/p&gt;
 &lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="more-information"&gt;More Information&lt;/h2&gt;
-&lt;p&gt;AKF PArtners introduced the concept of the scale cube in their 2018 Blog post on scalability. This is a scaling model which encourages design and engineering teams to think about scale around three separate axis:&lt;/p&gt;
+&lt;p&gt;AKF Partners introduced the concept of the scale cube in their 2018 Blog post on scalability. This is a scaling model which encourages design and engineering teams to think about scale in three axis:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;X-Axis, Technical architecture layering. Avoid single points of failure, build out multiple nodes which can serve requests and balance load.&lt;/li&gt;
 &lt;li&gt;Y-Axis, Functional Decomposition. Break an application into components (microservices) and keep these different items in swim lanes.&lt;/li&gt;
-&lt;li&gt;Z-Axis, Data Partioning. Separate user data for scale, availability and testing.&lt;/li&gt;
+&lt;li&gt;Z-Axis, Data Partitioning. Separate user data for scale, availability and testing.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;![The Scale Cube, AKFPartners, 2018][def1]
-[def1]: https://akfpartners.com/uploads/misc/Scale_Cube.png&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/Scale_Cube.png" alt="Scale Cube, AKF Partners, 2018"&gt;&lt;/p&gt;
 &lt;p&gt;Each axis in the cube needs to be able to scale and teams should keep this idea in mind as they design and build systems.&lt;/p&gt;
 &lt;p&gt;A monolith application is the antithesis of the scale cube. An accurate realisation of this principle would be a Microservices architecture, hosted on a container platform, with a sharded database model.&lt;/p&gt;
 &lt;p&gt;Scaling a large system is hard, and potentially expensive. Making changes can take too long and the required upgrades can be costly. Using a microservices model with small, stateless services which can scale independently allows each service change to be small, and the underlying costs to grow in smaller steps.&lt;/p&gt;
@@ -375,7 +305,7 @@ them close for performance.&lt;/p&gt;
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/performance</id>
 		<title>Performance</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/performance" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-04-27T00:00:00Z</updated>
 		<content>&lt;p&gt;Performance is one of the most important NFRs that specifies “how well” the “what&amp;quot; must behave. Performance NFRs are used to ensure that a system meets its performance requirements and that it performs as expected under various conditions. Performance NFRs can include response time, throughput, resource utilization, and capacity.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -417,7 +347,7 @@ them close for performance.&lt;/p&gt;
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation</id>
 		<title>Non-repudiation</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-04-27T00:00:00Z</updated>
 		<content>&lt;p&gt;Where possible, use immutable objects and data which can't be repudiated. Make sure we can trust our systems and our data.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -460,7 +390,7 @@ them close for performance.&lt;/p&gt;
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration</id>
 		<title>Secure Configuration</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-04-26T00:00:00Z</updated>
 		<content>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -507,7 +437,7 @@ them close for performance.&lt;/p&gt;
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control</id>
 		<title>User Access Control</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/images/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-04-26T00:00:00Z</updated>
 		<content>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;
 &lt;blockquote&gt;

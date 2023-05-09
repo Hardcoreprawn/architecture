@@ -11,6 +11,7 @@ Categories:
   - Pattern
 Draft: false
 Published: 09/05/2023-16:50
+Image: "../../media/header01.png"
 ---
 
 Microservices are a way to build applications and are used by some of the biggest sites and systems online, such as Netflix and Amazon. They let systems be updated safely and scale well. But they are complex and require firm principles in place to work properly.
@@ -19,7 +20,7 @@ Microservices are a way to build applications and are used by some of the bigges
 
 Microservices architecture is an architectural style that structures an application as a collection of services that are independently deployable, loosely coupled, organized around business capabilities and owned by a small team. In simple terms, microservices are a specific method of designing software systems to structure a single application as a collection of loosely coupled services.
 
-![Microservices Pattern](/images/microservices-patterns.png)
+![Microservices Pattern](/media/microservices-patterns.png)
 *Model of a Monolith to Microservices migration, showing sub-patterns*
 
 This is a reference pattern, with several optional sub-patterns.
