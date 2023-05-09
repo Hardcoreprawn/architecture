@@ -44,7 +44,7 @@ Rationale: Scalability is important because it ensures that the system can conti
 
 ## More Information
 
-AKF PArtners introduced the concept of the scale cube in their 2018 Blog post on scalability. This is a scaling model which encourages design and engineering teams to think about scale around three separate axis:
+AKF Partners introduced the concept of the scale cube in their 2018 Blog post on scalability. This is a scaling model which encourages design and engineering teams to think about scale in three axis:
 
 * X-Axis, Technical architecture layering. Avoid single points of failure, build out multiple nodes which can serve requests and balance load.
 * Y-Axis, Functional Decomposition. Break an application into components (microservices) and keep these different items in swim lanes.
