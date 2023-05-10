@@ -66,12 +66,8 @@ In choosing this pattern, you ruled out simpler options as not being capable.
 * You have time and space for teams to find their way; this is hard and it
 will go wrong.
 
-## References
+## Related Articles
 
 * [Microservices Anti-Patterns](xref:microservices-anti-patterns)
 * [Microsoft - Microservices design](https://learn.microsoft.com/en-us/azure/architecture/microservices/)
 * [AKF Partners - Microservices Architecture Principles](https://akfpartners.com/growth-blog/microservice-architecture-principles)
-
-## Sub-patterns
-
-
