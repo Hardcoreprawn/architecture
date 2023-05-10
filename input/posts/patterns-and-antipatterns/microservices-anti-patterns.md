@@ -8,7 +8,7 @@ Tags:
   - Patterns
 Categories:
   - Patterns
-Draft: true
+Draft: False
 Published: 10/05/2023
 ---
 

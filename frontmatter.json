@@ -72,6 +72,10 @@
     {
       "title": "Requirements",
       "path": "[[workspace]]/input/posts/requirements"
+    },
+    {
+      "title": "Solutions",
+      "path": "[[workspace]]/input/posts/solutions"
     }
   ],
   "frontMatter.taxonomy.seoDescriptionField": "Description",

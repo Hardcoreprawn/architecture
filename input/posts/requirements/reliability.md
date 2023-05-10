@@ -6,10 +6,9 @@ Tags:
   - Non-Functional Requirements
   - Requirements
   - NFRs
-Draft: true
+Draft: False
 Published: 02/05/2023
 ---
-
 > reliability, noun, /rɪˌlaɪ.əˈbɪl.ə.ti/. The quality of being able to be trusted or believed because of working or behaving well.
 
 Reliable things do what you expect when you expect them. By ensuring we build reliable software, customers can easily access and use them.

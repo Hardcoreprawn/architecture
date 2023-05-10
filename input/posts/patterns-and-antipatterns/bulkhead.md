@@ -8,10 +8,9 @@ Tags:
   - Patterns
 Categories:
   - Patterns
-Draft: false
+Draft: False
 Published: 10/05/2023
 ---
-
 The Bulkhead pattern designs safe operation into applications, to ensure that a single failure cannot cause the loss of the whole application.
 
 There are different approaches to implementing a bulkhead, which all have the same outcome. It depends on how you need to contain the fault. It's easier to explain with some examples.
