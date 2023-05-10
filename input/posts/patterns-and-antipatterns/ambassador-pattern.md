@@ -8,7 +8,7 @@ Tags:
   - Patterns
 Categories:
   - Patterns
-Draft: true
+Draft: false
 Published: 01/01/2002
 ---
 
@@ -20,7 +20,7 @@ The ambassador pattern is used when a service needs some additional functionalit
 
 ## Benefits
 
-An ambassador can extend a legacy service with new functionality to allow it to function alongside a new architetcure.
+An ambassador can extend a legacy service with new functionality to allow it to function alongside a new architecture.
 
 ## Examples
 
