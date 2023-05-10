@@ -9,7 +9,7 @@ Tags:
 Categories:
   - Patterns
 Draft: false
-Published: 01/01/2002
+Published: 10/05/2023
 ---
 
 An out-of-process proxy that facilitates communication with a distant service. Colocated, usually in the same host/cluster to improve performance.
