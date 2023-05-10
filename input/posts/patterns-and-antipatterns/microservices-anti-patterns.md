@@ -69,4 +69,31 @@ Reference: [TechTarget.com, 4 microservices antipatterns that ruin migration. 20
 
 ### Improper Versioning
 
-TODO: Build API versions into your URI calls.
+As part of an API strategy, contracted APIs enable a consumer to understand what they get and how they access that data. A mature API model allows a consumer to retrieve the right data and update the right systems, without needing to understand the underlying system. But, when the API changes, the integration will break.
+
+If the API supports clear versioning, then the consumer can stipulate a version and the service can respond. Having a contractual way to manage versioning and deprecation is critical to making resilient services.
+
+Microsoft suggests the following main versioning options:
+
+* URI
+* Header
+* Query string
+
+With URI-based versioning, the version is in the URI. If omitted the server would default to the most current, supported version.
+
+> GET https://api.service.com/store/v1.1/Products
+
+Header-based versioning encapsulates the version in the HTML header. You would include a custom header in the HTML HEAD tag, such as:
+
+> Api-version: 1.0
+> Api-version: 1.1
+
+With Query-string versioning, the version requested is an optional query string:
+
+> GET https://api.service.com/products/Products?api-version=v1.1
+
+These methods are all supported in Azure API Manager.
+
+### References
+
+* [Microsoft.com - API Management](https://learn.microsoft.com/en-us/azure/api-management/api-management-versions)
