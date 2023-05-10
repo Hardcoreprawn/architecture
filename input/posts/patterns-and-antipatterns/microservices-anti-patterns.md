@@ -81,16 +81,16 @@ Microsoft suggests the following main versioning options:
 
 With URI-based versioning, the version is in the URI. If omitted the server would default to the most current, supported version.
 
-> GET https://api.service.com/store/v1.1/Products
+    GET https://api.service.com/store/v1.1/Products
 
 Header-based versioning encapsulates the version in the HTML header. You would include a custom header in the HTML HEAD tag, such as:
 
-> Api-version: 1.0
-> Api-version: 1.1
+    Api-version: 1.0
+    Api-version: 1.1
 
 With Query-string versioning, the version requested is an optional query string:
 
-> GET https://api.service.com/products/Products?api-version=v1.1
+    GET https://api.service.com/products/Products?api-version=v1.1
 
 These methods are all supported in Azure API Manager.
 
