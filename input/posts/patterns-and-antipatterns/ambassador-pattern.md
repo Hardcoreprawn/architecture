@@ -29,9 +29,13 @@ An ambassador can extend a legacy service with new functionality to allow it to 
 * Masking an insecure connection, to ensure that the public network is secured.
 * Integrating a circuit breaker for a partner-hosted service.
 
-## Drawbacks
+## Concerns
 
-Adding an ambassador often entails creating a dependency. Sometimes the ambassador needs to be managed by a separate team, but will then require a release dependency.
+* Adding an ambassador often entails creating a dependency. Sometimes the ambassador needs to be managed by a separate team, but will then require a release dependency.
+* Is the added latency going to be workable with this application?
+* Do you want to create a shared ambassador or spawn an instance per client?
+* Consider a way to pass context to ease faultfinding.
+* Hosting the ambassador close to the applications to minimise latency.
 
 ## When to use
 
@@ -40,11 +44,21 @@ Adding an ambassador often entails creating a dependency. Sometimes the ambassad
 
 ## When to avoid
 
-TODO
+* This pattern adds latency, so avoid it in a latency-sensitive environment.
+* If only a single language is consuming the features; a library may be a better option.
+* If connectivity features cannot be adequately optimised.
 
 ## Approach
 
-## Assumptions
+Microsoft cites an example of an ambassador which encapsulates:
+
+* Routing
+* Circuit Breaker
+* Logging
+
+To enable a legacy app to integrate to cloud services, and with mobile clients.
+
+[Ambassador Example - learn.microsoft.com](https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador#example)
 
 ## References
 
