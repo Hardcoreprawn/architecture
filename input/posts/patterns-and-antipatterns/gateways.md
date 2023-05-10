@@ -8,7 +8,6 @@ Tags:
   - Patterns
 Categories:
   - Patterns
-ArchiveKey:
 Draft: false
 Published: 09/05/2023-14:39
 Image: "../../media/header01.png"

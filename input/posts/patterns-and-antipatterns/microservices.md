@@ -1,6 +1,5 @@
 ---
 Title: Microservices
-Slug: microservices
 Lead: Minimise dependencies and promote scalability.
 Description: Microservices are a collection of application services that are independently deployable, loosely coupled and organized around business capabilities.
 Tags:
