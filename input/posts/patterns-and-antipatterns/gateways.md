@@ -13,7 +13,7 @@ Published: 09/05/2023-14:39
 Image: "../../media/header01.png"
 ---
 
-TODO: TL;DR
+Exposing multiple services out of a container cluster can cause issues and complexity as you scale out the number of services. The Gateway pattern uses a proxy to manage several complexities and performance improvements.
 
 ## Routing
 
@@ -23,7 +23,7 @@ One way to connect clients to services is direct. A direct client-to-microservic
 
 This can be even more complex when multiple services start to be available, which offer the same functionality. Which service do I connect to? How do I find the right service? It can be further worsened if different versions of the same service start to be in use, such as A/B testing.
 
-![Gateway-Routing, just one way in or out](../../gateway-routing.png)
+![Gateway-Routing, just one way in or out](../../media/gateway-routing.png)
 
 Gateway Aggregation makes use of a proxy service, in-front of the microservice endpoints, redirecting pages and folders, hiding details of the production layout away from the outside world, so changes can be made and introduced in a lot simpler manner.
 
@@ -31,15 +31,23 @@ Gateway Aggregation makes use of a proxy service, in-front of the microservice e
 
 ## Offloading
 
-TODO: The gateway can offload shared functionality, such as authentication, TLS
-certificates or issuing Authorisation tokens.
+Using a gateway allows shared services or cross-cutting concerns to be handled in line for multiple services. These can be things like:
+
+* Authentication or authorisation
+* SSL Offloading and certificate management
+* Network Monitoring and throttling
+
+In some cases, these items might need special skills or segregation of responsibilities. In others, it is more effective to do these things once.
+
+In either case, the use of a gateway to offload functionality mustn't create a dependency between the gateway and any downstream services, or it risks becoming a blocker to development.
 
 [Gateway Offloading](https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading)
 
 ## Aggregation
 
-TODO: The service all appears to come from a single domain, so much easier for a
-client to manage connections to and from the service, improving security.
+Gateway aggregation allows a client to minimise unnecessary chatter, especially valuable over the internet or mobile networks, when communicating with a service. By collecting requests and responses and dispatching them in batches, updates and performance can be better managed, whilst the service appears to come from a common host.
+
+Done properly, aggregation allows a server to manage client connections and improve performance.
 
 [Gateway Aggregation](https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation)
 
