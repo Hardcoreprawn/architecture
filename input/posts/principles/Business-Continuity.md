@@ -6,8 +6,7 @@ Tags:
   - Architectural Principles
   - Architecture
   - Business Principles
-Draft: false
-type: default
+Draft: False
 ---
 
 > *"I can be changed by what happens to me, but I refuse to be reduced by it." - Maya Angelou.*

@@ -2,7 +2,7 @@
 Title: Control Technical Diversity
 Published: 15/04/2023
 Lead: We try to use a limited number of technologies to reduce the cost of maintaining expertise in and connectivity between multiple systems.
-Draft: false
+Draft: False
 Tags:
   - Architectural Principles
   - Technical Principles

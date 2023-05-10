@@ -10,8 +10,7 @@ Tags:
 Categories: []
 Type: Default
 ---
-
-Be Suspicious, Shift-Security-Left, Least Prvilege.
+Be Suspicious, Shift-Security-Left, Least Privilege.
 
 Zero-Trust Model.
 

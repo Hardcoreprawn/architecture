@@ -6,7 +6,7 @@ Tags:
   - Architectural Principles
   - Architecture
   - Business Principles
-Draft: false
+Draft: False
 ---
 
 > *"Wherever law ends, Tyranny begins. - John Locke, 1972"*

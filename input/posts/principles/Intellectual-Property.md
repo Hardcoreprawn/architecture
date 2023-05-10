@@ -3,7 +3,6 @@ Title: Intellectual Property
 Published: 01/01/2001
 Draft: true
 ---
-
 > Quote Goes here
 
 ## Statement

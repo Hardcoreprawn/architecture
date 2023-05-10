@@ -6,7 +6,7 @@ Tags:
   - Architectural Principles
   - Architecture
   - Business Principles
-Draft: true
+Draft: False
 ---
 
 > “Make room for the real important stuff.” —Tigger”
