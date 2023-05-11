@@ -4,8 +4,23 @@
 	<title />
 	<link rel="self" href="https://red-sand-078a6ea03.3.azurestaticapps.net/" />
 	<rights>Copyright James Brewster© 2023</rights>
-	<updated>2023-05-11T12:50:24Z</updated>
+	<updated>2023-05-11T13:54:08Z</updated>
 	<logo>https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png</logo>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/security-principles</id>
+		<title>Security Principles</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/security-principles" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
+		<updated>2023-05-11T00:00:00Z</updated>
+		<content>&lt;p&gt;Be Suspicious, Shift-Security-Left, Least Privilege.&lt;/p&gt;
+&lt;p&gt;Zero-Trust Model.&lt;/p&gt;
+&lt;p&gt;Check and verify the input. Look for tainted input.&lt;/p&gt;
+&lt;p&gt;With a modern application, there is no network boundary. It's down to identities. So check people are who they say they are and do what you expect them to.&lt;/p&gt;
+&lt;p&gt;Start thinking of security as soon as possible in the design process. It's practically impossible to effectively retrofit security. Adding security to an application is an attitude to everything you do from concept to production.&lt;/p&gt;
+&lt;p&gt;This doesn't need to be onerous, but it is important to start with security in mind.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Be Suspicious, Shift-Security-Left, Least Privilege.&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/gateways</id>
 		<title>Gateways</title>
@@ -103,39 +118,6 @@ will go wrong.&lt;/li&gt;
 		<summary>Microservices are a collection of application services that are independently deployable, loosely coupled and organized around business capabilities.</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/bulkhead</id>
-		<title>Bulkhead</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/bulkhead" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-05-10T00:00:00Z</updated>
-		<content>&lt;p&gt;The Bulkhead pattern designs safe operation into applications, to ensure that a single failure cannot cause the loss of the whole application.&lt;/p&gt;
-&lt;p&gt;There are different approaches to implementing a bulkhead, which all have the same outcome. It depends on how you need to contain the fault. It's easier to explain with some examples.&lt;/p&gt;
-&lt;h3 id="isolating-faults"&gt;Isolating Faults&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Customers are divided over different container hosts, so state and session are spread across more than one physical instance. If the instance is lost, only a subset of customers are affected.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id="limiting-thread-concurrency"&gt;Limiting Thread Concurrency&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Netflix use a system called Hystrix, which limits the number of concurrent threads to any given system. Effectively, Hysterix figures out when a component starts to reach capacity and limits the upstream threads, to bring the load down.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;When designing around the bulkhead pattern, assume that there will be failures somewhere and assume that will have an impact. But try to work to contain and minimise that impact.&lt;/p&gt;
-&lt;p&gt;To that end:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Minimise dependencies; share nearly nothing!&lt;/li&gt;
-&lt;li&gt;Isolate faults, to limit fallout.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The pattern was popularised in the book, Release It! by M. Nygard.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/30391809/what-is-bulkhead-pattern-used-by-hystrix"&gt;What is Bulkhead Pattern used by Hystrix? (2018) Stack Overflow.&lt;/a&gt; Accessed: 10 May 2023&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/bulkhead-pattern"&gt;Abbot, M. (2019). Microservice Bulkhead Pattern - Dos and Don’ts.&lt;/a&gt; Accessed 10 May 2023&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.oreilly.com/library/view/release-it-2nd/9781680504552/"&gt;Nygard, M.T. (2018) Release It! Pragmatic Bookshelf.‌&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead"&gt;Bulkhead Pattern&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>The Bulkhead pattern encourages us to create barriers between services, to prevent disasters from affecting the whole application.</summary>
-	</entry>
-	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices-anti-patterns</id>
 		<title>Microservices Anti-patterns</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices-anti-patterns" />
@@ -196,6 +178,39 @@ Api-version: 1.1
 &lt;/ul&gt;
 </content>
 		<summary>Describes common anti-patterns or easy pitfalls of building a microservices application</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/bulkhead</id>
+		<title>Bulkhead</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/bulkhead" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
+		<updated>2023-05-10T00:00:00Z</updated>
+		<content>&lt;p&gt;The Bulkhead pattern designs safe operation into applications, to ensure that a single failure cannot cause the loss of the whole application.&lt;/p&gt;
+&lt;p&gt;There are different approaches to implementing a bulkhead, which all have the same outcome. It depends on how you need to contain the fault. It's easier to explain with some examples.&lt;/p&gt;
+&lt;h3 id="isolating-faults"&gt;Isolating Faults&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Customers are divided over different container hosts, so state and session are spread across more than one physical instance. If the instance is lost, only a subset of customers are affected.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="limiting-thread-concurrency"&gt;Limiting Thread Concurrency&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Netflix use a system called Hystrix, which limits the number of concurrent threads to any given system. Effectively, Hysterix figures out when a component starts to reach capacity and limits the upstream threads, to bring the load down.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When designing around the bulkhead pattern, assume that there will be failures somewhere and assume that will have an impact. But try to work to contain and minimise that impact.&lt;/p&gt;
+&lt;p&gt;To that end:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Minimise dependencies; share nearly nothing!&lt;/li&gt;
+&lt;li&gt;Isolate faults, to limit fallout.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The pattern was popularised in the book, Release It! by M. Nygard.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/30391809/what-is-bulkhead-pattern-used-by-hystrix"&gt;What is Bulkhead Pattern used by Hystrix? (2018) Stack Overflow.&lt;/a&gt; Accessed: 10 May 2023&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/bulkhead-pattern"&gt;Abbot, M. (2019). Microservice Bulkhead Pattern - Dos and Don’ts.&lt;/a&gt; Accessed 10 May 2023&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.oreilly.com/library/view/release-it-2nd/9781680504552/"&gt;Nygard, M.T. (2018) Release It! Pragmatic Bookshelf.‌&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead"&gt;Bulkhead Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>The Bulkhead pattern encourages us to create barriers between services, to prevent disasters from affecting the whole application.</summary>
 	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/ambassador-pattern</id>
@@ -431,59 +446,5 @@ Api-version: 1.1
 &lt;/ol&gt;
 </content>
 		<summary>The OWASP ASVS project provides developers with a list of requirements for secure development and testable security controls.</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability</id>
-		<title>Scalability</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-04-27T00:00:00Z</updated>
-		<content>&lt;p&gt;This non-functional requirement is concerned with the ability of the system to handle an increasing amount of work and adapt to a lessening workload.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;p&gt;The system must be able to scale to adequately support the business&lt;/p&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;The system must be able to handle a minimum of 1000 concurrent users without any significant degradation in performance.&lt;/li&gt;
-&lt;li&gt;On demonstration, the system should be able to scale up and down.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and software engineers.&lt;/li&gt;
-&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Rationale: Scalability is important because it ensures that the system can continue to function effectively as the workload increases.&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="more-information"&gt;More Information&lt;/h2&gt;
-&lt;p&gt;AKF Partners introduced the concept of the scale cube in their 2018 Blog post on scalability. This is a scaling model which encourages design and engineering teams to think about scale in three axis:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;X-Axis, Technical architecture layering. Avoid single points of failure, build out multiple nodes which can serve requests and balance load.&lt;/li&gt;
-&lt;li&gt;Y-Axis, Functional Decomposition. Break an application into components (microservices) and keep these different items in swim lanes.&lt;/li&gt;
-&lt;li&gt;Z-Axis, Data Partitioning. Separate user data for scale, availability and testing.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/Scale_Cube.png" alt="Scale Cube, AKF Partners, 2018"&gt;&lt;/p&gt;
-&lt;p&gt;Each axis in the cube needs to be able to scale and teams should keep this idea in mind as they design and build systems.&lt;/p&gt;
-&lt;p&gt;A monolith application is the antithesis of the scale cube. An accurate realisation of this principle would be a Microservices architecture, hosted on a container platform, with a sharded database model.&lt;/p&gt;
-&lt;p&gt;Scaling a large system is hard, and potentially expensive. Making changes can take too long and the required upgrades can be costly. Using a microservices model with small, stateless services which can scale independently allows each service change to be small, and the underlying costs to grow in smaller steps.&lt;/p&gt;
-&lt;p&gt;Another difficulty is the complexity of a change. As more developers join a project, typically the project gets slower, not faster! Environment changes take longer, pull requests increase, and meetings take longer. The net effect is that large teams create too many dependencies, increasing development times. &lt;a href="https://en.wikipedia.org/wiki/Brooks%27s_law"&gt;Brooks Law&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;When systems are large, they become increasingly complex, and in many cases, by this point, there are only 1-2 people who understand the system. This creates additional Single Points of Failure, in those people. It makes change riskier and more likely to require regression testing.&lt;/p&gt;
-&lt;p&gt;For more information on this model, please refer to the AKF partners site, linked below.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/the-scalability-cube-your-guide-to-evaluating-scalability"&gt;The Scalability Cube, Your Guide to Evaluating Scalability&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>The system must be able to handle an increasing amount of work without any significant degradation in performance.</summary>
 	</entry>
 </feed>
