@@ -1,14 +1,14 @@
 ---
 Title: Security Principles
-Published: 01/01/2001
+Published: 2023-05-11
 Lead: Don't assume people will do the right things. Whether by malice or ignorance, users will try to break your app.
 Draft: true
 Tags:
   - Architectural Principles
   - Architecture
   - Security
-Categories: []
-Type: Default
+Categories:
+  - Principles
 ---
 Be Suspicious, Shift-Security-Left, Least Privilege.
 
