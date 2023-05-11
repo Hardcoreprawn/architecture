@@ -16,6 +16,12 @@ As a business, we want to adopt a Zero-trust approach to our business and use of
 
 ## Rationale
 
+Zero Trust is a mature target model in 2023. It supports the capabilities and organisation needs in the current climate and, properly implemented, it is proven to improve user experience and security posture.
+
+By commoditising the network, and assuming no device or user is anywhere safe, organisations can improve access to services AND improve security. In some cases, this can happen whilst overall costs come down, through a reduced vendor footprint and reduced local hosting, traffic and operations.
+
+## Approach
+
 Zero Trust is a security approach built on three principles:
 
 1. Verify Explicitly
