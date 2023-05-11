@@ -1,8 +1,8 @@
 ---
 Title: Security Principles
-Published: 2023-05-11
+Published: 2023-05-11T15:11:41.566Z
 Lead: Don't assume people will do the right things. Whether by malice or ignorance.
-Draft: true
+Draft: false
 Tags:
   - Architectural Principles
   - Architecture
