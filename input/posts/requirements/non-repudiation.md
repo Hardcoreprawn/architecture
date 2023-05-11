@@ -41,7 +41,7 @@ Non-repudiation provides proof of the origin, authenticity, and integrity of dat
 
 ## Related Principles
 
-* [Be Suspicious](xref:be-suspicious)
+* [Security Principles](xref:security-principles)
 * [Ease-Of-Use](xref:ease-of-use)
 
 ## References

@@ -49,6 +49,4 @@ Reflecting our brand values, our commitment to security and our capability to ma
 
 ## Related Principles
 
-* [Be Suspicious](xref:be-suspicious)
-* [Least Privilege](xref:least-privilege)
-* [Shift Security Left](xref:shift-security-left)
+* [Security Principles](xref:security-principles)

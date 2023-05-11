@@ -51,6 +51,4 @@ Most attacks occur from outside the network. Ensuring firewalls are in place is 
 
 ## Related Principles
 
-* [Be Suspicious](xref:be-suspicious)
-* [Least Privilege](xref:least-privilege)
-* [Shift Security Left](xref:shift-security-left)
+* [Security Principles](xref:security-principles)

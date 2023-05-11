@@ -4,14 +4,51 @@
 	<title />
 	<link rel="self" href="https://red-sand-078a6ea03.3.azurestaticapps.net/" />
 	<rights>Copyright James Brewster© 2023</rights>
-	<updated>2023-05-09T13:34:44Z</updated>
+	<updated>2023-05-11T12:47:09Z</updated>
 	<logo>https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png</logo>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/gateways</id>
+		<title>Gateways</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/gateways" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
+		<updated>2023-05-10T15:02:58Z</updated>
+		<content>&lt;p&gt;Exposing multiple services out of a container cluster can cause issues and complexity as you scale out the number of services. The Gateway pattern uses a proxy to manage several complexities and performance improvements.&lt;/p&gt;
+&lt;p&gt;The gateway pattern has three main facets, whish are discussed and can be implemented separately, but typically all on the same gateway(s).&lt;/p&gt;
+&lt;h2 id="when-to-avoid"&gt;When to Avoid&lt;/h2&gt;
+&lt;p&gt;Don't use this pattern for small sites, or even a handful of services; the overhead will be excessive.&lt;/p&gt;
+&lt;h2 id="when-to-use"&gt;When to use&lt;/h2&gt;
+&lt;p&gt;Use this pattern when you get into more than a handful of services with multiple teams working across them, with a moderate to large user-base.&lt;/p&gt;
+&lt;h3 id="routing"&gt;Routing&lt;/h3&gt;
+&lt;p&gt;One way to connect clients to services is direct. A direct client-to-microservice architecture provides the fewest moving parts. However, each service requires a TCP port to connect to. As each service is using a different port, this can start to prove difficult to manage, especially for security-conscious customers, who need to minimise exposure.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/direct-to-client.png" alt="Direct-to-Client Routing. Count those endpoints!"&gt;&lt;/p&gt;
+&lt;p&gt;This can be even more complex when multiple services start to be available, which offer the same functionality. Which service do I connect to? How do I find the right service? It can be further worsened if different versions of the same service start to be in use, such as A/B testing.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/gateway-routing.png" alt="Gateway-Routing, just one way in or out"&gt;&lt;/p&gt;
+&lt;p&gt;Gateway Aggregation makes use of a proxy service, in-front of the microservice endpoints, redirecting pages and folders, hiding details of the production layout away from the outside world, so changes can be made and introduced in a lot simpler manner.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-routing"&gt;Gateway Routing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="offloading"&gt;Offloading&lt;/h3&gt;
+&lt;p&gt;Using a gateway allows shared services or cross-cutting concerns to be handled in line for multiple services. These can be things like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Authentication or authorisation&lt;/li&gt;
+&lt;li&gt;SSL Offloading and certificate management&lt;/li&gt;
+&lt;li&gt;Network Monitoring and throttling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In some cases, these items might need special skills or segregation of responsibilities. In others, it is more effective to do these things once.&lt;/p&gt;
+&lt;p&gt;In either case, the use of a gateway to offload functionality mustn't create a dependency between the gateway and any downstream services, or it risks becoming a blocker to development.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading"&gt;Gateway Offloading&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="aggregation"&gt;Aggregation&lt;/h3&gt;
+&lt;p&gt;Gateway aggregation allows a client to minimise unnecessary chatter, especially valuable over the internet or mobile networks, when communicating with a service. By collecting requests and responses and dispatching them in batches, updates and performance can be better managed, whilst the service appears to come from a common host.&lt;/p&gt;
+&lt;p&gt;Done properly, aggregation allows a server to manage client connections and improve performance.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation"&gt;Gateway Aggregation&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+</content>
+		<summary>Once you have decomposed your web services, how do you keep the user experience connected, easy and secure?</summary>
+	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices</id>
 		<title>Microservices</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices" />
 		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-05-09T13:32:08Z</updated>
+		<updated>2023-05-10T10:37:47Z</updated>
 		<content>&lt;p&gt;Microservices are a way to build applications and are used by some of the biggest sites and systems online, such as Netflix and Amazon. They let systems be updated safely and scale well. But they are complex and require firm principles in place to work properly.&lt;/p&gt;
 &lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
 &lt;p&gt;Microservices architecture is an architectural style that structures an application as a collection of services that are independently deployable, loosely coupled, organized around business capabilities and owned by a small team. In simple terms, microservices are a specific method of designing software systems to structure a single application as a collection of loosely coupled services.&lt;/p&gt;
@@ -56,15 +93,163 @@ active users.&lt;/li&gt;
 &lt;li&gt;You have time and space for teams to find their way; this is hard and it
 will go wrong.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;h2 id="related-articles"&gt;Related Articles&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="xref:microservices-anti-patterns"&gt;Microservices Anti-Patterns&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/microservices/"&gt;Microsoft - Microservices design&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/microservice-architecture-principles"&gt;AKF Partners - Microservices Architecture Principles&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="sub-patterns"&gt;Sub-patterns&lt;/h2&gt;
 </content>
 		<summary>Microservices are a collection of application services that are independently deployable, loosely coupled and organized around business capabilities.</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/bulkhead</id>
+		<title>Bulkhead</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/bulkhead" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
+		<updated>2023-05-10T00:00:00Z</updated>
+		<content>&lt;p&gt;The Bulkhead pattern designs safe operation into applications, to ensure that a single failure cannot cause the loss of the whole application.&lt;/p&gt;
+&lt;p&gt;There are different approaches to implementing a bulkhead, which all have the same outcome. It depends on how you need to contain the fault. It's easier to explain with some examples.&lt;/p&gt;
+&lt;h3 id="isolating-faults"&gt;Isolating Faults&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Customers are divided over different container hosts, so state and session are spread across more than one physical instance. If the instance is lost, only a subset of customers are affected.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="limiting-thread-concurrency"&gt;Limiting Thread Concurrency&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Netflix use a system called Hystrix, which limits the number of concurrent threads to any given system. Effectively, Hysterix figures out when a component starts to reach capacity and limits the upstream threads, to bring the load down.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When designing around the bulkhead pattern, assume that there will be failures somewhere and assume that will have an impact. But try to work to contain and minimise that impact.&lt;/p&gt;
+&lt;p&gt;To that end:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Minimise dependencies; share nearly nothing!&lt;/li&gt;
+&lt;li&gt;Isolate faults, to limit fallout.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The pattern was popularised in the book, Release It! by M. Nygard.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/30391809/what-is-bulkhead-pattern-used-by-hystrix"&gt;What is Bulkhead Pattern used by Hystrix? (2018) Stack Overflow.&lt;/a&gt; Accessed: 10 May 2023&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/bulkhead-pattern"&gt;Abbot, M. (2019). Microservice Bulkhead Pattern - Dos and Don’ts.&lt;/a&gt; Accessed 10 May 2023&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.oreilly.com/library/view/release-it-2nd/9781680504552/"&gt;Nygard, M.T. (2018) Release It! Pragmatic Bookshelf.‌&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead"&gt;Bulkhead Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>The Bulkhead pattern encourages us to create barriers between services, to prevent disasters from affecting the whole application.</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices-anti-patterns</id>
+		<title>Microservices Anti-patterns</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices-anti-patterns" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
+		<updated>2023-05-10T00:00:00Z</updated>
+		<content>&lt;h2 id="anti-patterns-of-the-microservices-architecture"&gt;Anti-Patterns of the microservices architecture&lt;/h2&gt;
+&lt;p&gt;A selection of common mistakes found in the wild.&lt;/p&gt;
+&lt;h3 id="calls-in-series"&gt;Calls in Series&lt;/h3&gt;
+&lt;p&gt;Many microservices architecture failures are the result of not properly understanding the way failure works in distributed systems. To calculate the SLA of multiple systems, you must multiply the availability of each dependent service together.&lt;/p&gt;
+&lt;p&gt;If a system is built to have an availability of 99.5%, but it relies upon another service, with the same SLA of 99.5%, then the total SLA of that system is 99.0025%. If a third dependency is introduced with the same SLA of 99.5%, then we are down to 98.5%. This quickly adds up and gets exponentially worse.&lt;/p&gt;
+&lt;p&gt;It's important to use asynchronous calls to prevent this, rather than calls in series. Incorporate a message bus or an event framework, and instead of waiting, your services can remain resilient.&lt;/p&gt;
+&lt;p&gt;Reference: &lt;a href="https://akfpartners.com/growth-blog/microservice-anti-pattern-calls-in-series-the-xmas-tree-light-anti-pattern"&gt;AKF Partners: Microservices Anti-Patterns, 2019&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="distributed-monolith"&gt;Distributed Monolith&lt;/h3&gt;
+&lt;p&gt;When you split a monolith, don't let your services become dependent on each
+or several other microservices. If changes in services require redeployment or
+change in other services, you've built a distributed monolith.
+Lastly, over-dependency can also manifest in long deployment times, as too many
+changes have to occur at once. Sometimes it shows that deployment has to
+happen in a particular order.&lt;/p&gt;
+&lt;p&gt;This is a &lt;a href="http://www.laputan.org/mud/mud.html#BigBallOfMud"&gt;Big-Ball-Of-Mud&lt;/a&gt; that also has network-level latencies to
+deal with now.&lt;/p&gt;
+&lt;h3 id="overly-chatty"&gt;Overly Chatty&lt;/h3&gt;
+&lt;p&gt;The amount of communication between services must be considered. Services are distributed, so calls between them take time. Overly chatty services are not performant; the latency can kill the performance. Following &lt;a href="https://en.wikipedia.org/wiki/SOLID"&gt;SOLID&lt;/a&gt; principles can help here.&lt;/p&gt;
+&lt;h3 id="shared-persistence"&gt;Shared Persistence&lt;/h3&gt;
+&lt;p&gt;A monolith typically requires a large shared data store. As organisations redesign to microservices, thoughts around persistence may be overlooked, and traditional patterns followed. When you tie a service and a database together, you affect reliability. There is a recommendation to adopt a 0-1 database per service model.&lt;/p&gt;
+&lt;p&gt;For many types of computing, such as Azure Functions, or AWS Lambda, databases may be unnecessary. If compute uses documents instead or responds to events or messages, then all the persistence could be encapsulated.&lt;/p&gt;
+&lt;p&gt;in these cases, avoiding any real persistence helps to improve reliability, by removing unnecessary dependencies.&lt;/p&gt;
+&lt;p&gt;Reference: &lt;a href="https://akfpartners.com/growth-blog/microservice-Architecture-principle-one-or-zero-databases-per-service"&gt;AKF Partners, Microservices Architecture Principle: One or Zero Databases per Service. 2022&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="entangled-data"&gt;Entangled Data&lt;/h3&gt;
+&lt;p&gt;When all the services in your application can use database connections to get whatever they need, it becomes harder to unpick and separate them as services scale. The database starts to become a bottleneck, changes slow down as people need to extend things.. the natural next step is to separate the services into individual databases. Except, you have no idea what you need to separate. Congratulations, you have entangled data.&lt;/p&gt;
+&lt;p&gt;To ensure you can scale as you need to, the data needs to be segregated into clear domains, which are readily identifiable and easy to access.&lt;/p&gt;
+&lt;p&gt;A successful remedy to this problem can be to restrict inter-domain communication to API calls. By ensuring cross-service database calls are eliminated and contracted, defined borders are put in place, segregation is much easier to manage.&lt;/p&gt;
+&lt;p&gt;This anti-pattern was seen as such a threat to the growth and agility of Amazon, that Jeff Bezos &lt;a href="https://nordicapis.com/the-bezos-api-mandate-amazons-manifesto-for-externalization/"&gt;threatened to fire anyone who followed it&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Reference: &lt;a href="https://www.techtarget.com/searchapparchitecture/tip/4-deadly-microservices-antipatterns-that-ruin-migration#:%7E:text=In%20an%20entangled%20data%20antipattern%2C%20all%20the%20services,modules%20and%20make%20structural%20changes%20to%20your%20architecture."&gt;TechTarget.com, 4 microservices antipatterns that ruin migration. 2020&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="improper-versioning"&gt;Improper Versioning&lt;/h3&gt;
+&lt;p&gt;As part of an API strategy, contracted APIs enable a consumer to understand what they get and how they access that data. A mature API model allows a consumer to retrieve the right data and update the right systems, without needing to understand the underlying system. But, when the API changes, the integration will break.&lt;/p&gt;
+&lt;p&gt;If the API supports clear versioning, then the consumer can stipulate a version and the service can respond. Having a contractual way to manage versioning and deprecation is critical to making resilient services.&lt;/p&gt;
+&lt;p&gt;Microsoft suggests the following main versioning options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;URI&lt;/li&gt;
+&lt;li&gt;Header&lt;/li&gt;
+&lt;li&gt;Query string&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With URI-based versioning, the version is in the URI. If omitted the server would default to the most current, supported version.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;GET https://api.service.com/store/v1.1/Products
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Header-based versioning encapsulates the version in the HTML header. You would include a custom header in the HTML HEAD tag, such as:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Api-version: 1.0
+Api-version: 1.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With Query-string versioning, the version requested is an optional query string:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;GET https://api.service.com/products/Products?api-version=v1.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;These methods are all supported in Azure API Manager.&lt;/p&gt;
+&lt;h3 id="references"&gt;References&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/api-management/api-management-versions"&gt;Microsoft.com - API Management&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Describes common anti-patterns or easy pitfalls of building a microservices application</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/ambassador-pattern</id>
+		<title>Ambassador pattern</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/ambassador-pattern" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
+		<updated>2023-05-10T00:00:00Z</updated>
+		<content>&lt;p&gt;An out-of-process proxy that facilitates communication with a distant service. Colocated, usually in the same host/cluster to improve performance.&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;The ambassador pattern is used when a service needs some additional functionality, but it cannot be easily included alongside the main application. Often this is because the service was created by a third party, or is 'of an age'. An ambassador is a specialised sidecar, which is responsible for communicating with a service for the application.&lt;/p&gt;
+&lt;h2 id="benefits"&gt;Benefits&lt;/h2&gt;
+&lt;p&gt;An ambassador can extend a legacy service with new functionality to allow it to function alongside a new architecture.&lt;/p&gt;
+&lt;h2 id="examples"&gt;Examples&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding asynchronous responses to a legacy synchronous process.&lt;/li&gt;
+&lt;li&gt;To make a REST call to legacy API.&lt;/li&gt;
+&lt;li&gt;Masking an insecure connection, to ensure that the public network is secured.&lt;/li&gt;
+&lt;li&gt;Integrating a circuit breaker for a partner-hosted service.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="concerns"&gt;Concerns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding an ambassador often entails creating a dependency. Sometimes the ambassador needs to be managed by a separate team, but will then require a release dependency.&lt;/li&gt;
+&lt;li&gt;Is the added latency going to be workable with this application?&lt;/li&gt;
+&lt;li&gt;Do you want to create a shared ambassador or spawn an instance per client?&lt;/li&gt;
+&lt;li&gt;Consider a way to pass context to ease faultfinding.&lt;/li&gt;
+&lt;li&gt;Hosting the ambassador close to the applications to minimise latency.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-use"&gt;When to use&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If you have a legacy or partner service which cannot easily be replaced or updated to support necessary functionality, using an ambassador as a wrapper can assist in ensuring the service can work well with the rest of the application architecture.&lt;/li&gt;
+&lt;li&gt;When you need to change the type of request/response to meet the need of a client, such as supporting stronger authentication or encryption, managing latency or aggregating responses to a chatty system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-avoid"&gt;When to avoid&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;This pattern adds latency, so avoid it in a latency-sensitive environment.&lt;/li&gt;
+&lt;li&gt;If only a single language is consuming the features; a library may be a better option.&lt;/li&gt;
+&lt;li&gt;If connectivity features cannot be adequately optimised.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
+&lt;p&gt;Microsoft cites an example of an ambassador which encapsulates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Routing&lt;/li&gt;
+&lt;li&gt;Circuit Breaker&lt;/li&gt;
+&lt;li&gt;Logging&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To enable a legacy app to integrate to cloud services, and with mobile clients.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador#example"&gt;Ambassador Example - learn.microsoft.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar"&gt;Sidecar Pattern&lt;/a&gt; - An ambassador is a specialised sidecar.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador"&gt;Ambassador Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>An ambassador is often used to offload or mask client interoperability issues.</summary>
 	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern</id>
@@ -248,102 +433,6 @@ will go wrong.&lt;/li&gt;
 		<summary>The OWASP ASVS project provides developers with a list of requirements for secure development and testable security controls.</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability</id>
-		<title>Scalability</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/scalability" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-04-27T00:00:00Z</updated>
-		<content>&lt;p&gt;This non-functional requirement is concerned with the ability of the system to handle an increasing amount of work and adapt to a lessening workload.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;p&gt;The system must be able to scale to adequately support the business&lt;/p&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;The system must be able to handle a minimum of 1000 concurrent users without any significant degradation in performance.&lt;/li&gt;
-&lt;li&gt;On demonstration, the system should be able to scale up and down.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and software engineers.&lt;/li&gt;
-&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Rationale: Scalability is important because it ensures that the system can continue to function effectively as the workload increases.&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="more-information"&gt;More Information&lt;/h2&gt;
-&lt;p&gt;AKF Partners introduced the concept of the scale cube in their 2018 Blog post on scalability. This is a scaling model which encourages design and engineering teams to think about scale in three axis:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;X-Axis, Technical architecture layering. Avoid single points of failure, build out multiple nodes which can serve requests and balance load.&lt;/li&gt;
-&lt;li&gt;Y-Axis, Functional Decomposition. Break an application into components (microservices) and keep these different items in swim lanes.&lt;/li&gt;
-&lt;li&gt;Z-Axis, Data Partitioning. Separate user data for scale, availability and testing.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/Scale_Cube.png" alt="Scale Cube, AKF Partners, 2018"&gt;&lt;/p&gt;
-&lt;p&gt;Each axis in the cube needs to be able to scale and teams should keep this idea in mind as they design and build systems.&lt;/p&gt;
-&lt;p&gt;A monolith application is the antithesis of the scale cube. An accurate realisation of this principle would be a Microservices architecture, hosted on a container platform, with a sharded database model.&lt;/p&gt;
-&lt;p&gt;Scaling a large system is hard, and potentially expensive. Making changes can take too long and the required upgrades can be costly. Using a microservices model with small, stateless services which can scale independently allows each service change to be small, and the underlying costs to grow in smaller steps.&lt;/p&gt;
-&lt;p&gt;Another difficulty is the complexity of a change. As more developers join a project, typically the project gets slower, not faster! Environment changes take longer, pull requests increase, and meetings take longer. The net effect is that large teams create too many dependencies, increasing development times. &lt;a href="https://en.wikipedia.org/wiki/Brooks%27s_law"&gt;Brooks Law&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;When systems are large, they become increasingly complex, and in many cases, by this point, there are only 1-2 people who understand the system. This creates additional Single Points of Failure, in those people. It makes change riskier and more likely to require regression testing.&lt;/p&gt;
-&lt;p&gt;For more information on this model, please refer to the AKF partners site, linked below.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/the-scalability-cube-your-guide-to-evaluating-scalability"&gt;The Scalability Cube, Your Guide to Evaluating Scalability&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>The system must be able to handle an increasing amount of work without any significant degradation in performance.</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/performance</id>
-		<title>Performance</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/performance" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-04-27T00:00:00Z</updated>
-		<content>&lt;p&gt;Performance is one of the most important NFRs that specifies “how well” the “what&amp;quot; must behave. Performance NFRs are used to ensure that a system meets its performance requirements and that it performs as expected under various conditions. Performance NFRs can include response time, throughput, resource utilization, and capacity.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;The system must be able to handle 1000 concurrent users.&lt;/li&gt;
-&lt;li&gt;The system should respond within 2 seconds for 95% of all requests.&lt;/li&gt;
-&lt;li&gt;Any underlying systems should be able to achieve this at no more than 60% utilisation before scaling occurs.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;95% of system responses occur to the user within 2 seconds.&lt;/li&gt;
-&lt;li&gt;The system can support more than 1,000 concurrent users and maintain the response time.&lt;/li&gt;
-&lt;li&gt;Monitoring of infrastructure shows that active nodes are at 60-80% of utilisation during load.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and software engineers.&lt;/li&gt;
-&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;This NFR is important because it ensures that the application is responsive and performs well under heavy load.&lt;/p&gt;
-&lt;p&gt;An asynchronous response can take longer, as long as the interactive elements load quickly and explain any delays, while the asynchronous response is prepared.&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;Performance is one of the most important NFRs that specifies “how well” the “what&amp;quot; must behave. Performance NFRs are used to ensure that a system meets its performance requirements and that it performs as expected under various conditions. Performance NFRs can include response time, throughput, resource utilization, and capacity.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation</id>
 		<title>Non-repudiation</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/non-repudiation" />
@@ -385,98 +474,5 @@ will go wrong.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
 		<summary>A mechanism to ensure a party cannot deny the legitimacy of a transaction.</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration</id>
-		<title>Secure Configuration</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/secure-configuration" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-04-26T00:00:00Z</updated>
-		<content>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Based on the NCSC.gov.uk 'Cyber Essentials Requirements for Infrastructure, January 2022. Modified to remove end user devices.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;p&gt;Computers and network devices must be properly configured to reduce the level of inherent vulnerabilities and only provide the services required to fulfil their role.&lt;/p&gt;
-&lt;p&gt;Default configurations are often insecure, to make initial access easier. We must ensure any commodity services are reconfigured to ensure security.&lt;/p&gt;
-&lt;p&gt;This can include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Default accounts, potentially with additional permissions.&lt;/li&gt;
-&lt;li&gt;weak or known initial account passwords.&lt;/li&gt;
-&lt;li&gt;Unnecessary or legacy services, which are easier to exploit.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These must be disabled or reconfigured.&lt;/p&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;On inspection, third-party components should not have common or default accounts and passwords enabled.&lt;/li&gt;
-&lt;li&gt;Where possible, configuration should be backed-up and stored securely, to allow for re-verification.&lt;/li&gt;
-&lt;li&gt;The configuration of a system has been reviewed with one or more peers and has been approved.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and implementors.&lt;/li&gt;
-&lt;li&gt;Organisational management&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;One of the most common ways to access a system is to use a default account or configuration, which has been left unsecured. By ensuring we verify these accounts and their configuration, we can help improve security and minimise breaches.&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:least-privilege"&gt;Least Privilege&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:shift-security-left"&gt;Shift Security Left&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control</id>
-		<title>User Access Control</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/user-access-control" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-04-26T00:00:00Z</updated>
-		<content>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Based on the NCSC.gov.uk 'Cyber Essentials Requirements for Infrastructure, January 2022. Modified to remove end user devices.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;p&gt;Access to a business system, or its data, is protected by a centrally managed named user account. The account can be configured to only allow access to the relevant data and processes.&lt;/p&gt;
-&lt;p&gt;Accounts with special access privileges have an enhanced level of verification through a second factor, such as a verification message to a different, associated device or approval by a second party.&lt;/p&gt;
-&lt;p&gt;Any account should have more than one named individual present. Owners and administrators need to be able to disable an account, with relevant verification.&lt;/p&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Any Authorisation is not performed by the application but by a dedicated authorisation application.&lt;/li&gt;
-&lt;li&gt;Applications obey trusted authorisation tokens from that application.&lt;/li&gt;
-&lt;li&gt;Tokens only grant access to the relevant data, necessary for the role the user has.&lt;/li&gt;
-&lt;li&gt;Roles are granular and can be subdivided where necessary.&lt;/li&gt;
-&lt;li&gt;Application and data access is protected, ensuring a second check.&lt;/li&gt;
-&lt;li&gt;Special access privileges, such as deleting an account, require a second factor or verification.&lt;/li&gt;
-&lt;li&gt;Options for Multi-factor authentication should be present and are strongly recommended.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and implementors.&lt;/li&gt;
-&lt;li&gt;Organisational management&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Ensuring our customer's data is secure is important. Ensuring they can manage access to that data is important. Giving them a feeling of security and trust is important.&lt;/p&gt;
-&lt;p&gt;Reflecting our brand values, our commitment to security and our capability to manage data and services for them is important.&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:be-suspicious"&gt;Be Suspicious&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:least-privilege"&gt;Least Privilege&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:shift-security-left"&gt;Shift Security Left&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>&lt;p&gt;This applies to servers, applications and cloud services.&lt;/p&gt;</summary>
 	</entry>
 </feed>

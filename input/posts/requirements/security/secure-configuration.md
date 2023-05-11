@@ -49,6 +49,4 @@ One of the most common ways to access a system is to use a default account or co
 
 ## Related Principles
 
-* [Be Suspicious](xref:be-suspicious)
-* [Least Privilege](xref:least-privilege)
-* [Shift Security Left](xref:shift-security-left)
+* [Security Principles](xref:security-principles)

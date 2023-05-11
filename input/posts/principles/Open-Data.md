@@ -7,7 +7,7 @@ Tags:
   - Architecture
   - Data
   - Data Principles
-Draft: True
+Draft: False
 ---
 
 > *"Whoever is careless with the truth in small matters cannot be trusted with important matters." - Albert Einstein*
@@ -41,4 +41,3 @@ Sharing data in a way that is open and transparent has been shown to improve inn
 ## References
 
 * [^1] [Open data: Unlocking innovation and performance with liquid information](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/open-data-unlocking-innovation-and-performance-with-liquid-information) Accessed 11/05/2023.
-* 
