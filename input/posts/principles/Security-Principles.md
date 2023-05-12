@@ -55,6 +55,10 @@ Log and monitor access to services and data. Minimise the impact of any breach, 
 * Using the Bulkhead pattern, to minimise the danger between services and threads.
 * Actively monitor and control inputs, to help minimise breaches. Control access points and validate data entry.
 
+## Objective
+
+Remove implicit trust throughout the environment and instead use processes, policies, and technologies to continuously authenticate and authorize entities as trustworthy before actually granting access
+
 ## Implications
 
 Adopting a zero-trust security model can benefit us by providing:

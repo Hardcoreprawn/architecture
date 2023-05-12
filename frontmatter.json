@@ -98,5 +98,6 @@
     "Patterns",
     "Principles",
     "Requirements"
-  ]
+  ],
+  "frontMatter.dashboard.openOnStart": true
 }
