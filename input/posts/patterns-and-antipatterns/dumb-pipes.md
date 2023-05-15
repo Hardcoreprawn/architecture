@@ -1,5 +1,5 @@
 ---
-Title: Dump Pipes
+Title: Dumb Pipes
 Lead: Microservices communication is a critical aspect of distributed systems. Learn how to design and implement effective communication between microservices
 Tags:
   - Architecture
