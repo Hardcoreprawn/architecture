@@ -67,6 +67,7 @@ will go wrong.
 
 ## Related Articles
 
+* [Lewis, J. and Fowler, M. (2014) Microservices, martinfowler.com.](https://martinfowler.com/articles/microservices.html)
 * [Microservices Anti-Patterns](xref:microservices-anti-patterns)
 * [Microsoft - Microservices design](https://learn.microsoft.com/en-us/azure/architecture/microservices/)
 * [AKF Partners - Microservices Architecture Principles](https://akfpartners.com/growth-blog/microservice-architecture-principles)
