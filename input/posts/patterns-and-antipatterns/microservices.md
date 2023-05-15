@@ -60,8 +60,8 @@ Typically, microservices architectures require a good understanding of the busin
 
 ## Assumptions
 
-In choosing this pattern, you ruled out simpler options as not being capable.
-
+* Everyone has read[Microservices by James Lewis and Martin Fowler](https://martinfowler.com/articles/microservices.html)
+* In choosing this pattern, you ruled out simpler options as not being capable.
 * You have time and space for teams to find their way; this is hard and it
 will go wrong.
 
