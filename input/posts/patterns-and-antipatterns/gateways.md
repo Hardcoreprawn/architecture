@@ -9,7 +9,7 @@ Tags:
 Categories:
   - Patterns
 Draft: False
-Published: 09/05/2023-14:39
+Published: 09/05/2023
 Image: "../../media/header01.png"
 ---
 

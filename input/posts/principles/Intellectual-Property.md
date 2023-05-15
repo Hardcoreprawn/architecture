@@ -1,7 +1,7 @@
 ---
 Title: Intellectual Property
 Published: 2023-05-15
-Draft: False
+Draft: false
 Slug: intellectual-property
 Lead: Protecting your intellectual property is essential for maintaining a competitive advantage and generating revenue
 Tags:
@@ -9,8 +9,9 @@ Tags:
   - Business
 Categories:
   - Principles
+Description: This page explains the importance of protecting intellectual property and provides examples of legal protections for intellectual property.
 ---
-> Quote Goes here
+> "An ounce of prevention is worth a pound of cure. - Benjamin Franklin"
 
 ## Statement
 
