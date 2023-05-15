@@ -10,6 +10,7 @@ Published: 15/05/2023
 Slug: dumb-pipes
 Categories:
   - Patterns
+Description: This page is about designing and implementing effective communication between microservices in a distributed system.
 ---
 
 As services scale in a microservices architecture, they need to communicate. A communication network is important, to make sure each service can easily talk to the others, but as they scale, it's important to make sure they can grow and continue to communicate.
@@ -23,8 +24,7 @@ A truly stupid pipe should handle routing and that's it.
 ## Illustration
 
 ![A diagram showing communications in a Microservices architecture](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/media/communication-in-microservice-architecture/sync-vs-async-patterns-across-microservices.png)
-> Anti-patterns and patterns in communication between microservices
-[From learn.microsoft.com](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture)
+> Anti-patterns and patterns in communication between microservices [from learn.microsoft.com](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture)
 
 ## Rationale
 
@@ -46,4 +46,4 @@ Summarizing all of the above, the benefits of smart endpoints and dumb pipes are
 * [Lewis, J. and Fowler, M. (2014) Microservices, martinfowler.com.](https://martinfowler.com/articles/microservices.html.)
 * [Architecture Principles: Messaging Systems – Smart End Points, Dumb Pipes | AKF Partners](https://akfpartners.com/growth-blog/architecture-principle-messaging-systems-smart-end-points-dumb-pipes)
 * [Smart Endpoints and Dumb Pipes, Nathan Peck](https://nathanpeck.com/microservice-principles-smart-endpoint-dumb-pipe/)
-‌* [Nishanil et al. (2022) Communication in a microservice architecture, learn.microsoft.com.](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture)
+* [Nishanil et al. (2022) Communication in a microservice architecture, learn.microsoft.com.](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture)
