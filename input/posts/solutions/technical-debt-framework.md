@@ -6,6 +6,7 @@ Description: Help teams manage technical debt by identifying and assessing exist
 Tags:
   - Architecture
   - Business
+  - Process
 Categories:
   - Process
 Draft: true
@@ -17,9 +18,13 @@ We have all been there. There's an urgent business problem. There's a software s
 
 This, at its core, is similar to technical debt. It's a shortcut (often documentation), which was made, to speed something up. And in the above case, it's unmanaged and not being repaid, so the business is paying 'interest' on it. And like a lot of credit, the interest can be very destructive.
 
+## Symptoms
+
+* Meetings.
+* Difficulty making changes or decisions
+* Long lead times for seemingly simple requests.
+
 ## The scale of the issue
-
-
 
 ## Background
 
@@ -47,12 +52,6 @@ Technical debt can be easily thought of in three types:
 * Process debt. The lack of appropriate or correct frameworks to operate modern systems in modern ways.
 * People debt. The lack of skills, knowledge and training for people to properly engage in current technologies and processes.
 * Technical debt. Unmaintained systems and software, where the cost to maintain or update is increased and keeps increasing.
-
-## Symptoms
-
-* Meetings.
-* Difficulty making changes or decisions
-* Long lead times for seemingly simple requests.
 
 ## Framework for Managing Technical Debt
 
