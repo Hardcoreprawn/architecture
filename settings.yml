@@ -21,7 +21,7 @@ Image: '/media/header01.png'
 PostSources: posts/**/*
 PageSources: pages/*
 Published: 2001-01-01
-# IsPost: => Outputs.FilterSources(Context.GetString("PostSources")).ContainsById(Document)
+IsPost: => Outputs.FilterSources(Context.GetString("PostSources")).ContainsById(Document)
 DateTimeInputCulture: "en-GB"
 DateTimeDisplayCulture: "en-GB"
 GenerateSearchIndex: true

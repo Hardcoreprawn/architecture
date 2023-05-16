@@ -4,7 +4,7 @@
 	<title />
 	<link rel="self" href="https://red-sand-078a6ea03.3.azurestaticapps.net/" />
 	<rights>Copyright James Brewster© 2023</rights>
-	<updated>2023-05-16T12:35:53Z</updated>
+	<updated>2023-05-16T12:40:19Z</updated>
 	<logo>https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png</logo>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/identity-auth</id>
@@ -47,7 +47,7 @@
 &lt;/ul&gt;
 &lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;This pattern, together with the &lt;a href="xref:gateway"&gt;Gateway&lt;/a&gt;, is recommended in most enterprise or B2B microservice models. It is ideal for a containerised application, which needs to minimise cross-talk and have a planned model for authorisation and identity.&lt;/li&gt;
+&lt;li&gt;This pattern, together with the &lt;a href="xref:gateways"&gt;Gateways&lt;/a&gt;, is recommended in most enterprise or B2B microservice models. It is ideal for a containerised application, which needs to minimise cross-talk and have a planned model for authorisation and identity.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
 &lt;ul&gt;
@@ -66,6 +66,43 @@
 &lt;/ul&gt;
 </content>
 		<summary>Authenticating users in microservices can be fraught with perils...</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property</id>
+		<title>Intellectual Property</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
+		<updated>2023-05-15T00:00:00Z</updated>
+		<content>&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;An ounce of prevention is worth a pound of cure. - Benjamin Franklin&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
+&lt;p&gt;The business should retain control of its intellectual property and ensure that it is not used without permission.&lt;/p&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Intellectual property is a valuable asset for the business. It is important to protect and manage the intellectual property of the business.&lt;/p&gt;
+&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
+&lt;p&gt;The business should ensure that its intellectual property is protected from infringement by others. Intellectual property should be managed in a way that maximizes its value to the business while minimizing the risk of infringement.&lt;/p&gt;
+&lt;h3 id="details-and-context"&gt;Details and Context&lt;/h3&gt;
+&lt;p&gt;Intellectual property is important because it is a valuable asset for the business. It can include patents, trademarks, copyrights, trade secrets, and other proprietary information.&lt;/p&gt;
+&lt;p&gt;Protecting intellectual property can help the business maintain its competitive advantage and prevent others from using its ideas or products without permission. It can also help the business generate revenue through licensing agreements or other means.&lt;/p&gt;
+&lt;p&gt;Managing intellectual property can be complex and requires careful planning and execution. The business should have policies and procedures in place to protect its intellectual property and ensure that it is not used without permission. This can include measures such as confidentiality agreements, non-disclosure agreements, and other legal protections.&lt;/p&gt;
+&lt;p&gt;There are several legal protections for intellectual property. Some of the most common include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Patents: A patent is a legal protection for an invention or process. It gives the inventor the exclusive right to make, use, and sell the invention for a certain period.&lt;/li&gt;
+&lt;li&gt;Trademarks: A trademark is a symbol, word, or phrase that identifies and distinguishes a product or service from those of others. It can be registered with the government to provide legal protection.&lt;/li&gt;
+&lt;li&gt;Copyrights: A copyright is a legal protection for original works of authorship such as books, music, and software. It gives the creator the exclusive right to reproduce and distribute the work.&lt;/li&gt;
+&lt;li&gt;Trade secrets: A trade secret is a confidential piece of information that provides a competitive advantage to a business. It can include things like formulas, processes, and customer lists.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are other legal protections available as well, depending on the type of intellectual property involved. It’s important to consult with an attorney who specializes in intellectual property law to determine the best course of action for your business.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/patents"&gt;Patents - gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/register-a-trademark"&gt;Trademarks - gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/copyright"&gt;Copyright - gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/protect-your-trade-secrets"&gt;Trade Secrets - gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>This page explains the importance of protecting intellectual property and provides examples of legal protections for intellectual property.</summary>
 	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/dumb-pipes</id>
@@ -105,43 +142,6 @@
 &lt;/ul&gt;
 </content>
 		<summary>This page is about designing and implementing effective communication between microservices in a distributed system.</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property</id>
-		<title>Intellectual Property</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-05-15T00:00:00Z</updated>
-		<content>&lt;blockquote&gt;
-&lt;p&gt;&amp;quot;An ounce of prevention is worth a pound of cure. - Benjamin Franklin&amp;quot;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;The business should retain control of its intellectual property and ensure that it is not used without permission.&lt;/p&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Intellectual property is a valuable asset for the business. It is important to protect and manage the intellectual property of the business.&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;The business should ensure that its intellectual property is protected from infringement by others. Intellectual property should be managed in a way that maximizes its value to the business while minimizing the risk of infringement.&lt;/p&gt;
-&lt;h3 id="details-and-context"&gt;Details and Context&lt;/h3&gt;
-&lt;p&gt;Intellectual property is important because it is a valuable asset for the business. It can include patents, trademarks, copyrights, trade secrets, and other proprietary information.&lt;/p&gt;
-&lt;p&gt;Protecting intellectual property can help the business maintain its competitive advantage and prevent others from using its ideas or products without permission. It can also help the business generate revenue through licensing agreements or other means.&lt;/p&gt;
-&lt;p&gt;Managing intellectual property can be complex and requires careful planning and execution. The business should have policies and procedures in place to protect its intellectual property and ensure that it is not used without permission. This can include measures such as confidentiality agreements, non-disclosure agreements, and other legal protections.&lt;/p&gt;
-&lt;p&gt;There are several legal protections for intellectual property. Some of the most common include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Patents: A patent is a legal protection for an invention or process. It gives the inventor the exclusive right to make, use, and sell the invention for a certain period.&lt;/li&gt;
-&lt;li&gt;Trademarks: A trademark is a symbol, word, or phrase that identifies and distinguishes a product or service from those of others. It can be registered with the government to provide legal protection.&lt;/li&gt;
-&lt;li&gt;Copyrights: A copyright is a legal protection for original works of authorship such as books, music, and software. It gives the creator the exclusive right to reproduce and distribute the work.&lt;/li&gt;
-&lt;li&gt;Trade secrets: A trade secret is a confidential piece of information that provides a competitive advantage to a business. It can include things like formulas, processes, and customer lists.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There are other legal protections available as well, depending on the type of intellectual property involved. It’s important to consult with an attorney who specializes in intellectual property law to determine the best course of action for your business.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/patents"&gt;Patents - gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/register-a-trademark"&gt;Trademarks - gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/copyright"&gt;Copyright - gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/protect-your-trade-secrets"&gt;Trade Secrets - gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>This page explains the importance of protecting intellectual property and provides examples of legal protections for intellectual property.</summary>
 	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/security-principles</id>

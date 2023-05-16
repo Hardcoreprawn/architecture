@@ -5,8 +5,8 @@
 		<link>https://red-sand-078a6ea03.3.azurestaticapps.net/</link>
 		<description />
 		<copyright>Copyright James Brewster© 2023</copyright>
-		<pubDate>Tue, 16 May 2023 12:35:53 GMT</pubDate>
-		<lastBuildDate>Tue, 16 May 2023 12:35:53 GMT</lastBuildDate>
+		<pubDate>Tue, 16 May 2023 12:40:19 GMT</pubDate>
+		<lastBuildDate>Tue, 16 May 2023 12:40:19 GMT</lastBuildDate>
 		<item>
 			<title>Identity, Authentication and Authorisation</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/identity-auth</link>
@@ -49,7 +49,7 @@
 &lt;/ul&gt;
 &lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;This pattern, together with the &lt;a href="xref:gateway"&gt;Gateway&lt;/a&gt;, is recommended in most enterprise or B2B microservice models. It is ideal for a containerised application, which needs to minimise cross-talk and have a planned model for authorisation and identity.&lt;/li&gt;
+&lt;li&gt;This pattern, together with the &lt;a href="xref:gateways"&gt;Gateways&lt;/a&gt;, is recommended in most enterprise or B2B microservice models. It is ideal for a containerised application, which needs to minimise cross-talk and have a planned model for authorisation and identity.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
 &lt;ul&gt;
@@ -65,6 +65,44 @@
 &lt;li&gt;&lt;a href="https://nordicapis.com/how-to-control-user-identity-within-microservices/"&gt;NordicAPIs - How to control user identity within microservices&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://medium.com/&amp;#64;maison.moa/using-jwt-json-web-tokens-to-authorize-users-and-protect-api-routes-3e04a1453c3e"&gt;Using JWT to authorize users and protect API routes&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/"&gt;Make secure .NET Microservices and Web Applications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Intellectual Property</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property</link>
+			<description>This page explains the importance of protecting intellectual property and provides examples of legal protections for intellectual property.</description>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property</guid>
+			<pubDate>Mon, 15 May 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;An ounce of prevention is worth a pound of cure. - Benjamin Franklin&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
+&lt;p&gt;The business should retain control of its intellectual property and ensure that it is not used without permission.&lt;/p&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Intellectual property is a valuable asset for the business. It is important to protect and manage the intellectual property of the business.&lt;/p&gt;
+&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
+&lt;p&gt;The business should ensure that its intellectual property is protected from infringement by others. Intellectual property should be managed in a way that maximizes its value to the business while minimizing the risk of infringement.&lt;/p&gt;
+&lt;h3 id="details-and-context"&gt;Details and Context&lt;/h3&gt;
+&lt;p&gt;Intellectual property is important because it is a valuable asset for the business. It can include patents, trademarks, copyrights, trade secrets, and other proprietary information.&lt;/p&gt;
+&lt;p&gt;Protecting intellectual property can help the business maintain its competitive advantage and prevent others from using its ideas or products without permission. It can also help the business generate revenue through licensing agreements or other means.&lt;/p&gt;
+&lt;p&gt;Managing intellectual property can be complex and requires careful planning and execution. The business should have policies and procedures in place to protect its intellectual property and ensure that it is not used without permission. This can include measures such as confidentiality agreements, non-disclosure agreements, and other legal protections.&lt;/p&gt;
+&lt;p&gt;There are several legal protections for intellectual property. Some of the most common include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Patents: A patent is a legal protection for an invention or process. It gives the inventor the exclusive right to make, use, and sell the invention for a certain period.&lt;/li&gt;
+&lt;li&gt;Trademarks: A trademark is a symbol, word, or phrase that identifies and distinguishes a product or service from those of others. It can be registered with the government to provide legal protection.&lt;/li&gt;
+&lt;li&gt;Copyrights: A copyright is a legal protection for original works of authorship such as books, music, and software. It gives the creator the exclusive right to reproduce and distribute the work.&lt;/li&gt;
+&lt;li&gt;Trade secrets: A trade secret is a confidential piece of information that provides a competitive advantage to a business. It can include things like formulas, processes, and customer lists.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are other legal protections available as well, depending on the type of intellectual property involved. It’s important to consult with an attorney who specializes in intellectual property law to determine the best course of action for your business.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/patents"&gt;Patents - gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/register-a-trademark"&gt;Trademarks - gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/copyright"&gt;Copyright - gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/protect-your-trade-secrets"&gt;Trade Secrets - gov.uk&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
@@ -105,44 +143,6 @@
 &lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/architecture-principle-messaging-systems-smart-end-points-dumb-pipes"&gt;Architecture Principles: Messaging Systems – Smart End Points, Dumb Pipes | AKF Partners&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://nathanpeck.com/microservice-principles-smart-endpoint-dumb-pipe/"&gt;Smart Endpoints and Dumb Pipes, Nathan Peck&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture"&gt;Nishanil et al. (2022) Communication in a microservice architecture, learn.microsoft.com.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Intellectual Property</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property</link>
-			<description>This page explains the importance of protecting intellectual property and provides examples of legal protections for intellectual property.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property</guid>
-			<pubDate>Mon, 15 May 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;blockquote&gt;
-&lt;p&gt;&amp;quot;An ounce of prevention is worth a pound of cure. - Benjamin Franklin&amp;quot;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;The business should retain control of its intellectual property and ensure that it is not used without permission.&lt;/p&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Intellectual property is a valuable asset for the business. It is important to protect and manage the intellectual property of the business.&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;The business should ensure that its intellectual property is protected from infringement by others. Intellectual property should be managed in a way that maximizes its value to the business while minimizing the risk of infringement.&lt;/p&gt;
-&lt;h3 id="details-and-context"&gt;Details and Context&lt;/h3&gt;
-&lt;p&gt;Intellectual property is important because it is a valuable asset for the business. It can include patents, trademarks, copyrights, trade secrets, and other proprietary information.&lt;/p&gt;
-&lt;p&gt;Protecting intellectual property can help the business maintain its competitive advantage and prevent others from using its ideas or products without permission. It can also help the business generate revenue through licensing agreements or other means.&lt;/p&gt;
-&lt;p&gt;Managing intellectual property can be complex and requires careful planning and execution. The business should have policies and procedures in place to protect its intellectual property and ensure that it is not used without permission. This can include measures such as confidentiality agreements, non-disclosure agreements, and other legal protections.&lt;/p&gt;
-&lt;p&gt;There are several legal protections for intellectual property. Some of the most common include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Patents: A patent is a legal protection for an invention or process. It gives the inventor the exclusive right to make, use, and sell the invention for a certain period.&lt;/li&gt;
-&lt;li&gt;Trademarks: A trademark is a symbol, word, or phrase that identifies and distinguishes a product or service from those of others. It can be registered with the government to provide legal protection.&lt;/li&gt;
-&lt;li&gt;Copyrights: A copyright is a legal protection for original works of authorship such as books, music, and software. It gives the creator the exclusive right to reproduce and distribute the work.&lt;/li&gt;
-&lt;li&gt;Trade secrets: A trade secret is a confidential piece of information that provides a competitive advantage to a business. It can include things like formulas, processes, and customer lists.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There are other legal protections available as well, depending on the type of intellectual property involved. It’s important to consult with an attorney who specializes in intellectual property law to determine the best course of action for your business.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/patents"&gt;Patents - gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/register-a-trademark"&gt;Trademarks - gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/copyright"&gt;Copyright - gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/protect-your-trade-secrets"&gt;Trade Secrets - gov.uk&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
