@@ -46,7 +46,9 @@ As early as 1992, Ward Cunningham used the term Technical debt to explain to man
 The analogy keeps going. Not paying technical debt, like credit cards, can swiftly compound the interest. conversely, paying down technical debt early, by refactoring in advance to improve code quality, making it easier to work with, understand and extend, is like saving. That can also compound, improving the agility of your software, and increasing its value and productivity.
 
 > In the book, I make the following definition of “refactoring”
+>
 > *noun*: a change made to the internal structure of software to make it easier to understand and cheaper to modify without changing its observable behavior
+>
 > *verb*: to restructure software by applying a series of refactorings without changing its observable behavior. -Martin Fowler, refactoring.com
 
 So, if you develop quickly, and do not give your development teams time to refactor, reassess and improve the software you rely on, it will get more expensive to work on, and gradually become less of an asset and more of a liability.
