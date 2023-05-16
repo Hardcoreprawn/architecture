@@ -7,7 +7,7 @@ Tags:
   - Patterns
   - Microservices
 Draft: False
-Published: 2023-05-12
+Published: 2023-05-16
 Categories:
   - Patterns
 Description: Authenticating users in microservices can be fraught with perils...
