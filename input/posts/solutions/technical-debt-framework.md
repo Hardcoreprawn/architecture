@@ -101,7 +101,7 @@ McKinsey also says that most organisations are paying way more than 10% interest
 Tech debt should be tracked by the team/group head as a key metric. It may be that you have to find a way to expose or count the cost of this debt, which isn't always easy. Some areas you can track:
 
 * Software Development
-  * [Complexity](https://linearb.io/blog/what-is-code-complexity/) - These can all be tracked and monitored on each project to understand where the complexity lies and help identify areas which need work.
+  * [Complexity](https://linearb.io/blog/what-is-code-complexity/) - Various code complexity metrics can be tracked and monitored on each project to understand where the complexity lies and help identify areas which need work.
   * [New Bugs vs Closed Bugs](https://dzone.com/articles/8-top-metrics-for-measuring-your-technical-debt) - Are your bugs growing or falling?
   * [Testing Effort](https://linearb.io/blog/how-to-measure-technical-debt/#:~:text=Measuring%20Technical%20Debt%3A%20Identify%20High-Risk%20Areas%201%20Keep,Risk%20and%20Add%20Importance%20to%20the%20Mix%20) - An easy approximation is to look at test coverage. Test coverage isn't a golden bullet by any means; whilst a low value is a warning, a high volume doesn't mean the tests are good, coverage can show how well-understood a code base is. As such, have a threshold, such as 80% as a target.
 * Infrastructure - Track the cost to service and host the application. Compare the current choice with the preferred pattern for hosting the application. Is it worth switching? Will you save time/money?
