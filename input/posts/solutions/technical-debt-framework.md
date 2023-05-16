@@ -40,7 +40,7 @@ On a more positive note, the same whitepaper quoted a former CIO at a major clou
 
 ## Background
 
-As early as 1992, Ward Cunningham used the term Technical debt to explain to management why itterative software development was a better choice:
+As early as 1992, Ward Cunningham used the term Technical debt to explain to management why iterative software development was a better choice:
 
 >Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite… The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise. — Ward Cunningham, The WyCash Portfolio Management System, 1992
 
@@ -48,8 +48,7 @@ The analogy keeps going. Not paying technical debt, like credit cards, can swift
 
 > In the book, I make the following definition of “refactoring”
 > *noun*: a change made to the internal structure of software to make it easier to understand and cheaper to modify without changing its observable behavior
-> *verb*: to restructure software by applying a series of refactorings without changing its observable behavior.
--Martin Fowler, refactoring.com
+> *verb*: to restructure software by applying a series of refactorings without changing its observable behavior. -Martin Fowler, refactoring.com
 
 So, if you develop quickly, and do not give your development teams time to refactor, reassess and improve the software you rely on, it will get more expensive to work on, and gradually become less of an asset and more of a liability.
 
