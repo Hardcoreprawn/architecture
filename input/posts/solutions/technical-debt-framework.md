@@ -120,6 +120,7 @@ If you mix these with importance and risk, you can approximate the 'value' and s
 
 ## Conclusion
 
+Technical debt is a shortcut that was made to speed something up. It’s a lack of appropriate or correct frameworks to operate modern systems in modern ways. It’s the lack of skills, knowledge and training for people to properly engage in current technologies and processes. It’s unmaintained systems and software, where the cost to maintain or update is increased and keeps increasing. Technical debt management all boils down to one point. Pay it back. Don’t let it grow. Use the time you have to pay it forward (invest) rather than focus on the next new shiny thing. The goal is not to remove tech debt but to keep it at a workable level. Companies need to identify and track tech debt, to ensure it can be managed to the best advantage.
 
 ## References
 
