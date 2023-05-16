@@ -81,22 +81,25 @@
   "frontMatter.taxonomy.seoDescriptionField": "Description",
   "frontMatter.taxonomy.seoTitleField": "Title",
   "frontMatter.taxonomy.tags": [
-    "Application",
+    "Application Principles",
     "Architectural Principles",
     "Architecture",
     "Business",
+    "Business Principles",
     "Data",
+    "Data Principles",
     "Microservices",
+    "NFRs",
     "Non-Functional Requirements",
     "Patterns",
     "Requirements",
     "Security",
-    "Technical",
-    "Technology"
+    "Technical Principles"
   ],
   "frontMatter.taxonomy.categories": [
     "Patterns",
     "Principles",
+    "Process",
     "Requirements"
   ],
   "frontMatter.dashboard.openOnStart": true

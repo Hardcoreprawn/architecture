@@ -1,7 +1,7 @@
 ---
 Title: Technical Debt Framework
 Slug: technical-debt-framework
-Lead: Problems with code are like financial debt. It’s OK to borrow against the future, as long as you pay it off.
+Lead: Problems with code are like financial debt. It’s OK to borrow against the future, as long as you pay it off before the interest starts to bite.
 Description: Help teams manage technical debt by identifying and assessing existing debt across the enterprise and prioritizing items in an orderly fashion.
 Tags:
   - Architecture
@@ -16,6 +16,10 @@ Published: 01/01/2001
 We have all been there. There's an urgent business problem. There's a software solution that promises to resolve that issue and make everything great. So we get it. And install it, and then someone doesn't quite finish installing it. And something doesn't work properly. Or someone leaves, and now no one knows how to fix that one thing-, and everyone spends time working around it.
 
 This, at its core, is similar to technical debt. It's a shortcut (often documentation), which was made, to speed something up. And in the above case, it's unmanaged and not being repaid, so the business is paying 'interest' on it. And like a lot of credit, the interest can be very destructive.
+
+## The scale of the issue
+
+
 
 ## Background
 
