@@ -7,8 +7,9 @@ Tags:
   - Architecture
   - Business
   - Process
+  - Solution
 Categories:
-  - Process
+  - Solution
 Draft: true
 Published: 01/01/2001
 ---
@@ -25,6 +26,16 @@ This, at its core, is similar to technical debt. It's a shortcut (often document
 * Long lead times for seemingly simple requests.
 
 ## The scale of the issue
+
+In a 2020 survey, McKinsey asked a group of CIOs who are part of a panel, what percentage of their budget was being diverted to tech debt, and they responded that 10-20% was typical.
+
+More worrying was the statistic that CIOs felt the value of the technical assets was made up of 20-40% tech debt, before decrepiation.
+
+More recently, a repeat of this study found that 60% of CIOs felt their organisation had perceptibly increased over the past three years.
+
+On a more positive note, the same whitepaper quoted a former CIO at a major cloud provider:
+
+>"By reinventing our debt management, we went from 75 percent of engineer time paying the [tech debt] ‘tax’ to 25 percent. It allowed us to be who we are today."
 
 ## Background
 
@@ -62,3 +73,7 @@ Technical debt can be easily thought of in three types:
 ### Managing Technical Debt
 
 ## Conclusion
+
+## References
+
+* [Tech debt: Reclaiming tech equity | McKinsey (2020) www.mckinsey.com](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-debt-reclaiming-tech-equity).
