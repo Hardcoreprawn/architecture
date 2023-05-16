@@ -15,15 +15,16 @@ Published: 01/01/2001
 ---
 ## Introduction
 
-We have all been there. There's an urgent business problem. There's a software solution that promises to resolve that issue and make everything great. So we get it. And install it, and then someone doesn't quite finish installing it. And something doesn't work properly. Or someone leaves, and now no one knows how to fix that one thing-, and everyone spends time working around it.
+We have all been there. There's an urgent business problem. There's a software solution that promises to resolve that issue and make everything great. So we get it. And install it, and then someone doesn't quite finish installing it. And something doesn't work properly. Or someone leaves, and now no one knows how to fix that one thing, and everyone spends time working around it.
 
 This, at its core, is similar to technical debt. It's a shortcut (often documentation), which was made, to speed something up. And in the above case, it's unmanaged and not being repaid, so the business is paying 'interest' on it. And like a lot of credit, the interest can be very destructive.
 
 ## Symptoms
 
-* Meetings.
-* Difficulty making changes or decisions
-* Long lead times for seemingly simple requests.
+* If technology or process decisions require meetings to work around or make decisions, it's a possible sign of technical debt.
+* If changes take a long time to make, and as such, decisions to make changes take a long time as well, it could be a sign of technical debt.
+If simple changes or expectable business requirements take a long time to be delivered, more than you'd expect, you probably have technical debt.
+* If your developers always estimate far too low, then you probably have technical debt.
 
 ## The scale of the issue
 

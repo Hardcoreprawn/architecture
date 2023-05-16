@@ -5,119 +5,207 @@
 		<link>https://red-sand-078a6ea03.3.azurestaticapps.net/</link>
 		<description />
 		<copyright>Copyright James Brewster© 2023</copyright>
-		<pubDate>Thu, 11 May 2023 13:54:08 GMT</pubDate>
-		<lastBuildDate>Thu, 11 May 2023 13:54:08 GMT</lastBuildDate>
+		<pubDate>Tue, 16 May 2023 12:35:53 GMT</pubDate>
+		<lastBuildDate>Tue, 16 May 2023 12:35:53 GMT</lastBuildDate>
 		<item>
-			<title>Security Principles</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/security-principles</link>
-			<description>&lt;p&gt;Be Suspicious, Shift-Security-Left, Least Privilege.&lt;/p&gt;</description>
+			<title>Identity, Authentication and Authorisation</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/identity-auth</link>
+			<description>Authenticating users in microservices can be fraught with perils...</description>
 			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/security-principles</guid>
-			<pubDate>Thu, 11 May 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Be Suspicious, Shift-Security-Left, Least Privilege.&lt;/p&gt;
-&lt;p&gt;Zero-Trust Model.&lt;/p&gt;
-&lt;p&gt;Check and verify the input. Look for tainted input.&lt;/p&gt;
-&lt;p&gt;With a modern application, there is no network boundary. It's down to identities. So check people are who they say they are and do what you expect them to.&lt;/p&gt;
-&lt;p&gt;Start thinking of security as soon as possible in the design process. It's practically impossible to effectively retrofit security. Adding security to an application is an attitude to everything you do from concept to production.&lt;/p&gt;
-&lt;p&gt;This doesn't need to be onerous, but it is important to start with security in mind.&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Gateways</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/gateways</link>
-			<description>Once you have decomposed your web services, how do you keep the user experience connected, easy and secure?</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/gateways</guid>
-			<pubDate>Wed, 10 May 2023 15:02:58 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Exposing multiple services out of a container cluster can cause issues and complexity as you scale out the number of services. The Gateway pattern uses a proxy to manage several complexities and performance improvements.&lt;/p&gt;
-&lt;p&gt;The gateway pattern has three main facets, whish are discussed and can be implemented separately, but typically all on the same gateway(s).&lt;/p&gt;
-&lt;h2 id="when-to-avoid"&gt;When to Avoid&lt;/h2&gt;
-&lt;p&gt;Don't use this pattern for small sites, or even a handful of services; the overhead will be excessive.&lt;/p&gt;
-&lt;h2 id="when-to-use"&gt;When to use&lt;/h2&gt;
-&lt;p&gt;Use this pattern when you get into more than a handful of services with multiple teams working across them, with a moderate to large user-base.&lt;/p&gt;
-&lt;h3 id="routing"&gt;Routing&lt;/h3&gt;
-&lt;p&gt;One way to connect clients to services is direct. A direct client-to-microservice architecture provides the fewest moving parts. However, each service requires a TCP port to connect to. As each service is using a different port, this can start to prove difficult to manage, especially for security-conscious customers, who need to minimise exposure.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/direct-to-client.png" alt="Direct-to-Client Routing. Count those endpoints!"&gt;&lt;/p&gt;
-&lt;p&gt;This can be even more complex when multiple services start to be available, which offer the same functionality. Which service do I connect to? How do I find the right service? It can be further worsened if different versions of the same service start to be in use, such as A/B testing.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/gateway-routing.png" alt="Gateway-Routing, just one way in or out"&gt;&lt;/p&gt;
-&lt;p&gt;Gateway Aggregation makes use of a proxy service, in-front of the microservice endpoints, redirecting pages and folders, hiding details of the production layout away from the outside world, so changes can be made and introduced in a lot simpler manner.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-routing"&gt;Gateway Routing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="offloading"&gt;Offloading&lt;/h3&gt;
-&lt;p&gt;Using a gateway allows shared services or cross-cutting concerns to be handled in line for multiple services. These can be things like:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Authentication or authorisation&lt;/li&gt;
-&lt;li&gt;SSL Offloading and certificate management&lt;/li&gt;
-&lt;li&gt;Network Monitoring and throttling&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In some cases, these items might need special skills or segregation of responsibilities. In others, it is more effective to do these things once.&lt;/p&gt;
-&lt;p&gt;In either case, the use of a gateway to offload functionality mustn't create a dependency between the gateway and any downstream services, or it risks becoming a blocker to development.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading"&gt;Gateway Offloading&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="aggregation"&gt;Aggregation&lt;/h3&gt;
-&lt;p&gt;Gateway aggregation allows a client to minimise unnecessary chatter, especially valuable over the internet or mobile networks, when communicating with a service. By collecting requests and responses and dispatching them in batches, updates and performance can be better managed, whilst the service appears to come from a common host.&lt;/p&gt;
-&lt;p&gt;Done properly, aggregation allows a server to manage client connections and improve performance.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation"&gt;Gateway Aggregation&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Microservices</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices</link>
-			<description>Microservices are a collection of application services that are independently deployable, loosely coupled and organized around business capabilities.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices</guid>
-			<pubDate>Wed, 10 May 2023 10:37:47 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Microservices are a way to build applications and are used by some of the biggest sites and systems online, such as Netflix and Amazon. They let systems be updated safely and scale well. But they are complex and require firm principles in place to work properly.&lt;/p&gt;
-&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
-&lt;p&gt;Microservices architecture is an architectural style that structures an application as a collection of services that are independently deployable, loosely coupled, organized around business capabilities and owned by a small team. In simple terms, microservices are a specific method of designing software systems to structure a single application as a collection of loosely coupled services.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/microservices-patterns.png" alt="Microservices Pattern"&gt;
-&lt;em&gt;Model of a Monolith to Microservices migration, showing sub-patterns&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;This is a reference pattern, with several optional sub-patterns.&lt;/p&gt;
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/identity-auth</guid>
+			<pubDate>Tue, 16 May 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
+&lt;p&gt;This pattern describes a central authentication model, suitable for a microservices web application. It builds on several other patterns, to provide a scalable way to identify, authenticate and authorise access to resources, data and services.&lt;/p&gt;
+&lt;p&gt;In this example, a role-based authorization model is being used. Customer policies would be more configurable, but also more complex.&lt;/p&gt;
+&lt;h3 id="illustration"&gt;Illustration&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/media/index/api-gateway-centralized-authentication.png" alt="API Gateway Centralized authentication" /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/"&gt;Rousos (2023) Securing .NET Microservices and Web Applications, learn.microsoft.com.&lt;/a&gt;(Accessed: 16 May 2023).‌&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In this instance, a mobile app is shown. But a static site, calling an API, a Single Page Application, or an MVC application would use a similar method. This could use the &lt;a href="https://akfpartners.com/growth-blog/backend-for-frontend#:%7E:text=In%20the%20Backend%20for%20Frontend%20pattern%2C%20a%20service,differ%20from%20a%20traditional%20API%20or%20monolithic%20gateway."&gt;Backends-For-Frontends&lt;/a&gt; pattern, to offset any differences.&lt;/p&gt;
 &lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Scale and resilience in each service.&lt;/li&gt;
-&lt;li&gt;Safe deployment of updates to individual services.&lt;/li&gt;
-&lt;li&gt;Separation of services, allowing changes to be made locally and quickly, with
-minimal impact on other services.&lt;/li&gt;
+&lt;li&gt;By using the gateway, authentication is offloaded to the gateway and centralised. &lt;a href="xref:gateways"&gt;Gateways&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The gateway issues a signed token, which contains the authorised user's roles, which can be used for the lifespan of the token, reducing chatter. &lt;a href="xref:microservices-anti-patterns"&gt;Microservices Anti-patterns&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The token is long-lived, reducing user frustration. &lt;a href="xref:ease-of-use"&gt;Ease-of-Use&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Once implemented, downstream services simply need to have their role added to the token and respect it.&lt;/li&gt;
+&lt;li&gt;Identity management and storage can be offloaded to the customer's preferred vendor, using open standards, Including:
+&lt;ul&gt;
+&lt;li&gt;Microsoft, Google or Facebook identities, such as Microsoft AzureAD B2C.&lt;/li&gt;
+&lt;li&gt;Microsoft Azure AD identities, using B2B Federation.&lt;/li&gt;
+&lt;li&gt;Any OpenID Connect or OAuth2.0 Identities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="drawbacks-to-this-pattern"&gt;Drawbacks to this pattern&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;It can be complex, quickly.&lt;/li&gt;
-&lt;li&gt;Overwhelming for a small number of teams, due to a large number of
-components.&lt;/li&gt;
-&lt;li&gt;The Danger of component sprawl if services are over-specialized.&lt;/li&gt;
+&lt;li&gt;It assumes simple role-based authorisation. A more complex policy-based model would require additional depth and complexity in the token, increasing its size and complexity.&lt;/li&gt;
+&lt;li&gt;The token is fairly easy to 'crack', so should never be shared outside the network. A separate reference token model is recommended, where the token is used within the cluster, and used by the gateway as a delegated authorisation.
+&lt;ul&gt;
+&lt;li&gt;The user would have a lean token or reference cookie, which only correlates to the token on the gateway. Think of this model as a delegation model, rather than an authorisation model.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;This creates a dependency on external identity vendors, which can be hard to manage.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;This pattern is for applications that need to grow, which need to manage
-their costs and support a large degree of change and experimentation.&lt;/li&gt;
-&lt;li&gt;When reliability is critical to business, reputation or safety.&lt;/li&gt;
+&lt;li&gt;This pattern, together with the &lt;a href="xref:gateway"&gt;Gateway&lt;/a&gt;, is recommended in most enterprise or B2B microservice models. It is ideal for a containerised application, which needs to minimise cross-talk and have a planned model for authorisation and identity.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Because you want to be down with the kids, and you think it's cool.&lt;/li&gt;
-&lt;li&gt;Because you want to use the 'best' type of technology and work at Google.&lt;/li&gt;
-&lt;li&gt;For a simple application, which doesn't have a high probability of needing
-change, addition or integration.&lt;/li&gt;
-&lt;li&gt;For an application that won't be making lots of changes, with lots of
-active users.&lt;/li&gt;
-&lt;li&gt;For your Blog.&lt;/li&gt;
+&lt;li&gt;This pattern is not suitable for use on unsecured networks. The contents of the token can be used to understand the user and their roles.
+&lt;ul&gt;
+&lt;li&gt;This pattern still promotes zero-trust, as every service will validate the token, and must trust the issuer and check for tampering.&lt;/li&gt;
+&lt;li&gt;Using a reference token, issued at the gateway to the external user, which does NOT contain any useful information can mitigate this.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
-&lt;p&gt;Typically, microservices architectures require a good understanding of the business domain model, before development can begin. This ensures that services align with specific functions, which can be built in line with the business. &lt;a href="https://en.wikipedia.org/wiki/Conway%27s_law"&gt;Conways Law&lt;/a&gt; states that any organisation which designs a system will design one that looks like the organisation. This needs to be considered as if your microservices don't align with your business model, it will be very difficult to succeed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://nordicapis.com/how-to-control-user-identity-within-microservices/"&gt;NordicAPIs - How to control user identity within microservices&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/&amp;#64;maison.moa/using-jwt-json-web-tokens-to-authorize-users-and-protect-api-routes-3e04a1453c3e"&gt;Using JWT to authorize users and protect API routes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/"&gt;Make secure .NET Microservices and Web Applications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Dumb Pipes</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/dumb-pipes</link>
+			<description>This page is about designing and implementing effective communication between microservices in a distributed system.</description>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/dumb-pipes</guid>
+			<pubDate>Mon, 15 May 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;As services scale in a microservices architecture, they need to communicate. A communication network is important, to make sure each service can easily talk to the others, but as they scale, it's important to make sure they can grow and continue to communicate.&lt;/p&gt;
+&lt;p&gt;This pattern uses the principle of 'Smart end-points, dumb pipes'. If the pipes are clever, they need maintenance, everyone has to wait on the team which is responsible for the pipe, which reduces time to market.&lt;/p&gt;
+&lt;p&gt;If the pipe is dumb, anyone can send a message easily, anyone can consume a message easily. They may need to adjust the format, but that's something they can do within their team.&lt;/p&gt;
+&lt;p&gt;A truly stupid pipe should handle routing and that's it.&lt;/p&gt;
+&lt;h2 id="illustration"&gt;Illustration&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/media/communication-in-microservice-architecture/sync-vs-async-patterns-across-microservices.png" alt="A diagram showing communications in a Microservices architecture" /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Anti-patterns and patterns in communication between microservices &lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture"&gt;from learn.microsoft.com&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Summarizing all of the above, the benefits of smart endpoints and dumb pipes are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lower cost of messaging infrastructure - pushes the cost of goods sold closer to the producer and consumer. Allows messaging infrastructure to scale by the number of messages instead of the computational complexity of messages. License cost is reduced as fewer compute nodes are needed for message transit.&lt;/li&gt;
+&lt;li&gt;Organization Scalability – teams aren’t reliant on transforms created by a centralized team.&lt;/li&gt;
+&lt;li&gt;Low Latency – because computation is limited, messages are delivered more quickly and predictably to end consumers.&lt;/li&gt;
+&lt;li&gt;Capacity and scalability of messaging infrastructure – increased significantly as compute is not part of the scale of the platform.&lt;/li&gt;
+&lt;li&gt;Availability of messaging infrastructure – because computing is removed, so is a type of failure. As such, availability increases.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="assumptions"&gt;Assumptions&lt;/h2&gt;
-&lt;p&gt;In choosing this pattern, you ruled out simpler options as not being capable.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;You have time and space for teams to find their way; this is hard and it
-will go wrong.&lt;/li&gt;
+&lt;li&gt;Messages will need to be in a defined format, which anyone can reference and understand on their own. An API with a contract is a good way to do this.&lt;/li&gt;
+&lt;li&gt;Teams will need to adhere to contracts. These can be changed (issues, etc.), but this should be done properly.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="related-articles"&gt;Related Articles&lt;/h2&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:microservices-anti-patterns"&gt;Microservices Anti-Patterns&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/microservices/"&gt;Microsoft - Microservices design&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/microservice-architecture-principles"&gt;AKF Partners - Microservices Architecture Principles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://martinfowler.com/articles/microservices.html."&gt;Lewis, J. and Fowler, M. (2014) Microservices, martinfowler.com.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/architecture-principle-messaging-systems-smart-end-points-dumb-pipes"&gt;Architecture Principles: Messaging Systems – Smart End Points, Dumb Pipes | AKF Partners&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://nathanpeck.com/microservice-principles-smart-endpoint-dumb-pipe/"&gt;Smart Endpoints and Dumb Pipes, Nathan Peck&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture"&gt;Nishanil et al. (2022) Communication in a microservice architecture, learn.microsoft.com.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Intellectual Property</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property</link>
+			<description>This page explains the importance of protecting intellectual property and provides examples of legal protections for intellectual property.</description>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property</guid>
+			<pubDate>Mon, 15 May 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;An ounce of prevention is worth a pound of cure. - Benjamin Franklin&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
+&lt;p&gt;The business should retain control of its intellectual property and ensure that it is not used without permission.&lt;/p&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Intellectual property is a valuable asset for the business. It is important to protect and manage the intellectual property of the business.&lt;/p&gt;
+&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
+&lt;p&gt;The business should ensure that its intellectual property is protected from infringement by others. Intellectual property should be managed in a way that maximizes its value to the business while minimizing the risk of infringement.&lt;/p&gt;
+&lt;h3 id="details-and-context"&gt;Details and Context&lt;/h3&gt;
+&lt;p&gt;Intellectual property is important because it is a valuable asset for the business. It can include patents, trademarks, copyrights, trade secrets, and other proprietary information.&lt;/p&gt;
+&lt;p&gt;Protecting intellectual property can help the business maintain its competitive advantage and prevent others from using its ideas or products without permission. It can also help the business generate revenue through licensing agreements or other means.&lt;/p&gt;
+&lt;p&gt;Managing intellectual property can be complex and requires careful planning and execution. The business should have policies and procedures in place to protect its intellectual property and ensure that it is not used without permission. This can include measures such as confidentiality agreements, non-disclosure agreements, and other legal protections.&lt;/p&gt;
+&lt;p&gt;There are several legal protections for intellectual property. Some of the most common include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Patents: A patent is a legal protection for an invention or process. It gives the inventor the exclusive right to make, use, and sell the invention for a certain period.&lt;/li&gt;
+&lt;li&gt;Trademarks: A trademark is a symbol, word, or phrase that identifies and distinguishes a product or service from those of others. It can be registered with the government to provide legal protection.&lt;/li&gt;
+&lt;li&gt;Copyrights: A copyright is a legal protection for original works of authorship such as books, music, and software. It gives the creator the exclusive right to reproduce and distribute the work.&lt;/li&gt;
+&lt;li&gt;Trade secrets: A trade secret is a confidential piece of information that provides a competitive advantage to a business. It can include things like formulas, processes, and customer lists.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are other legal protections available as well, depending on the type of intellectual property involved. It’s important to consult with an attorney who specializes in intellectual property law to determine the best course of action for your business.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/patents"&gt;Patents - gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/register-a-trademark"&gt;Trademarks - gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/copyright"&gt;Copyright - gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/protect-your-trade-secrets"&gt;Trade Secrets - gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Security Principles</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/security-principles</link>
+			<description>&lt;p&gt;As a business, we want to adopt a Zero-trust approach to our business and use of technology. This model provides the best combination of security and agility for our enterprise.&lt;/p&gt;</description>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/security-principles</guid>
+			<pubDate>Thu, 11 May 2023 15:11:41 GMT</pubDate>
+			<content:encoded>&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
+&lt;p&gt;As a business, we want to adopt a Zero-trust approach to our business and use of technology. This model provides the best combination of security and agility for our enterprise.&lt;/p&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Zero Trust is a mature target model in 2023. It supports the capabilities and organisation needs in the current climate and, properly implemented, it is proven to improve user experience and security posture.&lt;/p&gt;
+&lt;p&gt;By commoditising the network, and assuming no device or user is anywhere safe, organisations can improve access to services AND improve security. In some cases, this can happen whilst overall costs come down, through a reduced vendor footprint and reduced local hosting, traffic and operations.&lt;/p&gt;
+&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
+&lt;p&gt;Zero Trust is a security approach built on three principles:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Verify Explicitly&lt;/li&gt;
+&lt;li&gt;Use 'least privilege' access&lt;/li&gt;
+&lt;li&gt;Assume Breach&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Let's explore these three points.&lt;/p&gt;
+&lt;h3 id="verify-explicitly"&gt;Verify Explicitly&lt;/h3&gt;
+&lt;p&gt;Make use of the tools and data points available to validate that access is being granted to the right person or service, and that they are who they say they are. This should take into account things like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Geographic location.&lt;/li&gt;
+&lt;li&gt;Device type, health and validity.&lt;/li&gt;
+&lt;li&gt;Data Classification and Permissions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="use-least-privilege-access"&gt;Use 'Least Privilege' access&lt;/h3&gt;
+&lt;p&gt;Make sure that people and services only have relevant access to their roles; no more or less. For escalated privileges, use concepts like Just-In-Time access to make sure that elevated logons are being approved, logged and cleared. This can also encompass:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Risk-based policies, that adapt the authentication to the level of risk.&lt;/li&gt;
+&lt;li&gt;A 'Four eyes' principle, to make sure access to elevated roles is approved by a second person, reducing the risk of lone insider threat.&lt;/li&gt;
+&lt;li&gt;Classify Data and Services according to value and risk and protect them appropriately.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="assume-breach"&gt;Assume Breach&lt;/h3&gt;
+&lt;p&gt;Log and monitor access to services and data. Minimise the impact of any breach, by controlling shared resources and accounts. Try to avoid unnecessary dependencies or permissions. This can be done through:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding appropriate monitoring and logging to applications.&lt;/li&gt;
+&lt;li&gt;Using single sign-on to ease tracking and logging.&lt;/li&gt;
+&lt;li&gt;Using the Bulkhead pattern, to minimise the danger between services and threads.&lt;/li&gt;
+&lt;li&gt;Actively monitor and control inputs, to help minimise breaches. Control access points and validate data entry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="objective"&gt;Objective&lt;/h2&gt;
+&lt;p&gt;Remove implicit trust throughout the environment and instead use processes, policies, and technologies to continuously authenticate and authorize entities as trustworthy before actually granting access&lt;/p&gt;
+&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
+&lt;p&gt;Adopting a zero-trust security model can benefit us by providing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Better visibility into traffic and access patterns, which can result in better-developed and targeted systems.&lt;/li&gt;
+&lt;li&gt;An enhanced user experience, typically with faster login times and lower password or account fatigue.&lt;/li&gt;
+&lt;li&gt;A reduction in data breaches and an improvement in compliance.&lt;/li&gt;
+&lt;li&gt;Reduction in the complexity of infrastructure and an improvement in security posture.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Improperly integrated or configured, this approach could result in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increased complexity and cost, often through having duplicate capabilities or the sprawl of security services and appliances.&lt;/li&gt;
+&lt;li&gt;A lack of planning can result in expensive installations and purchases.&lt;/li&gt;
+&lt;li&gt;Without a coherent policy around user access, friction can be increased as users fight with additional factors and complex passwords.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
@@ -274,6 +362,106 @@ Api-version: 1.1
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
+			<title>Gateways</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/gateways</link>
+			<description>Once you have decomposed your web services, how do you keep the user experience connected, easy and secure?</description>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/gateways</guid>
+			<pubDate>Tue, 09 May 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Exposing multiple services out of a container cluster can cause issues and complexity as you scale out the number of services. The Gateway pattern uses a proxy to manage several complexities and performance improvements.&lt;/p&gt;
+&lt;p&gt;The gateway pattern has three main facets, whish are discussed and can be implemented separately, but typically all on the same gateway(s).&lt;/p&gt;
+&lt;h2 id="when-to-avoid"&gt;When to Avoid&lt;/h2&gt;
+&lt;p&gt;Don't use this pattern for small sites, or even a handful of services; the overhead will be excessive.&lt;/p&gt;
+&lt;h2 id="when-to-use"&gt;When to use&lt;/h2&gt;
+&lt;p&gt;Use this pattern when you get into more than a handful of services with multiple teams working across them, with a moderate to large user-base.&lt;/p&gt;
+&lt;h3 id="routing"&gt;Routing&lt;/h3&gt;
+&lt;p&gt;One way to connect clients to services is direct. A direct client-to-microservice architecture provides the fewest moving parts. However, each service requires a TCP port to connect to. As each service is using a different port, this can start to prove difficult to manage, especially for security-conscious customers, who need to minimise exposure.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/direct-to-client.png" alt="Direct-to-Client Routing. Count those endpoints!"&gt;&lt;/p&gt;
+&lt;p&gt;This can be even more complex when multiple services start to be available, which offer the same functionality. Which service do I connect to? How do I find the right service? It can be further worsened if different versions of the same service start to be in use, such as A/B testing.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/gateway-routing.png" alt="Gateway-Routing, just one way in or out"&gt;&lt;/p&gt;
+&lt;p&gt;Gateway Aggregation makes use of a proxy service, in-front of the microservice endpoints, redirecting pages and folders, hiding details of the production layout away from the outside world, so changes can be made and introduced in a lot simpler manner.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-routing"&gt;Gateway Routing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="offloading"&gt;Offloading&lt;/h3&gt;
+&lt;p&gt;Using a gateway allows shared services or cross-cutting concerns to be handled in line for multiple services. These can be things like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Authentication or authorisation&lt;/li&gt;
+&lt;li&gt;SSL Offloading and certificate management&lt;/li&gt;
+&lt;li&gt;Network Monitoring and throttling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In some cases, these items might need special skills or segregation of responsibilities. In others, it is more effective to do these things once.&lt;/p&gt;
+&lt;p&gt;In either case, the use of a gateway to offload functionality mustn't create a dependency between the gateway and any downstream services, or it risks becoming a blocker to development.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-offloading"&gt;Gateway Offloading&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="aggregation"&gt;Aggregation&lt;/h3&gt;
+&lt;p&gt;Gateway aggregation allows a client to minimise unnecessary chatter, especially valuable over the internet or mobile networks, when communicating with a service. By collecting requests and responses and dispatching them in batches, updates and performance can be better managed, whilst the service appears to come from a common host.&lt;/p&gt;
+&lt;p&gt;Done properly, aggregation allows a server to manage client connections and improve performance.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/gateway-aggregation"&gt;Gateway Aggregation&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Microservices</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices</link>
+			<description>Microservices are a collection of application services that are independently deployable, loosely coupled and organized around business capabilities.</description>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices</guid>
+			<pubDate>Tue, 09 May 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Microservices are a way to build applications and are used by some of the biggest sites and systems online, such as Netflix and Amazon. They let systems be updated safely and scale well. But they are complex and require firm principles in place to work properly.&lt;/p&gt;
+&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
+&lt;p&gt;Microservices architecture is an architectural style that structures an application as a collection of services that are independently deployable, loosely coupled, organized around business capabilities and owned by a small team. In simple terms, microservices are a specific method of designing software systems to structure a single application as a collection of loosely coupled services.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/microservices-patterns.png" alt="Microservices Pattern"&gt;
+&lt;em&gt;Model of a Monolith to Microservices migration, showing sub-patterns&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This is a reference pattern, with several optional sub-patterns.&lt;/p&gt;
+&lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Scale and resilience in each service.&lt;/li&gt;
+&lt;li&gt;Safe deployment of updates to individual services.&lt;/li&gt;
+&lt;li&gt;Separation of services, allowing changes to be made locally and quickly, with
+minimal impact on other services.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="drawbacks-to-this-pattern"&gt;Drawbacks to this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;It can be complex, quickly.&lt;/li&gt;
+&lt;li&gt;Overwhelming for a small number of teams, due to a large number of
+components.&lt;/li&gt;
+&lt;li&gt;The Danger of component sprawl if services are over-specialized.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;This pattern is for applications that need to grow, which need to manage
+their costs and support a large degree of change and experimentation.&lt;/li&gt;
+&lt;li&gt;When reliability is critical to business, reputation or safety.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Because you want to be down with the kids, and you think it's cool.&lt;/li&gt;
+&lt;li&gt;Because you want to use the 'best' type of technology and work at Google.&lt;/li&gt;
+&lt;li&gt;For a simple application, which doesn't have a high probability of needing
+change, addition or integration.&lt;/li&gt;
+&lt;li&gt;For an application that won't be making lots of changes, with lots of
+active users.&lt;/li&gt;
+&lt;li&gt;For your Blog.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
+&lt;p&gt;Typically, microservices architectures require a good understanding of the business domain model, before development can begin. This ensures that services align with specific functions, which can be built in line with the business. &lt;a href="https://en.wikipedia.org/wiki/Conway%27s_law"&gt;Conways Law&lt;/a&gt; states that any organisation which designs a system will design one that looks like the organisation. This needs to be considered as if your microservices don't align with your business model, it will be very difficult to succeed.&lt;/p&gt;
+&lt;h2 id="assumptions"&gt;Assumptions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Everyone has read&lt;a href="https://martinfowler.com/articles/microservices.html"&gt;Microservices by James Lewis and Martin Fowler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;In choosing this pattern, you ruled out simpler options as not being capable.&lt;/li&gt;
+&lt;li&gt;You have time and space for teams to find their way; this is hard and it
+will go wrong.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="related-articles"&gt;Related Articles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://martinfowler.com/articles/microservices.html"&gt;Lewis, J. and Fowler, M. (2014) Microservices, martinfowler.com.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="xref:microservices-anti-patterns"&gt;Microservices Anti-Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/microservices/"&gt;Microsoft - Microservices design&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/microservice-architecture-principles"&gt;AKF Partners - Microservices Architecture Principles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
 			<title>Strangler pattern</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/strangler-pattern</link>
 			<description>This pattern is used to migrate functionality from an older app to a new one.</description>
@@ -327,134 +515,6 @@ Api-version: 1.1
 &lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig"&gt;Microsoft - Azure Architecture, Strangler Fig Pattern&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/strangler-pattern-dos-and-donts"&gt;AKF Partners - Strangler Patterns: Dos and Don'ts&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Reliability</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/reliability</link>
-			<description>&lt;p&gt;reliability, noun, /rɪˌlaɪ.əˈbɪl.ə.ti/. The quality of being able to be trusted or believed because of working or behaving well.&lt;/p&gt;</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/reliability</guid>
-			<pubDate>Tue, 02 May 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;blockquote&gt;
-&lt;p&gt;reliability, noun, /rɪˌlaɪ.əˈbɪl.ə.ti/. The quality of being able to be trusted or believed because of working or behaving well.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Reliable things do what you expect when you expect them. By ensuring we build reliable software, customers can easily access and use them.&lt;/p&gt;
-&lt;p&gt;Reliability is one of the non-functional requirements (NFR) that defines the ability of the system to properly perform the required functions under predefined conditions for a certain period. It is commonly expressed through probability percentages predicting chances that the system won’t experience critical failure under normal usage and during the set time&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Read the &lt;a href="xref:requirements-checklist"&gt;Requirements Check-List&lt;/a&gt; article for an introduction to requirements.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;p&gt;Our systems will be available for 99.9% of the year.&lt;/p&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Measured over one year, the uptime of the application will exceed 99.9%&lt;/li&gt;
-&lt;li&gt;During the first year, this will be extrapolated backwards and reviewed.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and software engineers.&lt;/li&gt;
-&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;TODO:&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease of Use&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Usability</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/usability</link>
-			<description>The system must be intuitive and easy to use for all users.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/usability</guid>
-			<pubDate>Fri, 28 Apr 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;A usable system encourages use and trust.&lt;/p&gt;
-&lt;p&gt;Usability, noun, /ˌjuːzəˈbɪləti/. Something easy to use, or the degree to which it is easy to use.&lt;/p&gt;
-&lt;h2 id="requirement"&gt;Requirement&lt;/h2&gt;
-&lt;p&gt;The system must have a user interface that is easy to navigate and understand.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The system should be set up to allow a user to complete their tasks quickly and directly.&lt;/li&gt;
-&lt;li&gt;The interface needs to be intuitive so that minimal instruction is needed. If there is any area which is ambiguous or tricky, help needs to be included.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="acceptance-criteria"&gt;Acceptance Criteria&lt;/h2&gt;
-&lt;p&gt;By demonstration&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The user interface must be intuitive and easy to navigate.&lt;/li&gt;
-&lt;li&gt;The user interface must be easy to understand.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and software engineers.&lt;/li&gt;
-&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;This requirement is important because it ensures that users can easily use the system without requiring extensive training or support.&lt;/p&gt;
-&lt;h2 id="related-principles"&gt;Related Principles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="xref:ease-of-use"&gt;Ease-Of-Use&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>OWASP ASVS</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/owasp</link>
-			<description>The OWASP ASVS project provides developers with a list of requirements for secure development and testable security controls.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/security/owasp</guid>
-			<pubDate>Thu, 27 Apr 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;The standard provides a basis for testing application technical security controls, as well as any technical security controls in the environment, that are relied on to protect against vulnerabilities such as Cross-Site Scripting (XSS) and SQL injection. This standard can be used to establish a level of confidence in the security of Web applications.&lt;/p&gt;
-&lt;p&gt;The Roadmap for version 5 of the OWASP ASVS is available here: &lt;a href="https://github.com/OWASP/ASVS/wiki/Roadmap-to-version-5.0"&gt;https://github.com/OWASP/ASVS/wiki/Roadmap-to-version-5.0&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="requirements"&gt;Requirements&lt;/h2&gt;
-&lt;p&gt;The following controls should be considered for every application:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x10-V1-Architecture.md"&gt;Architecture, design and threat modelling.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x11-V2-Authentication.md"&gt;Authentication.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x12-V3-Session-management.md"&gt;Session management.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x12-V4-Access-Control.md"&gt;Access Control.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x13-V5-Validation-Sanitization-Encoding.md"&gt;Input Validation, output encoding, and parameterization.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x14-V6-Cryptography.md"&gt;Cryptography at rest.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x15-V7-Error-Logging.md"&gt;Error handling and logging.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x16-V8-Data-Protection.md"&gt;Data protection in transit.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x17-V9-Communications.md"&gt;Secure communication.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x18-V10-Malicious.md"&gt;Malicious Code&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x19-V11-BusLogic.md"&gt;Business Logic&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x20-V12-Files-Resources.md"&gt;Files and Resources&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x21-V13-API.md"&gt;API and Web Service&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/OWASP/ASVS/blob/v4.0.3/4.0/en/0x22-V14-Config.md"&gt;Configuration&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="audience"&gt;Audience&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;System designers and software engineers.&lt;/li&gt;
-&lt;li&gt;IT Professionals and operational engineers.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="details"&gt;Details&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Owner: Andy Sheldon, Chief Technology Officer&lt;/li&gt;
-&lt;li&gt;Author: James Brewster, Enterprise Architect&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;The primary aim of the OWASP Application Security Verification Standard (ASVS) Project is to normalize the range in the coverage and level of rigour available in the market when it comes to performing application security verification using a commercially-workable open standard. &lt;a href="https://owasp.org/www-pdf-archive/OWASP_ASVS_Standard_2008.pdf"&gt;This standard can be used to establish a level of confidence in the security of web applications and services&lt;/a&gt;. The OWASP ASVS Project provides developers with a &lt;a href="https://owasp.org/www-project-application-security-verification-standard/"&gt;list of requirements for secure development&lt;/a&gt;. By using this standard, developers can ensure that their applications are secure and that they meet &lt;a href="https://www.briskinfosec.com/blogs/blogsdetail/What-is-the-difference-between-OWASP-Top-10-and-ASVS-Security-Audit"&gt;industry standards for security&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;OWASP V4.0.3 Stable release, 27/04/2023. &lt;a href="https://github.com/OWASP/ASVS/tree/v4.0.3/4.0"&gt;https://github.com/OWASP/ASVS/tree/v4.0.3/4.0&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;OWASP Application Security Verification Standard, 27/04/2023. &lt;a href="https://owasp.org/www-project-application-security-verification-standard/"&gt;https://owasp.org/www-project-application-security-verification-standard/&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>

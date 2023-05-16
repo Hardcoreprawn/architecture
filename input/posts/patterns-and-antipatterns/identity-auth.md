@@ -46,7 +46,7 @@ In this instance, a mobile app is shown. But a static site, calling an API, a Si
 
 ## When to use this pattern
 
-* This pattern, together with the [Gateway](xref:gateway), is recommended in most enterprise or B2B microservice models. It is ideal for a containerised application, which needs to minimise cross-talk and have a planned model for authorisation and identity.
+* This pattern, together with the [Gateways](xref:gateways), is recommended in most enterprise or B2B microservice models. It is ideal for a containerised application, which needs to minimise cross-talk and have a planned model for authorisation and identity.
 
 ## When to avoid this pattern
 
