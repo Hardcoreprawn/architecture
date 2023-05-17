@@ -119,7 +119,7 @@ McKinsey also says that most organisations are paying way more than 10% interest
 
 ### Tracking Technical Debt
 
-Tech debt should be tracked by the team/group head as a key metric. It may be that you have to find a way to expose or count the cost of this debt, which isn't always easy. Some areas you can track:
+Tech debt should be tracked by the team/group as a key metric. It may be that you have to find a way to expose or count the cost of this debt, which isn't always easy. Some areas you can track:
 
 * Software Development
   * [Complexity](https://linearb.io/blog/what-is-code-complexity/) - Various code complexity metrics can be tracked and monitored on each project to understand where the complexity lies and help identify areas which need work.
