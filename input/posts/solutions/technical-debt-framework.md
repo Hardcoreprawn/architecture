@@ -10,8 +10,16 @@ Tags:
 Categories:
   - Solution
 Draft: true
-Published: 01/01/2001
+Published: 17/05/2023 
 ---
+> ## TL;DR
+>
+> Technical debt is a hidden bleed on cost, productivity and morale. You can address it by accepting it exists, socialising the subject and putting in place ways to address it without blame.
+>
+> There are three main forms, process, people or tehcnology. These relate to what you have neglected to maintain. They are best addressed as an accepted part of life, rather than with any major effort.
+>
+> Leave space in your team's workflow to accommodate and address these issues and rather than being a debt which is compounding liability against your business, it will become a compounding investment, which pays for itself over time.
+
 ## Introduction
 
 We have all been there. There's an urgent problem. There's software that should resolve it and make everything great.
@@ -143,3 +151,4 @@ Technical debt management boils down to one point. Pay it back. The goal is not 
 
 * [Tech debt: Reclaiming tech equity | McKinsey (2020) www.mckinsey.com](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-debt-reclaiming-tech-equity).
 * [How to Measure Technical Debt Before You Start Tackling It | LinearB (2022) linearb.io](https://linearb.io/blog/how-to-measure-technical-debt/#:~:text=Measuring%20Technical%20Debt%3A%20Identify%20High-Risk%20Areas%201%20Keep) (Accessed: 16 May 2023).
+* [My 20-year career is technical debt](https://blog.visionarycto.com/p/my-20-year-career-is-technical-debt)
