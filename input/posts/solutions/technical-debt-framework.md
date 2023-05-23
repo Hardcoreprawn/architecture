@@ -9,14 +9,14 @@ Tags:
   - Solution
 Categories:
   - Solution
-Draft: true
-Published: 17/05/2023 
+Draft: False
+Published: 23/05/2023 
 ---
 > ## TL;DR
 >
 > Technical debt is a hidden bleed on cost, productivity and morale. You can address it by accepting it exists, socialising the subject and putting in place ways to address it without blame.
 >
-> There are three main forms, process, people or tehcnology. These relate to what you have neglected to maintain. They are best addressed as an accepted part of life, rather than with any major effort.
+> There are three main forms, process, people or technology. These relate to what you have neglected to maintain. They are best addressed as an accepted part of life, rather than with any major effort.
 >
 > Leave space in your team's workflow to accommodate and address these issues and rather than being a debt which is compounding liability against your business, it will become a compounding investment, which pays for itself over time.
 
