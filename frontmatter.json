@@ -12,11 +12,6 @@
           "type": "string"
         },
         {
-          "title": "Slug",
-          "name": "Slug",
-          "type": "string"
-        },
-        {
           "title": "Lead",
           "name": "Lead",
           "type": "string"
@@ -35,11 +30,6 @@
           "title": "Categories",
           "name": "Categories",
           "type": "categories"
-        },
-        {
-          "title": "ArchiveKey",
-          "name": "ArchiveKey",
-          "type": "string"
         },
         {
           "title": "Draft",
