@@ -1,8 +1,7 @@
 ---
 Title: "Structuring Development"
-Slug: "structuring-development"
 Lead: "How do you structure work?"
-Description: ""
+Description: "Some words"
 Tags: []
 Categories: []
 Draft: True
@@ -20,7 +19,7 @@ This said the best practice with agile development is to minimise and factor dow
 
 ## Requirements / User Stories / Issues
 
-The smallest unit of work. Requirements are discussed in more depth [here](xref:requirements).
+The smallest unit of work. Requirements are discussed in more depth [here](xref:requirements-checklist).
 
 NASA have a great page on defining a good requirement [here](https://www.nasa.gov/seh/appendix-c-how-to-write-a-good-requirement/).
 

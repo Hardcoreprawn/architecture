@@ -1,6 +1,5 @@
 ---
 Title: Avoiding Work
-Slug: avoiding-work
 Lead: The features you don't build are as important as the ones you do
 Description: ""
 Tags:
