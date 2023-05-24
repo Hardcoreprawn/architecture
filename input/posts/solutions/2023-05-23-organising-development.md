@@ -1,5 +1,5 @@
 ---
-Title: "Structuring Development"
+Title: "organising Work"
 Lead: "How do you structure work?"
 Description: "Some words"
 Tags: []
@@ -11,7 +11,7 @@ Published: 2023-05-23T09:09:03.850Z
 
 Work items in development tend to fall into three broad types, but the names tend to change, depending on the place, process or tools used. The most common types are:
 
-1. Requirements / User Stories / Issues - The smallest unit of work. Intended to be sized so that a team can manage 1+ in the smallest unit of time (usually a sprint), but purely for convieniance.
+1. Requirements / User Stories / Issues - The smallest unit of work. Intended to be sized so that a team can manage 1+ in the smallest unit of time (usually a sprint), but purely for convenience.
 2. Features - Groups of requirements, stories or Issues which can be delivered in time for the next release. Some frameworks use 'Capabilities' as a feature which has to be delivered by more than one team because there is a dependency. This should be avoided, but worth knowing about.
 3. Epics / Initiatives / Projects - Big themes or ideas with significant market value, which generally require special investment. Usually made of a load of features. Generally, an Epic is formed as an idea with a significant outcome, explored and tested as a high-level concept, before being broken down into features.
 
