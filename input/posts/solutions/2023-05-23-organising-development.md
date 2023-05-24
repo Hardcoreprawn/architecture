@@ -1,5 +1,5 @@
 ---
-Title: "organising Work"
+Title: "Organising Work"
 Lead: "How do you structure work?"
 Description: "Some words"
 Tags: []
