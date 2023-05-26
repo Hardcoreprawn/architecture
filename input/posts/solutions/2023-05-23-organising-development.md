@@ -1,7 +1,7 @@
 ---
 Title: "Organising Work"
 Lead: "How do you structure work?"
-Description: "Some words"
+Description: "Some Words"
 Tags: []
 Categories: []
 Draft: True
@@ -36,7 +36,7 @@ In a requirement, you often use loaded words to express importance. These terms 
 
 ### Example Requirements
 
-1. The application should load and refresh within 2 seconds. - Whilst we could release or test without this, for scale and production use we feel its critical.
+1. The application should load and refresh within 2 seconds. - Whilst we could release or test without this, for scale and production use we feel it's critical.
 2. The user interface should follow the corporate brand guidance.
 3. The application must partition individual broker data. - Without partitioned data, this application won't work or teach us anything.
 4. The database could work across one or more cloud providers. - We think there is value in supporting this, but not at the expense of delaying the release.
