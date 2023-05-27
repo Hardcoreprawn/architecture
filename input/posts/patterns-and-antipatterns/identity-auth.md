@@ -1,7 +1,6 @@
 ---
 Title: Identity, Authentication and Authorisation
 Lead: How to implement authentication in microservices and web apps
-Slug: identity-auth
 Tags:
   - Architecture
   - Patterns
