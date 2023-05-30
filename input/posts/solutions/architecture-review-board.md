@@ -16,7 +16,7 @@ An ARB can be perceived as slowing or delaying decisions and delivery, but that 
 
 ## Introducing the ARB
 
-> ## The Agile ARB
+> ### The Agile ARB
 >
 > I asked ChatGPT to write a story about an [Agile ARB](xref:the-agile-arb) and its pretty good!
 
