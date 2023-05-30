@@ -17,6 +17,8 @@ Published: 2023-05-30T10:55:09.166Z
 
 An Architecture Review Board (ARB) is a representative group of people, across the organisation who take a central role in governing architectural decisions, which affect the business in a significant way.
 
+The purpose of the ARB is to mitigate risks to the business and to improve strategic planning and awareness, especially around the use of technology and any changes to that.
+
 It is not a Technology Review Board (TRB) and doesn't govern what technology is allowed. It governs the processes for accepting new technologies, and for how processes and principles govern selection.
 
 Nothing an ARB does should be urgent. An ARB may need to determine a new principle/policy in response to an emerging issue, but such instances should be rare.
@@ -58,8 +60,6 @@ Initially, it could be weekly or fortnightly, as there may be a lot of reviews a
 
 I deliberately call out developments or solutions. This should only relate to strategic solutions and projects. Most items should be small enough to avoid the ARB and the ARB should encourage local decision-making over trying to centralise decisions. If a decision has to be made centrally, then it should be infrequent and have a broad effect.
 
-Once established, a Monthly or Quarterly format should be sufficient to maintain a manageable level of governance.
-
 The board meeting should follow a standard approach for such a meeting, to ensure people are comfortable and familiar with it. Frameworks such as COBIT can provide some guidance. Here is a suggestion for an initial format:
 
 * The ARB Meets Monthly and also in response to nominated events (PI Planning, annual review, etc.)
@@ -73,6 +73,24 @@ The ARB doesn't make the decisions. It provides a framework to review decisions 
 
 ## Frequency
 
+Once established, a Monthly or Quarterly format should be sufficient to maintain a manageable level of governance.
+
+This would ideally align with ceremonies such as Quarterly Planning, letting the ARB determine whether any specific architectural work is needed, over and above the normal level of involvement, based on upcoming work or projects.
+
 ## Outcomes
 
+An ARB should create the following outcomes:
+
+* Requirements for new policies and principles
+* Requirements for Strategic Enablers and Capabilities
+
+These items would be created, as necessary, by architects. Acceptance criteria should be a part of any of these, to ensure excessive approval of the outcome is unnecessary.
+
 ## Anti-patterns
+
+Here's a selection of ways this can go wrong, or things you can do poorly:
+
+1. Excessive Approvals - If you find every ARB is 'full' of things to approve, then your Policies and Principles are likely irrelevant or too granular.
+2. Deferred decisions - If the board makes a lot of deferrals, it would usually be because the information or risks are unclear, and they don't feel safe taking them.
+3. Poor reputation - The ARB may be something people dread. In this case, it's likely that the process is excessively onerous, too frequent or that the principles are poorly accepted.
+4. Technology Focussed - The ARB shouldn't be discussing the choice of technologies to be used. It should guide the principles and processes that result in those changes. In this case, the ARB may be too low level, resulting in low traction across the business.
