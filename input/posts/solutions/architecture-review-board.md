@@ -89,7 +89,7 @@ An ARB should create the following outcomes:
 * Requirements for new policies and principles
 * Requirements for Strategic Enablers and Capabilities
 
-These items would be created, as necessary, by architects. Acceptance criteria should be a part of any of these, to ensure excessive approval of the outcome is unnecessary.
+Typically, work from the ARB would go to the Architecture team to define and complete. Acceptance criteria should be a part of any of these, to ensure excessive approval of the outcome is unnecessary.
 
 ## Anti-patterns
 
