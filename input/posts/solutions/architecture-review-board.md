@@ -17,7 +17,7 @@ Published: 2023-05-30T10:55:09.166Z
 
 An Architecture Review Board (ARB) is a representative group of people, across the organisation who take a central role in governing architectural decisions, which affect the business in a significant way.
 
-It is not a Technology Review Board (TEP) and doesn't govern what technology is allowed. It governs the processes for accepting new technologies, and for how processes and principles govern selection.
+It is not a Technology Review Board (TRB) and doesn't govern what technology is allowed. It governs the processes for accepting new technologies, and for how processes and principles govern selection.
 
 Nothing an ARB does should be urgent. An ARB may need to determine a new principle/policy in response to an emerging issue, but such instances should be rare.
 
