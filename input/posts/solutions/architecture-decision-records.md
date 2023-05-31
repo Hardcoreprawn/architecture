@@ -31,7 +31,7 @@ Here is a process for creating Architectural Decision Records (ADRs) in Azure De
 
 This process can help you record your architectural and technical decisions for further reference and have the new team members up to date from day one¹.
 
-## Y-Statements and Context
+## Providing short, contextual decisions
 
 In a bid to keep decisions documentation light and relevant, using a sustainable format is important. This process recommends using [(Wh)Y statements](https://medium.com/olzzio/y-statements-10eb07b5a177), borrowed from Olaf Zimmerman, an Architect at IBM.
 
@@ -61,6 +61,10 @@ Each outlines a single important point about the decision. The context and need,
 Another approach worth considering is the idea of an [Architectural Haiku](https://www.georgefairbanks.com/blog/comparch-wicsa-2011-panel-discussion-and-haiku-tutorial/), coined by George Fairbanks in 2011. This encourages any decision to fit on a single slide in the interests of brevity and focus on only the critically important elements. It's quite hard to do well!
 
 As with any framework or method, it is worth remembering the idiom 'If in doubt, leave it out'.
+
+## Version Control
+
+TODO
 
 ## Template
 
