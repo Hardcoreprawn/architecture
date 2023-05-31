@@ -64,7 +64,15 @@ As with any framework or method, it is worth remembering the idiom 'If in doubt,
 
 ## Version Control
 
-TODO
+Version Control for your ADRs is important, so you know when they change and who changed them and who approved them. Using your GIT repo for this is probably the simplest idea, as it can do these things, with the files themselves, easily.
+
+## In Practice
+
+There are some great ADR tools around, including ones that use a CLI or DevOps. In this instance, the aim is to use a work item in DevOps, linked to a file containing the ADR text, written using Markdown.
+
+The ADRs themselves can then easily be pulled, reported on, etc. The list of ADRs is easy to find and query. Anyone can look at the recent ADRs. Also, the ARB will be able to review any recent ADRs or any contentious ADRs and ensure they're working as expected.
+
+So, grab the template below, use the text in a file or work item and record those technical decisions!
 
 ## Template
 
