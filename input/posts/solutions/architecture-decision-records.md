@@ -35,7 +35,7 @@ This process can help you record your architectural and technical decisions for 
 
 In a bid to keep decisions documentation light and relevant, using a sustainable format is important. This process recommends using [(Wh)Y statements](https://medium.com/olzzio/y-statements-10eb07b5a177), borrowed from Olaf Zimmerman, an Architect at IBM.
 
-> ## Worked Example
+> ### Worked Example
 >
 > *In the context* of the business multi utility quoting tool, *facing the need to* provide accurate and competitive quotes for gas, electricity and water services,
 >
@@ -83,7 +83,7 @@ As with any framework or method, it is worth remembering the idiom 'If in doubt,
 
 ## Additional Resources
 
-* [ADR GitHub Organisation // GitHub](https://adr.github.io/)
-* [ADR with DevOps || Medium](https://medium.com/nerd-for-tech/architecture-decision-records-adr-with-azure-devops-3f0c9edeb85b)
-* [ADR Examples \\ GitHub](https://github.com/joelparkerhenderson/architecture-decision-record/tree/main/examples)
-* [Y-Statements || Medium](https://medium.com/olzzio/y-statements-10eb07b5a177)
+* [ADR GitHub Organisation / GitHub](https://adr.github.io/)
+* [ADR with DevOps | Medium](https://medium.com/nerd-for-tech/architecture-decision-records-adr-with-azure-devops-3f0c9edeb85b)
+* [ADR Examples \ GitHub](https://github.com/joelparkerhenderson/architecture-decision-record/tree/main/examples)
+* [Y-Statements - Medium](https://medium.com/olzzio/y-statements-10eb07b5a177)
