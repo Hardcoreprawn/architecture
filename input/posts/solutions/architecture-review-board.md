@@ -26,7 +26,7 @@ The purpose of the ARB is to mitigate risks to the business and to improve strat
 
 It is not a Technology Review Board (TRB) and doesn't govern what technology is allowed. It governs the processes for accepting new technologies, and for how processes and principles govern selection.
 
-Nothing an ARB does should be urgent. An ARB may need to determine a new principle/policy in response to an emerging issue, but such instances should be rare.
+Nothing an ARB does should be urgent. An ARB may need to determine a new principle/policy in response to an emerging issue, but such instances should be rare. This does not mean the ARB should be too slow or be unable to react quickly. Just that most of its issues should be at a level where the business can take some time to think about them.
 
 Lastly, an ARB is going to meet and align, following things like annual updates, strategic updates or quarterly reviews. In a product-led organisation, an ARB is going to outline a strategic runway to ensure technology requirements (enablers) and deliverables are considered and planned following the needs of product development.
 
@@ -42,6 +42,8 @@ An ARB is for reviewing and governing architecture. In this context, the ARB wil
 
 ## Membership
 
+An ARB should be made from a handful of relevant, cross-organisational people. If the membership is mono-culture (ie too many architects or technologists) then it won't be taken seriously. It needs an odd number so votes work as they should. Prime numbers just help avoid simple divisions and ties. 5 or 7 are good numbers. Beyond this, the group is very large and thus cumbersome.
+
 As a cross-organisational group, for an ARB to be successful, it has to have a diverse representation from different areas of the business.
 
 It is not somewhere for architects to meet and talk. All the architects, managers and technologists should not expect to be involved.
@@ -49,8 +51,6 @@ It is not somewhere for architects to meet and talk. All the architects, manager
 That said, it has to be transparent. All the ARB meetings, minutes and outcomes should be published with the broadest possible audience. Anyone should be able to raise an issue or request for change and have the opportunity for it to be considered.
 
 ## Format
-
-AN ARB should be made of an odd, prime number of relevant, cross-organisational stakeholders. If the membership is mono-culture (ie too many architects or technologists) then it won't be taken seriously. It needs an odd number so votes work as they should. Prime numbers just help avoid simple divisions and ties. 5 or 7 are good numbers. Beyond this, the group is very large and thus cumbersome.
 
 Its first action should be to review its charter and accept it.
 
