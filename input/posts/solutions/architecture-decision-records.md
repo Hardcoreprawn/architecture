@@ -1,11 +1,15 @@
 ---
-Title: "Architecture Decision Records"
-Lead: "ADRs can help you keep up to date with recording decisions."
-Description: "No one reads big documents. ADRs are a way to capture significant decisions so people can find them in future."
-Tags: []
-Categories: []
+Title: Architecture Decision Records
+Lead: ADRs can help you keep up to date with recording decisions.
+Description: No one reads big documents. ADRs are a way to capture significant decisions so people can find them in future.
+Tags:
+  - Architecture
+  - Process
+  - Solution
+Categories:
+  - Solution
 Draft: false
-Published: 2023-05-30T14:46:52.024Z
+Published: 01/06/2023
 ---
 ## Introduction
 
@@ -37,22 +41,26 @@ In a bid to keep decisions documentation light and relevant, using a sustainable
 
 > ### Worked Example
 >
-> *In the context* of the business multi utility quoting tool, *facing the need to* provide accurate and competitive quotes for gas, electricity and water services,
+> *In the context* of the business multi utility quoting tool,
 >
-> *we decided for* the Multi Utility Service Provider (MUSP) pattern *and against* Single Utility Service Provider (SUSP) or Multiple Utility Service Providers (MUSPs)
+> *Facing the need to* provide accurate and competitive quotes for gas, electricity and water services,
 >
-> *to achieve* cost savings, convenience and efficiency for our customers, *accepting that* a MUSP requires more integration and coordination with different utility suppliers.
+> *We decided for* the Multi Utility Service Provider (MUSP) pattern.
+>
+> *And against* Single Utility Service Provider (SUSP) or Multiple Utility Service Providers (MUSPs).
+>
+> *To achieve* cost savings, convenience and efficiency for our customers,
+> *Accepting that* a MUSP requires more integration and coordination with different utility suppliers.
 
 This creates six key phrases in three sections:
 
-> 1. In the Context of...
-> 2. Facing the need to...
-> 3. We decided for...
-> 4. And against...
-> 5. To Acheive...
-> 6. Accepting that...
-
-It would be perfectly acceptable to add a 'Because' to the end as well if necessary.
+> 1. In the Context of... *(Name of the solution)*
+> 2. Facing the need to... *(Critical challenge)*
+> 3. We decided for... *(The winning solution)*
+> 4. And against... *(The other considered solutions)*
+> 5. To Acheive... *(The main outcome)*
+> 6. Accepting that... *(Any Consequences)*
+> 7. *Because... (Optional explaination of reasoning)*
 
 Each outlines a single important point about the decision. The context and need, the 'winner' and other options considered, the expected outcome and consequences, and optional reasoning if more words are needed.
 
@@ -64,11 +72,11 @@ As with any framework or method, it is worth remembering the idiom 'If in doubt,
 
 ## Version Control
 
-Version Control for your ADRs is important, so you know when they change and who changed them and who approved them. Using your GIT repo for this is probably the simplest idea, as it can do these things, with the files themselves, easily.
+Version Control for your ADRs is important, so you know when they change, who changed them and who approved them. Using your GIT repo for this is probably the simplest idea, as it can do these things, with the files themselves, easily.
 
 ## In Practice
 
-There are some great ADR tools around, including ones that use a CLI or DevOps. In this instance, the aim is to use a work item in DevOps, linked to a file containing the ADR text, written using Markdown.
+There are some great ADR tools around, including ones that use a CLI or DevOps. In this instance, the aim is to use a work item in DevOps, linked to a file containing the ADR text, written using Markdown. It can be changed if necessary.
 
 The ADRs themselves can then easily be pulled, reported on, etc. The list of ADRs is easy to find and query. Anyone can look at the recent ADRs. Also, the ARB will be able to review any recent ADRs or any contentious ADRs and ensure they're working as expected.
 
