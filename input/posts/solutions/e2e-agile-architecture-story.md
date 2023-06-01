@@ -9,7 +9,8 @@ Tags:
   - Process
 Categories:
   - Solution
-Draft: true
+Draft: False
+Published: 01/06/2023
 ---
 
 The team worked on a new business application allowing customers to order products online and track their delivery status. The application needed to integrate with several external systems, such as inventory management, payment processing, and shipping providers. The team had to decide how to design the integration layer and what technologies to use.
