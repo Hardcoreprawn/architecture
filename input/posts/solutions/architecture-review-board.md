@@ -36,7 +36,7 @@ Lastly, an ARB will meet and align following annual updates, strategic updates o
 >
 >The ARB creates a kind of organisational common sense that reinforces the right way to do things, in-line with company culture and values.
 >
-> And [Culture eats Strategy for Breakfast](https://www.thealternativeboard.com/blog/culture-eats-strategy), right?
+> As we all know, [Culture eats Strategy for Breakfast](https://www.thealternativeboard.com/blog/culture-eats-strategy), right?
 >
 > An unsuccessful ARB controls every decision, which results in an unacceptable level of delay as the ARB becomes overwhelmed with small and largely inconsiquential decisions.
 
