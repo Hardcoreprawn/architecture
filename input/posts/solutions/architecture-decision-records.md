@@ -1,7 +1,7 @@
 ---
 Title: Architecture Decision Records
 Lead: ADRs can help you keep up to date with recording decisions.
-Description: No one reads big documents. ADRs are a way to capture significant decisions so people can find them in future.
+Description: No one reads extensive documents. ADRs are a way to capture meaningful choices so people can find them in future.
 Tags:
   - Architecture
   - Process
@@ -24,9 +24,9 @@ Use a folder or a wiki page to store ADRs. Somewhere close to the code repositor
 Here is a process for creating Architectural Decision Records (ADRs) in Azure DevOps:
 
 * Define a template for documenting ADRs that includes the following sections: title, context, decision, status, consequences, and alternatives¹.
-* Create a folder in the Azure DevOps repository to store the ADRs. The folder name can be "adr" or "docs/adr" or something similar³.
-* For each architectural decision that needs to be made, you can create a new work item in the Azure DevOps backlog and mark it as technical. Explain the decision and alternatives in the item's description and link to relevant resources.
-* Assign the item to an engineering team based on their expertise and availability. The team should review the work item and possible solution options (3 is ideal) before deciding how to proceed and recording the decision. When writing the document, follow the template and store the output in Azure DevOps.
+* Use a folder in the Azure DevOps repository to store the ADRs. The folder name can be "adr" or "docs/adr" or something similar.
+* Create a new work item in the backlog and mark it as technical for each architectural decision. Explain the decision and alternatives in the record and link to relevant resources.
+* Assign the item to an engineering team based on their expertise and availability. The team should review the work item and possible solution options (3 is ideal) before deciding how to proceed and recording the decision in Markdown as a file. When writing the document, follow the template and store the output in Azure DevOps.
 * Submit the ADR as a pull request and request feedback from the other teams and stakeholders. The pull request should also include any code changes that implement the decision.
 * Review the feedback and update the ADR document and code changes accordingly. If there are any conflicts or disagreements, resolve them through discussion and consensus.
 * Merge the pull request and mark the feature as done. The ADR document should be 'accepted' or 'rejected' depending on the review's outcome.
@@ -39,9 +39,9 @@ A centralised Architecture team can review any ADRs made and either look to amen
 
 Remember, the aim of an architecture practice is to:
 
-1. simplify
-2. de-risk
-3. **not** dictate solution
+1. Simplify
+2. De-risk
+3. **Not** dictate solution
 
 To that end, the architecture needs to review and adapt to ensure it doesn't become stale.
 
