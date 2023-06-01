@@ -102,9 +102,10 @@ Some great ADR tools are around, including ones that use a CLI or DevOps. In thi
 Write a Y-Statement explaining the decision. The discussion is not essential, but the context and the discarded alternatives are.
 For a more significant decision, it may be helpful to produce an Options assessment:
 ![EA-On-A-Page, options assessment](../../media/eaonapage.com-options-assessment.png)
+
 Svyatoslav Kotusev, 2013, [Enterprise Architecture on a Page v2.0](http://eaonapage.com/Enterprise%20Architecture%20on%20a%20Page%20(v2.0).pdf.)
 
-The ADRs can easily be pulled, reported on, etc. The list of ADRs is easy to find and query. Anyone can look at the recent ADRs. The architects will regularly review ADRs themselves and look to adapt the architecture as necessary, either creating or updating principles or NFRs to reduce the number of decisions which need to be made and thus recorded.
+The list of ADRs is easy to find and query. Anyone can look at the recent ADRs. The architects will regularly review ADRs themselves and look to adapt the architecture as necessary, either creating or updating principles or NFRs to reduce the number of decisions which need to be made and thus recorded.
 
 So, grab the template below, use the text in a file or work item and record those technical decisions!
 
