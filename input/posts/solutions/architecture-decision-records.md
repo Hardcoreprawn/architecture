@@ -43,7 +43,7 @@ Remember, the aim of an architecture practice is to:
 2. de-risk
 3. **not** dictate solution
 
-To that end, the architecture needs to adapt and be reviewed to ensure it doesn't become stale.
+To that end, the architecture needs to review and adapt to ensure it doesn't become stale.
 
 ## Providing short, contextual decisions
 
