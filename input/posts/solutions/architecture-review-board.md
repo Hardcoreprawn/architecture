@@ -12,7 +12,7 @@ Published: 30/05/2023
 ---
 ## Synopsis
 
-An ARB can be perceived as slowing or delaying decisions and delivery, but that is largely due to poor implementation. Properly implemented, an ARB allows an organisation to be more open and transparent and can empower local decision-making within a team or POD.
+A frequent perception of ARBs from Agile teams is poor and that they delay decisions and delivery. Properly implemented, an ARB allows an organisation to be more open and transparent and can empower local decision-making within a team or POD.
 
 ## Introducing the ARB
 
@@ -20,25 +20,29 @@ An ARB can be perceived as slowing or delaying decisions and delivery, but that 
 >
 > I asked ChatGPT to write a story about an [Agile ARB](xref:the-agile-arb) and its pretty good!
 
-An Architecture Review Board (ARB) is a representative group of people, across the organisation who take a central role in governing architectural decisions, which affect the business in a significant way.
+An Architecture Review Board (ARB) is a representative group of people across the organisation who take a central role in governing architectural decisions which affect the business in a significant way.
 
-The purpose of the ARB is to mitigate risks to the business and to improve strategic planning and awareness, especially around the use of technology and any changes to that.
+The ARB aims to mitigate risks to the business and improve strategic planning and awareness, especially around the use of technology and any changes to that. It does this by making it easier for front-line teams to make decisions and simplifying the overall organisation or Enterprise over time to keep cost and complexity at bay. An ARB does not dictate solutions. It provides a constrained space to support fast decision-making.
 
-It is not a Technology Review Board (TRB) and doesn't govern what technology is allowed. It governs the processes for accepting new technologies, and for how processes and principles govern selection.
+It is not a Technology Review Board (TRB) and doesn't govern what technology is allowed. It regulates the processes for selecting new technologies, methods and principles.
 
-Nothing an ARB does should be urgent. An ARB may need to determine a new principle/policy in response to an emerging issue, but such instances should be rare. This does not mean the ARB should be too slow or be unable to react quickly. Just that most of its issues should be at a level where the business can take some time to think about them.
+Nothing an ARB does should be urgent. An ARB may need to determine a new principle/policy in response to an emerging issue, but such instances should be rare. This does not mean the ARB should be too slow or be unable to react quickly, just that most of its issues should be at a level where the business can take some time to think about them.
 
-Lastly, an ARB is going to meet and align, following things like annual updates, strategic updates or quarterly reviews. In a product-led organisation, an ARB is going to outline a strategic runway to ensure technology requirements (enablers) and deliverables are considered and planned following the needs of product development.
+Lastly, an ARB will meet and align following annual updates, strategic updates or quarterly reviews. In a product-led organisation, an ARB will outline a strategic runway to ensure technology requirements (enablers) and deliverables are considered and planned following product development needs.
 
 > ### Centralised vs Decentralised Decisions
 >
-> A success ARB wants to encourage decentralised decisions as much as possible. That would be, they need to provide guidance, examples and principles that ensure people on the ground can make good decisions whilst they plan and develop processes, product features and changes. The ARB creates a kind of organisational common sense that reinforces 'how we do things here'.
+> A successful ARB wants to encourage decentralised decisions as much as possible. That would be, they need to provide guidance, examples and principles that ensure people on the ground can make good decisions whilst they plan and develop processes, product features and changes.
 >
-> An unsuccessful ARB controls every decision, which results in an unexpectable level of delay and waiting as the ARB becomes overwhelmed with small and largely inconsiquential decisions.
+>The ARB creates a kind of organisational common sense that reinforces the right way to do things, in-line with company culture and values.
+>
+> And [Culture eats Strategy for Breakfast](https://www.thealternativeboard.com/blog/culture-eats-strategy), right?
+>
+> An unsuccessful ARB controls every decision, which results in an unacceptable level of delay as the ARB becomes overwhelmed with small and largely inconsiquential decisions.
 
 ## Purpose
 
-An ARB is for reviewing and governing architecture. In this context, the ARB will make strategic decisions about the way technology is used within the business, rather than the specifics of which technologies are used.
+An ARB is for reviewing and governing architecture. In this context, the ARB will make strategic decisions about how technology is used within the business rather than the specifics of which technologies are used.
 
 ## Membership
 
