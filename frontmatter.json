@@ -40,6 +40,16 @@
           "title": "Published",
           "name": "Published",
           "type": "datetime"
+        },
+        {
+          "title": "Category",
+          "name": "Category",
+          "type": "categories"
+        },
+        {
+          "title": "Author",
+          "name": "Author",
+          "type": "string"
         }
       ]
     }
@@ -62,6 +72,10 @@
     {
       "title": "Requirements",
       "path": "[[workspace]]/input/posts/requirements"
+    },
+    {
+      "title": "Architectural-Decision-Records",
+      "path": "[[workspace]]/input/posts/architectural-decision-records"
     },
     {
       "title": "Solutions",
