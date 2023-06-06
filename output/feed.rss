@@ -5,566 +5,337 @@
 		<link>https://red-sand-078a6ea03.3.azurestaticapps.net/</link>
 		<description />
 		<copyright>Copyright James Brewster© 2023</copyright>
-		<pubDate>Tue, 23 May 2023 13:09:37 GMT</pubDate>
-		<lastBuildDate>Tue, 23 May 2023 13:09:37 GMT</lastBuildDate>
+		<pubDate>Tue, 06 Jun 2023 14:41:21 GMT</pubDate>
+		<lastBuildDate>Tue, 06 Jun 2023 14:41:21 GMT</lastBuildDate>
 		<item>
-			<title>Structuring Development</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/2023-05-23-structuring-development</link>
-			<description>Some words</description>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/principles</link>
 			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/2023-05-23-structuring-development</guid>
-			<pubDate>Tue, 23 May 2023 09:09:03 GMT</pubDate>
-			<content:encoded>&lt;h2 id="work-item-types"&gt;Work Item Types&lt;/h2&gt;
-&lt;p&gt;Work items in development tend to fall into three broad types, but the names tend to change, depending on the place, process or tools used. The most common types are:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Requirements / User Stories / Issues - The smallest unit of work. Intended to be sized so that a team can manage 1+ in the smallest unit of time (usually a sprint), but purely for convieniance.&lt;/li&gt;
-&lt;li&gt;Features - Groups of requirements, stories or Issues which can be delivered in time for the next release. Some frameworks use 'Capabilities' as a feature which has to be delivered by more than one team because there is a dependency. This should be avoided, but worth knowing about.&lt;/li&gt;
-&lt;li&gt;Epics / Initiatives / Projects - Big themes or ideas with significant market value, which generally require special investment. Usually made of a load of features. Generally, an Epic is formed as an idea with a significant outcome, explored and tested as a high-level concept, before being broken down into features.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;This said the best practice with agile development is to minimise and factor down work as you get closer to development. Try and avoid big projects. The structures above can be helpful for management or executive discussions, especially with larger teams. Just remember that you want to give developers small, well-formed requirements, not vacuous epics.&lt;/p&gt;
-&lt;h2 id="requirements-user-stories-issues"&gt;Requirements / User Stories / Issues&lt;/h2&gt;
-&lt;p&gt;The smallest unit of work. Requirements are discussed in more depth &lt;a href="xref:requirements-checklist"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;NASA have a great page on defining a good requirement &lt;a href="https://www.nasa.gov/seh/appendix-c-how-to-write-a-good-requirement/"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Requirements need to be Clear, Complete, Compliant and Consistent. They should state assumptions and have clear acceptance criteria. They should express the persona to who the requirement applies, where necessary.&lt;/p&gt;
-&lt;h3 id="loaded-terms"&gt;Loaded terms&lt;/h3&gt;
-&lt;p&gt;In a requirement, you often use loaded words to express importance. These terms are worth managing:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Must - Critical to the success of the solution&lt;/li&gt;
-&lt;li&gt;Should - Required for completeness, but optional for testing&lt;/li&gt;
-&lt;li&gt;Could - Optional, but good to have.&lt;/li&gt;
-&lt;li&gt;Won't - Considered and avoided. May require more data to verify.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id="example-requirements"&gt;Example Requirements&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;The application should load and refresh within 2 seconds. - Whilst we could release or test without this, for scale and production use we feel its critical.&lt;/li&gt;
-&lt;li&gt;The user interface should follow the corporate brand guidance.&lt;/li&gt;
-&lt;li&gt;The application must partition individual broker data. - Without partitioned data, this application won't work or teach us anything.&lt;/li&gt;
-&lt;li&gt;The database could work across one or more cloud providers. - We think there is value in supporting this, but not at the expense of delaying the release.&lt;/li&gt;
-&lt;li&gt;The application won't support internationalisation. - Whilst often a good practice, it can be time-consuming. If we know this app will only be used in English, that time might be better used.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="features"&gt;Features&lt;/h2&gt;
-&lt;p&gt;Features are releasable groups of requirements. It may be a natural collection of things which are needed to make the whole useful or complete. A feature should have a tangible value, which can be tested and expressed. Prioritisation happens at the feature level, with delivery teams structuring the order of requirements into an iteration of work (sprint or whatever).&lt;/p&gt;
-&lt;p&gt;There's no fixed size, they can be bigger or smaller. If a feature takes multiple sprints to develop that's okay, but it needs to be iterated and testable at each point. The team should be learning about the right way to deliver the feature. There must be some ability to reflect on what went well and what didn't, to make sure there is a culture of improvement.&lt;/p&gt;
-&lt;h2 id="epics-initiatives-projects"&gt;Epics / Initiatives / Projects&lt;/h2&gt;
-&lt;p&gt;Agile dislikes large things. Executives love them. Epics/Initiatives/projects exist to allow larger-scale themes and ideas to exist and abstract communication. They are typically used as shorthand when discussing portfolio packages of work, or work which happens across multiple quarters or years.&lt;/p&gt;
-&lt;p&gt;Depending on the framework, some types (Themes mainly) are very long-lived. Most organisations struggle with this concept and most non-agile execs prefer clear end states for projects.&lt;/p&gt;
-&lt;h2 id="releases"&gt;Releases&lt;/h2&gt;
-&lt;p&gt;Releases happen when work is done and ready to be given to a customer. It could be an early release to just 1-2 customers for testing purposes. It could be a production release with lots of new features. It depends on the market, the organisation and the process.&lt;/p&gt;
-&lt;p&gt;Some agile philosophy talks about having smaller releases. This can be good in some situations, but it requires an extensive test framework to guarantee everything works. Philosophies like CI/CD are intended to reduce manual overhead and make sure work can be delivered quickly from developers into a live environment.&lt;/p&gt;
-&lt;p&gt;Some customers or markets don't like rapid change. In regulated and controlled environments, change can require a whole raft of retraining or recertifying, which can increase the cost of a release for the customer. To that end, release cadence is largely dictated by change tolerance, change fatigue and release maturity.&lt;/p&gt;
-&lt;p&gt;Whilst some people or places will talk about moving to 'release-on-demand' or having a CI/CD process. It is not essential. It does have benefits, but also overheads.&lt;/p&gt;
-&lt;h2 id="time-to-value"&gt;Time-To-Value&lt;/h2&gt;
-&lt;p&gt;An important release metric/feature metric is time to value. Understanding how quickly an organisation can get value from its investment in development is critical to success as a Product manager; I would argue that this is a key concern. To improve Time-To-Value:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Keep features small. As small as you can. Dev/Architecture will add loads of requirements anyway.&lt;/li&gt;
-&lt;li&gt;Minimise requirements to -just- the essentials, easier to add more later.&lt;/li&gt;
-&lt;li&gt;Articulate requirements clearly and consistently.&lt;/li&gt;
-&lt;li&gt;Deliver one feature at a time to minimise work in progress.&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/principles</guid>
+			<pubDate>Tue, 06 Jun 2023 07:35:06 GMT</pubDate>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>Technical Debt Framework</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/technical-debt-framework</link>
-			<description>Help teams manage technical debt by identifying and assessing existing debt across the enterprise and prioritizing items in an orderly fashion.</description>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/patterns</link>
 			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/technical-debt-framework</guid>
-			<pubDate>Tue, 23 May 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;blockquote&gt;
-&lt;h2 id="tldr"&gt;TL;DR&lt;/h2&gt;
-&lt;p&gt;Technical debt is a hidden bleed on cost, productivity and morale. You can address it by accepting it exists, socialising the subject and putting in place ways to address it without blame.&lt;/p&gt;
-&lt;p&gt;There are three main forms, process, people or technology. These relate to what you have neglected to maintain. They are best addressed as an accepted part of life, rather than with any major effort.&lt;/p&gt;
-&lt;p&gt;Leave space in your team's workflow to accommodate and address these issues and rather than being a debt which is compounding liability against your business, it will become a compounding investment, which pays for itself over time.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;We have all been there. There's an urgent problem. There's software that should resolve it and make everything great.&lt;/p&gt;
-&lt;p&gt;So we get it. And install it, and then someone doesn't quite finish installing it. And something doesn't work properly. Or someone leaves, and now no one knows how to fix that one thing, and everyone spends time working around it.&lt;/p&gt;
-&lt;p&gt;And we have to upgrade it every few months in some complicated ritual. And the renewals just seem to get more expensive and complicated every year...&lt;/p&gt;
-&lt;p&gt;This is technical debt. It's the well-meant shortcut we took to speed something up. And now, it's unmanaged and not being repaid. The business is paying 'interest' on it. And like a lot of credit, the interest can be destructive.&lt;/p&gt;
-&lt;h2 id="symptoms"&gt;Symptoms&lt;/h2&gt;
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/patterns</guid>
+			<pubDate>Tue, 06 Jun 2023 07:34:49 GMT</pubDate>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Overview of the Architecture Practice</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/architecture-practise</link>
+			<description>&lt;p&gt;Software and systems architects provide guidance and governance of a technology organization by, amongst other things, modeling the organization, its departments, capabilities, and processes and then mapping technology into them to ensure that the business has a somewhat optimized set environment, which can adapt to its needs and isn't onerous to look after.&lt;/p&gt;</description>
+			<author>James Brewster</author>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/architecture-practise</guid>
+			<pubDate>Tue, 06 Jun 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Software and systems architects provide guidance and governance of a technology organization by, amongst other things, modeling the organization, its departments, capabilities, and processes and then mapping technology into them to ensure that the business has a somewhat optimized set environment, which can adapt to its needs and isn't onerous to look after.&lt;/p&gt;
+&lt;p&gt;Traditional approaches to this take time and go against the agile philosophy to avoid Big Up Front Design BUFD. How best to support developers in an agile world?&lt;/p&gt;
+&lt;p&gt;The common concept in an agile development organization is 'Emergent Architecture.' But what does that mean? You follow a model more akin to evolution than planning and interfere if you see things dangerous to the organization. You use history as a lesson, but accept what happened and don't try to remove it.&lt;/p&gt;
+&lt;h2 id="in-theory"&gt;In theory&lt;/h2&gt;
+&lt;p&gt;As development teams self-organize, the architecture role is to support decision-making and ensure good decisions thrive while poor choices don't.&lt;/p&gt;
+&lt;p&gt;This concept's core work item is the ADR or Architectural Decision Record. Whenever the team decides how development will proceed, they write it down in their work system. ADRs are covered in more detail &lt;a href="xref:architecture-decision-records"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/architecture-process.png" alt="Architecture Process"&gt;&lt;/p&gt;
+&lt;p&gt;The architecture team review and steer ADRs. ADRs are like the tweet format of designs; they encompass small decisions and choices with just enough context and reasoning to explain to a new starter why something happened. A significant benefit is that they can all be queried and exported and used to describe the project thinking over time and why the team made confident choices. The ADR list acts as a log, which someone could examine to trace the project's decisions.&lt;/p&gt;
+&lt;p&gt;The architecture practice reviews the ADRs and looks for trends and patterns. As certain things come to the fore, the architects write new &lt;a href="xref:principles"&gt;principles&lt;/a&gt;, &lt;a href="xref:patterns"&gt;patterns&lt;/a&gt;, and &lt;a href="xref:nfrs"&gt;NFRs&lt;/a&gt; approved by the ARB to help the teams make future decisions.&lt;/p&gt;
+&lt;p&gt;The architect group will propose amendments to the organization's architecture to the ARB, which may require approval, depending on the size and scope of the new principles.&lt;/p&gt;
+&lt;p&gt;Changes in architecture guidance are applied retrospectively but may result in the creation of new technical debt items. Similar to how the law or regulation works.&lt;/p&gt;
+&lt;h2 id="in-practice"&gt;In Practice&lt;/h2&gt;
+&lt;p&gt;It is up to the development team to decide how to solve problems based on the environment. The environment includes:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;If technology or process decisions require meetings to work around or make decisions, you probably have technical debt.&lt;/li&gt;
-&lt;li&gt;If changes take a long time to make, and as such, decisions to make changes take a long time as well, you probably have technical debt.&lt;/li&gt;
-&lt;li&gt;If simple changes or expectable business requirements take a long time to be delivered, you probably have technical debt.&lt;/li&gt;
-&lt;li&gt;If your developers always estimate far too low and deliver way later, then you probably have technical debt.&lt;/li&gt;
-&lt;li&gt;If you use technology in your business, you probably have technical debt.&lt;/li&gt;
+&lt;li&gt;Existing systems&lt;/li&gt;
+&lt;li&gt;People &amp;amp; Culture&lt;/li&gt;
+&lt;li&gt;Existing technology&lt;/li&gt;
+&lt;li&gt;Existing projects&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="the-scale-of-the-issue"&gt;The scale of the issue&lt;/h2&gt;
-&lt;p&gt;In a 2020 survey, McKinsey asked a group of CIOs who are part of a panel, what percentage of their budget was being diverted to managing tech debt, and they responded that 10-20% was typical.&lt;/p&gt;
-&lt;p&gt;More worrying was the statistic that CIOs felt the value of the technical assets was made up of 20-40% tech debt, before depreciation.&lt;/p&gt;
-&lt;p&gt;More recently, a repeat of this study found that 60% of CIOs felt their organisation's tech debt had perceptibly increased over the past three years.&lt;/p&gt;
-&lt;p&gt;On a more positive note, the same whitepaper quoted a former CIO at a major cloud provider:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;quot;By reinventing our debt management, we went from 75 percent of engineer time paying the [tech debt] ‘tax’ to 25 percent. It allowed us to be who we are today.&amp;quot;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="background"&gt;Background&lt;/h2&gt;
-&lt;p&gt;At WyCash in 1992, Ward Cunningham used the term Technical debt to explain to management why iterative software development was a better choice:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite… The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise. — Ward Cunningham, The WyCash Portfolio Management System, 1992&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Ward Cunningham was also one of the authors of the Agile Manifesto in 2008.&lt;/p&gt;
-&lt;p&gt;The analogy keeps going. Not paying technical debt, like credit cards, can swiftly compound the interest. Conversely, paying down technical debt early, by refactoring in advance to improve quality is like saving. That can also compound, improving the agility of your software, and increasing its value and productivity over time, quite drastically.&lt;/p&gt;
-&lt;p&gt;Martin Fowler, noted author and software architect, had this to say:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;In the book, I make the following definition of “refactoring”&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;noun&lt;/em&gt;: a change made to the internal structure of software to make it easier to understand and cheaper to modify without changing its observable behavior&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;verb&lt;/em&gt;: to restructure software by applying a series of refactorings without changing its observable behavior. -Martin Fowler, refactoring.com&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;So, if you push features too quickly, and do not give your development teams time to refactor, reassess and improve the systems you rely on, it will get more expensive to work on. Over time, these systems become less of an asset and more of a liability.&lt;/p&gt;
-&lt;h2 id="types-and-causes"&gt;Types and causes&lt;/h2&gt;
-&lt;p&gt;None of this is done deliberately. Market conditions, business needs and markets all change. The assumption that machines will survive that change, without proactive maintenance is disproven. So why do we not treat &amp;quot;software machines&amp;quot; or the business systems that use them, with the same care?&lt;/p&gt;
-&lt;p&gt;The primary cause is an over-focus on the immediate, without concern for the future. Short-sighted needs, month-end targets, and shareholder dividends, all drive short-term thinking. &amp;quot;We'll fix it tomorrow&amp;quot; doesn't work if you don't care about tomorrow.&lt;/p&gt;
-&lt;p&gt;Technical debt can be easily thought of in three types:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Process debt. The lack of appropriate or correct frameworks to operate modern systems in modern ways.&lt;/li&gt;
-&lt;li&gt;People debt. The lack of skills, knowledge and training for people to properly engage in current technologies and processes.&lt;/li&gt;
-&lt;li&gt;Technical debt. Unmaintained systems and software, where the cost to maintain or update is increased and keeps increasing.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Whilst most people will recognise the third, I suspect a lot ignore or don't consider the first two. I would argue the first is the most worry-some. Process debt leads shows up in phrases like 'That's not how we do that' and frustrations with 'the way things are'. It makes people feel disempowered. Being unable to make things better makes people feel helpless.&lt;/p&gt;
-&lt;p&gt;Everyone acknowledges that education is good, but employees want to feel cared about and invested in. Ensuring that training happens is important for employee engagement, as well as productivity. It means they know how to use the systems the business invests in, as well as care about the way the business works.&lt;/p&gt;
-&lt;h2 id="framework-for-managing-technical-debt"&gt;Framework for Managing Technical Debt&lt;/h2&gt;
-&lt;p&gt;Technical debt management boils down to one point. You have to pay it back. It will not go away. Factor it into daily work. If it's low, use the time to pay it forward (invest) rather than focus on the next new shiny thing.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The author would recommend giving it up to a 25% share of the work budget to team led 'improvement', which includes tech debt. It may be that this flexes up and down a bit, but 20-25% in the long term will keep your software improving.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;The goal is not to remove tech debt entirely but to keep it at a workable level.&lt;/p&gt;
-&lt;p&gt;Companies need to identify and track tech debt, to ensure it can be managed to the best advantage.&lt;/p&gt;
-&lt;p&gt;Tech debt should be dealt with strategically. These principles, based on work from McKinsey, may help:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Start with a shared definition of tech debt. Executive and senior management need to have the same understanding of what constitutes tech debt; Process, people and technology, which need upgrading.&lt;/li&gt;
-&lt;li&gt;Treat tech debt as 'waste in the P&amp;amp;L' of the business. Leaders should acknowledge the capital and opportunity cost of this and have access to information and metrics to track it.&lt;/li&gt;
-&lt;li&gt;Make sure the total cost of the application, its development, cost to serve and debt is tracked. It should cover 100% of the resources necessary. If that changes how you account, then change how you account. (See 'process debt' above)&lt;/li&gt;
-&lt;li&gt;Have an agreed process, which &lt;em&gt;doesn't penalise&lt;/em&gt; teams or people for addressing tech debt. Make sure that incentives encourage the right behaviour and that addressing tech debt is treated as a positive. Don't blame people for it either, someone made that decision with a good intention.&lt;/li&gt;
-&lt;li&gt;Have teams Create items in the product backlog with value, cost, etc. attached. Prioritise a percentage of them in every sprint, to make sure the value is understood and visible. Treat them as features, just like others and value them. They weren't written up for the fun of it...&lt;/li&gt;
-&lt;li&gt;Don't paralyze or immobilise a business to pay tech debt. It rarely works and isn't sustainable. It encourages people to think someone will just stop everything to fix things. Instead, set down time and resources in daily work to address debt consistently, either proactively or reactively, depending on the team and the workload.&lt;/li&gt;
-&lt;li&gt;When all else fails, if a product or value stream is 'bankrupt' and can't service its debts (i.e. its 'interest' is &amp;gt;50% or so), then explore the option to replace the whole stack. It's drastic, but it may be a lower-risk option and save the product/service.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id="identifying-technical-debt"&gt;Identifying Technical Debt&lt;/h3&gt;
-&lt;p&gt;Sticking to a financial analogy, you can think of tech debt as having two components, just like any other debt:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The principal. This is the total work required to bring the stack, including processes and people, up to date.&lt;/li&gt;
-&lt;li&gt;The interest. is the complexity tax which every single project pays right now. The spike work to understand how to make a change, or use a commodity technology. The debug work to figure out how version x.x varies from x.y. This is the interest and it's paid in productivity.
-McKinsey also says that most organisations are paying way more than 10% interest on this debt, as it causes a significant drag on their projects and resources.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://www.mckinsey.com/%7E/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/tech%20debt%20reclaiming%20tech%20equity/svg-tech-debt-exhibit-2.svgz?cq=50&amp;amp;cpy=Center" alt="Tech Debt Principle and Interest" /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Principal and interest create a strong drag on enterprise value. &lt;a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-debt-reclaiming-tech-equity"&gt;Tech debt: Reclaiming tech equity | McKinsey (2020) www.mckinsey.com.&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id="tracking-technical-debt"&gt;Tracking Technical Debt&lt;/h3&gt;
-&lt;p&gt;Tech debt should be tracked by the team/group as a key metric. It may be that you have to find a way to expose or count the cost of this debt, which isn't always easy. Some areas you can track:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Software Development
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://linearb.io/blog/what-is-code-complexity/"&gt;Complexity&lt;/a&gt; - Various code complexity metrics can be tracked and monitored on each project to understand where the complexity lies and help identify areas which need work.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://dzone.com/articles/8-top-metrics-for-measuring-your-technical-debt"&gt;New Bugs vs Closed Bugs&lt;/a&gt; - Are your bugs growing or falling?&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://linearb.io/blog/how-to-measure-technical-debt/#:%7E:text=Measuring%20Technical%20Debt%3A%20Identify%20High-Risk%20Areas%201%20Keep,Risk%20and%20Add%20Importance%20to%20the%20Mix%20"&gt;Testing Effort&lt;/a&gt; - An easy approximation is to look at test coverage. Test coverage isn't a golden bullet by any means; whilst a low value is a warning, a high volume doesn't mean the tests are good, coverage can show how well-understood a code base is. As such, have a threshold, such as 80% as a target.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Infrastructure - Track the cost to service and host the application. Compare the current choice with the preferred pattern for hosting the application.&lt;/li&gt;
-&lt;li&gt;Architectural - Does the application follow the organisation's standards and recommendations? Does it follow the vendor's deployment guidance? If it is non-standard, then it will be more expensive/riskier to host and fix. It may cause complexity to host and manage.&lt;/li&gt;
-&lt;li&gt;Training - Do you need to hire people for every new technology? Are your team unable to spend time looking at potentially valuable new tools and technologies?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you mix these with importance and risk, you can approximate the 'value' and start to create a backlog of tech debt.&lt;/p&gt;
-&lt;h3 id="managing-technical-debt"&gt;Managing Technical Debt&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Have your teams identify tech debt and create features in their existing backlogs for tech debt. Tag them with 'Tech-debt', so they can be reported on and analysed.
-&lt;ul&gt;
-&lt;li&gt;Do not create a separate backlog. this will slow things down. One team, one backlog.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Track each feature with risk and importance. This includes tech debt. During sprint planning, pull tech debt items into the backlog to fill up the first 25%. Feel free to move some out to make way for important features, but prioritise debt over 'Should' or 'Could' features.
-&lt;ul&gt;
-&lt;li&gt;Remember, each debt you deal with gives you more bandwidth tomorrow. The compound interest of tech debt payoff can be huge.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Make sure your product managers understand the value of this work and support it. They need to be able to prioritise tech debt and understand what that budget is doing and where it is going.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Technical debt is a shortcut that was made to speed something up. It’s a lack of appropriate or correct frameworks to operate modern systems in modern ways. It’s the lack of skills, knowledge and training for people to properly engage in current technologies and processes. It’s unmaintained systems and software, where the cost to maintain or update is increased and keeps increasing.&lt;/p&gt;
-&lt;p&gt;Every business has these.&lt;/p&gt;
-&lt;p&gt;Technical debt management boils down to one point. Pay it back. The goal is not to remove tech debt but to keep it at a workable level. Companies need to identify and track tech debt, to ensure it can be managed to the best advantage.&lt;/p&gt;
+&lt;p&gt;Most people try to make good decisions. Usually, bad decisions are the result of poor communication or poor information. The architecture practice must create meaningful decisions and knowledge and help educate people so the teams can make better decisions.&lt;/p&gt;
+&lt;p&gt;By using a feedback loop, from the decisions the teams make and accepting that these won't all be good, we can adjust the team's behavior through education, exposure, and experience.&lt;/p&gt;
+&lt;h2 id="anti-patterns-of-architecture"&gt;Anti-patterns of architecture&lt;/h2&gt;
+&lt;p&gt;Despite our best efforts, sometimes architects don't get things right. We're sorry, but we're also human, like everyone else. Here's a list of problem archetypes of architects, mainly for fun and giggles.&lt;/p&gt;
+&lt;h3 id="ivory-tower"&gt;Ivory Tower&lt;/h3&gt;
+&lt;p&gt;Too removed from the business of the organization. They watch from on high and make proclamations while unaware of the plight of the people on the ground. This type of architect seems to create a lot of work, but it's detached from the reality and culture of the business.&lt;/p&gt;
+&lt;h3 id="in-the-trenches"&gt;In the trenches&lt;/h3&gt;
+&lt;p&gt;Too focused on their previous role, trench warriors refuse to give up their tactical responsibility and involvement and don't have time or focus for strategy. Sometimes this is because of the current state of the organization. Sometimes it's because they don't have the exposure to build a picture of a real strategy for the business.&lt;/p&gt;
+&lt;h3 id="overly-academic"&gt;Overly Academic&lt;/h3&gt;
+&lt;p&gt;Studious and thorough, working through frameworks and quoting luminaries, the academic cannot effectively translate these theories into practical output for the organization. They talk about possibilities, gold standards, and best practices and sometimes focus on the areas of frameworks which aren't implemented or fully used.&lt;/p&gt;
+&lt;p&gt;Knowledge and understanding of frameworks are essential, but frameworks are collections of methods that can help. Using strategies to address issues in the business is good sense. Using techniques to address symptomless 'problems' will make no friends.&lt;/p&gt;
+&lt;h3 id="too-technical"&gt;Too technical&lt;/h3&gt;
+&lt;p&gt;Often recruited from technical areas, such as IT Operations, the too-technical architect hasn't learned to temper their language to a broader audience. Using too much technical language conversationally can result in getting typecast as another 'techie,' being sidelined from honest discussions and gaining the trust of other parts of the business.&lt;/p&gt;
+&lt;p&gt;The technical skills are a real boon, though, and help when working with the more technical aspects of the organization.&lt;/p&gt;
+&lt;h3 id="over-specialized"&gt;Over-specialized&lt;/h3&gt;
+&lt;p&gt;An architect should have a wide variety of skills and a broad understanding of most areas of their domain. If the field is too large, then specialism is a natural part of that, but an architect should work across as much of the environment as necessary, learning what they can of each part of the organization.&lt;/p&gt;
+&lt;p&gt;If an architect only understands IT, they won't be able to effectively talk to Finance Partners or Legal about changes, budgets, or compliance. They may struggle to explain hosting concerns if they only know operations and not development.&lt;/p&gt;
+&lt;p&gt;Architects often have specialisms, but typically these start to be relinquished after they start becoming architects, moving away from specifics and into broader concepts, so they can better help explain the organization's mechanics.&lt;/p&gt;
+&lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
 &lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-debt-reclaiming-tech-equity"&gt;Tech debt: Reclaiming tech equity | McKinsey (2020) www.mckinsey.com&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://linearb.io/blog/how-to-measure-technical-debt/#:%7E:text=Measuring%20Technical%20Debt%3A%20Identify%20High-Risk%20Areas%201%20Keep"&gt;How to Measure Technical Debt Before You Start Tackling It | LinearB (2022) linearb.io&lt;/a&gt; (Accessed: 16 May 2023).&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://blog.visionarycto.com/p/my-20-year-career-is-technical-debt"&gt;My 20-year career is technical debt&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>Avoiding Work</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/2023-05-23-avoiding-work</link>
+			<title>Non-functional Requirements</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/nfrs</link>
+			<description>NFRs define the way a product functions in ways beyond the main requirements of the end customer. They explain how fast, robust or reliable something should be</description>
+			<author>James Brewster</author>
 			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/2023-05-23-avoiding-work</guid>
-			<pubDate>Tue, 23 May 2023 00:00:00 GMT</pubDate>
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/nfrs</guid>
+			<pubDate>Tue, 06 Jun 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Functional requirements describe why something is. Non-functional Requirements describe how it is. Where a customer may ask for a specific functional requirement, they are doubtful to ask for an NFR unless something is wrong.&lt;/p&gt;
+&lt;p&gt;The NFRs which go into a product can mean all manner of differences, which affect the cost, performance, and reliability of a product or solution.&lt;/p&gt;
+&lt;p&gt;Consider the following requirements and how they might affect the cost or development of a vehicle.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Carries two passengers&lt;/li&gt;
+&lt;li&gt;Can travel 200 miles&lt;/li&gt;
+&lt;li&gt;Travels on roads&lt;/li&gt;
+&lt;li&gt;A fuel efficiency greater than 30 miles per gallon.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now, this could describe all manner of things. A motorbike? A tandem bicycle? A Sports car? These could all be right, but they meet the needs of different markets and result in differing products.&lt;/p&gt;
+&lt;p&gt;Defining how your product will perform specific tasks and how it will perform under load and in use is essential to create the proper differentiation and guidance for development.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Use Mongo DB for document database and host on Azure PaaS.</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architectural-decision-records/use-mongodb-on-cloud</link>
+			<description>&lt;p&gt;In the context of Document Databases for application containers, Facing the need to host semi-structured data, close to the service.&lt;/p&gt;</description>
+			<author>James Brewster</author>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architectural-decision-records/use-mongodb-on-cloud</guid>
+			<pubDate>Mon, 05 Jun 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;In the context of Document Databases for application containers, Facing the need to host semi-structured data, close to the service.&lt;/p&gt;
+&lt;p&gt;We decided to use Mongo DB interfaces on Azure Cosmos DB service, And against using a cosmos DB interface or a native mongo DB container.&lt;/p&gt;
+&lt;p&gt;To simplify hosting the DB and to keep the database cloud agnostic, Accepting that we will have to ensure that we don;t use vendor specific features on Cosmos and that there is some cross service latency fromt he container to Cosmos&lt;/p&gt;
+&lt;p&gt;Because, at this time, there is no real need to be fully multi-cloud and the native Azure Cosmos Interfaces are being deprecated at some point.&lt;/p&gt;
+&lt;p&gt;Discussed with James Brewster, Peter Wilson, Jamie Milligan and Simon King.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Broker Training as a simple log of acceptance (ADR)</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architectural-decision-records/broker-training</link>
+			<description>&lt;p&gt;In the context of Broker Training, Facing the need to ensure brokers are properly trained to sell the relevaznt utility service.&lt;/p&gt;</description>
+			<author>James Brewster</author>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architectural-decision-records/broker-training</guid>
+			<pubDate>Fri, 02 Jun 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;In the context of Broker Training, Facing the need to ensure brokers are properly trained to sell the relevaznt utility service.&lt;/p&gt;
+&lt;p&gt;We decided for a broker training log, which will confirm acceptance and record the date, And against an eSignature or an immutable log.&lt;/p&gt;
+&lt;p&gt;To acheive the proof that training was delivered, prior to using the system, Accepting that we will remain liable for any regulatory issues, caused by the broker or their agents.&lt;/p&gt;
+&lt;p&gt;Because, at this time, the risk of litigation or regulatory action is deemed low enough that we can make the quickest decision&lt;/p&gt;
+&lt;p&gt;Discussed with James Brewster, Peter Wilson and Jade Rawlings.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Architecture Decision Records</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/architecture-decision-records</link>
+			<description>No one reads extensive documents. ADRs are a way to capture meaningful choices so people can find them in future.</description>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/architecture-decision-records</guid>
+			<pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;One of the most important things a product manager can do is ensure that only critical work is prioritised. Any work which you want to do needs to be the most valuable thing.&lt;/p&gt;
-&lt;p&gt;How do you make sure the work you do is valuable?&lt;/p&gt;
-&lt;p&gt;It's important to avoid 'make-work'. Thats not your job to keep developers busy or ensure backlogs are stuffed. If there's no valuable work ready, then don't propose it.&lt;/p&gt;
-&lt;h2 id="defining-work"&gt;Defining work&lt;/h2&gt;
-&lt;h3 id="types-of-work"&gt;Types of work&lt;/h3&gt;
-&lt;h2 id="planning-work"&gt;Planning Work&lt;/h2&gt;
-&lt;h3 id="sprints-and-pis"&gt;Sprints and PIs&lt;/h3&gt;
-&lt;h2 id="managing-work"&gt;Managing work&lt;/h2&gt;
-&lt;h2 id="anatomy-of-a-healthy-backlog"&gt;Anatomy of a healthy backlog&lt;/h2&gt;
-&lt;h2 id="kanban"&gt;Kanban&lt;/h2&gt;
-&lt;h2 id="not-a-project-manager"&gt;Not a Project Manager&lt;/h2&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Identity, Authentication and Authorisation</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/identity-auth</link>
-			<description>Authenticating users in microservices can be fraught with perils...</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/identity-auth</guid>
-			<pubDate>Tue, 16 May 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
-&lt;p&gt;This pattern describes a central authentication model, suitable for a microservices web application. It builds on several other patterns, to provide a scalable way to identify, authenticate and authorise access to resources, data and services.&lt;/p&gt;
-&lt;p&gt;In this example, a role-based authorization model is being used. Customer policies would be more configurable, but also more complex.&lt;/p&gt;
-&lt;h3 id="illustration"&gt;Illustration&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/media/index/api-gateway-centralized-authentication.png" alt="API Gateway Centralized authentication" /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/"&gt;Rousos (2023) Securing .NET Microservices and Web Applications, learn.microsoft.com.&lt;/a&gt;(Accessed: 16 May 2023).‌&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;In this instance, a mobile app is shown. But a static site, calling an API, a Single Page Application, or an MVC application would use a similar method. This could use the &lt;a href="https://akfpartners.com/growth-blog/backend-for-frontend#:%7E:text=In%20the%20Backend%20for%20Frontend%20pattern%2C%20a%20service,differ%20from%20a%20traditional%20API%20or%20monolithic%20gateway."&gt;Backends-For-Frontends&lt;/a&gt; pattern, to offset any differences.&lt;/p&gt;
-&lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
+&lt;p&gt;Architectural decision records (ADRs) capture a crucial technical decision, the context in which it was made, and the consequences of the decision. They are used to record the project’s architectural thinking and conclusions for further reference and to help new team members understand the rationale behind the design choices.&lt;/p&gt;
+&lt;p&gt;ADRs typically follow a template that includes the title, context, decision, status, consequences, and alternatives of the decision.&lt;/p&gt;
+&lt;p&gt;Use a folder or a wiki page to store ADRs. Somewhere close to the code repository and accessible to other stakeholders. You can create, review and update ADRs using tools like Azure DevOps.&lt;/p&gt;
+&lt;h2 id="process"&gt;Process&lt;/h2&gt;
+&lt;p&gt;Here is a process for creating Architectural Decision Records (ADRs) in Azure DevOps:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;By using the gateway, authentication is offloaded to the gateway and centralised. &lt;a href="xref:gateways"&gt;Gateways&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;The gateway issues a signed token, which contains the authorised user's roles, which can be used for the lifespan of the token, reducing chatter. &lt;a href="xref:microservices-anti-patterns"&gt;Microservices Anti-patterns&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;The token is long-lived, reducing user frustration. &lt;a href="xref:ease-of-use"&gt;Ease-of-Use&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Once implemented, downstream services simply need to have their role added to the token and respect it.&lt;/li&gt;
-&lt;li&gt;Identity management and storage can be offloaded to the customer's preferred vendor, using open standards, Including:
-&lt;ul&gt;
-&lt;li&gt;Microsoft, Google or Facebook identities, such as Microsoft AzureAD B2C.&lt;/li&gt;
-&lt;li&gt;Microsoft Azure AD identities, using B2B Federation.&lt;/li&gt;
-&lt;li&gt;Any OpenID Connect or OAuth2.0 Identities.&lt;/li&gt;
+&lt;li&gt;Define a template for documenting ADRs that includes the following sections: title, context, decision, status, consequences, and alternatives¹.&lt;/li&gt;
+&lt;li&gt;Use a folder in the Azure DevOps repository to store the ADRs. The folder name can be "adr" or "docs/adr" or something similar.&lt;/li&gt;
+&lt;li&gt;Create a new work item in the backlog and mark it as technical for each architectural decision. Explain the decision and alternatives in the record and link to relevant resources.&lt;/li&gt;
+&lt;li&gt;Assign the item to an engineering team based on their expertise and availability. The team should review the work item and possible solution options (3 is ideal) before deciding how to proceed and recording the decision in Markdown as a file. When writing the document, follow the template and store the output in Azure DevOps.&lt;/li&gt;
+&lt;li&gt;Submit the ADR as a pull request and request feedback from the other teams and stakeholders. The pull request should also include any code changes that implement the decision.&lt;/li&gt;
+&lt;li&gt;Review the feedback and update the ADR document and code changes accordingly. If there are any conflicts or disagreements, resolve them through discussion and consensus.&lt;/li&gt;
+&lt;li&gt;Merge the pull request and mark the feature as done. The ADR document should be 'accepted' or 'rejected' depending on the review's outcome.&lt;/li&gt;
+&lt;li&gt;Track the ADRs in a decision log that lists them by title, status, and date. The decision log can be a simple text file or a table on a Wiki page.&lt;/li&gt;
+&lt;li&gt;Review the ADRs periodically and update them if necessary. If an ADR becomes obsolete or superseded by another decision, change its status accordingly and link to the new ADR.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="drawbacks-to-this-pattern"&gt;Drawbacks to this pattern&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;It assumes simple role-based authorisation. A more complex policy-based model would require additional depth and complexity in the token, increasing its size and complexity.&lt;/li&gt;
-&lt;li&gt;The token is fairly easy to 'crack', so should never be shared outside the network. A separate reference token model is recommended, where the token is used within the cluster, and used by the gateway as a delegated authorisation.
-&lt;ul&gt;
-&lt;li&gt;The user would have a lean token or reference cookie, which only correlates to the token on the gateway. Think of this model as a delegation model, rather than an authorisation model.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;This creates a dependency on external identity vendors, which can be hard to manage.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;This pattern, together with the &lt;a href="xref:gateways"&gt;Gateways&lt;/a&gt;, is recommended in most enterprise or B2B microservice models. It is ideal for a containerised application, which needs to minimise cross-talk and have a planned model for authorisation and identity.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;This pattern is not suitable for use on unsecured networks. The contents of the token can be used to understand the user and their roles.
-&lt;ul&gt;
-&lt;li&gt;This pattern still promotes zero-trust, as every service will validate the token, and must trust the issuer and check for tampering.&lt;/li&gt;
-&lt;li&gt;Using a reference token, issued at the gateway to the external user, which does NOT contain any useful information can mitigate this.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://nordicapis.com/how-to-control-user-identity-within-microservices/"&gt;NordicAPIs - How to control user identity within microservices&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://medium.com/&amp;#64;maison.moa/using-jwt-json-web-tokens-to-authorize-users-and-protect-api-routes-3e04a1453c3e"&gt;Using JWT to authorize users and protect API routes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/"&gt;Make secure .NET Microservices and Web Applications&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Intellectual Property</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property</link>
-			<description>This page explains the importance of protecting intellectual property and provides examples of legal protections for intellectual property.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property</guid>
-			<pubDate>Mon, 15 May 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;blockquote&gt;
-&lt;p&gt;&amp;quot;An ounce of prevention is worth a pound of cure. - Benjamin Franklin&amp;quot;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;The business should retain control of its intellectual property and ensure that it is not used without permission.&lt;/p&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Intellectual property is a valuable asset for the business. It is important to protect and manage the intellectual property of the business.&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;The business should ensure that its intellectual property is protected from infringement by others. Intellectual property should be managed in a way that maximizes its value to the business while minimizing the risk of infringement.&lt;/p&gt;
-&lt;h3 id="details-and-context"&gt;Details and Context&lt;/h3&gt;
-&lt;p&gt;Intellectual property is important because it is a valuable asset for the business. It can include patents, trademarks, copyrights, trade secrets, and other proprietary information.&lt;/p&gt;
-&lt;p&gt;Protecting intellectual property can help the business maintain its competitive advantage and prevent others from using its ideas or products without permission. It can also help the business generate revenue through licensing agreements or other means.&lt;/p&gt;
-&lt;p&gt;Managing intellectual property can be complex and requires careful planning and execution. The business should have policies and procedures in place to protect its intellectual property and ensure that it is not used without permission. This can include measures such as confidentiality agreements, non-disclosure agreements, and other legal protections.&lt;/p&gt;
-&lt;p&gt;There are several legal protections for intellectual property. Some of the most common include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Patents: A patent is a legal protection for an invention or process. It gives the inventor the exclusive right to make, use, and sell the invention for a certain period.&lt;/li&gt;
-&lt;li&gt;Trademarks: A trademark is a symbol, word, or phrase that identifies and distinguishes a product or service from those of others. It can be registered with the government to provide legal protection.&lt;/li&gt;
-&lt;li&gt;Copyrights: A copyright is a legal protection for original works of authorship such as books, music, and software. It gives the creator the exclusive right to reproduce and distribute the work.&lt;/li&gt;
-&lt;li&gt;Trade secrets: A trade secret is a confidential piece of information that provides a competitive advantage to a business. It can include things like formulas, processes, and customer lists.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There are other legal protections available as well, depending on the type of intellectual property involved. It’s important to consult with an attorney who specializes in intellectual property law to determine the best course of action for your business.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/patents"&gt;Patents - gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/register-a-trademark"&gt;Trademarks - gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/copyright"&gt;Copyright - gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/protect-your-trade-secrets"&gt;Trade Secrets - gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Dumb Pipes</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/dumb-pipes</link>
-			<description>This page is about designing and implementing effective communication between microservices in a distributed system.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/dumb-pipes</guid>
-			<pubDate>Mon, 15 May 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;As services scale in a microservices architecture, they need to communicate. A communication network is important, to make sure each service can easily talk to the others, but as they scale, it's important to make sure they can grow and continue to communicate.&lt;/p&gt;
-&lt;p&gt;This pattern uses the principle of 'Smart end-points, dumb pipes'. If the pipes are clever, they need maintenance, everyone has to wait on the team which is responsible for the pipe, which reduces time to market.&lt;/p&gt;
-&lt;p&gt;If the pipe is dumb, anyone can send a message easily, anyone can consume a message easily. They may need to adjust the format, but that's something they can do within their team.&lt;/p&gt;
-&lt;p&gt;A truly stupid pipe should handle routing and that's it.&lt;/p&gt;
-&lt;h2 id="illustration"&gt;Illustration&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/media/communication-in-microservice-architecture/sync-vs-async-patterns-across-microservices.png" alt="A diagram showing communications in a Microservices architecture" /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Anti-patterns and patterns in communication between microservices &lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture"&gt;from learn.microsoft.com&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Summarizing all of the above, the benefits of smart endpoints and dumb pipes are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Lower cost of messaging infrastructure - pushes the cost of goods sold closer to the producer and consumer. Allows messaging infrastructure to scale by the number of messages instead of the computational complexity of messages. License cost is reduced as fewer compute nodes are needed for message transit.&lt;/li&gt;
-&lt;li&gt;Organization Scalability – teams aren’t reliant on transforms created by a centralized team.&lt;/li&gt;
-&lt;li&gt;Low Latency – because computation is limited, messages are delivered more quickly and predictably to end consumers.&lt;/li&gt;
-&lt;li&gt;Capacity and scalability of messaging infrastructure – increased significantly as compute is not part of the scale of the platform.&lt;/li&gt;
-&lt;li&gt;Availability of messaging infrastructure – because computing is removed, so is a type of failure. As such, availability increases.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="assumptions"&gt;Assumptions&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Messages will need to be in a defined format, which anyone can reference and understand on their own. An API with a contract is a good way to do this.&lt;/li&gt;
-&lt;li&gt;Teams will need to adhere to contracts. These can be changed (issues, etc.), but this should be done properly.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://martinfowler.com/articles/microservices.html."&gt;Lewis, J. and Fowler, M. (2014) Microservices, martinfowler.com.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/architecture-principle-messaging-systems-smart-end-points-dumb-pipes"&gt;Architecture Principles: Messaging Systems – Smart End Points, Dumb Pipes | AKF Partners&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://nathanpeck.com/microservice-principles-smart-endpoint-dumb-pipe/"&gt;Smart Endpoints and Dumb Pipes, Nathan Peck&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture"&gt;Nishanil et al. (2022) Communication in a microservice architecture, learn.microsoft.com.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Security Principles</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/security-principles</link>
-			<description>&lt;p&gt;As a business, we want to adopt a Zero-trust approach to our business and use of technology. This model provides the best combination of security and agility for our enterprise.&lt;/p&gt;</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/security-principles</guid>
-			<pubDate>Thu, 11 May 2023 15:11:41 GMT</pubDate>
-			<content:encoded>&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;As a business, we want to adopt a Zero-trust approach to our business and use of technology. This model provides the best combination of security and agility for our enterprise.&lt;/p&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Zero Trust is a mature target model in 2023. It supports the capabilities and organisation needs in the current climate and, properly implemented, it is proven to improve user experience and security posture.&lt;/p&gt;
-&lt;p&gt;By commoditising the network, and assuming no device or user is anywhere safe, organisations can improve access to services AND improve security. In some cases, this can happen whilst overall costs come down, through a reduced vendor footprint and reduced local hosting, traffic and operations.&lt;/p&gt;
-&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
-&lt;p&gt;Zero Trust is a security approach built on three principles:&lt;/p&gt;
+&lt;p&gt;This process can help you record your architectural and technical decisions for further reference and have the new team members up to date from day one.&lt;/p&gt;
+&lt;p&gt;A centralised Architecture team can review any ADRs made and either look to amend any of the Architecture Artefacts in response. It may be that several decisions cause a change in precedence, which requires adjusting principles or technology guidelines.&lt;/p&gt;
+&lt;p&gt;Remember, the aim of an architecture practice is to:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Verify Explicitly&lt;/li&gt;
-&lt;li&gt;Use 'least privilege' access&lt;/li&gt;
-&lt;li&gt;Assume Breach&lt;/li&gt;
+&lt;li&gt;Simplify&lt;/li&gt;
+&lt;li&gt;De-risk&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Not&lt;/strong&gt; dictate solution&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Let's explore these three points.&lt;/p&gt;
-&lt;h3 id="verify-explicitly"&gt;Verify Explicitly&lt;/h3&gt;
-&lt;p&gt;Make use of the tools and data points available to validate that access is being granted to the right person or service, and that they are who they say they are. This should take into account things like:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Geographic location.&lt;/li&gt;
-&lt;li&gt;Device type, health and validity.&lt;/li&gt;
-&lt;li&gt;Data Classification and Permissions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="use-least-privilege-access"&gt;Use 'Least Privilege' access&lt;/h3&gt;
-&lt;p&gt;Make sure that people and services only have relevant access to their roles; no more or less. For escalated privileges, use concepts like Just-In-Time access to make sure that elevated logons are being approved, logged and cleared. This can also encompass:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Risk-based policies, that adapt the authentication to the level of risk.&lt;/li&gt;
-&lt;li&gt;A 'Four eyes' principle, to make sure access to elevated roles is approved by a second person, reducing the risk of lone insider threat.&lt;/li&gt;
-&lt;li&gt;Classify Data and Services according to value and risk and protect them appropriately.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="assume-breach"&gt;Assume Breach&lt;/h3&gt;
-&lt;p&gt;Log and monitor access to services and data. Minimise the impact of any breach, by controlling shared resources and accounts. Try to avoid unnecessary dependencies or permissions. This can be done through:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Adding appropriate monitoring and logging to applications.&lt;/li&gt;
-&lt;li&gt;Using single sign-on to ease tracking and logging.&lt;/li&gt;
-&lt;li&gt;Using the Bulkhead pattern, to minimise the danger between services and threads.&lt;/li&gt;
-&lt;li&gt;Actively monitor and control inputs, to help minimise breaches. Control access points and validate data entry.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="objective"&gt;Objective&lt;/h2&gt;
-&lt;p&gt;Remove implicit trust throughout the environment and instead use processes, policies, and technologies to continuously authenticate and authorize entities as trustworthy before actually granting access&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;Adopting a zero-trust security model can benefit us by providing:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Better visibility into traffic and access patterns, which can result in better-developed and targeted systems.&lt;/li&gt;
-&lt;li&gt;An enhanced user experience, typically with faster login times and lower password or account fatigue.&lt;/li&gt;
-&lt;li&gt;A reduction in data breaches and an improvement in compliance.&lt;/li&gt;
-&lt;li&gt;Reduction in the complexity of infrastructure and an improvement in security posture.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Improperly integrated or configured, this approach could result in:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Increased complexity and cost, often through having duplicate capabilities or the sprawl of security services and appliances.&lt;/li&gt;
-&lt;li&gt;A lack of planning can result in expensive installations and purchases.&lt;/li&gt;
-&lt;li&gt;Without a coherent policy around user access, friction can be increased as users fight with additional factors and complex passwords.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Bulkhead</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/bulkhead</link>
-			<description>The Bulkhead pattern encourages us to create barriers between services, to prevent disasters from affecting the whole application.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/bulkhead</guid>
-			<pubDate>Wed, 10 May 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;The Bulkhead pattern designs safe operation into applications, to ensure that a single failure cannot cause the loss of the whole application.&lt;/p&gt;
-&lt;p&gt;There are different approaches to implementing a bulkhead, which all have the same outcome. It depends on how you need to contain the fault. It's easier to explain with some examples.&lt;/p&gt;
-&lt;h3 id="isolating-faults"&gt;Isolating Faults&lt;/h3&gt;
+&lt;p&gt;To that end, the architecture needs to review and adapt to ensure it doesn't become stale.&lt;/p&gt;
+&lt;h2 id="providing-short-contextual-decisions"&gt;Providing short, contextual decisions&lt;/h2&gt;
+&lt;p&gt;Using a sustainable format is essential to keep decisions documentation light and relevant. Here are some examples:&lt;/p&gt;
+&lt;h3 id="y-statements"&gt;Y-Statements&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://medium.com/olzzio/y-statements-10eb07b5a177"&gt;(Wh)Y statements&lt;/a&gt;
+(Borrowed from Olaf Zimmerman, an Architect at IBM.)&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Customers are divided over different container hosts, so state and session are spread across more than one physical instance. If the instance is lost, only a subset of customers are affected.&lt;/p&gt;
+&lt;h4 id="worked-example"&gt;Worked Example&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;In the context&lt;/em&gt; of the business multi utility quoting tool,&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Facing the need to&lt;/em&gt; provide accurate and competitive quotes for gas, electricity and water services,&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We decided for&lt;/em&gt; the Multi Utility Service Provider (MUSP) pattern.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;And against&lt;/em&gt; Single Utility Service Provider (SUSP) or Multiple Utility Service Providers (MUSPs).&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;To achieve&lt;/em&gt; cost savings, convenience and efficiency for our customers,
+&lt;em&gt;Accepting that&lt;/em&gt; a MUSP requires more integration and coordination with different utility suppliers.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id="limiting-thread-concurrency"&gt;Limiting Thread Concurrency&lt;/h3&gt;
+&lt;p&gt;The format of a Y-Statement creates six phrases in three sections:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Netflix use a system called Hystrix, which limits the number of concurrent threads to any given system. Effectively, Hysterix figures out when a component starts to reach capacity and limits the upstream threads, to bring the load down.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the Context of... &lt;em&gt;(Name of the solution)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Facing the need to... &lt;em&gt;(Critical challenge)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;We decided for... &lt;em&gt;(The winning solution)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;And against... &lt;em&gt;(The other considered solutions)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;To Acheive... &lt;em&gt;(The main outcome)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Accepting that... &lt;em&gt;(Any Consequences)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Because... (Optional explaination of reasoning)&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;When designing around the bulkhead pattern, assume that there will be failures somewhere and assume that will have an impact. But try to work to contain and minimise that impact.&lt;/p&gt;
-&lt;p&gt;To that end:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Minimise dependencies; share nearly nothing!&lt;/li&gt;
-&lt;li&gt;Isolate faults, to limit fallout.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The pattern was popularised in the book, Release It! by M. Nygard.&lt;/p&gt;
+&lt;p&gt;Each outlines a single critical point about the decision. The context and need, the 'winner' and other options considered, the expected outcome and consequences, and optional reasoning if more words are needed.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Loads of examples here: &lt;a href="https://github.com/joelparkerhenderson/architecture-decision-record/tree/main/examples"&gt;architecture-decision-record/examples&lt;/a&gt; Accessed: 31 May 2023.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="architectural-haiku"&gt;Architectural Haiku&lt;/h3&gt;
+&lt;p&gt;Another approach is the &lt;a href="https://www.georgefairbanks.com/blog/comparch-wicsa-2011-panel-discussion-and-haiku-tutorial/"&gt;Architectural Haiku&lt;/a&gt;, coined by George Fairbanks in 2011.&lt;/p&gt;
+&lt;p&gt;The Architectural Haiku is a single 'slide' of information explaining a critical decision and its rationale and context. Using a 'slide' as the size of the decision artefact limits its length and duration to one page and around 3-4 minutes.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"If I had more time, I would have written a shorter letter" - Blaise Pascal, 1657&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As with any framework or method, follow the idiom 'If in doubt, leave it out'.&lt;/p&gt;
+&lt;h2 id="version-control"&gt;Version Control&lt;/h2&gt;
+&lt;p&gt;Version Control for your ADRs is essential so you know when they change, who changed them, and who approved them. Using your GIT repo for this is probably the most straightforward idea, as it can do these things effortlessly with the files.&lt;/p&gt;
+&lt;h2 id="in-practice"&gt;In Practice&lt;/h2&gt;
+&lt;p&gt;Some great ADR tools are around, including ones that use a CLI or DevOps. In this instance, the aim is to use a work item in DevOps linked to a file containing the ADR text, written using Markdown. It can be changed if necessary.&lt;/p&gt;
+&lt;p&gt;Write a Y-Statement explaining the decision. The discussion is not essential, but the context and the discarded alternatives are.
+For a more significant decision, it may be helpful to produce an Options assessment:&lt;/p&gt;
+&lt;p&gt;Svyatoslav Kotusev, 2013, &lt;a href="http://eaonapage.com/Enterprise%20Architecture%20on%20a%20Page%20(v2.0).pdf."&gt;Enterprise Architecture on a Page v2.0&lt;/a&gt;
+&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/eaonapage.com-options-assessment.png" alt="EA-On-A-Page, options assessment"&gt;&lt;/p&gt;
+&lt;p&gt;The list of ADRs is easy to find and query. Anyone can look at the recent ADRs. The architects will regularly review ADRs themselves and look to adapt the architecture as necessary, either creating or updating principles or NFRs to reduce the number of decisions which need to be made and thus recorded.&lt;/p&gt;
+&lt;p&gt;So, grab the template below, use the text in a file or work item and record those technical decisions!&lt;/p&gt;
+&lt;h2 id="template"&gt;Template&lt;/h2&gt;
+&lt;pre&gt;&lt;code class="language-Markdown"&gt;&amp;gt; 1. In the context of...
+&amp;gt; 2. Facing the need to...
+&amp;gt; 3. We decided for...
+&amp;gt; 4. And against...
+&amp;gt; 5. To acheive...
+&amp;gt; 6. Accepting that...
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://medium.com/nerd-for-tech/architecture-decision-records-adr-with-azure-devops-3f0c9edeb85b"&gt;Architecture Decision Records (ADR) With Azure DevOps.&lt;/a&gt; Accessed 31/05/2023.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/joelparkerhenderson/architecture-decision-record"&gt;joelparkerhenderson/architecture-decision-record - GitHub.&lt;/a&gt; Accessed 31/05/2023.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.infoq.com/news/2022/06/aws-adr-guide/"&gt;AWS Publishes Guide to Architecture Decision Records - InfoQ.&lt;/a&gt; Accessed 31/05/2023.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.slideshare.net/mkeeling5000/getting-started-with-architecture-decision-records"&gt;Getting Started with Architecture Decision Records - SlideShare.&lt;/a&gt; Accessed 31/05/2023.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/decision-guides/"&gt;Architectural decision guides - Cloud Adoption Framework.&lt;/a&gt; Accessed 31/05/2023.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="additional-resources"&gt;Additional Resources&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/30391809/what-is-bulkhead-pattern-used-by-hystrix"&gt;What is Bulkhead Pattern used by Hystrix? (2018) Stack Overflow.&lt;/a&gt; Accessed: 10 May 2023&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/bulkhead-pattern"&gt;Abbot, M. (2019). Microservice Bulkhead Pattern - Dos and Don’ts.&lt;/a&gt; Accessed 10 May 2023&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.oreilly.com/library/view/release-it-2nd/9781680504552/"&gt;Nygard, M.T. (2018) Release It! Pragmatic Bookshelf.‌&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/bulkhead"&gt;Bulkhead Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://adr.github.io/"&gt;ADR GitHub Organisation / GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/nerd-for-tech/architecture-decision-records-adr-with-azure-devops-3f0c9edeb85b"&gt;ADR with DevOps | Medium&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/joelparkerhenderson/architecture-decision-record/tree/main/examples"&gt;ADR Examples \ GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/olzzio/y-statements-10eb07b5a177"&gt;Y-Statements - Medium&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>Microservices Anti-patterns</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices-anti-patterns</link>
-			<description>Describes common anti-patterns or easy pitfalls of building a microservices application</description>
+			<title>Agile Architecture - A short story</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/e2e-agile-architecture-story</link>
+			<description>How does Agile architecture work in practice? This story provides a demonstration.</description>
 			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/microservices-anti-patterns</guid>
-			<pubDate>Wed, 10 May 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h2 id="anti-patterns-of-the-microservices-architecture"&gt;Anti-Patterns of the microservices architecture&lt;/h2&gt;
-&lt;p&gt;A selection of common mistakes found in the wild.&lt;/p&gt;
-&lt;h3 id="calls-in-series"&gt;Calls in Series&lt;/h3&gt;
-&lt;p&gt;Many microservices architecture failures are the result of not properly understanding the way failure works in distributed systems. To calculate the SLA of multiple systems, you must multiply the availability of each dependent service together.&lt;/p&gt;
-&lt;p&gt;If a system is built to have an availability of 99.5%, but it relies upon another service, with the same SLA of 99.5%, then the total SLA of that system is 99.0025%. If a third dependency is introduced with the same SLA of 99.5%, then we are down to 98.5%. This quickly adds up and gets exponentially worse.&lt;/p&gt;
-&lt;p&gt;It's important to use asynchronous calls to prevent this, rather than calls in series. Incorporate a message bus or an event framework, and instead of waiting, your services can remain resilient.&lt;/p&gt;
-&lt;p&gt;Reference: &lt;a href="https://akfpartners.com/growth-blog/microservice-anti-pattern-calls-in-series-the-xmas-tree-light-anti-pattern"&gt;AKF Partners: Microservices Anti-Patterns, 2019&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="distributed-monolith"&gt;Distributed Monolith&lt;/h3&gt;
-&lt;p&gt;When you split a monolith, don't let your services become dependent on each
-or several other microservices. If changes in services require redeployment or
-change in other services, you've built a distributed monolith.
-Lastly, over-dependency can also manifest in long deployment times, as too many
-changes have to occur at once. Sometimes it shows that deployment has to
-happen in a particular order.&lt;/p&gt;
-&lt;p&gt;This is a &lt;a href="http://www.laputan.org/mud/mud.html#BigBallOfMud"&gt;Big-Ball-Of-Mud&lt;/a&gt; that also has network-level latencies to
-deal with now.&lt;/p&gt;
-&lt;h3 id="overly-chatty"&gt;Overly Chatty&lt;/h3&gt;
-&lt;p&gt;The amount of communication between services must be considered. Services are distributed, so calls between them take time. Overly chatty services are not performant; the latency can kill the performance. Following &lt;a href="https://en.wikipedia.org/wiki/SOLID"&gt;SOLID&lt;/a&gt; principles can help here.&lt;/p&gt;
-&lt;h3 id="shared-persistence"&gt;Shared Persistence&lt;/h3&gt;
-&lt;p&gt;A monolith typically requires a large shared data store. As organisations redesign to microservices, thoughts around persistence may be overlooked, and traditional patterns followed. When you tie a service and a database together, you affect reliability. There is a recommendation to adopt a 0-1 database per service model.&lt;/p&gt;
-&lt;p&gt;For many types of computing, such as Azure Functions, or AWS Lambda, databases may be unnecessary. If compute uses documents instead or responds to events or messages, then all the persistence could be encapsulated.&lt;/p&gt;
-&lt;p&gt;in these cases, avoiding any real persistence helps to improve reliability, by removing unnecessary dependencies.&lt;/p&gt;
-&lt;p&gt;Reference: &lt;a href="https://akfpartners.com/growth-blog/microservice-Architecture-principle-one-or-zero-databases-per-service"&gt;AKF Partners, Microservices Architecture Principle: One or Zero Databases per Service. 2022&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="entangled-data"&gt;Entangled Data&lt;/h3&gt;
-&lt;p&gt;When all the services in your application can use database connections to get whatever they need, it becomes harder to unpick and separate them as services scale. The database starts to become a bottleneck, changes slow down as people need to extend things.. the natural next step is to separate the services into individual databases. Except, you have no idea what you need to separate. Congratulations, you have entangled data.&lt;/p&gt;
-&lt;p&gt;To ensure you can scale as you need to, the data needs to be segregated into clear domains, which are readily identifiable and easy to access.&lt;/p&gt;
-&lt;p&gt;A successful remedy to this problem can be to restrict inter-domain communication to API calls. By ensuring cross-service database calls are eliminated and contracted, defined borders are put in place, segregation is much easier to manage.&lt;/p&gt;
-&lt;p&gt;This anti-pattern was seen as such a threat to the growth and agility of Amazon, that Jeff Bezos &lt;a href="https://nordicapis.com/the-bezos-api-mandate-amazons-manifesto-for-externalization/"&gt;threatened to fire anyone who followed it&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Reference: &lt;a href="https://www.techtarget.com/searchapparchitecture/tip/4-deadly-microservices-antipatterns-that-ruin-migration#:%7E:text=In%20an%20entangled%20data%20antipattern%2C%20all%20the%20services,modules%20and%20make%20structural%20changes%20to%20your%20architecture."&gt;TechTarget.com, 4 microservices antipatterns that ruin migration. 2020&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id="improper-versioning"&gt;Improper Versioning&lt;/h3&gt;
-&lt;p&gt;As part of an API strategy, contracted APIs enable a consumer to understand what they get and how they access that data. A mature API model allows a consumer to retrieve the right data and update the right systems, without needing to understand the underlying system. But, when the API changes, the integration will break.&lt;/p&gt;
-&lt;p&gt;If the API supports clear versioning, then the consumer can stipulate a version and the service can respond. Having a contractual way to manage versioning and deprecation is critical to making resilient services.&lt;/p&gt;
-&lt;p&gt;Microsoft suggests the following main versioning options:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;URI&lt;/li&gt;
-&lt;li&gt;Header&lt;/li&gt;
-&lt;li&gt;Query string&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;With URI-based versioning, the version is in the URI. If omitted the server would default to the most current, supported version.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;GET https://api.service.com/store/v1.1/Products
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Header-based versioning encapsulates the version in the HTML header. You would include a custom header in the HTML HEAD tag, such as:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Api-version: 1.0
-Api-version: 1.1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;With Query-string versioning, the version requested is an optional query string:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;GET https://api.service.com/products/Products?api-version=v1.1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;These methods are all supported in Azure API Manager.&lt;/p&gt;
-&lt;h3 id="references"&gt;References&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/api-management/api-management-versions"&gt;Microsoft.com - API Management&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/e2e-agile-architecture-story</guid>
+			<pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;The team worked on a new business application allowing customers to order products online and track their delivery status. The application needed to integrate with several external systems, such as inventory management, payment processing, and shipping providers. The team had to decide how to design the integration layer and what technologies to use.&lt;/p&gt;
+&lt;p&gt;They decided to use Azure Logic Apps as the integration platform because it offered a low-code solution to handle complex workflows and orchestration. They also decided to use Azure Service Bus as the messaging system because it provided reliable and scalable communication between the application and the external systems. They documented their decision in an ADR document that followed the template from the current web page context. They explained their decision's context, alternatives, consequences, and status. They submitted the ADR document as a pull request to the repository where they stored all their ADRs.&lt;/p&gt;
+&lt;p&gt;The next day, the architect responsible for reviewing the ADRs saw their pull request and opened it. He read their document and was impressed by their reasoning and clarity. He agreed with their decision and approved the pull request. He also noticed that their decision aligned with a new architectural principle he had been thinking about for a while, &amp;quot;Use cloud-native services whenever possible to reduce complexity and increase agility&amp;quot;. He wrote an ADR document proposing this principle as a guideline for future decisions. He followed the same template and explained his proposal's context, decision, alternatives, consequences, and status. He submitted his document as a pull request to the repository where they stored all their architectural principles.&lt;/p&gt;
+&lt;p&gt;The following week, the architectural review board met to discuss the new architectural principle. The board comprised five executives from different departments: product management, engineering, operations, security, and finance. They reviewed the document and asked questions of the architect. They debated the pros and cons of adopting cloud-native services versus building or buying custom solutions. They considered the principle's impact on cost, performance, reliability, security, and innovation. After a lively discussion, they reached a consensus and approved the principle. The architect merged the pull request and added the principle to their list of architectural principles.&lt;/p&gt;
+&lt;p&gt;The team were happy to see the new architectural principle validated by the architect and the board. They continued to work on their application using Azure Logic Apps and Azure Service Bus. They also looked for other opportunities to apply cloud-native services in their design. They felt more confident and empowered by having clear and consistent architectural guidance.&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>Ambassador pattern</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/ambassador-pattern</link>
-			<description>An ambassador is often used to offload or mask client interoperability issues.</description>
+			<title>The Agile ARB</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/the-agile-arb</link>
+			<description>A short story about the way an Agile ARB could run</description>
 			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns-and-antipatterns/ambassador-pattern</guid>
-			<pubDate>Wed, 10 May 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;An out-of-process proxy that facilitates communication with a distant service. Colocated, usually in the same host/cluster to improve performance.&lt;/p&gt;
-&lt;h2 id="description"&gt;Description&lt;/h2&gt;
-&lt;p&gt;The ambassador pattern is used when a service needs some additional functionality, but it cannot be easily included alongside the main application. Often this is because the service was created by a third party, or is 'of an age'. An ambassador is a specialised sidecar, which is responsible for communicating with a service for the application.&lt;/p&gt;
-&lt;h2 id="benefits"&gt;Benefits&lt;/h2&gt;
-&lt;p&gt;An ambassador can extend a legacy service with new functionality to allow it to function alongside a new architecture.&lt;/p&gt;
-&lt;h2 id="examples"&gt;Examples&lt;/h2&gt;
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/the-agile-arb</guid>
+			<pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="the-agile-arb"&gt;The Agile ARB&lt;/h2&gt;
+&lt;p&gt;Sara was the chair of the Architecture Review Board (ARB) at Acme Inc., a software company that had adopted agile methods. She was passionate about creating a culture of trust and collaboration among the different teams and departments and wanted the ARB to be a facilitator rather than a gatekeeper of decisions.&lt;/p&gt;
+&lt;p&gt;Sara had invited representatives from various business units, product owners, developers, testers, and architects to join the ARB, and made sure they had a clear charter and vision. The ARB met monthly to review and approve major architectural changes that affected the whole organization, such as introducing new technologies, standards, or patterns. They also created and maintained a set of principles and guidelines that helped teams make local decisions where sensible, without having to wait for the ARB’s approval.&lt;/p&gt;
+&lt;p&gt;One of the principles was to favour simplicity and pragmatism over complexity and perfectionism. Another was to encourage experimentation and learning from failures. A third was to seek feedback and alignment from stakeholders and customers early and often. The ARB also provided templates and tools for teams to document and communicate their architectural decisions, such as Architecture Decision Records (ADRs) and diagrams.&lt;/p&gt;
+&lt;p&gt;Sara was proud of how the ARB had evolved from being a bottleneck to being a catalyst. She saw how teams were more empowered and autonomous, how they delivered value faster and more reliably, and how they improved their quality and performance. She also saw how the ARB members learned from each other and shared their best practices across the organization.&lt;/p&gt;
+&lt;p&gt;She smiled as she opened her email and saw a message from one of the teams. They had successfully implemented a microservice architecture for their product, using a cloud-native platform that the ARB had approved a few months ago. They thanked the ARB for their support and guidance and shared some metrics and feedback that showed how their product had improved in terms of scalability, availability, and user satisfaction.&lt;/p&gt;
+&lt;p&gt;Sara replied with a congratulatory note and asked them if they would be interested in presenting their experience at the next ARB meeting. She thought it would be a great opportunity for them to showcase their work and inspire others. She also asked them if they had any suggestions or feedback for the ARB on how to improve their processes or policies.&lt;/p&gt;
+&lt;p&gt;She closed her email and looked at her calendar. She saw that the next ARB meeting was in two weeks. She wondered what new challenges and opportunities would come up then. She felt excited and curious. She loved her job.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Architecture Review Board</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/architecture-review-board</link>
+			<description>A coherent ARB can help organizations plan and normalize technology decisions. It can also create a situation where nothing happens, and work goes to die.</description>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/architecture-review-board</guid>
+			<pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="synopsis"&gt;Synopsis&lt;/h2&gt;
+&lt;p&gt;A frequent perception of ARBs from Agile teams is poor and that they delay decisions and delivery. Properly implemented, an ARB allows an organization to be more open and transparent and can empower local decision-making within a team or POD.&lt;/p&gt;
+&lt;h2 id="introducing-the-arb"&gt;Introducing the ARB&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;h3 id="the-agile-arb"&gt;The Agile ARB&lt;/h3&gt;
+&lt;p&gt;I asked ChatGPT to write a story about an &lt;a href="xref:the-agile-arb"&gt;Agile ARB&lt;/a&gt; and its pretty good!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;An Architecture Review Board (ARB) is a representative group of people across the organization who take a central role in governing architectural decisions which affect the business significantly.&lt;/p&gt;
+&lt;p&gt;The ARB aims to mitigate risks to the business and improve strategic planning and awareness, especially around the use of technology and any changes to that. It does this by making it easier for front-line teams to make decisions and simplifying the overall organization over time to keep cost and complexity at bay. An ARB does not dictate solutions. It provides a constrained space to support fast decision-making.&lt;/p&gt;
+&lt;p&gt;It is not a Technology Review Board (TRB) and doesn't govern what technology is allowed. It regulates the processes for selecting new technologies, methods, and principles.&lt;/p&gt;
+&lt;p&gt;Nothing an ARB does should be urgent. An ARB may need to determine a new principle/policy in response to an emerging issue, but such instances should be rare. The ARB should not be too slow or be unable to react quickly, but most things it needs to deal with should be at a level where the business can take some time to think about them.&lt;/p&gt;
+&lt;p&gt;Lastly, an ARB will meet and align following annual updates, strategic updates, or quarterly reviews. In a product-led organization, an ARB will outline a strategic runway to ensure technology requirements (enablers) and deliverables are considered and planned following product development needs.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id="centralised-vs-decentralised-decisions"&gt;Centralised vs Decentralised Decisions&lt;/h3&gt;
+&lt;p&gt;A successful ARB wants to encourage decentralised decisions as much as possible. That would be, they need to provide guidance, examples and principles that ensure people on the ground can make good decisions whilst they plan and develop processes, product features and changes.&lt;/p&gt;
+&lt;p&gt;The ARB creates a kind of organisational common sense that reinforces the right way to do things, in-line with company culture and values.&lt;/p&gt;
+&lt;p&gt;As we all know, &lt;a href="https://www.thealternativeboard.com/blog/culture-eats-strategy"&gt;Culture eats Strategy for Breakfast&lt;/a&gt;, right?&lt;/p&gt;
+&lt;p&gt;An unsuccessful ARB controls every decision, which results in an unacceptable level of delay as the ARB becomes overwhelmed with small and largely inconsiquential decisions.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="purpose"&gt;Purpose&lt;/h2&gt;
+&lt;p&gt;An ARB is for reviewing and governing architecture. In this context, the ARB will make strategic decisions about how technology is used within the business rather than the specifics of which technologies are used.&lt;/p&gt;
+&lt;h2 id="membership"&gt;Membership&lt;/h2&gt;
+&lt;p&gt;An ARB should be made from a handful of relevant, cross-organizational people. It won't be taken seriously if the membership is mono-culture (i.e., too many architects or technologists). It needs an odd number, so that votes work as they should. Beyond this, the group is vast and thus cumbersome.
+As a cross-organizational group, for an ARB to be successful, it has to have a diverse representation from different areas of the business.&lt;/p&gt;
+&lt;p&gt;It is not somewhere for architects to meet and talk. All the architects, managers, and technologists should not expect to be involved.&lt;/p&gt;
+&lt;p&gt;That said, it has to be transparent. All the ARB meetings, minutes, and outcomes should be published with the broadest possible audience. Anyone should be able to raise an issue or request change and have the opportunity to consider it.&lt;/p&gt;
+&lt;h2 id="format"&gt;Format&lt;/h2&gt;
+&lt;p&gt;Its first action should be to review its charter and accept it.&lt;/p&gt;
+&lt;p&gt;Membership can be flexible, but this should be responsive to events or requirements, not just having a chaotic membership that constantly changes.&lt;/p&gt;
+&lt;p&gt;Initially, it could be weekly or fortnightly, as there may be a lot of reviews and artifacts to create, in demand to business needs:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Adding asynchronous responses to a legacy synchronous process.&lt;/li&gt;
-&lt;li&gt;To make a REST call to legacy API.&lt;/li&gt;
-&lt;li&gt;Masking an insecure connection, to ensure that the public network is secured.&lt;/li&gt;
-&lt;li&gt;Integrating a circuit breaker for a partner-hosted service.&lt;/li&gt;
+&lt;li&gt;Principles&lt;/li&gt;
+&lt;li&gt;Patterns&lt;/li&gt;
+&lt;li&gt;Strategic Non-functional Requirements&lt;/li&gt;
+&lt;li&gt;Major Developments or Solutions&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="concerns"&gt;Concerns&lt;/h2&gt;
+&lt;p&gt;ARB reviews should only relate to strategic solutions and projects. Most items should be small enough to avoid the ARB, and the ARB should encourage local decision-making over trying to centralize decisions. Centralized decisions should be infrequent and far-reaching.&lt;/p&gt;
+&lt;p&gt;The board meeting should follow a standard approach for such a meeting to ensure people are comfortable and familiar with it. Frameworks such as COBIT can provide some guidance. Here is a suggestion for an initial format:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Adding an ambassador often entails creating a dependency. Sometimes the ambassador needs to be managed by a separate team, but will then require a release dependency.&lt;/li&gt;
-&lt;li&gt;Is the added latency going to be workable with this application?&lt;/li&gt;
-&lt;li&gt;Do you want to create a shared ambassador or spawn an instance per client?&lt;/li&gt;
-&lt;li&gt;Consider a way to pass context to ease faultfinding.&lt;/li&gt;
-&lt;li&gt;Hosting the ambassador close to the applications to minimise latency.&lt;/li&gt;
+&lt;li&gt;The ARB Meets Monthly and in response to nominated events (PI Planning, annual review, etc.)&lt;/li&gt;
+&lt;li&gt;There is a Chairperson who will run and take the lead on ensuring the meeting runs as expected. Ideally, this is the sponsor, but it could be delegated or rotated.&lt;/li&gt;
+&lt;li&gt;There is a nominated secretary who takes minutes and actions. Rotate the role, or bring someone in who needs more exposure to the ARB and strategic decision-making. It should be someone capable who will do a good job.&lt;/li&gt;
+&lt;li&gt;Start by reviewing previous minutes and actions.&lt;/li&gt;
+&lt;li&gt;Review any proposals or actions. Any issues should have been relayed with enough notice so that members could review what they have to before the meeting and come up with questions or requests.&lt;/li&gt;
+&lt;li&gt;Most decisions should be able to be approved within the meeting. Deferring too many approvals is terrible.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="when-to-use"&gt;When to use&lt;/h2&gt;
+&lt;p&gt;The ARB doesn't make the decisions. It provides a framework to review and guide them proactively through principles and guidance. Suppose a decision is not being made because the direction is not adequate. In that case, an ARB member should be empowered to consult with another member and include guidance to cover a similar future situation.&lt;/p&gt;
+&lt;h2 id="frequency"&gt;Frequency&lt;/h2&gt;
+&lt;p&gt;Once established, a Monthly or Quarterly format should be sufficient to maintain a manageable level of governance.&lt;/p&gt;
+&lt;p&gt;ARB Meetings ideally align with any other ceremonies, such as Quarterly Planning, letting the ARB determine whether any specific architectural work is needed, over and above the expected level of involvement, based on upcoming work or projects.&lt;/p&gt;
+&lt;h2 id="outcomes"&gt;Outcomes&lt;/h2&gt;
+&lt;p&gt;An ARB should create the following outcomes:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;If you have a legacy or partner service which cannot easily be replaced or updated to support necessary functionality, using an ambassador as a wrapper can assist in ensuring the service can work well with the rest of the application architecture.&lt;/li&gt;
-&lt;li&gt;When you need to change the type of request/response to meet the need of a client, such as supporting stronger authentication or encryption, managing latency or aggregating responses to a chatty system.&lt;/li&gt;
+&lt;li&gt;Requirements for new policies and principles&lt;/li&gt;
+&lt;li&gt;Requirements for Strategic Enablers and Capabilities&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="when-to-avoid"&gt;When to avoid&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;This pattern adds latency, so avoid it in a latency-sensitive environment.&lt;/li&gt;
-&lt;li&gt;If only a single language is consuming the features; a library may be a better option.&lt;/li&gt;
-&lt;li&gt;If connectivity features cannot be adequately optimised.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
-&lt;p&gt;Microsoft cites an example of an ambassador which encapsulates:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Routing&lt;/li&gt;
-&lt;li&gt;Circuit Breaker&lt;/li&gt;
-&lt;li&gt;Logging&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To enable a legacy app to integrate to cloud services, and with mobile clients.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador#example"&gt;Ambassador Example - learn.microsoft.com&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar"&gt;Sidecar Pattern&lt;/a&gt; - An ambassador is a specialised sidecar.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador"&gt;Ambassador Pattern&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Typically, work from the ARB would go to the Architecture team to define, complete, or at least manage. Acceptance criteria should be a part of any of these to ensure excessive approval of the outcome is unnecessary.&lt;/p&gt;
+&lt;h2 id="anti-patterns"&gt;Anti-patterns&lt;/h2&gt;
+&lt;p&gt;Here's a selection of ways this can go wrong or things you can do poorly:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Excessive Approvals - If you find every ARB is 'full' of things to approve, then your Policies and Principles are likely irrelevant or too granular.&lt;/li&gt;
+&lt;li&gt;Deferred decisions - If the board makes a lot of deferrals, it would usually be because the information or risks are unclear, and they don't feel safe taking them.&lt;/li&gt;
+&lt;li&gt;Poor reputation - The ARB may be something people dread. In this case, it's likely that the process is excessively onerous, too frequent, or that the principles are poorly accepted.&lt;/li&gt;
+&lt;li&gt;Technology Focussed - The ARB shouldn't discuss the choice of technology. It should guide the principles and processes that result in those changes. In this case, the ARB may be too tactical, resulting in low traction across the business.&lt;/li&gt;
+&lt;/ol&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>

@@ -3,7 +3,7 @@ Title: Overview of the Architecture Practice
 Author: James Brewster
 Published: 06/06/2023
 Lead: Function of an agile architecture practice
-Draft: true
+Draft: True
 Categories:
   - Solution
 Tags:
