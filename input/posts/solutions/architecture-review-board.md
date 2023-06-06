@@ -1,7 +1,7 @@
 ---
 Title: Architecture Review Board
 Lead: Making sensible decisions and Avoiding the Land of Wait.
-Description: A coherent ARB can help an organisation plan and normalise technology decisions. It can also create a situation where nothing happens and work goes to die.
+Description: A coherent ARB can help organizations plan and normalize technology decisions. It can also create a situation where nothing happens, and work goes to die.
 Tags:
   - Architecture
   - Business
@@ -12,7 +12,7 @@ Published: 30/05/2023
 ---
 ## Synopsis
 
-A frequent perception of ARBs from Agile teams is poor and that they delay decisions and delivery. Properly implemented, an ARB allows an organisation to be more open and transparent and can empower local decision-making within a team or POD.
+A frequent perception of ARBs from Agile teams is poor and that they delay decisions and delivery. Properly implemented, an ARB allows an organization to be more open and transparent and can empower local decision-making within a team or POD.
 
 ## Introducing the ARB
 
@@ -20,15 +20,15 @@ A frequent perception of ARBs from Agile teams is poor and that they delay decis
 >
 > I asked ChatGPT to write a story about an [Agile ARB](xref:the-agile-arb) and its pretty good!
 
-An Architecture Review Board (ARB) is a representative group of people across the organisation who take a central role in governing architectural decisions which affect the business in a significant way.
+An Architecture Review Board (ARB) is a representative group of people across the organization who take a central role in governing architectural decisions which affect the business significantly.
 
-The ARB aims to mitigate risks to the business and improve strategic planning and awareness, especially around the use of technology and any changes to that. It does this by making it easier for front-line teams to make decisions and simplifying the overall organisation or Enterprise over time to keep cost and complexity at bay. An ARB does not dictate solutions. It provides a constrained space to support fast decision-making.
+The ARB aims to mitigate risks to the business and improve strategic planning and awareness, especially around the use of technology and any changes to that. It does this by making it easier for front-line teams to make decisions and simplifying the overall organization over time to keep cost and complexity at bay. An ARB does not dictate solutions. It provides a constrained space to support fast decision-making.
 
-It is not a Technology Review Board (TRB) and doesn't govern what technology is allowed. It regulates the processes for selecting new technologies, methods and principles.
+It is not a Technology Review Board (TRB) and doesn't govern what technology is allowed. It regulates the processes for selecting new technologies, methods, and principles.
 
-Nothing an ARB does should be urgent. An ARB may need to determine a new principle/policy in response to an emerging issue, but such instances should be rare. This does not mean the ARB should be too slow or be unable to react quickly, just that most of its issues should be at a level where the business can take some time to think about them.
+Nothing an ARB does should be urgent. An ARB may need to determine a new principle/policy in response to an emerging issue, but such instances should be rare. The ARB should not be too slow or be unable to react quickly, but most things it needs to deal with should be at a level where the business can take some time to think about them.
 
-Lastly, an ARB will meet and align following annual updates, strategic updates or quarterly reviews. In a product-led organisation, an ARB will outline a strategic runway to ensure technology requirements (enablers) and deliverables are considered and planned following product development needs.
+Lastly, an ARB will meet and align following annual updates, strategic updates, or quarterly reviews. In a product-led organization, an ARB will outline a strategic runway to ensure technology requirements (enablers) and deliverables are considered and planned following product development needs.
 
 > ### Centralised vs Decentralised Decisions
 >
@@ -46,45 +46,44 @@ An ARB is for reviewing and governing architecture. In this context, the ARB wil
 
 ## Membership
 
-An ARB should be made from a handful of relevant, cross-organisational people. If the membership is mono-culture (ie too many architects or technologists) then it won't be taken seriously. It needs an odd number so votes work as they should. Prime numbers just help avoid simple divisions and ties. 5 or 7 are good numbers. Beyond this, the group is very large and thus cumbersome.
+An ARB should be made from a handful of relevant, cross-organizational people. It won't be taken seriously if the membership is mono-culture (i.e., too many architects or technologists). It needs an odd number, so that votes work as they should. Beyond this, the group is vast and thus cumbersome.
+As a cross-organizational group, for an ARB to be successful, it has to have a diverse representation from different areas of the business.
 
-As a cross-organisational group, for an ARB to be successful, it has to have a diverse representation from different areas of the business.
+It is not somewhere for architects to meet and talk. All the architects, managers, and technologists should not expect to be involved.
 
-It is not somewhere for architects to meet and talk. All the architects, managers and technologists should not expect to be involved.
-
-That said, it has to be transparent. All the ARB meetings, minutes and outcomes should be published with the broadest possible audience. Anyone should be able to raise an issue or request for change and have the opportunity for it to be considered.
+That said, it has to be transparent. All the ARB meetings, minutes, and outcomes should be published with the broadest possible audience. Anyone should be able to raise an issue or request change and have the opportunity to consider it.
 
 ## Format
 
 Its first action should be to review its charter and accept it.
 
-Membership can be flexible, but this should be responsive to events or requirements, not just having a chaotic membership which changes all the time.
+Membership can be flexible, but this should be responsive to events or requirements, not just having a chaotic membership that constantly changes.
 
-Initially, it could be weekly or fortnightly, as there may be a lot of reviews and artefacts to create, in demand to business needs:
+Initially, it could be weekly or fortnightly, as there may be a lot of reviews and artifacts to create, in demand to business needs:
 
 * Principles
 * Patterns
 * Strategic Non-functional Requirements
 * Major Developments or Solutions
 
-I deliberately call out developments or solutions. This should only relate to strategic solutions and projects. Most items should be small enough to avoid the ARB and the ARB should encourage local decision-making over trying to centralise decisions. If a decision has to be made centrally, then it should be infrequent and have a broad effect.
+ARB reviews should only relate to strategic solutions and projects. Most items should be small enough to avoid the ARB, and the ARB should encourage local decision-making over trying to centralize decisions. Centralized decisions should be infrequent and far-reaching.
 
-The board meeting should follow a standard approach for such a meeting, to ensure people are comfortable and familiar with it. Frameworks such as COBIT can provide some guidance. Here is a suggestion for an initial format:
+The board meeting should follow a standard approach for such a meeting to ensure people are comfortable and familiar with it. Frameworks such as COBIT can provide some guidance. Here is a suggestion for an initial format:
 
-* The ARB Meets Monthly and also in response to nominated events (PI Planning, annual review, etc.)
+* The ARB Meets Monthly and in response to nominated events (PI Planning, annual review, etc.)
 * There is a Chairperson who will run and take the lead on ensuring the meeting runs as expected. Ideally, this is the sponsor, but it could be delegated or rotated.
-* There is a nominated secretary who takes minutes and actions. This could be rotated, but it must be done properly, so it should be someone capable who will do a good job.
+* There is a nominated secretary who takes minutes and actions. Rotate the role, or bring someone in who needs more exposure to the ARB and strategic decision-making. It should be someone capable who will do a good job.
 * Start by reviewing previous minutes and actions.
-* Raise issues that have been brought forward. Any issues should have been brought with enough notice so that members can review what they have to before the meeting and come up with questions or requests.
-* Most decisions should be able to be approved within the meeting. Deferring too many approvals is bad.
+* Review any proposals or actions. Any issues should have been relayed with enough notice so that members could review what they have to before the meeting and come up with questions or requests.
+* Most decisions should be able to be approved within the meeting. Deferring too many approvals is terrible.
 
-The ARB doesn't make the decisions. It provides a framework to review decisions and to guide them proactively, through principles and guidance. If a decision is not being made, because the guidance is not adequate, then an ARB member should be empowered to make it, in consultation with another member, and with a view to including guidance to cover a similar situation.
+The ARB doesn't make the decisions. It provides a framework to review and guide them proactively through principles and guidance. Suppose a decision is not being made because the direction is not adequate. In that case, an ARB member should be empowered to consult with another member and include guidance to cover a similar future situation.
 
 ## Frequency
 
 Once established, a Monthly or Quarterly format should be sufficient to maintain a manageable level of governance.
 
-This would ideally align with ceremonies such as Quarterly Planning, letting the ARB determine whether any specific architectural work is needed, over and above the normal level of involvement, based on upcoming work or projects.
+ARB Meetings ideally align with any other ceremonies, such as Quarterly Planning, letting the ARB determine whether any specific architectural work is needed, over and above the expected level of involvement, based on upcoming work or projects.
 
 ## Outcomes
 
@@ -93,13 +92,13 @@ An ARB should create the following outcomes:
 * Requirements for new policies and principles
 * Requirements for Strategic Enablers and Capabilities
 
-Typically, work from the ARB would go to the Architecture team to define and complete. Acceptance criteria should be a part of any of these, to ensure excessive approval of the outcome is unnecessary.
+Typically, work from the ARB would go to the Architecture team to define, complete, or at least manage. Acceptance criteria should be a part of any of these to ensure excessive approval of the outcome is unnecessary.
 
 ## Anti-patterns
 
-Here's a selection of ways this can go wrong, or things you can do poorly:
+Here's a selection of ways this can go wrong or things you can do poorly:
 
 1. Excessive Approvals - If you find every ARB is 'full' of things to approve, then your Policies and Principles are likely irrelevant or too granular.
 2. Deferred decisions - If the board makes a lot of deferrals, it would usually be because the information or risks are unclear, and they don't feel safe taking them.
-3. Poor reputation - The ARB may be something people dread. In this case, it's likely that the process is excessively onerous, too frequent or that the principles are poorly accepted.
-4. Technology Focussed - The ARB shouldn't be discussing the choice of technologies to be used. It should guide the principles and processes that result in those changes. In this case, the ARB may be too low level, resulting in low traction across the business.
+3. Poor reputation - The ARB may be something people dread. In this case, it's likely that the process is excessively onerous, too frequent, or that the principles are poorly accepted.
+4. Technology Focussed - The ARB shouldn't discuss the choice of technology. It should guide the principles and processes that result in those changes. In this case, the ARB may be too tactical, resulting in low traction across the business.
