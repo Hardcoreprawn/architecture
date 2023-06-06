@@ -61,16 +61,16 @@
       "path": "[[workspace]]/input/posts/principles"
     },
     {
-      "title": "Patterns-and-antipatterns",
-      "path": "[[workspace]]/input/posts/patterns-and-antipatterns"
-    },
-    {
       "title": "Requirements",
       "path": "[[workspace]]/input/posts/requirements"
     },
     {
       "title": "Architectural-Decision-Records",
       "path": "[[workspace]]/input/posts/architectural-decision-records"
+    },
+    {
+      "title": "Patterns",
+      "path": "[[workspace]]/input/posts/patterns"
     },
     {
       "title": "Solutions",
