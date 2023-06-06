@@ -25,7 +25,7 @@ This concept's core work item is the ADR or Architectural Decision Record. Whene
 
 ![Architecture Process](../../media/architecture-process.png)
 
-The architecture team review and steer ADRs. ADRs are like the tweet format of designs; they encompass small decisions and choices with just enough context and reasoning to explain to a new starter why something happened. A significant benefit is that they can all be queried and exported and used to describe the project thinking over time and why the team made confident choices. The ADR list acts as a log, which someone could examine to trace the project's decisions. 
+The architecture team review and steer ADRs. ADRs are like the tweet format of designs; they encompass small decisions and choices with just enough context and reasoning to explain to a new starter why something happened. A significant benefit is that they can all be queried and exported and used to describe the project thinking over time and why the team made confident choices. The ADR list acts as a log, which someone could examine to trace the project's decisions.
 
 The architecture practice reviews the ADRs and looks for trends and patterns. As certain things come to the fore, the architects write new [principles](xref:principles), [patterns](xref:patterns), and [NFRs](xref:nfrs) approved by the ARB to help the teams make future decisions.
 
