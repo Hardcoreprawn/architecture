@@ -42,24 +42,9 @@
           "type": "datetime"
         },
         {
-          "title": "Category",
-          "name": "Category",
-          "type": "categories"
-        },
-        {
           "title": "Author",
           "name": "Author",
           "type": "string"
-        },
-        {
-          "title": "title",
-          "name": "title",
-          "type": "datetime"
-        },
-        {
-          "title": "auther",
-          "name": "auther",
-          "type": "datetime"
         }
       ]
     }
