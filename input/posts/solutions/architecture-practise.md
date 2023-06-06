@@ -62,19 +62,19 @@ Too focused on their previous role, trench warriors refuse to give up their tact
 
 Studious and thorough, working through frameworks and quoting luminaries, the academic cannot effectively translate these theories into practical output for the organization. They talk about possibilities, gold standards, and best practices and sometimes focus on the areas of frameworks which aren't implemented or fully used.
 
-Knowledge and understanding of frameworks are essential, but frameworks are collections of methods which can help. Using strategies to address issues in the business is good sense. Using techniques to address symptomless 'problems' will make no friends.
+Knowledge and understanding of frameworks are essential, but frameworks are collections of methods that can help. Using strategies to address issues in the business is good sense. Using techniques to address symptomless 'problems' will make no friends.
 
 ### Too technical
 
-Often recruited from technical areas, such as IT Operations, the too-technical architect hasn't learned to temper their language to a broader audience. This can result in getting typecast as another 'techie,' being sidelined from honest discussions and gaining the trust of other parts of the business.
+Often recruited from technical areas, such as IT Operations, the too-technical architect hasn't learned to temper their language to a broader audience. Using too much technical language conversationally can result in getting typecast as another 'techie,' being sidelined from honest discussions and gaining the trust of other parts of the business.
 
 The technical skills are a real boon, though, and help when working with the more technical aspects of the organization.
 
 ### Over-specialized
 
-An architect should have a wide variety of skills and a broad understanding of most areas of the domain they work in. If the field is too large, then specialism is a natural part of that, but an architect should work across as much of the domain as necessary, learning what they can of each part of the organization.
+An architect should have a wide variety of skills and a broad understanding of most areas of their domain. If the field is too large, then specialism is a natural part of that, but an architect should work across as much of the environment as necessary, learning what they can of each part of the organization.
 
-If an architect only understands IT, they won't be able to effectively talk to Finance Partners or Legal about changes, budgets or compliance. They may struggle to explain hosting concerns if they only know operations and not development.
+If an architect only understands IT, they won't be able to effectively talk to Finance Partners or Legal about changes, budgets, or compliance. They may struggle to explain hosting concerns if they only know operations and not development.
 
 Architects often have specialisms, but typically these start to be relinquished after they start becoming architects, moving away from specifics and into broader concepts, so they can better help explain the organization's mechanics.
 
