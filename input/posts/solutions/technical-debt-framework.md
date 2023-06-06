@@ -1,6 +1,6 @@
 ---
 Title: Technical Debt Framework
-Lead: Problems with systems are like financial debt. It’s OK to borrow (time) against the future, as long as you pay it off before the 'interest' starts to bite...
+Lead: System problems are like financial debt. It’s OK to borrow (time) against the future, as long as you pay it off before the 'interest' starts to bite...
 Description: Help teams manage technical debt by identifying and assessing existing debt across the enterprise and prioritizing items in an orderly fashion.
 Tags:
   - Architecture
@@ -24,27 +24,27 @@ Published: 23/05/2023
 
 We have all been there. There's an urgent problem. There's software that should resolve it and make everything great.
 
-So we get it. And install it, and then someone doesn't quite finish installing it. And something doesn't work properly. Or someone leaves, and now no one knows how to fix that one thing, and everyone spends time working around it.
+So we get it. And install it, and then someone doesn't quite finish installing it. And something doesn't work correctly. Or someone leaves, and now no one knows how to fix that one thing, and everyone spends time working around it.
 
-And we have to upgrade it every few months in some complicated ritual. And the renewals just seem to get more expensive and complicated every year...
+And we have to upgrade it every few months in some complicated ritual. And the renewals seem to get more expensive and complex every year.
 
 This is technical debt. It's the well-meant shortcut we took to speed something up. And now, it's unmanaged and not being repaid. The business is paying 'interest' on it. And like a lot of credit, the interest can be destructive.
 
 ## Symptoms
 
-* If technology or process decisions require meetings to work around or make decisions, you probably have technical debt.
+* You probably have technical debt if technology or process decisions require meetings to work around or make decisions.
 * If changes take a long time to make, and as such, decisions to make changes take a long time as well, you probably have technical debt.
 * If simple changes or expectable business requirements take a long time to be delivered, you probably have technical debt.
-* If your developers always estimate far too low and deliver way later, then you probably have technical debt.
+* If your developers estimate too low and deliver too late, you probably have technical debt.
 * If you use technology in your business, you probably have technical debt.
 
 ## The scale of the issue
 
-In a 2020 survey, McKinsey asked a group of CIOs who are part of a panel, what percentage of their budget was being diverted to managing tech debt, and they responded that 10-20% was typical.
+In a 2020 survey, McKinsey asked a group of CIOs on a panel what percentage of their budget was diverted to managing tech debt, and they responded that 10-20% was typical.
 
-More worrying was the statistic that CIOs felt the value of the technical assets was made up of 20-40% tech debt, before depreciation.
+More worrying was the statistic that CIOs felt the value of the technical assets was made up of 20-40% tech debt before depreciation.
 
-More recently, a repeat of this study found that 60% of CIOs felt their organisation's tech debt had perceptibly increased over the past three years.
+More recently, a repeat of this study found that 60% of CIOs felt their organization's tech debt had perceptibly increased over the past three years.
 
 On a more positive note, the same whitepaper quoted a former CIO at a major cloud provider:
 
@@ -58,7 +58,7 @@ At WyCash in 1992, Ward Cunningham used the term Technical debt to explain to ma
 
 Ward Cunningham was also one of the authors of the Agile Manifesto in 2008.
 
-The analogy keeps going. Not paying technical debt, like credit cards, can swiftly compound the interest. Conversely, paying down technical debt early, by refactoring in advance to improve quality is like saving. That can also compound, improving the agility of your software, and increasing its value and productivity over time, quite drastically.
+The analogy keeps going. Not paying technical debt, like credit cards, can swiftly compound the interest. Conversely, paying down technical debt early by refactoring in advance to improve quality is like saving. That can also compound, enhancing the agility of your software and increasing its value and productivity over time quite drastically.
 
 Martin Fowler, noted author and software architect, had this to say:
 
@@ -68,13 +68,13 @@ Martin Fowler, noted author and software architect, had this to say:
 >
 > *verb*: to restructure software by applying a series of refactorings without changing its observable behavior. -Martin Fowler, refactoring.com
 
-So, if you push features too quickly, and do not give your development teams time to refactor, reassess and improve the systems you rely on, it will get more expensive to work on. Over time, these systems become less of an asset and more of a liability.
+So, if you push features too quickly and do not give your development teams time to refactor, reassess and improve the systems you rely on, it will get more expensive to work on. Over time, these systems become less of an asset and more of a liability.
 
 ## Types and causes
 
-None of this is done deliberately. Market conditions, business needs and markets all change. The assumption that machines will survive that change, without proactive maintenance is disproven. So why do we not treat "software machines" or the business systems that use them, with the same care?
+None of this is done deliberately. Market conditions, business needs, and markets all change. The assumption that machines will survive that change without proactive maintenance is disproven. So why do we not treat "software machines" or the business systems that use them with the same care?
 
-The primary cause is an over-focus on the immediate, without concern for the future. Short-sighted needs, month-end targets, and shareholder dividends, all drive short-term thinking. "We'll fix it tomorrow" doesn't work if you don't care about tomorrow.
+The primary cause is an over-focus on the immediate, without concern for the future. Short-sighted needs, month-end targets, and shareholder dividends all drive short-term thinking. "We'll fix it tomorrow" doesn't work if you don't care about tomorrow.
 
 Technical debt can be easily thought of in three types:
 

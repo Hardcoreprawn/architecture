@@ -4,22 +4,8 @@
 	<title />
 	<link rel="self" href="https://red-sand-078a6ea03.3.azurestaticapps.net/" />
 	<rights>Copyright James Brewster© 2023</rights>
-	<updated>2023-06-06T14:41:21Z</updated>
+	<updated>2023-06-06T15:12:45Z</updated>
 	<logo>https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png</logo>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/principles</id>
-		<title />
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/principles" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-06-06T07:35:06Z</updated>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/patterns</id>
-		<title />
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/patterns" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-06-06T07:34:49Z</updated>
-	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/architecture-practise</id>
 		<title>Overview of the Architecture Practice</title>
@@ -254,12 +240,12 @@ For a more significant decision, it may be helpful to produce an Options assessm
 		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-05-30T00:00:00Z</updated>
 		<content>&lt;h2 id="the-agile-arb"&gt;The Agile ARB&lt;/h2&gt;
-&lt;p&gt;Sara was the chair of the Architecture Review Board (ARB) at Acme Inc., a software company that had adopted agile methods. She was passionate about creating a culture of trust and collaboration among the different teams and departments and wanted the ARB to be a facilitator rather than a gatekeeper of decisions.&lt;/p&gt;
-&lt;p&gt;Sara had invited representatives from various business units, product owners, developers, testers, and architects to join the ARB, and made sure they had a clear charter and vision. The ARB met monthly to review and approve major architectural changes that affected the whole organization, such as introducing new technologies, standards, or patterns. They also created and maintained a set of principles and guidelines that helped teams make local decisions where sensible, without having to wait for the ARB’s approval.&lt;/p&gt;
-&lt;p&gt;One of the principles was to favour simplicity and pragmatism over complexity and perfectionism. Another was to encourage experimentation and learning from failures. A third was to seek feedback and alignment from stakeholders and customers early and often. The ARB also provided templates and tools for teams to document and communicate their architectural decisions, such as Architecture Decision Records (ADRs) and diagrams.&lt;/p&gt;
-&lt;p&gt;Sara was proud of how the ARB had evolved from being a bottleneck to being a catalyst. She saw how teams were more empowered and autonomous, how they delivered value faster and more reliably, and how they improved their quality and performance. She also saw how the ARB members learned from each other and shared their best practices across the organization.&lt;/p&gt;
-&lt;p&gt;She smiled as she opened her email and saw a message from one of the teams. They had successfully implemented a microservice architecture for their product, using a cloud-native platform that the ARB had approved a few months ago. They thanked the ARB for their support and guidance and shared some metrics and feedback that showed how their product had improved in terms of scalability, availability, and user satisfaction.&lt;/p&gt;
-&lt;p&gt;Sara replied with a congratulatory note and asked them if they would be interested in presenting their experience at the next ARB meeting. She thought it would be a great opportunity for them to showcase their work and inspire others. She also asked them if they had any suggestions or feedback for the ARB on how to improve their processes or policies.&lt;/p&gt;
+&lt;p&gt;Sara was the chair of the Architecture Review Board (ARB) at Acme Inc., a software company that had adopted agile methods. She was passionate about creating a culture of trust and collaboration among the different teams and departments. She wanted the ARB to be a facilitator rather than a gatekeeper of decisions.&lt;/p&gt;
+&lt;p&gt;Sara had invited representatives from various business units, product owners, developers, testers, and architects to join the ARB, ensuring they had a clear charter and vision. The ARB met monthly to review and approve significant architectural changes that affected the whole organization, such as introducing new technologies, standards, or patterns. They also created and maintained principles and guidelines that helped teams make sensible local decisions without waiting for the ARB’s approval.&lt;/p&gt;
+&lt;p&gt;One of the principles was to favor simplicity and pragmatism over complexity and perfectionism. Another was to encourage experimentation and learning from failures. A third was to seek feedback and alignment from stakeholders and customers early and often. The ARB also provided templates and tools for teams to document and communicate their architectural decisions, such as Architecture Decision Records (ADRs) and diagrams.&lt;/p&gt;
+&lt;p&gt;Sara was proud of how the ARB had evolved from being a bottleneck to a catalyst. She saw how teams were more empowered and autonomous, how they delivered value faster and more reliably, and how they improved their quality and performance. She also saw how the ARB members learned from each other and shared their best practices across the organization.&lt;/p&gt;
+&lt;p&gt;She smiled as she opened her email and saw a message from one of the teams. They had successfully implemented a microservice architecture for their product, using a cloud-native platform that the ARB had approved a few months ago. They thanked the ARB for their support and guidance and shared metrics and feedback showing how their product improved scalability, availability, and user satisfaction.&lt;/p&gt;
+&lt;p&gt;Sara congratulated them and asked them if they would like to present their experience at the next ARB meeting. She thought showcasing their work and inspiring others would be an excellent opportunity. She also asked them if they had any suggestions or feedback for the ARB on improving their processes or policies.&lt;/p&gt;
 &lt;p&gt;She closed her email and looked at her calendar. She saw that the next ARB meeting was in two weeks. She wondered what new challenges and opportunities would come up then. She felt excited and curious. She loved her job.&lt;/p&gt;
 </content>
 		<summary>A short story about the way an Agile ARB could run</summary>
@@ -337,5 +323,194 @@ As a cross-organizational group, for an ARB to be successful, it has to have a d
 &lt;/ol&gt;
 </content>
 		<summary>A coherent ARB can help organizations plan and normalize technology decisions. It can also create a situation where nothing happens, and work goes to die.</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/technical-debt-framework</id>
+		<title>Technical Debt Framework</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/technical-debt-framework" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
+		<updated>2023-05-23T00:00:00Z</updated>
+		<content>&lt;blockquote&gt;
+&lt;h2 id="tldr"&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;Technical debt is a hidden bleed on cost, productivity and morale. You can address it by accepting it exists, socialising the subject and putting in place ways to address it without blame.&lt;/p&gt;
+&lt;p&gt;There are three main forms, process, people or technology. These relate to what you have neglected to maintain. They are best addressed as an accepted part of life, rather than with any major effort.&lt;/p&gt;
+&lt;p&gt;Leave space in your team's workflow to accommodate and address these issues and rather than being a debt which is compounding liability against your business, it will become a compounding investment, which pays for itself over time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;We have all been there. There's an urgent problem. There's software that should resolve it and make everything great.&lt;/p&gt;
+&lt;p&gt;So we get it. And install it, and then someone doesn't quite finish installing it. And something doesn't work correctly. Or someone leaves, and now no one knows how to fix that one thing, and everyone spends time working around it.&lt;/p&gt;
+&lt;p&gt;And we have to upgrade it every few months in some complicated ritual. And the renewals seem to get more expensive and complex every year.&lt;/p&gt;
+&lt;p&gt;This is technical debt. It's the well-meant shortcut we took to speed something up. And now, it's unmanaged and not being repaid. The business is paying 'interest' on it. And like a lot of credit, the interest can be destructive.&lt;/p&gt;
+&lt;h2 id="symptoms"&gt;Symptoms&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;You probably have technical debt if technology or process decisions require meetings to work around or make decisions.&lt;/li&gt;
+&lt;li&gt;If changes take a long time to make, and as such, decisions to make changes take a long time as well, you probably have technical debt.&lt;/li&gt;
+&lt;li&gt;If simple changes or expectable business requirements take a long time to be delivered, you probably have technical debt.&lt;/li&gt;
+&lt;li&gt;If your developers estimate too low and deliver too late, you probably have technical debt.&lt;/li&gt;
+&lt;li&gt;If you use technology in your business, you probably have technical debt.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="the-scale-of-the-issue"&gt;The scale of the issue&lt;/h2&gt;
+&lt;p&gt;In a 2020 survey, McKinsey asked a group of CIOs on a panel what percentage of their budget was diverted to managing tech debt, and they responded that 10-20% was typical.&lt;/p&gt;
+&lt;p&gt;More worrying was the statistic that CIOs felt the value of the technical assets was made up of 20-40% tech debt before depreciation.&lt;/p&gt;
+&lt;p&gt;More recently, a repeat of this study found that 60% of CIOs felt their organization's tech debt had perceptibly increased over the past three years.&lt;/p&gt;
+&lt;p&gt;On a more positive note, the same whitepaper quoted a former CIO at a major cloud provider:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;By reinventing our debt management, we went from 75 percent of engineer time paying the [tech debt] ‘tax’ to 25 percent. It allowed us to be who we are today.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="background"&gt;Background&lt;/h2&gt;
+&lt;p&gt;At WyCash in 1992, Ward Cunningham used the term Technical debt to explain to management why iterative software development was a better choice:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite… The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise. — Ward Cunningham, The WyCash Portfolio Management System, 1992&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ward Cunningham was also one of the authors of the Agile Manifesto in 2008.&lt;/p&gt;
+&lt;p&gt;The analogy keeps going. Not paying technical debt, like credit cards, can swiftly compound the interest. Conversely, paying down technical debt early by refactoring in advance to improve quality is like saving. That can also compound, enhancing the agility of your software and increasing its value and productivity over time quite drastically.&lt;/p&gt;
+&lt;p&gt;Martin Fowler, noted author and software architect, had this to say:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In the book, I make the following definition of “refactoring”&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;noun&lt;/em&gt;: a change made to the internal structure of software to make it easier to understand and cheaper to modify without changing its observable behavior&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;verb&lt;/em&gt;: to restructure software by applying a series of refactorings without changing its observable behavior. -Martin Fowler, refactoring.com&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So, if you push features too quickly and do not give your development teams time to refactor, reassess and improve the systems you rely on, it will get more expensive to work on. Over time, these systems become less of an asset and more of a liability.&lt;/p&gt;
+&lt;h2 id="types-and-causes"&gt;Types and causes&lt;/h2&gt;
+&lt;p&gt;None of this is done deliberately. Market conditions, business needs, and markets all change. The assumption that machines will survive that change without proactive maintenance is disproven. So why do we not treat &amp;quot;software machines&amp;quot; or the business systems that use them with the same care?&lt;/p&gt;
+&lt;p&gt;The primary cause is an over-focus on the immediate, without concern for the future. Short-sighted needs, month-end targets, and shareholder dividends all drive short-term thinking. &amp;quot;We'll fix it tomorrow&amp;quot; doesn't work if you don't care about tomorrow.&lt;/p&gt;
+&lt;p&gt;Technical debt can be easily thought of in three types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Process debt. The lack of appropriate or correct frameworks to operate modern systems in modern ways.&lt;/li&gt;
+&lt;li&gt;People debt. The lack of skills, knowledge and training for people to properly engage in current technologies and processes.&lt;/li&gt;
+&lt;li&gt;Technical debt. Unmaintained systems and software, where the cost to maintain or update is increased and keeps increasing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Whilst most people will recognise the third, I suspect a lot ignore or don't consider the first two. I would argue the first is the most worry-some. Process debt leads shows up in phrases like 'That's not how we do that' and frustrations with 'the way things are'. It makes people feel disempowered. Being unable to make things better makes people feel helpless.&lt;/p&gt;
+&lt;p&gt;Everyone acknowledges that education is good, but employees want to feel cared about and invested in. Ensuring that training happens is important for employee engagement, as well as productivity. It means they know how to use the systems the business invests in, as well as care about the way the business works.&lt;/p&gt;
+&lt;h2 id="framework-for-managing-technical-debt"&gt;Framework for Managing Technical Debt&lt;/h2&gt;
+&lt;p&gt;Technical debt management boils down to one point. You have to pay it back. It will not go away. Factor it into daily work. If it's low, use the time to pay it forward (invest) rather than focus on the next new shiny thing.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The author would recommend giving it up to a 25% share of the work budget to team led 'improvement', which includes tech debt. It may be that this flexes up and down a bit, but 20-25% in the long term will keep your software improving.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The goal is not to remove tech debt entirely but to keep it at a workable level.&lt;/p&gt;
+&lt;p&gt;Companies need to identify and track tech debt, to ensure it can be managed to the best advantage.&lt;/p&gt;
+&lt;p&gt;Tech debt should be dealt with strategically. These principles, based on work from McKinsey, may help:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Start with a shared definition of tech debt. Executive and senior management need to have the same understanding of what constitutes tech debt; Process, people and technology, which need upgrading.&lt;/li&gt;
+&lt;li&gt;Treat tech debt as 'waste in the P&amp;amp;L' of the business. Leaders should acknowledge the capital and opportunity cost of this and have access to information and metrics to track it.&lt;/li&gt;
+&lt;li&gt;Make sure the total cost of the application, its development, cost to serve and debt is tracked. It should cover 100% of the resources necessary. If that changes how you account, then change how you account. (See 'process debt' above)&lt;/li&gt;
+&lt;li&gt;Have an agreed process, which &lt;em&gt;doesn't penalise&lt;/em&gt; teams or people for addressing tech debt. Make sure that incentives encourage the right behaviour and that addressing tech debt is treated as a positive. Don't blame people for it either, someone made that decision with a good intention.&lt;/li&gt;
+&lt;li&gt;Have teams Create items in the product backlog with value, cost, etc. attached. Prioritise a percentage of them in every sprint, to make sure the value is understood and visible. Treat them as features, just like others and value them. They weren't written up for the fun of it...&lt;/li&gt;
+&lt;li&gt;Don't paralyze or immobilise a business to pay tech debt. It rarely works and isn't sustainable. It encourages people to think someone will just stop everything to fix things. Instead, set down time and resources in daily work to address debt consistently, either proactively or reactively, depending on the team and the workload.&lt;/li&gt;
+&lt;li&gt;When all else fails, if a product or value stream is 'bankrupt' and can't service its debts (i.e. its 'interest' is &amp;gt;50% or so), then explore the option to replace the whole stack. It's drastic, but it may be a lower-risk option and save the product/service.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="identifying-technical-debt"&gt;Identifying Technical Debt&lt;/h3&gt;
+&lt;p&gt;Sticking to a financial analogy, you can think of tech debt as having two components, just like any other debt:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The principal. This is the total work required to bring the stack, including processes and people, up to date.&lt;/li&gt;
+&lt;li&gt;The interest. is the complexity tax which every single project pays right now. The spike work to understand how to make a change, or use a commodity technology. The debug work to figure out how version x.x varies from x.y. This is the interest and it's paid in productivity.
+McKinsey also says that most organisations are paying way more than 10% interest on this debt, as it causes a significant drag on their projects and resources.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://www.mckinsey.com/%7E/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/tech%20debt%20reclaiming%20tech%20equity/svg-tech-debt-exhibit-2.svgz?cq=50&amp;amp;cpy=Center" alt="Tech Debt Principle and Interest" /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Principal and interest create a strong drag on enterprise value. &lt;a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-debt-reclaiming-tech-equity"&gt;Tech debt: Reclaiming tech equity | McKinsey (2020) www.mckinsey.com.&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="tracking-technical-debt"&gt;Tracking Technical Debt&lt;/h3&gt;
+&lt;p&gt;Tech debt should be tracked by the team/group as a key metric. It may be that you have to find a way to expose or count the cost of this debt, which isn't always easy. Some areas you can track:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Software Development
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://linearb.io/blog/what-is-code-complexity/"&gt;Complexity&lt;/a&gt; - Various code complexity metrics can be tracked and monitored on each project to understand where the complexity lies and help identify areas which need work.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dzone.com/articles/8-top-metrics-for-measuring-your-technical-debt"&gt;New Bugs vs Closed Bugs&lt;/a&gt; - Are your bugs growing or falling?&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://linearb.io/blog/how-to-measure-technical-debt/#:%7E:text=Measuring%20Technical%20Debt%3A%20Identify%20High-Risk%20Areas%201%20Keep,Risk%20and%20Add%20Importance%20to%20the%20Mix%20"&gt;Testing Effort&lt;/a&gt; - An easy approximation is to look at test coverage. Test coverage isn't a golden bullet by any means; whilst a low value is a warning, a high volume doesn't mean the tests are good, coverage can show how well-understood a code base is. As such, have a threshold, such as 80% as a target.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Infrastructure - Track the cost to service and host the application. Compare the current choice with the preferred pattern for hosting the application.&lt;/li&gt;
+&lt;li&gt;Architectural - Does the application follow the organisation's standards and recommendations? Does it follow the vendor's deployment guidance? If it is non-standard, then it will be more expensive/riskier to host and fix. It may cause complexity to host and manage.&lt;/li&gt;
+&lt;li&gt;Training - Do you need to hire people for every new technology? Are your team unable to spend time looking at potentially valuable new tools and technologies?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you mix these with importance and risk, you can approximate the 'value' and start to create a backlog of tech debt.&lt;/p&gt;
+&lt;h3 id="managing-technical-debt"&gt;Managing Technical Debt&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Have your teams identify tech debt and create features in their existing backlogs for tech debt. Tag them with 'Tech-debt', so they can be reported on and analysed.
+&lt;ul&gt;
+&lt;li&gt;Do not create a separate backlog. this will slow things down. One team, one backlog.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Track each feature with risk and importance. This includes tech debt. During sprint planning, pull tech debt items into the backlog to fill up the first 25%. Feel free to move some out to make way for important features, but prioritise debt over 'Should' or 'Could' features.
+&lt;ul&gt;
+&lt;li&gt;Remember, each debt you deal with gives you more bandwidth tomorrow. The compound interest of tech debt payoff can be huge.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Make sure your product managers understand the value of this work and support it. They need to be able to prioritise tech debt and understand what that budget is doing and where it is going.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Technical debt is a shortcut that was made to speed something up. It’s a lack of appropriate or correct frameworks to operate modern systems in modern ways. It’s the lack of skills, knowledge and training for people to properly engage in current technologies and processes. It’s unmaintained systems and software, where the cost to maintain or update is increased and keeps increasing.&lt;/p&gt;
+&lt;p&gt;Every business has these.&lt;/p&gt;
+&lt;p&gt;Technical debt management boils down to one point. Pay it back. The goal is not to remove tech debt but to keep it at a workable level. Companies need to identify and track tech debt, to ensure it can be managed to the best advantage.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-debt-reclaiming-tech-equity"&gt;Tech debt: Reclaiming tech equity | McKinsey (2020) www.mckinsey.com&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://linearb.io/blog/how-to-measure-technical-debt/#:%7E:text=Measuring%20Technical%20Debt%3A%20Identify%20High-Risk%20Areas%201%20Keep"&gt;How to Measure Technical Debt Before You Start Tackling It | LinearB (2022) linearb.io&lt;/a&gt; (Accessed: 16 May 2023).&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.visionarycto.com/p/my-20-year-career-is-technical-debt"&gt;My 20-year career is technical debt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Help teams manage technical debt by identifying and assessing existing debt across the enterprise and prioritizing items in an orderly fashion.</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns/identity-auth</id>
+		<title>Identity, Authentication and Authorisation</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns/identity-auth" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
+		<updated>2023-05-16T00:00:00Z</updated>
+		<content>&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
+&lt;p&gt;This pattern describes a central authentication model, suitable for a microservices web application. It builds on several other patterns, to provide a scalable way to identify, authenticate and authorise access to resources, data and services.&lt;/p&gt;
+&lt;p&gt;In this example, a role-based authorization model is being used. Customer policies would be more configurable, but also more complex.&lt;/p&gt;
+&lt;h3 id="illustration"&gt;Illustration&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/media/index/api-gateway-centralized-authentication.png" alt="API Gateway Centralized authentication" /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/"&gt;Rousos (2023) Securing .NET Microservices and Web Applications, learn.microsoft.com.&lt;/a&gt;(Accessed: 16 May 2023).‌&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In this instance, a mobile app is shown. But a static site, calling an API, a Single Page Application, or an MVC application would use a similar method. This could use the &lt;a href="https://akfpartners.com/growth-blog/backend-for-frontend#:%7E:text=In%20the%20Backend%20for%20Frontend%20pattern%2C%20a%20service,differ%20from%20a%20traditional%20API%20or%20monolithic%20gateway."&gt;Backends-For-Frontends&lt;/a&gt; pattern, to offset any differences.&lt;/p&gt;
+&lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;By using the gateway, authentication is offloaded to the gateway and centralised. &lt;a href="xref:gateways"&gt;Gateways&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The gateway issues a signed token, which contains the authorised user's roles, which can be used for the lifespan of the token, reducing chatter. &lt;a href="xref:microservices-anti-patterns"&gt;Microservices Anti-patterns&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The token is long-lived, reducing user frustration. &lt;a href="xref:ease-of-use"&gt;Ease-of-Use&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Once implemented, downstream services simply need to have their role added to the token and respect it.&lt;/li&gt;
+&lt;li&gt;Identity management and storage can be offloaded to the customer's preferred vendor, using open standards, Including:
+&lt;ul&gt;
+&lt;li&gt;Microsoft, Google or Facebook identities, such as Microsoft AzureAD B2C.&lt;/li&gt;
+&lt;li&gt;Microsoft Azure AD identities, using B2B Federation.&lt;/li&gt;
+&lt;li&gt;Any OpenID Connect or OAuth2.0 Identities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="drawbacks-to-this-pattern"&gt;Drawbacks to this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;It assumes simple role-based authorisation. A more complex policy-based model would require additional depth and complexity in the token, increasing its size and complexity.&lt;/li&gt;
+&lt;li&gt;The token is fairly easy to 'crack', so should never be shared outside the network. A separate reference token model is recommended, where the token is used within the cluster, and used by the gateway as a delegated authorisation.
+&lt;ul&gt;
+&lt;li&gt;The user would have a lean token or reference cookie, which only correlates to the token on the gateway. Think of this model as a delegation model, rather than an authorisation model.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;This creates a dependency on external identity vendors, which can be hard to manage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;This pattern, together with the &lt;a href="xref:gateways"&gt;Gateways&lt;/a&gt;, is recommended in most enterprise or B2B microservice models. It is ideal for a containerised application, which needs to minimise cross-talk and have a planned model for authorisation and identity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;This pattern is not suitable for use on unsecured networks. The contents of the token can be used to understand the user and their roles.
+&lt;ul&gt;
+&lt;li&gt;This pattern still promotes zero-trust, as every service will validate the token, and must trust the issuer and check for tampering.&lt;/li&gt;
+&lt;li&gt;Using a reference token, issued at the gateway to the external user, which does NOT contain any useful information can mitigate this.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://nordicapis.com/how-to-control-user-identity-within-microservices/"&gt;NordicAPIs - How to control user identity within microservices&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/&amp;#64;maison.moa/using-jwt-json-web-tokens-to-authorize-users-and-protect-api-routes-3e04a1453c3e"&gt;Using JWT to authorize users and protect API routes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/"&gt;Make secure .NET Microservices and Web Applications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>Authenticating users in microservices can be fraught with perils...</summary>
 	</entry>
 </feed>
