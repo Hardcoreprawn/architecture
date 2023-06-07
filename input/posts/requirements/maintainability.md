@@ -9,14 +9,14 @@ Draft: false
 Published: 26/04/2023
 ---
 
-The system should be designed and developed with maintainability in mind. The system should be easy to look after, diagnose and support, throughout its lifecycle.
+The system should be designed and developed with maintainability in mind. The system should be easy to look after, diagnose and support throughout its lifecycle.
 
 > Read the [Requirements Check-List](xref:requirements-checklist) article for an introduction to requirements.
 
 ## Requirement
 
 * Design and implement the system using a known set of conventions.
-* The system is well-documented and the source code has relevant comments.
+* The system is well-documented, and the source code has relevant comments.
 * The software has been designed to be modular and reusable.
 * Implement approved logging, monitoring and testing tools.
 * The deployment follows standard technology hosting patterns.
@@ -43,7 +43,7 @@ The system should be designed and developed with maintainability in mind. The sy
 
 ## Rationale
 
-This NFR ensures that the system can adapt to changing needs, bugs can be fixed and support costs can be kept down.
+This NFR ensures that the system can adapt to changing needs, bugs can be fixed, and support costs can be kept down.
 
 ## Related Principles
 

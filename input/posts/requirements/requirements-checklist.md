@@ -9,7 +9,7 @@ Date: 2023-04-24T07:39:05.569Z
 Published: 21/04/2023
 ---
 
-This document should help you write requirements and ensure they are ready for development and implementation. Most organizations have poorly documented guidance about creating requirements and what makes them easy to implement. We all come with assumptions about what requirements are. This document aims to help explain what makes a requirement.
+This document should help you write requirements and ensure they are ready for development and implementation. Most organisations have poorly documented guidance about creating requirements and what makes them easy to implement. We all come with assumptions about what requirements are. This document aims to help explain what makes a requirement.
 
 ## Defining 'Good Requirement'
 
@@ -33,7 +33,7 @@ Make sure your requirements are written for their intended audience
 
 ## Enough context
 
-Ensure the requirement is complete and understandable for the primary audience without additional material. (If you cannot do this, there may be some need to educate on the current systems and capabilities.). This should give you something concise, but easy to grasp, without a whole host of specialist knowledge the audience doesn't have.
+Ensure the requirement is complete and understandable for the primary audience without additional material. (If you cannot do this, there may be some need to educate on the current systems and capabilities.). This should give you something concise but easy to grasp without a whole host of specialist knowledge the audience doesn't have.
 
 Different types of requirements have different needs and may create additional requirements. High-level business requirements and low-level technical specifications, considering regulations, can be very other things. Like the first point, ensure they are detailed enough for the audience.
 

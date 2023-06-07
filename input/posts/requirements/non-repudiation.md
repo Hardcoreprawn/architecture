@@ -10,8 +10,7 @@ Tags:
   - Requirements
   - NFRs
 ---
-
-Where possible, use immutable objects and data which can't be repudiated. Make sure we can trust our systems and our data.
+Use immutable objects where possible. Make sure we can trust our systems and our data.
 
 > Read the [Requirements Check-List](xref:requirements-checklist) article for an introduction to requirements.
 
@@ -23,12 +22,12 @@ The system must provide a mechanism to ensure that a party cannot deny the authe
 
 * The system shall provide a digital signature for each transaction.
 * The digital signature shall be unique for each transaction.
-* The digital signature shall be verified by the recipient of the transaction.
+* The recipient of the transaction shall verify the digital signature.
 
 ## Audience
 
-  1. System designers and software engineers.
-  2. IT Professionals and operational engineers.
+  1. System designers and software engineers
+  2. IT Professionals and operational engineers
 
 ## Details
 
@@ -37,7 +36,7 @@ The system must provide a mechanism to ensure that a party cannot deny the authe
 
 ## Rationale
 
-Non-repudiation provides proof of the origin, authenticity, and integrity of data. It assures the sender that the message was delivered, as well as proof of the sender’s identity to the recipient. This way, neither party can deny that a message was sent, received, and processed. Non-repudiation ensures that no party can deny that it sent or received a message via encryption and/or digital signatures or approved some information. It also cannot deny the authenticity of its signature on a document.
+Non-repudiation provides proof of the origin, authenticity, and integrity of data. It assures the sender the message was delivered and evidence of the sender’s identity to the recipient. Neither party can deny that a letter was sent, received, and processed. Non-repudiation ensures that no party can deny that it sent or received a message via encryption and digital signatures or approved some information. It also cannot deny the authenticity of its signature on a document.
 
 ## Related Principles
 

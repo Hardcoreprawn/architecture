@@ -13,7 +13,7 @@ Published: 2023/06/06
 Author: James Brewster
 ---
 
-Functional requirements describe why something is. Non-functional Requirements describe how it is. Where a customer may ask for a specific functional requirement, they are doubtful to ask for an NFR unless something is wrong.
+Functional requirements describe why something is. Non-functional Requirements tell how it is. Where a customer may ask for a specific functional requirement, they are doubtful to ask for an NFR unless something is wrong.
 
 The NFRs which go into a product can mean all manner of differences, which affect the cost, performance, and reliability of a product or solution.
 

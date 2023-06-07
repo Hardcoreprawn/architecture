@@ -1,7 +1,7 @@
 ---
 Title: Technical Debt Framework
 Lead: System problems are like financial debt. It’s OK to borrow (time) against the future, as long as you pay it off before the 'interest' starts to bite...
-Description: Help teams manage technical debt by identifying and assessing existing debt across the enterprise and prioritizing items in an orderly fashion.
+Description: Help teams manage technical debt by identifying and assessing existing debt across the enterprise and prioritising items in an orderly fashion.
 Tags:
   - Architecture
   - Business
@@ -44,7 +44,7 @@ In a 2020 survey, McKinsey asked a group of CIOs on a panel what percentage of t
 
 More worrying was the statistic that CIOs felt the value of the technical assets was made up of 20-40% tech debt before depreciation.
 
-More recently, a repeat of this study found that 60% of CIOs felt their organization's tech debt had perceptibly increased over the past three years.
+More recently, a repeat of this study found that 60% of CIOs felt their organisation's tech debt had perceptibly increased over the past three years.
 
 On a more positive note, the same whitepaper quoted a former CIO at a major cloud provider:
 
@@ -88,30 +88,30 @@ Everyone acknowledges that education is good, but employees want to feel cared a
 
 ## Framework for Managing Technical Debt
 
-Technical debt management boils down to one point. You have to pay it back. It will not go away. Factor it into daily work. If it's low, use the time to pay it forward (invest) rather than focus on the next new shiny thing.
+Technical debt management boils down to one point. You have to pay it back. It will not go away. Factor it into daily work. If it's low, use the time to pay it forward (invest) rather than focus on the next shiny new thing.
 
 > The author would recommend giving it up to a 25% share of the work budget to team led 'improvement', which includes tech debt. It may be that this flexes up and down a bit, but 20-25% in the long term will keep your software improving.
 
 The goal is not to remove tech debt entirely but to keep it at a workable level.
 
-Companies need to identify and track tech debt, to ensure it can be managed to the best advantage.
+Companies need to identify and track tech debt to ensure it can be managed to the best advantage.
 
 Tech debt should be dealt with strategically. These principles, based on work from McKinsey, may help:
 
 1. Start with a shared definition of tech debt. Executive and senior management need to have the same understanding of what constitutes tech debt; Process, people and technology, which need upgrading.
 2. Treat tech debt as 'waste in the P&L' of the business. Leaders should acknowledge the capital and opportunity cost of this and have access to information and metrics to track it.
-3. Make sure the total cost of the application, its development, cost to serve and debt is tracked. It should cover 100% of the resources necessary. If that changes how you account, then change how you account. (See 'process debt' above)
-4. Have an agreed process, which *doesn't penalise* teams or people for addressing tech debt. Make sure that incentives encourage the right behaviour and that addressing tech debt is treated as a positive. Don't blame people for it either, someone made that decision with a good intention.
-5. Have teams Create items in the product backlog with value, cost, etc. attached. Prioritise a percentage of them in every sprint, to make sure the value is understood and visible. Treat them as features, just like others and value them. They weren't written up for the fun of it...
-6. Don't paralyze or immobilise a business to pay tech debt. It rarely works and isn't sustainable. It encourages people to think someone will just stop everything to fix things. Instead, set down time and resources in daily work to address debt consistently, either proactively or reactively, depending on the team and the workload.
-7. When all else fails, if a product or value stream is 'bankrupt' and can't service its debts (i.e. its 'interest' is >50% or so), then explore the option to replace the whole stack. It's drastic, but it may be a lower-risk option and save the product/service.
+3. Make sure the total cost of the application, its development, cost to serve, and debt are tracked. It should cover 100% of the resources necessary. If that changes how you account, then change how you account. (See 'process debt' above)
+4. Have an agreed process which doesn't penalise teams or people for addressing tech debt. Ensure that incentives encourage the correct behaviour and that managing tech debt is treated positively. Don't blame people for it either; someone made that decision with good intentions.
+5. Have teams Create items in the product backlog with value, cost, etc., attached. Prioritise a percentage of them in every sprint to make sure tech debt is understood and visible. Treat them as features, just like others and value them. They weren't written up for the fun of it.
+6. Don't paralyse or immobilise a business to pay tech debt. It rarely works and isn't sustainable. It encourages people to think someone will stop everything to fix things. Instead, set down time and resources in daily work to address debt consistently, proactively or reactively, depending on the team and the workload.
+7. When all else fails, if a product or value stream is 'bankrupt' and can't service its debts (i.e. its 'interest' is >50% or so), then explore the option to replace the whole stack. It's drastic but could be a lower-risk option and save the product/service.
 
 ### Identifying Technical Debt
 
 Sticking to a financial analogy, you can think of tech debt as having two components, just like any other debt:
 
-* The principal. This is the total work required to bring the stack, including processes and people, up to date.
-* The interest. is the complexity tax which every single project pays right now. The spike work to understand how to make a change, or use a commodity technology. The debug work to figure out how version x.x varies from x.y. This is the interest and it's paid in productivity.
+* The principal. This is the real work required to bring the stack, including processes and people, up to date.
+The interest. is the complexity tax every single project pays. The spike works to understand how to change or use a commodity technology. The debug work to figure out how version x.x varies from x.y. This is the interest, and it's paid in productivity.
 McKinsey also says that most organisations are paying way more than 10% interest on this debt, as it causes a significant drag on their projects and resources.
 
 ![Tech Debt Principle and Interest](https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/tech%20debt%20reclaiming%20tech%20equity/svg-tech-debt-exhibit-2.svgz?cq=50&cpy=Center)
@@ -119,12 +119,12 @@ McKinsey also says that most organisations are paying way more than 10% interest
 
 ### Tracking Technical Debt
 
-Tech debt should be tracked by the team/group as a key metric. It may be that you have to find a way to expose or count the cost of this debt, which isn't always easy. Some areas you can track:
+Tech debt should be tracked by the team/group as a critical metric. You may have to find a way to expose or count the cost of this debt, which isn't always easy. Some areas you can track:
 
 * Software Development
   * [Complexity](https://linearb.io/blog/what-is-code-complexity/) - Various code complexity metrics can be tracked and monitored on each project to understand where the complexity lies and help identify areas which need work.
   * [New Bugs vs Closed Bugs](https://dzone.com/articles/8-top-metrics-for-measuring-your-technical-debt) - Are your bugs growing or falling?
-  * [Testing Effort](https://linearb.io/blog/how-to-measure-technical-debt/#:~:text=Measuring%20Technical%20Debt%3A%20Identify%20High-Risk%20Areas%201%20Keep,Risk%20and%20Add%20Importance%20to%20the%20Mix%20) - An easy approximation is to look at test coverage. Test coverage isn't a golden bullet by any means; whilst a low value is a warning, a high volume doesn't mean the tests are good, coverage can show how well-understood a code base is. As such, have a threshold, such as 80% as a target.
+  * [Testing Effort](https://linearb.io/blog/how-to-measure-technical-debt/#:~:text=Measuring%20Technical%20Debt%3A%20Identify%20High-Risk%20Areas%201%20Keep,Risk%20and%20Add%20Importance%20to%20the%20Mix%20) - An easy approximation is to look at test coverage. Test coverage isn't a golden bullet by any means; whilst a low value is a warning, a high volume doesn't mean the tests are good; coverage can show how well-understood a code base is. As such, have a threshold, such as 80%, as a target.
 * Infrastructure - Track the cost to service and host the application. Compare the current choice with the preferred pattern for hosting the application.
 * Architectural - Does the application follow the organisation's standards and recommendations? Does it follow the vendor's deployment guidance? If it is non-standard, then it will be more expensive/riskier to host and fix. It may cause complexity to host and manage.
 * Training - Do you need to hire people for every new technology? Are your team unable to spend time looking at potentially valuable new tools and technologies?
@@ -134,7 +134,7 @@ If you mix these with importance and risk, you can approximate the 'value' and s
 ### Managing Technical Debt
 
 * Have your teams identify tech debt and create features in their existing backlogs for tech debt. Tag them with 'Tech-debt', so they can be reported on and analysed.
-  * Do not create a separate backlog. this will slow things down. One team, one backlog.
+  * Do not create a separate backlog. This will slow things down. One team, one backlog.
 * Track each feature with risk and importance. This includes tech debt. During sprint planning, pull tech debt items into the backlog to fill up the first 25%. Feel free to move some out to make way for important features, but prioritise debt over 'Should' or 'Could' features.
   * Remember, each debt you deal with gives you more bandwidth tomorrow. The compound interest of tech debt payoff can be huge.
 * Make sure your product managers understand the value of this work and support it. They need to be able to prioritise tech debt and understand what that budget is doing and where it is going.
@@ -145,7 +145,7 @@ Technical debt is a shortcut that was made to speed something up. It’s a lack 
 
 Every business has these.
 
-Technical debt management boils down to one point. Pay it back. The goal is not to remove tech debt but to keep it at a workable level. Companies need to identify and track tech debt, to ensure it can be managed to the best advantage.
+Technical debt management boils down to one point. Pay it back. The goal is not to remove tech debt but to keep it at a workable level. Companies need to identify and track tech debt to ensure it can be managed to the best advantage.
 
 ## References
 

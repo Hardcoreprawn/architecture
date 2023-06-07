@@ -1,6 +1,6 @@
 ---
 Title: Compatibility
-Lead: Build to a common target architecture.
+Lead: Build to a typical target architecture.
 Tags:
   - Architecture
   - Requirements
@@ -20,7 +20,7 @@ The application runs on a Linux-based container, ideally Ubuntu Long Term Suppor
 
 ## Acceptance Criteria
 
-* The software is deployed to a Linux container, compatible with Kubernetes.
+* Where possible, Run all software on a Linux container compatible with Kubernetes.
 * The image should be on our technology register and pulled from our hub.
 * The software targets a currently supported version of the .NET framework.
 
@@ -36,9 +36,9 @@ The application runs on a Linux-based container, ideally Ubuntu Long Term Suppor
 
 ## Rationale
 
-As we design and develop new systems, we should make sure they can run on commodity platforms that we know how to use, and can easily secure.
+As we design and develop new systems, we should ensure they can run on commodity platforms that we know how to use and can quickly secure.
 
-* Linux containers are robust, low cost and easy to manage. they are the most commonly deployed workload in the world.
+* Linux containers are robust, low cost and easy to manage. They are the most commonly deployed workload in the world.
 * Azure is our preferred hosting environment.
 * Our developers predominantly write C# code.
 

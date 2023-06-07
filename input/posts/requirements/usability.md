@@ -1,7 +1,7 @@
 ---
 Title: Usability
 Lead: The system must be easy to use.
-Description: The system must be intuitive and easy to use for all users.
+Description: The system must be intuitive and easy for all users.
 Draft: false
 Published: 28/04/2023
 Tags:
@@ -14,22 +14,22 @@ Usability, noun, /ˌjuːzəˈbɪləti/. Something easy to use, or the degree to 
 
 ## Requirement
 
-The system must have a user interface that is easy to navigate and understand.
-
-* The system should be set up to allow a user to complete their tasks quickly and directly.
-* The interface needs to be intuitive so that minimal instruction is needed. If there is any area which is ambiguous or tricky, help needs to be included.
+* The system must have a user interface that is easy to navigate and understand.
+* The standard system must allow users to complete their tasks quickly and directly.
+* The interface needs to be intuitive so that minimal instruction is required.
+* If any area is ambiguous or tricky, the system must help the user navigate.
 
 ## Acceptance Criteria
 
-By demonstration
+By demonstration:
 
-* The user interface must be intuitive and easy to navigate.
-* The user interface must be easy to understand.
+* The user interface must be intuitive and easy to navigate
+* The user interface must be easy to understand
 
 ## Audience
 
-  1. System designers and software engineers.
-  2. IT Professionals and operational engineers.
+  1. System designers and software engineers
+  2. IT Professionals and operational engineers
 
 ## Details
 
@@ -38,7 +38,7 @@ By demonstration
 
 ## Rationale
 
-This requirement is important because it ensures that users can easily use the system without requiring extensive training or support.
+This requirement is crucial because it ensures users can easily use the system without extensive training or support.
 
 ## Related Principles
 

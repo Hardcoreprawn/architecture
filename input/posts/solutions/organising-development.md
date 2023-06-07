@@ -9,11 +9,11 @@ Published: 01-01-2001
 ---
 ## Work Item Types
 
-Work items in development tend to fall into three broad types, but the names tend to change, depending on the place, process or tools used. The most common types are:
+Work items in development tend to fall into three broad types, but the names change depending on the place, process or tools used. The most common types are:
 
-1. Requirements / User Stories / Issues - The smallest unit of work. Intended to be sized so that a team can manage 1+ in the smallest unit of time (usually a sprint), but purely for convenience.
-2. Features - Groups of requirements, stories or Issues which can be delivered in time for the next release. Some frameworks use 'Capabilities' as a feature which has to be delivered by more than one team because there is a dependency. This should be avoided, but worth knowing about.
-3. Epics / Initiatives / Projects - Big themes or ideas with significant market value, which generally require special investment. Usually made of a load of features. Generally, an Epic is formed as an idea with a significant outcome, explored and tested as a high-level concept, before being broken down into features.
+1. Requirements / User Stories / Issues - The smallest unit of work. Intended to be sized so that a team can manage 1+ in the smallest unit of time (usually a sprint), but purely for convenience
+2. Features - Groups of requirements, stories or Issues which can be delivered in time for the next release. Some frameworks use 'Capabilities' as a feature that has to be provided by multiple teams because of dependency. This should be avoided, but worth knowing about.
+3. Epics / Initiatives / Projects - Big themes or ideas with significant market value, which generally require particular investment. It is usually made of a load of features. Typically, an Epic is formed as an idea with a significant outcome, explored and tested as a high-level concept before being broken down into component features.
 
 This said the best practice with agile development is to minimise and factor down work as you get closer to development. Try and avoid big projects. The structures above can be helpful for management or executive discussions, especially with larger teams. Just remember that you want to give developers small, well-formed requirements, not vacuous epics.
 
