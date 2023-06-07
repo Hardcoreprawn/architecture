@@ -37,12 +37,16 @@ Changes in architecture guidance are applied retrospectively but may result in t
 
 It is up to the development team to decide how to solve problems based on the environment. The environment includes:
 
-* Existing systems
-* People & Culture
+* Organisational Strategy
+* People & Skills
 * Existing technology
 * Existing projects
+* Corporate Style
+* Shared Values
 
-Most people try to make good decisions. Usually, bad decisions are the result of poor communication or poor information. The architecture practice must create meaningful decisions and knowledge and help educate people so the teams can make better decisions.
+(Paraphrased from the [McKinsey 7-S Framework](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/enduring-ideas-the-7-s-framework#), which was written in the 1970s)
+
+Most people try to make good decisions. Usually, bad decisions are the result of poor communication or poor information. The architecture practice must document meaningful decisions and knowledge to help educate people so the teams can make better decisions.
 
 Using a feedback loop from the teams' decisions and accepting that these won't all be good, we can adjust the team's behaviour through education, exposure, and experience.
 
