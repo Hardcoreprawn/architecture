@@ -3,9 +3,9 @@ Title: Requirements-Based Change
 Published: 13/04/2023
 Lead: We only make changes to technology to make our business better, and we do that together.
 Tags:
-  - Architectural Principles
+  - Principles
   - Architecture
-  - Business Principles
+  - Business
 Draft: false
 ---
 

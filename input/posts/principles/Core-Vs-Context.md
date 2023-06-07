@@ -3,9 +3,9 @@ Title: Core vs Context
 Published: 15/04/2023
 Lead: Focus on what matters to our customers and get experts to help with the rest.
 Tags:
-  - Architectural Principles
+  - Principles
   - Architecture
-  - Business Principles
+  - Business
 Draft: False
 ---
 

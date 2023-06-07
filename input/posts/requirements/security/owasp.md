@@ -6,7 +6,6 @@ Published: 27/04/2023
 Draft: false
 Tags:
   - Architecture
-  - Non-Functional Requirements
   - Requirements
   - Security
 ---

@@ -3,9 +3,8 @@ Title: Performance
 Lead: The system must respond within 2 seconds for 95% of all requests.
 Tags:
   - Architecture
-  - Non-Functional Requirements
-  - Requirements
   - NFRs
+  - Requirements
 Draft: false
 Published: 27/04/2023
 ---

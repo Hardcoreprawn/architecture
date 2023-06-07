@@ -5,8 +5,9 @@ Draft: false
 Slug: intellectual-property
 Lead: Protecting your intellectual property is essential for maintaining a competitive advantage and generating revenue
 Tags:
-  - Architectural Principles
+  - Principles
   - Business
+  - Architecture
 Categories:
   - Principles
 Description: This page explains the importance of protecting intellectual property and provides examples of legal protections for intellectual property.

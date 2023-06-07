@@ -6,7 +6,6 @@ Draft: false
 Published: 28/04/2023
 Tags:
   - NFRs
-  - Non-Functional Requirements
   - Requirements
 ---
 A usable system encourages use and trust.

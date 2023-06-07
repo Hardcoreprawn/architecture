@@ -3,9 +3,9 @@ Title: Compliance with Law
 Published: 15/04/2023
 Lead: As we create and store data, we stick to the rules and regulations.
 Tags:
-  - Architectural Principles
+  - Principles
   - Architecture
-  - Business Principles
+  - Business
 Draft: False
 ---
 

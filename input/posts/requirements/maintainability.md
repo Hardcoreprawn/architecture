@@ -3,7 +3,6 @@ Title: Maintainability
 Lead: Build to a common target architecture.
 Tags:
   - Architecture
-  - Non-Functional Requirements
   - Requirements
   - NFRs
 Draft: false

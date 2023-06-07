@@ -4,7 +4,7 @@ Published: 2023-05-11T15:11:41.566Z
 Lead: Don't assume people will do the right things. Whether by malice or ignorance.
 Draft: false
 Tags:
-  - Architectural Principles
+  - Principles
   - Architecture
   - Security
 Categories:

@@ -3,7 +3,6 @@ Title: Firewalls
 Lead: To ensure only secure and necessary services can be accessed from the internet
 Draft: false
 Tags:
-  - Non-Functional Requirements
   - Requirements
   - Security
   - Architecture

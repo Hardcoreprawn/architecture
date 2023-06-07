@@ -3,9 +3,9 @@ Title: Service Orientation
 Published: 11/04/2023
 Lead: Architecture is a blueprint for how the company should operate.
 Tags:
-  - Architectural Principles
+  - Principles
   - Architecture
-  - Business Principles
+  - Business
 Draft: false
 ---
 

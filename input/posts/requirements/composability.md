@@ -5,7 +5,6 @@ Tags:
   - Architecture
   - NFRs
   - Requirements
-  - Non-Functional Requirements
 Published: 21/04/2023
 Draft: false
 ---

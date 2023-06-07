@@ -3,7 +3,6 @@ Title: Reliability
 Lead: Build apps to be resilient
 Tags:
   - Architecture
-  - Non-Functional Requirements
   - Requirements
   - NFRs
 Draft: False

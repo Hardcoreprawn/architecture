@@ -3,7 +3,6 @@ Title: Secure Configuration
 Lead: Ensure that computers and network devices are properly configured to reduce the level of inherent vulnerabilities and only provide the services required to fulfil their role.
 Draft: false
 Tags:
-  - Non-Functional Requirements
   - Requirements
   - Security
   - Architecture

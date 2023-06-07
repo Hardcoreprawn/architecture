@@ -3,9 +3,9 @@ Title: Interoperability
 Published: 15/04/2023
 Lead: Imagine if every computer had different software and hardware that didn’t work with other computers. That would be rubbish...
 Tags:
-  - Architectural Principles
+  - Principles
   - Architecture
-  - Technical Principles
+  - Technical
 Draft: false
 ---
 > *"Alone we can do so little; together we can do so much." - Helen Keller*
