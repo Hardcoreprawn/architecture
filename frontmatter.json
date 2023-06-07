@@ -91,14 +91,14 @@
     "Process",
     "Requirements",
     "Security",
-    "Solution",
+    "Solutions",
     "Technical"
   ],
   "frontMatter.taxonomy.categories": [
     "Patterns",
     "Principles",
     "Requirements",
-    "Solution"
+    "Solutions"
   ],
   "frontMatter.dashboard.openOnStart": true
 }

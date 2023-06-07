@@ -5,8 +5,30 @@
 		<link>https://red-sand-078a6ea03.3.azurestaticapps.net/</link>
 		<description />
 		<copyright>Copyright James Brewster© 2023</copyright>
-		<pubDate>Tue, 06 Jun 2023 15:12:45 GMT</pubDate>
-		<lastBuildDate>Tue, 06 Jun 2023 15:12:45 GMT</lastBuildDate>
+		<pubDate>Wed, 07 Jun 2023 10:52:53 GMT</pubDate>
+		<lastBuildDate>Wed, 07 Jun 2023 10:52:53 GMT</lastBuildDate>
+		<item>
+			<title>Non-functional Requirements</title>
+			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/nfrs</link>
+			<description>NFRs define the way a product functions in ways beyond the main requirements of the end customer. They explain how fast, robust or reliable something should be</description>
+			<author>James Brewster</author>
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
+			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/nfrs</guid>
+			<pubDate>Tue, 06 Jun 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Functional requirements describe why something is. Non-functional Requirements describe how it is. Where a customer may ask for a specific functional requirement, they are doubtful to ask for an NFR unless something is wrong.&lt;/p&gt;
+&lt;p&gt;The NFRs which go into a product can mean all manner of differences, which affect the cost, performance, and reliability of a product or solution.&lt;/p&gt;
+&lt;p&gt;Consider the following requirements and how they might affect the cost or development of a vehicle.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Carries two passengers&lt;/li&gt;
+&lt;li&gt;Can travel 200 miles&lt;/li&gt;
+&lt;li&gt;Travels on roads&lt;/li&gt;
+&lt;li&gt;A fuel efficiency greater than 30 miles per gallon.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now, this could describe all manner of things. A motorbike? A tandem bicycle? A Sports car? These could all be right, but they meet the needs of different markets and result in differing products.&lt;/p&gt;
+&lt;p&gt;Defining how your product will perform specific tasks and how it will perform under load and in use is essential to create the proper differentiation and guidance for development.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Overview of the Architecture Practice</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/architecture-practise</link>
@@ -58,54 +80,38 @@
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>Non-functional Requirements</title>
-			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/nfrs</link>
-			<description>NFRs define the way a product functions in ways beyond the main requirements of the end customer. They explain how fast, robust or reliable something should be</description>
-			<author>James Brewster</author>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
-			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/nfrs</guid>
-			<pubDate>Tue, 06 Jun 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;Functional requirements describe why something is. Non-functional Requirements describe how it is. Where a customer may ask for a specific functional requirement, they are doubtful to ask for an NFR unless something is wrong.&lt;/p&gt;
-&lt;p&gt;The NFRs which go into a product can mean all manner of differences, which affect the cost, performance, and reliability of a product or solution.&lt;/p&gt;
-&lt;p&gt;Consider the following requirements and how they might affect the cost or development of a vehicle.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Carries two passengers&lt;/li&gt;
-&lt;li&gt;Can travel 200 miles&lt;/li&gt;
-&lt;li&gt;Travels on roads&lt;/li&gt;
-&lt;li&gt;A fuel efficiency greater than 30 miles per gallon.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Now, this could describe all manner of things. A motorbike? A tandem bicycle? A Sports car? These could all be right, but they meet the needs of different markets and result in differing products.&lt;/p&gt;
-&lt;p&gt;Defining how your product will perform specific tasks and how it will perform under load and in use is essential to create the proper differentiation and guidance for development.&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
 			<title>Use Mongo DB for document database and host on Azure PaaS.</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architectural-decision-records/use-mongodb-on-cloud</link>
-			<description>&lt;p&gt;In the context of Document Databases for application containers, Facing the need to host semi-structured data, close to the service.&lt;/p&gt;</description>
+			<description>&lt;p&gt;In the context of Document Databases for application containers,&lt;/p&gt;</description>
 			<author>James Brewster</author>
 			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
 			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architectural-decision-records/use-mongodb-on-cloud</guid>
 			<pubDate>Mon, 05 Jun 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;In the context of Document Databases for application containers, Facing the need to host semi-structured data, close to the service.&lt;/p&gt;
-&lt;p&gt;We decided to use Mongo DB interfaces on Azure Cosmos DB service, And against using a cosmos DB interface or a native mongo DB container.&lt;/p&gt;
-&lt;p&gt;To simplify hosting the DB and to keep the database cloud agnostic, Accepting that we will have to ensure that we don;t use vendor specific features on Cosmos and that there is some cross service latency fromt he container to Cosmos&lt;/p&gt;
-&lt;p&gt;Because, at this time, there is no real need to be fully multi-cloud and the native Azure Cosmos Interfaces are being deprecated at some point.&lt;/p&gt;
+			<content:encoded>&lt;p&gt;In the context of Document Databases for application containers,&lt;/p&gt;
+&lt;p&gt;Facing the need to host semi-structured data close to the service.&lt;/p&gt;
+&lt;p&gt;We decided to use Mongo DB interfaces on Azure Cosmos DB service&lt;/p&gt;
+&lt;p&gt;And against using a Cosmos DB interface or a native Mongo DB container.&lt;/p&gt;
+&lt;p&gt;To simplify hosting the DB and to keep the database cloud agnostic&lt;/p&gt;
+&lt;p&gt;Accepting that there is some cross-service latency between the container and the Cosmos Service on Azure.&lt;/p&gt;
+&lt;p&gt;Because Microsoft is deprecating the native Azure Cosmos Interface.&lt;/p&gt;
 &lt;p&gt;Discussed with James Brewster, Peter Wilson, Jamie Milligan and Simon King.&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>Broker Training as a simple log of acceptance (ADR)</title>
+			<title>Broker Training as a simple log of Acceptance (ADR)</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architectural-decision-records/broker-training</link>
-			<description>&lt;p&gt;In the context of Broker Training, Facing the need to ensure brokers are properly trained to sell the relevaznt utility service.&lt;/p&gt;</description>
+			<description>&lt;p&gt;In the context of Broker Training&lt;/p&gt;</description>
 			<author>James Brewster</author>
 			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
 			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architectural-decision-records/broker-training</guid>
 			<pubDate>Fri, 02 Jun 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;In the context of Broker Training, Facing the need to ensure brokers are properly trained to sell the relevaznt utility service.&lt;/p&gt;
-&lt;p&gt;We decided for a broker training log, which will confirm acceptance and record the date, And against an eSignature or an immutable log.&lt;/p&gt;
-&lt;p&gt;To acheive the proof that training was delivered, prior to using the system, Accepting that we will remain liable for any regulatory issues, caused by the broker or their agents.&lt;/p&gt;
+			<content:encoded>&lt;p&gt;In the context of Broker Training&lt;/p&gt;
+&lt;p&gt;Facing the need to adequately train brokers to sell utility service.&lt;/p&gt;
+&lt;p&gt;We decided on a broker training log, which will confirm acceptance and record the date&lt;/p&gt;
+&lt;p&gt;And against an eSignature or an immutable ledger.&lt;/p&gt;
+&lt;p&gt;To achieve proof of training before using the system&lt;/p&gt;
+&lt;p&gt;Accepting that we will remain liable for any regulatory issues caused by the broker or their agents.&lt;/p&gt;
 &lt;p&gt;Because, at this time, the risk of litigation or regulatory action is deemed low enough that we can make the quickest decision&lt;/p&gt;
 &lt;p&gt;Discussed with James Brewster, Peter Wilson and Jade Rawlings.&lt;/p&gt;
 </content:encoded>
@@ -457,29 +463,29 @@ McKinsey also says that most organisations are paying way more than 10% interest
 		<item>
 			<title>Identity, Authentication and Authorisation</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns/identity-auth</link>
-			<description>Authenticating users in microservices can be fraught with perils...</description>
+			<description>Authenticating users in microservices can be fraught with perils.</description>
 			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
 			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns/identity-auth</guid>
 			<pubDate>Tue, 16 May 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
-&lt;p&gt;This pattern describes a central authentication model, suitable for a microservices web application. It builds on several other patterns, to provide a scalable way to identify, authenticate and authorise access to resources, data and services.&lt;/p&gt;
-&lt;p&gt;In this example, a role-based authorization model is being used. Customer policies would be more configurable, but also more complex.&lt;/p&gt;
+&lt;p&gt;This pattern describes a central authentication model suitable for a microservices web application. It builds on several other designs to provide a scalable way to identify, authenticate and authorise access to resources, data and services.&lt;/p&gt;
+&lt;p&gt;This example uses a role-based authorisation model. A policy-based authorisation model would be more flexible but also more complex.&lt;/p&gt;
 &lt;h3 id="illustration"&gt;Illustration&lt;/h3&gt;
 &lt;p&gt;&lt;img src="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/media/index/api-gateway-centralized-authentication.png" alt="API Gateway Centralized authentication" /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/"&gt;Rousos (2023) Securing .NET Microservices and Web Applications, learn.microsoft.com.&lt;/a&gt;(Accessed: 16 May 2023).‌&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;In this instance, a mobile app is shown. But a static site, calling an API, a Single Page Application, or an MVC application would use a similar method. This could use the &lt;a href="https://akfpartners.com/growth-blog/backend-for-frontend#:%7E:text=In%20the%20Backend%20for%20Frontend%20pattern%2C%20a%20service,differ%20from%20a%20traditional%20API%20or%20monolithic%20gateway."&gt;Backends-For-Frontends&lt;/a&gt; pattern, to offset any differences.&lt;/p&gt;
+&lt;p&gt;This example is for a mobile app. A similar method would work for a static site, calling an API, a Single Page Application, or an MVC application. Use the &lt;a href="https://akfpartners.com/growth-blog/backend-for-frontend#:%7E:text=In%20the%20Backend%20for%20Frontend%20pattern%2C%20a%20service,differ%20from%20a%20traditional%20API%20or%20monolithic%20gateway."&gt;Backends-For-Frontends&lt;/a&gt; pattern to offset any differences.&lt;/p&gt;
 &lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;By using the gateway, authentication is offloaded to the gateway and centralised. &lt;a href="xref:gateways"&gt;Gateways&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;The gateway issues a signed token, which contains the authorised user's roles, which can be used for the lifespan of the token, reducing chatter. &lt;a href="xref:microservices-anti-patterns"&gt;Microservices Anti-patterns&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;The token is long-lived, reducing user frustration. &lt;a href="xref:ease-of-use"&gt;Ease-of-Use&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Once implemented, downstream services simply need to have their role added to the token and respect it.&lt;/li&gt;
-&lt;li&gt;Identity management and storage can be offloaded to the customer's preferred vendor, using open standards, Including:
+&lt;li&gt;By using the gateway, authentication is offloaded to the gateway and centralised, see &lt;a href="xref:gateways"&gt;Gateways&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The gateway issues a signed token containing the authorised user's roles, which can be used for the token's lifespan, reducing chatter, see &lt;a href="xref:microservices-anti-patterns"&gt;Microservices Anti-patterns&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The token is long-lived, reducing user frustration. See &lt;a href="xref:ease-of-use"&gt;Ease-of-Use&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Once implemented, downstream services have their role added to the token and respect it.&lt;/li&gt;
+&lt;li&gt;Identity management and storage can be offloaded to the customer's preferred vendor using open standards, Including:
 &lt;ul&gt;
-&lt;li&gt;Microsoft, Google or Facebook identities, such as Microsoft AzureAD B2C.&lt;/li&gt;
-&lt;li&gt;Microsoft Azure AD identities, using B2B Federation.&lt;/li&gt;
+&lt;li&gt;Microsoft, Google or Facebook identities, such as Microsoft AzureAD B2C&lt;/li&gt;
+&lt;li&gt;Microsoft Azure AD identities, using B2B Federation&lt;/li&gt;
 &lt;li&gt;Any OpenID Connect or OAuth2.0 Identities.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -487,23 +493,23 @@ McKinsey also says that most organisations are paying way more than 10% interest
 &lt;h2 id="drawbacks-to-this-pattern"&gt;Drawbacks to this pattern&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;It assumes simple role-based authorisation. A more complex policy-based model would require additional depth and complexity in the token, increasing its size and complexity.&lt;/li&gt;
-&lt;li&gt;The token is fairly easy to 'crack', so should never be shared outside the network. A separate reference token model is recommended, where the token is used within the cluster, and used by the gateway as a delegated authorisation.
+&lt;li&gt;The token is easy to hack, so don't use it outside the network. A separate reference token model is recommended, where the token is used within the cluster and used by the gateway as a delegated authorisation.
 &lt;ul&gt;
-&lt;li&gt;The user would have a lean token or reference cookie, which only correlates to the token on the gateway. Think of this model as a delegation model, rather than an authorisation model.&lt;/li&gt;
+&lt;li&gt;The user would have a lean token or reference cookie, which only correlates to the token on the gateway. Think of this model as a delegation rather than an authorisation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;This creates a dependency on external identity vendors, which can be hard to manage.&lt;/li&gt;
+&lt;li&gt;This pattern creates a dependency on external identity vendors, which can be hard to manage.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;This pattern, together with the &lt;a href="xref:gateways"&gt;Gateways&lt;/a&gt;, is recommended in most enterprise or B2B microservice models. It is ideal for a containerised application, which needs to minimise cross-talk and have a planned model for authorisation and identity.&lt;/li&gt;
+&lt;li&gt;In most enterprise or B2B microservice models, this pattern will be beneficial. It is ideal for a containerised application, which needs to minimise cross-talk and have a planned model for authorisation and identity.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;This pattern is not suitable for use on unsecured networks. The contents of the token can be used to understand the user and their roles.
+&lt;li&gt;This pattern is not suitable for use on unsecured networks. A malicious actor can use the token's contents to understand the user and their roles.
 &lt;ul&gt;
-&lt;li&gt;This pattern still promotes zero-trust, as every service will validate the token, and must trust the issuer and check for tampering.&lt;/li&gt;
-&lt;li&gt;Using a reference token, issued at the gateway to the external user, which does NOT contain any useful information can mitigate this.&lt;/li&gt;
+&lt;li&gt;This pattern still promotes zero-trust, as every service will validate the token and must trust the issuer and check for tampering.&lt;/li&gt;
+&lt;li&gt;You can work around this limitation by using a reference token issued to the external user at the gateway, which does NOT contain identifiable information.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
