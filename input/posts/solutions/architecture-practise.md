@@ -44,7 +44,7 @@ It is up to the development team to decide how to solve problems based on the en
 * Corporate Style
 * Shared Values
 
-(Paraphrased from the [McKinsey 7-S Framework](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/enduring-ideas-the-7-s-framework#), which was written in the 1970s)
+> Paraphrased from [McKinsey & Company (2008) Enduring Ideas: the 7-S Framework, www.mckinsey.com](https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/enduring-ideas-the-7-s-framework)
 
 Most people try to make good decisions. Usually, bad decisions are the result of poor communication or poor information. The architecture practice must document meaningful decisions and knowledge to help educate people so the teams can make better decisions.
 
