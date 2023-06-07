@@ -13,27 +13,25 @@ Draft: False
 
 ## Statement
 
-We focus on what matters to our customers, to make sure we deliver a great service they want to use, with the resources we have.
+We focus on what matters to our customers to make sure we deliver an excellent service they want to use with the resources we have.
 
 ## Rationale
 
 Understand what matters to your customers, the core of your business, versus the stuff you have to do around it, the context.
 
-You need to focus your efforts on Core matters, not context.
+It would help if you focused on Core matters, not context. Concentrating your efforts on Core matters will ensure you focus on your customers' problems and challenges and how you can deliver value to them. This will maximise your opportunity with them.
 
-Focusing your efforts on Core matters will ensure you focus on the problems and challenges your customers have and how you can deliver value to them. This will maximise your opportunity with them.
-
-Focusing on context will eat into your time, and few customers will thank you for it. This doesn't mean it's not important, but it does mean you need to control the amount of time, money and energy spent on context.
+Focusing on context will consume your time, and few customers will thank you. This doesn't mean it's not essential, but you must control the time, money and energy spent on context.
 
 ## Implications
 
-Core problems are the things we do that create customer value. We want to give ourselves the most time to do these. Context problems are things we do because we have, to make sure we're compliant, paid, etc.
+Core problems are the things we do that create customer value. We want to give ourselves the most time to do these. Context problems are things we do because we have to make sure we're compliant, paid, etc.
 
 We want to minimise context problems and maximise the focus we can give Core problems.
 
-* Contextual problems should be considered for outsourcing.
-* Corte problems could be assisted by outsourcing but must remain within the purview of the business. This could be done to get past a skill gap or short deadline.
+* Consider outsourcing contextual problems.
+* You can support Core problems by outsourcing, but they must remain within the purview of the business. You could bring freelancers or contractors to help, but you should not pass them to a different company.
 * Context problems are best 'leased' rather than built. Outsourcing services for these things will let an expert manage it and ultimately save time/money/energy.
-* Core problems need to minimise dependencies and maximise local control, to ensure the business can adapt.
+* Core problems must minimise dependencies and maximise local control to ensure the business can adapt.
 
 ## Details, Examples, Context

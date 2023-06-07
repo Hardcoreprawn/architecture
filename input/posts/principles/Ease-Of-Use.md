@@ -1,7 +1,7 @@
 ---
 Title: Ease-of-Use
 Published: 15/04/2023
-Lead: Applications are easy to use. The underlying technology is transparent to users, so they can concentrate on the tasks at hand.
+Lead: Applications are easy to use. The underlying technology is transparent to users so that they can concentrate on the tasks at hand.
 Draft: false
 Tags:
   - Principles
@@ -13,19 +13,18 @@ Tags:
 
 ## Statement
 
-Applications are easy to use. The underlying technology is transparent to users, so they can concentrate on the tasks at hand.
+Applications are easy to use. The underlying technology is transparent to users so that they can concentrate on their tasks.
 
 ## Rationale
 
-When you use something, it’s better if you don’t have to learn too much about how it works. It’s easier to use when it’s simple. This makes it easier for you to do your work and not make mistakes. It keeps data in the right places and reduces the likelihood of people mistreating it.
+When you use something, it’s better if you don’t have to learn too much about how it works. It’s easier to use when it’s simple. Simplicity makes it easier to do your work and not make mistakes. It keeps data in the right places and reduces the likelihood of people mistreating it.
 
 ## Implications
 
-We want our software to be easy to use and accessible to the biggest audience we can serve. We do not, ever, want the complexity of our systems to hinder a sale or add any impediment to our business.
+We want our software to be easy to use and accessible to the biggest audience we can serve. We do not want the complexity of our systems to hinder a sale or add any impediment to our business.
 
-1. Apps and websites should look and feel similar to each other and be easy to use. So, there are rules that are made to make sure that all applications follow these standards. These rules are tested to make sure that they are easy to use.
-
-2. When people make things like websites or apps, they should not assume that everyone who uses them is the same. They should make sure that everyone can use them no matter where they are from, what language they speak, how much they know about computers, or if they have any physical problems.
+1. Apps and websites should look and feel similar and be easy to use. Some rules are made to make sure that all applications follow these standards. Test these rules to make sure that they are easy to use.
+2. People should not assume everyone using apps is the same when making things like websites or apps. Application developers should ensure that everyone can use these applications, no matter their country, language, computer knowledge, or if they have additional needs.
 
 ### Details and Context
 
