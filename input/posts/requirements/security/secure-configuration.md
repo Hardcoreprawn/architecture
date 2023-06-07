@@ -1,6 +1,6 @@
 ---
 Title: Secure Configuration
-Lead: Ensure that computers and network devices are properly configured to reduce the level of inherent vulnerabilities and only provide the services required to fulfil their role.
+Lead: Correctly configure computers and network devices to reduce vulnerabilities. Only provide the services required to fulfill their role.
 Draft: false
 Tags:
   - Requirements
@@ -8,34 +8,34 @@ Tags:
   - Architecture
 Published: 26/04/2023
 ---
-This applies to servers, applications and cloud services.
+This requirement applies to servers, applications, and cloud services.
 
 > Based on the NCSC.gov.uk 'Cyber Essentials Requirements for Infrastructure, January 2022. Modified to remove end user devices.
 
 ## Requirement
 
-Computers and network devices must be properly configured to reduce the level of inherent vulnerabilities and only provide the services required to fulfil their role.
+Correctly configure computers and network devices to reduce vulnerabilities. Only provide the services required to fulfil their role.
 
-Default configurations are often insecure, to make initial access easier. We must ensure any commodity services are reconfigured to ensure security.
+Default configurations are often insecure to make initial access easier. Reconfigure commodity services/devices to ensure security.
 
-This can include:
+Services/Devices can include:
 
 * Default accounts, potentially with additional permissions.
-* weak or known initial account passwords.
+* Weak or known initial account passwords.
 * Unnecessary or legacy services, which are easier to exploit.
 
-These must be disabled or reconfigured.
+Turn these off or reconfigure them so they are made secure.
 
 ## Acceptance Criteria
 
-* On inspection, third-party components should not have common or default accounts and passwords enabled.
-* Where possible, configuration should be backed-up and stored securely, to allow for re-verification.
-* The configuration of a system has been reviewed with one or more peers and has been approved.
+* On inspection, third-party components should not have default accounts and passwords enabled.
+* Configuration should be backed-up and stored securely to allow for re-verification.
+* The design of a system has been reviewed with one or more peers and approved.
 
 ## Audience
 
   1. System designers and implementors.
-  2. Organisational management
+Organisational management
 
 ## Details
 

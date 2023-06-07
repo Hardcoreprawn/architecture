@@ -4,7 +4,7 @@ Lead: Describing how a feature should work, as well as Why
 Description: NFRs define the way a product functions in ways beyond the main requirements of the end customer. They explain how fast, robust or reliable something should be
 Tags:
   - Architecture
-  NFRs
+  - NFRs
   - Requirements
 Categories:
   - Solution
