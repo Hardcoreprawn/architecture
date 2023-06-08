@@ -2,8 +2,9 @@
 Title: Overview of the Architecture Practice
 Author: James Brewster
 Published: 06/06/2023
+Description: How Architects should work alongside Agile development to enable faster decision-making and reduce risk.
 Lead: Function of an agile architecture practice
-Draft: True
+Draft: False
 Categories:
   - Solution
 Tags:
