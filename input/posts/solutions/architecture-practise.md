@@ -23,7 +23,7 @@ As development teams self-organize, the architecture role is to support decision
 
 This concept's core work item is the ADR or Architectural Decision Record. Whenever the team decides how development will proceed, they write it down in their work system. ADRs are covered in more detail [here](xref:architecture-decision-records).
 
-![Architecture Process](../../media/architecture-process.png)
+![Architecture Process - BPMN](../../media/architecture-process-bpmn.png)
 
 The architecture team review and steer ADRs. ADRs are like the tweet format of designs; they encompass small decisions and choices with just enough context and reasoning to explain to a new starter why something happened. A significant benefit is that they can all be queried and exported and used to describe the project thinking over time and why the team made confident choices. The ADR list acts as a log, which someone could examine to trace the project's decisions.
 
@@ -34,6 +34,8 @@ The architect group will propose amendments to the organisation's architecture t
 Changes in architecture guidance are applied retrospectively but may result in the creation of new technical debt items. Similar to how the law or regulation works.
 
 ## In Practice
+
+![Architecture Process - Sequence](../../media/architecture-process-sequence-diagram.png)
 
 It is up to the development team to decide how to solve problems based on the environment. The environment includes:
 
