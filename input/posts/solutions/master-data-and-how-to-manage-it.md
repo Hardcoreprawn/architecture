@@ -47,7 +47,7 @@ An MDM process involves several stages. Not all are essential, but some have to 
 
 ### 1. Define Business Goals
 
-An important step. Things only happen when there is a tangible goal for the business. MDM drives two main types of value stream:
+An important step. Things only happen when there is a tangible goal for the business. MDM drives two main types of value streams:
 
 1. MDM drives a short-term return on its investment by managing inconsistencies, improving analysis and reducing the effort to visualise and analyse data.
 2. A longer-term return is the capability to model and simulate how changes affect business performance. MDM allows business modelling and testing, which can make analytics a strategic investment.
@@ -69,7 +69,15 @@ MDM does not, and should not, include transaction data. That stuff is too fast-m
 
 From a data warehouse point of view, Master Data fields are critical dimensions which change slowly, but not the facts about those dimensions.
 
-A Matrix or Dictionary can help identify Master Data.
+A Matrix or Dictionary can help identify Master Data by categorising data entities against key headers:
+
+* Business Value
+* Volatility
+* Re-usability
+* Complexity
+
+![A table of fields, scored by MDM indicators]‌(../../media/mdm-field-eval.png)
+> Schedlbauer, M. (2019) Master Data Management, shipzero. [Medium](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241)
 
 ### 3. Identify & Evaluate Data Sources
 
