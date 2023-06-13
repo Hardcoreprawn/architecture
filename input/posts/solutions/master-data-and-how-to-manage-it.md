@@ -1,7 +1,7 @@
 ---
 Title: Master Data and How to Manage it
-Lead: Master Data defines how an organisation interacts with their customers and should be defined and managed.
-Description: "Master data management is the organisation of people, processes and technologies to create and maintain a reliable data environment for master data."
+Lead: Master Data is critical to an organisation's function. Master Data Management is the process of organising and collating it.
+Description: Master data management is the organisation of people, processes and technologies to create and maintain a reliable data environment for master data.
 Tags:
   - Architecture
   - Data
@@ -86,7 +86,7 @@ Analysing data to check for these values helps us identify what data we consider
 
 Where do we get this data from? Where was it created or first used? How can we trust that it is correct? These are all critical questions to ask on our journey. The next step is to identify where our Master Data comes from and whether that is a system of record.
 
-Identifying the right place to collect different data items is crucial as it lets us integrate or populate data as soon as possible in the lifecycle. This increases the value of each item and improves data quality.
+Identifying the right place to collect different data items is crucial as it lets us integrate or populate data as soon as possible in the lifecycle. Having a clear lineage for each entity increases the ability to diagnose issues with data and ensures data is more accurate and trustworthy.
 
 Following the data lifecycle in an organisation makes the process less invasive or disruptive. Which department/system gets to the entity first? For a new product, it is likely to be Product Management. Sales probably identify a Customer first. Using these 'natural' systems as the system of record and the source of information ensures the organisation captures data soon and remains current.
 
