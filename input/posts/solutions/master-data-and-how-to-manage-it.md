@@ -71,11 +71,6 @@ From a data warehouse point of view, Master Data fields are critical dimensions 
 
 A Matrix or Dictionary can help identify Master Data.
 
-Attribute | Business Value | Volatility | Re-usability | Complexity
----
-Index Key | Low | None | Medium | Low
-Name | High | Low | High | Medium
-
 ### 3. Identify & Evaluate Data Sources
 
 ### 4. Analyse Metadata
