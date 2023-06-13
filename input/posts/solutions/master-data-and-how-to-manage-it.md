@@ -52,7 +52,7 @@ An important step. Things only happen when there is a tangible goal for the busi
 1. MDM drives a short-term return on its investment by managing inconsistencies, improving analysis and reducing the effort to visualise and analyse data.
 2. A longer-term return is the capability to model and simulate how changes affect business performance. MDM allows business modelling and testing, which can make analytics a strategic investment.
 
-It is vital to maintain both the vision (Analytics as a strategic enabler) and the short-term gains (we can show value in the short term by...) when explaining the importance of MDM and a broader data strategy.
+It is vital to maintain both the vision (Analytics as a strategic enabler) and the short-term gains (we can show value in the short term by doing -something-) when explaining the importance of MDM and a broader data strategy.
 
 ### 2. Identify Master Data
 
@@ -108,4 +108,4 @@ Evaluate whether these systems have available interfaces to export data, ideally
 
 ## References
 
-1. https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241
+1. [Schedlbauer, M. (2019). Master Data Management. Online.](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241)
