@@ -4,6 +4,7 @@ pr:
   branches:
     include:
       - main
+
 trigger:
   branches:
     include:
@@ -35,4 +36,5 @@ jobs:
       api_location: "" # Api source code path - optional
       output_location: "" # Built app content directory - optional
       skip_app_build: true
+      production_branch: 'main'
 ###### End of Repository/Build Configurations ######
