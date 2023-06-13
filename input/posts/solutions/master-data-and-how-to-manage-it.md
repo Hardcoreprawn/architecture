@@ -1,7 +1,7 @@
 ---
 Title: Master Data and How to Manage it
 Lead: Master Data defines how an organisation interacts with their customers and should be defined and managed.
-Description: ""
+Description: "Master data management is the organisation of people, processes and technologies to create and maintain a reliable data environment for master data."
 Tags:
   - Architecture
   - Data
