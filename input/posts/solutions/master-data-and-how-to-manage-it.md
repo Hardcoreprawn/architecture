@@ -76,7 +76,8 @@ A Matrix or Dictionary can help identify Master Data by categorising data entiti
 * Re-usability
 * Complexity
 
-![A table of fields, scored by MDM indicators]‌(../../media/mdm-field-eval.png)
+![Entity graded for MDM]‌(../../media/mdm-field-eval.png "A table of fields, scored by MDM indicators")
+
 > Schedlbauer, M. (2019) Master Data Management, shipzero. [Medium](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241)
 
 ### 3. Identify & Evaluate Data Sources
