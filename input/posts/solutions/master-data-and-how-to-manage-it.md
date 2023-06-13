@@ -76,11 +76,21 @@ A Matrix or Dictionary can help identify Master Data by categorising data entiti
 * Re-usability
 * Complexity
 
-![Entity graded for MDM]‌(../../media/mdm-field-eval.png "A table of fields, scored by MDM indicators")
+![MDM Entity Analysis](../../media/mdm-field-eval.png)
 
 > Schedlbauer, M. (2019) Master Data Management, shipzero. [Medium](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241)
 
+Analysing data to check for these values helps us identify what data we consider 'Master Data' and what we should leave to transactional systems.
+
 ### 3. Identify & Evaluate Data Sources
+
+Where do we get this data from? Where was it created or first used? How can we trust that it is correct? These are all critical questions to ask on our journey. The next step is to identify where our Master Data comes from and whether that is a system of record.
+
+Identifying the right place to collect different data items is crucial as it lets us integrate or populate data as soon as possible in the lifecycle. This increases the value of each item and improves data quality.
+
+Following the data lifecycle in an organisation makes the process less invasive or disruptive. Which department/system gets to the entity first? For a new product, it is likely to be Product Management. Sales probably identify a Customer first. Using these 'natural' systems as the system of record and the source of information ensures the organisation captures data soon and remains current.
+
+Evaluate whether these systems have available interfaces to export data, ideally, modern interfaces that drive events.
 
 ### 4. Analyse Metadata
 
