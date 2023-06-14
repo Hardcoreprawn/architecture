@@ -77,10 +77,10 @@ Using a feedback loop from the teams' decisions and accepting that these won't a
 
 * Ignore existing ADRs relating to the subject (Search in DevOps for ADRs or the tech or problem).
 * Do not look at the existing guidance:
-  * [Principles](xref:principles)
+  * Principles
   * [NFRs](xref:nfrs)
-  * [Patterns](xref:patterns)
-  * [Standards](xref:standards)
+  * Patterns
+  * Standards
 * Keep the decision secret right up until the last second.
 * Do not produce a cost-benefit analysis.
 * Write a slide show to confuse matters by overloading everyone with benefits without financial backing or research.
