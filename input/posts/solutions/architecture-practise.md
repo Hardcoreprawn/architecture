@@ -6,11 +6,11 @@ Description: How Architects should work alongside Agile development to enable fa
 Lead: Function of an agile architecture practice
 Draft: False
 Categories:
-  - Solution
+  - Solutions
 Tags:
   - Architecture
   - Process
-  - Solution
+  - Solutions
 ---
 Software and systems architects provide guidance and governance of a technology organisation by, amongst other things, modelling the organisation, its departments, capabilities, and processes and then mapping technology into them to ensure that the business has a somewhat optimised set environment, which can adapt to its needs and isn't onerous to look after.
 

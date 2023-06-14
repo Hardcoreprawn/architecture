@@ -6,8 +6,9 @@ Description:
 Tags:
   - Architecture
   - Process
+  - Solutions
 Categories:
-  - Solution
+  - Solutions
 Draft: true
 Published: 01-01-2001
 ---

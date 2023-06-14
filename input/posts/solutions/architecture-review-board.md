@@ -5,8 +5,9 @@ Description: A coherent ARB can help organisations plan and normalise technology
 Tags:
   - Architecture
   - Business
+  - Solutions
 Categories:
-  - Solution
+  - Solutions
 Draft: False
 Published: 30/05/2023
 ---
