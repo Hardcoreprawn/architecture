@@ -88,11 +88,9 @@ This takes into account the growth of Everflow and the maturity of data as a dis
 
 The rest of this article will describe the project necessary to create such a hub and what types of tools will be necessary.
 
-## Process
-
 An MDM process involves several stages. Not all are essential, but some have to come first.
 
-### 1. Define Business Goals
+## 1. Define Business Goals
 
 An important step. Things only happen when there is a tangible goal for the business. MDM drives two main types of value streams:
 
@@ -101,9 +99,9 @@ An important step. Things only happen when there is a tangible goal for the busi
 
 It is vital to maintain both the vision (Analytics as a strategic enabler) and the short-term gains (we can show value in the short term by doing -something-) when explaining the importance of MDM and a broader data strategy.
 
-### 2. Identify Master Data
+## 2. Identify Master Data
 
-At the start of any MDM project, identify the relevant Master Data. Not all the Master Data you may ever need, and not all the data is Master Data.
+At the start of any project, identify the relevant master data needed. Not all the master data you may ever need, and certainly not all the data. 
 
 The following characteristics help identify Master Data:
 
@@ -112,24 +110,33 @@ The following characteristics help identify Master Data:
 * Complex
 * Reusable
 
-MDM does not, and should not, include transaction data. That stuff is too fast-moving to manage using this pattern. A data warehouse or an event stream is a better way to manage analytics for transactional data.
+Master data is only the reusable entities, such as:
+
+* Customers
+  * CustomerAccounts
+  * CustomerSites
+* Brokers
+  * BrokerAgents
+* Utilities
+  * Products
+* Bills
+* etc.
+
+Important data is not necessarily master data. Whether a Broker or their agents have been trained is important for compliance, but only that context. Its not widely reusable otherwise, so wouldn't be considered Master Data.
+
+MDM does not, and should not, include transaction data. That stuff is too fast-moving to manage using this pattern. A data warehouse or an event stream is a better way to manage analytics for transactional data. It could link to the transactional view, or the analytical aggregates of the transactions.
 
 From a data warehouse point of view, Master Data fields are critical dimensions which change slowly, but not the facts about those dimensions.
-
-A Matrix or Dictionary can help identify Master Data by categorising data entities against key headers:
-
-* Business Value
-* Volatility
-* Re-usability
-* Complexity
 
 ![MDM Entity Analysis](../../media/mdm-field-eval.png)
 
 > Schedlbauer, M. (2019) Master Data Management, shipzero. [Medium](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241)
 
-Analysing data to check for these values helps us identify what data we consider 'Master Data' and what we should leave to transactional systems.
+Rating our data at the right level so we can understand and expose the right entities and their fields from the right places.
 
-### 3. Identify & Evaluate Data Sources
+TODO: 'Roll-up' data into entities and resources that can be queried. Then we can work with those bigger objects, confident that we can access the contents if need be.
+
+## 3. Identify & Evaluate Data Sources
 
 Where do we get this data from? Where was it created or first used? How can we trust that it is correct? These are all critical questions to ask on our journey. The next step is to identify where our Master Data comes from and whether that is a system of record.
 
@@ -139,31 +146,60 @@ Following the data lifecycle in an organisation makes the process less invasive 
 
 Evaluate whether these systems have available interfaces to export data, ideally, modern interfaces that drive events.
 
-### 4. Analyse Metadata
+* Customers comes from SalesForce via a REST API
+* Brokers comes from EVIE via a REST API
+* Water Data comes from Eclipse via a ...
+* Waste Data comes from WASTE via a ...
+* Bill information comes from AllOftheAbove via a ...
+
+If possible, having webhooks or an event model means we can easily raise events when something changes, and each interested system can update its copy of any information.
+
+## 4. Analyse Metadata
 
 Defining and managing metadata for a business would be an entire article or more on its own. Detailed data about your data, who created it, where they created it, when they made it and who last edited it can all add value to a business by increasing understanding of critical entities.
 
 In the context of MDM, metadata requires analysis to check for consistency across systems. Different teams and systems likely use other terms or values for the same things. It's important to align these things to create a shared language for the organisation.
 
-The easiest solution is to add all the different metadata to the mastered entity, so they can all be accessed. Then train departmental leaders in the correct terms.
+The easiest solution is to add all the different, relevant metadata to the Master Data entity, so they can all be accessed in different systems. Then train departmental leaders in the correct terms. This should include Comments, Versions, Updates and Editors wherever possible, so its easy to see who worked with something last, or when something changes or was updated.
 
 Consider what Master Data Metadata is relevant outside of the source system. Sometimes, there is no actual use outside the source, so leave it there.
 
-### 5. Analyse Data Lifecycles
+## 5. Analyse Data Lifecycles
 
-### 6. Appoint Data Stewards
+Who:
 
-### 7. Choose Architecture and Data Model
+* Creates the data
+* Updates the data
+* Views the data
+* Deletes the data
+
+These items need to be defined for each Master Data Entity. This lifecycles defines where something is created and edited. It may be that different systems are 'the' source at different stages in the data lifecycle. that is alright, as long as its something which can be explained.
+
+A multi-master model is much more complex to keep aligned, so should be avoided.
+
+### Worked example
+
+1. Customer is created in [Broker System] when ... [Event] ... By ...
+2. Customer is created in Eclipse when signed up to a Water contract.
+3. Customer is created in WASTE when ...
+4. Customer is created in EVIE when ...
+5. Customer is viewed in ... when ...
+
+## 6. Appoint Data Stewards
+
+Have two people for each 'entity' who are in the department who creates and uses that entity the most. The two people should be Business, from the department and 'technical' which could be fromt he data team. They should have a working relationship for daily changes/updates and be able to make local decisions if the impact is non-breaking or within budget.
+
+## 7. Choose Architecture and Data Model
 
 * https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow
 * https://www.tickingtrend.com/articles/building-a-data-hub#:~:text=Building%20a%20Data%20Hub%201%20Step%201%3A%20Define,Data%20Governance%20...%207%20Step%207%3A%20Data%20Analytics
 * https://www.eckerson.com/articles/data-hubs-what-s-next-in-data-architecture
 
-### 8. Choose Infrastructure and Toolset
+## 8. Choose Infrastructure and Toolset
 
-### 9. Evaluate System Modifications
+## 9. Evaluate System Modifications
 
-### 10. Prototyping
+## 10. Prototyping
 
 ## References
 
