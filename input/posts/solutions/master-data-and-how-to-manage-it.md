@@ -17,7 +17,7 @@ Author: James Brewster
 
 Master Data management is the organisation of people, processes and technologies to create and maintain a reliable data environment for master data.
 
-> [The Tale of Two Customers (James B & Bing AI, 2023)](xref:tale-of-two-customers) shows how well-understood, linked Master Data can help improve customer experience and business success. I think we've all been Alice or Bob at some point, and it's likely that when we felt like Alice, we used the company again. And when we felt like Bob, we avoided them and repeatedly told our friends and family about the poor experience.
+> [The Tale of Two Customers (James B & Bing AI, 2023)](xref:a-tale-of-two-customers) shows how well-understood, linked Master Data can help improve customer experience and business success. I think we've all been Alice or Bob at some point, and it's likely that when we felt like Alice, we used the company again. And when we felt like Bob, we avoided them and repeatedly told our friends and family about the poor experience.
 
 ## Master Data
 
