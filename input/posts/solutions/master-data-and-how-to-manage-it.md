@@ -13,93 +13,15 @@ Published: 2023-06-12T12:40:06.193Z
 Author: James Brewster
 ---
 
-## A Tale of Two Customers - Story
-
-Alice and Bob are both customers of XYZ, a large online retailer that sells electronic products. They both ordered a new laptop from XYZ’s website and received a confirmation email with their order details and invoice.
-
-Alice was happy with her purchase and enjoyed using her new laptop for work and entertainment. However, one day, she noticed the computer was overheating and making strange noises. She contacted XYZ’s customer support to see if they could help her.
-
-She called the toll-free number on the website, and a friendly voice greeted her, “Hello, this is XYZ customer support. How may I help you today?”
-
-“Hi, I have a problem with my laptop that I bought from your website. It’s overheating and making weird noises.”
-
-“I’m sorry to hear that. Can you please tell me your name and order number?”
-
-“Sure, my name is Alice Smith, and my order number is 123456789.”
-
-“Thank you, Alice. I see your order here. You bought a Dell Inspiron 15 3000 Series Laptop on June 1st, right?”
-
-“Yes, that’s correct.”
-
-“Okay, let me check the warranty status of your laptop. It looks like it’s still under warranty. You can return it for a replacement or refund. Which option would you prefer?”
-
-“I think I’d like a replacement, please.”
-
-“Alright, no problem. I’ll send you an email with the instructions on how to return your laptop and get a new one. Is there anything else I can do for you today?”
-
-“No, that’s all. I appreciate your help.”
-
-“You’re very welcome, Alice. Thank you for choosing XYZ. Have a nice day.”
-
-Alice hung up the phone and checked her email. She received a message from XYZ with a prepaid shipping label and a tracking number for her replacement laptop. She was impressed by how easy and fast the process was and how consistent the data was between sales and customer support.
-
-Bob was also happy with his purchase and enjoyed using his new laptop for work and entertainment. However, one day, he noticed the computer was malfunctioning, and the battery life was meagre. He contacted XYZ’s customer support to see if they could help him.
-
-He called the toll-free number on the website and was greeted by a robotic voice. “Welcome to XYZ customer support. Please say or enter your order number.”
-
-Bob looked at his confirmation email and said his order number.
-
-“I’m sorry, I missed that. Please say or enter your order number.”
-
-Bob repeated his order number.
-
-“I’m sorry, I still didn’t catch that. Please say or enter your order number.”
-
-Bob entered his order number on his phone keypad.
-
-“Thank you. Please hold while we transfer you to an available agent.”
-
-Bob waited for several minutes while listening to annoying music.
-
-“Hello, this is XYZ customer support. How may I help you today?”
-
-“Hi, I have a problem with my laptop that I bought from your website. It’s not charging properly, and the battery life is poor.”
-
-“I’m sorry to hear that. Can you please tell me your name and email address?”
-
-“Sure, my name is Bob Jones, and my email address is bob.jones@email.com.”
-
-“Thank you, Bob. I don’t see any orders under your name or email address. Are you sure you bought it from our website?”
-
-“Yes, I’m sure. I have the confirmation email right here.”
-
-“Can you please read me the order number?”
-
-Bob reread his order number.
-
-“I’m sorry, but that order number doesn’t match our records. Are you sure it’s correct?”
-
-“Yes, it’s correct. It’s the same one I entered before.”
-
-“Well, I don’t know what to tell you, Bob. There must be some mistake in our system. Maybe you bought it from another website or used a different email address.”
-
-“No, I didn’t. I bought it from your website and used this email address.”
-
-“I’m sorry, but I can’t help you with your issue without a valid order number. Is there anything else I can do for you today?”
-
-“No, there’s nothing else you can do for me except fix your data management system!”
-
-Bob hung up the phone in frustration and rechecked his email. He saw that he received a message from XYZ with an advertisement for a new laptop model. He was outraged by how poor and slow the service was and how inconsistent the data was between sales and customer support.
-
-The End
-
 ## Introduction
 
-The Tale of Two Customers (Bing AI, 2023) above shows how well-understood and linked Master Data can help improve customer experience and business success. I think we've all been Alice or Bob at some point, and it's likely that when we felt like Alice, we used the company again. And when we felt like Bob, we avoided them and repeatedly told our friends and family about the poor experience.
+Master Data management is the organisation of people, processes and technologies to create and maintain a reliable data environment for master data.
+
+> [The Tale of Two Customers (James B & Bing AI, 2023)](xref:a-tale-of-two-customers) shows how well-understood, linked Master Data can help improve customer experience and business success. I think we've all been Alice or Bob at some point, and it's likely that when we felt like Alice, we used the company again. And when we felt like Bob, we avoided them and repeatedly told our friends and family about the poor experience.
 
 ## Master Data
 
-Master Data is a confusing term. 
+Master Data is a confusing term.
 
 This article refers to 'the critical information required to run the organisation' as 'Master Data'. Each department may have its own. Acquisitions will have their own. Partners will have their own.
 
@@ -131,7 +53,11 @@ This single source can be decentralised, consolidated or any other shape you can
 
 ## MDM Strategy
 
-An MDM strategy sets the tone for the project, outlining why its important and what the expectations are for it. I wrote an example below:
+An MDM strategy sets the tone for the project, outlining why its important and what the expectations are for it.
+
+[McKinsey cites a modern data architecture as a key driver of business](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow), but it can be one of the most expensive projects a company can take on. Its important that this process is tempered to the business outcomes and goals. A Strategy to adopt the right data capability for the organisations growth and maturity is important.
+
+I wrote an example below:
 
 > At Everflow, our mission is to simplify our customer's utility needs. We need to understand their use of utilities and be able to track how we can align their use.
 >
@@ -156,6 +82,10 @@ To support and not detract from our main value proposition by offering a lightwe
 
 This outlines the way we expect to ultimately gain benefit, but also the short-term gains which we can deliver in increments. It aligns these outcomes to the goals of the organisation and explains how MDM is important in the bigger picture.
 
+This takes into account the growth of Everflow and the maturity of data as a discipline. It is aiming to consolidate and support the growth, without placing too many additional burdens on the business. It will scale to support new systems and aquisitions. Whilst it doesn't replicate all data, it does provide a central hub which can be used to either find more in depth data or to subscribe to changes in Master Data.
+
+The rest of this article will describe the project necessary to create such a hub and what types of tools will be necessary.
+
 ## Process
 
 An MDM process involves several stages. Not all are essential, but some have to come first.
@@ -164,8 +94,8 @@ An MDM process involves several stages. Not all are essential, but some have to 
 
 An important step. Things only happen when there is a tangible goal for the business. MDM drives two main types of value streams:
 
-1. MDM drives a short-term return on its investment by managing inconsistencies, improving analysis and reducing the effort to visualise and analyse data.
-2. A longer-term return is the capability to model and simulate how changes affect business performance. MDM allows business modelling and testing, which can make analytics a strategic investment.
+1. MDM drives a short-term return on its investment by managing inconsistencies, improving analysis and reducing the effort to visualise and analyse data. It boosts responses to customers and partners.
+2. A longer-term return is the capability to model and simulate how changes affect business performance. MDM allows business modelling and testing, which can make analytics a strategic investment. It supports acquisition and integration, by ensuring that new systems can adapt to existing data.
 
 It is vital to maintain both the vision (Analytics as a strategic enabler) and the short-term gains (we can show value in the short term by doing -something-) when explaining the importance of MDM and a broader data strategy.
 
@@ -222,6 +152,10 @@ Consider what Master Data Metadata is relevant outside of the source system. Som
 ### 6. Appoint Data Stewards
 
 ### 7. Choose Architecture and Data Model
+
+* https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow
+* https://www.tickingtrend.com/articles/building-a-data-hub#:~:text=Building%20a%20Data%20Hub%201%20Step%201%3A%20Define,Data%20Governance%20...%207%20Step%207%3A%20Data%20Analytics
+* https://www.eckerson.com/articles/data-hubs-what-s-next-in-data-architecture
 
 ### 8. Choose Infrastructure and Toolset
 
