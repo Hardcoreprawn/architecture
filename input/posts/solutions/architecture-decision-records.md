@@ -5,9 +5,9 @@ Description: No one reads extensive documents. ADRs are a way to capture meaning
 Tags:
   - Architecture
   - Process
-  - Solution
+  - Solutions
 Categories:
-  - Solution
+  - Solutions
 Draft: false
 Published: 01/06/2023
 ---

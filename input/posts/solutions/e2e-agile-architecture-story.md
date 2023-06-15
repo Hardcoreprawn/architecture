@@ -5,10 +5,10 @@ Description: How does Agile architecture work in practice? This story provides a
 Tags:
   - Architecture
   - Business
-  - Solution
+  - Solutions
   - Process
 Categories:
-  - Solution
+  - Solutions
 Draft: False
 Published: 01/06/2023
 ---

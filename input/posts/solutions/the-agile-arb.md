@@ -5,8 +5,9 @@ Description: A short story about the way an Agile ARB could run
 Tags:
   - Architecture
   - Business
+  - Solutions
 Categories:
-  - Solution
+  - Solutions
 Draft: False
 Published: 30-05-2023
 ---

@@ -6,9 +6,9 @@ Tags:
   - Architecture
   - Business
   - Process
-  - Solution
+  - Solutions
 Categories:
-  - Solution
+  - Solutions
 Draft: False
 Published: 23/05/2023 
 ---
