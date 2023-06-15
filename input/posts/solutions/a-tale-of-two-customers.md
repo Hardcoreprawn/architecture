@@ -1,6 +1,5 @@
 ---
-Title: A Tale of Two Customers - A Fable
-Slug: tale-of-two-customers
+Title: A Tale of Two Customers
 Lead: Integrated or mastered data can be the difference between customer success of failure.
 Tags:
   - Business
