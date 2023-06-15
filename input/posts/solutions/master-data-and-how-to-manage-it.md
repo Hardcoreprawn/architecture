@@ -47,9 +47,9 @@ For everyone else, we need to understand and link data to simplify our work and 
 
 Easy access to a single record system eases and supports the business. Each area may use a different database system, but as long as the resulting view is consistent, this will not harm the organisation.
 
-Ideally we want to try and limit the number of systems customer-facing colleagues are using. They should be able to work in one place to ease training and stress.
+Ideally, we want to try and limit the number of systems customer-facing colleagues are using. They should be able to work in one place to ease training and stress.
 
-MDM involves creating or documenting a master record for each entity in the company's central processes, to allow the important data to be synchronised between systems.
+MDM involves creating or documenting a master record for each entity in the company's central processes to synchronise this data.
 
 This single source can be decentralised, consolidated or any other shape you can imagine as long as the data source and the data relationships are understood, and the outcome results in an ability to see the whole picture about a customer, reseller, product or other important entity.
 
@@ -57,17 +57,17 @@ This single source can be decentralised, consolidated or any other shape you can
 
 An MDM strategy sets the tone for the project, outlining why its important and what the expectations are for it.
 
-[McKinsey cites a modern data architecture as a key driver of business](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow), but it can be one of the most expensive projects a company can take on. Its important that this process is tempered to the business outcomes and goals. A Strategy to adopt the right data capability for the organisations growth and maturity is important.
+[McKinsey cites modern data architecture](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow) as a critical business driver, but it can be one of the most expensive projects a company can take on. A Strategy to adopt the right data capability for the organisation's growth and maturity is essential.
 
 I wrote an example below:
 
 > At Everflow, our mission is to simplify our customer's utility needs. We need to understand their use of utilities and be able to track how we can align their use.
 >
-> Our MDM strategy reflects this. Its goals are to:
+> Our MDM strategy reflects our business goals:
 >
-> * Provide a single view of the customer and their use of our products, so they can quickly see how their usage varies and make educated decisions. Providing this joined-up view allows our 'single quote' and 'single bill' initiatives to succeed and scale.
+> * Provide a single view of the customer and their use of our products, so they can quickly see how their usage varies and make educated decisions. Providing this joined-up view allows our 'single quote' and 'single bill' initiatives to succeed and scale
 > * To support their brokers and support agents to get the correct information quickly and easily, so we can continue to deliver excellent customer service.
-To support and not detract from our main value proposition by offering a lightweight solution which aligns with our values and principles.
+To support and not detract from our main value proposition by offering a lightweight solution which aligns with our values and principles
 >
 >We will achieve these goals:
 >
@@ -82,11 +82,11 @@ To support and not detract from our main value proposition by offering a lightwe
 > * Enable us to analyse broker performance and see how different brokers do in other areas
 > * Integrate new systems and master customer records, quotes and billing.
 
-This outlines the way we expect to ultimately gain benefit, but also the short-term gains which we can deliver in increments. It aligns these outcomes to the goals of the organisation and explains how MDM is important in the bigger picture.
+This strategy outlines how to achieve this and gain short-term benefits incrementally. The outcomes align with the organisation's goals and explain how MDM is necessary to deliver those goals.
 
-This takes into account the growth of Everflow and the maturity of data as a discipline. It is aiming to consolidate and support the growth, without placing too many additional burdens on the business. It will scale to support new systems and aquisitions. Whilst it doesn't replicate all data, it does provide a central hub which can be used to either find more in depth data or to subscribe to changes in Master Data.
+The rest of this article will describe the project necessary to create such a hub and what types of tools will be required.
 
-The rest of this article will describe the project necessary to create such a hub and what types of tools will be necessary.
+## Method
 
 An MDM process involves several stages. Not all are essential, but some have to come first.
 
@@ -95,13 +95,13 @@ An MDM process involves several stages. Not all are essential, but some have to 
 An important step. Things only happen when there is a tangible goal for the business. MDM drives two main types of value streams:
 
 1. MDM drives a short-term return on its investment by managing inconsistencies, improving analysis and reducing the effort to visualise and analyse data. It boosts responses to customers and partners.
-2. A longer-term return is the capability to model and simulate how changes affect business performance. MDM allows business modelling and testing, which can make analytics a strategic investment. It supports acquisition and integration, by ensuring that new systems can adapt to existing data.
+2. A longer-term return is the capability to model and simulate how changes affect business performance. MDM allows business modelling and testing, which can make analytics a strategic investment. It supports acquisition and integration by ensuring new systems adapt to existing data.
 
 It is vital to maintain both the vision (Analytics as a strategic enabler) and the short-term gains (we can show value in the short term by doing -something-) when explaining the importance of MDM and a broader data strategy.
 
 ## 2. Identify Master Data
 
-At the start of any project, identify the relevant master data needed. Not all the master data you may ever need, and certainly not all the data. 
+At the start of any project, identify the relevant master data for that project, not all the master data you may ever need, and certainly not all the data you have.
 
 The following characteristics help identify Master Data:
 
@@ -110,7 +110,7 @@ The following characteristics help identify Master Data:
 * Complex
 * Reusable
 
-Master data is only the reusable entities, such as:
+Master data is only the high-value, complex, reusable entities with low volatility, such as:
 
 * Customers
   * CustomerAccounts
@@ -119,20 +119,19 @@ Master data is only the reusable entities, such as:
   * BrokerAgents
 * Utilities
   * Products
-* Bills
+* Contracts
 * etc.
 
-Important data is not necessarily master data. Whether a Broker or their agents have been trained is important for compliance, but only that context. Its not widely reusable otherwise, so wouldn't be considered Master Data.
+Critical data is not necessarily master data. A Brokers training in a utility is vital for compliance, but only in that context. It is not widely reusable, so it wouldn't be considered Master Data.
 
-MDM does not, and should not, include transaction data. That stuff is too fast-moving to manage using this pattern. A data warehouse or an event stream is a better way to manage analytics for transactional data. It could link to the transactional view, or the analytical aggregates of the transactions.
+MDM does not, and should not, include transaction data. That stuff is too fast-moving to manage using this pattern. A data warehouse or an event stream is a better way to manage analytics for transactional data. It could link to the transactional view or the analytical aggregates of the transactions.
 
 From a data warehouse point of view, Master Data fields are critical dimensions which change slowly, but not the facts about those dimensions.
 
 ![MDM Entity Analysis](../../media/mdm-field-eval.png)
+> Schedlbauer, M. (2019) Master Data Management, shipzero. [Medium](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241).
 
-> Schedlbauer, M. (2019) Master Data Management, shipzero. [Medium](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241)
-
-Rating our data at the right level so we can understand and expose the right entities and their fields from the right places.
+ Once we know what they are, we can understand and expose the proper entities and their fields from the right places.
 
 TODO: 'Roll-up' data into entities and resources that can be queried. Then we can work with those bigger objects, confident that we can access the contents if need be.
 
@@ -152,7 +151,7 @@ Evaluate whether these systems have available interfaces to export data, ideally
 * Waste Data comes from WASTE via a ...
 * Bill information comes from AllOftheAbove via a ...
 
-If possible, having webhooks or an event model means we can easily raise events when something changes, and each interested system can update its copy of any information.
+If possible, having webhooks or an event model means we can quickly raise events when something changes, and each interested system can update its copy of any information.
 
 ## 4. Analyse Metadata
 
@@ -160,7 +159,7 @@ Defining and managing metadata for a business would be an entire article or more
 
 In the context of MDM, metadata requires analysis to check for consistency across systems. Different teams and systems likely use other terms or values for the same things. It's important to align these things to create a shared language for the organisation.
 
-The easiest solution is to add all the different, relevant metadata to the Master Data entity, so they can all be accessed in different systems. Then train departmental leaders in the correct terms. This should include Comments, Versions, Updates and Editors wherever possible, so its easy to see who worked with something last, or when something changes or was updated.
+The easiest solution is to add all the different, relevant metadata to the Master Data entity so that other systems can access the metadata. Then train departmental leaders in the correct terms. To allow a colleague to understand who last worked with an entity, what happened to the entity and whether it is live or stale, Metadata should include Comments, Versions, Updates and Editors.
 
 Consider what Master Data Metadata is relevant outside of the source system. Sometimes, there is no actual use outside the source, so leave it there.
 
@@ -173,17 +172,17 @@ Who:
 * Views the data
 * Deletes the data
 
-These items need to be defined for each Master Data Entity. This lifecycles defines where something is created and edited. It may be that different systems are 'the' source at different stages in the data lifecycle. that is alright, as long as its something which can be explained.
+Define these items for each Master Data Entity. These lifecycles define where something is created and edited. At different steps in the lifecycle, other systems are 'the' primary source, and this can vary over time.
 
-A multi-master model is much more complex to keep aligned, so should be avoided.
+A multi-master model is more complex to keep aligned, so avoid it.
 
-### Worked example
+### Worked examples
 
 1. Customer is created in [Broker System] when ... [Event] ... By ...
-2. Customer is created in Eclipse when signed up to a Water contract.
-3. Customer is created in WASTE when ...
-4. Customer is created in EVIE when ...
-5. Customer is viewed in ... when ...
+2. Customer is updated in Eclipse when signed up to a Water contract.
+3. Customer is viewed in WASTE when ...
+4. Customer is viewed in EVIE when ...
+5. Customer is deleted in ... when ...
 
 ## 6. Appoint Data Stewards
 
