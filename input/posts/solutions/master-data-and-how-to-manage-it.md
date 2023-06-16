@@ -90,7 +90,10 @@ The rest of this article will describe the project necessary to create such a hu
 
 An MDM process involves several stages. Not all are essential, but some have to come first.
 
-## 1. Define Business Goals
+![10 Steps to a Successful MDM Project](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*75EtrzKzZUb0nfPd8VT9qw.png)
+> Schedlbauer, M. (2019) Master Data Management, shipzero. [Medium](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241).
+
+## 1. Goal - Define Business Outcomes
 
 An important step. Things only happen when there is a tangible goal for the business. MDM drives two main types of value streams:
 
@@ -99,7 +102,9 @@ An important step. Things only happen when there is a tangible goal for the busi
 
 It is vital to maintain both the vision (Analytics as a strategic enabler) and the short-term gains (we can show value in the short term by doing -something-) when explaining the importance of MDM and a broader data strategy.
 
-## 2. Identify Master Data
+## 2. Identification
+
+### Identify Master Data
 
 At the start of any project, identify the relevant master data for that project, not all the master data you may ever need, and certainly not all the data you have.
 
@@ -135,7 +140,7 @@ From a data warehouse point of view, Master Data fields are critical dimensions 
 
 TODO: 'Roll-up' data into entities and resources that can be queried. Then we can work with those bigger objects, confident that we can access the contents if need be.
 
-## 3. Identify & Evaluate Data Sources
+### Identify & Evaluate Data Sources
 
 Where do we get this data from? Where was it created or first used? How can we trust that it is correct? These are all critical questions to ask on our journey. The next step is to identify where our Master Data comes from and whether that is a system of record.
 
@@ -153,7 +158,9 @@ Evaluate whether these systems have available interfaces to export data, ideally
 
 If possible, having webhooks or an event model means we can quickly raise events when something changes, and each interested system can update its copy of any information.
 
-## 4. Analyse Metadata
+## 4. Analysis
+
+### Metadata
 
 Defining and managing metadata for a business would be an entire article or more on its own. Detailed data about your data, who created it, where they created it, when they made it and who last edited it can all add value to a business by increasing understanding of critical entities.
 
@@ -163,7 +170,7 @@ The easiest solution is to add all the different, relevant metadata to the Maste
 
 Consider what Master Data Metadata is relevant outside of the source system. Sometimes, there is no actual use outside the source, so leave it there.
 
-## 5. Analyse Data Lifecycles
+### Data Lifecycles
 
 Who:
 
@@ -179,26 +186,61 @@ A multi-master model is more complex to keep aligned, so avoid it.
 ### Worked examples
 
 1. Customer is created in [Broker System] when ... [Event] ... By ...
-2. Customer is updated in Eclipse when signed up to a Water contract.
+2. Customer is updated in Eclipse when signed up to ...
 3. Customer is viewed in WASTE when ...
 4. Customer is viewed in EVIE when ...
 5. Customer is deleted in ... when ...
+ 
+## 5. Involvement - Appoint Data Stewards
 
-## 6. Appoint Data Stewards
+Have two people for each 'entity' in the department who creates and uses that entity the most. The two people should be:
 
-Have two people for each 'entity' who are in the department who creates and uses that entity the most. The two people should be Business, from the department and 'technical' which could be fromt he data team. They should have a working relationship for daily changes/updates and be able to make local decisions if the impact is non-breaking or within budget.
+* Business, from the department
+* 'Technical', which *could* be from the data team
 
-## 7. Choose Architecture and Data Model
+They should have a working relationship for regular changes/updates and be able to make local decisions if the impact is non-breaking or within budget.
+
+## 6. Infrastructure
+
+Now we look at tools and capabilities and decide what we have, what we need and what we would like.
+
+### Architecture
+
+Don't reinvent the wheel. Choose an architecture which is closest to your identified needs and adapt that.
 
 * https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow
 * https://www.tickingtrend.com/articles/building-a-data-hub#:~:text=Building%20a%20Data%20Hub%201%20Step%201%3A%20Define,Data%20Governance%20...%207%20Step%207%3A%20Data%20Analytics
 * https://www.eckerson.com/articles/data-hubs-what-s-next-in-data-architecture
 
-## 8. Choose Infrastructure and Toolset
+### Data Model
 
-## 9. Evaluate System Modifications
+Pick an understandable data model. Ideally, use a reference model rather than invent from scratch, but don't choose one that is too big or fancy. Extensibility is essential, as is the scale of the project. It has to be something you can easily imagine finishing within a few months at most.
 
-## 10. Prototyping
+### Capabilities
+
+What have we got? What are we missing?
+
+### Toolset
+
+Which tools fit our principles, standards and deliver the capabilities we need? Plan the missing capabilities as possible additions so you know what is available and the costs.
+
+### Evaluate & Plan Changes
+
+How will you add these to the existing estate?
+
+## 8. Prototypes and Testing
+
+By this, I mean testing the process of MDM as a business enabler. It must work, but it's more critical it adds value. Work with the stewards to understand pains, shortcomings, or ways to add value.
+
+* Create a Hypothesis around how data will improve a process or add value.
+* Test it.
+* Keep it small and acheivable, deliver some results.
+* Grow in confidence.
+* something-something
+* Profit.
+* repeat.
+
+## Conclusion
 
 ## References
 
