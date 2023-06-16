@@ -57,9 +57,9 @@ This single source can be decentralised, consolidated or any other shape you can
 
 An MDM strategy sets the tone for the project, outlining why its important and what the expectations are for it.
 
-[McKinsey cites modern data architecture](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow) as a critical business driver, but it can be one of the most expensive projects a company can take on. A Strategy to adopt the right data capability for the organisation's growth and maturity is essential.
+>[McKinsey cites modern data architecture](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow) as a critical business driver, but it can be one of the most expensive projects a company can take on. A Strategy to adopt the right data capability for the organisation's growth and maturity is essential.
 
-I wrote an example below:
+Here is an example:
 
 > At Everflow, our mission is to simplify our customer's utility needs. We need to understand their use of utilities and be able to track how we can align their use.
 >
@@ -179,21 +179,21 @@ Who:
 * Views the data
 * Deletes the data
 
-Define these items for each Master Data Entity. These lifecycles define where something is created and edited. At different steps in the lifecycle, other systems are 'the' primary source, and this can vary over time.
+Define these items for each Master Data Domain. These lifecycles define where something is created and edited. At different steps in the lifecycle, other systems are 'the' primary source, and this can vary over time.
 
 A multi-master model is more complex to keep aligned, so avoid it.
 
 ### Worked examples
 
-1. Customer is created in [Broker System] when ... [Event] ... By ...
-2. Customer is updated in Eclipse when signed up to ...
-3. Customer is viewed in WASTE when ...
-4. Customer is viewed in EVIE when ...
-5. Customer is deleted in ... when ...
- 
+1. 'Customer' is created in '[Broker System]' when 'Event' By 'Persona'
+2. 'Customer' is updated in 'Eclipse' when 'signed up' to 'Persona'
+3. 'Customer' is viewed in 'WASTE' when '...' by 'persona'
+4. 'Customer' is viewed in 'EVIE' when '...' by '...'
+5. 'Customer' is deleted in '...' when '...' by '...'
+
 ## 5. Involvement - Appoint Data Stewards
 
-Have two people for each 'entity' in the department who creates and uses that entity the most. The two people should be:
+Have two people for each 'domain' in the department who creates and uses that entity the most. The two people should be:
 
 * Business, from the department
 * 'Technical', which *could* be from the data team
