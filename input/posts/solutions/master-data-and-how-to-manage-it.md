@@ -120,10 +120,12 @@ Master data is only the high-value, complex, reusable entities with low volatili
 * Customers
   * CustomerAccounts
   * CustomerSites
+  * CustomerCredit
 * Brokers
   * BrokerAgents
 * Utilities
   * Products
+    * Prices
 * Contracts
 * etc.
 
@@ -137,8 +139,6 @@ From a data warehouse point of view, Master Data fields are critical dimensions 
 > Schedlbauer, M. (2019) Master Data Management, shipzero. [Medium](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241).
 
  Once we know what they are, we can understand and expose the proper entities and their fields from the right places.
-
-TODO: 'Roll-up' data into entities and resources that can be queried. Then we can work with those bigger objects, confident that we can access the contents if need be.
 
 ### Identify & Evaluate Data Sources
 
@@ -202,7 +202,18 @@ They should have a working relationship for regular changes/updates and be able 
 
 ## 6. Infrastructure
 
-Now we look at tools and capabilities and decide what we have, what we need and what we would like.
+Now we look at tools and capabilities and decide what we have, what we need and what we would like. Based on research into reference models, the following characteristics are essential to add to a company's data tooling:
+
+Must-Haves
+
+* Data Factories, which process and ingest data to operational services.
+* Data APIs, which support OpenAPI specifications and allow systems to communicate and interrogate each other
+* Data Marts; analytical 'shop-fronts' which store processed data for known use cases
+
+Nice-to-Haves
+
+* Fast data flows. Feeds of information which can be processed in close to real-time.
+* Discovery and Research areas. Places for data science to occur, allowing organisational learning.
 
 ### Architecture
 
@@ -211,6 +222,7 @@ Don't reinvent the wheel. Choose an architecture which is closest to your identi
 * https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow
 * https://www.tickingtrend.com/articles/building-a-data-hub#:~:text=Building%20a%20Data%20Hub%201%20Step%201%3A%20Define,Data%20Governance%20...%207%20Step%207%3A%20Data%20Analytics
 * https://www.eckerson.com/articles/data-hubs-what-s-next-in-data-architecture
+
 
 ### Data Model
 
@@ -234,14 +246,57 @@ By this, I mean testing the process of MDM as a business enabler. It must work, 
 
 * Create a Hypothesis around how data will improve a process or add value.
 * Test it.
-* Keep it small and acheivable, deliver some results.
+* Keep it small and achievable, and deliver some results.
 * Grow in confidence.
 * something-something
 * Profit.
-* repeat.
+* Repeat.
+
+>## Maturity Model
+>
+>One way to assess the capability of an organisation is by looking at a Maturity model. Here is an example from the Uk Government of a Data Maturity model aimed at UK Government departments, which encourages:
+>
+>* Documentation
+>* Data to be Open within the government community
+>* Secured and authenticated
+>* Use of Open Standards
+>
+>These traits are desirable for most organisations, as integrating data easily across your enterprise is a strategic strength.
+>
+>* Documentation
+>* APIs
+>* OAuth
+>
+>There are three maturity levels used within the three areas above.
+>
+>### Documentation
+>
+>Documentation increases the collective knowledge of everyone that you work with. When it becomes the norm on your team to share information, you’ll benefit from increased transparency and a culture that’s more collaborative and strategic. Documentation encourages knowledge sharing, which empowers your team to understand how processes work and what finished projects typically look like.
+>
+>1. Your systems are not documented
+>2. Your systems are all documented
+>3. Documentation is automated and self-updating
+>
+>### APIs
+>
+>APIs (Application Programming Interfaces) are important for businesses because they enable applications, devices, and data to share information, interact, and take on tasks together. APIs also create greater shared awareness and confidence in the data models and structure of the business. APIs can help businesses sell their products and services online or extend their applications by adding more codes. Effectively using APIs can reduce operational or technology costs by simplifying and accelerating development. APIs are also essential to building business intelligence because they provide access to your data, allowing others to build applications that you could never have foreseen 
+>
+>1. Most of your systems do not support APIs
+>2. The majority of systems support APIs
+>3. APIs are published to a catalogue with documentation
+>
+>### OAuth
+>
+>OAuth (short for “Open Authorization”) is an open standard for access delegation. It is commonly used as a way for internet users to grant websites or applications access to their information on other websites but without giving them the passwords. OAuth is an authorization framework that enables third-party applications to obtain limited access to an HTTP service, either on behalf of a resource owner by orchestrating an approval interaction between the resource owner and the HTTP service, or by allowing the third-party application to obtain access on its own behalf.
+>
+>1. The Open Authentication (OAuth) protocol is available for use.
+>2. OAuth is available to your partners and customers
+>3. OAuth is available to people who are external to the organisation
 
 ## Conclusion
 
 ## References
 
 1. [Schedlbauer, M. (2019). Master Data Management. Online.](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241)
+2. * https://www.gov.uk/guidance/develop-your-data-and-apis-using-a-reference-architecture
+
