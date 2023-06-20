@@ -1,7 +1,7 @@
 ---
-Title: Master Data and How to Manage it
-Lead: Master Data is critical to an organisation's function. Master Data Management is the process of organising and collating it.
-Description: Master data management is the organisation of people, processes and technologies to create and maintain a reliable data environment for master data.
+Title: Business Data and How to Manage it
+Lead: Business Data is critical to an organisation's function. Business Data Management is the process of organising and collating it.
+Description: Business data management is the organisation of people, processes and technologies to create and maintain a reliable data environment for business.
 Tags:
   - Architecture
   - Data
@@ -15,23 +15,25 @@ Author: James Brewster
 
 ## Introduction
 
-Master Data management is the organisation of people, processes and technologies to create and maintain a reliable data environment for master data.
+Business Data management is the organisation of people, processes and technologies to create and maintain a reliable data environment for business.
 
->[The Tale of Two Customers (James B & Bing AI, 2023)](xref:a-tale-of-two-customers) shows how well-understood, linked Master Data can help improve customer experience and business success. It talks about two experiences of customer service, one positive and one negative, through the eyes of Alice (who has a good experience) and Bob (who has a bad one).
+>[The Tale of Two Customers (James B & Bing AI, 2023)](xref:a-tale-of-two-customers) shows how well-understood, linked information can help improve customer experience and business success. It talks about two experiences of customer service, one positive and one negative, through the eyes of Alice (who has a good experience) and Bob (who has a bad one).
 >
 >I think we've all been Alice or Bob at some point, and it's likely that when we felt like Alice, we used the company again. And when we felt like Bob, we avoided them and repeatedly told our friends and family about the poor experience.
 
-## Master Data
+## Business Data
 
-Master Data is a confusing term.
+Business Data is a broad term; you could ask several people and never get a consistent answer.
 
-This article refers to 'the critical information required to run the organisation' as 'Master Data'. Each department may have its own. Acquisitions will have their own. Partners will have their own.
+This article refers to 'the critical information required to run the organisation' as 'Business Data'. Each department may have its own. Acquisitions will have their own. Partners will have their own.
+
+> You might have heard the term 'Master Data Management'. In this article we'll eschew the word as its not in keeping with culture. Links to outside sources will still use that term as its been active for at least 15 years.
 
 How do we ensure our Enterprise has an up-to-date, single view of the customer?
 
-**By Managing our Master Data**.
+**by managing critical business information**
 
-Master Data management (MDM) is the organisation of people, processes and technologies to create and maintain data in a way which is:
+Business Data management is the organisation of people, processes and technologies to create and maintain data in a way which is:
 
 * Authoritative
 * Reliable
@@ -49,13 +51,13 @@ Easy access to a single record system eases and supports the business. Each area
 
 Ideally, we want to try and limit the number of systems customer-facing colleagues are using. They should be able to work in one place to ease training and stress.
 
-MDM involves creating or documenting a master record for each entity in the company's central processes to synchronise this data.
+Managing this data is done by understanding how information flows through an organisation and creating an authoritative model to keep every other system up to date.
 
 This single source can be decentralised, consolidated or any other shape you can imagine as long as the data source and the data relationships are understood, and the outcome results in an ability to see the whole picture about a customer, reseller, product or other important entity.
 
-## MDM Strategy
+## Data Strategy
 
-An MDM strategy sets the tone for the project, outlining why its important and what the expectations are for it.
+A data strategy sets the tone for the project, outlining why its important and what the expectations are for it, and how it will be acheived. It also includes how the organisation will confront its opposition.
 
 >[McKinsey cites modern data architecture](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow) as a critical business driver, but it can be one of the most expensive projects a company can take on. A Strategy to adopt the right data capability for the organisation's growth and maturity is essential.
 
@@ -63,59 +65,60 @@ Here is an example:
 
 > At Everflow, our mission is to simplify our customer's utility needs. We need to understand their use of utilities and be able to track how we can align their use.
 >
-> Our MDM strategy reflects our business goals:
+> Our data strategy reflects our business goals:
 >
-> * Provide a single view of the customer and their use of our products, so they can quickly see how their usage varies and make educated decisions. Providing this joined-up view allows our 'single quote' and 'single bill' initiatives to succeed and scale
+> * Provide a coherent, connected view of the customer and their use of our products, so they can quickly see how their usage varies and make educated decisions. Providing this joined-up view allows our 'single quote' and 'single bill' initiatives to succeed and scale
 > * To support their brokers and support agents to get the correct information quickly and easily, so we can continue to deliver excellent customer service.
 To support and not detract from our main value proposition by offering a lightweight solution which aligns with our values and principles
+> * This ability to provide a sensible, joined-up story allows us to out-perform our compeitors and exceed our custo0mers expectations. This allows us to effectively up-sell and cross-sell products.
 >
->We will achieve these goals:
+>The Data team will support Everflow to achieve these goals:
 >
-> * By identifying and managing our Core Master Data, required to create integrated customer experiences
+> * By identifying and managing our Core Business Data which is required to create integrated customer experiences
 > * Through maintaining authoritative sources, which the broader organisation can easily access
 > * Ensuring our data stewardship is fit for purpose as our regulated footprint grows
 > * By providing a lightweight service which delivers the necessary functionality in a cost-effective manner
 >
->For Everflow, MDM is a critical enabler to our business goals.
+>For Everflow, Data Management is a critical enabler to our business goals.
 >
 > * Allows us to create a single view of the customer, their active contracts, and potential upsells
 > * Enable us to analyse broker performance and see how different brokers do in other areas
-> * Integrate new systems and master customer records, quotes and billing.
+> * Integrate new systems, products, customer records, quotes and billing as we expand and acquire.
 
-This strategy outlines how to achieve this and gain short-term benefits incrementally. The outcomes align with the organisation's goals and explain how MDM is necessary to deliver those goals.
+This strategy outlines how to achieve this and gain short-term benefits incrementally. The outcomes align with the organisation's goals and explain how Data Management is necessary to deliver those goals.
 
 The rest of this article will describe the project necessary to create such a hub and what types of tools will be required.
 
 ## Method
 
-An MDM process involves several stages. Not all are essential, but some have to come first.
+A Data Management project involves several stages. Not all are essential, but some have to come first.
 
 ![10 Steps to a Successful MDM Project](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*75EtrzKzZUb0nfPd8VT9qw.png)
 > Schedlbauer, M. (2019) Master Data Management, shipzero. [Medium](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241).
 
 ## 1. Goal - Define Business Outcomes
 
-An important step. Things only happen when there is a tangible goal for the business. MDM drives two main types of value streams:
+An important step. Things only happen when there is a tangible goal for the business. Data Management drives two main types of value streams:
 
-1. MDM drives a short-term return on its investment by managing inconsistencies, improving analysis and reducing the effort to visualise and analyse data. It boosts responses to customers and partners.
-2. A longer-term return is the capability to model and simulate how changes affect business performance. MDM allows business modelling and testing, which can make analytics a strategic investment. It supports acquisition and integration by ensuring new systems adapt to existing data.
+1. Data Management drives a short-term return on its investment by managing inconsistencies, improving analysis and reducing the effort to visualise and analyse data. It boosts responses to customers and partners.
+2. A longer-term return is the capability to model and simulate how changes affect business performance. Data Management allows business modelling and testing, which can make analytics a strategic investment. It supports acquisition and integration by ensuring new systems adapt to existing data.
 
-It is vital to maintain both the vision (Analytics as a strategic enabler) and the short-term gains (we can show value in the short term by doing -something-) when explaining the importance of MDM and a broader data strategy.
+It is vital to maintain both the vision (Analytics as a strategic enabler) and the short-term gains (we can show value in the short term by doing -something-) when explaining the importance of Data Management and a data strategy.
 
 ## 2. Identification
 
-### Identify Master Data
+### Identify Core Business Data
 
-At the start of any project, identify the relevant master data for that project, not all the master data you may ever need, and certainly not all the data you have.
+At the start of any project, identify the relevant business data for that project, not all the business data you may ever need, and certainly not all the data you have.
 
-The following characteristics help identify Master Data:
+The following characteristics help identify Core Business Data:
 
 * High Business Value
 * Low volatility
 * Complex
 * Reusable
 
-Master data is only the high-value, complex, reusable entities with low volatility, such as:
+Core Business data is only the high-value, complex, reusable entities with low volatility, such as:
 
 * Customers
   * CustomerAccounts
@@ -127,13 +130,17 @@ Master data is only the high-value, complex, reusable entities with low volatili
   * Products
     * Prices
 * Contracts
-* etc.
+* Employee
+* Location
+* Vendor
+* Supplier
+* Invoice
 
-Critical data is not necessarily master data. A Brokers training in a utility is vital for compliance, but only in that context. It is not widely reusable, so it wouldn't be considered Master Data.
+Critical data is not necessarily core business data. A Brokers training in a utility is vital for compliance, but only in that context. It is not widely reusable, so it wouldn't be considered Core Business Data.
 
-MDM does not, and should not, include transaction data. That stuff is too fast-moving to manage using this pattern. A data warehouse or an event stream is a better way to manage analytics for transactional data. It could link to the transactional view or the analytical aggregates of the transactions.
+Core Business Data does not, and should not, include transaction data. That stuff is too fast-moving to manage using this pattern. A data warehouse or an event stream is a better way to manage analytics for transactional data. It could link to the transactional view or the analytical aggregates of the transactions.
 
-From a data warehouse point of view, Master Data fields are critical dimensions which change slowly, but not the facts about those dimensions.
+From a data warehouse point of view, Core Business Data fields are critical dimensions which change slowly, but not the facts about those dimensions.
 
 ![MDM Entity Analysis](../../media/mdm-field-eval.png)
 > Schedlbauer, M. (2019) Master Data Management, shipzero. [Medium](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241).
@@ -142,7 +149,7 @@ From a data warehouse point of view, Master Data fields are critical dimensions 
 
 ### Identify & Evaluate Data Sources
 
-Where do we get this data from? Where was it created or first used? How can we trust that it is correct? These are all critical questions to ask on our journey. The next step is to identify where our Master Data comes from and whether that is a system of record.
+Where do we get this data from? Where was it created or first used? How can we trust that it is correct? These are all critical questions to ask on our journey. The next step is to identify where our Core Business Data comes from and whether that is a system of record.
 
 Identifying the right place to collect different data items is crucial as it lets us integrate or populate data as soon as possible in the lifecycle. Having a clear lineage for each entity increases the ability to diagnose issues with data and ensures data is more accurate and trustworthy.
 
@@ -164,11 +171,11 @@ If possible, having webhooks or an event model means we can quickly raise events
 
 Defining and managing metadata for a business would be an entire article or more on its own. Detailed data about your data, who created it, where they created it, when they made it and who last edited it can all add value to a business by increasing understanding of critical entities.
 
-In the context of MDM, metadata requires analysis to check for consistency across systems. Different teams and systems likely use other terms or values for the same things. It's important to align these things to create a shared language for the organisation.
+Different areas of the business have other processes and different names for things. Metadata requires analysis to check for consistency across systems. Different teams and systems likely use other terms or values for the same things. It's important to align these things to create a shared language for the organisation.
 
 The easiest solution is to add all the different, relevant metadata to the Master Data entity so that other systems can access the metadata. Then train departmental leaders in the correct terms. To allow a colleague to understand who last worked with an entity, what happened to the entity and whether it is live or stale, Metadata should include Comments, Versions, Updates and Editors.
 
-Consider what Master Data Metadata is relevant outside of the source system. Sometimes, there is no actual use outside the source, so leave it there.
+Consider what Core Business data Metadata is relevant outside of the source system. Sometimes, there is no actual use outside the source. If in doubt, leave it out!
 
 ### Data Lifecycles
 
@@ -179,9 +186,9 @@ Who:
 * Views the data
 * Deletes the data
 
-Define these items for each Master Data Domain. These lifecycles define where something is created and edited. At different steps in the lifecycle, other systems are 'the' primary source, and this can vary over time.
+Define these items for each Core Data domain. These lifecycles define where something is created and edited. At different steps in the lifecycle, other systems are 'the' primary source, and this can vary over time.
 
-A multi-master model is more complex to keep aligned, so avoid it.
+A 'multi-master' model is too complex to maintain, so avoid it.
 
 ### Worked examples
 
@@ -195,10 +202,10 @@ A multi-master model is more complex to keep aligned, so avoid it.
 
 Have two people for each 'domain' in the department who creates and uses that entity the most. The two people should be:
 
-* Business, from the department
-* 'Technical', which *could* be from the data team
+* Business, from the department that makes or uses the core entity the most.
+* 'Technical', which *could* be from the data team if there's no one more local
 
-They should have a working relationship for regular changes/updates and be able to make local decisions if the impact is non-breaking or within budget.
+They need a working relationship for regular changes/updates and can make local decisions if the impact is non-breaking or within budget.
 
 ## 6. Infrastructure
 
@@ -212,29 +219,42 @@ Must-Haves
 
 Nice-to-Haves
 
-* Fast data flows. Feeds of information which can be processed in close to real-time.
+* Fast data flows. Process feeds of information close to real-time.
 * Discovery and Research areas. Places for data science to occur, allowing organisational learning.
 
 ### Architecture
 
 Don't reinvent the wheel. Choose an architecture which is closest to your identified needs and adapt that.
 
-* https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow
-* https://www.tickingtrend.com/articles/building-a-data-hub#:~:text=Building%20a%20Data%20Hub%201%20Step%201%3A%20Define,Data%20Governance%20...%207%20Step%207%3A%20Data%20Analytics
-* https://www.eckerson.com/articles/data-hubs-what-s-next-in-data-architecture
+* [How to Build a Data Architecture to drive innovation, McKinsey](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow)
+* [Building a Data Hub, Ticking Trend](https://www.tickingtrend.com/articles/building-a-data-hub#:~:text=Building%20a%20Data%20Hub%201%20Step%201%3A%20Define,Data%20Governance%20...%207%20Step%207%3A%20Data%20Analytics)
+* [Data Hubs - What's Next in Data Architecture, Eckerson](https://www.eckerson.com/articles/data-hubs-what-s-next-in-data-architecture)
 
+A data hub architecture separates the management of core business data from other concerns, such as analytics. As a collection of web services, it follows the principles and standards Everflow adheres to, including:
 
-### Data Model
+* Multi-cloud capable
+* Scalable
+* Proportionate
 
-Pick an understandable data model. Ideally, use a reference model rather than invent from scratch, but don't choose one that is too big or fancy. Extensibility is essential, as is the scale of the project. It has to be something you can easily imagine finishing within a few months at most.
+### Data Model and Toolset
 
-### Capabilities
+Pick an understandable data model. Ideally, use a reference model rather than invent from scratch, but don't choose one that is too big or fancy. Extensibility is essential, as is the scale of the project.
 
-What have we got? What are we missing?
+Microsoft provides the following Common Data Model. While they interchange the term with the physical infrastructure underlying their Dynamics 265 platform, the model is valid and provides a cross-industry organisational data model.
+
+![Common Data Model V1, Microsoft.com](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/media/cdm-entities-v1.png#lightbox)
+
+This overview of familiar entities can be a good reference model to help plan and consider the information required to keep business moving.
+
+>[Common Data Model, Microsoft.com](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/common-industry-data-models)
 
 ### Toolset
 
-Which tools fit our principles, standards and deliver the capabilities we need? Plan the missing capabilities as possible additions so you know what is available and the costs.
+>Microsoft uses the following overview of Azure services as a model for the types of tools needed.
+>
+>[Cloud Scale Analytics](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/overview-architectures)
+>
+>Review these as options to help feed organisational demand for data.
 
 ### Evaluate & Plan Changes
 
