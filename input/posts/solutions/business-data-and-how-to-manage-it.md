@@ -29,10 +29,6 @@ This article refers to 'the critical information required to run the organisatio
 
 > You might have heard the term 'Master Data Management'. In this article we'll eschew the word as its not in keeping with culture. Links to outside sources will still use that term as its been active for at least 15 years.
 
-How do we ensure our Enterprise has an up-to-date, single view of the customer?
-
-**by managing critical business information**
-
 Business Data management is the organisation of people, processes and technologies to create and maintain data in a way which is:
 
 * Authoritative
@@ -57,7 +53,7 @@ This single source can be decentralised, consolidated or any other shape you can
 
 ## Data Strategy
 
-A data strategy sets the tone for the project, outlining why its important and what the expectations are for it, and how it will be acheived. It also includes how the organisation will confront its opposition.
+A data strategy sets the tone for the project, outlining why its important and what the expectations are for it, and how it will be achieved. It also includes how the organisation will confront its opposition.
 
 >[McKinsey cites modern data architecture](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow) as a critical business driver, but it can be one of the most expensive projects a company can take on. A Strategy to adopt the right data capability for the organisation's growth and maturity is essential.
 
@@ -299,7 +295,7 @@ By this, I mean testing the process of MDM as a business enabler. It must work, 
 >
 >### APIs
 >
->APIs (Application Programming Interfaces) are important for businesses because they enable applications, devices, and data to share information, interact, and take on tasks together. APIs also create greater shared awareness and confidence in the data models and structure of the business. APIs can help businesses sell their products and services online or extend their applications by adding more codes. Effectively using APIs can reduce operational or technology costs by simplifying and accelerating development. APIs are also essential to building business intelligence because they provide access to your data, allowing others to build applications that you could never have foreseen 
+>APIs (Application Programming Interfaces) are important for businesses because they enable applications, devices, and data to share information, interact, and take on tasks together. APIs also create greater shared awareness and confidence in the data models and structure of the business. APIs can help businesses sell their products and services online or extend their applications by adding more codes. Effectively using APIs can reduce operational or technology costs by simplifying and accelerating development. APIs are also essential to building business intelligence because they provide access to your data, allowing others to build applications that you could never have foreseen.
 >
 >1. Most of your systems do not support APIs
 >2. The majority of systems support APIs
@@ -313,10 +309,11 @@ By this, I mean testing the process of MDM as a business enabler. It must work, 
 >2. OAuth is available to your partners and customers
 >3. OAuth is available to people who are external to the organisation
 
+Taken together these three areas give some context around how to measure the data maturity of different areas or applications within the business.
+
 ## Conclusion
 
 ## References
 
 1. [Schedlbauer, M. (2019). Master Data Management. Online.](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241)
-2. * https://www.gov.uk/guidance/develop-your-data-and-apis-using-a-reference-architecture
-
+2. [Develop your data and APIs using a reference architecture GOV.UK.](https://www.gov.uk/guidance/develop-your-data-and-apis-using-a-reference-architecture)
