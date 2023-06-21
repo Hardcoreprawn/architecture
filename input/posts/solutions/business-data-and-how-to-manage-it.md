@@ -313,6 +313,8 @@ Taken together these three areas give some context around how to measure the dat
 
 ## Conclusion
 
+The article explains that Business Data Management is the process of organising and collating data to create and maintain a reliable data environment for business. It highlights the importance of understanding how information flows through an organisation and creating an authoritative model to keep every other system up to date. The article also talks about how well-understood, linked information can help improve customer experience and business success. Finally, it outlines the steps involved in a Data Management project which includes identifying Core Business Data, evaluating data sources and creating a data strategy that aligns with the organisation’s goals.
+
 ## References
 
 1. [Schedlbauer, M. (2019). Master Data Management. Online.](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241)
