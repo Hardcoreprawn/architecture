@@ -6,7 +6,7 @@ Tags:
   - Architecture
   - Data
   - Solutions
-Categories:
+Categories: 
   - Solutions
 Draft: true
 Published: 2023-06-12T12:40:06.193Z
@@ -220,6 +220,8 @@ Nice-to-Haves
 
 ### Architecture
 
+A reference architecture is a great guide to have. It shows you all the important points you could visit, but you don't have to visit any of them unless they solve a problem for your business.
+
 Don't reinvent the wheel. Choose an architecture which is closest to your identified needs and adapt that.
 
 * [How to Build a Data Architecture to drive innovation, McKinsey](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow)
@@ -231,6 +233,8 @@ A data hub architecture separates the management of core business data from othe
 * Multi-cloud capable
 * Scalable
 * Proportionate
+
+A data hub also enables [data mesh](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/what-is-data-mesh) or [polyglot persistence](https://techcommunity.microsoft.com/t5/data-architecture-blog/polyglot-persistence-with-azure-data-services/ba-p/1514912#:~:text=Polyglot%20Persistence%20is%20the%20concept%20of%20using%20different,support%20all%20possible%20data%20types%20and%20its%20usages.) implementation later.
 
 ### Data Model and Toolset
 
@@ -258,15 +262,17 @@ How will you add these to the existing estate?
 
 ## 8. Prototypes and Testing
 
-By this, I mean testing the process of MDM as a business enabler. It must work, but it's more critical it adds value. Work with the stewards to understand pains, shortcomings, or ways to add value.
+By this, I mean testing the process of MDM as a business enabler. It must work, but it's critical it adds value. Work with the stewards to understand pains, shortcomings, or ways to add value.
 
 * Create a Hypothesis around how data will improve a process or add value.
 * Test it.
 * Keep it small and achievable, and deliver some results.
-* Grow in confidence.
 * something-something
+* Grow in confidence.
 * Profit.
 * Repeat.
+
+'Something-something' would be a data project, which builds from your knowledge of the environment you work in and the technology landscape you have built so far. Business Data Management is a great place to start aligning your data across systems, but you can start anywhere.
 
 >## Maturity Model
 >
