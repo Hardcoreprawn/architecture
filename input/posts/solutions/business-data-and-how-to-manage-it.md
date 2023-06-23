@@ -9,11 +9,7 @@ Tags:
 Categories: 
   - Solutions
 Draft: false
-<<<<<<< HEAD
 Published: 22/06/2023
-=======
-Published: 2023-06-12T12:40:06.193Z
->>>>>>> 2e691f6fe8cd9712faa8e7df517b82b159f27821
 Author: James Brewster
 ---
 
@@ -165,7 +161,7 @@ Evaluate whether these systems have available interfaces to export data, ideally
 
 If possible, having webhooks or an event model means we can quickly raise events when something changes, and each interested system can update its copy of any information.
 
-## 4. Analysis
+## 3. Analysis
 
 ### Metadata
 
@@ -198,7 +194,7 @@ A 'multi-master' model is too complex to maintain, so avoid it.
 4. 'Customer' is viewed in 'EVIE' when '...' by '...'
 5. 'Customer' is deleted in '...' when '...' by '...'
 
-## 5. Involvement - Appoint Data Stewards
+## 4. Involvement - Appoint Data Stewards
 
 Have two people for each 'domain' in the department who creates and uses that entity the most. The two people should be:
 
@@ -207,12 +203,13 @@ Have two people for each 'domain' in the department who creates and uses that en
 
 They need a working relationship for regular changes/updates and can make local decisions if the impact is non-breaking or within budget.
 
-## 6. Infrastructure
+## 5. Infrastructure
 
 Now we look at tools and capabilities and decide what we have, what we need and what we would like. Based on research into reference models, the following characteristics are essential to add to a company's data tooling:
 
 Must-Haves
 
+* Data Governance, such as lineage, catalogue and provenance.
 * Data Factories, which process and ingest data to operational services.
 * Data APIs, which support OpenAPI specifications and allow systems to communicate and interrogate each other
 * Data Marts; analytical 'shop-fronts' which store processed data for known use cases
@@ -240,7 +237,7 @@ A data hub architecture separates the management of core business data from othe
 
 A data hub also enables [data mesh](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/what-is-data-mesh) or [polyglot persistence](https://techcommunity.microsoft.com/t5/data-architecture-blog/polyglot-persistence-with-azure-data-services/ba-p/1514912#:~:text=Polyglot%20Persistence%20is%20the%20concept%20of%20using%20different,support%20all%20possible%20data%20types%20and%20its%20usages.) implementation later.
 
-### Data Model and Toolset
+### Data Model
 
 Pick an understandable data model. Ideally, use a reference model rather than invent from scratch, but don't choose one that is too big or fancy. Extensibility is essential, as is the scale of the project.
 
@@ -264,9 +261,9 @@ This overview of familiar entities can be a good reference model to help plan an
 
 How will you add these to the existing estate?
 
-## 8. Prototypes and Testing
+## 6. Prototypes and Testing
 
-By this, I mean testing the process of MDM as a business enabler. It must work, but it's critical it adds value. Work with the stewards to understand pains, shortcomings, or ways to add value.
+By this, I mean testing the process of MDM as a business enabler. It must work, but it must add value. Work with the stewards to understand pains, shortcomings, or ways to add value.
 
 * Create a Hypothesis around how data will improve a process or add value.
 * Test it.
