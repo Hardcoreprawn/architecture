@@ -1,6 +1,6 @@
 ---
 Title: A Tale of Two Customers
-Lead: Integrated or mastered data can be the difference between customer success of failure.
+Lead: Integrated or mastered data can be the difference between customer success and failure.
 Tags:
   - Business
   - Data

@@ -6,10 +6,14 @@ Tags:
   - Architecture
   - Data
   - Solutions
-Categories:
+Categories: 
   - Solutions
 Draft: false
+<<<<<<< HEAD
 Published: 22/06/2023
+=======
+Published: 2023-06-12T12:40:06.193Z
+>>>>>>> 2e691f6fe8cd9712faa8e7df517b82b159f27821
 Author: James Brewster
 ---
 
@@ -28,10 +32,6 @@ Business Data is a broad term; you could ask several people and never get a cons
 This article refers to 'the critical information required to run the organisation' as 'Business Data'. Each department may have its own. Acquisitions will have their own. Partners will have their own.
 
 > You might have heard the term 'Master Data Management'. In this article we'll eschew the word as its not in keeping with culture. Links to outside sources will still use that term as its been active for at least 15 years.
-
-How do we ensure our Enterprise has an up-to-date, single view of the customer?
-
-**by managing critical business information**
 
 Business Data management is the organisation of people, processes and technologies to create and maintain data in a way which is:
 
@@ -57,7 +57,7 @@ This single source can be decentralised, consolidated or any other shape you can
 
 ## Data Strategy
 
-A data strategy sets the tone for the project, outlining why its important and what the expectations are for it, and how it will be acheived. It also includes how the organisation will confront its opposition.
+A data strategy sets the tone for the project, outlining why its important and what the expectations are for it, and how it will be achieved. It also includes how the organisation will confront its opposition.
 
 >[McKinsey cites modern data architecture](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow) as a critical business driver, but it can be one of the most expensive projects a company can take on. A Strategy to adopt the right data capability for the organisation's growth and maturity is essential.
 
@@ -224,6 +224,8 @@ Nice-to-Haves
 
 ### Architecture
 
+A reference architecture is a great guide to have. It shows you all the important points you could visit, but you don't have to visit any of them unless they solve a problem for your business.
+
 Don't reinvent the wheel. Choose an architecture which is closest to your identified needs and adapt that.
 
 * [How to Build a Data Architecture to drive innovation, McKinsey](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow)
@@ -235,6 +237,8 @@ A data hub architecture separates the management of core business data from othe
 * Multi-cloud capable
 * Scalable
 * Proportionate
+
+A data hub also enables [data mesh](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/what-is-data-mesh) or [polyglot persistence](https://techcommunity.microsoft.com/t5/data-architecture-blog/polyglot-persistence-with-azure-data-services/ba-p/1514912#:~:text=Polyglot%20Persistence%20is%20the%20concept%20of%20using%20different,support%20all%20possible%20data%20types%20and%20its%20usages.) implementation later.
 
 ### Data Model and Toolset
 
@@ -262,15 +266,17 @@ How will you add these to the existing estate?
 
 ## 8. Prototypes and Testing
 
-By this, I mean testing the process of MDM as a business enabler. It must work, but it's more critical it adds value. Work with the stewards to understand pains, shortcomings, or ways to add value.
+By this, I mean testing the process of MDM as a business enabler. It must work, but it's critical it adds value. Work with the stewards to understand pains, shortcomings, or ways to add value.
 
 * Create a Hypothesis around how data will improve a process or add value.
 * Test it.
 * Keep it small and achievable, and deliver some results.
-* Grow in confidence.
 * something-something
+* Grow in confidence.
 * Profit.
 * Repeat.
+
+'Something-something' would be a data project, which builds from your knowledge of the environment you work in and the technology landscape you have built so far. Business Data Management is a great place to start aligning your data across systems, but you can start anywhere.
 
 >## Maturity Model
 >
@@ -299,7 +305,7 @@ By this, I mean testing the process of MDM as a business enabler. It must work, 
 >
 >### APIs
 >
->APIs (Application Programming Interfaces) are important for businesses because they enable applications, devices, and data to share information, interact, and take on tasks together. APIs also create greater shared awareness and confidence in the data models and structure of the business. APIs can help businesses sell their products and services online or extend their applications by adding more codes. Effectively using APIs can reduce operational or technology costs by simplifying and accelerating development. APIs are also essential to building business intelligence because they provide access to your data, allowing others to build applications that you could never have foreseen 
+>APIs (Application Programming Interfaces) are important for businesses because they enable applications, devices, and data to share information, interact, and take on tasks together. APIs also create greater shared awareness and confidence in the data models and structure of the business. APIs can help businesses sell their products and services online or extend their applications by adding more codes. Effectively using APIs can reduce operational or technology costs by simplifying and accelerating development. APIs are also essential to building business intelligence because they provide access to your data, allowing others to build applications that you could never have foreseen.
 >
 >1. Most of your systems do not support APIs
 >2. The majority of systems support APIs
@@ -313,10 +319,13 @@ By this, I mean testing the process of MDM as a business enabler. It must work, 
 >2. OAuth is available to your partners and customers
 >3. OAuth is available to people who are external to the organisation
 
+Taken together these three areas give some context around how to measure the data maturity of different areas or applications within the business.
+
 ## Conclusion
+
+The article explains that Business Data Management is the process of organising and collating data to create and maintain a reliable data environment for business. It highlights the importance of understanding how information flows through an organisation and creating an authoritative model to keep every other system up to date. The article also talks about how well-understood, linked information can help improve customer experience and business success. Finally, it outlines the steps involved in a Data Management project which includes identifying Core Business Data, evaluating data sources and creating a data strategy that aligns with the organisation’s goals.
 
 ## References
 
 1. [Schedlbauer, M. (2019). Master Data Management. Online.](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241)
-2. * https://www.gov.uk/guidance/develop-your-data-and-apis-using-a-reference-architecture
-
+2. [Develop your data and APIs using a reference architecture GOV.UK.](https://www.gov.uk/guidance/develop-your-data-and-apis-using-a-reference-architecture)
