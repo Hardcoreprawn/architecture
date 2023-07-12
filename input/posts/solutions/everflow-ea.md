@@ -1,6 +1,6 @@
 ---
 Title: Enterprise Architecture
-Description: A technical description of Everflow, how it creates value, and how it competes against it's competitors.
+Description: A technical description of Everflow, how it creates value, and how it competes.
 Tags:
   - Architecture
   - Business
@@ -31,7 +31,7 @@ Explaining how Everflow interacts with other organizations as part of their join
 
 ![Everflow, Enterprise Context](../../media/everflow-enterprise-context.png)
 
-Everflow aggregates regional water authorities to SME customers in England and Scotland, then integrates quoting and billing. The ideal customer has sites across several counties and water authorities.
+Everflow aggregates regional water authorities to SME customers in England and Scotland then integrates quoting and billing. The ideal customer has sites across several counties and water authorities.
 
 Everflow uses three channels to market:
 
@@ -40,7 +40,7 @@ Everflow uses three channels to market:
 
 Some % of the Brokers are called brokers but use a white-labeled platform or an API. They are resellers and don't sell Eveflow; more use Everflow to provide services.
 
-A key advantage of using brokers is that Everflow was able to get traction by being added alongside a higher-value service. Many Brokers use Everflow, so they can easily offer water alongside more lucrative Energy utilities without handling the complex and low margin leg-work involved.
+A key advantage of using brokers is that Everflow was able to get traction by being added alongside a higher-value service. Many Brokers use Everflow to easily offer water alongside more lucrative Energy utilities without handling the complex and low margin leg-work involved.
 
 ## Business Value Stream
 
@@ -76,7 +76,7 @@ TODO
 
 ## Organisation Chart
 
-Organisation charts change over time. It's better to work from a value stream and capabilities, and then map them to the chart, as then the chart can keep changing.
+Organisational charts change over time. It's better to work from a value stream and capabilities and then map them to the chart, as the chart can keep changing.
 
 ![Everflow, Organisation 06/07/2023](../../media/everflow-organogram.png)
 
