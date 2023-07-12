@@ -73,6 +73,8 @@ A value proposition canvas is a tool for workshopping the value proposition of a
 
 The canvas reads right to left, and the coloured cards link, to highlight the Job a customer has to do, the Pains they experience, and the Gains they would like.
 
+The left-hand box then outlines how Everflow's Products and Services address those Pains and create gains.
+
 For more information on the Value Proposition Canvas, look here: [Strategyzer.com, Value Proposition Canvas](https://www.strategyzer.com/business-model-canvas/value-propositions)
 
 ## Business Model
