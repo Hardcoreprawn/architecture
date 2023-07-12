@@ -10,6 +10,7 @@ Categories:
 Draft: true
 Author: James Brewster
 Published: 06/07/2023
+locale: en-GB
 ---
 ## Strategy
 
@@ -31,7 +32,7 @@ Explaining how Everflow interacts with other organizations as part of their join
 
 ![Everflow, Enterprise Context](../../media/everflow-enterprise-context.png)
 
-Everflow aggregates regional water authorities to SME customers in England and Scotland then integrates quoting and billing. The ideal customer has sites across several counties and water authorities.
+Everflow aggregates regional water authorities to SME customers in England and Scotland and then integrates quoting and billing. The ideal customer has sites across several counties and water authorities.
 
 Everflow uses three channels to market:
 
@@ -64,7 +65,15 @@ The value is in the contextual jobs of the task than in the task itself. Commerc
 
 ## Value Proposition
 
-TODO
+Explains the Jobs, Pains, and Gains for the customer and how Everflow addresses them.
+
+![Everflow, Value Proposition Canvas](../../media/everflow-value-proposition-canvas.png)
+
+A value proposition canvas is a tool for workshopping the value proposition of a product or service. This draft canvas explains how Everflow differentiates its services, how Everflow addresses Customer pains, and how Everflow provides extra value-added gains.
+
+The canvas reads right to left, and the coloured cards link, to highlight the Job a customer has to do, the Pains they experience, and the Gains they would like.
+
+For more information on the Value Proposition Canvas, look here: [Strategyzer.com, Value Proposition Canvas](https://www.strategyzer.com/business-model-canvas/value-propositions)
 
 ## Business Model
 

@@ -45,6 +45,11 @@
           "title": "Author",
           "name": "Author",
           "type": "string"
+        },
+        {
+          "title": "locale",
+          "name": "locale",
+          "type": "string"
         }
       ]
     }
