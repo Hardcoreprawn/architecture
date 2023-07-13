@@ -75,7 +75,21 @@ The canvas reads right to left, and the coloured cards link, to highlight the Jo
 
 The left-hand box then outlines how Everflow's Products and Services address those Pains and create gains.
 
-For more information on the Value Proposition Canvas, look here: [Strategyzer.com, Value Proposition Canvas](https://www.strategyzer.com/business-model-canvas/value-propositions)
+> For more information on the Value Proposition Canvas, look here: [Strategyzer.com, Value Proposition Canvas](https://www.strategyzer.com/business-model-canvas/value-propositions)
+
+Based on this canvas, we can see that Water is a must-have for every company, just as it is for every person. But it isn't easy to differentiate as it is such a ubiquitous commodity. The most significant areas of differentiation are:
+
+* Simplifying the service
+* Removing pains and hassles
+* Relieving environmental guilt.
+
+An example value proposition, taken from the above, could be:
+
+>Simple, clean utilities.
+
+or
+
+> Water. Without the worries.
 
 ## Business Model
 
