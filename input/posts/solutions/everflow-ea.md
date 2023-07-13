@@ -111,9 +111,15 @@ This format can help articulate the finer points of the value proposition. Parti
 
 ## Business Model
 
+A business model canvas takes a value proposition and then arranges the critical elements required to make and sell the value proposition around it.
+
 ![Business Model Canvas, Everflow 2023](../../media/everflow-business-model-canvas.png)
 
-TODO
+The central area is the value propostion. To the right, you have the 'stage' where you perform and interact with customers, create a need and transact. To the left, you have the 'backstage'. The backstage is where the unseen magic enables the front to entertain and delight your customers.
+
+For more information, see here: [Strategyzer.com - Business Model Canvas]
+
+The Activities and Resources sections are capabilities your organisation needs to execute the business model successfully. These are typically part of your value stream as well.
 
 ## Capabilities
 
