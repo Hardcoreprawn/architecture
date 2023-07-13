@@ -93,6 +93,8 @@ or
 
 ## Business Model
 
+![Business Model Canvas, Everflow 2023](../../media/everflow-business-model-canvas.png)
+
 TODO
 
 ## Capabilities
