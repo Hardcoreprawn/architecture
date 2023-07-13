@@ -65,7 +65,9 @@ The value is in the contextual jobs of the task than in the task itself. Commerc
 
 ## Value Proposition
 
-Explains the Jobs, Pains, and Gains for the customer and how Everflow addresses them.
+The value proposition is vital to product development and understanding how a value stream works. It is not a typical part of enterprise architecture. Still, the author believes it is a powerful way to ensure staff understands how your company makes money, what clients chose your company for, and, thus, what is essential to your brand and continued success.
+
+A value proposition canvas explains the customer's Jobs, Pains, and Gains and how your company or products address them.
 
 ![Everflow, Value Proposition Canvas](../../media/everflow-value-proposition-canvas.png)
 
@@ -90,6 +92,22 @@ An example value proposition, taken from the above, could be:
 or
 
 > Water. Without the worries.
+
+The Strategyzer example uses a different template:
+
+> Our *utility platform*
+>
+> helps *brokers and customers*
+>
+> who want to *quickly and efficiently arrange a utility supply*
+>
+> by *allowing a live quote to become a contract*
+>
+> and *unified into a single transaction and bill, with other utilities*
+>
+> unlike *several of our competitors, who make customers arrange site by site*
+
+This format can help articulate the finer points of the value proposition. Particularly the strategic 'unlike' element allows you to address a competitive differentiation directly.
 
 ## Business Model
 
