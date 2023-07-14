@@ -117,7 +117,7 @@ A business model canvas takes a value proposition and then arranges the critical
 
 The central area is the value proposition. To the right, you have the 'stage' where you perform and interact with customers, create a need and transact. To the left, you have the 'backstage.' The backstage is where the unseen magic enables the front to entertain and delight your customers.
 
-For more information, see here: [Strategyzer.com - Business Model Canvas]
+For more information, see here: [Strategyzer.com - Business Model Canvas](https://www.strategyzer.com/business-model-canvas/building-blocks)
 
 The Activities and Resources sections are capabilities your organisation needs to execute the business model successfully. These are typically part of your value stream as well.
 
