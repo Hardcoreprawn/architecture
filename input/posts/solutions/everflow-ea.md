@@ -61,7 +61,7 @@ Everflow sells through 3 separate channels
 
 Everflows primary product is the Water, Wastewater, and Commercial Waste Services supply contract. This contract is a complex set of clauses around providing these utility services at 1+ commercial sites.
 
-The value is in the contextual jobs of the task than in the task itself. Commercial water is not too complex until you have a lot of sites. Then, managing regional providers becomes a challenge. Everflow removes the contextual jobs around 'provide water' and 'remove wastewater' from the customer.
+The value is in the contextual jobs of the task than in the task itself. Commercial water is not too complex until you have many sites. Then, managing regional providers becomes a challenge. Everflow removes the contextual jobs around 'provide water' and 'remove wastewater' from the customer.
 
 ## Value Proposition
 
@@ -115,7 +115,7 @@ A business model canvas takes a value proposition and then arranges the critical
 
 ![Business Model Canvas, Everflow 2023](../../media/everflow-business-model-canvas.png)
 
-The central area is the value propostion. To the right, you have the 'stage' where you perform and interact with customers, create a need and transact. To the left, you have the 'backstage'. The backstage is where the unseen magic enables the front to entertain and delight your customers.
+The central area is the value proposition. To the right, you have the 'stage' where you perform and interact with customers, create a need and transact. To the left, you have the 'backstage.' The backstage is where the unseen magic enables the front to entertain and delight your customers.
 
 For more information, see here: [Strategyzer.com - Business Model Canvas]
 
