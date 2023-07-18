@@ -121,6 +121,8 @@ For more information, see here: [Strategyzer.com - Business Model Canvas](https:
 
 The Activities and Resources sections are capabilities your organisation needs to execute the business model successfully. These are typically part of your value stream as well.
 
+The Business Model Canvas is not complete.
+
 ## Capabilities
 
 TODO
