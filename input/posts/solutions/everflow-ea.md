@@ -79,7 +79,7 @@ The left-hand box then outlines how Everflow's Products and Services address tho
 
 > For more information on the Value Proposition Canvas, look here: [Strategyzer.com, Value Proposition Canvas](https://www.strategyzer.com/business-model-canvas/value-propositions)
 
-Based on this canvas, we can see that Water is a must-have for every company, just as it is for every person. But it isn't easy to differentiate as it is such a ubiquitous commodity. The most significant areas of differentiation are:
+Based on this canvas, we can see that water is a must-have for every company, just as it is for every person. But it isn't easy to differentiate as it is such a ubiquitous commodity. The most significant areas of differentiation are:
 
 * Simplifying the service
 * Removing pains and hassles
