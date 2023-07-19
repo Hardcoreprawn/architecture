@@ -134,9 +134,13 @@ Capabilities divide into two groups:
 * Core - critical to the function and identity of the organisation.
 * Context - secondary functions necessary to the operation
 
-One way to consider this is whether your customers care about the capability. Is that capability why they talk to you or use your products or services? If they do care, then it's a core capability. It's essential and critical to your business. If they're not bothered, then it is context. You have to do it; it can be a defining and strategic advantage, but it's different from why your customers chose you. Focus your efforts on Core capabilities as they will provide more significant returns and opportunities. Handle contextual capabilities efficiently and well enough. Your return on investment will be much smaller, as it will not improve sales or performance to the same degree.
+One way to consider this is whether your customers care about the capability. Is that capability why they talk to you or use your products or services? If they do care, then it's a core capability. It's essential and critical to your business. If they're not bothered, then it is context. You have to do it; it can be a defining and strategic advantage, but it's different from why your customers chose you.
 
-80% of capabilities are common to most businesses, with the other 20% specific to the industry. Separating your business capabilities helps you understand what separates you from other organisations. Understanding this differentiation helps show how the business is similar to and different from other companies. Differentiation is crucial to stand out and grow in a busy or commodity market. Understanding how you are different and which core, specialised areas to focus on will help impact your business's development.
+Focus your efforts on Core capabilities as they will provide more significant returns and opportunities. Handle contextual capabilities efficiently and well enough. Your return on investment will be much smaller, as it will not improve sales or performance to the same degree.
+
+80% of capabilities are common to most businesses, with the other 20% specific to the industry. Separating your business capabilities helps you understand what separates you from other organisations. Understanding this differentiation helps show how the business is similar to and different from other companies. Differentiation is crucial to stand out and grow in a busy or commodity market. 
+
+Understanding how you are different and which core, specialised areas to focus on will help impact your business's development.
 
 For a product development team, understanding the specialised areas of the business helps them target unique and critical functionality and ignore work that won't help improve the business.
 
