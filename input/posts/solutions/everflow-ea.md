@@ -149,5 +149,3 @@ For a product development team, understanding the specialised areas of the busin
 Organisational charts change over time. It's better to work from a value stream and capabilities and then map them to the chart, as the chart can keep changing.
 
 ![Everflow, Organisation 06/07/2023](../../media/everflow-organogram.png)
-
-## Capabilities, mapped to the Organisation
