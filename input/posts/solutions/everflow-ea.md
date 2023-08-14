@@ -7,7 +7,7 @@ Tags:
   - Solutions
 Categories:
   - Solutions
-Draft: true
+Draft: false
 Author: James Brewster
 Published: 06/07/2023
 locale: en-GB
@@ -39,7 +39,7 @@ Everflow uses three channels to market:
 * 10% Direct Sales
 * 90% Broker Sales
 
-Some % of the Brokers are called brokers but use a white-labeled platform or an API. They are resellers and don't sell Eveflow; more use Everflow to provide services.
+Some % of the Brokers are called brokers but use a white-labeled platform or an API. They are resellers and don't sell Everflow; more use Everflow to provide services.
 
 A key advantage of using brokers is that Everflow was able to get traction by being added alongside a higher-value service. Many Brokers use Everflow to easily offer water alongside more lucrative Energy utilities without handling the complex and low margin leg-work involved.
 
@@ -59,7 +59,7 @@ Everflow sells through 3 separate channels
 2. Broker Sales
 3. Resellers, who sell the service as their own.
 
-Everflows primary product is the Water, Wastewater, and Commercial Waste Services supply contract. This contract is a complex set of clauses around providing these utility services at 1+ commercial sites.
+Everflow's primary product is the Water, Wastewater, and Commercial Waste Services supply contract. This contract is a complex set of clauses around providing these utility services at 1+ commercial sites.
 
 The value is in the contextual jobs of the task than in the task itself. Commercial water is not too complex until you have many sites. Then, managing regional providers becomes a challenge. Everflow removes the contextual jobs around 'provide water' and 'remove wastewater' from the customer.
 
@@ -71,7 +71,7 @@ A value proposition canvas explains the customer's Jobs, Pains, and Gains and ho
 
 ![Everflow, Value Proposition Canvas](../../media/everflow-value-proposition-canvas.png)
 
-A value proposition canvas is a tool for workshopping the value proposition of a product or service. This draft canvas explains how Everflow differentiates its services, how Everflow addresses Customer pains, and how Everflow provides extra value-added gains.
+A value proposition canvas is a tool for explaining the value proposition of a product or service. This draft canvas explains how Everflow differentiates its services, how Everflow addresses Customer pains, and how Everflow provides extra value-added gains.
 
 The canvas reads right to left, and the coloured cards link, to highlight the Job a customer has to do, the Pains they experience, and the Gains they would like.
 
@@ -138,9 +138,9 @@ One way to consider this is whether your customers care about the capability. Is
 
 Focus your efforts on Core capabilities as they will provide more significant returns and opportunities. Handle contextual capabilities efficiently and well enough. Your return on investment will be much smaller, as it will not improve sales or performance to the same degree.
 
-80% of capabilities are common to most businesses, with the other 20% specific to the industry. Separating your business capabilities helps you understand what separates you from other organisations. Understanding this differentiation helps show how the business is similar to and different from other companies. Differentiation is crucial to stand out and grow in a busy or commodity market. 
+80% of capabilities are common to most businesses, with the other 20% specific to the industry. Separating your business capabilities helps you understand what separates you from other organisations. Understanding this differentiation helps show how the business is similar to and different from other companies. Differentiation is crucial to stand out and grow in a busy or commodity market.
 
-Understanding how you are different and which core, specialised areas to focus on will help impact your business's development.
+Understanding how you are different and which core,  specialised areas to focus on will help impact your business's development.
 
 For a product development team, understanding the specialised areas of the business helps them target unique and critical functionality and ignore work that won't help improve the business.
 
