@@ -138,7 +138,7 @@ One way to consider this is whether your customers care about the capability. Is
 
 Focus your efforts on Core capabilities as they will provide more significant returns and opportunities. Handle contextual capabilities efficiently and well enough. Your return on investment will be much smaller, as it will not improve sales or performance to the same degree.
 
-80% of capabilities are common to most businesses, with the other 20% specific to the industry. Separating your business capabilities helps you understand what separates you from other organisations. Understanding this differentiation helps show how the business is similar to and different from other companies. Differentiation is crucial to stand out and grow in a busy or commodity market.
+80% of capabilities are common to most businesses, with the other 20% specific to the industry. Separating your business capabilities helps you understand what separates you from any other organisation. Understanding this differentiation helps show how the business is similar to and different from other companies. Differentiation is crucial to stand out and grow in a busy or commodity market.
 
 Understanding how you are different and which core,  specialised areas to focus on will help impact your business's development.
 

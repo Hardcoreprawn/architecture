@@ -3,7 +3,9 @@
     "ignorePaths": [],
     "dictionaryDefinitions": [],
     "dictionaries": [],
-    "words": [],
+    "words": [
+        "Organisational"
+    ],
     "ignoreWords": [],
     "import": [],
     "languageSettings": [
@@ -19,9 +21,11 @@
                 "/#include.*/"
             ],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["cpp"],
+            "dictionaries": [
+                "cpp"
+            ],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
             "dictionaryDefinitions": []
         }
-]
+    ]
 }
