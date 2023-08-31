@@ -105,9 +105,9 @@ To answer this, we introduce the concept of a market release. On a regular caden
 
 These features should have been tested with some real customers, either safe ones, or the ones who asked for it/needed it, before it goes on the general release.This way you can minimise the risks of a 'cold' launch.
 
-This work needs to be celebrated in the market too! make sure your customers know you are doing these things for them! Make sure they have an idea they are coming and you can create some hype about them. This can make sure your competitors know about it, your wider market and analysts know as well.
+This work needs to be celebrated in the market too! make sure your customers know you are doing these things for them. Make sure they have an idea they are coming and you can create some hype/awareness about them, which can segway into training or articles if necessary, so when they arrive, they are anticipated, rather than confusing. This can make sure your competitors know about it, your wider market and analysts know as well.
 
-Change fatigue is a real thing, however. Release as often as you want, but don't 'stress' the customer by making so many big changes it affects their ability to use your software for their purpose.
+Change fatigue is a real thing, especially for B2B software. Release as often as you want, but don't 'stress' the customer by making so many changes it affects their ability to use your software to make or save them money.
 
 ## Release Types
 
