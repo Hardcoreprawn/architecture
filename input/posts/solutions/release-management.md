@@ -10,7 +10,7 @@ Categories:
   - Solutions
 Draft: False
 Published: 29-08-2023
-locale: en-gb
+locale: en-GB
 ---
 
 ## Introduction
@@ -39,13 +39,17 @@ There are several common Software Development Lifecycle (SDLC) models, terms and
 That aside, each of these models has a place, it's not necessarily a ladder or race to the *best* option. 
 
 * Continuous delivery has been very successful for large web platforms, but it may simply not be necessary or possible for smaller teams or less dynamic systems. 
-* The V-Model is great for Aerospace development and other high safety environments.
+* The V-Model is great for Aerospace development and other high-safety environments, where things just can't go wrong.
 * Kanban (the simplest agile model) works well when there is little roadmap, and the backlog is thin.
-* Waterfall is the 'best' option for a client who knows what they want and wants to lock in what they spend upfront. If someone is this certain they know the score, just let them get on with it and take their money and meet their requirements.
+* Waterfall is the 'best' option for a client who knows what they want and wants to lock in what they spend upfront. If someone is this certain they know the score, let them be. Take their money and meet their requirements.
 
 Using any of these models requires management buy-in and understanding, as detailed requirements up-front can present a hurdle to teams trying to work in agile, and it can mire the team in development hell.
 
 An important thing to remember with any framework is the axiom 'If in doubt, leave it out!'. This simple rhyme will save you from trying to shoehorn fixes for problems you don't have, onto your business.
+
+## Versioning
+
+How do you keep track of revisions and versions? That is what we'll try to tackle next.
 
 ### Semantic Versioning
 
@@ -64,6 +68,10 @@ Historically, this has been one of the most loosely defined ways to version soft
 One of the issues with versioning and releasing software is when changes break functionality customers have been using and cause them to have to re-integrate, redo the integration, or prevent a third-party integration from working at all.
 
 API versioning removes part of this issue. Ensuring all public interfaces (i.e. ones outside the developing team) use a managed API, with a version and a contract (such as Swagger or OpenAPI). The contract is more than a document, it is a structured, machine-readable document, which outlines the version, changes and functions of the API.
+
+## Relevant Patterns and other models
+
+These don't necessarily categorise as well, but they are all part of the big picture of releasing products.
 
 ### Continuous Integration & Continuos Deployment
 
@@ -97,13 +105,13 @@ This is probably the most pragmatic model. It ensures that teams remain independ
 
 ### Recommendations
 
-Segregating internal releases from exposed releases is a great idea to help keep the system and customer concerns separate. Ensuring that all programming interfaces are versioned at the API allows for a lot of agility in how issues are resolved and updates made, without breaking the customer experience or causing undue stress.
+Segregating internal releases from exposed releases is a great idea to help keep the system and customer concerns separate. Ensuring that all programming interfaces are versioned **at the API** allows for a lot of agility in how issues are resolved and updates made, without breaking the customer experience or causing undue stress.
 
 By separating these concerns, version management within the service also becomes easier.
 
 In almost all cases, the author would recommend allowing a development team to self-organise a release model that works for them, but would also recommend the company adopt a standard that mostly works for everyone, with some minor variation if necessary.
 
-* Use API versioning for public interfaces. That's any interface outside of the service, whether used by another internal team or a customer.
+* Use API versioning for public interfaces. That's an interface outside of the service, whether used by another internal team or a customer.
 * Have a consistent, meaningful, simple version scheme internally to the application, which relates to your code versions.
 * Try to follow a sensible normal scheme so your colleagues can follow along easily.
 
@@ -124,6 +132,29 @@ This work needs to be celebrated in the market too! Make sure your customers kno
 Change fatigue is a real thing, especially for B2B software. Release as often as you want, but don't 'stress' the customer by making so many changes it affects their ability to use your software to make or save them money.
 
 ## Release Types
+
+Depending on the SDLC model in use, a release can mean wildly different things. Releasing code at the end of a sprint, in a scrum model can mean passing it to a testing team. Or it can mean committing to the main branch of source code.
+
+But in a product sense, release means when it hits the market.
+
+So, let's separate the two items to stop conflation.
+
+* Updates are code changes made every two weeks, tested and integrated, fitting the delivery teams' 'definition of done'.
+* Releases are bundles of updates we make available to the market, which product will be delivered periodically, made up of a whole bunch of updates we can market in advance.
+
+What does this mean for Software as a Service type applications? Well, we should release the updates as soon as we can. But we want to use feature flagging to hide them from view. At some point, we want to enable the feature for a group of users.
+
+This creates a new release model, the 'channels' approach. Each development branch that leaves testing goes through groups of users with varying risk appetites:
+
+1. (Optional) Beta Channel users are typically internal as the expectation is the features may not work as expected.
+2. (Optional) Preview Channel users are typically demonstration, UAT or some internal or power users.
+3. Release Candidate Channel users are early adopters who are testing the feature in production use.
+4. Production Channel users are on a reasonably well-tested and stable version, with a reasonably low wait on new features and changes.
+5. (Optional) Long-Term Support (LTS) Channel users are on a stable version, which has been through the above stages.
+
+The above can work with as few as two channels, or as many as five or more. The above channels are all hosted on the production platform; they are all treated and run as production systems. You may limit the number of customers you allow on earlier environments, to ensure you can support them adequately. You might also 'hide' the LTS option for larger or problematic customers.
+
+The important point here is to separate the dependency between software release and market release. We know software releases are more stable and lower cost when they are released quickly and when development teams can focus, test and deliver in small batches. It's been proven since the 1960s. But we also know that launching a feature requires timing and control to make sure it lands correctly.
 
 ## Release Standards
 

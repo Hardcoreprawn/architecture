@@ -18,8 +18,7 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "dotnet restore",
-	"postCreateCommand": "git config credential.helper store"
-
+	
 	// Configure tool-specific properties.
 	// "customizations": {},
 
