@@ -156,20 +156,44 @@ So, let's separate the two items to stop conflation.
 
 What does this mean for Software as a Service type applications? Well, we should release the updates as soon as we can. But we want to use feature flagging to hide them from view. At some point, we want to enable the feature for a group of users.
 
-This creates a new release model, the 'channels' approach. Each development branch that leaves testing goes through groups of users with varying risk appetites:
+This creates a new release model the 'channels' approach. Widely used by Microsoft, amongst others. Each development branch that leaves testing goes through groups of users with varying risk appetites and update frequency:
 
-1. First Channel users are typically internal as the expectation is the features may not work as expected.
-2. Second Channel users are early adopters who are testing the feature in production use.
-3. Production Channel users are on a reasonably well-tested and stable version, with a reasonably low wait on new features and changes.
+1. First Channel users are typically internal as the expectation is the features may not work as expected. These can receive releases monthly or faster.
+2. Second Channel users are early adopters who are testing the feature in production use. Typically these get new releases every two or three months.
+3. Production Channel users are on a reasonably well-tested and stable version, with a reasonably low wait on new features and changes. 
 4. (Optional) Long-Term Support (LTS) Channel users are on a stable version, which has been through the above stages.
 
-The above can work with as few as two channels, or as many as five or more. The above channels are all hosted on the production platform; they are all treated and run as production systems. You may limit the number of customers you allow on earlier environments, to ensure you can support them adequately. You might also 'hide' the LTS option for larger or problematic customers.
+The above can work with as few as two channels, or as many as five or more. The above channels are all hosted on the production platform; they are all treated and run as production systems. You may limit the number of customers you allow on earlier channels, to ensure you can support them appropriately. You might also 'hide' the LTS option unless it's for larger or problematic customers.
+
+Microsoft has experimented with several release channel frequencies since they started using the model, and for most platforms, it tends to be regular updates to security and such, with semi-annual 'releases' of new features, on the Production channel. Some of their products have as many as six channels, which may get bi-weekly, or monthly updates. Where LTS Channels exist, they often only get annual feature releases, with monthly patches and updates, to minimise any disruption.
 
 The important point here is to separate the dependency between software release and market release. We know software releases are more stable and lower cost when they are released quickly and when development teams can focus, test and deliver in small batches. It's been proven since the 1960s. But we also know that launching a feature requires timing and control to make sure it lands correctly.
 
 ## Release Standards
 
+Having release standards in place simplifies the task of releasing software. Ensuring software has passed a certain threshold for quality is good for everyone to understand.
+
+> A friend who works in automotive engineering once told me that a car company was unhappy with prototypes made in a new engineering plant, as they were too high quality and as such, would be too expensive or skilled to make sustainably.
+
+This threshold depends on the business, but an organisation should typically capture release standards and have them blanket apply to all releases, with an option for a waiver, if the standard is irrelevant or overly onerous.
+
+Non-functional requirements are one way to manage release standards, which makes use of an existing idea in the business. Having an adaptable list of these available and described in a testable way allows for automated testing and simplifies the release process.
+
 ## Release Governance
+
+Having bifurcated our releases and defined a set of standards that can be used to define something as 'ready', we should have a simpler time governing releases.
+
+Each of our types has a similar, but different path to get to its audience. The governance process for each path should differ, based on the risk and severity of the release types.
+
+### Governance for Updates
+
+Updates are lower-risk changes. Defining that a given release will only contain updates (i.e. no breaking UI changes or major market features) means the delivery team can use a lighter-weight version of the release process, which looks to automate as much as possible and to deliver working, tested code into production. This allows dependencies, fixes and patches to arrive swiftly and be tested en masse.
+
+### Governance for Releases
+
+Market Releases are higher risk/higher reward affairs. Because of this, we need to make sure they arrive promptly, safely and well-advertised. There should be few surprises, only an amount of expectation, and hopefully delight.
+
+These larger items would require more extensive UAT and single/limited customer releases. As the delivery is done through feature flags in the production environment, the stability would have been tested; several could have been delivered in updates months ago, but the use experience doesn't have to change until the market is ready, willing and ready to pay for it.
 
 ## Proposed Changes
 
