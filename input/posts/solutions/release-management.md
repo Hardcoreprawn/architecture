@@ -131,7 +131,7 @@ This work needs to be celebrated in the market too! Make sure your customers kno
 
 Change fatigue is a real thing, especially for B2B software. Release as often as you want, but don't 'stress' the customer by making so many changes it affects their ability to use your software to make or save them money.
 
-## Release Types
+## Separating Releases from Releases
 
 Depending on the SDLC model in use, a release can mean wildly different things. Releasing code at the end of a sprint, in a scrum model can mean passing it to a testing team. Or it can mean committing to the main branch of source code.
 
