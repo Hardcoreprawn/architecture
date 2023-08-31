@@ -59,7 +59,7 @@ A data strategy sets the tone for the project, outlining why its important and w
 
 Here is an example:
 
-> At Everflow, our mission is to simplify our customer's utility needs. We need to understand their use of utilities and be able to track how we can align their use.
+> At <...>, our mission is to simplify our customer's utility needs. We need to understand their use of utilities and be able to track how we can align their use.
 >
 > Our data strategy reflects our business goals:
 >
@@ -68,14 +68,14 @@ Here is an example:
 To support and not detract from our main value proposition by offering a lightweight solution which aligns with our values and principles
 > * This ability to provide a sensible, joined-up story allows us to out-perform our compeitors and exceed our custo0mers expectations. This allows us to effectively up-sell and cross-sell products.
 >
->The Data team will support Everflow to achieve these goals:
+>The Data team will support <...> to achieve these goals:
 >
 > * By identifying and managing our Core Business Data which is required to create integrated customer experiences
 > * Through maintaining authoritative sources, which the broader organisation can easily access
 > * Ensuring our data stewardship is fit for purpose as our regulated footprint grows
 > * By providing a lightweight service which delivers the necessary functionality in a cost-effective manner
 >
->For Everflow, Data Management is a critical enabler to our business goals.
+>For <...>, Data Management is a critical enabler to our business goals.
 >
 > * Allows us to create a single view of the customer, their active contracts, and potential upsells
 > * Enable us to analyse broker performance and see how different brokers do in other areas
@@ -229,7 +229,7 @@ Don't reinvent the wheel. Choose an architecture which is closest to your identi
 * [Building a Data Hub, Ticking Trend](https://www.tickingtrend.com/articles/building-a-data-hub#:~:text=Building%20a%20Data%20Hub%201%20Step%201%3A%20Define,Data%20Governance%20...%207%20Step%207%3A%20Data%20Analytics)
 * [Data Hubs - What's Next in Data Architecture, Eckerson](https://www.eckerson.com/articles/data-hubs-what-s-next-in-data-architecture)
 
-A data hub architecture separates the management of core business data from other concerns, such as analytics. As a collection of web services, it follows the principles and standards Everflow adheres to, including:
+A data hub architecture separates the management of core business data from other concerns, such as analytics. As a collection of web services, it follows the principles and standards <...> adheres to, including:
 
 * Multi-cloud capable
 * Scalable
