@@ -173,7 +173,7 @@ The important point here is to separate the dependency between software release 
 
 Having release standards in place simplifies the task of releasing software. Ensuring software has passed a certain threshold for quality is good for everyone to understand.
 
-> A friend who works in automotive engineering once told me that a car company was unhappy with prototypes made in a new engineering plant, as they were too high quality and as such, would be too expensive or skilled to make sustainably.
+> A friend who works in automotive engineering once told me that a car company was unhappy with prototypes made in a new engineering plant, as they were too high quality, requiring expensive, high-skilled labour, so would be too expensive to make sustainably. As a result, they now use different countries for most manufacturing, where standards are at a happy level of mediocrity.
 
 This threshold depends on the business, but an organisation should typically capture release standards and have them blanket apply to all releases, with an option for a waiver, if the standard is irrelevant or overly onerous.
 
@@ -196,6 +196,18 @@ Market Releases are higher risk/higher reward affairs. Because of this, we need 
 These larger items would require more extensive UAT and single/limited customer releases. As the delivery is done through feature flags in the production environment, the stability would have been tested; several could have been delivered in updates months ago, but the use experience doesn't have to change until the market is ready, willing and ready to pay for it.
 
 ## Proposed Changes
+
+A summary of the recommendations above.
+
+* Release regularly and often. Keep work in progress down and batches small.
+* Have a definition of done which gets a change into production as soon as possible.
+* Automate your smallest type of update and work up to more complex types, but keep working on it.
+* Follow a development which the leadership understand and commit to. Each model has downsides and they need to be aware of them and commit to follow them. Use metrics to support and reinforce this decision!
+* Keep versioning simple and separate internal things from external things.
+* Use contracted API Interfaces for all communications and plan them for external use, even if it's unlikely.
+* Use Non-Functional Requirements as a standard way to log and manage a general release standard, and determine which NFRs are relevant during release planning.
+* Decouple software releases from market releases by using feature flags and similar patterns to allow feature access to be controlled by product teams.
+* Have appropriate governance pathways for technical and market releases, depending on their risk.
 
 ## References
 
