@@ -94,7 +94,7 @@ The primary goals of these ideas are:
 1. To reduce risk
 2. improve feedback to the developer. 
 
-By testing more often, by deploying more frequently, more is learnt about the process, so it becomes well-tested and more reliable.
+By testing more often and by deploying more frequently, more is learnt about the process, so it becomes well-tested and more reliable.
 
 ### Release Automation Pipelines
 
@@ -104,9 +104,9 @@ A typical pipeline will provide feedback loops, which report any failures back t
 
 ### Hybrid Models
 
-A lot of the above models can work together, coexisting or complicating as "necessary". Having a simple model, which is widely used in your organisation is the best answer. Something everyone can understand easily and work with. Most of us are not so lucky, so compromises are often needed.
+Many above models can work together, coexisting, complementing or complicating as necessary. Having a simple model, which is widely used in your organisation is the best answer. Something everyone can understand easily and work with. Most of us are not so lucky, so compromises are often needed.
 
-A good compromise is to use versioned interfaces, over whatever versioning scheme the individual service/application uses. Each team can manage versioning as the product is, possibly with some definition or structure, but externally all communications are done via the versioned API.
+A good compromise is to use versioned interfaces, over whatever versioning scheme the individual service/application uses. Each development product has its versioning scheme. New products should follow a defined model, as they are based on a common Software Lifecycle. Older products or acquired products won't have that luxury, so pragmatism should win over trying to fit everything together.
 
 This is probably the most pragmatic model. It ensures that teams remain independent and dependencies between services remain low. An API Gateway pattern can help to manage and list these interfaces together, using a developer portal as a catalogue.
 
@@ -118,7 +118,7 @@ Segregating internal releases from exposed releases is a great idea to help keep
 
 By separating these concerns, version management within the service also becomes easier.
 
-In almost all cases, the author would recommend allowing a development team to self-organise a release model that works for them, but would also recommend the company adopt a standard that mostly works for everyone, with some minor variation if necessary.
+In almost all cases, the author would recommend allowing a development team to self-organise a release model that works for them, but would also recommend the company adopt a standard that can work for ~80% of cases, with some minor variation if necessary.
 
 * Use API versioning for public interfaces. That's an interface outside of the service, whether used by another internal team or a customer.
 * Have a consistent, meaningful, simple version scheme internally to the application, which relates to your code versions.
@@ -126,9 +126,12 @@ In almost all cases, the author would recommend allowing a development team to s
 
 ## What about market releases?
 
-Software releases tend to mean different things to different people. A release can be shipping tested, working code to the next person along the pipeline. Who may then run a load of tests and pass it along to the next?
+Software releases tend to mean different things to different people.
 
-It should mean delivering the developed features to the market.
+* To a developer, a release could be done when the change is committed to the source code repository.
+* To a tester, it could be done when the tests are completed successfully.
+* To an Infrastructure engineer, it could be done when loaded and running.
+* To the business, it's when the market reacts to the feature and there is a change in dynamics (more sales, better reviews, etc.)
 
 The author has a very strong opinion on this. Any work which is not in the hands of your customers is 'untested'. You have yet to deliver any value, or any return until that feature is in use and you have active feedback from users/customers.
 
@@ -142,24 +145,23 @@ Change fatigue is a real thing, especially for B2B software. Release as often as
 
 ## Separating Releases from Releases
 
-Depending on the SDLC model in use, a release can mean wildly different things. Releasing code at the end of a sprint, in a scrum model can mean passing it to a testing team. Or it can mean committing to the main branch of source code.
+Depending on the SDLC model in use, a release can mean wildly different things. Releasing code at the end of an iteration can mean passing it to a testing team. Or it can mean committing to the main branch of source code.
 
 But in a product sense, release means when it hits the market.
 
 So, let's separate the two items to stop conflation.
 
-* Updates are code changes made every two weeks, tested and integrated, fitting the delivery teams' 'definition of done'.
-* Releases are bundles of updates we make available to the market, which product will be delivered periodically, made up of a whole bunch of updates we can market in advance.
+* Updates are code changes made every iteration, tested and integrated, fitting the delivery teams' 'definition of done'.
+* Releases are bundles of updates we make available to the market, which a business can periodically deliver in a planned and managed fashion, with appropriate fanfare.
 
 What does this mean for Software as a Service type applications? Well, we should release the updates as soon as we can. But we want to use feature flagging to hide them from view. At some point, we want to enable the feature for a group of users.
 
 This creates a new release model, the 'channels' approach. Each development branch that leaves testing goes through groups of users with varying risk appetites:
 
-1. (Optional) Beta Channel users are typically internal as the expectation is the features may not work as expected.
-2. (Optional) Preview Channel users are typically demonstration, UAT or some internal or power users.
-3. Release Candidate Channel users are early adopters who are testing the feature in production use.
-4. Production Channel users are on a reasonably well-tested and stable version, with a reasonably low wait on new features and changes.
-5. (Optional) Long-Term Support (LTS) Channel users are on a stable version, which has been through the above stages.
+1. First Channel users are typically internal as the expectation is the features may not work as expected.
+2. Second Channel users are early adopters who are testing the feature in production use.
+3. Production Channel users are on a reasonably well-tested and stable version, with a reasonably low wait on new features and changes.
+4. (Optional) Long-Term Support (LTS) Channel users are on a stable version, which has been through the above stages.
 
 The above can work with as few as two channels, or as many as five or more. The above channels are all hosted on the production platform; they are all treated and run as production systems. You may limit the number of customers you allow on earlier environments, to ensure you can support them adequately. You might also 'hide' the LTS option for larger or problematic customers.
 
