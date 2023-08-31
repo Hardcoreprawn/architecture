@@ -84,26 +84,5 @@
   ],
   "frontMatter.taxonomy.seoDescriptionField": "Description",
   "frontMatter.taxonomy.seoTitleField": "Title",
-  "frontMatter.taxonomy.tags": [
-    "Application",
-    "Principles",
-    "Architecture",
-    "Business",
-    "Data",
-    "Microservices",
-    "NFRs",
-    "Patterns",
-    "Process",
-    "Requirements",
-    "Security",
-    "Solutions",
-    "Technical"
-  ],
-  "frontMatter.taxonomy.categories": [
-    "Patterns",
-    "Principles",
-    "Requirements",
-    "Solutions"
-  ],
   "frontMatter.dashboard.openOnStart": true
 }
