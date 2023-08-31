@@ -53,9 +53,13 @@ How do you keep track of revisions and versions? That is what we'll try to tackl
 
 ### Semantic Versioning
 
-Think of a simple drawing of a tree. At the base, you have the trunk and root, and then you have one or more branches, with one or more branches coming off. The major branches of the trunk are your major versions, which have a defined, stable interface. The Minor branches off that, the sticks to the same defined interfaces. If you change the interface, you need to define a new major branch and potentially plan to remove the previous version.
+Semantic versioning uses a structured number system, such as 1.2.3
 
-This version has been used since time immemorial. It is predictable and easy to follow. It can cause issues when you require a customer to tell you what version they have, or when you need a roll a fix out to all your customers.
+The first number is the Major release, the second a minor release and the third a sub-minor release.
+
+Think of a simple drawing of a tree. At the base, you have the trunk and root, and then you have one or more branches, with one or more branches coming off of that. The major branches of the trunk are your major versions, which have a defined, stable interface. The Minor branches off that, use the same defined interfaces. If you change the interface, you need to define a new major branch and potentially plan to remove the previous version.
+
+This approach has been used since time immemorial. It is predictable and easy to follow. It can cause issues when you have customers on older versions or when you need a roll a fix out to all your customers, and they have a mix of versions, and you have to test against all of them...
 
 Semantic versioning is a good standard to follow, but it's not very customer-friendly. Within your own organisation and service management teams, it works well and allows you to track changes, fixes and releases over time in line with frameworks such as the Information Technology Infrastructure Library (ITIL).
 
@@ -71,11 +75,11 @@ API versioning removes part of this issue. Ensuring all public interfaces (i.e. 
 
 ## Relevant Patterns and other models
 
-These don't necessarily categorise as well, but they are all part of the big picture of releasing products.
+The following patterns and models don't necessarily categorise as well, but they are all part of the big picture of releasing products.
 
-### Continuous Integration & Continuos Deployment
+### Continuous Integration & Continuous Deployment
 
-Often called CI/CD. Traditional Integration is done during the run-up to a release and involves making sure all the different elements of a program, developed across several developers or teams work together. Unsurprisingly, it often didn't and much confusion and delay would follow when people tried to get these things talking to each other.
+Often called CI/CD. Traditional Integration is done during the run-up to a release and involves making sure all the different elements of a program, developed across several developers or teams work together. Unsurprisingly, it often doesn't and much confusion and delay follow as people try to get these things talking to each other.
 
 Continuous Integration works by committing changes to a common branch as changes are committed. Developers are encouraged to commit regularly, comment on what they changed, test/review the log and then move on to the next task.
 
@@ -85,7 +89,12 @@ Continuous Deployment is the process of pushing an integrated code change into a
 
 By combining these two things, we can make sure changes are added to the code base, tested and integrated, and deployed to an environment for testing, UAT or demonstration.
 
-The primary goals of these two ideas are to reduce risk and improve feedback to the developer. By testing more often, by deploying more frequently, more is learnt about the process, it becomes well-tested and drilled.
+The primary goals of these ideas are: 
+
+1. To reduce risk
+2. improve feedback to the developer. 
+
+By testing more often, by deploying more frequently, more is learnt about the process, so it becomes well-tested and more reliable.
 
 ### Release Automation Pipelines
 
