@@ -1,6 +1,6 @@
 ---
 Title: Architecture Review Board
-Lead: Making sensible decisions and Avoiding the Land of Wait.
+Lead: Making Sensible Decisions and Avoiding the Land of Wait.
 Description: A coherent ARB can help organisations plan and normalise technology decisions. It can also create a situation where nothing happens, and work goes to die.
 Tags:
   - Architecture
@@ -72,7 +72,7 @@ The board meeting should follow a standard approach for such a meeting to ensure
 
 * The ARB Meets Monthly and in response to nominated events (PI Planning, annual review, etc.)
 * There is a Chairperson who will run and take the lead on ensuring the meeting runs as expected. Ideally, this is the sponsor, but it could be delegated or rotated.
-* There is a nominated secretary who takes minutes and actions. Rotate the role, or bring someone in who needs more exposure to the ARB and strategic decision-making. It should be someone capable who will do a good job.
+* There is a nominated secretary who takes minutes and actions. Rotate the role, or bring someone in who needs more exposure to the ARB and strategic decision-making.
 * Start by reviewing previous minutes and actions.
 * Review any proposals or actions. Any issues should have been relayed with enough notice so that members could review what they have to before the meeting and come up with questions or requests.
 * Most decisions should be able to be approved within the meeting. Deferring too many approvals is terrible.
