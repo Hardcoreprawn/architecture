@@ -12,7 +12,7 @@ Published: 09/05/2023
 Image: ../../media/header01.png
 ---
 
-Microservices are a way to build applications used by some of the biggest sites and systems online, such as Netflix and Amazon. They let systems be updated safely and scale well. But they are complex and require firm principles in place to work correctly.
+Microservices are a way to build applications used by some of the biggest sites and systems online, such as Netflix and Amazon. They let systems be updated safely and scale well. However, they are complex and require firm principles in place to work correctly.
 
 ## Pattern Overview
 
