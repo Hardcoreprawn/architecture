@@ -47,7 +47,7 @@ To that end, the architecture needs to review and adapt to ensure it doesn't bec
 
 ## Providing short, contextual decisions
 
-Using a sustainable format is essential to keep decisions documentation light and relevant. Here are some examples:
+Using a sustainable format is essential to keep decision documentation light and relevant. Here are some examples:
 
 ### Y-Statements
 
@@ -56,16 +56,16 @@ Using a sustainable format is essential to keep decisions documentation light an
 
 > #### Worked Example
 >
-> *In the context* of the business multi utility quoting tool,
+> *In the context* of the ,
 >
-> *Facing the need to* provide accurate and competitive quotes for gas, electricity and water services,
+> *Facing the need to* ,
 >
-> *We decided for* the Multi Utility Service Provider (MUSP) pattern.
+> *We decided for*  pattern.
 >
-> *And against* Single Utility Service Provider (SUSP) or Multiple Utility Service Providers (MUSPs).
+> *And against* .
 >
-> *To achieve* cost savings, convenience and efficiency for our customers,
-> *Accepting that* a MUSP requires more integration and coordination with different utility suppliers.
+> *To achieve* ,
+> *Accepting that* .
 
 The format of a Y-Statement creates six phrases in three sections:
 

@@ -12,11 +12,11 @@ Tags:
   - Process
   - Solutions
 ---
-Software and systems architects provide guidance and governance of a technology organisation by, amongst other things, modelling the organisation, its departments, capabilities, and processes and then mapping technology into them to ensure that the business has a somewhat optimised set environment, which can adapt to its needs and isn't onerous to look after.
+Software and systems architects provide guidance and governance of a technology organisation by modelling the organisation, its departments, capabilities, and processes and then mapping technology into them to ensure that the business has an optimised environment, which can adapt to its needs and isn't onerous to look after.
 
-Traditional approaches to this take time and go against the agile philosophy to avoid Big Up Front Design BUFD. How best to support developers in an agile world?
+Traditional approaches to this take time and go against the agile philosophy to avoid Big Up Front Design (BUFD). How best to support developers in an agile world?
 
-The common concept in an agile development organisation is 'Emergent Architecture.' But what does that mean? You follow a model more akin to evolution than planning and interfere if you see things dangerous to the organisation. You use history as a lesson, but accept what happened and don't try to remove it.
+The common concept in an agile development organisation is 'Emergent Architecture.' But what does that mean? You follow a model more akin to evolution than planning and interfere if you see things dangerous to the organisation. You use history as a lesson but accept what has happened and accept that, as people, we can never attain perfection.
 
 ## In theory
 
@@ -24,11 +24,11 @@ As development teams self-organize, the architecture role is to support decision
 
 ![Architecture Process - BPMN](../../media/architecture-process-bpmn.png)
 
-This concept's core work item is the ADR or Architectural Decision Record.
+This concept uses the ADR or Architectural Decision Record for teams to record and track key decisions and context.
 
-When a team has to decide something, they create a work item in Azure DevOps (other work trackers are available). This item can outline the problem in short:
+When a team has to decide something, they create a work item in Jira/Git/DevOps (other work trackers are available). This item can outline the problem in short:
 
-> To support US12345, we need to host semi-structured data, which will be used to render a quote on screen.
+> To support US12345, we need to host semi-structured data, which will be used to render a dynamic quote on screen.
 
 Whenever the team decides how development will proceed, they write it down in their work system. ADRs are covered in more detail [here](xref:architecture-decision-records).
 
@@ -52,7 +52,7 @@ The architecture practice reviews the ADRs and looks for trends and patterns. As
 
 The architect group will propose amendments to the organisation's architecture to the ARB, which may require approval, depending on the size and scope of the new principles.
 
-Changes in architecture guidance are applied retrospectively but may result in the creation of new technical debt items. Similar to how the law or regulation works.
+Changes in architecture guidance can be applied retrospectively which may result in the creation of new technical debt items. Or we can call an amnesty and accept that something could've been better. Similar to how the law or regulations work.
 
 ## In Practice
 
@@ -75,7 +75,7 @@ Using a feedback loop from the teams' decisions and accepting that these won't a
 
 ### How not to make decisions
 
-* Ignore existing ADRs relating to the subject (Search in DevOps for ADRs or the tech or problem).
+* Ignore existing ADRs relating to the subject (Search in the work tracker for ADRs, the tech or similar problems ).
 * Do not look at the existing guidance:
   * Principles
   * [NFRs](xref:nfrs)
