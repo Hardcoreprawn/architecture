@@ -62,6 +62,10 @@
   "frontMatter.content.publicFolder": "[[workspace]]/input/media",
   "frontMatter.content.pageFolders": [
     {
+      "title": "Posts",
+      "path": "[[workspace]]/input/posts"
+    },
+    {
       "title": "Principles",
       "path": "[[workspace]]/input/posts/principles"
     },

@@ -35,7 +35,7 @@ Here is a process for creating Architectural Decision Records (ADRs) in Azure De
 
 This process can help you record your architectural and technical decisions for further reference and have the new team members up to date from day one.
 
-A centralised Architecture team can review any ADRs made and either look to amend any of the Architecture Artefacts in response. It may be that several decisions cause a change in precedence, which requires adjusting principles or technology guidelines.
+A centralised Architecture team can review any ADRs made and look to amend any of the architectural artefacts in response. It may be that several decisions cause a change in precedence, which requires adjusting principles or technology guidelines.
 
 Remember, the aim of an architecture practice is to:
 
