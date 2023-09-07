@@ -1,6 +1,7 @@
 ---
+Slug: "contribute"
 Title: Contribute to Open-EA
-Lead: "contribute"
+Lead: "Contribute to Open-EA"
 Description: Instructions and guidance for editing and adding pages to the Open-EA repository.
 Tags:
   - Solutions
