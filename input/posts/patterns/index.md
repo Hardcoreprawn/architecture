@@ -2,14 +2,13 @@
 Title: Patterns
 Published: 15/09/2023
 Draft: false
-Slug: patterns
 Lead: Patterns are a way to model functionality for complex problems.
 Tags:
-  - Principles
+  - Patterns
   - Business
   - Architecture
 Categories:
-  - Principles
+  - Patterns
 Description: Patterns are well understood ways to fix problems or provide certain functionality.
 ---
 

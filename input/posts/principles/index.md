@@ -2,7 +2,6 @@
 Title: Principles
 Published: 13/09/2023
 Draft: false
-Slug: principles
 Lead: Set principles to define how your teams should make decisions, and provide sensible constraints.
 Tags:
   - Principles
