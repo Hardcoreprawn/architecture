@@ -1,5 +1,5 @@
 ---
-Title: Principles
+Title: Explaining Principles
 Published: 13/09/2023
 Draft: false
 Lead: Set principles to define how your teams should make decisions, and provide sensible constraints.

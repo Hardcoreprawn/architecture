@@ -1,5 +1,5 @@
 ---
-Title: Patterns
+Title: What are Patterns?
 Published: 15/09/2023
 Draft: false
 Lead: Patterns are a way to model functionality for complex problems.

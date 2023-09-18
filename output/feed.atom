@@ -4,309 +4,8 @@
 	<title />
 	<link rel="self" href="https://red-sand-078a6ea03.3.azurestaticapps.net/" />
 	<rights>Copyright James Brewster© 2023</rights>
-	<updated>2023-06-26T10:55:08Z</updated>
+	<updated>2023-09-18T09:19:04Z</updated>
 	<logo>https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png</logo>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/business-data-and-how-to-manage-it</id>
-		<title>Business Data and How to Manage it</title>
-		<author>
-			<name>James Brewster</name>
-		</author>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/business-data-and-how-to-manage-it" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-06-22T00:00:00Z</updated>
-		<content>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Business Data management is the organisation of people, processes and technologies to create and maintain a reliable data environment for business.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href="xref:a-tale-of-two-customers"&gt;The Tale of Two Customers (James B &amp;amp; Bing AI, 2023)&lt;/a&gt; shows how well-understood, linked information can help improve customer experience and business success. It talks about two experiences of customer service, one positive and one negative, through the eyes of Alice (who has a good experience) and Bob (who has a bad one).&lt;/p&gt;
-&lt;p&gt;I think we've all been Alice or Bob at some point, and it's likely that when we felt like Alice, we used the company again. And when we felt like Bob, we avoided them and repeatedly told our friends and family about the poor experience.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="business-data"&gt;Business Data&lt;/h2&gt;
-&lt;p&gt;Business Data is a broad term; you could ask several people and never get a consistent answer.&lt;/p&gt;
-&lt;p&gt;This article refers to 'the critical information required to run the organisation' as 'Business Data'. Each department may have its own. Acquisitions will have their own. Partners will have their own.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;You might have heard the term 'Master Data Management'. In this article we'll eschew the word as its not in keeping with culture. Links to outside sources will still use that term as its been active for at least 15 years.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Business Data management is the organisation of people, processes and technologies to create and maintain data in a way which is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Authoritative&lt;/li&gt;
-&lt;li&gt;Reliable&lt;/li&gt;
-&lt;li&gt;Sustainable&lt;/li&gt;
-&lt;li&gt;Accurate&lt;/li&gt;
-&lt;li&gt;Secure&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Great if you are lucky enough to have a single system which everyone uses to track orders, shipments, payments and work items. Your data is already probably mastered and accurate. A design like this is a business's 'gold standard' of information management.&lt;/p&gt;
-&lt;p&gt;But it's rarely found in any but the smallest or largest organisations. Small organisations cope with limited systems. The larger ones invest heavily in creating designs that match their processes and allow this interaction.&lt;/p&gt;
-&lt;p&gt;For everyone else, we need to understand and link data to simplify our work and limit the expense of supporting our customers while offering them a great experience they want to return to.&lt;/p&gt;
-&lt;p&gt;Easy access to a single record system eases and supports the business. Each area may use a different database system, but as long as the resulting view is consistent, this will not harm the organisation.&lt;/p&gt;
-&lt;p&gt;Ideally, we want to try and limit the number of systems customer-facing colleagues are using. They should be able to work in one place to ease training and stress.&lt;/p&gt;
-&lt;p&gt;Managing this data is done by understanding how information flows through an organisation and creating an authoritative model to keep every other system up to date.&lt;/p&gt;
-&lt;p&gt;This single source can be decentralised, consolidated or any other shape you can imagine as long as the data source and the data relationships are understood, and the outcome results in an ability to see the whole picture about a customer, reseller, product or other important entity.&lt;/p&gt;
-&lt;h2 id="data-strategy"&gt;Data Strategy&lt;/h2&gt;
-&lt;p&gt;A data strategy sets the tone for the project, outlining why its important and what the expectations are for it, and how it will be achieved. It also includes how the organisation will confront its opposition.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow"&gt;McKinsey cites modern data architecture&lt;/a&gt; as a critical business driver, but it can be one of the most expensive projects a company can take on. A Strategy to adopt the right data capability for the organisation's growth and maturity is essential.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Here is an example:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;At Everflow, our mission is to simplify our customer's utility needs. We need to understand their use of utilities and be able to track how we can align their use.&lt;/p&gt;
-&lt;p&gt;Our data strategy reflects our business goals:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Provide a coherent, connected view of the customer and their use of our products, so they can quickly see how their usage varies and make educated decisions. Providing this joined-up view allows our 'single quote' and 'single bill' initiatives to succeed and scale&lt;/li&gt;
-&lt;li&gt;To support their brokers and support agents to get the correct information quickly and easily, so we can continue to deliver excellent customer service.
-To support and not detract from our main value proposition by offering a lightweight solution which aligns with our values and principles&lt;/li&gt;
-&lt;li&gt;This ability to provide a sensible, joined-up story allows us to out-perform our compeitors and exceed our custo0mers expectations. This allows us to effectively up-sell and cross-sell products.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The Data team will support Everflow to achieve these goals:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;By identifying and managing our Core Business Data which is required to create integrated customer experiences&lt;/li&gt;
-&lt;li&gt;Through maintaining authoritative sources, which the broader organisation can easily access&lt;/li&gt;
-&lt;li&gt;Ensuring our data stewardship is fit for purpose as our regulated footprint grows&lt;/li&gt;
-&lt;li&gt;By providing a lightweight service which delivers the necessary functionality in a cost-effective manner&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;For Everflow, Data Management is a critical enabler to our business goals.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Allows us to create a single view of the customer, their active contracts, and potential upsells&lt;/li&gt;
-&lt;li&gt;Enable us to analyse broker performance and see how different brokers do in other areas&lt;/li&gt;
-&lt;li&gt;Integrate new systems, products, customer records, quotes and billing as we expand and acquire.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This strategy outlines how to achieve this and gain short-term benefits incrementally. The outcomes align with the organisation's goals and explain how Data Management is necessary to deliver those goals.&lt;/p&gt;
-&lt;p&gt;The rest of this article will describe the project necessary to create such a hub and what types of tools will be required.&lt;/p&gt;
-&lt;h2 id="method"&gt;Method&lt;/h2&gt;
-&lt;p&gt;A Data Management project involves several stages. Not all are essential, but some have to come first.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*75EtrzKzZUb0nfPd8VT9qw.png" alt="10 Steps to a Successful MDM Project"&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Schedlbauer, M. (2019) Master Data Management, shipzero. &lt;a href="https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241"&gt;Medium&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="goal-define-business-outcomes"&gt;1. Goal - Define Business Outcomes&lt;/h2&gt;
-&lt;p&gt;An important step. Things only happen when there is a tangible goal for the business. Data Management drives two main types of value streams:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Data Management drives a short-term return on its investment by managing inconsistencies, improving analysis and reducing the effort to visualise and analyse data. It boosts responses to customers and partners.&lt;/li&gt;
-&lt;li&gt;A longer-term return is the capability to model and simulate how changes affect business performance. Data Management allows business modelling and testing, which can make analytics a strategic investment. It supports acquisition and integration by ensuring new systems adapt to existing data.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;It is vital to maintain both the vision (Analytics as a strategic enabler) and the short-term gains (we can show value in the short term by doing -something-) when explaining the importance of Data Management and a data strategy.&lt;/p&gt;
-&lt;h2 id="identification"&gt;2. Identification&lt;/h2&gt;
-&lt;h3 id="identify-core-business-data"&gt;Identify Core Business Data&lt;/h3&gt;
-&lt;p&gt;At the start of any project, identify the relevant business data for that project, not all the business data you may ever need, and certainly not all the data you have.&lt;/p&gt;
-&lt;p&gt;The following characteristics help identify Core Business Data:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;High Business Value&lt;/li&gt;
-&lt;li&gt;Low volatility&lt;/li&gt;
-&lt;li&gt;Complex&lt;/li&gt;
-&lt;li&gt;Reusable&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Core Business data is only the high-value, complex, reusable entities with low volatility, such as:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Customers
-&lt;ul&gt;
-&lt;li&gt;CustomerAccounts&lt;/li&gt;
-&lt;li&gt;CustomerSites&lt;/li&gt;
-&lt;li&gt;CustomerCredit&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Brokers
-&lt;ul&gt;
-&lt;li&gt;BrokerAgents&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Utilities
-&lt;ul&gt;
-&lt;li&gt;Products
-&lt;ul&gt;
-&lt;li&gt;Prices&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Contracts&lt;/li&gt;
-&lt;li&gt;Employee&lt;/li&gt;
-&lt;li&gt;Location&lt;/li&gt;
-&lt;li&gt;Vendor&lt;/li&gt;
-&lt;li&gt;Supplier&lt;/li&gt;
-&lt;li&gt;Invoice&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Critical data is not necessarily core business data. A Brokers training in a utility is vital for compliance, but only in that context. It is not widely reusable, so it wouldn't be considered Core Business Data.&lt;/p&gt;
-&lt;p&gt;Core Business Data does not, and should not, include transaction data. That stuff is too fast-moving to manage using this pattern. A data warehouse or an event stream is a better way to manage analytics for transactional data. It could link to the transactional view or the analytical aggregates of the transactions.&lt;/p&gt;
-&lt;p&gt;From a data warehouse point of view, Core Business Data fields are critical dimensions which change slowly, but not the facts about those dimensions.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/mdm-field-eval.png" alt="MDM Entity Analysis"&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Schedlbauer, M. (2019) Master Data Management, shipzero. &lt;a href="https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241"&gt;Medium&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Once we know what they are, we can understand and expose the proper entities and their fields from the right places.&lt;/p&gt;
-&lt;h3 id="identify-evaluate-data-sources"&gt;Identify &amp;amp; Evaluate Data Sources&lt;/h3&gt;
-&lt;p&gt;Where do we get this data from? Where was it created or first used? How can we trust that it is correct? These are all critical questions to ask on our journey. The next step is to identify where our Core Business Data comes from and whether that is a system of record.&lt;/p&gt;
-&lt;p&gt;Identifying the right place to collect different data items is crucial as it lets us integrate or populate data as soon as possible in the lifecycle. Having a clear lineage for each entity increases the ability to diagnose issues with data and ensures data is more accurate and trustworthy.&lt;/p&gt;
-&lt;p&gt;Following the data lifecycle in an organisation makes the process less invasive or disruptive. Which department/system gets to the entity first? For a new product, it is likely to be Product Management. Sales probably identify a Customer first. Using these 'natural' systems as the system of record and the source of information ensures the organisation captures data soon and remains current.&lt;/p&gt;
-&lt;p&gt;Evaluate whether these systems have available interfaces to export data, ideally, modern interfaces that drive events.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Customers comes from SalesForce via a REST API&lt;/li&gt;
-&lt;li&gt;Brokers comes from EVIE via a REST API&lt;/li&gt;
-&lt;li&gt;Water Data comes from Eclipse via a ...&lt;/li&gt;
-&lt;li&gt;Waste Data comes from WASTE via a ...&lt;/li&gt;
-&lt;li&gt;Bill information comes from AllOftheAbove via a ...&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If possible, having webhooks or an event model means we can quickly raise events when something changes, and each interested system can update its copy of any information.&lt;/p&gt;
-&lt;h2 id="analysis"&gt;3. Analysis&lt;/h2&gt;
-&lt;h3 id="metadata"&gt;Metadata&lt;/h3&gt;
-&lt;p&gt;Defining and managing metadata for a business would be an entire article or more on its own. Detailed data about your data, who created it, where they created it, when they made it and who last edited it can all add value to a business by increasing understanding of critical entities.&lt;/p&gt;
-&lt;p&gt;Different areas of the business have other processes and different names for things. Metadata requires analysis to check for consistency across systems. Different teams and systems likely use other terms or values for the same things. It's important to align these things to create a shared language for the organisation.&lt;/p&gt;
-&lt;p&gt;The easiest solution is to add all the different, relevant metadata to the Master Data entity so that other systems can access the metadata. Then train departmental leaders in the correct terms. To allow a colleague to understand who last worked with an entity, what happened to the entity and whether it is live or stale, Metadata should include Comments, Versions, Updates and Editors.&lt;/p&gt;
-&lt;p&gt;Consider what Core Business data Metadata is relevant outside of the source system. Sometimes, there is no actual use outside the source. If in doubt, leave it out!&lt;/p&gt;
-&lt;h3 id="data-lifecycles"&gt;Data Lifecycles&lt;/h3&gt;
-&lt;p&gt;Who:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Creates the data&lt;/li&gt;
-&lt;li&gt;Updates the data&lt;/li&gt;
-&lt;li&gt;Views the data&lt;/li&gt;
-&lt;li&gt;Deletes the data&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Define these items for each Core Data domain. These lifecycles define where something is created and edited. At different steps in the lifecycle, other systems are 'the' primary source, and this can vary over time.&lt;/p&gt;
-&lt;p&gt;A 'multi-master' model is too complex to maintain, so avoid it.&lt;/p&gt;
-&lt;h3 id="worked-examples"&gt;Worked examples&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;'Customer' is created in '[Broker System]' when 'Event' By 'Persona'&lt;/li&gt;
-&lt;li&gt;'Customer' is updated in 'Eclipse' when 'signed up' to 'Persona'&lt;/li&gt;
-&lt;li&gt;'Customer' is viewed in 'WASTE' when '...' by 'persona'&lt;/li&gt;
-&lt;li&gt;'Customer' is viewed in 'EVIE' when '...' by '...'&lt;/li&gt;
-&lt;li&gt;'Customer' is deleted in '...' when '...' by '...'&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="involvement-appoint-data-stewards"&gt;4. Involvement - Appoint Data Stewards&lt;/h2&gt;
-&lt;p&gt;Have two people for each 'domain' in the department who creates and uses that entity the most. The two people should be:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Business, from the department that makes or uses the core entity the most.&lt;/li&gt;
-&lt;li&gt;'Technical', which &lt;em&gt;could&lt;/em&gt; be from the data team if there's no one more local&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;They need a working relationship for regular changes/updates and can make local decisions if the impact is non-breaking or within budget.&lt;/p&gt;
-&lt;h2 id="infrastructure"&gt;5. Infrastructure&lt;/h2&gt;
-&lt;p&gt;Now we look at tools and capabilities and decide what we have, what we need and what we would like. Based on research into reference models, the following characteristics are essential to add to a company's data tooling:&lt;/p&gt;
-&lt;p&gt;Must-Haves&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Data Governance, such as lineage, catalogue and provenance.&lt;/li&gt;
-&lt;li&gt;Data Factories, which process and ingest data to operational services.&lt;/li&gt;
-&lt;li&gt;Data APIs, which support OpenAPI specifications and allow systems to communicate and interrogate each other&lt;/li&gt;
-&lt;li&gt;Data Marts; analytical 'shop-fronts' which store processed data for known use cases&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Nice-to-Haves&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Fast data flows. Process feeds of information close to real-time.&lt;/li&gt;
-&lt;li&gt;Discovery and Research areas. Places for data science to occur, allowing organisational learning.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="architecture"&gt;Architecture&lt;/h3&gt;
-&lt;p&gt;A reference architecture is a great guide to have. It shows you all the important points you could visit, but you don't have to visit any of them unless they solve a problem for your business.&lt;/p&gt;
-&lt;p&gt;Don't reinvent the wheel. Choose an architecture which is closest to your identified needs and adapt that.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow"&gt;How to Build a Data Architecture to drive innovation, McKinsey&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.tickingtrend.com/articles/building-a-data-hub#:%7E:text=Building%20a%20Data%20Hub%201%20Step%201%3A%20Define,Data%20Governance%20...%207%20Step%207%3A%20Data%20Analytics"&gt;Building a Data Hub, Ticking Trend&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.eckerson.com/articles/data-hubs-what-s-next-in-data-architecture"&gt;Data Hubs - What's Next in Data Architecture, Eckerson&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A data hub architecture separates the management of core business data from other concerns, such as analytics. As a collection of web services, it follows the principles and standards Everflow adheres to, including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Multi-cloud capable&lt;/li&gt;
-&lt;li&gt;Scalable&lt;/li&gt;
-&lt;li&gt;Proportionate&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A data hub also enables &lt;a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/what-is-data-mesh"&gt;data mesh&lt;/a&gt; or &lt;a href="https://techcommunity.microsoft.com/t5/data-architecture-blog/polyglot-persistence-with-azure-data-services/ba-p/1514912#:%7E:text=Polyglot%20Persistence%20is%20the%20concept%20of%20using%20different,support%20all%20possible%20data%20types%20and%20its%20usages."&gt;polyglot persistence&lt;/a&gt; implementation later.&lt;/p&gt;
-&lt;h3 id="data-model"&gt;Data Model&lt;/h3&gt;
-&lt;p&gt;Pick an understandable data model. Ideally, use a reference model rather than invent from scratch, but don't choose one that is too big or fancy. Extensibility is essential, as is the scale of the project.&lt;/p&gt;
-&lt;p&gt;Microsoft provides the following Common Data Model. While they interchange the term with the physical infrastructure underlying their Dynamics 265 platform, the model is valid and provides a cross-industry organisational data model.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/media/cdm-entities-v1.png#lightbox" alt="Common Data Model V1, Microsoft.com"&gt;&lt;/p&gt;
-&lt;p&gt;This overview of familiar entities can be a good reference model to help plan and consider the information required to keep business moving.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/common-industry-data-models"&gt;Common Data Model, Microsoft.com&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id="toolset"&gt;Toolset&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Microsoft uses the following overview of Azure services as a model for the types of tools needed.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/overview-architectures"&gt;Cloud Scale Analytics&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Review these as options to help feed organisational demand for data.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id="evaluate-plan-changes"&gt;Evaluate &amp;amp; Plan Changes&lt;/h3&gt;
-&lt;p&gt;How will you add these to the existing estate?&lt;/p&gt;
-&lt;h2 id="prototypes-and-testing"&gt;6. Prototypes and Testing&lt;/h2&gt;
-&lt;p&gt;By this, I mean testing the process of MDM as a business enabler. It must work, but it must add value. Work with the stewards to understand pains, shortcomings, or ways to add value.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Create a Hypothesis around how data will improve a process or add value.&lt;/li&gt;
-&lt;li&gt;Test it.&lt;/li&gt;
-&lt;li&gt;Keep it small and achievable, and deliver some results.&lt;/li&gt;
-&lt;li&gt;something-something&lt;/li&gt;
-&lt;li&gt;Grow in confidence.&lt;/li&gt;
-&lt;li&gt;Profit.&lt;/li&gt;
-&lt;li&gt;Repeat.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;'Something-something' would be a data project, which builds from your knowledge of the environment you work in and the technology landscape you have built so far. Business Data Management is a great place to start aligning your data across systems, but you can start anywhere.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;h2 id="maturity-model"&gt;Maturity Model&lt;/h2&gt;
-&lt;p&gt;One way to assess the capability of an organisation is by looking at a Maturity model. Here is an example from the Uk Government of a Data Maturity model aimed at UK Government departments, which encourages:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Documentation&lt;/li&gt;
-&lt;li&gt;Data to be Open within the government community&lt;/li&gt;
-&lt;li&gt;Secured and authenticated&lt;/li&gt;
-&lt;li&gt;Use of Open Standards&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These traits are desirable for most organisations, as integrating data easily across your enterprise is a strategic strength.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Documentation&lt;/li&gt;
-&lt;li&gt;APIs&lt;/li&gt;
-&lt;li&gt;OAuth&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There are three maturity levels used within the three areas above.&lt;/p&gt;
-&lt;h3 id="documentation"&gt;Documentation&lt;/h3&gt;
-&lt;p&gt;Documentation increases the collective knowledge of everyone that you work with. When it becomes the norm on your team to share information, you’ll benefit from increased transparency and a culture that’s more collaborative and strategic. Documentation encourages knowledge sharing, which empowers your team to understand how processes work and what finished projects typically look like.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Your systems are not documented&lt;/li&gt;
-&lt;li&gt;Your systems are all documented&lt;/li&gt;
-&lt;li&gt;Documentation is automated and self-updating&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id="apis"&gt;APIs&lt;/h3&gt;
-&lt;p&gt;APIs (Application Programming Interfaces) are important for businesses because they enable applications, devices, and data to share information, interact, and take on tasks together. APIs also create greater shared awareness and confidence in the data models and structure of the business. APIs can help businesses sell their products and services online or extend their applications by adding more codes. Effectively using APIs can reduce operational or technology costs by simplifying and accelerating development. APIs are also essential to building business intelligence because they provide access to your data, allowing others to build applications that you could never have foreseen.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Most of your systems do not support APIs&lt;/li&gt;
-&lt;li&gt;The majority of systems support APIs&lt;/li&gt;
-&lt;li&gt;APIs are published to a catalogue with documentation&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id="oauth"&gt;OAuth&lt;/h3&gt;
-&lt;p&gt;OAuth (short for “Open Authorization”) is an open standard for access delegation. It is commonly used as a way for internet users to grant websites or applications access to their information on other websites but without giving them the passwords. OAuth is an authorization framework that enables third-party applications to obtain limited access to an HTTP service, either on behalf of a resource owner by orchestrating an approval interaction between the resource owner and the HTTP service, or by allowing the third-party application to obtain access on its own behalf.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;The Open Authentication (OAuth) protocol is available for use.&lt;/li&gt;
-&lt;li&gt;OAuth is available to your partners and customers&lt;/li&gt;
-&lt;li&gt;OAuth is available to people who are external to the organisation&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Taken together these three areas give some context around how to measure the data maturity of different areas or applications within the business.&lt;/p&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;The article explains that Business Data Management is the process of organising and collating data to create and maintain a reliable data environment for business. It highlights the importance of understanding how information flows through an organisation and creating an authoritative model to keep every other system up to date. The article also talks about how well-understood, linked information can help improve customer experience and business success. Finally, it outlines the steps involved in a Data Management project which includes identifying Core Business Data, evaluating data sources and creating a data strategy that aligns with the organisation’s goals.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href="https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241"&gt;Schedlbauer, M. (2019). Master Data Management. Online.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/develop-your-data-and-apis-using-a-reference-architecture"&gt;Develop your data and APIs using a reference architecture GOV.UK.&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-		<summary>Business data management is the organisation of people, processes and technologies to create and maintain a reliable data environment for business.</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/nfrs</id>
-		<title>Non-functional Requirements</title>
-		<author>
-			<name>James Brewster</name>
-		</author>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/nfrs" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-06-06T00:00:00Z</updated>
-		<content>&lt;p&gt;Functional requirements describe why something is. Non-functional Requirements tell how it is. Where a customer may ask for a specific functional requirement, they are doubtful to ask for an NFR unless something is wrong.&lt;/p&gt;
-&lt;p&gt;The NFRs which go into a product can mean all manner of differences, which affect the cost, performance, and reliability of a product or solution.&lt;/p&gt;
-&lt;p&gt;Consider the following requirements and how they might affect the cost or development of a vehicle.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Carries two passengers&lt;/li&gt;
-&lt;li&gt;Can travel 200 miles&lt;/li&gt;
-&lt;li&gt;Travels on roads&lt;/li&gt;
-&lt;li&gt;A fuel efficiency greater than 30 miles per gallon.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Now, this could describe all manner of things. A motorbike? A tandem bicycle? A Sports car? These could all be right, but they meet the needs of different markets and result in differing products.&lt;/p&gt;
-&lt;p&gt;Defining how your product will perform specific tasks and how it will perform under load and in use is essential to create the proper differentiation and guidance for development.&lt;/p&gt;
-</content>
-		<summary>NFRs define the way a product functions in ways beyond the main requirements of the end customer. They explain how fast, robust or reliable something should be</summary>
-	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/architecture-practise</id>
 		<title>Overview of the Architecture Practice</title>
@@ -316,16 +15,16 @@ To support and not detract from our main value proposition by offering a lightwe
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/architecture-practise" />
 		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-06-06T00:00:00Z</updated>
-		<content>&lt;p&gt;Software and systems architects provide guidance and governance of a technology organisation by, amongst other things, modelling the organisation, its departments, capabilities, and processes and then mapping technology into them to ensure that the business has a somewhat optimised set environment, which can adapt to its needs and isn't onerous to look after.&lt;/p&gt;
-&lt;p&gt;Traditional approaches to this take time and go against the agile philosophy to avoid Big Up Front Design BUFD. How best to support developers in an agile world?&lt;/p&gt;
-&lt;p&gt;The common concept in an agile development organisation is 'Emergent Architecture.' But what does that mean? You follow a model more akin to evolution than planning and interfere if you see things dangerous to the organisation. You use history as a lesson, but accept what happened and don't try to remove it.&lt;/p&gt;
+		<content>&lt;p&gt;Software and systems architects provide guidance and governance of a technology organisation by modelling the organisation, its departments, capabilities, and processes and then mapping technology into them to ensure that the business has an optimised environment, which can adapt to its needs and isn't onerous to look after.&lt;/p&gt;
+&lt;p&gt;Traditional approaches to this take time and go against the agile philosophy to avoid Big Up Front Design (BUFD). How best to support developers in an agile world?&lt;/p&gt;
+&lt;p&gt;The common concept in an agile development organisation is 'Emergent Architecture.' But what does that mean? You follow a model more akin to evolution than planning and interfere if you see things dangerous to the organisation. You use history as a lesson but accept what has happened and accept that, as people, we can never attain perfection.&lt;/p&gt;
 &lt;h2 id="in-theory"&gt;In theory&lt;/h2&gt;
 &lt;p&gt;As development teams self-organize, the architecture role is to support decision-making and ensure good decisions thrive while poor choices don't.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/architecture-process-bpmn.png" alt="Architecture Process - BPMN"&gt;&lt;/p&gt;
-&lt;p&gt;This concept's core work item is the ADR or Architectural Decision Record.&lt;/p&gt;
-&lt;p&gt;When a team has to decide something, they create a work item in Azure DevOps (other work trackers are available). This item can outline the problem in short:&lt;/p&gt;
+&lt;p&gt;This concept uses the ADR or Architectural Decision Record for teams to record and track key decisions and context.&lt;/p&gt;
+&lt;p&gt;When a team has to decide something, they create a work item in Jira/Git/DevOps (other work trackers are available). This item can outline the problem in short:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;To support US12345, we need to host semi-structured data, which will be used to render a quote on screen.&lt;/p&gt;
+&lt;p&gt;To support US12345, we need to host semi-structured data, which will be used to render a dynamic quote on screen.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Whenever the team decides how development will proceed, they write it down in their work system. ADRs are covered in more detail &lt;a href="xref:architecture-decision-records"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -337,10 +36,10 @@ To support and not detract from our main value proposition by offering a lightwe
 &lt;p&gt;To Acheive US12345, hosting and retreiving semi-structured quote data.&lt;/p&gt;
 &lt;p&gt;Accepting that there is a cost requirement in using Cosmos DB hosting&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;The architecture team review and steer ADRs. ADRs are like the tweet format of designs; they encompass small decisions and choices with just enough context and reasoning to explain to a new starter why something happened. A significant benefit is that they can all be queried and exported and used to describe the project thinking over time and why the team made confident choices. The ADR list acts as a log, which someone could examine to trace the project's decisions.&lt;/p&gt;
+&lt;p&gt;The architecture team review and steer ADRs. ADRs are like the tweet format of designs; they encompass small decisions and choices with just enough context and reasoning to explain to a new starter why something happened. A significant benefit is that they can all be queried and exported and used to describe the project's thinking over time and why the team made confident choices. The ADR list acts as a log, which someone could examine to trace the project's decisions.&lt;/p&gt;
 &lt;p&gt;The architecture practice reviews the ADRs and looks for trends and patterns. As certain things come to the fore, the architects write new principles, &lt;a href="xref:patterns"&gt;patterns&lt;/a&gt;, and &lt;a href="xref:nfrs"&gt;NFRs&lt;/a&gt; approved by the ARB to help the teams make future decisions.&lt;/p&gt;
 &lt;p&gt;The architect group will propose amendments to the organisation's architecture to the ARB, which may require approval, depending on the size and scope of the new principles.&lt;/p&gt;
-&lt;p&gt;Changes in architecture guidance are applied retrospectively but may result in the creation of new technical debt items. Similar to how the law or regulation works.&lt;/p&gt;
+&lt;p&gt;Changes in architecture guidance can be applied retrospectively which may result in the creation of new technical debt items. Or we can call an amnesty and accept that something could've been better. Similar to how the law or regulations work.&lt;/p&gt;
 &lt;h2 id="in-practice"&gt;In Practice&lt;/h2&gt;
 &lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/architecture-process-sequence-diagram.png" alt="Architecture Process - Sequence"&gt;&lt;/p&gt;
 &lt;p&gt;It is up to the development team to decide how to solve problems based on the environment. The environment includes:&lt;/p&gt;
@@ -359,7 +58,7 @@ To support and not detract from our main value proposition by offering a lightwe
 &lt;p&gt;Using a feedback loop from the teams' decisions and accepting that these won't all be good, we can adjust the team's behaviour through education, exposure, and experience.&lt;/p&gt;
 &lt;h3 id="how-not-to-make-decisions"&gt;How not to make decisions&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Ignore existing ADRs relating to the subject (Search in DevOps for ADRs or the tech or problem).&lt;/li&gt;
+&lt;li&gt;Ignore existing ADRs relating to the subject (Search in the work tracker for ADRs, the tech or similar problems ).&lt;/li&gt;
 &lt;li&gt;Do not look at the existing guidance:
 &lt;ul&gt;
 &lt;li&gt;Principles&lt;/li&gt;
@@ -407,44 +106,41 @@ To support and not detract from our main value proposition by offering a lightwe
 		<summary>How Architects should work alongside Agile development to enable faster decision-making and reduce risk.</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architectural-decision-records/use-mongodb-on-cloud</id>
-		<title>Use Mongo DB for document database and host on Azure PaaS.</title>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/nfrs</id>
+		<title>Non-functional Requirements</title>
 		<author>
 			<name>James Brewster</name>
 		</author>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architectural-decision-records/use-mongodb-on-cloud" />
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/nfrs" />
 		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-06-05T00:00:00Z</updated>
-		<content>&lt;p&gt;In the context of Document Databases for application containers,&lt;/p&gt;
-&lt;p&gt;Facing the need to host semi-structured data close to the service.&lt;/p&gt;
-&lt;p&gt;We decided to use Mongo DB interfaces on Azure Cosmos DB service&lt;/p&gt;
-&lt;p&gt;And against using a Cosmos DB interface or a native Mongo DB container.&lt;/p&gt;
-&lt;p&gt;To simplify hosting the DB and to keep the database cloud agnostic&lt;/p&gt;
-&lt;p&gt;Accepting that there is some cross-service latency between the container and the Cosmos Service on Azure.&lt;/p&gt;
-&lt;p&gt;Because Microsoft is deprecating the native Azure Cosmos Interface.&lt;/p&gt;
-&lt;p&gt;Discussed with James Brewster, Peter Wilson, Jamie Milligan and Simon King.&lt;/p&gt;
+		<updated>2023-06-06T00:00:00Z</updated>
+		<content>&lt;p&gt;Functional requirements describe why something is. Non-functional Requirements tell how it is. Where a customer may ask for a specific functional requirement, they are doubtful to ask for an NFR unless something is wrong.&lt;/p&gt;
+&lt;p&gt;The NFRs which go into a product can mean all manner of differences, which affect the cost, performance, and reliability of a product or solution.&lt;/p&gt;
+&lt;p&gt;Consider the following requirements and how they might affect the cost or development of a vehicle.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Carries two passengers&lt;/li&gt;
+&lt;li&gt;Can travel 200 miles&lt;/li&gt;
+&lt;li&gt;Travels on roads&lt;/li&gt;
+&lt;li&gt;A fuel efficiency greater than 30 miles per gallon.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now, this could describe all manner of things. A motorbike? A tandem bicycle? A Sports car? These could all be right, but they meet the needs of different markets and result in differing products.&lt;/p&gt;
+&lt;p&gt;Defining how your product will perform specific tasks and how it will perform under load and in use is essential to create the proper differentiation and guidance for development.&lt;/p&gt;
 </content>
-		<summary>&lt;p&gt;In the context of Document Databases for application containers,&lt;/p&gt;</summary>
+		<summary>NFRs define the way a product functions in ways beyond the main requirements of the end customer. They explain how fast, robust or reliable something should be</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architectural-decision-records/broker-training</id>
-		<title>Broker Training as a simple log of Acceptance (ADR)</title>
-		<author>
-			<name>James Brewster</name>
-		</author>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architectural-decision-records/broker-training" />
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/e2e-agile-architecture-story</id>
+		<title>Agile Architecture - A short story</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/e2e-agile-architecture-story" />
 		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-06-02T00:00:00Z</updated>
-		<content>&lt;p&gt;In the context of Broker Training,&lt;/p&gt;
-&lt;p&gt;Facing the need to train brokers to sell utility services by the law.&lt;/p&gt;
-&lt;p&gt;We decided on a broker training log, which will confirm acceptance and record the date&lt;/p&gt;
-&lt;p&gt;And against an eSignature or an immutable ledger.&lt;/p&gt;
-&lt;p&gt;To achieve proof of training before using the system&lt;/p&gt;
-&lt;p&gt;Accepting that we will remain liable for any regulatory issues caused by the broker or their agents.&lt;/p&gt;
-&lt;p&gt;Because, at this time, the risk of litigation or regulatory action is deemed low enough that we can make the quickest decision&lt;/p&gt;
-&lt;p&gt;Discussed with James Brewster, Peter Wilson and Jade Rawlings.&lt;/p&gt;
+		<updated>2023-06-01T00:00:00Z</updated>
+		<content>&lt;p&gt;The team worked on a new business application allowing customers to order products online and track their delivery status. The application needed to integrate with several external systems, such as inventory management, payment processing, and shipping providers. The team had to decide how to design the integration layer and what technologies to use.&lt;/p&gt;
+&lt;p&gt;They decided to use Azure Logic Apps as the integration platform because it offered a low-code solution to handle complex workflows and orchestration. They also decided to use Azure Service Bus as the messaging system because it provided reliable and scalable communication between the application and the external systems. They documented their decision in an ADR document that followed the template from the current web page context. They explained their decision's context, alternatives, consequences, and status. They submitted the ADR document as a pull request to the repository where they stored all their ADRs.&lt;/p&gt;
+&lt;p&gt;The next day, the architect responsible for reviewing the ADRs saw their pull request and opened it. He read their document and was impressed by their reasoning and clarity. He agreed with their decision and approved the pull request. He also noticed that their decision aligned with a new architectural principle he had been thinking about for a while, &amp;quot;Use cloud-native services whenever possible to reduce complexity and increase agility&amp;quot;. He wrote an ADR document proposing this principle as a guideline for future decisions. He followed the same template and explained his proposal's context, decision, alternatives, consequences, and status. He submitted his document as a pull request to the repository where they stored all their architectural principles.&lt;/p&gt;
+&lt;p&gt;The following week, the architectural review board met to discuss the new architectural principle. The board comprised five executives from different departments: product management, engineering, operations, security, and finance. They reviewed the document and asked questions of the architect. They debated the pros and cons of adopting cloud-native services versus building or buying custom solutions. They considered the principle's impact on cost, performance, reliability, security, and innovation. After a lively discussion, they reached a consensus and approved the principle. The architect merged the pull request and added the principle to their list of architectural principles.&lt;/p&gt;
+&lt;p&gt;The team were happy to see the new architectural principle validated by the architect and the board. They continued to work on their application using Azure Logic Apps and Azure Service Bus. They also looked for other opportunities to apply cloud-native services in their design. They felt more confident and empowered by having clear and consistent architectural guidance.&lt;/p&gt;
 </content>
-		<summary>&lt;p&gt;In the context of Broker Training,&lt;/p&gt;</summary>
+		<summary>How does Agile architecture work in practice? This story provides a demonstration.</summary>
 	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/architecture-decision-records</id>
@@ -470,7 +166,7 @@ To support and not detract from our main value proposition by offering a lightwe
 &lt;li&gt;Review the ADRs periodically and update them if necessary. If an ADR becomes obsolete or superseded by another decision, change its status accordingly and link to the new ADR.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This process can help you record your architectural and technical decisions for further reference and have the new team members up to date from day one.&lt;/p&gt;
-&lt;p&gt;A centralised Architecture team can review any ADRs made and either look to amend any of the Architecture Artefacts in response. It may be that several decisions cause a change in precedence, which requires adjusting principles or technology guidelines.&lt;/p&gt;
+&lt;p&gt;A centralised Architecture team can review any ADRs made and look to amend any of the architectural artefacts in response. It may be that several decisions cause a change in precedence, which requires adjusting principles or technology guidelines.&lt;/p&gt;
 &lt;p&gt;Remember, the aim of an architecture practice is to:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Simplify&lt;/li&gt;
@@ -479,18 +175,18 @@ To support and not detract from our main value proposition by offering a lightwe
 &lt;/ol&gt;
 &lt;p&gt;To that end, the architecture needs to review and adapt to ensure it doesn't become stale.&lt;/p&gt;
 &lt;h2 id="providing-short-contextual-decisions"&gt;Providing short, contextual decisions&lt;/h2&gt;
-&lt;p&gt;Using a sustainable format is essential to keep decisions documentation light and relevant. Here are some examples:&lt;/p&gt;
+&lt;p&gt;Using a sustainable format is essential to keep decision documentation light and relevant. Here are some examples:&lt;/p&gt;
 &lt;h3 id="y-statements"&gt;Y-Statements&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://medium.com/olzzio/y-statements-10eb07b5a177"&gt;(Wh)Y statements&lt;/a&gt;
 (Borrowed from Olaf Zimmerman, an Architect at IBM.)&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;h4 id="worked-example"&gt;Worked Example&lt;/h4&gt;
-&lt;p&gt;&lt;em&gt;In the context&lt;/em&gt; of the business multi utility quoting tool,&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Facing the need to&lt;/em&gt; provide accurate and competitive quotes for gas, electricity and water services,&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;We decided for&lt;/em&gt; the Multi Utility Service Provider (MUSP) pattern.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;And against&lt;/em&gt; Single Utility Service Provider (SUSP) or Multiple Utility Service Providers (MUSPs).&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;To achieve&lt;/em&gt; cost savings, convenience and efficiency for our customers,
-&lt;em&gt;Accepting that&lt;/em&gt; a MUSP requires more integration and coordination with different utility suppliers.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;In the context&lt;/em&gt; of the ,&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Facing the need to&lt;/em&gt; ,&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We decided for&lt;/em&gt;  pattern.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;And against&lt;/em&gt; .&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;To achieve&lt;/em&gt; ,
+&lt;em&gt;Accepting that&lt;/em&gt; .&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;The format of a Y-Statement creates six phrases in three sections:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -550,20 +246,6 @@ For a more significant decision, it may be helpful to produce an Options assessm
 &lt;/ul&gt;
 </content>
 		<summary>No one reads extensive documents. ADRs are a way to capture meaningful choices so people can find them in future.</summary>
-	</entry>
-	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/e2e-agile-architecture-story</id>
-		<title>Agile Architecture - A short story</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/e2e-agile-architecture-story" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-06-01T00:00:00Z</updated>
-		<content>&lt;p&gt;The team worked on a new business application allowing customers to order products online and track their delivery status. The application needed to integrate with several external systems, such as inventory management, payment processing, and shipping providers. The team had to decide how to design the integration layer and what technologies to use.&lt;/p&gt;
-&lt;p&gt;They decided to use Azure Logic Apps as the integration platform because it offered a low-code solution to handle complex workflows and orchestration. They also decided to use Azure Service Bus as the messaging system because it provided reliable and scalable communication between the application and the external systems. They documented their decision in an ADR document that followed the template from the current web page context. They explained their decision's context, alternatives, consequences, and status. They submitted the ADR document as a pull request to the repository where they stored all their ADRs.&lt;/p&gt;
-&lt;p&gt;The next day, the architect responsible for reviewing the ADRs saw their pull request and opened it. He read their document and was impressed by their reasoning and clarity. He agreed with their decision and approved the pull request. He also noticed that their decision aligned with a new architectural principle he had been thinking about for a while, &amp;quot;Use cloud-native services whenever possible to reduce complexity and increase agility&amp;quot;. He wrote an ADR document proposing this principle as a guideline for future decisions. He followed the same template and explained his proposal's context, decision, alternatives, consequences, and status. He submitted his document as a pull request to the repository where they stored all their architectural principles.&lt;/p&gt;
-&lt;p&gt;The following week, the architectural review board met to discuss the new architectural principle. The board comprised five executives from different departments: product management, engineering, operations, security, and finance. They reviewed the document and asked questions of the architect. They debated the pros and cons of adopting cloud-native services versus building or buying custom solutions. They considered the principle's impact on cost, performance, reliability, security, and innovation. After a lively discussion, they reached a consensus and approved the principle. The architect merged the pull request and added the principle to their list of architectural principles.&lt;/p&gt;
-&lt;p&gt;The team were happy to see the new architectural principle validated by the architect and the board. They continued to work on their application using Azure Logic Apps and Azure Service Bus. They also looked for other opportunities to apply cloud-native services in their design. They felt more confident and empowered by having clear and consistent architectural guidance.&lt;/p&gt;
-</content>
-		<summary>How does Agile architecture work in practice? This story provides a demonstration.</summary>
 	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/the-agile-arb</id>
@@ -628,7 +310,7 @@ For a more significant decision, it may be helpful to produce an Options assessm
 &lt;ul&gt;
 &lt;li&gt;The ARB Meets Monthly and in response to nominated events (PI Planning, annual review, etc.)&lt;/li&gt;
 &lt;li&gt;There is a Chairperson who will run and take the lead on ensuring the meeting runs as expected. Ideally, this is the sponsor, but it could be delegated or rotated.&lt;/li&gt;
-&lt;li&gt;There is a nominated secretary who takes minutes and actions. Rotate the role, or bring someone in who needs more exposure to the ARB and strategic decision-making. It should be someone capable who will do a good job.&lt;/li&gt;
+&lt;li&gt;There is a nominated secretary who takes minutes and actions. Rotate the role, or bring someone in who needs more exposure to the ARB and strategic decision-making.&lt;/li&gt;
 &lt;li&gt;Start by reviewing previous minutes and actions.&lt;/li&gt;
 &lt;li&gt;Review any proposals or actions. Any issues should have been relayed with enough notice so that members could review what they have to before the meeting and come up with questions or requests.&lt;/li&gt;
 &lt;li&gt;Most decisions should be able to be approved within the meeting. Deferring too many approvals is terrible.&lt;/li&gt;
@@ -656,131 +338,201 @@ For a more significant decision, it may be helpful to produce an Options assessm
 		<summary>A coherent ARB can help organisations plan and normalise technology decisions. It can also create a situation where nothing happens, and work goes to die.</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/technical-debt-framework</id>
-		<title>Technical Debt Framework</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/technical-debt-framework" />
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns/2023-05-26-identity-auth</id>
+		<title>Identity, Authentication and Authorisation</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns/2023-05-26-identity-auth" />
 		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-05-23T00:00:00Z</updated>
-		<content>&lt;blockquote&gt;
-&lt;h2 id="tldr"&gt;TL;DR&lt;/h2&gt;
-&lt;p&gt;Technical debt is a hidden bleed on cost, productivity and morale. You can address it by accepting it exists, socialising the subject and putting in place ways to address it without blame.&lt;/p&gt;
-&lt;p&gt;There are three main forms, process, people or technology. These relate to what you have neglected to maintain. They are best addressed as an accepted part of life, rather than with any major effort.&lt;/p&gt;
-&lt;p&gt;Leave space in your team's workflow to accommodate and address these issues and rather than being a debt which is compounding liability against your business, it will become a compounding investment, which pays for itself over time.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;We have all been there. There's an urgent problem. There's software that should resolve it and make everything great.&lt;/p&gt;
-&lt;p&gt;So we get it. And install it, and then someone doesn't quite finish installing it. And something doesn't work correctly. Or someone leaves, and now no one knows how to fix that one thing, and everyone spends time working around it.&lt;/p&gt;
-&lt;p&gt;And we have to upgrade it every few months in some complicated ritual. And the renewals seem to get more expensive and complex every year.&lt;/p&gt;
-&lt;p&gt;This is technical debt. It's the well-meant shortcut we took to speed something up. And now, it's unmanaged and not being repaid. The business is paying 'interest' on it. And like a lot of credit, the interest can be destructive.&lt;/p&gt;
-&lt;h2 id="symptoms"&gt;Symptoms&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;You probably have technical debt if technology or process decisions require meetings to work around or make decisions.&lt;/li&gt;
-&lt;li&gt;If changes take a long time to make, and as such, decisions to make changes take a long time as well, you probably have technical debt.&lt;/li&gt;
-&lt;li&gt;If simple changes or expectable business requirements take a long time to be delivered, you probably have technical debt.&lt;/li&gt;
-&lt;li&gt;If your developers estimate too low and deliver too late, you probably have technical debt.&lt;/li&gt;
-&lt;li&gt;If you use technology in your business, you probably have technical debt.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="the-scale-of-the-issue"&gt;The scale of the issue&lt;/h2&gt;
-&lt;p&gt;In a 2020 survey, McKinsey asked a group of CIOs on a panel what percentage of their budget was diverted to managing tech debt, and they responded that 10-20% was typical.&lt;/p&gt;
-&lt;p&gt;More worrying was the statistic that CIOs felt the value of the technical assets was made up of 20-40% tech debt before depreciation.&lt;/p&gt;
-&lt;p&gt;More recently, a repeat of this study found that 60% of CIOs felt their organisation's tech debt had perceptibly increased over the past three years.&lt;/p&gt;
-&lt;p&gt;On a more positive note, the same whitepaper quoted a former CIO at a major cloud provider:&lt;/p&gt;
+		<updated>2023-05-16T00:00:00Z</updated>
+		<content>&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
+&lt;p&gt;This pattern describes a central authentication model suitable for a microservices web application. It builds on several other designs to provide a scalable way to identify, authenticate and authorise access to resources, data and services.&lt;/p&gt;
+&lt;p&gt;This example uses a role-based authorisation model. A policy-based authorisation model would be more flexible but also more complex.&lt;/p&gt;
+&lt;h3 id="illustration"&gt;Illustration&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/media/index/api-gateway-centralized-authentication.png" alt="API Gateway Centralized authentication" /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;quot;By reinventing our debt management, we went from 75 percent of engineer time paying the [tech debt] ‘tax’ to 25 percent. It allowed us to be who we are today.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/"&gt;Rousos (2023) Securing .NET Microservices and Web Applications, learn.microsoft.com.&lt;/a&gt;(Accessed: 16 May 2023).‌&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id="background"&gt;Background&lt;/h2&gt;
-&lt;p&gt;At WyCash in 1992, Ward Cunningham used the term Technical debt to explain to management why iterative software development was a better choice:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite… The danger occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as interest on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation, object-oriented or otherwise. — Ward Cunningham, The WyCash Portfolio Management System, 1992&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Ward Cunningham was also one of the authors of the Agile Manifesto in 2008.&lt;/p&gt;
-&lt;p&gt;The analogy keeps going. Not paying technical debt, like credit cards, can swiftly compound the interest. Conversely, paying down technical debt early by refactoring in advance to improve quality is like saving. That can also compound, enhancing the agility of your software and increasing its value and productivity over time quite drastically.&lt;/p&gt;
-&lt;p&gt;Martin Fowler, noted author and software architect, had this to say:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;In the book, I make the following definition of “refactoring”&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;noun&lt;/em&gt;: a change made to the internal structure of software to make it easier to understand and cheaper to modify without changing its observable behavior&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;verb&lt;/em&gt;: to restructure software by applying a series of refactorings without changing its observable behavior. -Martin Fowler, refactoring.com&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;So, if you push features too quickly and do not give your development teams time to refactor, reassess and improve the systems you rely on, it will get more expensive to work on. Over time, these systems become less of an asset and more of a liability.&lt;/p&gt;
-&lt;h2 id="types-and-causes"&gt;Types and causes&lt;/h2&gt;
-&lt;p&gt;None of this is done deliberately. Market conditions, business needs, and markets all change. The assumption that machines will survive that change without proactive maintenance is disproven. So why do we not treat &amp;quot;software machines&amp;quot; or the business systems that use them with the same care?&lt;/p&gt;
-&lt;p&gt;The primary cause is an over-focus on the immediate, without concern for the future. Short-sighted needs, month-end targets, and shareholder dividends all drive short-term thinking. &amp;quot;We'll fix it tomorrow&amp;quot; doesn't work if you don't care about tomorrow.&lt;/p&gt;
-&lt;p&gt;Technical debt can be easily thought of in three types:&lt;/p&gt;
+&lt;p&gt;This example is for a mobile app. A similar method would work for a static site, calling an API, a Single Page Application, or an MVC application. Use the &lt;a href="https://akfpartners.com/growth-blog/backend-for-frontend#:%7E:text=In%20the%20Backend%20for%20Frontend%20pattern%2C%20a%20service,differ%20from%20a%20traditional%20API%20or%20monolithic%20gateway."&gt;Backends-For-Frontends&lt;/a&gt; pattern to offset any differences.&lt;/p&gt;
+&lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Process debt. The lack of appropriate or correct frameworks to operate modern systems in modern ways.&lt;/li&gt;
-&lt;li&gt;People debt. The lack of skills, knowledge and training for people to properly engage in current technologies and processes.&lt;/li&gt;
-&lt;li&gt;Technical debt. Unmaintained systems and software, where the cost to maintain or update is increased and keeps increasing.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Whilst most people will recognise the third, I suspect a lot ignore or don't consider the first two. I would argue the first is the most worry-some. Process debt leads shows up in phrases like 'That's not how we do that' and frustrations with 'the way things are'. It makes people feel disempowered. Being unable to make things better makes people feel helpless.&lt;/p&gt;
-&lt;p&gt;Everyone acknowledges that education is good, but employees want to feel cared about and invested in. Ensuring that training happens is important for employee engagement, as well as productivity. It means they know how to use the systems the business invests in, as well as care about the way the business works.&lt;/p&gt;
-&lt;h2 id="framework-for-managing-technical-debt"&gt;Framework for Managing Technical Debt&lt;/h2&gt;
-&lt;p&gt;Technical debt management boils down to one point. You have to pay it back. It will not go away. Factor it into daily work. If it's low, use the time to pay it forward (invest) rather than focus on the next shiny new thing.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The author would recommend giving it up to a 25% share of the work budget to team led 'improvement', which includes tech debt. It may be that this flexes up and down a bit, but 20-25% in the long term will keep your software improving.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;The goal is not to remove tech debt entirely but to keep it at a workable level.&lt;/p&gt;
-&lt;p&gt;Companies need to identify and track tech debt to ensure it can be managed to the best advantage.&lt;/p&gt;
-&lt;p&gt;Tech debt should be dealt with strategically. These principles, based on work from McKinsey, may help:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Start with a shared definition of tech debt. Executive and senior management need to have the same understanding of what constitutes tech debt; Process, people and technology, which need upgrading.&lt;/li&gt;
-&lt;li&gt;Treat tech debt as 'waste in the P&amp;amp;L' of the business. Leaders should acknowledge the capital and opportunity cost of this and have access to information and metrics to track it.&lt;/li&gt;
-&lt;li&gt;Make sure the total cost of the application, its development, cost to serve, and debt are tracked. It should cover 100% of the resources necessary. If that changes how you account, then change how you account. (See 'process debt' above)&lt;/li&gt;
-&lt;li&gt;Have an agreed process which doesn't penalise teams or people for addressing tech debt. Ensure that incentives encourage the correct behaviour and that managing tech debt is treated positively. Don't blame people for it either; someone made that decision with good intentions.&lt;/li&gt;
-&lt;li&gt;Have teams Create items in the product backlog with value, cost, etc., attached. Prioritise a percentage of them in every sprint to make sure tech debt is understood and visible. Treat them as features, just like others and value them. They weren't written up for the fun of it.&lt;/li&gt;
-&lt;li&gt;Don't paralyse or immobilise a business to pay tech debt. It rarely works and isn't sustainable. It encourages people to think someone will stop everything to fix things. Instead, set down time and resources in daily work to address debt consistently, proactively or reactively, depending on the team and the workload.&lt;/li&gt;
-&lt;li&gt;When all else fails, if a product or value stream is 'bankrupt' and can't service its debts (i.e. its 'interest' is &amp;gt;50% or so), then explore the option to replace the whole stack. It's drastic but could be a lower-risk option and save the product/service.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id="identifying-technical-debt"&gt;Identifying Technical Debt&lt;/h3&gt;
-&lt;p&gt;Sticking to a financial analogy, you can think of tech debt as having two components, just like any other debt:&lt;/p&gt;
+&lt;li&gt;By using the gateway, authentication is offloaded to the gateway and centralised, see &lt;a href="xref:gateways"&gt;Gateways&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The gateway issues a signed token containing the authorised user's roles, which can be used for the token's lifespan, reducing chatter, see &lt;a href="xref:microservices-anti-patterns"&gt;Microservices Anti-patterns&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The token is long-lived, reducing user frustration. See &lt;a href="xref:ease-of-use"&gt;Ease-of-Use&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Once implemented, downstream services have their role added to the token and respect it.&lt;/li&gt;
+&lt;li&gt;Identity management and storage can be offloaded to the customer's preferred vendor using open standards, Including:
 &lt;ul&gt;
-&lt;li&gt;The principal. This is the real work required to bring the stack, including processes and people, up to date.
-The interest. is the complexity tax every single project pays. The spike works to understand how to change or use a commodity technology. The debug work to figure out how version x.x varies from x.y. This is the interest, and it's paid in productivity.
-McKinsey also says that most organisations are paying way more than 10% interest on this debt, as it causes a significant drag on their projects and resources.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://www.mckinsey.com/%7E/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/tech%20debt%20reclaiming%20tech%20equity/svg-tech-debt-exhibit-2.svgz?cq=50&amp;amp;cpy=Center" alt="Tech Debt Principle and Interest" /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Principal and interest create a strong drag on enterprise value. &lt;a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-debt-reclaiming-tech-equity"&gt;Tech debt: Reclaiming tech equity | McKinsey (2020) www.mckinsey.com.&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id="tracking-technical-debt"&gt;Tracking Technical Debt&lt;/h3&gt;
-&lt;p&gt;Tech debt should be tracked by the team/group as a critical metric. You may have to find a way to expose or count the cost of this debt, which isn't always easy. Some areas you can track:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Software Development
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://linearb.io/blog/what-is-code-complexity/"&gt;Complexity&lt;/a&gt; - Various code complexity metrics can be tracked and monitored on each project to understand where the complexity lies and help identify areas which need work.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://dzone.com/articles/8-top-metrics-for-measuring-your-technical-debt"&gt;New Bugs vs Closed Bugs&lt;/a&gt; - Are your bugs growing or falling?&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://linearb.io/blog/how-to-measure-technical-debt/#:%7E:text=Measuring%20Technical%20Debt%3A%20Identify%20High-Risk%20Areas%201%20Keep,Risk%20and%20Add%20Importance%20to%20the%20Mix%20"&gt;Testing Effort&lt;/a&gt; - An easy approximation is to look at test coverage. Test coverage isn't a golden bullet by any means; whilst a low value is a warning, a high volume doesn't mean the tests are good; coverage can show how well-understood a code base is. As such, have a threshold, such as 80%, as a target.&lt;/li&gt;
+&lt;li&gt;Microsoft, Google or Facebook identities, such as Microsoft AzureAD B2C&lt;/li&gt;
+&lt;li&gt;Microsoft Azure AD identities, using B2B Federation&lt;/li&gt;
+&lt;li&gt;Any OpenID Connect or OAuth2.0 Identities.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Infrastructure - Track the cost to service and host the application. Compare the current choice with the preferred pattern for hosting the application.&lt;/li&gt;
-&lt;li&gt;Architectural - Does the application follow the organisation's standards and recommendations? Does it follow the vendor's deployment guidance? If it is non-standard, then it will be more expensive/riskier to host and fix. It may cause complexity to host and manage.&lt;/li&gt;
-&lt;li&gt;Training - Do you need to hire people for every new technology? Are your team unable to spend time looking at potentially valuable new tools and technologies?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;If you mix these with importance and risk, you can approximate the 'value' and start to create a backlog of tech debt.&lt;/p&gt;
-&lt;h3 id="managing-technical-debt"&gt;Managing Technical Debt&lt;/h3&gt;
+&lt;h2 id="drawbacks-to-this-pattern"&gt;Drawbacks to this pattern&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Have your teams identify tech debt and create features in their existing backlogs for tech debt. Tag them with 'Tech-debt', so they can be reported on and analysed.
+&lt;li&gt;It assumes simple role-based authorisation. A more complex policy-based model would require additional depth and complexity in the token, increasing its size and complexity.&lt;/li&gt;
+&lt;li&gt;The token is easy to hack, so don't use it outside the network. A separate reference token model is recommended, where the token is used within the cluster and used by the gateway as a delegated authorisation.
 &lt;ul&gt;
-&lt;li&gt;Do not create a separate backlog. This will slow things down. One team, one backlog.&lt;/li&gt;
+&lt;li&gt;The user would have a lean token or reference cookie, which only correlates to the token on the gateway. Think of this model as a delegation rather than an authorisation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Track each feature with risk and importance. This includes tech debt. During sprint planning, pull tech debt items into the backlog to fill up the first 25%. Feel free to move some out to make way for important features, but prioritise debt over 'Should' or 'Could' features.
+&lt;li&gt;This pattern creates a dependency on external identity vendors, which can be hard to manage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Remember, each debt you deal with gives you more bandwidth tomorrow. The compound interest of tech debt payoff can be huge.&lt;/li&gt;
+&lt;li&gt;In most enterprise or B2B microservice models, this pattern will be beneficial. It is ideal for a containerised application, which needs to minimise cross-talk and have a planned model for authorisation and identity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;This pattern is not suitable for use on unsecured networks. A malicious actor can use the token's contents to understand the user and their roles.
+&lt;ul&gt;
+&lt;li&gt;This pattern still promotes zero-trust, as every service will validate the token and must trust the issuer and check for tampering.&lt;/li&gt;
+&lt;li&gt;You can work around this limitation by using a reference token issued to the external user at the gateway, which does NOT contain identifiable information.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Make sure your product managers understand the value of this work and support it. They need to be able to prioritise tech debt and understand what that budget is doing and where it is going.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Technical debt is a shortcut that was made to speed something up. It’s a lack of appropriate or correct frameworks to operate modern systems in modern ways. It’s the lack of skills, knowledge and training for people to properly engage in current technologies and processes. It’s unmaintained systems and software, where the cost to maintain or update is increased and keeps increasing.&lt;/p&gt;
-&lt;p&gt;Every business has these.&lt;/p&gt;
-&lt;p&gt;Technical debt management boils down to one point. Pay it back. The goal is not to remove tech debt but to keep it at a workable level. Companies need to identify and track tech debt to ensure it can be managed to the best advantage.&lt;/p&gt;
 &lt;h2 id="references"&gt;References&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-debt-reclaiming-tech-equity"&gt;Tech debt: Reclaiming tech equity | McKinsey (2020) www.mckinsey.com&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://linearb.io/blog/how-to-measure-technical-debt/#:%7E:text=Measuring%20Technical%20Debt%3A%20Identify%20High-Risk%20Areas%201%20Keep"&gt;How to Measure Technical Debt Before You Start Tackling It | LinearB (2022) linearb.io&lt;/a&gt; (Accessed: 16 May 2023).&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://blog.visionarycto.com/p/my-20-year-career-is-technical-debt"&gt;My 20-year career is technical debt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://nordicapis.com/how-to-control-user-identity-within-microservices/"&gt;NordicAPIs - How to control user identity within microservices&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/&amp;#64;maison.moa/using-jwt-json-web-tokens-to-authorize-users-and-protect-api-routes-3e04a1453c3e"&gt;Using JWT to authorize users and protect API routes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/"&gt;Make secure .NET Microservices and Web Applications&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-		<summary>Help teams manage technical debt by identifying and assessing existing debt across the enterprise and prioritising items in an orderly fashion.</summary>
+		<summary>Authenticating users in microservices can be fraught with perils.</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property</id>
+		<title>Intellectual Property</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
+		<updated>2023-05-15T00:00:00Z</updated>
+		<content>&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;An ounce of prevention is worth a pound of cure. - Benjamin Franklin&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
+&lt;p&gt;The business should retain control of its intellectual property and ensure that it is not used without permission.&lt;/p&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Intellectual property is a valuable asset for the business. It is important to protect and manage the intellectual property of the business.&lt;/p&gt;
+&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
+&lt;p&gt;The business should ensure that its intellectual property is protected from infringement by others. Intellectual property should be managed in a way that maximizes its value to the business while minimizing the risk of infringement.&lt;/p&gt;
+&lt;h3 id="details-and-context"&gt;Details and Context&lt;/h3&gt;
+&lt;p&gt;Intellectual property is important because it is a valuable asset for the business. It can include patents, trademarks, copyrights, trade secrets, and other proprietary information.&lt;/p&gt;
+&lt;p&gt;Protecting intellectual property can help the business maintain its competitive advantage and prevent others from using its ideas or products without permission. It can also help the business generate revenue through licensing agreements or other means.&lt;/p&gt;
+&lt;p&gt;Managing intellectual property can be complex and requires careful planning and execution. The business should have policies and procedures in place to protect its intellectual property and ensure that it is not used without permission. This can include measures such as confidentiality agreements, non-disclosure agreements, and other legal protections.&lt;/p&gt;
+&lt;p&gt;There are several legal protections for intellectual property. Some of the most common include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Patents: A patent is a legal protection for an invention or process. It gives the inventor the exclusive right to make, use, and sell the invention for a certain period.&lt;/li&gt;
+&lt;li&gt;Trademarks: A trademark is a symbol, word, or phrase that identifies and distinguishes a product or service from those of others. It can be registered with the government to provide legal protection.&lt;/li&gt;
+&lt;li&gt;Copyrights: A copyright is a legal protection for original works of authorship such as books, music, and software. It gives the creator the exclusive right to reproduce and distribute the work.&lt;/li&gt;
+&lt;li&gt;Trade secrets: A trade secret is a confidential piece of information that provides a competitive advantage to a business. It can include things like formulas, processes, and customer lists.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are other legal protections available as well, depending on the type of intellectual property involved. It’s important to consult with an attorney who specializes in intellectual property law to determine the best course of action for your business.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/patents"&gt;Patents - gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/register-a-trademark"&gt;Trademarks - gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/copyright"&gt;Copyright - gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/protect-your-trade-secrets"&gt;Trade Secrets - gov.uk&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>This page explains the importance of protecting intellectual property and provides examples of legal protections for intellectual property.</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns/2023-05-15-dumb-pipes</id>
+		<title>Dumb Pipes</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns/2023-05-15-dumb-pipes" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
+		<updated>2023-05-15T00:00:00Z</updated>
+		<content>&lt;p&gt;As services scale in a microservices architecture, they need to communicate. A communication network is essential to ensure each service can easily talk to the others. Still, as they scale, you must ensure they can grow and continue communicating.&lt;/p&gt;
+&lt;p&gt;This pattern uses the principle of 'Smart end-points, dumb pipes'. If the pipes are clever, they need maintenance; everyone has to wait on the team which is responsible for the pipe, which reduces time to market.&lt;/p&gt;
+&lt;p&gt;If the pipe is dumb, anyone can send a message quickly; anyone can consume a message easily. They may need to adjust the format, but they can do that within the team.&lt;/p&gt;
+&lt;p&gt;A truly stupid pipe should handle routing, and that's it.&lt;/p&gt;
+&lt;h2 id="illustration"&gt;Illustration&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/media/communication-in-microservice-architecture/sync-vs-async-patterns-across-microservices.png" alt="A diagram showing communications in a Microservices architecture" /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Anti-patterns and patterns in communication between microservices &lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture"&gt;from learn.microsoft.com&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Summarising all of the above, the benefits of smart endpoints and dumb pipes are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lower cost of messaging infrastructure - pushes the cost of goods sold closer to the producer and consumer. Allows messaging infrastructure to scale by the number of messages instead of the computational complexity of messages. Less complexity means fewer nodes, which means fewer licenses!&lt;/li&gt;
+&lt;li&gt;Organization Scalability – teams aren’t reliant on transforms created by a centralised team.&lt;/li&gt;
+&lt;li&gt;Low Latency – because computation is limited, messages are delivered more quickly and predictably to end consumers.&lt;/li&gt;
+&lt;li&gt;Capacity and scalability of messaging infrastructure – increased as compute is not part of the platform's scale.&lt;/li&gt;
+&lt;li&gt;Availability of messaging infrastructure – reduced compute means reduced chance of failure.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="assumptions"&gt;Assumptions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Messages must be in a defined format which anyone can reference and understand. An API with a contract is an excellent way to do this.&lt;/li&gt;
+&lt;li&gt;Teams will need to adhere to contracts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://martinfowler.com/articles/microservices.html."&gt;Lewis, J. and Fowler, M. (2014) Microservices, martinfowler.com.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/architecture-principle-messaging-systems-smart-end-points-dumb-pipes"&gt;Architecture Principles: Messaging Systems – Smart End Points, Dumb Pipes | AKF Partners&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://nathanpeck.com/microservice-principles-smart-endpoint-dumb-pipe/"&gt;Smart Endpoints and Dumb Pipes, Nathan Peck&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture"&gt;Nishanil et al. (2022) Communication in a microservice architecture, learn.microsoft.com.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>This page is about designing and implementing effective communication between microservices in a distributed system.</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/security-principles</id>
+		<title>Security Principles</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/security-principles" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
+		<updated>2023-05-11T15:11:41Z</updated>
+		<content>&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
+&lt;p&gt;As a business, we want to adopt a Zero-trust approach to our business and use of technology. This model provides the best combination of security and agility for our enterprise.&lt;/p&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Zero Trust is a mature target model in 2023. It supports the capabilities and organisation needs in the current climate and, properly implemented, it is proven to improve user experience and security posture.&lt;/p&gt;
+&lt;p&gt;By commoditising the network, and assuming no device or user is anywhere safe, organisations can improve access to services AND improve security. In some cases, this can happen whilst overall costs come down, through a reduced vendor footprint and reduced local hosting, traffic and operations.&lt;/p&gt;
+&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
+&lt;p&gt;Zero Trust is a security approach built on three principles:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Verify Explicitly&lt;/li&gt;
+&lt;li&gt;Use 'least privilege' access&lt;/li&gt;
+&lt;li&gt;Assume Breach&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Let's explore these three points.&lt;/p&gt;
+&lt;h3 id="verify-explicitly"&gt;Verify Explicitly&lt;/h3&gt;
+&lt;p&gt;Make use of the tools and data points available to validate that access is being granted to the right person or service, and that they are who they say they are. This should take into account things like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Geographic location.&lt;/li&gt;
+&lt;li&gt;Device type, health and validity.&lt;/li&gt;
+&lt;li&gt;Data Classification and Permissions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="use-least-privilege-access"&gt;Use 'Least Privilege' access&lt;/h3&gt;
+&lt;p&gt;Make sure that people and services only have relevant access to their roles; no more or less. For escalated privileges, use concepts like Just-In-Time access to make sure that elevated logons are being approved, logged and cleared. This can also encompass:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Risk-based policies, that adapt the authentication to the level of risk.&lt;/li&gt;
+&lt;li&gt;A 'Four eyes' principle, to make sure access to elevated roles is approved by a second person, reducing the risk of lone insider threat.&lt;/li&gt;
+&lt;li&gt;Classify Data and Services according to value and risk and protect them appropriately.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="assume-breach"&gt;Assume Breach&lt;/h3&gt;
+&lt;p&gt;Log and monitor access to services and data. Minimise the impact of any breach, by controlling shared resources and accounts. Try to avoid unnecessary dependencies or permissions. This can be done through:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding appropriate monitoring and logging to applications.&lt;/li&gt;
+&lt;li&gt;Using single sign-on to ease tracking and logging.&lt;/li&gt;
+&lt;li&gt;Using the Bulkhead pattern, to minimise the danger between services and threads.&lt;/li&gt;
+&lt;li&gt;Actively monitor and control inputs, to help minimise breaches. Control access points and validate data entry.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="objective"&gt;Objective&lt;/h2&gt;
+&lt;p&gt;Remove implicit trust throughout the environment and instead use processes, policies, and technologies to continuously authenticate and authorize entities as trustworthy before actually granting access&lt;/p&gt;
+&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
+&lt;p&gt;Adopting a zero-trust security model can benefit us by providing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Better visibility into traffic and access patterns, which can result in better-developed and targeted systems.&lt;/li&gt;
+&lt;li&gt;An enhanced user experience, typically with faster login times and lower password or account fatigue.&lt;/li&gt;
+&lt;li&gt;A reduction in data breaches and an improvement in compliance.&lt;/li&gt;
+&lt;li&gt;Reduction in the complexity of infrastructure and an improvement in security posture.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Improperly integrated or configured, this approach could result in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increased complexity and cost, often through having duplicate capabilities or the sprawl of security services and appliances.&lt;/li&gt;
+&lt;li&gt;A lack of planning can result in expensive installations and purchases.&lt;/li&gt;
+&lt;li&gt;Without a coherent policy around user access, friction can be increased as users fight with additional factors and complex passwords.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+</content>
+		<summary>&lt;p&gt;As a business, we want to adopt a Zero-trust approach to our business and use of technology. This model provides the best combination of security and agility for our enterprise.&lt;/p&gt;</summary>
 	</entry>
 </feed>
