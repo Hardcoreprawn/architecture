@@ -27,7 +27,7 @@ Business Data is a broad term; you could ask several people and never get a cons
 
 This article refers to 'the critical information required to run the organisation' as 'Business Data'. Each department may have its own. Acquisitions will have their own. Partners will have their own.
 
-> You might have heard the term 'Master Data Management'. In this article we'll eschew the word as its not in keeping with culture. Links to outside sources will still use that term as its been active for at least 15 years.
+> You have probably heard the term 'Master Data Management'. In this article we'll eschew the word as its not in keeping with culture. Links to outside sources will still use that term as its been active for at least 15 years.
 
 Business Data management is the organisation of people, processes and technologies to create and maintain data in a way which is:
 
@@ -59,14 +59,14 @@ A data strategy sets the tone for the project, outlining why its important and w
 
 Here is an example:
 
-> At <...>, our mission is to simplify our customer's utility needs. We need to understand their use of utilities and be able to track how we can align their use.
+> At <...>, our mission is to simplify our customer's needs. We need to understand their use of and be able to track how we can align their use.
 >
 > Our data strategy reflects our business goals:
 >
 > * Provide a coherent, connected view of the customer and their use of our products, so they can quickly see how their usage varies and make educated decisions. Providing this joined-up view allows our 'single quote' and 'single bill' initiatives to succeed and scale
-> * To support their brokers and support agents to get the correct information quickly and easily, so we can continue to deliver excellent customer service.
-To support and not detract from our main value proposition by offering a lightweight solution which aligns with our values and principles
-> * This ability to provide a sensible, joined-up story allows us to out-perform our compeitors and exceed our custo0mers expectations. This allows us to effectively up-sell and cross-sell products.
+> * To support <...> to get th e correct information quickly and easily, so we can continue to deliver excellent customer service.
+> * To support, and not detract from, our main value proposition by offering a lightweight solution which aligns with our values and principles
+> * This ability to provide a sensible, joined-up story allows us to out-perform our competitors and exceed our customers expectations. This allows us to effectively up-sell and cross-sell products.
 >
 >The Data team will support <...> to achieve these goals:
 >
@@ -132,7 +132,7 @@ Core Business data is only the high-value, complex, reusable entities with low v
 * Supplier
 * Invoice
 
-Critical data is not necessarily core business data. A Brokers training in a utility is vital for compliance, but only in that context. It is not widely reusable, so it wouldn't be considered Core Business Data.
+Critical data is not necessarily core business data. A trainingcan be vital for compliance, but only in that context. As it is not widely reusable, it wouldn't be considered Core Business Data, but it is still important.
 
 Core Business Data does not, and should not, include transaction data. That stuff is too fast-moving to manage using this pattern. A data warehouse or an event stream is a better way to manage analytics for transactional data. It could link to the transactional view or the analytical aggregates of the transactions.
 
@@ -153,13 +153,9 @@ Following the data lifecycle in an organisation makes the process less invasive 
 
 Evaluate whether these systems have available interfaces to export data, ideally, modern interfaces that drive events.
 
-* Customers comes from SalesForce via a REST API
-* Brokers comes from EVIE via a REST API
-* Water Data comes from Eclipse via a ...
-* Waste Data comes from WASTE via a ...
-* Bill information comes from AllOftheAbove via a ...
+TODO: List some example sources for core business data
 
-If possible, having webhooks or an event model means we can quickly raise events when something changes, and each interested system can update its copy of any information.
+If possible, using webhooks or an event model means we can quickly raise events when something changes, and each interested system can update its copy of any information.
 
 ## 3. Analysis
 
@@ -188,18 +184,18 @@ A 'multi-master' model is too complex to maintain, so avoid it.
 
 ### Worked examples
 
-1. 'Customer' is created in '[Broker System]' when 'Event' By 'Persona'
-2. 'Customer' is updated in 'Eclipse' when 'signed up' to 'Persona'
-3. 'Customer' is viewed in 'WASTE' when '...' by 'persona'
-4. 'Customer' is viewed in 'EVIE' when '...' by '...'
-5. 'Customer' is deleted in '...' when '...' by '...'
+1. 'Customer' is created in 'System' when 'Event' By 'Persona'
+2. 'Customer' is updated in 'System' when 'signed up' to 'Persona'
+3. 'Customer' is viewed in 'System' when '...' by 'persona'
+4. 'Customer' is viewed in 'System' when '...' by '...'
+5. 'Customer' is deleted in 'System' when '...' by '...'
 
 ## 4. Involvement - Appoint Data Stewards
 
-Have two people for each 'domain' in the department who creates and uses that entity the most. The two people should be:
+Have two people for each 'domain' in the department who create and use that entity the most act as stewards for it. The two people should be:
 
 * Business, from the department that makes or uses the core entity the most.
-* 'Technical', which *could* be from the data team if there's no one more local
+* 'Technical', which *could* be from the data team if there's no one more local.
 
 They need a working relationship for regular changes/updates and can make local decisions if the impact is non-breaking or within budget.
 
@@ -212,7 +208,9 @@ Must-Haves
 * Data Governance, such as lineage, catalogue and provenance.
 * Data Factories, which process and ingest data to operational services.
 * Data APIs, which support OpenAPI specifications and allow systems to communicate and interrogate each other
-* Data Marts; analytical 'shop-fronts' which store processed data for known use cases
+* Data Marts; analytical 'shop-fronts' which store processed data for known use cases.
+
+As an organisation, you need to decide whether a 'hypermarket', or little specialist shops is the right approach. One stop can be good, but specialists might fit. It could also be a blend, where your business has some areas that require a more specialist shop than others.
 
 Nice-to-Haves
 
