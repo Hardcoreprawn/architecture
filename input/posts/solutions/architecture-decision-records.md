@@ -17,11 +17,11 @@ Architectural decision records (ADRs) capture a crucial technical decision, the 
 
 ADRs typically follow a template that includes the title, context, decision, status, consequences, and alternatives of the decision.
 
-Use a folder or a wiki page to store ADRs. Somewhere close to the code repository and accessible to other stakeholders. You can create, review and update ADRs using tools like Azure DevOps.
+Use a folder or a wiki page to store ADRs. Somewhere close to the code repository and accessible to other stakeholders. You can create, review and update ADRs using tools like GitHub or Azure DevOps.
 
 ## Process
 
-Here is a process for creating Architectural Decision Records (ADRs) in Azure DevOps:
+Here is a process for creating Architectural Decision Records (ADRs) in a Git repo:
 
 * Define a template for documenting ADRs that includes the following sections: title, context, decision, status, consequences, and alternatives¹.
 * Use a folder in the Azure DevOps repository to store the ADRs. The folder name can be "adr" or "docs/adr" or something similar.
@@ -33,7 +33,7 @@ Here is a process for creating Architectural Decision Records (ADRs) in Azure De
 * Track the ADRs in a decision log that lists them by title, status, and date. The decision log can be a simple text file or a table on a Wiki page.
 * Review the ADRs periodically and update them if necessary. If an ADR becomes obsolete or superseded by another decision, change its status accordingly and link to the new ADR.
 
-This process can help you record your architectural and technical decisions for further reference and have the new team members up to date from day one.
+This process can help you record your architectural and technical decisions for further reference and have new team members kept up to date from day one.
 
 A centralised Architecture team can review any ADRs made and look to amend any of the architectural artefacts in response. It may be that several decisions cause a change in precedence, which requires adjusting principles or technology guidelines.
 
@@ -41,7 +41,7 @@ Remember, the aim of an architecture practice is to:
 
 1. Simplify
 2. De-risk
-3. **Not** dictate solution
+3. **Not** dictate
 
 To that end, the architecture needs to review and adapt to ensure it doesn't become stale.
 
@@ -79,6 +79,8 @@ The format of a Y-Statement creates six phrases in three sections:
 
 Each outlines a single critical point about the decision. The context and need, the 'winner' and other options considered, the expected outcome and consequences, and optional reasoning if more words are needed.
 
+It also possesses a pleasingly poetic pattern.
+
 > Loads of examples here: [architecture-decision-record/examples](https://github.com/joelparkerhenderson/architecture-decision-record/tree/main/examples) Accessed: 31 May 2023.
 
 ### Architectural Haiku
@@ -100,12 +102,15 @@ Version Control for your ADRs is essential so you know when they change, who cha
 Some great ADR tools are around, including ones that use a CLI or DevOps. In this instance, the aim is to use a work item in DevOps linked to a file containing the ADR text, written using Markdown. It can be changed if necessary.
 
 Write a Y-Statement explaining the decision. The discussion is not essential, but the context and the discarded alternatives are.
+
 For a more significant decision, it may be helpful to produce an Options assessment:
 
 Svyatoslav Kotusev, 2013, [Enterprise Architecture on a Page v2.0](http://eaonapage.com/Enterprise%20Architecture%20on%20a%20Page%20(v2.0).pdf.)
 ![EA-On-A-Page, options assessment](../../media/eaonapage.com-options-assessment.png)
 
-The list of ADRs is easy to find and query. Anyone can look at the recent ADRs. The architects will regularly review ADRs themselves and look to adapt the architecture as necessary, either creating or updating principles or NFRs to reduce the number of decisions which need to be made and thus recorded.
+## Summary
+
+By using existing work tools and staying close to the regular format of 'work', the list of ADRs is easy to find and query. Anyone can look at the recent ADRs. Architects need to regularly review ADRs and look to adapt the architecture as necessary, either creating or updating principles or NFRs to reduce the number of decisions which need to be made and thus recorded.
 
 So, grab the template below, use the text in a file or work item and record those technical decisions!
 
