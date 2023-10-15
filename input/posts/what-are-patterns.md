@@ -24,7 +24,7 @@ Good examples of patterns can be found everywhere. Some really simple, basic one
 
 We use patterns for this reason. People who needed them before you have thought about them and figured out the wrong ways to go about it, and eventually written good, working ways. Over time, people improve on them, and the idea gets better.
 
-Architectural patterns are really use templated ways of acheiving certain things, which we know are safe, successful and easy to look after but which do the 'thing' that we need.
+Architectural patterns are templated ways of acheiving certain things, which we know are safe, successful and easy to look after, which do the 'thing' that we need.
 
 ## Where do I find Patterns?
 
