@@ -29,7 +29,6 @@ This example is for a mobile app. A similar method would work for a static site,
 
 * By using the gateway, authentication is offloaded to the gateway and centralised, see [Gateways](xref:gateways).
 * The gateway issues a signed token containing the authorised user's roles, which can be used for the token's lifespan, reducing chatter, see [Microservices Anti-patterns](xref:microservices-anti-patterns).
-* The token is long-lived, reducing user frustration. See [Ease-of-Use](xref:ease-of-use).
 * Once implemented, downstream services have their role added to the token and respect it.
 * Identity management and storage can be offloaded to the customer's preferred vendor using open standards, Including:
   * Microsoft, Google or Facebook identities, such as Microsoft AzureAD B2C
