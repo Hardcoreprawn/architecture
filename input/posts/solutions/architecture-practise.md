@@ -48,7 +48,7 @@ Whenever the team decides how development will proceed, they write it down in th
 
 The architecture team review and steer ADRs. ADRs are like the tweet format of designs; they encompass small decisions and choices with just enough context and reasoning to explain to a new starter why something happened. A significant benefit is that they can all be queried and exported and used to describe the project's thinking over time and why the team made confident choices. The ADR list acts as a log, which someone could examine to trace the project's decisions.
 
-The architecture practice reviews the ADRs and looks for trends and patterns. As certain things come to the fore, the architects write new principles, [patterns](xref:patterns), and [NFRs](xref:nfrs) approved by the ARB to help the teams make future decisions.
+The architecture practice reviews the ADRs and looks for trends and patterns. As certain things come to the fore, the architects write new principles, [patterns](xref:patterns), and NFRs approved by the ARB to help the teams make future decisions.
 
 The architect group will propose amendments to the organisation's architecture to the ARB, which may require approval, depending on the size and scope of the new principles.
 
@@ -78,7 +78,7 @@ Using a feedback loop from the teams' decisions and accepting that these won't a
 * Ignore existing ADRs relating to the subject (Search in the work tracker for ADRs, the tech or similar problems ).
 * Do not look at the existing guidance:
   * Principles
-  * [NFRs](xref:nfrs)
+  * NFRs
   * Patterns
   * Standards
 * Keep the decision secret right up until the last second.

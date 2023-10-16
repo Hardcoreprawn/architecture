@@ -7,7 +7,6 @@ Tags:
   - Microservices
 Draft: false
 Published: 15/05/2023
-Slug: dumb-pipes
 Categories:
   - Patterns
 Description: This page is about designing and implementing effective communication between microservices in a distributed system.

@@ -4,8 +4,148 @@
 	<title />
 	<link rel="self" href="https://red-sand-078a6ea03.3.azurestaticapps.net/" />
 	<rights>Copyright James Brewster© 2023</rights>
-	<updated>2023-09-18T09:21:56Z</updated>
+	<updated>2023-10-16T07:38:45Z</updated>
 	<logo>https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png</logo>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/what-are-patterns</id>
+		<title>What are Patterns?</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/what-are-patterns" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
+		<updated>2023-09-15T00:00:00Z</updated>
+		<content>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Patterns are visual models to base designs and solutions on. Different patterns provide different assumptions, but in general, they all represent a simplified ideal.&lt;/p&gt;
+&lt;p&gt;They vary in size and scope, but they tend to focus on a way to fix a problem. Whether you have those problems and thus, whether you need a given pattern is something to remember. Fixing problems you don't have does give you more problems...&lt;/p&gt;
+&lt;h2 id="why-use-patterns"&gt;Why use Patterns?&lt;/h2&gt;
+&lt;p&gt;Good examples of patterns can be found everywhere. Some really simple, basic ones which are fairly ubiquitous are things like 'the wheel', 'knives' or 'a campfire'. There are well understood, documented ways to make these things, which have been known for most of civilisation. You can try to build your own versions, but these patterns are well refined and understood.&lt;/p&gt;
+&lt;p&gt;We use patterns for this reason. People who needed them before you have thought about them and figured out the wrong ways to go about it, and eventually written good, working ways. Over time, people improve on them, and the idea gets better.&lt;/p&gt;
+&lt;p&gt;Architectural patterns are templated ways of acheiving certain things, which we know are safe, successful and easy to look after, which do the 'thing' that we need.&lt;/p&gt;
+&lt;h2 id="where-do-i-find-patterns"&gt;Where do I find Patterns?&lt;/h2&gt;
+&lt;p&gt;Everywhere.&lt;/p&gt;
+&lt;p&gt;But thats not a very helpful answer. Google is great, you can literally search for them, but you often come up with all kinds of interesting things. Some ideas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vendors provide reference architectures for their products. Microsoft, oracle and Amazon all have good examples of successful, proven ways to use most of their products, either together or independantly, in a myrid ways, to fit your need.&lt;/li&gt;
+&lt;li&gt;Research. You can work on your own patterns, based on your own problems. Finding corroborating 'evidence' that others came to a similar conclusion is a good way to verify your thinking. But 90% of problems are not unique.&lt;/li&gt;
+&lt;li&gt;Tutorials and training materials. Often, these are produced by experienced individuals, so when they show you have to use a library or technology, they will be working to a 'known good'. Which is a pattern.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The key takeaway here is that most problems you encounter have a fix which is good enough for most people/companies. You don;t need to innovate everywhere; its tiring and expensive. Save your A game for those times its needed and build your designs ont he shoulders of those who came before you.&lt;/p&gt;
+&lt;h2 id="pattern-benefits"&gt;Pattern Benefits&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reducing work and risk. If you can reference the work of others, it can be faster to design and they'll provide things like assumptions and risks to help you reduce the risk and time to deliver your own projects.&lt;/li&gt;
+&lt;li&gt;Lowering costs. Using existing patterns removes the unknowns and the guess work. Whilst you may feel a bit less 'expert', knowing when someone else has a better idea than you is a mature point of view, which will save your projects time and money.&lt;/li&gt;
+&lt;li&gt;Simpler collaboration. Its much easier to explain whats happening to someone, if you can talk in a language they understand. If they have experience in the area, then they may already be familar with it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="risks-of-using-patterns"&gt;Risks of using patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;There could be a better option out there, which meets a business requirement.
+&lt;ul&gt;
+&lt;li&gt;I tend to find that this is a false start. If you can build on the proven model and simplify the business, the outcomes will be bettter. Do take the time to understand why the business is doing something differewnt though, and make sure you can mitigate that.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;It can be very uninteresting to implement other peoples patterns all day.
+&lt;ul&gt;
+&lt;li&gt;Actually, this is a good thing. You're not paid to have fun ;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="anti-patterns"&gt;Anti-patterns&lt;/h2&gt;
+&lt;p&gt;The opposite of a pattern is an anti-pattern. Often, these are as informative; learning what other people tried and what didn't work can be a better explanation than what did!&lt;/p&gt;
+&lt;p&gt;For some good example anti-patterns, look at: &lt;a href="https://www.scrum.org/resources/blog/27-sprint-anti-patterns"&gt;Scrum.org&lt;/a&gt;, they have some good examples.&lt;/p&gt;
+&lt;h2 id="template"&gt;Template&lt;/h2&gt;
+&lt;p&gt;As always, here's a pattern for recording patterns, to try save some mental load. As always, this has been stolen and butchered, thank you Internet for providing examples and apologies to any uncredited authors.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Outline the pattern and its purpose. Keep it short and sweet.&lt;/p&gt;
+&lt;h2 id="illustration"&gt;Illustration&lt;/h2&gt;
+&lt;p&gt;Draw a picture! It really does help.&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;Explain the probklem it solves, the pattern and common usage.&lt;/p&gt;
+&lt;h2 id="benefits"&gt;Benefits&lt;/h2&gt;
+&lt;p&gt;Why is this pattern good? What does it do, and what do you get?&lt;/p&gt;
+&lt;h2 id="concerns"&gt;Concerns&lt;/h2&gt;
+&lt;p&gt;Are there drawbacks? Coudl the pattern be misused or introduce extra concerns or complexities?&lt;/p&gt;
+&lt;h2 id="examples"&gt;Examples&lt;/h2&gt;
+&lt;p&gt;Show examples of usage, they also help illustrate the possible.&lt;/p&gt;
+&lt;h2 id="when-to-use"&gt;When to use&lt;/h2&gt;
+&lt;p&gt;Show good use cases and directions. the aim is to support colleagues to make decisions or avoid asking for help!&lt;/p&gt;
+&lt;h2 id="when-to-avoid"&gt;When to avoid&lt;/h2&gt;
+&lt;p&gt;If there are good cases where the pattern seems compelling, but won't be, outline them.&lt;/p&gt;
+&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
+&lt;p&gt;Explain how to implement or approach the pattern and problem.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;p&gt;Provide references! Linking your work to others builds a body of support and concensus, which supports the pattern and use.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;There are examples on this site, just click on the 'Patterns' tag, wherever you see it.&lt;/p&gt;
+</content>
+		<summary>Patterns are well understood ways to fix problems or provide certain functionality.</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/explaining-principles</id>
+		<title>Explaining Principles</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/explaining-principles" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
+		<updated>2023-09-13T00:00:00Z</updated>
+		<content>&lt;h2 id="the-role-of-principles-in-agile-organisations"&gt;The role of Principles in agile organisations&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Decentralised decision making is a critical ability for organisations that want to move fast, and disrupt their markets. - James Brewster, just now.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Agility in a business requires trust and it requires the organisation to take a pragmatic view about decision making. If too many decisions are centralised, then everything will wait for those decisions. Things won't happen quickly. People will revert to waiting to be allowed to do things.&lt;/p&gt;
+&lt;p&gt;If you empower your teams to make their own decisions, then they can fix problems much faster.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/principles.jpg" alt="Abstract Image, generated by DALL-E"&gt;&lt;/p&gt;
+&lt;h2 id="what-are-principles"&gt;What are principles?&lt;/h2&gt;
+&lt;p&gt;Principles are fundamental truths or propositions that serve as the foundation for business decision-making.&lt;/p&gt;
+&lt;p&gt;Most organisations, and especially their leaders, would say that their business has principles. Often, these are passed around by word of mouth, or only uttered in strategy documents.&lt;/p&gt;
+&lt;p&gt;This is wrong. They should be written down.&lt;/p&gt;
+&lt;p&gt;Unless they are easily available to everyone, and it is clear to everyone what they are and why they are there, people tend to do one of the following things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make up their own, which sound sensible, but don't align with the organisation.&lt;/li&gt;
+&lt;li&gt;Talk about their own opinions or experiences as though they are rules to be followed.&lt;/li&gt;
+&lt;li&gt;use past precedent, or what worked for them before.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To avoid these things, it's best to work out what they are and write them down. Take the guesswork away.&lt;/p&gt;
+&lt;h2 id="how-to-work-out-what-your-principles-are"&gt;How to work out what your principles are&lt;/h2&gt;
+&lt;p&gt;Some surefire ways to get everyone to avoid following your principles is to have too many of them, to have principles which aren't followed or which make no sense.&lt;/p&gt;
+&lt;p&gt;If we're going to create a framework to encourage decentralised decisions, then we need to make sure our principles are clear, sensible and easy to follow. I recommend the following approach:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Business Priorities - Talk to your management about what is important to the business, and how different areas create conflicts or priorities.&lt;/li&gt;
+&lt;li&gt;Decision Framework - Don't start by talking about principles. Explain that you want to create a framework to help teams make decentralised decisions properly, and then start to think about what decisions they might need to make.&lt;/li&gt;
+&lt;li&gt;Constraints - How would constraints remove the wrong options from the discussion? What constraints will help to steer decisions?&lt;/li&gt;
+&lt;li&gt;Audience - Who are you aiming these principles at? What is their scope of application?&lt;/li&gt;
+&lt;li&gt;Limit your principles - There are only so many cares anyone can afford. Don't try to have too many. 5-10 is usually plenty.&lt;/li&gt;
+&lt;li&gt;Don't think of this as a "once-and-done" exercise. These will need to evolve and adapt.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Once you start to have these conversations, start to think of memorable ways to word the outcomes, succinctly. Principles should be easy to articulate in under a minute, ideally with a memorable title and an obvious meaning.&lt;/p&gt;
+&lt;p&gt;Do not be obtuse or too clever. It usually fails.&lt;/p&gt;
+&lt;h2 id="principle-format"&gt;Principle format&lt;/h2&gt;
+&lt;p&gt;In my time, I have found these four headers useful.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Illustration - Something to help make the principle come alive. I use quotes quite often.&lt;/li&gt;
+&lt;li&gt;Statement - The wording of the principle. 1-2 sentences, articulating the principle and its reasoning.&lt;/li&gt;
+&lt;li&gt;Rationale - A more in-depth explanation of why this is important to our business and its strategy.&lt;/li&gt;
+&lt;li&gt;Implications - Some key concepts that are important and understood. This could include an acceptance that the principle may increase costs, or incur dependencies. It could also highlight fringe benefits or relevant standards.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The format is somewhere to start. Having a standard format simply improves the likelihood that it will make sense to the reader.&lt;/p&gt;
+&lt;h2 id="example-principle"&gt;Example Principle&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;"Whoever is careless with the truth in small matters cannot be trusted with important matters." - Albert Einstein&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
+&lt;p&gt;Data sharing is a key component of our business strategy. We believe that sharing data within our company and with external partners can help us to achieve our goals and improve our services.&lt;/p&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;We are committed to making our data open and accessible to our employees and partners, while also protecting the privacy and security of our customers and stakeholders. We will work to ensure that our data is secure, accurate, up-to-date, and relevant and that it is shared in a way that is transparent, ethical, and responsible.&lt;/p&gt;
+&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
+&lt;p&gt;This principle is mostly about ensuring that people who are allowed to get data, can get it when they want it. We can control who that is, and we have to make sure we handle data following the law. This isn't creating a free for all. It's making sure we have data in useful formats, so we can make decisions with it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;By making data open and accessible, the company can increase transparency and accountability, both internally and externally.&lt;/li&gt;
+&lt;li&gt;Sharing data within the company and with external partners can help to improve collaboration and innovation, leading to better products and services.&lt;/li&gt;
+&lt;li&gt;Access to current, accurate data can help employees and partners make better decisions.&lt;/li&gt;
+&lt;li&gt;By sharing data, the company can avoid duplication of effort and reduce costs, leading to greater efficiency.&lt;/li&gt;
+&lt;li&gt;By being open and transparent with data, the company can improve its reputation and build trust with customers and stakeholders.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</content>
+		<summary>Principles allow you to write out the important choices and decisions you want your business to make.</summary>
+	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/architecture-practise</id>
 		<title>Overview of the Architecture Practice</title>
@@ -37,7 +177,7 @@
 &lt;p&gt;Accepting that there is a cost requirement in using Cosmos DB hosting&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;The architecture team review and steer ADRs. ADRs are like the tweet format of designs; they encompass small decisions and choices with just enough context and reasoning to explain to a new starter why something happened. A significant benefit is that they can all be queried and exported and used to describe the project's thinking over time and why the team made confident choices. The ADR list acts as a log, which someone could examine to trace the project's decisions.&lt;/p&gt;
-&lt;p&gt;The architecture practice reviews the ADRs and looks for trends and patterns. As certain things come to the fore, the architects write new principles, &lt;a href="xref:patterns"&gt;patterns&lt;/a&gt;, and &lt;a href="xref:nfrs"&gt;NFRs&lt;/a&gt; approved by the ARB to help the teams make future decisions.&lt;/p&gt;
+&lt;p&gt;The architecture practice reviews the ADRs and looks for trends and patterns. As certain things come to the fore, the architects write new principles, &lt;a href="xref:patterns"&gt;patterns&lt;/a&gt;, and NFRs approved by the ARB to help the teams make future decisions.&lt;/p&gt;
 &lt;p&gt;The architect group will propose amendments to the organisation's architecture to the ARB, which may require approval, depending on the size and scope of the new principles.&lt;/p&gt;
 &lt;p&gt;Changes in architecture guidance can be applied retrospectively which may result in the creation of new technical debt items. Or we can call an amnesty and accept that something could've been better. Similar to how the law or regulations work.&lt;/p&gt;
 &lt;h2 id="in-practice"&gt;In Practice&lt;/h2&gt;
@@ -62,7 +202,7 @@
 &lt;li&gt;Do not look at the existing guidance:
 &lt;ul&gt;
 &lt;li&gt;Principles&lt;/li&gt;
-&lt;li&gt;&lt;a href="xref:nfrs"&gt;NFRs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;NFRs&lt;/li&gt;
 &lt;li&gt;Patterns&lt;/li&gt;
 &lt;li&gt;Standards&lt;/li&gt;
 &lt;/ul&gt;
@@ -106,29 +246,6 @@
 		<summary>How Architects should work alongside Agile development to enable faster decision-making and reduce risk.</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/nfrs</id>
-		<title>Non-functional Requirements</title>
-		<author>
-			<name>James Brewster</name>
-		</author>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/requirements/nfrs" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-06-06T00:00:00Z</updated>
-		<content>&lt;p&gt;Functional requirements describe why something is. Non-functional Requirements tell how it is. Where a customer may ask for a specific functional requirement, they are doubtful to ask for an NFR unless something is wrong.&lt;/p&gt;
-&lt;p&gt;The NFRs which go into a product can mean all manner of differences, which affect the cost, performance, and reliability of a product or solution.&lt;/p&gt;
-&lt;p&gt;Consider the following requirements and how they might affect the cost or development of a vehicle.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Carries two passengers&lt;/li&gt;
-&lt;li&gt;Can travel 200 miles&lt;/li&gt;
-&lt;li&gt;Travels on roads&lt;/li&gt;
-&lt;li&gt;A fuel efficiency greater than 30 miles per gallon.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Now, this could describe all manner of things. A motorbike? A tandem bicycle? A Sports car? These could all be right, but they meet the needs of different markets and result in differing products.&lt;/p&gt;
-&lt;p&gt;Defining how your product will perform specific tasks and how it will perform under load and in use is essential to create the proper differentiation and guidance for development.&lt;/p&gt;
-</content>
-		<summary>NFRs define the way a product functions in ways beyond the main requirements of the end customer. They explain how fast, robust or reliable something should be</summary>
-	</entry>
-	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/e2e-agile-architecture-story</id>
 		<title>Agile Architecture - A short story</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/e2e-agile-architecture-story" />
@@ -151,9 +268,9 @@
 		<content>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Architectural decision records (ADRs) capture a crucial technical decision, the context in which it was made, and the consequences of the decision. They are used to record the project’s architectural thinking and conclusions for further reference and to help new team members understand the rationale behind the design choices.&lt;/p&gt;
 &lt;p&gt;ADRs typically follow a template that includes the title, context, decision, status, consequences, and alternatives of the decision.&lt;/p&gt;
-&lt;p&gt;Use a folder or a wiki page to store ADRs. Somewhere close to the code repository and accessible to other stakeholders. You can create, review and update ADRs using tools like Azure DevOps.&lt;/p&gt;
+&lt;p&gt;Use a folder or a wiki page to store ADRs. Somewhere close to the code repository and accessible to other stakeholders. You can create, review and update ADRs using tools like GitHub or Azure DevOps.&lt;/p&gt;
 &lt;h2 id="process"&gt;Process&lt;/h2&gt;
-&lt;p&gt;Here is a process for creating Architectural Decision Records (ADRs) in Azure DevOps:&lt;/p&gt;
+&lt;p&gt;Here is a process for creating Architectural Decision Records (ADRs) in a Git repo:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Define a template for documenting ADRs that includes the following sections: title, context, decision, status, consequences, and alternatives¹.&lt;/li&gt;
 &lt;li&gt;Use a folder in the Azure DevOps repository to store the ADRs. The folder name can be "adr" or "docs/adr" or something similar.&lt;/li&gt;
@@ -165,13 +282,13 @@
 &lt;li&gt;Track the ADRs in a decision log that lists them by title, status, and date. The decision log can be a simple text file or a table on a Wiki page.&lt;/li&gt;
 &lt;li&gt;Review the ADRs periodically and update them if necessary. If an ADR becomes obsolete or superseded by another decision, change its status accordingly and link to the new ADR.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This process can help you record your architectural and technical decisions for further reference and have the new team members up to date from day one.&lt;/p&gt;
+&lt;p&gt;This process can help you record your architectural and technical decisions for further reference and have new team members kept up to date from day one.&lt;/p&gt;
 &lt;p&gt;A centralised Architecture team can review any ADRs made and look to amend any of the architectural artefacts in response. It may be that several decisions cause a change in precedence, which requires adjusting principles or technology guidelines.&lt;/p&gt;
 &lt;p&gt;Remember, the aim of an architecture practice is to:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Simplify&lt;/li&gt;
 &lt;li&gt;De-risk&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Not&lt;/strong&gt; dictate solution&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Not&lt;/strong&gt; dictate&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;To that end, the architecture needs to review and adapt to ensure it doesn't become stale.&lt;/p&gt;
 &lt;h2 id="providing-short-contextual-decisions"&gt;Providing short, contextual decisions&lt;/h2&gt;
@@ -201,6 +318,7 @@
 &lt;/ol&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Each outlines a single critical point about the decision. The context and need, the 'winner' and other options considered, the expected outcome and consequences, and optional reasoning if more words are needed.&lt;/p&gt;
+&lt;p&gt;It also possesses a pleasingly poetic pattern.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Loads of examples here: &lt;a href="https://github.com/joelparkerhenderson/architecture-decision-record/tree/main/examples"&gt;architecture-decision-record/examples&lt;/a&gt; Accessed: 31 May 2023.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -215,11 +333,12 @@
 &lt;p&gt;Version Control for your ADRs is essential so you know when they change, who changed them, and who approved them. Using your GIT repo for this is probably the most straightforward idea, as it can do these things effortlessly with the files.&lt;/p&gt;
 &lt;h2 id="in-practice"&gt;In Practice&lt;/h2&gt;
 &lt;p&gt;Some great ADR tools are around, including ones that use a CLI or DevOps. In this instance, the aim is to use a work item in DevOps linked to a file containing the ADR text, written using Markdown. It can be changed if necessary.&lt;/p&gt;
-&lt;p&gt;Write a Y-Statement explaining the decision. The discussion is not essential, but the context and the discarded alternatives are.
-For a more significant decision, it may be helpful to produce an Options assessment:&lt;/p&gt;
+&lt;p&gt;Write a Y-Statement explaining the decision. The discussion is not essential, but the context and the discarded alternatives are.&lt;/p&gt;
+&lt;p&gt;For a more significant decision, it may be helpful to produce an Options assessment:&lt;/p&gt;
 &lt;p&gt;Svyatoslav Kotusev, 2013, &lt;a href="http://eaonapage.com/Enterprise%20Architecture%20on%20a%20Page%20(v2.0).pdf."&gt;Enterprise Architecture on a Page v2.0&lt;/a&gt;
 &lt;img src="https://red-sand-078a6ea03.3.azurestaticapps.net/media/eaonapage.com-options-assessment.png" alt="EA-On-A-Page, options assessment"&gt;&lt;/p&gt;
-&lt;p&gt;The list of ADRs is easy to find and query. Anyone can look at the recent ADRs. The architects will regularly review ADRs themselves and look to adapt the architecture as necessary, either creating or updating principles or NFRs to reduce the number of decisions which need to be made and thus recorded.&lt;/p&gt;
+&lt;h2 id="summary"&gt;Summary&lt;/h2&gt;
+&lt;p&gt;By using existing work tools and staying close to the regular format of 'work', the list of ADRs is easy to find and query. Anyone can look at the recent ADRs. Architects need to regularly review ADRs and look to adapt the architecture as necessary, either creating or updating principles or NFRs to reduce the number of decisions which need to be made and thus recorded.&lt;/p&gt;
 &lt;p&gt;So, grab the template below, use the text in a file or work item and record those technical decisions!&lt;/p&gt;
 &lt;h2 id="template"&gt;Template&lt;/h2&gt;
 &lt;pre&gt;&lt;code class="language-Markdown"&gt;&amp;gt; 1. In the context of...
@@ -356,7 +475,6 @@ For a more significant decision, it may be helpful to produce an Options assessm
 &lt;ul&gt;
 &lt;li&gt;By using the gateway, authentication is offloaded to the gateway and centralised, see &lt;a href="xref:gateways"&gt;Gateways&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;The gateway issues a signed token containing the authorised user's roles, which can be used for the token's lifespan, reducing chatter, see &lt;a href="xref:microservices-anti-patterns"&gt;Microservices Anti-patterns&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;The token is long-lived, reducing user frustration. See &lt;a href="xref:ease-of-use"&gt;Ease-of-Use&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Once implemented, downstream services have their role added to the token and respect it.&lt;/li&gt;
 &lt;li&gt;Identity management and storage can be offloaded to the customer's preferred vendor using open standards, Including:
 &lt;ul&gt;
@@ -399,43 +517,6 @@ For a more significant decision, it may be helpful to produce an Options assessm
 		<summary>Authenticating users in microservices can be fraught with perils.</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property</id>
-		<title>Intellectual Property</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/intellectual-property" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-05-15T00:00:00Z</updated>
-		<content>&lt;blockquote&gt;
-&lt;p&gt;&amp;quot;An ounce of prevention is worth a pound of cure. - Benjamin Franklin&amp;quot;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;The business should retain control of its intellectual property and ensure that it is not used without permission.&lt;/p&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Intellectual property is a valuable asset for the business. It is important to protect and manage the intellectual property of the business.&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;The business should ensure that its intellectual property is protected from infringement by others. Intellectual property should be managed in a way that maximizes its value to the business while minimizing the risk of infringement.&lt;/p&gt;
-&lt;h3 id="details-and-context"&gt;Details and Context&lt;/h3&gt;
-&lt;p&gt;Intellectual property is important because it is a valuable asset for the business. It can include patents, trademarks, copyrights, trade secrets, and other proprietary information.&lt;/p&gt;
-&lt;p&gt;Protecting intellectual property can help the business maintain its competitive advantage and prevent others from using its ideas or products without permission. It can also help the business generate revenue through licensing agreements or other means.&lt;/p&gt;
-&lt;p&gt;Managing intellectual property can be complex and requires careful planning and execution. The business should have policies and procedures in place to protect its intellectual property and ensure that it is not used without permission. This can include measures such as confidentiality agreements, non-disclosure agreements, and other legal protections.&lt;/p&gt;
-&lt;p&gt;There are several legal protections for intellectual property. Some of the most common include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Patents: A patent is a legal protection for an invention or process. It gives the inventor the exclusive right to make, use, and sell the invention for a certain period.&lt;/li&gt;
-&lt;li&gt;Trademarks: A trademark is a symbol, word, or phrase that identifies and distinguishes a product or service from those of others. It can be registered with the government to provide legal protection.&lt;/li&gt;
-&lt;li&gt;Copyrights: A copyright is a legal protection for original works of authorship such as books, music, and software. It gives the creator the exclusive right to reproduce and distribute the work.&lt;/li&gt;
-&lt;li&gt;Trade secrets: A trade secret is a confidential piece of information that provides a competitive advantage to a business. It can include things like formulas, processes, and customer lists.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There are other legal protections available as well, depending on the type of intellectual property involved. It’s important to consult with an attorney who specializes in intellectual property law to determine the best course of action for your business.&lt;/p&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/patents"&gt;Patents - gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/register-a-trademark"&gt;Trademarks - gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/copyright"&gt;Copyright - gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/protect-your-trade-secrets"&gt;Trade Secrets - gov.uk&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-		<summary>This page explains the importance of protecting intellectual property and provides examples of legal protections for intellectual property.</summary>
-	</entry>
-	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns/2023-05-15-dumb-pipes</id>
 		<title>Dumb Pipes</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns/2023-05-15-dumb-pipes" />
@@ -475,64 +556,57 @@ For a more significant decision, it may be helpful to produce an Options assessm
 		<summary>This page is about designing and implementing effective communication between microservices in a distributed system.</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/security-principles</id>
-		<title>Security Principles</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/principles/security-principles" />
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns/2023-05-10-ambassador-pattern</id>
+		<title>Ambassador pattern</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/patterns/2023-05-10-ambassador-pattern" />
 		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-05-11T15:11:41Z</updated>
-		<content>&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
-&lt;p&gt;As a business, we want to adopt a Zero-trust approach to our business and use of technology. This model provides the best combination of security and agility for our enterprise.&lt;/p&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Zero Trust is a mature target model in 2023. It supports the capabilities and organisation needs in the current climate and, properly implemented, it is proven to improve user experience and security posture.&lt;/p&gt;
-&lt;p&gt;By commoditising the network, and assuming no device or user is anywhere safe, organisations can improve access to services AND improve security. In some cases, this can happen whilst overall costs come down, through a reduced vendor footprint and reduced local hosting, traffic and operations.&lt;/p&gt;
+		<updated>2023-05-10T00:00:00Z</updated>
+		<content>&lt;p&gt;An ambassador service is an out-of-process proxy facilitating communication with a distant service. It is colocated on the same host/cluster to improve performance.&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;Use the ambassador pattern when an application doesn't provide a necessary service and changing the application is too expensive. Often this is because a third party created the service or is 'of an age'. An ambassador is a specialised sidecar responsible for communicating with an interface for the application.&lt;/p&gt;
+&lt;h2 id="benefits"&gt;Benefits&lt;/h2&gt;
+&lt;p&gt;An ambassador can extend a legacy service with new functionality to function alongside a new architecture.&lt;/p&gt;
+&lt;h2 id="examples"&gt;Examples&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding asynchronous responses to a synchronous legacy process&lt;/li&gt;
+&lt;li&gt;To make a REST call to legacy API&lt;/li&gt;
+&lt;li&gt;Masking an insecure connection to ensure that the public network is secured&lt;/li&gt;
+&lt;li&gt;Integrating a circuit breaker for a partner-hosted service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="concerns"&gt;Concerns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding an ambassador creates a dependency. Sometimes the ambassador needs to be managed by a separate team, but will then require a release dependency.&lt;/li&gt;
+&lt;li&gt;Is the added latency going to be workable with this application?&lt;/li&gt;
+&lt;li&gt;Do you want to create a shared ambassador or spawn an instance per client?&lt;/li&gt;
+&lt;li&gt;Consider a way to pass context to ease faultfinding.&lt;/li&gt;
+&lt;li&gt;Host the ambassador close to the applications to minimise latency.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-use"&gt;When to use&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If you cannot replace or update a legacy or partner service to support necessary functionality, using an ambassador as a wrapper can ensure the service can work well with the rest of the application architecture&lt;/li&gt;
+&lt;li&gt;If the type of request/response is insufficient to meet a client's need, such as supporting stronger authentication or encryption, managing latency or aggregating responses to a chatty system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-avoid"&gt;When to avoid&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;This pattern adds latency, so avoid it in a latency-sensitive environment&lt;/li&gt;
+&lt;li&gt;A library may be better if only a single language consumes the features&lt;/li&gt;
+&lt;li&gt;If network connectivity cannot be adequately optimised&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
-&lt;p&gt;Zero Trust is a security approach built on three principles:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Verify Explicitly&lt;/li&gt;
-&lt;li&gt;Use 'least privilege' access&lt;/li&gt;
-&lt;li&gt;Assume Breach&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Let's explore these three points.&lt;/p&gt;
-&lt;h3 id="verify-explicitly"&gt;Verify Explicitly&lt;/h3&gt;
-&lt;p&gt;Make use of the tools and data points available to validate that access is being granted to the right person or service, and that they are who they say they are. This should take into account things like:&lt;/p&gt;
+&lt;p&gt;Microsoft cites an example of an ambassador which encapsulates:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Geographic location.&lt;/li&gt;
-&lt;li&gt;Device type, health and validity.&lt;/li&gt;
-&lt;li&gt;Data Classification and Permissions.&lt;/li&gt;
+&lt;li&gt;Routing&lt;/li&gt;
+&lt;li&gt;Circuit Breaker&lt;/li&gt;
+&lt;li&gt;Logging&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id="use-least-privilege-access"&gt;Use 'Least Privilege' access&lt;/h3&gt;
-&lt;p&gt;Make sure that people and services only have relevant access to their roles; no more or less. For escalated privileges, use concepts like Just-In-Time access to make sure that elevated logons are being approved, logged and cleared. This can also encompass:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Risk-based policies, that adapt the authentication to the level of risk.&lt;/li&gt;
-&lt;li&gt;A 'Four eyes' principle, to make sure access to elevated roles is approved by a second person, reducing the risk of lone insider threat.&lt;/li&gt;
-&lt;li&gt;Classify Data and Services according to value and risk and protect them appropriately.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="assume-breach"&gt;Assume Breach&lt;/h3&gt;
-&lt;p&gt;Log and monitor access to services and data. Minimise the impact of any breach, by controlling shared resources and accounts. Try to avoid unnecessary dependencies or permissions. This can be done through:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Adding appropriate monitoring and logging to applications.&lt;/li&gt;
-&lt;li&gt;Using single sign-on to ease tracking and logging.&lt;/li&gt;
-&lt;li&gt;Using the Bulkhead pattern, to minimise the danger between services and threads.&lt;/li&gt;
-&lt;li&gt;Actively monitor and control inputs, to help minimise breaches. Control access points and validate data entry.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="objective"&gt;Objective&lt;/h2&gt;
-&lt;p&gt;Remove implicit trust throughout the environment and instead use processes, policies, and technologies to continuously authenticate and authorize entities as trustworthy before actually granting access&lt;/p&gt;
-&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
-&lt;p&gt;Adopting a zero-trust security model can benefit us by providing:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Better visibility into traffic and access patterns, which can result in better-developed and targeted systems.&lt;/li&gt;
-&lt;li&gt;An enhanced user experience, typically with faster login times and lower password or account fatigue.&lt;/li&gt;
-&lt;li&gt;A reduction in data breaches and an improvement in compliance.&lt;/li&gt;
-&lt;li&gt;Reduction in the complexity of infrastructure and an improvement in security posture.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Improperly integrated or configured, this approach could result in:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Increased complexity and cost, often through having duplicate capabilities or the sprawl of security services and appliances.&lt;/li&gt;
-&lt;li&gt;A lack of planning can result in expensive installations and purchases.&lt;/li&gt;
-&lt;li&gt;Without a coherent policy around user access, friction can be increased as users fight with additional factors and complex passwords.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;To enable a legacy app to integrate into cloud services and with mobile clients.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador#example"&gt;Ambassador Example - learn.microsoft.com&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/sidecar"&gt;Sidecar Pattern&lt;/a&gt; - An ambassador is a specialised sidecar.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador"&gt;Ambassador Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
-		<summary>&lt;p&gt;As a business, we want to adopt a Zero-trust approach to our business and use of technology. This model provides the best combination of security and agility for our enterprise.&lt;/p&gt;</summary>
+		<summary>An ambassador is often used to offload or mask client interoperability issues.</summary>
 	</entry>
 </feed>

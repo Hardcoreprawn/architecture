@@ -1,6 +1,5 @@
 ---
 Title: Strangler pattern
-Slug: strangler-pattern
 Lead: Replace refactored code with new microservices to migrate gradually.
 Description: This pattern is used to migrate functionality from an older app to a new one.
 Tags:
