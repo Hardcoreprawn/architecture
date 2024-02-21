@@ -12,7 +12,7 @@ PageTitle: |
     string title = GetString("Title");
     return string.IsNullOrWhiteSpace(siteTitle) ? title : (string.IsNullOrWhiteSpace(title) ? siteTitle : $"{siteTitle} - {title}");
   }
-SiteDescriptions: An assortment of articles about architecture
+SiteDescriptions: Assorted articles about architecture
 Copyright: => $"Copyright James Brewster© {DateTime.Now.Year}"
 Layout: /_layout.cshtml
 Image: /media/header01.png
