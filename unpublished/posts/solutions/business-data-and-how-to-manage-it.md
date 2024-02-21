@@ -63,10 +63,10 @@ Here is an example:
 >
 > Our data strategy reflects our business goals:
 >
-> * Provide a coherent, connected view of the customer and their use of our products, so they can quickly see how their usage varies and make educated decisions. Providing this joined-up view allows our 'single quote' and 'single bill' initiatives to succeed and scale
+> * Provide a coherent, connected view of the customer and their use of our products, so they can quickly see how their usage varies and make educated decisions. Providing this joined-up view allows our initiatives to succeed and scale
 > * To support <...> to get th e correct information quickly and easily, so we can continue to deliver excellent customer service.
 > * To support, and not detract from, our main value proposition by offering a lightweight solution which aligns with our values and principles
-> * This ability to provide a sensible, joined-up story allows us to out-perform our competitors and exceed our customers expectations. This allows us to effectively up-sell and cross-sell products.
+> * This ability to provide a sensible, joined-up story allows us to out-perform our competitors and exceed our customers expectations. This allows us to effectively...
 >
 >The Data team will support <...> to achieve these goals:
 >
@@ -77,9 +77,9 @@ Here is an example:
 >
 >For <...>, Data Management is a critical enabler to our business goals.
 >
-> * Allows us to create a single view of the customer, their active contracts, and potential upsells
-> * Enable us to analyse broker performance and see how different brokers do in other areas
-> * Integrate new systems, products, customer records, quotes and billing as we expand and acquire.
+> * Allows us to create a single view of ...
+> * Enable us to analyse ....
+> * Integrate new systems, products, etc...
 
 This strategy outlines how to achieve this and gain short-term benefits incrementally. The outcomes align with the organisation's goals and explain how Data Management is necessary to deliver those goals.
 
@@ -120,11 +120,8 @@ Core Business data is only the high-value, complex, reusable entities with low v
   * CustomerAccounts
   * CustomerSites
   * CustomerCredit
-* Brokers
-  * BrokerAgents
-* Utilities
-  * Products
-    * Prices
+* Products
+  * Prices
 * Contracts
 * Employee
 * Location
@@ -132,7 +129,7 @@ Core Business data is only the high-value, complex, reusable entities with low v
 * Supplier
 * Invoice
 
-Critical data is not necessarily core business data. A trainingcan be vital for compliance, but only in that context. As it is not widely reusable, it wouldn't be considered Core Business Data, but it is still important.
+Critical data is not necessarily core business data. A training video can be vital for compliance, but only in that context. As it is not widely reusable, it wouldn't be considered Core Business Data, but it is still important.
 
 Core Business Data does not, and should not, include transaction data. That stuff is too fast-moving to manage using this pattern. A data warehouse or an event stream is a better way to manage analytics for transactional data. It could link to the transactional view or the analytical aggregates of the transactions.
 
