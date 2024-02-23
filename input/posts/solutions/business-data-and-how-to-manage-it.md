@@ -10,7 +10,6 @@ Categories:
   - Solutions
 Draft: false
 Published: 21/02/2024
-Author: James Brewster
 ---
 
 ## Introduction
