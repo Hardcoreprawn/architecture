@@ -4,7 +4,7 @@
 	<title />
 	<link rel="self" href="https://red-sand-078a6ea03.3.azurestaticapps.net/" />
 	<rights>Copyright James Brewster© 2023</rights>
-	<updated>2023-10-16T07:38:45Z</updated>
+	<updated>2023-10-23T17:49:32Z</updated>
 	<logo>https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png</logo>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/what-are-patterns</id>
@@ -246,20 +246,6 @@
 		<summary>How Architects should work alongside Agile development to enable faster decision-making and reduce risk.</summary>
 	</entry>
 	<entry>
-		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/e2e-agile-architecture-story</id>
-		<title>Agile Architecture - A short story</title>
-		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/e2e-agile-architecture-story" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
-		<updated>2023-06-01T00:00:00Z</updated>
-		<content>&lt;p&gt;The team worked on a new business application allowing customers to order products online and track their delivery status. The application needed to integrate with several external systems, such as inventory management, payment processing, and shipping providers. The team had to decide how to design the integration layer and what technologies to use.&lt;/p&gt;
-&lt;p&gt;They decided to use Azure Logic Apps as the integration platform because it offered a low-code solution to handle complex workflows and orchestration. They also decided to use Azure Service Bus as the messaging system because it provided reliable and scalable communication between the application and the external systems. They documented their decision in an ADR document that followed the template from the current web page context. They explained their decision's context, alternatives, consequences, and status. They submitted the ADR document as a pull request to the repository where they stored all their ADRs.&lt;/p&gt;
-&lt;p&gt;The next day, the architect responsible for reviewing the ADRs saw their pull request and opened it. He read their document and was impressed by their reasoning and clarity. He agreed with their decision and approved the pull request. He also noticed that their decision aligned with a new architectural principle he had been thinking about for a while, &amp;quot;Use cloud-native services whenever possible to reduce complexity and increase agility&amp;quot;. He wrote an ADR document proposing this principle as a guideline for future decisions. He followed the same template and explained his proposal's context, decision, alternatives, consequences, and status. He submitted his document as a pull request to the repository where they stored all their architectural principles.&lt;/p&gt;
-&lt;p&gt;The following week, the architectural review board met to discuss the new architectural principle. The board comprised five executives from different departments: product management, engineering, operations, security, and finance. They reviewed the document and asked questions of the architect. They debated the pros and cons of adopting cloud-native services versus building or buying custom solutions. They considered the principle's impact on cost, performance, reliability, security, and innovation. After a lively discussion, they reached a consensus and approved the principle. The architect merged the pull request and added the principle to their list of architectural principles.&lt;/p&gt;
-&lt;p&gt;The team were happy to see the new architectural principle validated by the architect and the board. They continued to work on their application using Azure Logic Apps and Azure Service Bus. They also looked for other opportunities to apply cloud-native services in their design. They felt more confident and empowered by having clear and consistent architectural guidance.&lt;/p&gt;
-</content>
-		<summary>How does Agile architecture work in practice? This story provides a demonstration.</summary>
-	</entry>
-	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/architecture-decision-records</id>
 		<title>Architecture Decision Records</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/architecture-decision-records" />
@@ -365,6 +351,20 @@
 &lt;/ul&gt;
 </content>
 		<summary>No one reads extensive documents. ADRs are a way to capture meaningful choices so people can find them in future.</summary>
+	</entry>
+	<entry>
+		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/e2e-agile-architecture-story</id>
+		<title>Agile Architecture - A short story</title>
+		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/e2e-agile-architecture-story" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
+		<updated>2023-06-01T00:00:00Z</updated>
+		<content>&lt;p&gt;The team worked on a new business application allowing customers to order products online and track their delivery status. The application needed to integrate with several external systems, such as inventory management, payment processing, and shipping providers. The team had to decide how to design the integration layer and what technologies to use.&lt;/p&gt;
+&lt;p&gt;They decided to use Azure Logic Apps as the integration platform because it offered a low-code solution to handle complex workflows and orchestration. They also decided to use Azure Service Bus as the messaging system because it provided reliable and scalable communication between the application and the external systems. They documented their decision in an ADR document that followed the template from the current web page context. They explained their decision's context, alternatives, consequences, and status. They submitted the ADR document as a pull request to the repository where they stored all their ADRs.&lt;/p&gt;
+&lt;p&gt;The next day, the architect responsible for reviewing the ADRs saw their pull request and opened it. He read their document and was impressed by their reasoning and clarity. He agreed with their decision and approved the pull request. He also noticed that their decision aligned with a new architectural principle he had been thinking about for a while, &amp;quot;Use cloud-native services whenever possible to reduce complexity and increase agility&amp;quot;. He wrote an ADR document proposing this principle as a guideline for future decisions. He followed the same template and explained his proposal's context, decision, alternatives, consequences, and status. He submitted his document as a pull request to the repository where they stored all their architectural principles.&lt;/p&gt;
+&lt;p&gt;The following week, the architectural review board met to discuss the new architectural principle. The board comprised five executives from different departments: product management, engineering, operations, security, and finance. They reviewed the document and asked questions of the architect. They debated the pros and cons of adopting cloud-native services versus building or buying custom solutions. They considered the principle's impact on cost, performance, reliability, security, and innovation. After a lively discussion, they reached a consensus and approved the principle. The architect merged the pull request and added the principle to their list of architectural principles.&lt;/p&gt;
+&lt;p&gt;The team were happy to see the new architectural principle validated by the architect and the board. They continued to work on their application using Azure Logic Apps and Azure Service Bus. They also looked for other opportunities to apply cloud-native services in their design. They felt more confident and empowered by having clear and consistent architectural guidance.&lt;/p&gt;
+</content>
+		<summary>How does Agile architecture work in practice? This story provides a demonstration.</summary>
 	</entry>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/solutions/the-agile-arb</id>
