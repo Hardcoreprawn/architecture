@@ -235,7 +235,7 @@ A data hub also enables [data mesh](https://learn.microsoft.com/en-us/azure/clou
 
 Pick an understandable data model. Ideally, use a reference model rather than invent from scratch, but don't choose one that is too big or fancy. Extensibility is essential, as is the scale of the project.
 
-Microsoft provides the following Common Data Model. While they interchange the term with the physical infrastructure underlying their Dynamics 265 platform, the model is valid and provides a cross-industry organisational data model.
+Microsoft provides the following Common Data Model. While they interchange the term with the physical infrastructure underlying their Dynamics 365 platform, the model is valid and provides a cross-industry organisational data model.
 
 ![Common Data Model V1, Microsoft.com](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/media/cdm-entities-v1.png#lightbox)
 
