@@ -14,8 +14,8 @@ PageTitle: |
   }
 SiteDescriptions: Assorted articles about architecture
 Copyright: => $"Copyright James Brewster© {DateTime.Now.Year}"
-Layout: "/_layout.cshtml"
-Image: "/media/header01.png"
+Layout: /_layout.cshtml
+Image: header01.png
 
 # Post Settings
 PostSources: posts/*
