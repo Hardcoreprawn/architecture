@@ -4,13 +4,13 @@
 	<title />
 	<link rel="self" href="https://red-sand-078a6ea03.3.azurestaticapps.net/" />
 	<rights>Copyright James Brewster© 2024</rights>
-	<updated>2024-03-20T07:44:25Z</updated>
-	<logo>https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png</logo>
+	<updated>2024-03-20T07:57:44Z</updated>
+	<logo>https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png</logo>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/business-data-and-how-to-manage-it</id>
 		<title>Business Data and How to Manage it</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/business-data-and-how-to-manage-it" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2024-02-21T00:00:00Z</updated>
 		<content>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Business Data management is the organisation of people, processes and technologies to create and maintain a reliable data environment for business.&lt;/p&gt;
@@ -271,7 +271,7 @@
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/what-are-patterns</id>
 		<title>What are Patterns?</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/what-are-patterns" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-09-15T00:00:00Z</updated>
 		<content>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Patterns are visual models to base designs and solutions on. Different patterns provide different assumptions, but in general, they all represent a simplified ideal.&lt;/p&gt;
@@ -343,7 +343,7 @@
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/explaining-principles</id>
 		<title>Explaining Principles</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/explaining-principles" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-09-13T00:00:00Z</updated>
 		<content>&lt;h2 id="the-role-of-principles-in-agile-organisations"&gt;The role of Principles in agile organisations&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -414,7 +414,7 @@
 			<name>James Brewster</name>
 		</author>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architecture-practise" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-06-06T00:00:00Z</updated>
 		<content>&lt;p&gt;Software and systems architects provide guidance and governance of a technology organisation by modelling the organisation, its departments, capabilities, and processes and then mapping technology into them to ensure that the business has an optimised environment, which can adapt to its needs and isn't onerous to look after.&lt;/p&gt;
 &lt;p&gt;Traditional approaches to this take time and go against the agile philosophy to avoid Big Up Front Design (BUFD). How best to support developers in an agile world?&lt;/p&gt;
@@ -510,7 +510,7 @@
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architecture-decision-records</id>
 		<title>Architecture Decision Records</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architecture-decision-records" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-06-01T00:00:00Z</updated>
 		<content>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Architectural decision records (ADRs) capture a crucial technical decision, the context in which it was made, and the consequences of the decision. They are used to record the project’s architectural thinking and conclusions for further reference and to help new team members understand the rationale behind the design choices.&lt;/p&gt;
@@ -617,7 +617,7 @@
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/e2e-agile-architecture-story</id>
 		<title>Agile Architecture - A short story</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/e2e-agile-architecture-story" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-06-01T00:00:00Z</updated>
 		<content>&lt;p&gt;The team worked on a new business application allowing customers to order products online and track their delivery status. The application needed to integrate with several external systems, such as inventory management, payment processing, and shipping providers. The team had to decide how to design the integration layer and what technologies to use.&lt;/p&gt;
 &lt;p&gt;They decided to use Azure Logic Apps as the integration platform because it offered a low-code solution to handle complex workflows and orchestration. They also decided to use Azure Service Bus as the messaging system because it provided reliable and scalable communication between the application and the external systems. They documented their decision in an ADR document that followed the template from the current web page context. They explained their decision's context, alternatives, consequences, and status. They submitted the ADR document as a pull request to the repository where they stored all their ADRs.&lt;/p&gt;
@@ -631,7 +631,7 @@
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/the-agile-arb</id>
 		<title>The Agile ARB</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/the-agile-arb" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-05-30T00:00:00Z</updated>
 		<content>&lt;h2 id="the-agile-arb"&gt;The Agile ARB&lt;/h2&gt;
 &lt;p&gt;Sara was the chair of the Architecture Review Board (ARB) at Acme Inc., a software company that had adopted agile methods. She was passionate about creating a culture of trust and collaboration among the different teams and departments. She wanted the ARB to be a facilitator rather than a gatekeeper of decisions.&lt;/p&gt;
@@ -648,7 +648,7 @@
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architecture-review-board</id>
 		<title>Architecture Review Board</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architecture-review-board" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-05-30T00:00:00Z</updated>
 		<content>&lt;h2 id="synopsis"&gt;Synopsis&lt;/h2&gt;
 &lt;p&gt;A frequent perception of ARBs from Agile teams is poor and that they delay decisions and delivery. Properly implemented, an ARB allows an organisation to be more open and transparent and can empower local decision-making within a team or POD.&lt;/p&gt;
@@ -721,7 +721,7 @@
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/2023-05-26-identity-auth</id>
 		<title>Identity, Authentication and Authorisation</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/2023-05-26-identity-auth" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-05-16T00:00:00Z</updated>
 		<content>&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
 &lt;p&gt;This pattern describes a central authentication model suitable for a microservices web application. It builds on several other designs to provide a scalable way to identify, authenticate and authorise access to resources, data and services.&lt;/p&gt;
@@ -781,7 +781,7 @@
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/2023-05-15-dumb-pipes</id>
 		<title>Dumb Pipes</title>
 		<link href="https://red-sand-078a6ea03.3.azurestaticapps.net/posts/2023-05-15-dumb-pipes" />
-		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" />
+		<link rel="enclosure" type="image" href="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" />
 		<updated>2023-05-15T00:00:00Z</updated>
 		<content>&lt;p&gt;As services scale in a microservices architecture, they need to communicate. A communication network is essential to ensure each service can easily talk to the others. Still, as they scale, you must ensure they can grow and continue communicating.&lt;/p&gt;
 &lt;p&gt;This pattern uses the principle of 'Smart end-points, dumb pipes'. If the pipes are clever, they need maintenance; everyone has to wait on the team which is responsible for the pipe, which reduces time to market.&lt;/p&gt;

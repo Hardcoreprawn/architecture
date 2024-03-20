@@ -1,6 +1,6 @@
 # Hosting Settings
 MinimumStatiqWebVersion-CleanBlog: "1.0.0-beta.3"
-Host: red-sand-078a6ea03.3.azurestaticapps.net # Host Name
+Host: open-ea.brenster.uk # Host Name
 LinksUseHttps: true # Do we use HTTPS
 
 # Branding

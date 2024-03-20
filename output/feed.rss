@@ -5,13 +5,13 @@
 		<link>https://red-sand-078a6ea03.3.azurestaticapps.net/</link>
 		<description />
 		<copyright>Copyright James Brewster© 2024</copyright>
-		<pubDate>Wed, 20 Mar 2024 07:44:25 GMT</pubDate>
-		<lastBuildDate>Wed, 20 Mar 2024 07:44:25 GMT</lastBuildDate>
+		<pubDate>Wed, 20 Mar 2024 07:57:44 GMT</pubDate>
+		<lastBuildDate>Wed, 20 Mar 2024 07:57:44 GMT</lastBuildDate>
 		<item>
 			<title>Business Data and How to Manage it</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/business-data-and-how-to-manage-it</link>
 			<description>Business data management is the organisation of people, processes and technologies to create and maintain a reliable data environment for business.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" length="0" type="image" />
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
 			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/business-data-and-how-to-manage-it</guid>
 			<pubDate>Wed, 21 Feb 2024 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
@@ -273,7 +273,7 @@
 			<title>What are Patterns?</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/what-are-patterns</link>
 			<description>Patterns are well understood ways to fix problems or provide certain functionality.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" length="0" type="image" />
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
 			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/what-are-patterns</guid>
 			<pubDate>Fri, 15 Sep 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
@@ -346,7 +346,7 @@
 			<title>Explaining Principles</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/explaining-principles</link>
 			<description>Principles allow you to write out the important choices and decisions you want your business to make.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" length="0" type="image" />
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
 			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/explaining-principles</guid>
 			<pubDate>Wed, 13 Sep 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;h2 id="the-role-of-principles-in-agile-organisations"&gt;The role of Principles in agile organisations&lt;/h2&gt;
@@ -416,7 +416,7 @@
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architecture-practise</link>
 			<description>How Architects should work alongside Agile development to enable faster decision-making and reduce risk.</description>
 			<author>James Brewster</author>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" length="0" type="image" />
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
 			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architecture-practise</guid>
 			<pubDate>Tue, 06 Jun 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Software and systems architects provide guidance and governance of a technology organisation by modelling the organisation, its departments, capabilities, and processes and then mapping technology into them to ensure that the business has an optimised environment, which can adapt to its needs and isn't onerous to look after.&lt;/p&gt;
@@ -513,7 +513,7 @@
 			<title>Architecture Decision Records</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architecture-decision-records</link>
 			<description>No one reads extensive documents. ADRs are a way to capture meaningful choices so people can find them in future.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" length="0" type="image" />
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
 			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architecture-decision-records</guid>
 			<pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
@@ -621,7 +621,7 @@
 			<title>Agile Architecture - A short story</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/e2e-agile-architecture-story</link>
 			<description>How does Agile architecture work in practice? This story provides a demonstration.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" length="0" type="image" />
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
 			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/e2e-agile-architecture-story</guid>
 			<pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;The team worked on a new business application allowing customers to order products online and track their delivery status. The application needed to integrate with several external systems, such as inventory management, payment processing, and shipping providers. The team had to decide how to design the integration layer and what technologies to use.&lt;/p&gt;
@@ -636,7 +636,7 @@
 			<title>The Agile ARB</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/the-agile-arb</link>
 			<description>A short story about the way an Agile ARB could run</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" length="0" type="image" />
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
 			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/the-agile-arb</guid>
 			<pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;h2 id="the-agile-arb"&gt;The Agile ARB&lt;/h2&gt;
@@ -654,7 +654,7 @@
 			<title>Architecture Review Board</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architecture-review-board</link>
 			<description>A coherent ARB can help organisations plan and normalise technology decisions. It can also create a situation where nothing happens, and work goes to die.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" length="0" type="image" />
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
 			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/architecture-review-board</guid>
 			<pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;h2 id="synopsis"&gt;Synopsis&lt;/h2&gt;
@@ -728,7 +728,7 @@
 			<title>Identity, Authentication and Authorisation</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/2023-05-26-identity-auth</link>
 			<description>Authenticating users in microservices can be fraught with perils.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" length="0" type="image" />
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
 			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/2023-05-26-identity-auth</guid>
 			<pubDate>Tue, 16 May 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
@@ -789,7 +789,7 @@
 			<title>Dumb Pipes</title>
 			<link>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/2023-05-15-dumb-pipes</link>
 			<description>This page is about designing and implementing effective communication between microservices in a distributed system.</description>
-			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png" length="0" type="image" />
+			<enclosure url="https://red-sand-078a6ea03.3.azurestaticapps.net/media/header01.png" length="0" type="image" />
 			<guid>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/2023-05-15-dumb-pipes</guid>
 			<pubDate>Mon, 15 May 2023 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;As services scale in a microservices architecture, they need to communicate. A communication network is essential to ensure each service can easily talk to the others. Still, as they scale, you must ensure they can grow and continue communicating.&lt;/p&gt;
