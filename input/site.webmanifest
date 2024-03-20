@@ -3,7 +3,7 @@
     "short_name": "Open-EA",
     "description": "A collection of articles and artifacts about Enterprise Architecture",
     "icons": [{
-                "src": "/media/android-chrome-192x192.png",
+                "src": "media/android-chrome-192x192.png",
                 "sizes": "192x192",
                 "type": "image/png"
                 },
