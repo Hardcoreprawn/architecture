@@ -1,11 +1,829 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
 	<channel>
 		<title />
 		<link>https://open-ea.brenster.uk/</link>
 		<description />
 		<copyright>Copyright James Brewster© 2024</copyright>
-		<pubDate>Wed, 20 Mar 2024 13:29:05 GMT</pubDate>
-		<lastBuildDate>Wed, 20 Mar 2024 13:29:05 GMT</lastBuildDate>
+		<pubDate>Wed, 20 Mar 2024 17:05:37 GMT</pubDate>
+		<lastBuildDate>Wed, 20 Mar 2024 17:05:37 GMT</lastBuildDate>
+		<item>
+			<title>Business Data and How to Manage it</title>
+			<link>https://open-ea.brenster.uk/posts/business-data-and-how-to-manage-it</link>
+			<description>Business data management is the organisation of people, processes and technologies to create and maintain a reliable data environment for business.</description>
+			<enclosure url="https://open-ea.brenster.uk/media/header01.png" length="0" type="image" />
+			<guid>https://open-ea.brenster.uk/posts/business-data-and-how-to-manage-it</guid>
+			<pubDate>Wed, 21 Feb 2024 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Business Data management is the organisation of people, processes and technologies to create and maintain a reliable data environment for business.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="xref:a-tale-of-two-customers"&gt;The Tale of Two Customers (James B &amp;amp; Bing AI, 2023)&lt;/a&gt; shows how well-understood, linked information can help improve customer experience and business success. It talks about two experiences of customer service, one positive and one negative, through the eyes of Alice (who has a good experience) and Bob (who has a bad one).&lt;/p&gt;
+&lt;p&gt;I think we've all been Alice or Bob at some point, and it's likely that when we felt like Alice, we used the company again. And when we felt like Bob, we avoided them and repeatedly told our friends and family about the poor experience.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="business-data"&gt;Business Data&lt;/h2&gt;
+&lt;p&gt;Business Data is a broad term; you could ask several people and never get a consistent answer.&lt;/p&gt;
+&lt;p&gt;This article refers to 'the critical information required to run the organisation' as 'Business Data'. Each department may have its own. Acquisitions will have their own. Partners will have their own.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You have probably heard the term 'Master Data Management'. In this article we'll eschew the word as its not in keeping with culture. Links to outside sources will still use that term as its been active for at least 15 years.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Business Data management is the organisation of people, processes and technologies to create and maintain data in a way which is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Authoritative&lt;/li&gt;
+&lt;li&gt;Reliable&lt;/li&gt;
+&lt;li&gt;Sustainable&lt;/li&gt;
+&lt;li&gt;Accurate&lt;/li&gt;
+&lt;li&gt;Secure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Great if you are lucky enough to have a single system which everyone uses to track orders, shipments, payments and work items. Your data is already probably mastered and accurate. A design like this is a business's 'gold standard' of information management.&lt;/p&gt;
+&lt;p&gt;But it's rarely found in any but the smallest or largest organisations. Small organisations cope with limited systems. The larger ones invest heavily in creating designs that match their processes and allow this interaction.&lt;/p&gt;
+&lt;p&gt;For everyone else, we need to understand and link data to simplify our work and limit the expense of supporting our customers while offering them a great experience they want to return to.&lt;/p&gt;
+&lt;p&gt;Easy access to a single record system eases and supports the business. Each area may use a different database system, but as long as the resulting view is consistent, this will not harm the organisation.&lt;/p&gt;
+&lt;p&gt;Ideally, we want to try and limit the number of systems customer-facing colleagues are using. They should be able to work in one place to ease training and stress.&lt;/p&gt;
+&lt;p&gt;Managing this data is done by understanding how information flows through an organisation and creating an authoritative model to keep every other system up to date.&lt;/p&gt;
+&lt;p&gt;This single source can be decentralised, consolidated or any other shape you can imagine as long as the data source and the data relationships are understood, and the outcome results in an ability to see the whole picture about a customer, reseller, product or other important entity.&lt;/p&gt;
+&lt;h2 id="data-strategy"&gt;Data Strategy&lt;/h2&gt;
+&lt;p&gt;A data strategy sets the tone for the project, outlining why its important and what the expectations are for it, and how it will be achieved. It also includes how the organisation will confront its opposition.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow"&gt;McKinsey cites modern data architecture&lt;/a&gt; as a critical business driver, but it can be one of the most expensive projects a company can take on. A Strategy to adopt the right data capability for the organisation's growth and maturity is essential.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here is an example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;At &amp;lt;...&amp;gt;, our mission is to simplify our customer's needs. We need to understand their use of and be able to track how we can align their use.&lt;/p&gt;
+&lt;p&gt;Our data strategy reflects our business goals:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Provide a coherent, connected view of the customer and their use of our products, so they can quickly see how their usage varies and make educated decisions. Providing this joined-up view allows our initiatives to succeed and scale&lt;/li&gt;
+&lt;li&gt;To support &amp;lt;...&amp;gt; to get the correct information quickly and easily, so we can continue to deliver excellent customer service.&lt;/li&gt;
+&lt;li&gt;To support, and not detract from, our main value proposition by offering a lightweight solution which aligns with our values and principles&lt;/li&gt;
+&lt;li&gt;This ability to provide a sensible, joined-up story allows us to out-perform our competitors and exceed our customers expectations. This allows us to effectively...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The Data team will support &amp;lt;...&amp;gt; to achieve these goals:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;By identifying and managing our Core Business Data which is required to create integrated customer experiences&lt;/li&gt;
+&lt;li&gt;Through maintaining authoritative sources, which the broader organisation can easily access&lt;/li&gt;
+&lt;li&gt;Ensuring our data stewardship is fit for purpose as our regulated footprint grows&lt;/li&gt;
+&lt;li&gt;By providing a lightweight service which delivers the necessary functionality in a cost-effective manner&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For &amp;lt;...&amp;gt;, Data Management is a critical enabler to our business goals.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Allows us to create a single view of ...&lt;/li&gt;
+&lt;li&gt;Enable us to analyse ....&lt;/li&gt;
+&lt;li&gt;Integrate new systems, products, etc...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This strategy outlines how to achieve this and gain short-term benefits incrementally. The outcomes align with the organisation's goals and explain how Data Management is necessary to deliver those goals.&lt;/p&gt;
+&lt;p&gt;The rest of this article will describe the project necessary to create such a hub and what types of tools will be required.&lt;/p&gt;
+&lt;h2 id="method"&gt;Method&lt;/h2&gt;
+&lt;p&gt;A Data Management project involves several stages. Not all are essential, but some have to come first.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*75EtrzKzZUb0nfPd8VT9qw.png" alt="10 Steps to a Successful MDM Project"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Schedlbauer, M. (2019) Master Data Management, shipzero. &lt;a href="https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241"&gt;Medium&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="goal-define-business-outcomes"&gt;1. Goal - Define Business Outcomes&lt;/h2&gt;
+&lt;p&gt;An important step. Things only happen when there is a tangible goal for the business. Data Management drives two main types of value streams:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Data Management drives a short-term return on its investment by managing inconsistencies, improving analysis and reducing the effort to visualise and analyse data. It boosts responses to customers and partners.&lt;/li&gt;
+&lt;li&gt;A longer-term return is the capability to model and simulate how changes affect business performance. Data Management allows business modelling and testing, which can make analytics a strategic investment. It supports acquisition and integration by ensuring new systems adapt to existing data.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It is vital to maintain both the vision (Analytics as a strategic enabler) and the short-term gains (we can show value in the short term by doing -something-) when explaining the importance of Data Management and a data strategy.&lt;/p&gt;
+&lt;h2 id="identification"&gt;2. Identification&lt;/h2&gt;
+&lt;h3 id="identify-core-business-data"&gt;Identify Core Business Data&lt;/h3&gt;
+&lt;p&gt;At the start of any project, identify the relevant business data for that project, not all the business data you may ever need, and certainly not all the data you have.&lt;/p&gt;
+&lt;p&gt;The following characteristics help identify Core Business Data:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;High Business Value&lt;/li&gt;
+&lt;li&gt;Low volatility&lt;/li&gt;
+&lt;li&gt;Complex&lt;/li&gt;
+&lt;li&gt;Reusable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Core Business data is only the high-value, complex, reusable entities with low volatility, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Customers
+&lt;ul&gt;
+&lt;li&gt;CustomerAccounts&lt;/li&gt;
+&lt;li&gt;CustomerSites&lt;/li&gt;
+&lt;li&gt;CustomerCredit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Products
+&lt;ul&gt;
+&lt;li&gt;Prices&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Contracts&lt;/li&gt;
+&lt;li&gt;Employee&lt;/li&gt;
+&lt;li&gt;Location&lt;/li&gt;
+&lt;li&gt;Vendor&lt;/li&gt;
+&lt;li&gt;Supplier&lt;/li&gt;
+&lt;li&gt;Invoice&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Critical data is not necessarily core business data. A training video can be vital for compliance, but only in that context. As it is not widely reusable, it wouldn't be considered Core Business Data, but it is still important.&lt;/p&gt;
+&lt;p&gt;Core Business Data does not, and should not, include transaction data. That stuff is too fast-moving to manage using this pattern. A data warehouse or an event stream is a better way to manage analytics for transactional data. It could link to the transactional view or the analytical aggregates of the transactions.&lt;/p&gt;
+&lt;p&gt;From a data warehouse point of view, Core Business Data fields are critical dimensions which change slowly, but not the facts about those dimensions.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://open-ea.brenster.uk/media/mdm-field-eval.png" alt="MDM Entity Analysis"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Schedlbauer, M. (2019) Master Data Management, shipzero. &lt;a href="https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241"&gt;Medium&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Once we know what they are, we can understand and expose the proper entities and their fields from the right places.&lt;/p&gt;
+&lt;h3 id="identify-evaluate-data-sources"&gt;Identify &amp;amp; Evaluate Data Sources&lt;/h3&gt;
+&lt;p&gt;Where do we get this data from? Where was it created or first used? How can we trust that it is correct? These are all critical questions to ask on our journey. The next step is to identify where our Core Business Data comes from and whether that is a system of record.&lt;/p&gt;
+&lt;p&gt;Identifying the right place to collect different data items is crucial as it lets us integrate or populate data as soon as possible in the lifecycle. Having a clear lineage for each entity increases the ability to diagnose issues with data and ensures data is more accurate and trustworthy.&lt;/p&gt;
+&lt;p&gt;Following the data lifecycle in an organisation makes the process less invasive or disruptive. Which department/system gets to the entity first? For a new product, it is likely to be Product Management. Sales probably identify a Customer first. Using these 'natural' systems as the system of record and the source of information ensures the organisation captures data soon and remains current.&lt;/p&gt;
+&lt;p&gt;Evaluate whether these systems have available interfaces to export data, ideally, modern interfaces that drive events.&lt;/p&gt;
+&lt;p&gt;TODO: List some example sources for core business data&lt;/p&gt;
+&lt;p&gt;If possible, using webhooks or an event model means we can quickly raise events when something changes, and each interested system can update its copy of any information.&lt;/p&gt;
+&lt;h2 id="analysis"&gt;3. Analysis&lt;/h2&gt;
+&lt;h3 id="metadata"&gt;Metadata&lt;/h3&gt;
+&lt;p&gt;Defining and managing metadata for a business would be an entire article or more on its own. Detailed data about your data, who created it, where they created it, when they made it and who last edited it can all add value to a business by increasing understanding of critical entities.&lt;/p&gt;
+&lt;p&gt;Different areas of the business have other processes and different names for things. Metadata requires analysis to check for consistency across systems. Different teams and systems likely use other terms or values for the same things. It's important to align these things to create a shared language for the organisation.&lt;/p&gt;
+&lt;p&gt;The easiest solution is to add all the different, relevant metadata to the Master Data entity so that other systems can access the metadata. Then train departmental leaders in the correct terms. To allow a colleague to understand who last worked with an entity, what happened to the entity and whether it is live or stale, Metadata should include Comments, Versions, Updates and Editors.&lt;/p&gt;
+&lt;p&gt;Consider what Core Business data Metadata is relevant outside of the source system. Sometimes, there is no actual use outside the source. If in doubt, leave it out!&lt;/p&gt;
+&lt;h3 id="data-lifecycles"&gt;Data Lifecycles&lt;/h3&gt;
+&lt;p&gt;Who:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Creates the data&lt;/li&gt;
+&lt;li&gt;Updates the data&lt;/li&gt;
+&lt;li&gt;Views the data&lt;/li&gt;
+&lt;li&gt;Deletes the data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Define these items for each Core Data domain. These lifecycles define where something is created and edited. At different steps in the lifecycle, other systems are 'the' primary source, and this can vary over time.&lt;/p&gt;
+&lt;p&gt;A 'multi-master' model is too complex to maintain, so avoid it.&lt;/p&gt;
+&lt;h3 id="worked-examples"&gt;Worked examples&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;'Customer' is created in 'System' when 'Event' By 'Persona'&lt;/li&gt;
+&lt;li&gt;'Customer' is updated in 'System' when 'signed up' to 'Persona'&lt;/li&gt;
+&lt;li&gt;'Customer' is viewed in 'System' when '...' by 'persona'&lt;/li&gt;
+&lt;li&gt;'Customer' is viewed in 'System' when '...' by '...'&lt;/li&gt;
+&lt;li&gt;'Customer' is deleted in 'System' when '...' by '...'&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="involvement-appoint-data-stewards"&gt;4. Involvement - Appoint Data Stewards&lt;/h2&gt;
+&lt;p&gt;Have two people for each 'domain' in the department who create and use that entity the most act as stewards for it. The two people should be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Business, from the department that makes or uses the core entity the most.&lt;/li&gt;
+&lt;li&gt;'Technical', which &lt;em&gt;could&lt;/em&gt; be from the data team if there's no one more local.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;They need a working relationship for regular changes/updates and can make local decisions if the impact is non-breaking or within budget.&lt;/p&gt;
+&lt;h2 id="infrastructure"&gt;5. Infrastructure&lt;/h2&gt;
+&lt;p&gt;Now we look at tools and capabilities and decide what we have, what we need and what we would like. Based on research into reference models, the following characteristics are essential to add to a company's data tooling:&lt;/p&gt;
+&lt;p&gt;Must-Haves&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data Governance, such as lineage, catalogue and provenance.&lt;/li&gt;
+&lt;li&gt;Data Factories, which process and ingest data to operational services.&lt;/li&gt;
+&lt;li&gt;Data APIs, which support OpenAPI specifications and allow systems to communicate and interrogate each other&lt;/li&gt;
+&lt;li&gt;Data Marts; analytical 'shop-fronts' which store processed data for known use cases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As an organisation, you need to decide whether a 'hypermarket', or little specialist shops is the right approach. One stop can be good, but specialists might fit. It could also be a blend, where your business has some areas that require a more specialist shop than others.&lt;/p&gt;
+&lt;p&gt;Nice-to-Haves&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fast data flows. Process feeds of information close to real-time.&lt;/li&gt;
+&lt;li&gt;Discovery and Research areas. Places for data science to occur, allowing organisational learning.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="architecture"&gt;Architecture&lt;/h3&gt;
+&lt;p&gt;A reference architecture is a great guide to have. It shows you all the important points you could visit, but you don't have to visit any of them unless they solve a problem for your business.&lt;/p&gt;
+&lt;p&gt;Don't reinvent the wheel. Choose an architecture which is closest to your identified needs and adapt that.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow"&gt;How to Build a Data Architecture to drive innovation, McKinsey&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.tickingtrend.com/articles/building-a-data-hub#:%7E:text=Building%20a%20Data%20Hub%201%20Step%201%3A%20Define,Data%20Governance%20...%207%20Step%207%3A%20Data%20Analytics"&gt;Building a Data Hub, Ticking Trend&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.eckerson.com/articles/data-hubs-what-s-next-in-data-architecture"&gt;Data Hubs - What's Next in Data Architecture, Eckerson&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A data hub architecture separates the management of core business data from other concerns, such as analytics. As a collection of web services, it follows the principles and standards &amp;lt;...&amp;gt; adheres to, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Multi-cloud capable&lt;/li&gt;
+&lt;li&gt;Scalable&lt;/li&gt;
+&lt;li&gt;Proportionate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A data hub also enables &lt;a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/what-is-data-mesh"&gt;data mesh&lt;/a&gt; or &lt;a href="https://techcommunity.microsoft.com/t5/data-architecture-blog/polyglot-persistence-with-azure-data-services/ba-p/1514912#:%7E:text=Polyglot%20Persistence%20is%20the%20concept%20of%20using%20different,support%20all%20possible%20data%20types%20and%20its%20usages."&gt;polyglot persistence&lt;/a&gt; implementation later.&lt;/p&gt;
+&lt;h3 id="data-model"&gt;Data Model&lt;/h3&gt;
+&lt;p&gt;Pick an understandable data model. Ideally, use a reference model rather than invent from scratch, but don't choose one that is too big or fancy. Extensibility is essential, as is the scale of the project.&lt;/p&gt;
+&lt;p&gt;Microsoft provides the following Common Data Model. While they interchange the term with the physical infrastructure underlying their Dynamics 365 platform, the model is valid and provides a cross-industry organisational data model.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/media/cdm-entities-v1.png#lightbox" alt="Common Data Model V1, Microsoft.com"&gt;&lt;/p&gt;
+&lt;p&gt;This overview of familiar entities can be a good reference model to help plan and consider the information required to keep business moving.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/common-industry-data-models"&gt;Common Data Model, Microsoft.com&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="toolset"&gt;Toolset&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Microsoft uses the following overview of Azure services as a model for the types of tools needed.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/overview-architectures"&gt;Cloud Scale Analytics&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Review these as options to help feed organisational demand for data.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="evaluate-plan-changes"&gt;Evaluate &amp;amp; Plan Changes&lt;/h3&gt;
+&lt;p&gt;How will you add these to the existing estate?&lt;/p&gt;
+&lt;h2 id="prototypes-and-testing"&gt;6. Prototypes and Testing&lt;/h2&gt;
+&lt;p&gt;By this, I mean testing the process of MDM as a business enabler. It must work, but it must add value. Work with the stewards to understand pains, shortcomings, or ways to add value.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a Hypothesis around how data will improve a process or add value.&lt;/li&gt;
+&lt;li&gt;Test it.&lt;/li&gt;
+&lt;li&gt;Keep it small and achievable, and deliver some results.&lt;/li&gt;
+&lt;li&gt;something-something&lt;/li&gt;
+&lt;li&gt;Grow in confidence.&lt;/li&gt;
+&lt;li&gt;Profit.&lt;/li&gt;
+&lt;li&gt;Repeat.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;'Something-something' would be a data project, which builds from your knowledge of the environment you work in and the technology landscape you have built so far. Business Data Management is a great place to start aligning your data across systems, but you can start anywhere.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id="maturity-model"&gt;Maturity Model&lt;/h2&gt;
+&lt;p&gt;One way to assess the capability of an organisation is by looking at a Maturity model. Here is an example from the Uk Government of a Data Maturity model aimed at UK Government departments, which encourages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Documentation&lt;/li&gt;
+&lt;li&gt;Data to be Open within the government community&lt;/li&gt;
+&lt;li&gt;Secured and authenticated&lt;/li&gt;
+&lt;li&gt;Use of Open Standards&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These traits are desirable for most organisations, as integrating data easily across your enterprise is a strategic strength.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Documentation&lt;/li&gt;
+&lt;li&gt;APIs&lt;/li&gt;
+&lt;li&gt;OAuth&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are three maturity levels used within the three areas above.&lt;/p&gt;
+&lt;h3 id="documentation"&gt;Documentation&lt;/h3&gt;
+&lt;p&gt;Documentation increases the collective knowledge of everyone that you work with. When it becomes the norm on your team to share information, you’ll benefit from increased transparency and a culture that’s more collaborative and strategic. Documentation encourages knowledge sharing, which empowers your team to understand how processes work and what finished projects typically look like.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Your systems are not documented&lt;/li&gt;
+&lt;li&gt;Your systems are all documented&lt;/li&gt;
+&lt;li&gt;Documentation is automated and self-updating&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="apis"&gt;APIs&lt;/h3&gt;
+&lt;p&gt;APIs (Application Programming Interfaces) are important for businesses because they enable applications, devices, and data to share information, interact, and take on tasks together. APIs also create greater shared awareness and confidence in the data models and structure of the business. APIs can help businesses sell their products and services online or extend their applications by adding more codes. Effectively using APIs can reduce operational or technology costs by simplifying and accelerating development. APIs are also essential to building business intelligence because they provide access to your data, allowing others to build applications that you could never have foreseen.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Most of your systems do not support APIs&lt;/li&gt;
+&lt;li&gt;The majority of systems support APIs&lt;/li&gt;
+&lt;li&gt;APIs are published to a catalogue with documentation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="oauth"&gt;OAuth&lt;/h3&gt;
+&lt;p&gt;OAuth (short for “Open Authorization”) is an open standard for access delegation. It is commonly used as a way for internet users to grant websites or applications access to their information on other websites but without giving them the passwords. OAuth is an authorization framework that enables third-party applications to obtain limited access to an HTTP service, either on behalf of a resource owner by orchestrating an approval interaction between the resource owner and the HTTP service, or by allowing the third-party application to obtain access on its own behalf.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The Open Authentication (OAuth) protocol is available for use.&lt;/li&gt;
+&lt;li&gt;OAuth is available to your partners and customers&lt;/li&gt;
+&lt;li&gt;OAuth is available to people who are external to the organisation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Taken together these three areas give some context around how to measure the data maturity of different areas or applications within the business.&lt;/p&gt;
+&lt;h2 id="conclusion"&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The article explains that Business Data Management is the process of organising and collating data to create and maintain a reliable data environment for business. It highlights the importance of understanding how information flows through an organisation and creating an authoritative model to keep every other system up to date. The article also talks about how well-understood, linked information can help improve customer experience and business success. Finally, it outlines the steps involved in a Data Management project which includes identifying Core Business Data, evaluating data sources and creating a data strategy that aligns with the organisation’s goals.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241"&gt;Schedlbauer, M. (2019). Master Data Management. Online.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gov.uk/guidance/develop-your-data-and-apis-using-a-reference-architecture"&gt;Develop your data and APIs using a reference architecture GOV.UK.&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>What are Patterns?</title>
+			<link>https://open-ea.brenster.uk/posts/what-are-patterns</link>
+			<description>Patterns are well understood ways to fix problems or provide certain functionality.</description>
+			<enclosure url="https://open-ea.brenster.uk/media/header01.png" length="0" type="image" />
+			<guid>https://open-ea.brenster.uk/posts/what-are-patterns</guid>
+			<pubDate>Fri, 15 Sep 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Patterns are visual models to base designs and solutions on. Different patterns provide different assumptions, but in general, they all represent a simplified ideal.&lt;/p&gt;
+&lt;p&gt;They vary in size and scope, but they tend to focus on a way to fix a problem. Whether you have those problems and thus, whether you need a given pattern is something to remember. Fixing problems you don't have does give you more problems...&lt;/p&gt;
+&lt;h2 id="why-use-patterns"&gt;Why use Patterns?&lt;/h2&gt;
+&lt;p&gt;Good examples of patterns can be found everywhere. Some really simple, basic ones which are fairly ubiquitous are things like 'the wheel', 'knives' or 'a campfire'. There are well understood, documented ways to make these things, which have been known for most of civilisation. You can try to build your own versions, but these patterns are well refined and understood.&lt;/p&gt;
+&lt;p&gt;We use patterns for this reason. People who needed them before you have thought about them and figured out the wrong ways to go about it, and eventually written good, working ways. Over time, people improve on them, and the idea gets better.&lt;/p&gt;
+&lt;p&gt;Architectural patterns are templated ways of acheiving certain things, which we know are safe, successful and easy to look after, which do the 'thing' that we need.&lt;/p&gt;
+&lt;h2 id="where-do-i-find-patterns"&gt;Where do I find Patterns?&lt;/h2&gt;
+&lt;p&gt;Everywhere.&lt;/p&gt;
+&lt;p&gt;But thats not a very helpful answer. Google is great, you can literally search for them, but you often come up with all kinds of interesting things. Some ideas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vendors provide reference architectures for their products. Microsoft, oracle and Amazon all have good examples of successful, proven ways to use most of their products, either together or independantly, in a myrid ways, to fit your need.&lt;/li&gt;
+&lt;li&gt;Research. You can work on your own patterns, based on your own problems. Finding corroborating 'evidence' that others came to a similar conclusion is a good way to verify your thinking. But 90% of problems are not unique.&lt;/li&gt;
+&lt;li&gt;Tutorials and training materials. Often, these are produced by experienced individuals, so when they show you have to use a library or technology, they will be working to a 'known good'. Which is a pattern.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The key takeaway here is that most problems you encounter have a fix which is good enough for most people/companies. You don;t need to innovate everywhere; its tiring and expensive. Save your A game for those times its needed and build your designs ont he shoulders of those who came before you.&lt;/p&gt;
+&lt;h2 id="pattern-benefits"&gt;Pattern Benefits&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reducing work and risk. If you can reference the work of others, it can be faster to design and they'll provide things like assumptions and risks to help you reduce the risk and time to deliver your own projects.&lt;/li&gt;
+&lt;li&gt;Lowering costs. Using existing patterns removes the unknowns and the guess work. Whilst you may feel a bit less 'expert', knowing when someone else has a better idea than you is a mature point of view, which will save your projects time and money.&lt;/li&gt;
+&lt;li&gt;Simpler collaboration. Its much easier to explain whats happening to someone, if you can talk in a language they understand. If they have experience in the area, then they may already be familar with it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="risks-of-using-patterns"&gt;Risks of using patterns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;There could be a better option out there, which meets a business requirement.
+&lt;ul&gt;
+&lt;li&gt;I tend to find that this is a false start. If you can build on the proven model and simplify the business, the outcomes will be bettter. Do take the time to understand why the business is doing something differewnt though, and make sure you can mitigate that.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;It can be very uninteresting to implement other peoples patterns all day.
+&lt;ul&gt;
+&lt;li&gt;Actually, this is a good thing. You're not paid to have fun ;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="anti-patterns"&gt;Anti-patterns&lt;/h2&gt;
+&lt;p&gt;The opposite of a pattern is an anti-pattern. Often, these are as informative; learning what other people tried and what didn't work can be a better explanation than what did!&lt;/p&gt;
+&lt;p&gt;For some good example anti-patterns, look at: &lt;a href="https://www.scrum.org/resources/blog/27-sprint-anti-patterns"&gt;Scrum.org&lt;/a&gt;, they have some good examples.&lt;/p&gt;
+&lt;h2 id="template"&gt;Template&lt;/h2&gt;
+&lt;p&gt;As always, here's a pattern for recording patterns, to try save some mental load. As always, this has been stolen and butchered, thank you Internet for providing examples and apologies to any uncredited authors.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Outline the pattern and its purpose. Keep it short and sweet.&lt;/p&gt;
+&lt;h2 id="illustration"&gt;Illustration&lt;/h2&gt;
+&lt;p&gt;Draw a picture! It really does help.&lt;/p&gt;
+&lt;h2 id="description"&gt;Description&lt;/h2&gt;
+&lt;p&gt;Explain the probklem it solves, the pattern and common usage.&lt;/p&gt;
+&lt;h2 id="benefits"&gt;Benefits&lt;/h2&gt;
+&lt;p&gt;Why is this pattern good? What does it do, and what do you get?&lt;/p&gt;
+&lt;h2 id="concerns"&gt;Concerns&lt;/h2&gt;
+&lt;p&gt;Are there drawbacks? Coudl the pattern be misused or introduce extra concerns or complexities?&lt;/p&gt;
+&lt;h2 id="examples"&gt;Examples&lt;/h2&gt;
+&lt;p&gt;Show examples of usage, they also help illustrate the possible.&lt;/p&gt;
+&lt;h2 id="when-to-use"&gt;When to use&lt;/h2&gt;
+&lt;p&gt;Show good use cases and directions. the aim is to support colleagues to make decisions or avoid asking for help!&lt;/p&gt;
+&lt;h2 id="when-to-avoid"&gt;When to avoid&lt;/h2&gt;
+&lt;p&gt;If there are good cases where the pattern seems compelling, but won't be, outline them.&lt;/p&gt;
+&lt;h2 id="approach"&gt;Approach&lt;/h2&gt;
+&lt;p&gt;Explain how to implement or approach the pattern and problem.&lt;/p&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;p&gt;Provide references! Linking your work to others builds a body of support and concensus, which supports the pattern and use.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;There are examples on this site, just click on the 'Patterns' tag, wherever you see it.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Explaining Principles</title>
+			<link>https://open-ea.brenster.uk/posts/explaining-principles</link>
+			<description>Principles allow you to write out the important choices and decisions you want your business to make.</description>
+			<enclosure url="https://open-ea.brenster.uk/media/header01.png" length="0" type="image" />
+			<guid>https://open-ea.brenster.uk/posts/explaining-principles</guid>
+			<pubDate>Wed, 13 Sep 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="the-role-of-principles-in-agile-organisations"&gt;The role of Principles in agile organisations&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Decentralised decision making is a critical ability for organisations that want to move fast, and disrupt their markets. - James Brewster, just now.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Agility in a business requires trust and it requires the organisation to take a pragmatic view about decision making. If too many decisions are centralised, then everything will wait for those decisions. Things won't happen quickly. People will revert to waiting to be allowed to do things.&lt;/p&gt;
+&lt;p&gt;If you empower your teams to make their own decisions, then they can fix problems much faster.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://open-ea.brenster.uk/media/principles.jpg" alt="Abstract Image, generated by DALL-E"&gt;&lt;/p&gt;
+&lt;h2 id="what-are-principles"&gt;What are principles?&lt;/h2&gt;
+&lt;p&gt;Principles are fundamental truths or propositions that serve as the foundation for business decision-making.&lt;/p&gt;
+&lt;p&gt;Most organisations, and especially their leaders, would say that their business has principles. Often, these are passed around by word of mouth, or only uttered in strategy documents.&lt;/p&gt;
+&lt;p&gt;This is wrong. They should be written down.&lt;/p&gt;
+&lt;p&gt;Unless they are easily available to everyone, and it is clear to everyone what they are and why they are there, people tend to do one of the following things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make up their own, which sound sensible, but don't align with the organisation.&lt;/li&gt;
+&lt;li&gt;Talk about their own opinions or experiences as though they are rules to be followed.&lt;/li&gt;
+&lt;li&gt;use past precedent, or what worked for them before.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To avoid these things, it's best to work out what they are and write them down. Take the guesswork away.&lt;/p&gt;
+&lt;h2 id="how-to-work-out-what-your-principles-are"&gt;How to work out what your principles are&lt;/h2&gt;
+&lt;p&gt;Some surefire ways to get everyone to avoid following your principles is to have too many of them, to have principles which aren't followed or which make no sense.&lt;/p&gt;
+&lt;p&gt;If we're going to create a framework to encourage decentralised decisions, then we need to make sure our principles are clear, sensible and easy to follow. I recommend the following approach:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Business Priorities - Talk to your management about what is important to the business, and how different areas create conflicts or priorities.&lt;/li&gt;
+&lt;li&gt;Decision Framework - Don't start by talking about principles. Explain that you want to create a framework to help teams make decentralised decisions properly, and then start to think about what decisions they might need to make.&lt;/li&gt;
+&lt;li&gt;Constraints - How would constraints remove the wrong options from the discussion? What constraints will help to steer decisions?&lt;/li&gt;
+&lt;li&gt;Audience - Who are you aiming these principles at? What is their scope of application?&lt;/li&gt;
+&lt;li&gt;Limit your principles - There are only so many cares anyone can afford. Don't try to have too many. 5-10 is usually plenty.&lt;/li&gt;
+&lt;li&gt;Don't think of this as a "once-and-done" exercise. These will need to evolve and adapt.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Once you start to have these conversations, start to think of memorable ways to word the outcomes, succinctly. Principles should be easy to articulate in under a minute, ideally with a memorable title and an obvious meaning.&lt;/p&gt;
+&lt;p&gt;Do not be obtuse or too clever. It usually fails.&lt;/p&gt;
+&lt;h2 id="principle-format"&gt;Principle format&lt;/h2&gt;
+&lt;p&gt;In my time, I have found these four headers useful.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Illustration - Something to help make the principle come alive. I use quotes quite often.&lt;/li&gt;
+&lt;li&gt;Statement - The wording of the principle. 1-2 sentences, articulating the principle and its reasoning.&lt;/li&gt;
+&lt;li&gt;Rationale - A more in-depth explanation of why this is important to our business and its strategy.&lt;/li&gt;
+&lt;li&gt;Implications - Some key concepts that are important and understood. This could include an acceptance that the principle may increase costs, or incur dependencies. It could also highlight fringe benefits or relevant standards.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The format is somewhere to start. Having a standard format simply improves the likelihood that it will make sense to the reader.&lt;/p&gt;
+&lt;h2 id="example-principle"&gt;Example Principle&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;"Whoever is careless with the truth in small matters cannot be trusted with important matters." - Albert Einstein&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="statement"&gt;Statement&lt;/h2&gt;
+&lt;p&gt;Data sharing is a key component of our business strategy. We believe that sharing data within our company and with external partners can help us to achieve our goals and improve our services.&lt;/p&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;We are committed to making our data open and accessible to our employees and partners, while also protecting the privacy and security of our customers and stakeholders. We will work to ensure that our data is secure, accurate, up-to-date, and relevant and that it is shared in a way that is transparent, ethical, and responsible.&lt;/p&gt;
+&lt;h2 id="implications"&gt;Implications&lt;/h2&gt;
+&lt;p&gt;This principle is mostly about ensuring that people who are allowed to get data, can get it when they want it. We can control who that is, and we have to make sure we handle data following the law. This isn't creating a free for all. It's making sure we have data in useful formats, so we can make decisions with it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;By making data open and accessible, the company can increase transparency and accountability, both internally and externally.&lt;/li&gt;
+&lt;li&gt;Sharing data within the company and with external partners can help to improve collaboration and innovation, leading to better products and services.&lt;/li&gt;
+&lt;li&gt;Access to current, accurate data can help employees and partners make better decisions.&lt;/li&gt;
+&lt;li&gt;By sharing data, the company can avoid duplication of effort and reduce costs, leading to greater efficiency.&lt;/li&gt;
+&lt;li&gt;By being open and transparent with data, the company can improve its reputation and build trust with customers and stakeholders.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Overview of the Architecture Practice</title>
+			<link>https://open-ea.brenster.uk/posts/architecture-practise</link>
+			<description>How Architects should work alongside Agile development to enable faster decision-making and reduce risk.</description>
+			<author>James Brewster</author>
+			<enclosure url="https://open-ea.brenster.uk/media/header01.png" length="0" type="image" />
+			<guid>https://open-ea.brenster.uk/posts/architecture-practise</guid>
+			<pubDate>Tue, 06 Jun 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Software and systems architects provide guidance and governance of a technology organisation by modelling the organisation, its departments, capabilities, and processes and then mapping technology into them to ensure that the business has an optimised environment, which can adapt to its needs and isn't onerous to look after.&lt;/p&gt;
+&lt;p&gt;Traditional approaches to this take time and go against the agile philosophy to avoid Big Up Front Design (BUFD). How best to support developers in an agile world?&lt;/p&gt;
+&lt;p&gt;The common concept in an agile development organisation is 'Emergent Architecture.' But what does that mean? You follow a model more akin to evolution than planning and interfere if you see things dangerous to the organisation. You use history as a lesson but accept what has happened and accept that, as people, we can never attain perfection.&lt;/p&gt;
+&lt;h2 id="in-theory"&gt;In theory&lt;/h2&gt;
+&lt;p&gt;As development teams self-organize, the architecture role is to support decision-making and ensure good decisions thrive while poor choices don't.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://open-ea.brenster.uk/media/architecture-process-bpmn.png" alt="Architecture Process - BPMN"&gt;&lt;/p&gt;
+&lt;p&gt;This concept uses the ADR or Architectural Decision Record for teams to record and track key decisions and context.&lt;/p&gt;
+&lt;p&gt;When a team has to decide something, they create a work item in Jira/Git/DevOps (other work trackers are available). This item can outline the problem in short:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To support US12345, we need to host semi-structured data, which will be used to render a dynamic quote on screen.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Whenever the team decides how development will proceed, they write it down in their work system. ADRs are covered in more detail &lt;a href="xref:architecture-decision-records"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In the context of hosting semi-structured quote data&lt;/p&gt;
+&lt;p&gt;Facing the need to understand different tariffs and quote them together&lt;/p&gt;
+&lt;p&gt;We decided to host this data as JSON in a document databaseusing MongoDB interfaces hosted on Azure Cosmos.&lt;/p&gt;
+&lt;p&gt;And against using MongoDB in a seperate Container, as it would require management&lt;/p&gt;
+&lt;p&gt;or against using CosmosDB, as the interface is being deprecated.&lt;/p&gt;
+&lt;p&gt;To Acheive US12345, hosting and retreiving semi-structured quote data.&lt;/p&gt;
+&lt;p&gt;Accepting that there is a cost requirement in using Cosmos DB hosting&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The architecture team review and steer ADRs. ADRs are like the tweet format of designs; they encompass small decisions and choices with just enough context and reasoning to explain to a new starter why something happened. A significant benefit is that they can all be queried and exported and used to describe the project's thinking over time and why the team made confident choices. The ADR list acts as a log, which someone could examine to trace the project's decisions.&lt;/p&gt;
+&lt;p&gt;The architecture practice reviews the ADRs and looks for trends and patterns. As certain things come to the fore, the architects write new principles, patterns, and NFRs approved by the ARB to help the teams make future decisions.&lt;/p&gt;
+&lt;p&gt;The architect group will propose amendments to the organisation's architecture to the ARB, which may require approval, depending on the size and scope of the new principles.&lt;/p&gt;
+&lt;p&gt;Changes in architecture guidance can be applied retrospectively which may result in the creation of new technical debt items. Or we can call an amnesty and accept that something could've been better. Similar to how the law or regulations work.&lt;/p&gt;
+&lt;h2 id="in-practice"&gt;In Practice&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://open-ea.brenster.uk/media/architecture-process-sequence-diagram.png" alt="Architecture Process - Sequence"&gt;&lt;/p&gt;
+&lt;p&gt;It is up to the development team to decide how to solve problems based on the environment. The environment includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Organisational Strategy&lt;/li&gt;
+&lt;li&gt;People &amp;amp; Skills&lt;/li&gt;
+&lt;li&gt;Existing technology&lt;/li&gt;
+&lt;li&gt;Existing projects&lt;/li&gt;
+&lt;li&gt;Corporate Style&lt;/li&gt;
+&lt;li&gt;Shared Values&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Paraphrased from &lt;a href="https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/enduring-ideas-the-7-s-framework"&gt;McKinsey &amp;amp; Company (2008) Enduring Ideas: the 7-S Framework, www.mckinsey.com&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Most people try to make good decisions. Usually, bad decisions are the result of poor communication or poor information. The architecture practice must document meaningful decisions and knowledge to help educate people so the teams can make better decisions.&lt;/p&gt;
+&lt;p&gt;Using a feedback loop from the teams' decisions and accepting that these won't all be good, we can adjust the team's behaviour through education, exposure, and experience.&lt;/p&gt;
+&lt;h3 id="how-not-to-make-decisions"&gt;How not to make decisions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ignore existing ADRs relating to the subject (Search in the work tracker for ADRs, the tech or similar problems ).&lt;/li&gt;
+&lt;li&gt;Do not look at the existing guidance:
+&lt;ul&gt;
+&lt;li&gt;Principles&lt;/li&gt;
+&lt;li&gt;NFRs&lt;/li&gt;
+&lt;li&gt;Patterns&lt;/li&gt;
+&lt;li&gt;Standards&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Keep the decision secret right up until the last second.&lt;/li&gt;
+&lt;li&gt;Do not produce a cost-benefit analysis.&lt;/li&gt;
+&lt;li&gt;Write a slide show to confuse matters by overloading everyone with benefits without financial backing or research.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="how-to-make-decisions"&gt;How to make decisions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;In the open and with the people affected by the decision, including:
+&lt;ul&gt;
+&lt;li&gt;The people who will look after it&lt;/li&gt;
+&lt;li&gt;The person who has to spend money on it&lt;/li&gt;
+&lt;li&gt;People who will have to make it work&lt;/li&gt;
+&lt;li&gt;(If you cannot name them, then it will be you)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;With a proposal around how it will benefit the company.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When in doubt, seek guidance from your team or an architect. We are here to support you if you require any assistance or advice. We believe in working together and helping each other whenever possible.&lt;/p&gt;
+&lt;h2 id="anti-patterns-of-architecture"&gt;Anti-patterns of architecture&lt;/h2&gt;
+&lt;p&gt;Despite our best efforts, sometimes architects don't get things right. We're sorry, but we're also human, like everyone else. Here's a list of problem archetypes of architects, mainly for fun and giggles.&lt;/p&gt;
+&lt;h3 id="ivory-tower"&gt;Ivory Tower&lt;/h3&gt;
+&lt;p&gt;Too removed from the business of the organisation. They watch from on high and make proclamations while unaware of the plight of the people on the ground. This type of architect seems to create a lot of work, but it's detached from the reality and culture of the business.&lt;/p&gt;
+&lt;h3 id="in-the-trenches"&gt;In the trenches&lt;/h3&gt;
+&lt;p&gt;Too focused on their previous role, trench warriors refuse to give up their tactical responsibility and involvement and don't have time or focus for strategy. Sometimes this is because of the current state of the organisation. Sometimes it's because they don't have the exposure to build a picture of a real strategy for the business.&lt;/p&gt;
+&lt;h3 id="overly-academic"&gt;Overly Academic&lt;/h3&gt;
+&lt;p&gt;Studious and thorough, working through frameworks and quoting luminaries, the academic cannot effectively translate these theories into practical output for the organisation. They talk about possibilities, gold standards, and best practices and sometimes focus on the areas of frameworks which aren't implemented or fully used.&lt;/p&gt;
+&lt;p&gt;Knowledge and understanding of frameworks are essential, but frameworks are collections of methods that can help. Using strategies to address issues in the business is good sense. Using techniques to address symptomless 'problems' will make no friends.&lt;/p&gt;
+&lt;h3 id="too-technical"&gt;Too technical&lt;/h3&gt;
+&lt;p&gt;Often recruited from technical areas, such as IT Operations, the too-technical architect hasn't learned to temper their language to a broader audience. Using too much technical language conversationally can result in getting typecast as another 'techie,' being sidelined from honest discussions and gaining the trust of other parts of the business.&lt;/p&gt;
+&lt;p&gt;The technical skills are a real boon, though, and help when working with the more technical aspects of the organisation.&lt;/p&gt;
+&lt;h3 id="over-specialized"&gt;Over-specialized&lt;/h3&gt;
+&lt;p&gt;An architect should have a wide variety of skills and a broad understanding of most areas of their domain. If the field is too large, then specialism is a natural part of that, but an architect should work across as much of the environment as necessary, learning what they can of each part of the organisation.&lt;/p&gt;
+&lt;p&gt;If an architect only understands IT, they won't be able to effectively talk to Finance Partners or Legal about changes, budgets, or compliance. They may struggle to explain hosting concerns if they only know operations and not development.&lt;/p&gt;
+&lt;p&gt;Architects often have specialisms, but typically these start to be relinquished after they start becoming architects, moving away from specifics and into broader concepts, so they can better help explain the organisation's mechanics.&lt;/p&gt;
+&lt;h2 id="further-reading"&gt;Further Reading&lt;/h2&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Architecture Decision Records</title>
+			<link>https://open-ea.brenster.uk/posts/architecture-decision-records</link>
+			<description>No one reads extensive documents. ADRs are a way to capture meaningful choices so people can find them in future.</description>
+			<enclosure url="https://open-ea.brenster.uk/media/header01.png" length="0" type="image" />
+			<guid>https://open-ea.brenster.uk/posts/architecture-decision-records</guid>
+			<pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Architectural decision records (ADRs) capture a crucial technical decision, the context in which it was made, and the consequences of the decision. They are used to record the project’s architectural thinking and conclusions for further reference and to help new team members understand the rationale behind the design choices.&lt;/p&gt;
+&lt;p&gt;ADRs typically follow a template that includes the title, context, decision, status, consequences, and alternatives of the decision.&lt;/p&gt;
+&lt;p&gt;Use a folder or a wiki page to store ADRs. Somewhere close to the code repository and accessible to other stakeholders. You can create, review and update ADRs using tools like GitHub or Azure DevOps.&lt;/p&gt;
+&lt;h2 id="process"&gt;Process&lt;/h2&gt;
+&lt;p&gt;Here is a process for creating Architectural Decision Records (ADRs) in a Git repo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Define a template for documenting ADRs that includes the following sections: title, context, decision, status, consequences, and alternatives¹.&lt;/li&gt;
+&lt;li&gt;Use a folder in the Azure DevOps repository to store the ADRs. The folder name can be "adr" or "docs/adr" or something similar.&lt;/li&gt;
+&lt;li&gt;Create a new work item in the backlog and mark it as technical for each architectural decision. Explain the decision and alternatives in the record and link to relevant resources.&lt;/li&gt;
+&lt;li&gt;Assign the item to an engineering team based on their expertise and availability. The team should review the work item and possible solution options (3 is ideal) before deciding how to proceed and recording the decision in Markdown as a file. When writing the document, follow the template and store the output in Azure DevOps.&lt;/li&gt;
+&lt;li&gt;Submit the ADR as a pull request and request feedback from the other teams and stakeholders. The pull request should also include any code changes that implement the decision.&lt;/li&gt;
+&lt;li&gt;Review the feedback and update the ADR document and code changes accordingly. If there are any conflicts or disagreements, resolve them through discussion and consensus.&lt;/li&gt;
+&lt;li&gt;Merge the pull request and mark the feature as done. The ADR document should be 'accepted' or 'rejected' depending on the review's outcome.&lt;/li&gt;
+&lt;li&gt;Track the ADRs in a decision log that lists them by title, status, and date. The decision log can be a simple text file or a table on a Wiki page.&lt;/li&gt;
+&lt;li&gt;Review the ADRs periodically and update them if necessary. If an ADR becomes obsolete or superseded by another decision, change its status accordingly and link to the new ADR.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This process can help you record your architectural and technical decisions for further reference and have new team members kept up to date from day one.&lt;/p&gt;
+&lt;p&gt;A centralised Architecture team can review any ADRs made and look to amend any of the architectural artefacts in response. It may be that several decisions cause a change in precedence, which requires adjusting principles or technology guidelines.&lt;/p&gt;
+&lt;p&gt;Remember, the aim of an architecture practice is to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Simplify&lt;/li&gt;
+&lt;li&gt;De-risk&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Not&lt;/strong&gt; dictate&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To that end, the architecture needs to review and adapt to ensure it doesn't become stale.&lt;/p&gt;
+&lt;h2 id="providing-short-contextual-decisions"&gt;Providing short, contextual decisions&lt;/h2&gt;
+&lt;p&gt;Using a sustainable format is essential to keep decision documentation light and relevant. Here are some examples:&lt;/p&gt;
+&lt;h3 id="y-statements"&gt;Y-Statements&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://medium.com/olzzio/y-statements-10eb07b5a177"&gt;(Wh)Y statements&lt;/a&gt;
+(Borrowed from Olaf Zimmerman, an Architect at IBM.)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h4 id="worked-example"&gt;Worked Example&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;In the context&lt;/em&gt; of the ,&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Facing the need to&lt;/em&gt; ,&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We decided for&lt;/em&gt;  pattern.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;And against&lt;/em&gt; .&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;To achieve&lt;/em&gt; ,
+&lt;em&gt;Accepting that&lt;/em&gt; .&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The format of a Y-Statement creates six phrases in three sections:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;In the Context of... &lt;em&gt;(Name of the solution)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Facing the need to... &lt;em&gt;(Critical challenge)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;We decided for... &lt;em&gt;(The winning solution)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;And against... &lt;em&gt;(The other considered solutions)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;To Acheive... &lt;em&gt;(The main outcome)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Accepting that... &lt;em&gt;(Any Consequences)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Because... (Optional explaination of reasoning)&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Each outlines a single critical point about the decision. The context and need, the 'winner' and other options considered, the expected outcome and consequences, and optional reasoning if more words are needed.&lt;/p&gt;
+&lt;p&gt;It also possesses a pleasingly poetic pattern.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Loads of examples here: &lt;a href="https://github.com/joelparkerhenderson/architecture-decision-record/tree/main/examples"&gt;architecture-decision-record/examples&lt;/a&gt; Accessed: 31 May 2023.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="architectural-haiku"&gt;Architectural Haiku&lt;/h3&gt;
+&lt;p&gt;Another approach is the &lt;a href="https://www.georgefairbanks.com/blog/comparch-wicsa-2011-panel-discussion-and-haiku-tutorial/"&gt;Architectural Haiku&lt;/a&gt;, coined by George Fairbanks in 2011.&lt;/p&gt;
+&lt;p&gt;The Architectural Haiku is a single 'slide' of information explaining a critical decision and its rationale and context. Using a 'slide' as the size of the decision artefact limits its length and duration to one page and around 3-4 minutes.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"If I had more time, I would have written a shorter letter" - Blaise Pascal, 1657&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As with any framework or method, follow the idiom 'If in doubt, leave it out'.&lt;/p&gt;
+&lt;h2 id="version-control"&gt;Version Control&lt;/h2&gt;
+&lt;p&gt;Version Control for your ADRs is essential so you know when they change, who changed them, and who approved them. Using your GIT repo for this is probably the most straightforward idea, as it can do these things effortlessly with the files.&lt;/p&gt;
+&lt;h2 id="in-practice"&gt;In Practice&lt;/h2&gt;
+&lt;p&gt;Some great ADR tools are around, including ones that use a CLI or DevOps. In this instance, the aim is to use a work item in DevOps linked to a file containing the ADR text, written using Markdown. It can be changed if necessary.&lt;/p&gt;
+&lt;p&gt;Write a Y-Statement explaining the decision. The discussion is not essential, but the context and the discarded alternatives are.&lt;/p&gt;
+&lt;p&gt;For a more significant decision, it may be helpful to produce an Options assessment:&lt;/p&gt;
+&lt;p&gt;Svyatoslav Kotusev, 2013, &lt;a href="http://eaonapage.com/Enterprise%20Architecture%20on%20a%20Page%20(v2.0).pdf."&gt;Enterprise Architecture on a Page v2.0&lt;/a&gt;
+&lt;img src="https://open-ea.brenster.uk/media/eaonapage.com-options-assessment.png" alt="EA-On-A-Page, options assessment"&gt;&lt;/p&gt;
+&lt;h2 id="summary"&gt;Summary&lt;/h2&gt;
+&lt;p&gt;By using existing work tools and staying close to the regular format of 'work', the list of ADRs is easy to find and query. Anyone can look at the recent ADRs. Architects need to regularly review ADRs and look to adapt the architecture as necessary, either creating or updating principles or NFRs to reduce the number of decisions which need to be made and thus recorded.&lt;/p&gt;
+&lt;p&gt;So, grab the template below, use the text in a file or work item and record those technical decisions!&lt;/p&gt;
+&lt;h2 id="template"&gt;Template&lt;/h2&gt;
+&lt;pre&gt;&lt;code class="language-Markdown"&gt;&amp;gt; 1. In the context of...
+&amp;gt; 2. Facing the need to...
+&amp;gt; 3. We decided for...
+&amp;gt; 4. And against...
+&amp;gt; 5. To acheive...
+&amp;gt; 6. Accepting that...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://medium.com/nerd-for-tech/architecture-decision-records-adr-with-azure-devops-3f0c9edeb85b"&gt;Architecture Decision Records (ADR) With Azure DevOps.&lt;/a&gt; Accessed 31/05/2023.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/joelparkerhenderson/architecture-decision-record"&gt;joelparkerhenderson/architecture-decision-record - GitHub.&lt;/a&gt; Accessed 31/05/2023.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.infoq.com/news/2022/06/aws-adr-guide/"&gt;AWS Publishes Guide to Architecture Decision Records - InfoQ.&lt;/a&gt; Accessed 31/05/2023.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.slideshare.net/mkeeling5000/getting-started-with-architecture-decision-records"&gt;Getting Started with Architecture Decision Records - SlideShare.&lt;/a&gt; Accessed 31/05/2023.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/decision-guides/"&gt;Architectural decision guides - Cloud Adoption Framework.&lt;/a&gt; Accessed 31/05/2023.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="additional-resources"&gt;Additional Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://adr.github.io/"&gt;ADR GitHub Organisation / GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/nerd-for-tech/architecture-decision-records-adr-with-azure-devops-3f0c9edeb85b"&gt;ADR with DevOps | Medium&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/joelparkerhenderson/architecture-decision-record/tree/main/examples"&gt;ADR Examples \ GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/olzzio/y-statements-10eb07b5a177"&gt;Y-Statements - Medium&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Agile Architecture - A short story</title>
+			<link>https://open-ea.brenster.uk/posts/e2e-agile-architecture-story</link>
+			<description>How does Agile architecture work in practice? This story provides a demonstration.</description>
+			<enclosure url="https://open-ea.brenster.uk/media/header01.png" length="0" type="image" />
+			<guid>https://open-ea.brenster.uk/posts/e2e-agile-architecture-story</guid>
+			<pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;The team worked on a new business application allowing customers to order products online and track their delivery status. The application needed to integrate with several external systems, such as inventory management, payment processing, and shipping providers. The team had to decide how to design the integration layer and what technologies to use.&lt;/p&gt;
+&lt;p&gt;They decided to use Azure Logic Apps as the integration platform because it offered a low-code solution to handle complex workflows and orchestration. They also decided to use Azure Service Bus as the messaging system because it provided reliable and scalable communication between the application and the external systems. They documented their decision in an ADR document that followed the template from the current web page context. They explained their decision's context, alternatives, consequences, and status. They submitted the ADR document as a pull request to the repository where they stored all their ADRs.&lt;/p&gt;
+&lt;p&gt;The next day, the architect responsible for reviewing the ADRs saw their pull request and opened it. He read their document and was impressed by their reasoning and clarity. He agreed with their decision and approved the pull request. He also noticed that their decision aligned with a new architectural principle he had been thinking about for a while, &amp;quot;Use cloud-native services whenever possible to reduce complexity and increase agility&amp;quot;. He wrote an ADR document proposing this principle as a guideline for future decisions. He followed the same template and explained his proposal's context, decision, alternatives, consequences, and status. He submitted his document as a pull request to the repository where they stored all their architectural principles.&lt;/p&gt;
+&lt;p&gt;The following week, the architectural review board met to discuss the new architectural principle. The board comprised five executives from different departments: product management, engineering, operations, security, and finance. They reviewed the document and asked questions of the architect. They debated the pros and cons of adopting cloud-native services versus building or buying custom solutions. They considered the principle's impact on cost, performance, reliability, security, and innovation. After a lively discussion, they reached a consensus and approved the principle. The architect merged the pull request and added the principle to their list of architectural principles.&lt;/p&gt;
+&lt;p&gt;The team were happy to see the new architectural principle validated by the architect and the board. They continued to work on their application using Azure Logic Apps and Azure Service Bus. They also looked for other opportunities to apply cloud-native services in their design. They felt more confident and empowered by having clear and consistent architectural guidance.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>The Agile ARB</title>
+			<link>https://open-ea.brenster.uk/posts/the-agile-arb</link>
+			<description>A short story about the way an Agile ARB could run</description>
+			<enclosure url="https://open-ea.brenster.uk/media/header01.png" length="0" type="image" />
+			<guid>https://open-ea.brenster.uk/posts/the-agile-arb</guid>
+			<pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="the-agile-arb"&gt;The Agile ARB&lt;/h2&gt;
+&lt;p&gt;Sara was the chair of the Architecture Review Board (ARB) at Acme Inc., a software company that had adopted agile methods. She was passionate about creating a culture of trust and collaboration among the different teams and departments. She wanted the ARB to be a facilitator rather than a gatekeeper of decisions.&lt;/p&gt;
+&lt;p&gt;Sara had invited representatives from various business units, product owners, developers, testers, and architects to join the ARB, ensuring they had a clear charter and vision. The ARB met monthly to review and approve significant architectural changes that affected the whole organisation, such as introducing new technologies, standards, or patterns. They also created and maintained principles and guidelines that helped teams make sensible local decisions without waiting for the ARB’s approval.&lt;/p&gt;
+&lt;p&gt;One of the principles was to favour simplicity and pragmatism over complexity and perfectionism. Another was to encourage experimentation and learning from failures. A third was to seek feedback and alignment from stakeholders and customers early and often. The ARB also provided templates and tools for teams to document and communicate their architectural decisions, such as Architecture Decision Records (ADRs) and diagrams.&lt;/p&gt;
+&lt;p&gt;Sara was proud of how the ARB had evolved from being a bottleneck to a catalyst. She saw how teams were more empowered and autonomous, how they delivered value faster and more reliably, and how they improved their quality and performance. She also saw how the ARB members learned from each other and shared their best practices across the organisation.&lt;/p&gt;
+&lt;p&gt;She smiled as she opened her email and saw a message from one of the teams. They had successfully implemented a microservice architecture for their product, using a cloud-native platform that the ARB had approved a few months ago. They thanked the ARB for their support and guidance and shared metrics and feedback showing how their product improved scalability, availability, and user satisfaction.&lt;/p&gt;
+&lt;p&gt;Sara congratulated them and asked them if they would like to present their experience at the next ARB meeting. She thought showcasing their work and inspiring others would be an excellent opportunity. She also asked them if they had any suggestions or feedback for the ARB on improving their processes or policies.&lt;/p&gt;
+&lt;p&gt;She closed her email and looked at her calendar. She saw that the next ARB meeting was in two weeks. She wondered what new challenges and opportunities would come up then. She felt excited and curious. She loved her job.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Architecture Review Board</title>
+			<link>https://open-ea.brenster.uk/posts/architecture-review-board</link>
+			<description>A coherent ARB can help organisations plan and normalise technology decisions. It can also create a situation where nothing happens, and work goes to die.</description>
+			<enclosure url="https://open-ea.brenster.uk/media/header01.png" length="0" type="image" />
+			<guid>https://open-ea.brenster.uk/posts/architecture-review-board</guid>
+			<pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="synopsis"&gt;Synopsis&lt;/h2&gt;
+&lt;p&gt;A frequent perception of ARBs from Agile teams is poor and that they delay decisions and delivery. Properly implemented, an ARB allows an organisation to be more open and transparent and can empower local decision-making within a team or POD.&lt;/p&gt;
+&lt;h2 id="introducing-the-arb"&gt;Introducing the ARB&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;h3 id="the-agile-arb"&gt;The Agile ARB&lt;/h3&gt;
+&lt;p&gt;I asked ChatGPT to write a story about an &lt;a href="xref:the-agile-arb"&gt;Agile ARB&lt;/a&gt; and its pretty good!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;An Architecture Review Board (ARB) is a representative group of people across the organisation who take a central role in governing architectural decisions which affect the business significantly.&lt;/p&gt;
+&lt;p&gt;The ARB aims to mitigate risks to the business and improve strategic planning and awareness, especially around the use of technology and any changes to that. It does this by making it easier for front-line teams to make decisions and simplifying the overall organisation over time to keep cost and complexity at bay. An ARB does not dictate solutions. It provides a constrained space to support fast decision-making.&lt;/p&gt;
+&lt;p&gt;It is not a Technology Review Board (TRB) and doesn't govern what technology is allowed. It regulates the processes for selecting new technologies, methods, and principles.&lt;/p&gt;
+&lt;p&gt;Nothing an ARB does should be urgent. An ARB may need to determine a new principle/policy in response to an emerging issue, but such instances should be rare. The ARB should not be too slow or be unable to react quickly, but most things it needs to deal with should be at a level where the business can take some time to think about them.&lt;/p&gt;
+&lt;p&gt;Lastly, an ARB will meet and align following annual updates, strategic updates, or quarterly reviews. In a product-led organisation, an ARB will outline a strategic runway to ensure technology requirements (enablers) and deliverables are considered and planned following product development needs.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id="centralised-vs-decentralised-decisions"&gt;Centralised vs Decentralised Decisions&lt;/h3&gt;
+&lt;p&gt;A successful ARB wants to encourage decentralised decisions as much as possible. That would be, they need to provide guidance, examples and principles that ensure people on the ground can make good decisions whilst they plan and develop processes, product features and changes.&lt;/p&gt;
+&lt;p&gt;The ARB creates a kind of organisational common sense that reinforces the right way to do things, in-line with company culture and values.&lt;/p&gt;
+&lt;p&gt;As we all know, &lt;a href="https://www.thealternativeboard.com/blog/culture-eats-strategy"&gt;Culture eats Strategy for Breakfast&lt;/a&gt;, right?&lt;/p&gt;
+&lt;p&gt;An unsuccessful ARB controls every decision, which results in an unacceptable level of delay as the ARB becomes overwhelmed with small and largely inconsiquential decisions.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="purpose"&gt;Purpose&lt;/h2&gt;
+&lt;p&gt;An ARB is for reviewing and governing architecture. In this context, the ARB will make strategic decisions about how to use technology in the business rather than the specifics of what technologies to use.&lt;/p&gt;
+&lt;h2 id="membership"&gt;Membership&lt;/h2&gt;
+&lt;p&gt;An ARB is a handful of relevant, cross-organizational people. Too mono-culture, and it won't be taken seriously(i.e., too many architects or technologists). Too big, and it won't make any decisions. As a cross-organizational group, it must have a diverse representation from different business areas.&lt;/p&gt;
+&lt;p&gt;It is not somewhere for architects to meet and talk. All the architects, managers, and technologists should not expect to be involved. They might watch or present in exceptional circumstances or gain exposure by acting as a proxy.&lt;/p&gt;
+&lt;p&gt;That said, it has to be transparent. Publish all the ARB meetings, minutes, and outcomes to the broadest possible audience. Anyone should be able to raise an issue or request a change to the ARB.&lt;/p&gt;
+&lt;h2 id="format"&gt;Format&lt;/h2&gt;
+&lt;p&gt;Its first action should be to review its charter and accept it.&lt;/p&gt;
+&lt;p&gt;Membership can be flexible, but this should be responsive to events or requirements, not just having a chaotic membership that constantly changes.&lt;/p&gt;
+&lt;p&gt;Initially, it could be weekly or fortnightly, as there may be a lot of reviews and artefacts to create, in demand to business needs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Principles&lt;/li&gt;
+&lt;li&gt;Patterns&lt;/li&gt;
+&lt;li&gt;Strategic Non-functional Requirements&lt;/li&gt;
+&lt;li&gt;Major Developments or Solutions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ARB reviews should only relate to strategic solutions and projects. Most items should be small enough to avoid the ARB, and the ARB should encourage local decision-making over trying to centralise decisions. Centralised decisions should be infrequent and far-reaching.&lt;/p&gt;
+&lt;p&gt;The board meeting should follow a standard approach for such a meeting to ensure people are comfortable and familiar with it. Frameworks such as COBIT can provide some guidance. Here is a suggestion for an initial format:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The ARB Meets Monthly and in response to nominated events (PI Planning, annual review, etc.)&lt;/li&gt;
+&lt;li&gt;There is a Chairperson who will run and take the lead on ensuring the meeting runs as expected. Ideally, this is the sponsor, but it could be delegated or rotated.&lt;/li&gt;
+&lt;li&gt;There is a nominated secretary who takes minutes and actions. Rotate the role, or bring someone in who needs more exposure to the ARB and strategic decision-making.&lt;/li&gt;
+&lt;li&gt;Start by reviewing previous minutes and actions.&lt;/li&gt;
+&lt;li&gt;Review any proposals or actions. Any issues should have been relayed with enough notice so that members could review what they have to before the meeting and come up with questions or requests.&lt;/li&gt;
+&lt;li&gt;Most decisions should be able to be approved within the meeting. Deferring too many approvals is terrible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The ARB doesn't make the decisions. It provides a framework to review and guide them proactively through principles and guidance. Suppose a decision is not being made because there is inadequate direction. In that case, an ARB member should consult with another member and include advice to cover a similar future situation.&lt;/p&gt;
+&lt;h2 id="frequency"&gt;Frequency&lt;/h2&gt;
+&lt;p&gt;Once established, a Monthly or Quarterly format should be sufficient to maintain a manageable level of governance.&lt;/p&gt;
+&lt;p&gt;ARB Meetings ideally align with any other ceremonies, such as Quarterly Planning or strategic planning, letting the ARB determine whether any specific architectural work is needed, over and above the expected level of involvement, based on upcoming work or projects.&lt;/p&gt;
+&lt;h2 id="outcomes"&gt;Outcomes&lt;/h2&gt;
+&lt;p&gt;An ARB should create the following outcomes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Requirements for new policies and principles&lt;/li&gt;
+&lt;li&gt;Requirements for Strategic Enablers and Capabilities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Typically, work from the ARB would go to the Architecture team to define, complete, or at least manage. Acceptance criteria should be a part of any of these to ensure excessive approval of the outcome is unnecessary.&lt;/p&gt;
+&lt;h2 id="anti-patterns"&gt;Anti-patterns&lt;/h2&gt;
+&lt;p&gt;Here's a selection of ways this can go wrong or things you can do poorly:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Excessive Approvals - If you find every ARB is 'full' of things to approve, then your Policies and Principles are likely irrelevant or too granular.&lt;/li&gt;
+&lt;li&gt;Deferred decisions - If the board makes a lot of deferrals, it would usually be because the information or risks are unclear, and they don't feel safe taking them.&lt;/li&gt;
+&lt;li&gt;Poor reputation - The ARB may be something people dread. In this case, it's likely that the process is excessively onerous, too frequent, or that the principles are poorly accepted.&lt;/li&gt;
+&lt;li&gt;Technology Focussed - The ARB shouldn't discuss the choice of technology. It should guide the principles and processes that result in those changes. In this case, the ARB may be too tactical, resulting in low traction across the business.&lt;/li&gt;
+&lt;/ol&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Identity, Authentication and Authorisation</title>
+			<link>https://open-ea.brenster.uk/posts/2023-05-26-identity-auth</link>
+			<description>Authenticating users in microservices can be fraught with perils.</description>
+			<enclosure url="https://open-ea.brenster.uk/media/header01.png" length="0" type="image" />
+			<guid>https://open-ea.brenster.uk/posts/2023-05-26-identity-auth</guid>
+			<pubDate>Tue, 16 May 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="pattern-overview"&gt;Pattern Overview&lt;/h2&gt;
+&lt;p&gt;This pattern describes a central authentication model suitable for a microservices web application. It builds on several other designs to provide a scalable way to identify, authenticate and authorise access to resources, data and services.&lt;/p&gt;
+&lt;p&gt;This example uses a role-based authorisation model. A policy-based authorisation model would be more flexible but also more complex.&lt;/p&gt;
+&lt;h3 id="illustration"&gt;Illustration&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/media/index/api-gateway-centralized-authentication.png" alt="API Gateway Centralized authentication" /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/"&gt;Rousos (2023) Securing .NET Microservices and Web Applications, learn.microsoft.com.&lt;/a&gt;(Accessed: 16 May 2023).‌&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This example is for a mobile app. A similar method would work for a static site, calling an API, a Single Page Application, or an MVC application. Use the &lt;a href="https://akfpartners.com/growth-blog/backend-for-frontend#:%7E:text=In%20the%20Backend%20for%20Frontend%20pattern%2C%20a%20service,differ%20from%20a%20traditional%20API%20or%20monolithic%20gateway."&gt;Backends-For-Frontends&lt;/a&gt; pattern to offset any differences.&lt;/p&gt;
+&lt;h2 id="benefits-of-this-pattern"&gt;Benefits of this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;By using the gateway, authentication is offloaded to the gateway and centralised, see &lt;a href="xref:gateways"&gt;Gateways&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The gateway issues a signed token containing the authorised user's roles, which can be used for the token's lifespan, reducing chatter, see &lt;a href="xref:microservices-anti-patterns"&gt;Microservices Anti-patterns&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Once implemented, downstream services have their role added to the token and respect it.&lt;/li&gt;
+&lt;li&gt;Identity management and storage can be offloaded to the customer's preferred vendor using open standards, Including:
+&lt;ul&gt;
+&lt;li&gt;Microsoft, Google or Facebook identities, such as Microsoft AzureAD B2C&lt;/li&gt;
+&lt;li&gt;Microsoft Azure AD identities, using B2B Federation&lt;/li&gt;
+&lt;li&gt;Any OpenID Connect or OAuth2.0 Identities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="drawbacks-to-this-pattern"&gt;Drawbacks to this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;It assumes simple role-based authorisation. A more complex policy-based model would require additional depth and complexity in the token, increasing its size and complexity.&lt;/li&gt;
+&lt;li&gt;The token is easy to hack, so don't use it outside the network. A separate reference token model is recommended, where the token is used within the cluster and used by the gateway as a delegated authorisation.
+&lt;ul&gt;
+&lt;li&gt;The user would have a lean token or reference cookie, which only correlates to the token on the gateway. Think of this model as a delegation rather than an authorisation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;This pattern creates a dependency on external identity vendors, which can be hard to manage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-use-this-pattern"&gt;When to use this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;In most enterprise or B2B microservice models, this pattern will be beneficial. It is ideal for a containerised application, which needs to minimise cross-talk and have a planned model for authorisation and identity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="when-to-avoid-this-pattern"&gt;When to avoid this pattern&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;This pattern is not suitable for use on unsecured networks. A malicious actor can use the token's contents to understand the user and their roles.
+&lt;ul&gt;
+&lt;li&gt;This pattern still promotes zero-trust, as every service will validate the token and must trust the issuer and check for tampering.&lt;/li&gt;
+&lt;li&gt;You can work around this limitation by using a reference token issued to the external user at the gateway, which does NOT contain identifiable information.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://nordicapis.com/how-to-control-user-identity-within-microservices/"&gt;NordicAPIs - How to control user identity within microservices&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/&amp;#64;maison.moa/using-jwt-json-web-tokens-to-authorize-users-and-protect-api-routes-3e04a1453c3e"&gt;Using JWT to authorize users and protect API routes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/"&gt;Make secure .NET Microservices and Web Applications&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>Dumb Pipes</title>
+			<link>https://open-ea.brenster.uk/posts/2023-05-15-dumb-pipes</link>
+			<description>This page is about designing and implementing effective communication between microservices in a distributed system.</description>
+			<enclosure url="https://open-ea.brenster.uk/media/header01.png" length="0" type="image" />
+			<guid>https://open-ea.brenster.uk/posts/2023-05-15-dumb-pipes</guid>
+			<pubDate>Mon, 15 May 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;As services scale in a microservices architecture, they need to communicate. A communication network is essential to ensure each service can easily talk to the others. Still, as they scale, you must ensure they can grow and continue communicating.&lt;/p&gt;
+&lt;p&gt;This pattern uses the principle of 'Smart end-points, dumb pipes'. If the pipes are clever, they need maintenance; everyone has to wait on the team which is responsible for the pipe, which reduces time to market.&lt;/p&gt;
+&lt;p&gt;If the pipe is dumb, anyone can send a message quickly; anyone can consume a message easily. They may need to adjust the format, but they can do that within the team.&lt;/p&gt;
+&lt;p&gt;A truly stupid pipe should handle routing, and that's it.&lt;/p&gt;
+&lt;h2 id="illustration"&gt;Illustration&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/media/communication-in-microservice-architecture/sync-vs-async-patterns-across-microservices.png" alt="A diagram showing communications in a Microservices architecture" /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Anti-patterns and patterns in communication between microservices &lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture"&gt;from learn.microsoft.com&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
+&lt;p&gt;Summarising all of the above, the benefits of smart endpoints and dumb pipes are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lower cost of messaging infrastructure - pushes the cost of goods sold closer to the producer and consumer. Allows messaging infrastructure to scale by the number of messages instead of the computational complexity of messages. Less complexity means fewer nodes, which means fewer licenses!&lt;/li&gt;
+&lt;li&gt;Organization Scalability – teams aren’t reliant on transforms created by a centralised team.&lt;/li&gt;
+&lt;li&gt;Low Latency – because computation is limited, messages are delivered more quickly and predictably to end consumers.&lt;/li&gt;
+&lt;li&gt;Capacity and scalability of messaging infrastructure – increased as compute is not part of the platform's scale.&lt;/li&gt;
+&lt;li&gt;Availability of messaging infrastructure – reduced compute means reduced chance of failure.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="assumptions"&gt;Assumptions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Messages must be in a defined format which anyone can reference and understand. An API with a contract is an excellent way to do this.&lt;/li&gt;
+&lt;li&gt;Teams will need to adhere to contracts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://martinfowler.com/articles/microservices.html."&gt;Lewis, J. and Fowler, M. (2014) Microservices, martinfowler.com.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/architecture-principle-messaging-systems-smart-end-points-dumb-pipes"&gt;Architecture Principles: Messaging Systems – Smart End Points, Dumb Pipes | AKF Partners&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://nathanpeck.com/microservice-principles-smart-endpoint-dumb-pipe/"&gt;Smart Endpoints and Dumb Pipes, Nathan Peck&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture"&gt;Nishanil et al. (2022) Communication in a microservice architecture, learn.microsoft.com.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 	</channel>
 </rss>

@@ -7,16 +7,22 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [5000],
-	"portsAttributes": {
-			"5000": {
-			"protocol": "http"
-			}
-	},
+	// "forwardPorts": [5000],
+	// "portsAttributes": {
+	// 		"5000": {
+	//		"protocol": "http"
+	//		}
+	//},
 	"features": {
 		"ghcr.io/devcontainers/features/git:1": {
 			"ppa": true,
 			"version": "os-provided"
+		},
+		"ghcr.io/devcontainers/features/dotnet:2": {
+			"version": "8.0"
+		},
+		"ghcr.io/devcontainers-contrib/features/http-server:1": {
+			"version": "latest"
 		}
 	},
 	"customizations": {
@@ -36,7 +42,7 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "dotnet restore",
-	// "postCreateCommand": "sudo apt-get install dotnet"
+	"postCreateCommand": "cd output && http-server"
 	
 	// Configure tool-specific properties.
 	// "customizations": {},
