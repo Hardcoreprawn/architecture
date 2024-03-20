@@ -39,13 +39,7 @@ Image: |
 # Post Settings
 # PostSources: posts/*
 
-PostSources: |
-  =>
-  {
-    Matcher PostSources = new();
-    PostSources.AddIncludePatterns(new[] { "posts/*"});
-    return PostSources;
-  }
+PostSources: posts/*
 PageSources: pages/*
 Published: 2001-01-01
 IsPost: => Outputs.FilterSources(Context.GetString("PostSources")).ContainsById(Document)
