@@ -15,7 +15,24 @@ PageTitle: |
 SiteDescriptions: Assorted articles about architecture
 Copyright: => $"Copyright James Brewster© {DateTime.Now.Year}"
 Layout: /_layout.cshtml
-Image: /media/header01.png
+HeaderImage: /media/header01.png
+Image: |
+  =>
+  {
+    string Host = Context.GetString("Host");
+    bool LinksUseHttps = Context.GetBool("LinksUseHttps");
+    string HeaderImage = Context.GetString("HeaderImage");
+    string result = Host + HeaderImage;
+    if (LinksUseHttps)
+        {
+            result = "https://" + result;
+        }
+    else 
+        {
+            result ="http://" + result;
+        }
+    return result;
+  }
 
 # Post Settings
 PostSources: posts/*
