@@ -1,3 +1,7 @@
 ﻿<values>
+<<<<<<< HEAD
   <value name="StillAlive" type="qword">133554033563445764</value>
+=======
+  <value name="StillAlive" type="qword">133553970211398179</value>
+>>>>>>> main
 </values>

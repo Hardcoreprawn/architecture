@@ -1,6 +1,6 @@
 # Hosting Settings
 MinimumStatiqWebVersion-CleanBlog: "1.0.0-beta.3"
-Host: red-sand-078a6ea03.3.azurestaticapps.net # Host Name
+Host: open-ea.brenster.uk # Host Name
 LinksUseHttps: true # Do we use HTTPS
 
 # Branding
@@ -15,10 +15,27 @@ PageTitle: |
 SiteDescriptions: Assorted articles about architecture
 Copyright: => $"Copyright James Brewster© {DateTime.Now.Year}"
 Layout: /_layout.cshtml
-Image: /media/header01.png
+HeaderImage: /media/header01.png
+Image: |
+  =>
+  {
+    string Host = Context.GetString("Host");
+    bool LinksUseHttps = Context.GetBool("LinksUseHttps");
+    string HeaderImage = Context.GetString("HeaderImage");
+    string result = Host + HeaderImage;
+    if (LinksUseHttps)
+        {
+            result = "https://" + result;
+        }
+    else 
+        {
+            result ="http://" + result;
+        }
+    return result;
+  }
 
 # Post Settings
-PostSources: posts/**/*
+PostSources: posts/*
 PageSources: pages/*
 Published: 2001-01-01
 IsPost: => Outputs.FilterSources(Context.GetString("PostSources")).ContainsById(Document)

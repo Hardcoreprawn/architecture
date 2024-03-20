@@ -22,7 +22,7 @@ The common concept in an agile development organisation is 'Emergent Architectur
 
 As development teams self-organize, the architecture role is to support decision-making and ensure good decisions thrive while poor choices don't.
 
-![Architecture Process - BPMN](../../media/architecture-process-bpmn.png)
+![Architecture Process - BPMN](../media/architecture-process-bpmn.png)
 
 This concept uses the ADR or Architectural Decision Record for teams to record and track key decisions and context.
 
@@ -56,7 +56,7 @@ Changes in architecture guidance can be applied retrospectively which may result
 
 ## In Practice
 
-![Architecture Process - Sequence](../../media/architecture-process-sequence-diagram.png)
+![Architecture Process - Sequence](../media/architecture-process-sequence-diagram.png)
 
 It is up to the development team to decide how to solve problems based on the environment. The environment includes:
 

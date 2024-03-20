@@ -9,8 +9,7 @@ Tags:
 Categories: 
   - Solutions
 Draft: false
-Published: 22/06/2023
-Author: James Brewster
+Published: 21/02/2024
 ---
 
 ## Introduction
@@ -63,10 +62,10 @@ Here is an example:
 >
 > Our data strategy reflects our business goals:
 >
-> * Provide a coherent, connected view of the customer and their use of our products, so they can quickly see how their usage varies and make educated decisions. Providing this joined-up view allows our 'single quote' and 'single bill' initiatives to succeed and scale
-> * To support <...> to get th e correct information quickly and easily, so we can continue to deliver excellent customer service.
+> * Provide a coherent, connected view of the customer and their use of our products, so they can quickly see how their usage varies and make educated decisions. Providing this joined-up view allows our initiatives to succeed and scale
+> * To support <...> to get the correct information quickly and easily, so we can continue to deliver excellent customer service.
 > * To support, and not detract from, our main value proposition by offering a lightweight solution which aligns with our values and principles
-> * This ability to provide a sensible, joined-up story allows us to out-perform our competitors and exceed our customers expectations. This allows us to effectively up-sell and cross-sell products.
+> * This ability to provide a sensible, joined-up story allows us to out-perform our competitors and exceed our customers expectations. This allows us to effectively...
 >
 >The Data team will support <...> to achieve these goals:
 >
@@ -77,9 +76,9 @@ Here is an example:
 >
 >For <...>, Data Management is a critical enabler to our business goals.
 >
-> * Allows us to create a single view of the customer, their active contracts, and potential upsells
-> * Enable us to analyse broker performance and see how different brokers do in other areas
-> * Integrate new systems, products, customer records, quotes and billing as we expand and acquire.
+> * Allows us to create a single view of ...
+> * Enable us to analyse ....
+> * Integrate new systems, products, etc...
 
 This strategy outlines how to achieve this and gain short-term benefits incrementally. The outcomes align with the organisation's goals and explain how Data Management is necessary to deliver those goals.
 
@@ -120,11 +119,8 @@ Core Business data is only the high-value, complex, reusable entities with low v
   * CustomerAccounts
   * CustomerSites
   * CustomerCredit
-* Brokers
-  * BrokerAgents
-* Utilities
-  * Products
-    * Prices
+* Products
+  * Prices
 * Contracts
 * Employee
 * Location
@@ -132,13 +128,13 @@ Core Business data is only the high-value, complex, reusable entities with low v
 * Supplier
 * Invoice
 
-Critical data is not necessarily core business data. A trainingcan be vital for compliance, but only in that context. As it is not widely reusable, it wouldn't be considered Core Business Data, but it is still important.
+Critical data is not necessarily core business data. A training video can be vital for compliance, but only in that context. As it is not widely reusable, it wouldn't be considered Core Business Data, but it is still important.
 
 Core Business Data does not, and should not, include transaction data. That stuff is too fast-moving to manage using this pattern. A data warehouse or an event stream is a better way to manage analytics for transactional data. It could link to the transactional view or the analytical aggregates of the transactions.
 
 From a data warehouse point of view, Core Business Data fields are critical dimensions which change slowly, but not the facts about those dimensions.
 
-![MDM Entity Analysis](../../media/mdm-field-eval.png)
+![MDM Entity Analysis](../media/mdm-field-eval.png)
 > Schedlbauer, M. (2019) Master Data Management, shipzero. [Medium](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241).
 
  Once we know what they are, we can understand and expose the proper entities and their fields from the right places.
@@ -239,7 +235,7 @@ A data hub also enables [data mesh](https://learn.microsoft.com/en-us/azure/clou
 
 Pick an understandable data model. Ideally, use a reference model rather than invent from scratch, but don't choose one that is too big or fancy. Extensibility is essential, as is the scale of the project.
 
-Microsoft provides the following Common Data Model. While they interchange the term with the physical infrastructure underlying their Dynamics 265 platform, the model is valid and provides a cross-industry organisational data model.
+Microsoft provides the following Common Data Model. While they interchange the term with the physical infrastructure underlying their Dynamics 365 platform, the model is valid and provides a cross-industry organisational data model.
 
 ![Common Data Model V1, Microsoft.com](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/media/cdm-entities-v1.png#lightbox)
 

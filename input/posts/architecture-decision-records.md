@@ -106,7 +106,7 @@ Write a Y-Statement explaining the decision. The discussion is not essential, bu
 For a more significant decision, it may be helpful to produce an Options assessment:
 
 Svyatoslav Kotusev, 2013, [Enterprise Architecture on a Page v2.0](http://eaonapage.com/Enterprise%20Architecture%20on%20a%20Page%20(v2.0).pdf.)
-![EA-On-A-Page, options assessment](../../media/eaonapage.com-options-assessment.png)
+![EA-On-A-Page, options assessment](../media/eaonapage.com-options-assessment.png)
 
 ## Summary
 
