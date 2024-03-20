@@ -63,7 +63,7 @@ Here is an example:
 > Our data strategy reflects our business goals:
 >
 > * Provide a coherent, connected view of the customer and their use of our products, so they can quickly see how their usage varies and make educated decisions. Providing this joined-up view allows our initiatives to succeed and scale
-> * To support <...> to get th e correct information quickly and easily, so we can continue to deliver excellent customer service.
+> * To support <...> to get the correct information quickly and easily, so we can continue to deliver excellent customer service.
 > * To support, and not detract from, our main value proposition by offering a lightweight solution which aligns with our values and principles
 > * This ability to provide a sensible, joined-up story allows us to out-perform our competitors and exceed our customers expectations. This allows us to effectively...
 >
@@ -134,7 +134,7 @@ Core Business Data does not, and should not, include transaction data. That stuf
 
 From a data warehouse point of view, Core Business Data fields are critical dimensions which change slowly, but not the facts about those dimensions.
 
-![MDM Entity Analysis](../../media/mdm-field-eval.png)
+![MDM Entity Analysis](../media/mdm-field-eval.png)
 > Schedlbauer, M. (2019) Master Data Management, shipzero. [Medium](https://medium.com/appanion/10-steps-towards-a-successful-master-data-management-project-1322e20d2241).
 
  Once we know what they are, we can understand and expose the proper entities and their fields from the right places.

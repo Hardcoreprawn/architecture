@@ -4,7 +4,7 @@
 	<title />
 	<link rel="self" href="https://red-sand-078a6ea03.3.azurestaticapps.net/" />
 	<rights>Copyright James Brewster© 2024</rights>
-	<updated>2024-02-26T11:18:34Z</updated>
+	<updated>2024-03-20T07:44:25Z</updated>
 	<logo>https://red-sand-078a6ea03.3.azurestaticapps.net/header01.png</logo>
 	<entry>
 		<id>https://red-sand-078a6ea03.3.azurestaticapps.net/posts/business-data-and-how-to-manage-it</id>
@@ -50,7 +50,7 @@
 &lt;p&gt;Our data strategy reflects our business goals:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Provide a coherent, connected view of the customer and their use of our products, so they can quickly see how their usage varies and make educated decisions. Providing this joined-up view allows our initiatives to succeed and scale&lt;/li&gt;
-&lt;li&gt;To support &amp;lt;...&amp;gt; to get th e correct information quickly and easily, so we can continue to deliver excellent customer service.&lt;/li&gt;
+&lt;li&gt;To support &amp;lt;...&amp;gt; to get the correct information quickly and easily, so we can continue to deliver excellent customer service.&lt;/li&gt;
 &lt;li&gt;To support, and not detract from, our main value proposition by offering a lightweight solution which aligns with our values and principles&lt;/li&gt;
 &lt;li&gt;This ability to provide a sensible, joined-up story allows us to out-perform our competitors and exceed our customers expectations. This allows us to effectively...&lt;/li&gt;
 &lt;/ul&gt;
@@ -192,7 +192,7 @@
 &lt;p&gt;A data hub also enables &lt;a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/architectures/what-is-data-mesh"&gt;data mesh&lt;/a&gt; or &lt;a href="https://techcommunity.microsoft.com/t5/data-architecture-blog/polyglot-persistence-with-azure-data-services/ba-p/1514912#:%7E:text=Polyglot%20Persistence%20is%20the%20concept%20of%20using%20different,support%20all%20possible%20data%20types%20and%20its%20usages."&gt;polyglot persistence&lt;/a&gt; implementation later.&lt;/p&gt;
 &lt;h3 id="data-model"&gt;Data Model&lt;/h3&gt;
 &lt;p&gt;Pick an understandable data model. Ideally, use a reference model rather than invent from scratch, but don't choose one that is too big or fancy. Extensibility is essential, as is the scale of the project.&lt;/p&gt;
-&lt;p&gt;Microsoft provides the following Common Data Model. While they interchange the term with the physical infrastructure underlying their Dynamics 265 platform, the model is valid and provides a cross-industry organisational data model.&lt;/p&gt;
+&lt;p&gt;Microsoft provides the following Common Data Model. While they interchange the term with the physical infrastructure underlying their Dynamics 365 platform, the model is valid and provides a cross-industry organisational data model.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/cloud-scale-analytics/media/cdm-entities-v1.png#lightbox" alt="Common Data Model V1, Microsoft.com"&gt;&lt;/p&gt;
 &lt;p&gt;This overview of familiar entities can be a good reference model to help plan and consider the information required to keep business moving.&lt;/p&gt;
 &lt;blockquote&gt;
