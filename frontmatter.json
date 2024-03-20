@@ -66,24 +66,8 @@
       "path": "[[workspace]]/input/posts"
     },
     {
-      "title": "Principles",
-      "path": "[[workspace]]/input/posts/principles"
-    },
-    {
-      "title": "Requirements",
-      "path": "[[workspace]]/input/posts/requirements"
-    },
-    {
-      "title": "Patterns",
-      "path": "[[workspace]]/input/posts/patterns"
-    },
-    {
       "title": "Pages",
       "path": "[[workspace]]/input/pages"
-    },
-    {
-      "title": "Solutions",
-      "path": "[[workspace]]/input/posts/solutions"
     }
   ],
   "frontMatter.taxonomy.seoDescriptionField": "Description",

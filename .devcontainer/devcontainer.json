@@ -19,6 +19,20 @@
 			"version": "os-provided"
 		}
 	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-dotnettools.vscode-dotnet-runtime",
+				"ms-dotnettools.csharp",
+				"ms-dotnettools.csdevkit",
+				"dbaeumer.vscode-eslint",
+				"ms-vscode-remote.remote-containers",
+				"ms-azuretools.vscode-docker",
+				"github.vscode-github-actions",
+				"eliostruyf.vscode-front-matter"
+			]
+		}
+	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "dotnet restore",
