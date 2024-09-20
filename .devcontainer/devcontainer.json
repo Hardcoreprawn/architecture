@@ -1,49 +1,24 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/dotnet
 {
-	"name": "Architecture Repo",
-	"image": "mcr.microsoft.com/devcontainers/dotnet",
+	"name": "C# (.NET)",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm"
+
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [5000],
+	// "forwardPorts": [5000, 5001],
 	// "portsAttributes": {
-	// 		"5000": {
-	//		"protocol": "http"
+	//		"5001": {
+	//			"protocol": "https"
 	//		}
-	//},
-	"features": {
-		"ghcr.io/devcontainers/features/git:1": {
-			"ppa": true,
-			"version": "os-provided"
-		},
-		"ghcr.io/devcontainers/features/dotnet:2": {
-			"version": "8.0"
-		},
-		"ghcr.io/devcontainers-contrib/features/http-server:1": {
-			"version": "latest"
-		}
-	},
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"ms-dotnettools.vscode-dotnet-runtime",
-				"ms-dotnettools.csharp",
-				"ms-dotnettools.csdevkit",
-				"dbaeumer.vscode-eslint",
-				"ms-vscode-remote.remote-containers",
-				"ms-azuretools.vscode-docker",
-				"github.vscode-github-actions",
-				"eliostruyf.vscode-front-matter"
-			]
-		}
-	},
+	// }
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "dotnet restore",
-	"postCreateCommand": "cd output && http-server"
-	
+
 	// Configure tool-specific properties.
 	// "customizations": {},
 
