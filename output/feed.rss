@@ -1,12 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
 	<channel>
-		<title />
+		<title>Architecture Repository</title>
 		<link>https://open-ea.brenster.uk/</link>
 		<description />
 		<copyright>Copyright James Brewster© 2024</copyright>
-		<pubDate>Wed, 20 Mar 2024 17:05:37 GMT</pubDate>
-		<lastBuildDate>Wed, 20 Mar 2024 17:05:37 GMT</lastBuildDate>
+		<pubDate>Mon, 23 Sep 2024 14:30:38 GMT</pubDate>
+		<lastBuildDate>Mon, 23 Sep 2024 14:30:38 GMT</lastBuildDate>
+		<item>
+			<title>Using a monorepo for hosting Azure Bicep IaC</title>
+			<link>https://open-ea.brenster.uk/posts/2024-09-20-using-a-monorepo-for-hosting-azure-iac</link>
+			<description>Faced with building lots of projects for a move to the Azure cloud, using Infrastructure as Code (IaC) and a Monorepo seemed daunting, but made sense.</description>
+			<author>James Brewster</author>
+			<enclosure url="https://open-ea.brenster.uk/media/header01.png" length="0" type="image" />
+			<guid>https://open-ea.brenster.uk/posts/2024-09-20-using-a-monorepo-for-hosting-azure-iac</guid>
+			<pubDate>Fri, 20 Sep 2024 12:03:19 GMT</pubDate>
+			<content:encoded>&lt;h1 id="using-an-azure-monorepo-to-host-all-my-iac-templates"&gt;Using an Azure monorepo to host all my IaC templates&lt;/h1&gt;
+&lt;p&gt;When faced with the choice of how to store all the code needed to build an enterprise IaC deployment as you move services to the cloud, there were a lot of options. At first, we started with individual projects. which soon seemed to be spirally out of control. Each project needed to edit a firewall in a different place, or join a different network. The sprawl of module,s and managing how we replicated and updated them quickly became painful.&lt;/p&gt;
+&lt;h2 id="what-is-a-monorepo"&gt;What is a monorepo?&lt;/h2&gt;
+&lt;p&gt;You may or may not have heard the term, but a monorepo is simply that. One big repo, for everything thats related. A monorepo becomes quite complex, but thats a lot easier than having many, many individual repo's with all of their overlaps. When you have a team with a wide coverage, then it makes sense to host all their work together. If you split that team later, then you can decide how to segredgate subsets of the repo, if need be.&lt;/p&gt;
+&lt;h2 id="why-would-you-use-a-monorepo-for-iac"&gt;Why would you use a Monorepo for IaC?&lt;/h2&gt;
+&lt;p&gt;IaC, Infrastructur eas code, is the term given for (usually) cloud infrastructre, defined in text templates and manipulated into place. Usually through a mix of templates, scripts, definitions and parameters.&lt;/p&gt;
+&lt;p&gt;Usually, I start by defining the generic things I need, or am likely to need, several of. Things like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VMs&lt;/li&gt;
+&lt;li&gt;Storage accounts&lt;/li&gt;
+&lt;li&gt;Networks&lt;/li&gt;
+&lt;li&gt;Databases
+These become my modules.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then I think about how to assemble those into applications or services. These are my definitions. A Definition in BICEP is basically a way of calling all the generic templates, and overlaying the specific configurations. An application might need to join an existing network, require a database, and a linux VM. In a definition I will define the modules and new/basic resources I need:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p class=".. .. .."&gt;module network ... = 
+module database ... = 
+module vm ... = &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now, my modules might all define specific things, what flavour of linux, whether it has a public IP, what disk or CPU options are allowed, etc. These constraints help me guide development and make sure we're falling into a smaller set of options, without loosing too much flexibility.&lt;/p&gt;
+&lt;p&gt;When I want to define a new application, I can take either a Template (a 'blank definition) and start from there, or copy an existging, similar definition, and define a new one, suing the existing modules.&lt;/p&gt;
+&lt;h2 id="parameters"&gt;Parameters&lt;/h2&gt;
+&lt;p&gt;Whilst a lot of best practise around IaC does revolve around how you use parameters to make things portable, I have tried to stick to using parameters for environment settings, or for different stages int he dev journey. I know what I want my production results to look like in a lot of cases, and coding those into my definitions is not a difficult thing, and actually makes it easier to compare in future.&lt;/p&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
 		<item>
 			<title>Business Data and How to Manage it</title>
 			<link>https://open-ea.brenster.uk/posts/business-data-and-how-to-manage-it</link>
@@ -781,46 +816,6 @@
 &lt;li&gt;&lt;a href="https://nordicapis.com/how-to-control-user-identity-within-microservices/"&gt;NordicAPIs - How to control user identity within microservices&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://medium.com/&amp;#64;maison.moa/using-jwt-json-web-tokens-to-authorize-users-and-protect-api-routes-3e04a1453c3e"&gt;Using JWT to authorize users and protect API routes&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/secure-net-microservices-web-applications/"&gt;Make secure .NET Microservices and Web Applications&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
-			<title>Dumb Pipes</title>
-			<link>https://open-ea.brenster.uk/posts/2023-05-15-dumb-pipes</link>
-			<description>This page is about designing and implementing effective communication between microservices in a distributed system.</description>
-			<enclosure url="https://open-ea.brenster.uk/media/header01.png" length="0" type="image" />
-			<guid>https://open-ea.brenster.uk/posts/2023-05-15-dumb-pipes</guid>
-			<pubDate>Mon, 15 May 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;p&gt;As services scale in a microservices architecture, they need to communicate. A communication network is essential to ensure each service can easily talk to the others. Still, as they scale, you must ensure they can grow and continue communicating.&lt;/p&gt;
-&lt;p&gt;This pattern uses the principle of 'Smart end-points, dumb pipes'. If the pipes are clever, they need maintenance; everyone has to wait on the team which is responsible for the pipe, which reduces time to market.&lt;/p&gt;
-&lt;p&gt;If the pipe is dumb, anyone can send a message quickly; anyone can consume a message easily. They may need to adjust the format, but they can do that within the team.&lt;/p&gt;
-&lt;p&gt;A truly stupid pipe should handle routing, and that's it.&lt;/p&gt;
-&lt;h2 id="illustration"&gt;Illustration&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/media/communication-in-microservice-architecture/sync-vs-async-patterns-across-microservices.png" alt="A diagram showing communications in a Microservices architecture" /&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Anti-patterns and patterns in communication between microservices &lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture"&gt;from learn.microsoft.com&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="rationale"&gt;Rationale&lt;/h2&gt;
-&lt;p&gt;Summarising all of the above, the benefits of smart endpoints and dumb pipes are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Lower cost of messaging infrastructure - pushes the cost of goods sold closer to the producer and consumer. Allows messaging infrastructure to scale by the number of messages instead of the computational complexity of messages. Less complexity means fewer nodes, which means fewer licenses!&lt;/li&gt;
-&lt;li&gt;Organization Scalability – teams aren’t reliant on transforms created by a centralised team.&lt;/li&gt;
-&lt;li&gt;Low Latency – because computation is limited, messages are delivered more quickly and predictably to end consumers.&lt;/li&gt;
-&lt;li&gt;Capacity and scalability of messaging infrastructure – increased as compute is not part of the platform's scale.&lt;/li&gt;
-&lt;li&gt;Availability of messaging infrastructure – reduced compute means reduced chance of failure.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="assumptions"&gt;Assumptions&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Messages must be in a defined format which anyone can reference and understand. An API with a contract is an excellent way to do this.&lt;/li&gt;
-&lt;li&gt;Teams will need to adhere to contracts.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://martinfowler.com/articles/microservices.html."&gt;Lewis, J. and Fowler, M. (2014) Microservices, martinfowler.com.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://akfpartners.com/growth-blog/architecture-principle-messaging-systems-smart-end-points-dumb-pipes"&gt;Architecture Principles: Messaging Systems – Smart End Points, Dumb Pipes | AKF Partners&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://nathanpeck.com/microservice-principles-smart-endpoint-dumb-pipe/"&gt;Smart Endpoints and Dumb Pipes, Nathan Peck&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture"&gt;Nishanil et al. (2022) Communication in a microservice architecture, learn.microsoft.com.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
