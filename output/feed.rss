@@ -4,9 +4,9 @@
 		<title>Architecture Repository</title>
 		<link>https://open-ea.brenster.uk/</link>
 		<description />
-		<copyright>Copyright James Brewster© 2024</copyright>
-		<pubDate>Mon, 23 Sep 2024 14:30:38 GMT</pubDate>
-		<lastBuildDate>Mon, 23 Sep 2024 14:30:38 GMT</lastBuildDate>
+		<copyright>Copyright James Brewster© 2025</copyright>
+		<pubDate>Mon, 10 Mar 2025 20:22:33 GMT</pubDate>
+		<lastBuildDate>Mon, 10 Mar 2025 20:22:33 GMT</lastBuildDate>
 		<item>
 			<title>Using a monorepo for hosting Azure Bicep IaC</title>
 			<link>https://open-ea.brenster.uk/posts/2024-09-20-using-a-monorepo-for-hosting-azure-iac</link>
@@ -668,24 +668,6 @@ module vm ... = &lt;/p&gt;
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>
 		<item>
-			<title>The Agile ARB</title>
-			<link>https://open-ea.brenster.uk/posts/the-agile-arb</link>
-			<description>A short story about the way an Agile ARB could run</description>
-			<enclosure url="https://open-ea.brenster.uk/media/header01.png" length="0" type="image" />
-			<guid>https://open-ea.brenster.uk/posts/the-agile-arb</guid>
-			<pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
-			<content:encoded>&lt;h2 id="the-agile-arb"&gt;The Agile ARB&lt;/h2&gt;
-&lt;p&gt;Sara was the chair of the Architecture Review Board (ARB) at Acme Inc., a software company that had adopted agile methods. She was passionate about creating a culture of trust and collaboration among the different teams and departments. She wanted the ARB to be a facilitator rather than a gatekeeper of decisions.&lt;/p&gt;
-&lt;p&gt;Sara had invited representatives from various business units, product owners, developers, testers, and architects to join the ARB, ensuring they had a clear charter and vision. The ARB met monthly to review and approve significant architectural changes that affected the whole organisation, such as introducing new technologies, standards, or patterns. They also created and maintained principles and guidelines that helped teams make sensible local decisions without waiting for the ARB’s approval.&lt;/p&gt;
-&lt;p&gt;One of the principles was to favour simplicity and pragmatism over complexity and perfectionism. Another was to encourage experimentation and learning from failures. A third was to seek feedback and alignment from stakeholders and customers early and often. The ARB also provided templates and tools for teams to document and communicate their architectural decisions, such as Architecture Decision Records (ADRs) and diagrams.&lt;/p&gt;
-&lt;p&gt;Sara was proud of how the ARB had evolved from being a bottleneck to a catalyst. She saw how teams were more empowered and autonomous, how they delivered value faster and more reliably, and how they improved their quality and performance. She also saw how the ARB members learned from each other and shared their best practices across the organisation.&lt;/p&gt;
-&lt;p&gt;She smiled as she opened her email and saw a message from one of the teams. They had successfully implemented a microservice architecture for their product, using a cloud-native platform that the ARB had approved a few months ago. They thanked the ARB for their support and guidance and shared metrics and feedback showing how their product improved scalability, availability, and user satisfaction.&lt;/p&gt;
-&lt;p&gt;Sara congratulated them and asked them if they would like to present their experience at the next ARB meeting. She thought showcasing their work and inspiring others would be an excellent opportunity. She also asked them if they had any suggestions or feedback for the ARB on improving their processes or policies.&lt;/p&gt;
-&lt;p&gt;She closed her email and looked at her calendar. She saw that the next ARB meeting was in two weeks. She wondered what new challenges and opportunities would come up then. She felt excited and curious. She loved her job.&lt;/p&gt;
-</content:encoded>
-			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
-		</item>
-		<item>
 			<title>Architecture Review Board</title>
 			<link>https://open-ea.brenster.uk/posts/architecture-review-board</link>
 			<description>A coherent ARB can help organisations plan and normalise technology decisions. It can also create a situation where nothing happens, and work goes to die.</description>
@@ -756,6 +738,24 @@ module vm ... = &lt;/p&gt;
 &lt;li&gt;Poor reputation - The ARB may be something people dread. In this case, it's likely that the process is excessively onerous, too frequent, or that the principles are poorly accepted.&lt;/li&gt;
 &lt;li&gt;Technology Focussed - The ARB shouldn't discuss the choice of technology. It should guide the principles and processes that result in those changes. In this case, the ARB may be too tactical, resulting in low traction across the business.&lt;/li&gt;
 &lt;/ol&gt;
+</content:encoded>
+			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
+		</item>
+		<item>
+			<title>The Agile ARB</title>
+			<link>https://open-ea.brenster.uk/posts/the-agile-arb</link>
+			<description>A short story about the way an Agile ARB could run</description>
+			<enclosure url="https://open-ea.brenster.uk/media/header01.png" length="0" type="image" />
+			<guid>https://open-ea.brenster.uk/posts/the-agile-arb</guid>
+			<pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;h2 id="the-agile-arb"&gt;The Agile ARB&lt;/h2&gt;
+&lt;p&gt;Sara was the chair of the Architecture Review Board (ARB) at Acme Inc., a software company that had adopted agile methods. She was passionate about creating a culture of trust and collaboration among the different teams and departments. She wanted the ARB to be a facilitator rather than a gatekeeper of decisions.&lt;/p&gt;
+&lt;p&gt;Sara had invited representatives from various business units, product owners, developers, testers, and architects to join the ARB, ensuring they had a clear charter and vision. The ARB met monthly to review and approve significant architectural changes that affected the whole organisation, such as introducing new technologies, standards, or patterns. They also created and maintained principles and guidelines that helped teams make sensible local decisions without waiting for the ARB’s approval.&lt;/p&gt;
+&lt;p&gt;One of the principles was to favour simplicity and pragmatism over complexity and perfectionism. Another was to encourage experimentation and learning from failures. A third was to seek feedback and alignment from stakeholders and customers early and often. The ARB also provided templates and tools for teams to document and communicate their architectural decisions, such as Architecture Decision Records (ADRs) and diagrams.&lt;/p&gt;
+&lt;p&gt;Sara was proud of how the ARB had evolved from being a bottleneck to a catalyst. She saw how teams were more empowered and autonomous, how they delivered value faster and more reliably, and how they improved their quality and performance. She also saw how the ARB members learned from each other and shared their best practices across the organisation.&lt;/p&gt;
+&lt;p&gt;She smiled as she opened her email and saw a message from one of the teams. They had successfully implemented a microservice architecture for their product, using a cloud-native platform that the ARB had approved a few months ago. They thanked the ARB for their support and guidance and shared metrics and feedback showing how their product improved scalability, availability, and user satisfaction.&lt;/p&gt;
+&lt;p&gt;Sara congratulated them and asked them if they would like to present their experience at the next ARB meeting. She thought showcasing their work and inspiring others would be an excellent opportunity. She also asked them if they had any suggestions or feedback for the ARB on improving their processes or policies.&lt;/p&gt;
+&lt;p&gt;She closed her email and looked at her calendar. She saw that the next ARB meeting was in two weeks. She wondered what new challenges and opportunities would come up then. She felt excited and curious. She loved her job.&lt;/p&gt;
 </content:encoded>
 			<comments xmlns="http://purl.org/rss/1.0/modules/slash/">0</comments>
 		</item>

@@ -3,8 +3,8 @@
 	<id>https://open-ea.brenster.uk/</id>
 	<title>Architecture Repository</title>
 	<link rel="self" href="https://open-ea.brenster.uk/" />
-	<rights>Copyright James Brewster© 2024</rights>
-	<updated>2024-09-23T14:30:38Z</updated>
+	<rights>Copyright James Brewster© 2025</rights>
+	<updated>2025-03-10T20:22:33Z</updated>
 	<logo>https://open-ea.brenster.uk/media/header01.png</logo>
 	<entry>
 		<id>https://open-ea.brenster.uk/posts/2024-09-20-using-a-monorepo-for-hosting-azure-iac</id>
@@ -664,23 +664,6 @@ module vm ... = &lt;/p&gt;
 		<summary>How does Agile architecture work in practice? This story provides a demonstration.</summary>
 	</entry>
 	<entry>
-		<id>https://open-ea.brenster.uk/posts/the-agile-arb</id>
-		<title>The Agile ARB</title>
-		<link href="https://open-ea.brenster.uk/posts/the-agile-arb" />
-		<link rel="enclosure" type="image" href="https://open-ea.brenster.uk/media/header01.png" />
-		<updated>2023-05-30T00:00:00Z</updated>
-		<content>&lt;h2 id="the-agile-arb"&gt;The Agile ARB&lt;/h2&gt;
-&lt;p&gt;Sara was the chair of the Architecture Review Board (ARB) at Acme Inc., a software company that had adopted agile methods. She was passionate about creating a culture of trust and collaboration among the different teams and departments. She wanted the ARB to be a facilitator rather than a gatekeeper of decisions.&lt;/p&gt;
-&lt;p&gt;Sara had invited representatives from various business units, product owners, developers, testers, and architects to join the ARB, ensuring they had a clear charter and vision. The ARB met monthly to review and approve significant architectural changes that affected the whole organisation, such as introducing new technologies, standards, or patterns. They also created and maintained principles and guidelines that helped teams make sensible local decisions without waiting for the ARB’s approval.&lt;/p&gt;
-&lt;p&gt;One of the principles was to favour simplicity and pragmatism over complexity and perfectionism. Another was to encourage experimentation and learning from failures. A third was to seek feedback and alignment from stakeholders and customers early and often. The ARB also provided templates and tools for teams to document and communicate their architectural decisions, such as Architecture Decision Records (ADRs) and diagrams.&lt;/p&gt;
-&lt;p&gt;Sara was proud of how the ARB had evolved from being a bottleneck to a catalyst. She saw how teams were more empowered and autonomous, how they delivered value faster and more reliably, and how they improved their quality and performance. She also saw how the ARB members learned from each other and shared their best practices across the organisation.&lt;/p&gt;
-&lt;p&gt;She smiled as she opened her email and saw a message from one of the teams. They had successfully implemented a microservice architecture for their product, using a cloud-native platform that the ARB had approved a few months ago. They thanked the ARB for their support and guidance and shared metrics and feedback showing how their product improved scalability, availability, and user satisfaction.&lt;/p&gt;
-&lt;p&gt;Sara congratulated them and asked them if they would like to present their experience at the next ARB meeting. She thought showcasing their work and inspiring others would be an excellent opportunity. She also asked them if they had any suggestions or feedback for the ARB on improving their processes or policies.&lt;/p&gt;
-&lt;p&gt;She closed her email and looked at her calendar. She saw that the next ARB meeting was in two weeks. She wondered what new challenges and opportunities would come up then. She felt excited and curious. She loved her job.&lt;/p&gt;
-</content>
-		<summary>A short story about the way an Agile ARB could run</summary>
-	</entry>
-	<entry>
 		<id>https://open-ea.brenster.uk/posts/architecture-review-board</id>
 		<title>Architecture Review Board</title>
 		<link href="https://open-ea.brenster.uk/posts/architecture-review-board" />
@@ -752,6 +735,23 @@ module vm ... = &lt;/p&gt;
 &lt;/ol&gt;
 </content>
 		<summary>A coherent ARB can help organisations plan and normalise technology decisions. It can also create a situation where nothing happens, and work goes to die.</summary>
+	</entry>
+	<entry>
+		<id>https://open-ea.brenster.uk/posts/the-agile-arb</id>
+		<title>The Agile ARB</title>
+		<link href="https://open-ea.brenster.uk/posts/the-agile-arb" />
+		<link rel="enclosure" type="image" href="https://open-ea.brenster.uk/media/header01.png" />
+		<updated>2023-05-30T00:00:00Z</updated>
+		<content>&lt;h2 id="the-agile-arb"&gt;The Agile ARB&lt;/h2&gt;
+&lt;p&gt;Sara was the chair of the Architecture Review Board (ARB) at Acme Inc., a software company that had adopted agile methods. She was passionate about creating a culture of trust and collaboration among the different teams and departments. She wanted the ARB to be a facilitator rather than a gatekeeper of decisions.&lt;/p&gt;
+&lt;p&gt;Sara had invited representatives from various business units, product owners, developers, testers, and architects to join the ARB, ensuring they had a clear charter and vision. The ARB met monthly to review and approve significant architectural changes that affected the whole organisation, such as introducing new technologies, standards, or patterns. They also created and maintained principles and guidelines that helped teams make sensible local decisions without waiting for the ARB’s approval.&lt;/p&gt;
+&lt;p&gt;One of the principles was to favour simplicity and pragmatism over complexity and perfectionism. Another was to encourage experimentation and learning from failures. A third was to seek feedback and alignment from stakeholders and customers early and often. The ARB also provided templates and tools for teams to document and communicate their architectural decisions, such as Architecture Decision Records (ADRs) and diagrams.&lt;/p&gt;
+&lt;p&gt;Sara was proud of how the ARB had evolved from being a bottleneck to a catalyst. She saw how teams were more empowered and autonomous, how they delivered value faster and more reliably, and how they improved their quality and performance. She also saw how the ARB members learned from each other and shared their best practices across the organisation.&lt;/p&gt;
+&lt;p&gt;She smiled as she opened her email and saw a message from one of the teams. They had successfully implemented a microservice architecture for their product, using a cloud-native platform that the ARB had approved a few months ago. They thanked the ARB for their support and guidance and shared metrics and feedback showing how their product improved scalability, availability, and user satisfaction.&lt;/p&gt;
+&lt;p&gt;Sara congratulated them and asked them if they would like to present their experience at the next ARB meeting. She thought showcasing their work and inspiring others would be an excellent opportunity. She also asked them if they had any suggestions or feedback for the ARB on improving their processes or policies.&lt;/p&gt;
+&lt;p&gt;She closed her email and looked at her calendar. She saw that the next ARB meeting was in two weeks. She wondered what new challenges and opportunities would come up then. She felt excited and curious. She loved her job.&lt;/p&gt;
+</content>
+		<summary>A short story about the way an Agile ARB could run</summary>
 	</entry>
 	<entry>
 		<id>https://open-ea.brenster.uk/posts/2023-05-26-identity-auth</id>
